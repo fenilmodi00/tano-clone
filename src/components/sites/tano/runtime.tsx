@@ -65,14 +65,6 @@ function GlobalRuntime() {
 function RouteRuntime() {
   const pathname = usePathname();
 
-  useEffect(() => {
-    const timer = window.setTimeout(
-      () => document.documentElement.removeAttribute("data-navigating"),
-      500,
-    );
-    return () => window.clearTimeout(timer);
-  }, [pathname]);
-
   return <PageRuntime key={pathname} />;
 }
 
@@ -118,7 +110,6 @@ function PageHooks() {
   // Run after hydration so form enhancement never mutates SSR markup. The
   // boot script owns scroll restoration and releases the loading mask.
   useEffect(() => {
-    document.documentElement.removeAttribute("data-navigating");
     const cleanup = mountFormsRuntime();
     return () => cleanup?.();
   }, []);

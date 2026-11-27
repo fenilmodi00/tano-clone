@@ -19,6 +19,14 @@ export function useClientNav() {
       if (anchor.target && anchor.target !== "_self") return;
       if (anchor.hasAttribute("download")) return;
       const href = anchor.getAttribute("href") || "";
+      if (/^https?:/i.test(href)) {
+        const external = new URL(href, location.href);
+        if (external.origin === location.origin) return;
+        if (anchor.target && anchor.target !== "_self") return;
+        document.documentElement.setAttribute("data-navigating", "");
+        window.setTimeout(() => document.documentElement.removeAttribute("data-navigating"), 2000);
+        return;
+      }
       if (!href.startsWith("/") || href.startsWith("//")) return;
       if (href.startsWith("/talk-to-us")) return; // drawer owns this click
       if (href.startsWith("#")) return;
@@ -28,7 +36,7 @@ export function useClientNav() {
       // Hide the shared footer while the next route streams; otherwise a short
       // loading shell can pull it into view for a frame.
       document.documentElement.setAttribute("data-navigating", "");
-      window.setTimeout(() => document.documentElement.removeAttribute("data-navigating"), 700);
+      window.setTimeout(() => document.documentElement.removeAttribute("data-navigating"), 2000);
       router.push(url.pathname + url.search + url.hash);
     };
     document.addEventListener("click", onClick, true);
