@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 
 const MENUS = [
   {
@@ -49,9 +49,17 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
   const wrap = useRef<HTMLDivElement>(null);
+  const markId = useId().replaceAll(":", "");
+  const glyph = glyphSvg.replaceAll("tano-glyph-spectrum", `tano-glyph-spectrum-${markId}`);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-nav-ready", "");
+    const navigation = performance.getEntriesByType("navigation")[0] as
+      | PerformanceNavigationTiming
+      | undefined;
+    // A reload must not replay the arrival animation over a restored scroll
+    // position: that is the nav jump/flicker seen on refresh.
+    if (navigation?.type === "reload" || window.scrollY > 0) return;
     const timers: number[] = [];
     let inner = 0;
     const outer = requestAnimationFrame(() => {
@@ -153,7 +161,7 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
                 <span
                   aria-hidden="true"
                   className="wire-nav-mark-glyph"
-                  dangerouslySetInnerHTML={{ __html: glyphSvg }}
+                  dangerouslySetInnerHTML={{ __html: glyph }}
                 />
                 <span
                   aria-hidden="true"

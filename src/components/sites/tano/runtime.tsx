@@ -16,6 +16,8 @@ import {
   useCounters,
   useReveal,
   useHashScroll,
+  useClientNav,
+  useScrollMemory,
 } from "./motion";
 
 /**
@@ -54,6 +56,8 @@ export function SiteRuntime() {
 function GlobalRuntime() {
   useLenisScroll();
   useGroundTone();
+  useClientNav();
+  useScrollMemory();
   return null;
 }
 
@@ -102,10 +106,28 @@ function PageHooks() {
   useReveal();
   useHashScroll();
 
-  // Run after the page is hydrated so form enhancement never mutates SSR markup.
+  // Run after hydration, restore a full-reload scroll offset before the
+  // loading mask is removed, then bind forms against the settled markup.
   useEffect(() => {
+    const target = Number(window.__tanoRestoreY || 0);
+    let frame = 0;
+    let tries = 0;
+    const restore = () => {
+      const ready = document.documentElement.scrollHeight >= target + window.innerHeight;
+      if (target > 0 && !ready && tries++ < 120) {
+        frame = requestAnimationFrame(restore);
+        return;
+      }
+      if (target > 0) window.scrollTo(0, target);
+      delete window.__tanoRestoreY;
+      document.documentElement.setAttribute("data-page-ready", "");
+    };
+    frame = requestAnimationFrame(restore);
     const cleanup = mountFormsRuntime();
-    return cleanup;
+    return () => {
+      cancelAnimationFrame(frame);
+      cleanup?.();
+    };
   }, []);
 
   useEffect(() => {

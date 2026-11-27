@@ -630,23 +630,21 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
   const syncDock = () => {
     dockFrame = 0;
     if (!dock || !dockRow) return;
-    if (dockRow.getBoundingClientRect().height === 0) return;
-    const y = window.scrollY;
-    if (y <= 24) {
-      const rect = dockRow.getBoundingClientRect();
-      dock.style.setProperty("--dock-left", `${rect.left}px`);
-      dock.style.setProperty("--dock-width", `${rect.width}px`);
+    const rect = dockRow.getBoundingClientRect();
+    if (rect.height === 0) return;
+    dock.style.setProperty("--dock-left", `${rect.left}px`);
+    dock.style.setProperty("--dock-width", `${rect.width}px`);
+    // Stay floating and visible until the in-flow slot reaches the dock line;
+    // there is no fade gap. At the switch point fixed and relative coincide.
+    const dockLine = window.innerHeight - rect.height - 12;
+    if (rect.top > dockLine) {
       dock.dataset.floating = "true";
       dock.dataset.intro = "false";
-      delete dock.dataset.aside;
-      return;
-    }
-    dock.dataset.aside = "";
-    if (y > 324) {
+    } else {
       dock.dataset.floating = "false";
       dock.dataset.intro = "false";
-      delete dock.dataset.aside;
     }
+    delete dock.dataset.aside;
   };
   const onDockScroll = () => {
     if (dockFrame) return;

@@ -19,6 +19,15 @@ const dock0 = await p.evaluate(() => {
 });
 if (!dock0 || dock0.float !== "true" || dock0.pos !== "fixed")
   fails.push("dock not floating initially: " + JSON.stringify(dock0));
+await p.evaluate(() => scrollTo(0, 250));
+await p.waitForTimeout(400);
+const dock2 = await p.evaluate(() => {
+  const d = document.querySelector(".hp-hero-strip-dock");
+  const c = d && getComputedStyle(d);
+  return d && { float: d.dataset.floating, aside: d.dataset.aside, pos: c.position, op: c.opacity };
+});
+if (!dock2 || dock2.float !== "true" || dock2.pos !== "fixed" || dock2.op !== "1")
+  fails.push("dock faded before docking: " + JSON.stringify(dock2));
 await p.evaluate(() => scrollTo(0, 600));
 await p.waitForTimeout(900);
 const dock6 = await p.evaluate(() => {

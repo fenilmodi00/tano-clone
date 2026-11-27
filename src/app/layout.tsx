@@ -70,6 +70,11 @@ export default function RootLayout({
       }
     >
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var n=performance.getEntriesByType("navigation")[0];if(n&&n.type==="reload"){history.scrollRestoration="manual";var y=sessionStorage.getItem("tano:scroll:"+location.pathname);if(y)window.__tanoRestoreY=Number(y)}}catch(e){}})()`,
+          }}
+        />
         <div className="tano tano-light-ground wire brand wire-veiled rv-scope">
           <div className="wire-chrome-sentinel" aria-hidden="true" />
           <div className="wire-spectrum-rule" data-inview="true" />

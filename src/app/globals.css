@@ -9,6 +9,7 @@
 @import "../styles/tano/forms.css";
 @import "../styles/tano/drawer.css";
 @import "../styles/tano/consent.css";
+@import "../styles/tano/pp-live.css";
 
 /* Template-level corrections kept outside the ported source stylesheet. */
 
@@ -83,9 +84,18 @@ body:has(.wire-contact) .wire-footer {
   pointer-events: none;
 }
 
+/* Mask the streamed page shell on a full reload; client navigation keeps the bar. */
+html:not([data-page-ready]) .wire-loading {
+  inset: 0;
+  height: 100svh;
+  background: var(--page-primary, #fbf9f5);
+}
+
 .wire-loading__bar {
+  position: absolute;
+  inset: 0 0 auto;
   display: block;
-  height: 100%;
+  height: 3px;
   width: 40%;
   background: var(
     --spectrum-linear,

@@ -509,6 +509,12 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     }
     const next = parseElement(frameHtmls[index]);
     if (!next) return;
+    if (expected === "revenue-source" && !next.hasAttribute("data-room")) {
+      next.setAttribute("data-room", "");
+      next.style.setProperty("--room", "135px");
+      next.style.setProperty("--room-delay", "360ms");
+      next.style.setProperty("--card-foot", "465px");
+    }
     next.setAttribute("data-direction", String(direction));
     if (current) {
       current.setAttribute("data-leaving", "");
