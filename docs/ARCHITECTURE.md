@@ -45,6 +45,8 @@ removed or restructured, and the remaining route-migration path.
   were deleted.
 - 44 replicated bodies reformatted from one-line files to readable, linted TSX; all internal
   links use `next/link` (313 anchors), and the custom client-nav interceptor was removed.
+- Page-level reveal/band/video observers were extracted from `runtime.tsx` into
+  `motion/use-page-observers.ts`; dead motion helpers were removed.
 - Duplicate DOM ids in shell logos, inline SVG charts and comparison sections are now unique.
 - Evidence retention: heavy captures are untracked (tracked `docs/` is now ~24 MB); see
   `docs/EVIDENCE.md`.
@@ -69,11 +71,12 @@ Source: route-family audit (JSON coverage, structural duplication, bands per rou
 | Family                                      | Routes | JSON coverage | Verdict  | Target                                                               |
 | ------------------------------------------- | -----: | ------------: | -------- | -------------------------------------------------------------------- |
 | Playbooks                                   |      5 |        49–79% | **done** | `PlaybookPage` from JSON.                                            |
-| Guides                                      |     14 |        79–91% | next     | `GuidePage`: hero, prose/list/table blocks, FAQ, brands, closing.    |
+| Guides                                      |     14 |        79–91% | **done** | `GuidePage`: hero, prose/list/table/quotes, FAQ, brands, closing.    |
 | Compare details                             |      4 |        83–87% | **done** | `ComparePage`: hero, prose, comparison table, verdict, FAQ, closing. |
-| Career roles                                |      3 |        56–80% | medium   | `CareerRolePage`: role hero, prose sections, apply CTA.              |
-| Guide/compare/careers/news/playbook indexes |      6 |        70–79% | medium   | `IndexPage`: hero + card groups from page-level cards.               |
-| Privacy / news article                      |      2 |        78–86% | medium   | `LegalPage` / `ArticlePage`.                                         |
+| Career roles                                |      3 |        56–80% | deferred | Captured body kept; template attempt missed callouts/emphasis.       |
+| Guides/compare/playbooks indexes            |      3 |        70–79% | deferred | Captured bodies kept; shared template produced 8–96% diffs.          |
+| Careers/news indexes                        |      2 |        70–77% | deferred | Captured bodies kept; same index-template attempt.                   |
+| Privacy / news article / webinars           |      3 |        78–86% | deferred | Captured bodies kept; template attempt failed compile/parity.        |
 | Home, use cases, case studies, for-creators |      9 |        37–67% | bespoke  | Keep captured bodies; extract section components only.               |
 | Talk-to-us                                  |      1 |            7% | bespoke  | Keep form-specific body.                                             |
 
