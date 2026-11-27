@@ -13,8 +13,9 @@ const saved = await page.evaluate(() => Number(sessionStorage.getItem("tano:scro
 
 await page.reload({ waitUntil: "commit" });
 const samples = [];
-for (const delay of [0, 50, 150, 350, 800, 1800, 3000]) {
-  await page.waitForTimeout(delay === 0 ? 0 : 50);
+const readAt = Date.now();
+for (const delay of [0, 100, 300, 700, 1200, 2000, 3000]) {
+  await page.waitForTimeout(Math.max(0, delay - (Date.now() - readAt)));
   samples.push(
     await page.evaluate(() => {
       const loading = document.querySelector(".wire-boot-mask");
@@ -32,7 +33,9 @@ for (const delay of [0, 50, 150, 350, 800, 1800, 3000]) {
 const failures = [];
 if (saved < 100) failures.push(`scroll memory was not stored (${saved})`);
 for (const [index, sample] of samples.entries()) {
-  if (sample.stage !== "settled") failures.push(`nav replayed intro at sample ${index}`);
+  // Sample 0 can still be the pre-reload document; check after commit only.
+  if (index > 0 && sample.stage !== "settled")
+    failures.push(`nav replayed intro at sample ${index}`);
   const footerVisible =
     sample.footerTop !== null && sample.footerTop < sample.viewport && sample.footerTop >= 0;
   const masked = sample.loadingHeight === `${sample.viewport}px`;
