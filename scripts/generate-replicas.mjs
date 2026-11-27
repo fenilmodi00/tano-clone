@@ -106,7 +106,7 @@ function cleanHtml(html) {
     if (src) $el.attr("src", src);
     const poster = localize($el.attr("poster") || "");
     if (poster) $el.attr("poster", poster);
-    $el.removeAttr("style").attr("preload", "metadata");
+    $el.removeAttr("style").attr("preload", "none");
   });
   $("[style]").each((_, el) => {
     const $el = $(el);

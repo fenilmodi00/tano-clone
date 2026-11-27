@@ -203,8 +203,6 @@ export const HOME_MARK_BANDS: readonly HomeMarkBand[] = [
   },
 ];
 
-export const HOME_FEATURED_MARKS = FEATURED_MARKS;
-
 export function findHomeMarkBand(caption: string | null | undefined): HomeMarkBand | undefined {
   const normalized = (caption ?? "").trim().toLowerCase();
   if (!normalized) return undefined;

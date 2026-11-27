@@ -10138,45 +10138,6 @@ html[data-ua-safari] {
     transform: translateY(0);
   }
 }
-@keyframes hp-notify-promote {
-  0% {
-    opacity: 0.7;
-    transform: translateY(var(--unit-2-00)) scale(0.94);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes hp-notify-leave {
-  to {
-    opacity: 0;
-    transform: translateY(calc(-1 * var(--unit-6-00))) scale(0.96);
-  }
-}
-main[data-notify] {
-  --hp-notify-reserve: 120px;
-}
-@media (max-width: 767px) {
-  main[data-notify] > .hp-band:first-child {
-    padding-top: calc(var(--page-opening) + var(--hp-notify-push, var(--hp-notify-reserve)));
-    transition: padding-top 0.42s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-}
-@media (min-width: 768px) {
-  main[data-notify] > .hp-band:first-child {
-    padding-top: calc(
-      var(--page-opening) +
-        max(0px, var(--hp-notify-push, var(--hp-notify-reserve)) - var(--section-padding-sm))
-    );
-    transition: padding-top 0.42s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  main[data-notify] > .hp-band:first-child {
-    transition: none;
-  }
-}
 .hp-deck-heading {
   padding-bottom: 0;
 }

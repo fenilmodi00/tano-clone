@@ -76,7 +76,7 @@ export function ReelCard({
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="none"
         />
         <span aria-hidden="true" className="wire-reel-fade" />
         <span aria-label={logoLabel} className="wire-reel-logo" role="img" style={maskStyle} />

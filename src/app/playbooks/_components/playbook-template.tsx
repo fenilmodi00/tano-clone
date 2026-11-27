@@ -1,4 +1,5 @@
 import { Button, ButtonLink } from "@/components/ui/button";
+import { PageEffects } from "@/app/_runtime/page-effects";
 
 type PlaybookBlock = { type: string; html?: string; items?: ReadonlyArray<{ title: string }> };
 type PlaybookSection = {
@@ -124,6 +125,7 @@ export function PlaybookTemplate({ page }: { page: PlaybookContent }) {
           </div>
         </section>
       ) : null}
+      <PageEffects />
     </main>
   );
 }

@@ -37,7 +37,7 @@ export type TalkFieldName =
 export type TalkValues = Record<TalkFieldName, string> & { consent: boolean };
 export type TalkErrors = Partial<Record<TalkFieldName | "consent", string>>;
 
-export const TALK_FIELD_STEP: Record<TalkFieldName | "consent", 1 | 2> = {
+const TALK_FIELD_STEP: Record<TalkFieldName | "consent", 1 | 2> = {
   name: 1,
   email: 1,
   phoneNumber: 1,
@@ -66,7 +66,7 @@ export const TALK_ERROR_ORDER: Array<TalkFieldName | "consent"> = [
   "consent",
 ];
 
-export const TALK_OPTIONS = {
+const TALK_OPTIONS = {
   companyType: ["DTC or consumer brand", "Agency", "SaaS or tech", "Creator", "Student", "Other"],
   monthlyAdSpendBand: [
     "Under $35k",

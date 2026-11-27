@@ -21,6 +21,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     "docs/**",
     "public/**",
+    "agent/**",
+    ".agents/skills/**",
   ]),
 ]);
 
