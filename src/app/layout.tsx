@@ -45,6 +45,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  preload("/sites/tano/fonts/ABCWhyte-Book.woff2", {
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  });
+  preload("/sites/tano/fonts/ABCWhyte-Medium.woff2", {
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  });
+
   return (
     <html
       lang="en"
