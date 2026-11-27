@@ -1,11 +1,10 @@
+"use client";
+
 import type { ReactNode } from "react";
-import { CaseStudyEffects } from "./_components/case-study-effects";
+import { useCaseStudyMedia } from "./_components/use-case-study-media";
 
 export default function CaseStudiesLayout({ children }: { children: ReactNode }) {
-  return (
-    <>
-      {children}
-      <CaseStudyEffects />
-    </>
-  );
+  useCaseStudyMedia();
+
+  return <>{children}</>;
 }

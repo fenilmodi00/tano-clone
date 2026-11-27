@@ -1,15 +1,14 @@
 import pageData from "@/content/pages/use-cases/drive-revenue.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { PageEffects } from "@/app/_runtime/page-effects";
+import { PageShell } from "@/components/page-shell";
 import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return (
-    <>
+    <PageShell>
       <CapturedBody />
-      <PageEffects />
-    </>
+    </PageShell>
   );
 }

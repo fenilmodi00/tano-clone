@@ -23,6 +23,8 @@ const eslintConfig = defineConfig([
     "public/**",
     "agent/**",
     ".agents/skills/**",
+    ".vinext/**",
+    ".cloudflare/**",
   ]),
 ]);
 

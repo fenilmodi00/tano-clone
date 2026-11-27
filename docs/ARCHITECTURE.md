@@ -5,15 +5,15 @@ removed or restructured, and the remaining route-migration path.
 
 ## 1. Current stack
 
-| Layer        | Choice                                                       | Notes                                                                              |
-| ------------ | ------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| Framework    | Next.js 16.4 App Router, React 19.3, TypeScript strict       | All 44 routes are static server components.                                        |
-| Styling      | Ported Tano design-system CSS, cascade layers, 129 keyframes | Tailwind is not used by the clone; see the decision below.                         |
-| Motion       | Small DOM-query hooks + CSS keyframes                        | Lenis for smooth scroll; no GSAP.                                                  |
-| Components   | Server components + small client islands                     | Shell, drawer, consent, forms and behaviours are the client surface.               |
-| Content      | Typed JSON per route; generated route manifest               | Metadata and 23 route bodies render from JSON; 21 captured bodies remain.          |
-| Verification | Playwright, pixelmatch, pngjs/sharp                          | Static build assertion + runtime visibility/link/smoke + live-source pixel matrix. |
-| Deploy       | `output: "standalone"`, Docker multi-stage                   | Build args carry `NEXT_PUBLIC_SITE_URL` and indexing policy.                       |
+| Layer        | Choice                                                                 | Notes                                                                                             |
+| ------------ | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Framework    | Next.js 16.4 App Router, React 19.3, TypeScript strict                 | All 44 routes are static server components.                                                       |
+| Styling      | Ported Tano design-system CSS, cascade layers, 129 keyframes           | Tailwind is not used by the clone; see the decision below.                                        |
+| Motion       | Small DOM-query hooks + CSS keyframes                                  | Lenis for smooth scroll; no GSAP.                                                                 |
+| Components   | Server components + small client islands                               | Shell, drawer, consent, forms and behaviours are the client surface.                              |
+| Content      | Typed JSON per route with a Zod page schema; generated route manifest  | Metadata and 23 route bodies render from JSON; 21 captured bodies remain.                         |
+| Verification | Vitest/Testing Library, Playwright, pixelmatch, Zod content validation | Unit/contract tests plus static build assertion, runtime audits and live-source pixels.           |
+| Deploy       | Cloudflare Workers via vinext; Docker standalone opt-in                | `NEXT_OUTPUT=standalone` for Docker; build args carry `NEXT_PUBLIC_SITE_URL` and indexing policy. |
 
 ## 2. What changed in this pass
 
@@ -50,6 +50,14 @@ removed or restructured, and the remaining route-migration path.
 - Duplicate DOM ids in shell logos, inline SVG charts and comparison sections are now unique.
 - Evidence retention: heavy captures are untracked (tracked `docs/` is now ~24 MB); see
   `docs/EVIDENCE.md`.
+- Zod page schema + `content:validate` contract tests; `types.ts` re-exports the inferred model
+  so runtime validation and compile-time types cannot drift.
+- Vitest/Testing Library/jsdom suites for content, forms, motion and FAQ markup, wired into CI.
+- Page effects mount inside each page subtree (`PageEffects`) instead of the root layout; the
+  600 ms hydration gate is gone. Videos default to `preload="none"` until activation.
+- Production CSP, `content:validate`/`npm test` CI gates, Next/Playwright caches and the current
+  Node/Action baselines.
+- Removed probe/one-off scripts, unused content type exports and dead `.hp-notify*` CSS.
 
 ### Deliberately not done
 
@@ -119,14 +127,15 @@ Candidates, in reuse order:
 1. Route metadata comes from each route's JSON through `buildPageMetadata`; never re-add literal
    title/description blocks to `page.tsx`.
 2. Any new internal link uses `next/link`; do not reintroduce a document-level click interceptor.
-3. Any new route must be added to the JSON set; `npm run content:check` validates the manifest.
+3. Any new route must be added to the JSON set; `npm run content:check` and
+   `npm run content:validate` must both pass.
 4. Generated files are format-ignored. Hand edits to the 21 captured bodies are expected; if a
    capture is regenerated, diff it before accepting.
 5. CSS changes go through the existing classes/tokens. If a new class is only added at runtime
    (Lenis, JS-built markup, inline SVG strings), put it in `src/styles/runtime.css` so a
    future purge cannot drop it.
-6. `npm run check` is the merge gate; `npm run assert:static` must report 44 routes and zero
-   dynamic routes.
+6. `npm run check` is the merge gate; it runs the Zod content validation and Vitest suites, and
+   `npm run assert:static` must report 44 routes and zero dynamic routes.
 7. Keep the no-JS reveal fallback when touching `reveal.css` or the reveal hooks.
 8. Client navigation owns the scroll position: `useRouteScrollReset` commits every pathname
    change at the top (Lenis-aware, hash links excepted). Do not remove it or re-add a
@@ -143,6 +152,11 @@ Candidates, in reuse order:
     `<!--email_off-->` markers is not a safe workaround: Cloudflare strips the markers from
     React-managed HTML, which itself produces a hydration attribute mismatch. Keep the zone
     rewriters off; React hydration must receive the bytes the server rendered.
+12. Cloudflare builds go through vinext; do not set `NEXT_OUTPUT=standalone` for them.
+    `output: "standalone"` is Docker-only because vinext's standalone emitter looks for `dist/`
+    while the Cloudflare plugin writes `.cloudflare/output/`. See `docs/CLOUDFLARE.md`.
+13. Page effects stay inside the page subtree (`PageEffects`). Do not move them back to the root
+    layout: they must run after the page's server markup hydrates, not against DOM React owns.
 
 ## 6. Modern web notes
 

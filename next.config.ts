@@ -23,21 +23,19 @@ const CONTENT_SECURITY_POLICY = [
 ].join("; ");
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Docker self-hosting opts into standalone output; the Cloudflare/vinext
+  // build must keep Vite's output because standalone emission looks for dist/.
+  output: process.env.NEXT_OUTPUT === "standalone" ? "standalone" : undefined,
   poweredByHeader: false,
   reactStrictMode: true,
   allowedDevOrigins,
-  images: {
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [390, 640, 768, 1024, 1280, 1440, 1568, 1920],
-  },
   async headers() {
     return [
       {
         source: "/:path*",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Frame-Options", value: "DENY" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
           { key: "Cross-Origin-Opener-Policy", value: "same-origin" },

@@ -7,16 +7,35 @@ A Next.js 16 rebuild of the Tano marketing site: 44 routes, local media, source-
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run check      # format + content checks + lint + typecheck + tests + build + static assertion
+npm run check      # format + content manifest + content validation + lint + typecheck + tests + build + static assertion
 ```
 
-Production:
+Production (Node):
 
 ```bash
 npm run build
 npm run start
-# or: node .next/standalone/server.js
 ```
+
+Production (Docker, standalone output):
+
+```bash
+NEXT_OUTPUT=standalone npm run build
+node .next/standalone/server.js
+```
+
+Cloudflare Workers:
+
+```bash
+npm run build:vinext   # Vite/vinext production build
+npm run start:vinext   # local Workers preview
+NEXT_PUBLIC_SITE_URL=https://app.kaplun.tech npm run deploy:vinext
+```
+
+The production Worker is `tano-clone` at <https://app.kaplun.tech>; the custom domain is declared
+in `cloudflare.config.ts`. Cloudflare authentication is `npx cf auth login` locally, or
+`CLOUDFLARE_API_TOKEN` in CI. See `docs/CLOUDFLARE.md` for the cache mode, asset limits and
+Workers Builds settings.
 
 Set `NEXT_PUBLIC_SITE_URL` before a production build; `NEXT_PUBLIC_*` values are inlined at
 build time. Search indexing is opt-in via `NEXT_PUBLIC_ALLOW_INDEXING=true`. See `.env.example`.
@@ -37,6 +56,8 @@ build time. Search indexing is opt-in via `NEXT_PUBLIC_ALLOW_INDEXING=true`. See
   case-study films and reels.
 - **Forms**: source field sets and validation for talk-to-us, creator signup and the drawer form,
   with local success states (no backend calls).
+- **Content contract**: a Zod page schema validates every route JSON via `content:validate`;
+  Vitest/Testing Library suites cover the schema, forms, motion primitives and FAQ markup.
 - **Production shell**: per-route canonical/OG/Twitter metadata, generated OG image, sitemap,
   robots, web manifest, branded 404/error/global-error/loading states, security headers, and a
   no-JS reveal fallback.
@@ -59,8 +80,9 @@ src/hooks/                        shared client hooks (Lenis, reveal, scroll, ob
 src/lib/                          metadata, site config, motion primitives, form model
 src/content/
   routes.ts                       generated route/SEO manifest (single source for sitemap)
+  schema.ts                       Zod page schema and inferred types
   pages/                          route-mirrored JSON content
-  types.ts                        content model
+  types.ts                        re-exports the content type route code imports
 src/styles/                       design system, runtime CSS, route shims
 scripts/                          capture, generation, verification and CI assertions
 docs/ARCHITECTURE.md              current architecture + remaining migration plan
@@ -97,9 +119,7 @@ unless you intend to replace them.
 ## Verification
 
 ```bash
-npm run check                 # format, content, lint, typecheck, tests, build, static assertion
-npm run content:validate      # Zod-validate all 44 route JSON files
-npm test                      # Vitest content/unit/component suites
+npm run check                 # format, content manifest, content validation, lint, typecheck, tests, build, static assertion
 npm run verify:visibility     # 44 routes: above-fold content, hydration, console errors
 npm run verify:client-nav     # 44 routes: client navigation + browser history
 npm run verify:links          # internal link/404 audit
