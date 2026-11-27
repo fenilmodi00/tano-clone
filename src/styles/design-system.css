@@ -2002,6 +2002,47 @@ html[data-ground-swap] [data-ground-near] {
   transition-timing-function:
     linear, linear, linear, ease-in-out, ease-in-out, ease-in-out !important;
 }
+/*
+ * The swap above replaces every element's transition, including the nav's
+ * arrival transition. A load-time tone change (the first layout resolves a
+ * light tone, then the hero band measures dark) fires it while the bar is
+ * dropping or travelling; without these rules the width transition is
+ * cancelled and the bar snaps to full width. Keep the arrival transition and
+ * append the same colour fade the swap applies to every other element.
+ */
+html[data-ground-swap] .wire-nav-bar[data-stage="drop"] {
+  transition:
+    transform calc(var(--nav-drop-ms) * 1ms) cubic-bezier(0.22, 1, 0.36, 1),
+    opacity calc(var(--nav-drop-ms) * 1ms) ease,
+    background-color 0.32s linear,
+    border-color 0.32s linear,
+    box-shadow 0.32s linear !important;
+}
+html[data-ground-swap] .wire-nav-bar[data-stage="travel"] {
+  transition:
+    width calc(var(--nav-travel-ms) * 1ms) cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.32s linear,
+    border-color 0.32s linear,
+    box-shadow 0.32s linear !important;
+}
+html[data-ground-swap]
+  .wire-nav-bar[data-stage="travel"]
+  :is(.wire-nav-links, .wire-nav-mobile, .wire-nav-end) {
+  transition:
+    opacity 0.42s 0.24s,
+    transform 0.46s cubic-bezier(0.22, 1, 0.36, 1) 0.24s,
+    background-color 0.32s linear,
+    border-color 0.32s linear,
+    box-shadow 0.32s linear !important;
+}
+html[data-ground-swap] .wire-nav-bar[data-stage="travel"] .wire-nav-mark-word {
+  transition:
+    opacity 0.38s 0.52s,
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1) 0.52s,
+    background-color 0.32s linear,
+    border-color 0.32s linear,
+    box-shadow 0.32s linear !important;
+}
 html[data-ground-swap] :is(.wire-veiled, .wire-ground-veil) {
   transition: none !important;
 }

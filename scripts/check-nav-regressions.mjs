@@ -2,7 +2,7 @@
 /**
  * Navigation regression checks for the Tano replica.
  *
- * Five independent checks run in Chromium at one viewport against a single
+ * Six independent checks run in Chromium at one viewport against a single
  * base URL (the local dev server or a tunnel):
  *
  *   1. no-footer-landing  /guides is scrolled to 2400, then the header mark
@@ -21,6 +21,8 @@
  *   5. no-empty-page      Each of the four routes has a main, real body text
  *                         and either a visible reveal (`.rv-scope .rv-in`)
  *                         or a visible main heading.
+ *   6. ground-swap-intro  A forced ground-tone swap during the nav's travel
+ *                         stage must not cancel the bar's width transition.
  *
  * Usage:
  *   node scripts/check-nav-regressions.mjs [base] [--help]
@@ -60,6 +62,8 @@ Checks:
                      hydration console or page error.
   no-empty-page      Those four routes have a main, >200 characters of body
                      text, and a visible .rv-in reveal or visible main h1/h2.
+  ground-swap-intro  A ground-tone swap forced during the nav's travel stage
+                     leaves the bar's width transition running.
 
 Output is { base, checks, errors } on stdout plus a summary on stderr.
 Exit 1 when any check fails.`;
@@ -534,6 +538,85 @@ async function checkMenuNavigation(browser, base) {
   }
 }
 
+async function checkGroundSwapIntro(browser, base) {
+  const session = await openPage(browser);
+  const { page } = session;
+  try {
+    const response = await page.goto(routeUrl(base, "/"), {
+      waitUntil: "domcontentloaded",
+      timeout: GOTO_TIMEOUT,
+    });
+    if (!response) throw new Error("no response for /");
+    if (response.status() >= 400) throw new Error(`HTTP ${response.status()} for /`);
+
+    // Catch the travel stage before it settles; then force the opposite
+    // ground tone so the swap's global transition override lands mid-flight.
+    const travel = await poll(
+      () =>
+        page.evaluate(() => document.querySelector(".wire-nav-bar")?.getAttribute("data-stage")),
+      (stage) => stage === "travel",
+      { timeout: 8000, interval: 30 },
+    );
+    if (!travel.ok) {
+      return {
+        ok: false,
+        detail: `nav never reached the travel stage (last stage ${travel.value ?? "missing"})`,
+      };
+    }
+
+    const forced = await page.evaluate(() => {
+      const api = window.__tanoGround;
+      if (!api) return { ok: false };
+      const from = api.tone;
+      api.setGroundTone(from === "dark" ? "light" : "dark");
+      return { ok: true, from };
+    });
+    if (!forced.ok) {
+      return { ok: false, detail: "window.__tanoGround is unavailable at the travel stage" };
+    }
+
+    const widths = [];
+    let sawSwap = false;
+    const deadline = Date.now() + 2000;
+    while (Date.now() < deadline) {
+      const sample = await page.evaluate(() => {
+        const bar = document.querySelector(".wire-nav-bar");
+        if (!bar) return null;
+        return {
+          stage: bar.getAttribute("data-stage"),
+          width: Math.round(Number.parseFloat(getComputedStyle(bar).width)),
+          swap: document.documentElement.hasAttribute("data-ground-swap"),
+        };
+      });
+      if (!sample) break;
+      if (sample.swap) {
+        sawSwap = true;
+        widths.push(sample.width);
+      }
+      if (sample.stage === "settled" && sawSwap) break;
+      await sleep(25);
+    }
+    await page.evaluate(() => window.__tanoGround?.clearGroundTone());
+
+    if (!sawSwap) {
+      return { ok: false, detail: "forced ground-tone change never set data-ground-swap" };
+    }
+    const intermediate = [...new Set(widths)].filter((width) => width > 100 && width < 1300);
+    if (intermediate.length < 2) {
+      return {
+        ok: false,
+        detail: `bar width jumped during the ground swap (${intermediate.length} intermediate width(s): ${intermediate.slice(0, 8).join(", ") || "none"})`,
+      };
+    }
+    return {
+      ok: true,
+      detail: `bar width eased through ${intermediate.length} intermediate widths while data-ground-swap was active`,
+    };
+  } finally {
+    await session.context.close().catch(() => {});
+  }
+}
+
 async function checkHydrationGuard(browser, base) {
   const failures = [];
   let otherMessages = 0;
@@ -681,6 +764,7 @@ if (browser) {
     ["no-footer-landing", () => checkNoFooterLanding(browser, base)],
     ["dropdown-close", () => checkDropdownClose(browser, base)],
     ["menu-navigation", () => checkMenuNavigation(browser, base)],
+    ["ground-swap-intro", () => checkGroundSwapIntro(browser, base)],
     ["hydration-guard", () => checkHydrationGuard(browser, base)],
     ["no-empty-page", () => checkNoEmptyPage(browser, base)],
   ];
