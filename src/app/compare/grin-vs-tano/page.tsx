@@ -1,9 +1,9 @@
 import pageData from "@/content/tano/pages/compare-grin-vs-tano.json";
+import { ComparePage } from "@/components/sites/tano/pages/compare-page";
 import { buildPageMetadata } from "@/lib/metadata";
-import { CompareGrinVsTanoReplica } from "../../../components/sites/tano/replica/CompareGrinVsTanoReplica";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <CompareGrinVsTanoReplica />;
+  return <ComparePage page={pageData} />;
 }

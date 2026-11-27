@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Production shell: per-route canonical/OG/Twitter metadata, generated Open Graph image, sitemap, robots, web manifest, branded 404/error/global-error/loading, security headers, font preloads and a no-JS reveal fallback.
+- `src/content/tano/routes.ts` generated manifest; `sitemap.ts` is derived from it.
+- Shared `TanoButton`, `FaqRow` and `ReelCard` components, plus data-driven `PlaybookPage` (five routes) and `ComparePage` (four routes) templates.
+- Static-build assertion, content-manifest check, CI runtime visibility/link/smoke job.
+- `docs/ARCHITECTURE.md` and `docs/EVIDENCE.md`.
+
+### Changed
+
+- All internal links use `next/link`; the custom client-navigation interceptor was removed.
+- Captured route bodies are formatted, linted, and hand-maintainable instead of one-line generated files.
+- CSS was purged by static usage (608 classes, 1,330 rules), split into vendor/runtime layers, and duplicate DOM ids were made unique.
+- Root metadata no longer claims canonical `/` for every page.
+- Docker builds receive `NEXT_PUBLIC_*` at build time; asset cache policy is split by volatility.
+- Evidence captures are untracked from git; tracked docs are ~24 MB.
+
+### Removed
+
+- Unused scaffold dependencies and files (`@base-ui/react`, `cva`, `clsx`, `tailwind-merge`, `lucide-react`, `shadcn`, `tw-animate-css`, `pngjs`, `ui/button.tsx`, `lib/utils.ts`, `components.json`).
+- Template workflows, the `/devtest` route, one-off probe scripts, dead replica/content barrels, and 130 MB of unreferenced public assets (archived locally).
+
 ## [0.6.2] - 2026-11-25
 
 ### Security

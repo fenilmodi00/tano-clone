@@ -8,70 +8,79 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# Website Reverse-Engineer Template
+# Tano clone — production rebuild
 
-## What This Is
+## What this is
 
-A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. The Next.js + shadcn/ui + Tailwind v4 base is pre-scaffolded — just run `/clone-website <url1> [<url2> ...]`.
+A 44-route Next.js 16 rebuild of the Tano marketing site: captured copy/assets, source-faithful
+layout, motion and interactions. It is a reference build, not a deployment of Tano.
 
-## Tech Stack
+Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata or motion, and
+`docs/EVIDENCE.md` before touching captures or assets.
 
-- **Framework:** Next.js 16 (App Router, React 19, TypeScript strict)
-- **UI:** shadcn/ui (Base UI primitives, Tailwind CSS v4, `cn()` utility)
-- **Icons:** Lucide React (default — will be replaced/supplemented by extracted SVGs)
-- **Styling:** Tailwind CSS v4 with oklch design tokens
-- **Deployment:** Vercel
+## Tech stack
+
+- **Framework:** Next.js 16 App Router, React 19, TypeScript strict.
+- **Styling:** the ported Tano design system in `src/styles/tano/` (tokens, layers, keyframes).
+  Tailwind utilities and the shadcn scaffold were removed; do not add a second styling convention.
+- **Motion:** CSS keyframes plus small DOM-query hooks; Lenis for smooth scroll.
+- **Content:** per-route JSON, a generated route/SEO manifest, and data-driven playbook/compare
+  templates.
+- **Verification:** Playwright, pixelmatch, static-build assertion.
 
 ## Commands
 
-- `npm run dev` — Start dev server
-- `npm run build` — Production build
-- `npm run lint` — ESLint check
-- `npm run typecheck` — TypeScript check
-- `npm run check` — Run lint + typecheck + build
+- `npm run dev` — dev server on `http://localhost:3000`.
+- `npm run check` — format, content-manifest, lint, typecheck, build, static assertion.
+- `npm run format` / `npm run format:check` — Prettier.
+- `npm run content:check` — fail if `src/content/tano/routes.ts` is stale.
+- `npm run typecheck`, `npm run lint`.
+- `npm run verify:visibility`, `npm run verify:links`, `npm run verify:smoke`,
+  `npm run verify:client-nav` — runtime gates against port 3000.
+- `npm run verify` / `npm run verify:motion` — live-source pixel/motion matrix.
+- `npm run assert:static` — 44 prerendered routes, zero dynamic routes, SEO endpoints present.
 
-## Code Style
+## Code style
 
-- TypeScript strict mode, no `any`
-- Named exports, PascalCase components, camelCase utils
-- Tailwind utilities or scoped CSS; avoid inline styles unless behavior needs dynamic values
-- 2-space indentation
-- Responsive: mobile-first
+- TypeScript strict, no `any`; named exports; PascalCase components; camelCase utilities.
+- Use the existing design-system classes and tokens. Avoid inline styles unless the value is
+  per-instance data (custom properties, media URLs, chart values).
+- Every internal link uses `next/link`; do not add a document-level click interceptor.
+- 2-space indentation; Prettier owns formatting.
 
-## Design Principles
-
-- **Pixel-perfect emulation** — match the target's spacing, colors, typography exactly
-- **No personal aesthetic changes during emulation phase** — match 1:1 first, customize later
-- **Real content** — use actual text and assets from the target site, not placeholders
-- **Beauty-first** — every pixel matters
-
-## Project Structure
+## Structure
 
 ```
-src/
-  app/              # Next.js routes
-  components/       # React components
-    ui/             # shadcn/ui primitives
-    sites/<site>/   # Source-specific components, including extracted SVGs
-  lib/
-    utils.ts        # cn() utility (shadcn)
-  types/            # TypeScript interfaces
-  hooks/            # Custom React hooks
-public/
-  sites/<site>/     # Source-specific images, fonts, video, and other assets
-docs/
-  research/<site>/  # Page brief, asset map, and inspection evidence
-  design-references/ # Screenshots and visual references
-scripts/            # Asset download scripts
-.agents/
-  skills/
-    clone-website/  # Canonical cross-agent cloning workflow
-.claude/
-  commands/
-    clone-website.md # Thin Claude Code invocation bridge
+src/app/<route>/page.tsx        route wrapper + JSON-derived metadata
+src/components/sites/tano/
+  replica/                     captured route bodies (35 routes; hand-editable)
+  pages/playbook-page.tsx      data-driven template for the 5 playbook details
+  pages/compare-page.tsx       data-driven template for the 4 compare details
+  ui/                          shared button and FAQ row
+  media/                       shared reel card + case-film controllers
+  shell/                       header, footer, consent, drawer, logo strings
+  motion/                      behaviour hooks composed by SiteRuntime
+  home/ pages/ forms/          family controllers
+src/content/tano/
+  routes.ts                    generated route/SEO manifest
+  pages/*.json                 route content
+  types.ts
+src/styles/tano/               design system, purged CSS, runtime CSS, route shims
+scripts/                       capture, generation, verification, assertions
+docs/ARCHITECTURE.md           current design + migration plan
 ```
 
-## Agent Workflow
+## Rules
 
-- Edit `.agents/skills/clone-website/` for cloning-workflow changes. It is the canonical skill used by Codex, Cursor, and OpenCode.
-- Keep `.claude/commands/clone-website.md` as a thin Claude Code bridge to the canonical skill; do not duplicate the workflow there.
+- Metadata lives in each route's JSON and flows through `buildPageMetadata`; never duplicate
+  title/description literals in `page.tsx`.
+- Add a route by adding its JSON, then regenerate `routes.ts`; `content:check` must pass.
+- Generated replicas/content/CSS are format-ignored. Running the capture generator overwrites
+  hand edits; diff before accepting.
+- Runtime-only classes (Lenis, JS-built markup, inline SVG strings) belong in
+  `src/styles/tano/runtime.css`, not the purged vendor stylesheet.
+- Keep the `@media (scripting: none)` reveal fallback when changing reveal CSS or hooks.
+- Do not add fixed `width`/`height` to absolutely positioned media without checking the CSS
+  aspect ratio; this previously distorted the case-study reel cards.
+- The five playbooks are the model for further JSON templates; follow the family order in
+  `docs/ARCHITECTURE.md` and verify each family against the live source before deleting replicas.

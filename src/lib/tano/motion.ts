@@ -11,11 +11,6 @@ export function clamp(value: number, min = 0, max = 1): number {
   return Math.min(max, Math.max(min, value));
 }
 
-/** Linear interpolation between two numbers. */
-export function lerp(from: number, to: number, t: number): number {
-  return from + (to - from) * t;
-}
-
 /** True when the visitor asked the OS to remove non-essential motion. */
 export function prefersReducedMotion(): boolean {
   return (

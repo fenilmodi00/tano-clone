@@ -1,3 +1,4 @@
+import { FaqRow } from "@/components/sites/tano/ui/faq-row";
 import { TanoButtonLink, TanoButton } from "@/components/sites/tano/ui/tano-button";
 import Link from "next/link";
 
@@ -2422,7 +2423,7 @@ export function ForCreatorsReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/community-glass.jpg"
-              />
+               loading="lazy"/>
             </span>
             <div className="hp-cp-card">
               <div aria-hidden="true" className="hp-cp-who">
@@ -2435,7 +2436,7 @@ export function ForCreatorsReplica() {
                       decoding="async"
                       style={{ color: "transparent" }}
                       src="/sites/tano/images/tano-94.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="wire-lockup-who">
                     <span className="wire-lockup-handle">@reginafoster.us</span>
@@ -2631,7 +2632,7 @@ export function ForCreatorsReplica() {
                       color: "transparent",
                     }}
                     src="/sites/tano/images/petals-glass.jpg"
-                  />
+                   loading="lazy"/>
                 </span>
                 <div className="hp-cj-scene">
                   <span className="hp-cj-field tano-body-sm">jess.makes@gmail.com</span>
@@ -2682,7 +2683,7 @@ export function ForCreatorsReplica() {
                       color: "transparent",
                     }}
                     src="/sites/tano/images/roses-glass.jpg"
-                  />
+                   loading="lazy"/>
                 </span>
                 <div className="hp-cj-scene" data-scene="match">
                   <span
@@ -2699,7 +2700,7 @@ export function ForCreatorsReplica() {
                         decoding="async"
                         style={{ color: "transparent" }}
                         src="/sites/tano/images/tano-81.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                   </span>
                   <span className="hp-cj-times tano-body-md">×</span>
@@ -2744,7 +2745,7 @@ export function ForCreatorsReplica() {
                       color: "transparent",
                     }}
                     src="/sites/tano/images/vase-glass.jpg"
-                  />
+                   loading="lazy"/>
                 </span>
                 <div className="hp-cj-scene">
                   <span className="hp-cj-product">
@@ -2762,7 +2763,7 @@ export function ForCreatorsReplica() {
                         color: "transparent",
                       }}
                       src="/sites/tano/images/tano-118.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-cj-sent">
                     <span className="tano-body-mono-xs">The Sunshine Bouquet</span>
@@ -2864,7 +2865,7 @@ export function ForCreatorsReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/extras/3e4f8b0078c8fd030b423aabdaadc6cd9f27dc9c-1224x1224.jpg"
-              />
+               loading="lazy"/>
             </div>
             <div className="hp-faq-card">
               <div className="hp-faq-tools">
@@ -2903,224 +2904,11 @@ export function ForCreatorsReplica() {
               <p aria-live="polite" className="wire-visually-hidden" />
               <div id="faq-panel">
                 <ul className="hp-faq-rows">
-                  <li className="hp-faq-row">
-                    <button
-                      aria-controls="faq.creators-more-than-one-brand-answer"
-                      aria-expanded="false"
-                      className="hp-faq-trigger tano-body-md"
-                      id="faq.creators-more-than-one-brand-question"
-                      type="button"
-                    >
-                      <span>Can I work with more than one brand?</span>
-                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
-                        <svg
-                          viewBox="0 0 14 14"
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <div
-                      aria-labelledby="faq.creators-more-than-one-brand-question"
-                      className="hp-faq-answer"
-                      data-open="false"
-                      id="faq.creators-more-than-one-brand-answer"
-                      inert
-                      role="region"
-                    >
-                      <div className="hp-faq-answer-clip">
-                        <p className="hp-faq-answer-text tano-body-md">
-                          Yes. Once you’re onboarded, you can be considered for opportunities across
-                          Tano’s brands wherever you’re a suitable fit, subject to each programme’s
-                          terms.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="hp-faq-row">
-                    <button
-                      aria-controls="faq.creators-what-can-i-earn-answer"
-                      aria-expanded="false"
-                      className="hp-faq-trigger tano-body-md"
-                      id="faq.creators-what-can-i-earn-question"
-                      type="button"
-                    >
-                      <span>What can I earn?</span>
-                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
-                        <svg
-                          viewBox="0 0 14 14"
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <div
-                      aria-labelledby="faq.creators-what-can-i-earn-question"
-                      className="hp-faq-answer"
-                      data-open="false"
-                      id="faq.creators-what-can-i-earn-answer"
-                      inert
-                      role="region"
-                    >
-                      <div className="hp-faq-answer-clip">
-                        <p className="hp-faq-answer-text tano-body-md">
-                          It depends on the programme. Opportunities can include gifted products,
-                          commission, milestone rewards, paid briefs and content licensing. We’ll
-                          explain the requirements and what you can earn before you take part. Some
-                          of our top-performing creators are earning thousands per month!
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="hp-faq-row">
-                    <button
-                      aria-controls="faq.creators-definitely-partnership-answer"
-                      aria-expanded="false"
-                      className="hp-faq-trigger tano-body-md"
-                      id="faq.creators-definitely-partnership-question"
-                      type="button"
-                    >
-                      <span>Will I definitely get a partnership?</span>
-                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
-                        <svg
-                          viewBox="0 0 14 14"
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <div
-                      aria-labelledby="faq.creators-definitely-partnership-question"
-                      className="hp-faq-answer"
-                      data-open="false"
-                      id="faq.creators-definitely-partnership-answer"
-                      inert
-                      role="region"
-                    >
-                      <div className="hp-faq-answer-clip">
-                        <p className="hp-faq-answer-text tano-body-md">
-                          Joining Tano allows us to match you with potentially suitable programmes.
-                          Invitations depend on brand fit, programme requirements and availability.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="hp-faq-row">
-                    <button
-                      aria-controls="faq.creators-content-in-an-ad-answer"
-                      aria-expanded="false"
-                      className="hp-faq-trigger tano-body-md"
-                      id="faq.creators-content-in-an-ad-question"
-                      type="button"
-                    >
-                      <span>What if a brand wants to use my content in an ad?</span>
-                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
-                        <svg
-                          viewBox="0 0 14 14"
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <div
-                      aria-labelledby="faq.creators-content-in-an-ad-question"
-                      className="hp-faq-answer"
-                      data-open="false"
-                      id="faq.creators-content-in-an-ad-answer"
-                      inert
-                      role="region"
-                    >
-                      <div className="hp-faq-answer-clip">
-                        <p className="hp-faq-answer-text tano-body-md">
-                          That’s a separate opportunity to agree together. Tano manages the
-                          permissions, fee and usage period with you before your content is used in
-                          paid advertising.
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="hp-faq-row">
-                    <button
-                      aria-controls="faq.creators-more-questions-answer"
-                      aria-expanded="false"
-                      className="hp-faq-trigger tano-body-md"
-                      id="faq.creators-more-questions-question"
-                      type="button"
-                    >
-                      <span>I have more questions. Who should I contact?</span>
-                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
-                        <svg
-                          viewBox="0 0 14 14"
-                          width="100%"
-                          height="100%"
-                          fill="none"
-                          aria-hidden="true"
-                          focusable="false"
-                        >
-                          <path
-                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
-                            fill="currentColor"
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                    <div
-                      aria-labelledby="faq.creators-more-questions-question"
-                      className="hp-faq-answer"
-                      data-open="false"
-                      id="faq.creators-more-questions-answer"
-                      inert
-                      role="region"
-                    >
-                      <div className="hp-faq-answer-clip">
-                        <p className="hp-faq-answer-text tano-body-md">
-                          Send us an email at hello@tano.ai
-                        </p>
-                      </div>
-                    </div>
-                  </li>
+                  <FaqRow id={"faq.creators-more-than-one-brand"} question={"Can I work with more than one brand?"} answer={"Yes. Once you’re onboarded, you can be considered for opportunities across Tano’s brands wherever you’re a suitable fit, subject to each programme’s terms."} />
+                  <FaqRow id={"faq.creators-what-can-i-earn"} question={"What can I earn?"} answer={"It depends on the programme. Opportunities can include gifted products, commission, milestone rewards, paid briefs and content licensing. We’ll explain the requirements and what you can earn before you take part. Some of our top-performing creators are earning thousands per month!"} />
+                  <FaqRow id={"faq.creators-definitely-partnership"} question={"Will I definitely get a partnership?"} answer={"Joining Tano allows us to match you with potentially suitable programmes. Invitations depend on brand fit, programme requirements and availability."} />
+                  <FaqRow id={"faq.creators-content-in-an-ad"} question={"What if a brand wants to use my content in an ad?"} answer={"That’s a separate opportunity to agree together. Tano manages the permissions, fee and usage period with you before your content is used in paid advertising."} />
+                  <FaqRow id={"faq.creators-more-questions"} question={"I have more questions. Who should I contact?"} answer={"Send us an email at hello@tano.ai"} />
                 </ul>
               </div>
             </div>
@@ -3153,7 +2941,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-116.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
             <span className="hp-cl-film" data-slot={1}>
@@ -3172,7 +2960,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-88.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
             <span className="hp-cl-film" data-slot={2}>
@@ -3191,7 +2979,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-105.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
             <span className="hp-cl-film" data-slot={3}>
@@ -3210,7 +2998,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-35.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
             <span className="hp-cl-film" data-slot={4}>
@@ -3229,7 +3017,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-114.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
             <span className="hp-cl-film" data-slot={5}>
@@ -3248,7 +3036,7 @@ export function ForCreatorsReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/images/tano-64.jpg"
-                />
+                 loading="lazy"/>
               </span>
             </span>
           </div>

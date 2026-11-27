@@ -400,7 +400,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
-                />
+                 loading="lazy"/>
                 <span aria-hidden="true" className="hp-brand-media-dim" />
                 <img
                   alt=""
@@ -412,7 +412,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                   className="hp-brand-media-mark"
                   style={{ color: "transparent" }}
                   src="/sites/tano/images/tano-9.png"
-                />
+                 loading="lazy"/>
               </div>
               <div
                 aria-labelledby="_R_1mlubpcnjb_-tab-0"
@@ -503,7 +503,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                         decoding="async"
                         style={{ color: "transparent" }}
                         src="/sites/tano/images/tano-50.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="hp-brand-who-name">
                       <span className="tano-body-md">Stephanie Terziyski</span>
@@ -554,7 +554,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                     className="hp-brand-tab-mark"
                     style={{ color: "transparent" }}
                     src="/sites/tano/images/tano-9.png"
-                  />
+                   loading="lazy"/>
                 </span>
               </button>
             </div>
@@ -597,7 +597,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                         color: "transparent",
                       }}
                       src="/sites/tano/images/tano-123.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-camp-gift-name">Wellness Journal</span>
                 </span>
@@ -670,7 +670,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                         decoding="async"
                         style={{ color: "transparent" }}
                         src="/sites/tano/images/tano-94.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="wire-lockup-who">
                       <span className="wire-lockup-handle">@reginafoster.us</span>
@@ -696,7 +696,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                           cy={0}
                           gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
                           gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum"
+                          id="tano-glyph-spectrum-guidesoutgrowninfluenceragencyreplica-1"
                           r={1}
                         >
                           <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
@@ -706,7 +706,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                       </defs>
                       <path
                         d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum)"
+                        fill="url(#tano-glyph-spectrum-guidesoutgrowninfluenceragencyreplica-1)"
                       />
                     </svg>
                   </span>
@@ -730,7 +730,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                           decoding="async"
                           style={{ color: "transparent" }}
                           src="/sites/tano/images/tano-94.jpg"
-                        />
+                         loading="lazy"/>
                       </span>
                     </span>
                   </span>
@@ -751,7 +751,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                           cy={0}
                           gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
                           gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum"
+                          id="tano-glyph-spectrum-guidesoutgrowninfluenceragencyreplica-2"
                           r={1}
                         >
                           <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
@@ -761,7 +761,7 @@ export function GuidesOutgrownInfluencerAgencyReplica() {
                       </defs>
                       <path
                         d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum)"
+                        fill="url(#tano-glyph-spectrum-guidesoutgrowninfluenceragencyreplica-2)"
                       />
                     </svg>
                   </span>

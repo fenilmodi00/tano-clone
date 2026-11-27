@@ -15,7 +15,6 @@
   },
   "sections": [
     {
-      "heading": "AI Content Analysis Framework",
       "variant": "playbook-gate",
       "blocks": [
         {
@@ -35,7 +34,8 @@
             }
           ]
         }
-      ]
+      ],
+      "eyebrow": "AI Content Analysis Framework"
     }
   ],
   "closing": {

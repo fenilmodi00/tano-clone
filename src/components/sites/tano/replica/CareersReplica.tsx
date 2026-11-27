@@ -435,7 +435,7 @@ export function CareersReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/team-colosseum.jpg"
-              />
+               loading="lazy"/>
             </div>
             <div
               className="hp-reveal hp-team-print"
@@ -458,7 +458,7 @@ export function CareersReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/team-dinner.jpg"
-              />
+               loading="lazy"/>
             </div>
             <div
               className="hp-reveal hp-team-print"
@@ -481,7 +481,7 @@ export function CareersReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/team-pizza-steps.jpg"
-              />
+               loading="lazy"/>
             </div>
             <div
               className="hp-reveal hp-team-print"
@@ -504,7 +504,7 @@ export function CareersReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/pasta.jpg"
-              />
+               loading="lazy"/>
             </div>
           </div>
         </div>

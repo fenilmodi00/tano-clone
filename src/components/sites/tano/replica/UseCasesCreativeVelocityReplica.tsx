@@ -40,7 +40,7 @@ export function UseCasesCreativeVelocityReplica() {
               <defs>
                 <linearGradient
                   gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum"
+                  id="hp-stat-spectrum-svg1"
                   x1={0}
                   x2={321}
                   y1={0}
@@ -54,7 +54,7 @@ export function UseCasesCreativeVelocityReplica() {
                 </linearGradient>
                 <linearGradient
                   gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-warm"
+                  id="hp-stat-spectrum-warm-svg2"
                   x1={0}
                   x2={321}
                   y1={0}
@@ -68,7 +68,7 @@ export function UseCasesCreativeVelocityReplica() {
                 </linearGradient>
                 <linearGradient
                   gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-up"
+                  id="hp-stat-spectrum-up-svg3"
                   x1={0}
                   x2={0}
                   y1={0}
@@ -79,7 +79,7 @@ export function UseCasesCreativeVelocityReplica() {
                 </linearGradient>
                 <linearGradient
                   gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-ring"
+                  id="hp-stat-spectrum-ring-svg4"
                   x1={0}
                   x2={0}
                   y1={20}
@@ -90,7 +90,7 @@ export function UseCasesCreativeVelocityReplica() {
                 </linearGradient>
                 <linearGradient
                   gradientUnits="userSpaceOnUse"
-                  id="hp-stat-falloff"
+                  id="hp-stat-falloff-svg5"
                   x1={0}
                   x2={0}
                   y1={10}
@@ -99,8 +99,8 @@ export function UseCasesCreativeVelocityReplica() {
                   <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
                   <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
                 </linearGradient>
-                <mask id="hp-stat-falloff-mask">
-                  <rect fill="url(#hp-stat-falloff)" height={117} width={321} x={0} y={0} />
+                <mask id="hp-stat-falloff-mask-svg6">
+                  <rect fill="url(#hp-stat-falloff-svg5)" height={117} width={321} x={0} y={0} />
                 </mask>
               </defs>
             </svg>
@@ -125,15 +125,15 @@ export function UseCasesCreativeVelocityReplica() {
                       <path
                         className="hp-stat-area"
                         d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                        fill="url(#hp-stat-spectrum)"
-                        mask="url(#hp-stat-falloff-mask)"
+                        fill="url(#hp-stat-spectrum-svg7)"
+                        mask="url(#hp-stat-falloff-mask-svg8)"
                       />
                       <path
                         className="hp-stat-line"
                         d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                         fill="none"
                         pathLength={1}
-                        stroke="url(#hp-stat-spectrum)"
+                        stroke="url(#hp-stat-spectrum-svg7)"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={3}
@@ -163,7 +163,7 @@ export function UseCasesCreativeVelocityReplica() {
                       preserveAspectRatio="xMinYMid meet"
                       viewBox="0 0 321 117"
                     >
-                      <g fill="url(#hp-stat-spectrum)">
+                      <g fill="url(#hp-stat-spectrum-svg9)">
                         <rect
                           className="hp-stat-bar"
                           height={89}
@@ -481,15 +481,15 @@ export function UseCasesCreativeVelocityReplica() {
                       <path
                         className="hp-stat-area"
                         d="M 8 99 L 74 77 L 158 63 L 242 56 L 266 36 L 313 5 L 313 105 L 8 105 Z"
-                        fill="url(#hp-stat-spectrum)"
-                        mask="url(#hp-stat-falloff-mask)"
+                        fill="url(#hp-stat-spectrum-svg10)"
+                        mask="url(#hp-stat-falloff-mask-svg11)"
                       />
                       <path
                         className="hp-stat-line"
                         d="M 8 99 L 74 77 L 158 63 L 242 56 L 266 36 L 313 5"
                         fill="none"
                         pathLength={1}
-                        stroke="url(#hp-stat-spectrum)"
+                        stroke="url(#hp-stat-spectrum-svg10)"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={3}
@@ -1510,7 +1510,7 @@ export function UseCasesCreativeVelocityReplica() {
                         color: "transparent",
                       }}
                       src="/sites/tano/images/print-bouquet-glass.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span
                     aria-hidden="true"
@@ -1532,7 +1532,7 @@ export function UseCasesCreativeVelocityReplica() {
                         color: "transparent",
                       }}
                       src="/sites/tano/images/print-letterbox-glass.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <div
                     className="hp-pp-scene"
@@ -1560,7 +1560,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-03-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-pp-creator-copy">
                               <span className="hp-pp-handle">@slowsundayhome</span>
@@ -1590,7 +1590,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-05.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-pp-creator-copy">
                               <span className="hp-pp-handle">@thepetalpost</span>
@@ -1620,7 +1620,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-08.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-pp-creator-copy">
                               <span className="hp-pp-handle">@mabelandmoss</span>
@@ -1649,7 +1649,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-17.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-pp-creator-copy">
                               <span className="hp-pp-handle">@citybreakcara</span>
@@ -1678,7 +1678,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-11-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-pp-creator-copy">
                               <span className="hp-pp-handle">@glowhaul</span>
@@ -1720,7 +1720,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-01.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1733,7 +1733,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-02.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1746,7 +1746,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-04.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1766,7 +1766,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-06.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1780,7 +1780,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-03-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1793,7 +1793,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-07-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1807,7 +1807,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-05.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1832,7 +1832,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-09.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1846,7 +1846,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-08.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1859,7 +1859,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-10.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1872,7 +1872,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-12.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                           </li>
                           <li className="hp-pp-field-row" data-offset="true">
@@ -1887,7 +1887,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-13.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1900,7 +1900,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-14-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1914,7 +1914,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-17.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1927,7 +1927,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-15-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1952,7 +1952,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-16.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1965,7 +1965,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-18-2.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -1978,7 +1978,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-19.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span
                               className="hp-pp-field-cell hp-pp-in"
@@ -2009,7 +2009,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 cy={0}
                                 gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
                                 gradientUnits="userSpaceOnUse"
-                                id="tano-glyph-spectrum"
+                                id="tano-glyph-spectrum-usecasescreativevelocityreplica-1"
                                 r={1}
                               >
                                 <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
@@ -2019,7 +2019,7 @@ export function UseCasesCreativeVelocityReplica() {
                             </defs>
                             <path
                               d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                              fill="url(#tano-glyph-spectrum)"
+                              fill="url(#tano-glyph-spectrum-usecasescreativevelocityreplica-1)"
                             />
                           </svg>
                           <span className="hp-pp-label-tano">Shortlisted</span>
@@ -2321,7 +2321,7 @@ export function UseCasesCreativeVelocityReplica() {
                             decoding="async"
                             style={{ color: "transparent" }}
                             src="/sites/tano/images/avatar-03.jpg"
-                          />
+                           loading="lazy"/>
                         </span>
                         <span className="wire-lockup-who">
                           <span className="wire-lockup-handle">@slowsundayhome</span>
@@ -2400,7 +2400,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-05.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-adloop-face">
                               <img
@@ -2410,7 +2410,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-08.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                             <span className="hp-adloop-face">
                               <img
@@ -2420,7 +2420,7 @@ export function UseCasesCreativeVelocityReplica() {
                                 decoding="async"
                                 style={{ color: "transparent" }}
                                 src="/sites/tano/images/avatar-12.jpg"
-                              />
+                               loading="lazy"/>
                             </span>
                           </span>
                           <span className="hp-adloop-soft">12 creators</span>
@@ -2669,7 +2669,7 @@ export function UseCasesCreativeVelocityReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/occasion-glass.jpg"
-              />
+               loading="lazy"/>
             </span>
             <div aria-hidden="true" className="hp-uc-grid-card">
               <span className="hp-uc-tile-label">Creators this week</span>
@@ -2683,7 +2683,7 @@ export function UseCasesCreativeVelocityReplica() {
                       decoding="async"
                       style={{ color: "transparent" }}
                       src="/sites/tano/images/jessebuck.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-uc-grid-who">
                     <span className="hp-uc-grid-handle tano-body-mono-xs">@jessebuck_</span>
@@ -2702,7 +2702,7 @@ export function UseCasesCreativeVelocityReplica() {
                       decoding="async"
                       style={{ color: "transparent" }}
                       src="/sites/tano/images/cherrrymyint.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-uc-grid-who">
                     <span className="hp-uc-grid-handle tano-body-mono-xs">@cherrrymyint</span>
@@ -2721,7 +2721,7 @@ export function UseCasesCreativeVelocityReplica() {
                       decoding="async"
                       style={{ color: "transparent" }}
                       src="/sites/tano/images/reginafoster.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-uc-grid-who">
                     <span className="hp-uc-grid-handle tano-body-mono-xs">@reginafoster.us</span>
@@ -2854,7 +2854,7 @@ export function UseCasesCreativeVelocityReplica() {
                   color: "transparent",
                 }}
                 src="/sites/tano/images/products-glass.jpg"
-              />
+               loading="lazy"/>
             </span>
             <div aria-hidden="true" className="hp-uc-licence-card">
               <span className="hp-uc-tile-label">Usage licences</span>
@@ -2876,7 +2876,7 @@ export function UseCasesCreativeVelocityReplica() {
                           color: "transparent",
                         }}
                         src="/sites/tano/images/papier.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="hp-uc-tile-stack">
                       <span className="hp-uc-licence-title tano-body-sm">Desk set-up</span>
@@ -2911,7 +2911,7 @@ export function UseCasesCreativeVelocityReplica() {
                           color: "transparent",
                         }}
                         src="/sites/tano/images/bloom-and-wild-2.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="hp-uc-tile-stack">
                       <span className="hp-uc-licence-title tano-body-sm">Bouquet unboxing</span>
@@ -2945,7 +2945,7 @@ export function UseCasesCreativeVelocityReplica() {
                           color: "transparent",
                         }}
                         src="/sites/tano/images/peachies.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="hp-uc-tile-stack">
                       <span className="hp-uc-licence-title tano-body-sm">Bath-time routine</span>
@@ -3025,7 +3025,7 @@ export function UseCasesCreativeVelocityReplica() {
                       color: "transparent",
                     }}
                     src="/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
-                  />
+                   loading="lazy"/>
                 </span>
                 <span className="hp-uc-tile" data-slot="case">
                   <span aria-hidden="true" className="hp-uc-tile-rule" />
@@ -3071,7 +3071,7 @@ export function UseCasesCreativeVelocityReplica() {
                         decoding="async"
                         style={{ color: "transparent" }}
                         src="/sites/tano/images/tano-30.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="hp-uc-tile-stack">
                       <span className="tano-body-sm">Yasmin MacDonnell</span>
@@ -3214,7 +3214,7 @@ export function UseCasesCreativeVelocityReplica() {
                     color: "transparent",
                   }}
                   src="/sites/tano/extras/1d409d97d28fbe2eb6df78b95f3c1452248f6b21-400x400.jpg"
-                />
+                 loading="lazy"/>
               </span>
               <div className="hp-track-cards">
                 <article className="hp-track-card" data-live="true">
@@ -3231,7 +3231,7 @@ export function UseCasesCreativeVelocityReplica() {
                             className="hp-tm-reel-poster"
                             style={{ color: "transparent" }}
                             src="/sites/tano/images/comp-vase-glass.jpg"
-                          />
+                           loading="lazy"/>
                           <span aria-hidden="true" className="hp-tm-play">
                             <svg
                               viewBox="0 0 14 14"
@@ -3358,7 +3358,7 @@ export function UseCasesCreativeVelocityReplica() {
             <defs>
               <linearGradient
                 gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum"
+                id="hp-stat-spectrum-svg12"
                 x1={0}
                 x2={321}
                 y1={0}
@@ -3372,7 +3372,7 @@ export function UseCasesCreativeVelocityReplica() {
               </linearGradient>
               <linearGradient
                 gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-warm"
+                id="hp-stat-spectrum-warm-svg13"
                 x1={0}
                 x2={321}
                 y1={0}
@@ -3386,7 +3386,7 @@ export function UseCasesCreativeVelocityReplica() {
               </linearGradient>
               <linearGradient
                 gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-up"
+                id="hp-stat-spectrum-up-svg14"
                 x1={0}
                 x2={0}
                 y1={0}
@@ -3397,7 +3397,7 @@ export function UseCasesCreativeVelocityReplica() {
               </linearGradient>
               <linearGradient
                 gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-ring"
+                id="hp-stat-spectrum-ring-svg15"
                 x1={0}
                 x2={0}
                 y1={20}
@@ -3408,7 +3408,7 @@ export function UseCasesCreativeVelocityReplica() {
               </linearGradient>
               <linearGradient
                 gradientUnits="userSpaceOnUse"
-                id="hp-stat-falloff"
+                id="hp-stat-falloff-svg16"
                 x1={0}
                 x2={0}
                 y1={10}
@@ -3417,8 +3417,8 @@ export function UseCasesCreativeVelocityReplica() {
                 <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
                 <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
               </linearGradient>
-              <mask id="hp-stat-falloff-mask">
-                <rect fill="url(#hp-stat-falloff)" height={117} width={321} x={0} y={0} />
+              <mask id="hp-stat-falloff-mask-svg17">
+                <rect fill="url(#hp-stat-falloff-svg16)" height={117} width={321} x={0} y={0} />
               </mask>
             </defs>
           </svg>
@@ -3438,7 +3438,7 @@ export function UseCasesCreativeVelocityReplica() {
                   preserveAspectRatio="xMinYMid meet"
                   viewBox="0 0 321 117"
                 >
-                  <g fill="url(#hp-stat-spectrum)">
+                  <g fill="url(#hp-stat-spectrum-svg18)">
                     <rect
                       className="hp-stat-bar"
                       height={5}
@@ -3766,7 +3766,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="28.87538820250189"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 1 }}
                   />
@@ -3774,7 +3774,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 2 }}
                   />
@@ -3782,7 +3782,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 3 }}
                   />
@@ -3790,7 +3790,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 4 }}
                   />
@@ -3798,7 +3798,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx={58}
                     cy={94}
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 5 }}
                   />
@@ -3806,7 +3806,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="36.83973091747097"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 6 }}
                   />
@@ -3814,7 +3814,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="23.761965413374476"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 7 }}
                   />
@@ -3822,7 +3822,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="23.76196541337447"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 8 }}
                   />
@@ -3830,7 +3830,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="36.83973091747096"
                     cy="28.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring)"
+                    fill="url(#hp-stat-spectrum-ring-svg19)"
                     r={9}
                     style={{ "--hp-stat-step": 9 }}
                   />
@@ -3861,15 +3861,15 @@ export function UseCasesCreativeVelocityReplica() {
                   <path
                     className="hp-stat-area"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                    fill="url(#hp-stat-spectrum)"
-                    mask="url(#hp-stat-falloff-mask)"
+                    fill="url(#hp-stat-spectrum-svg20)"
+                    mask="url(#hp-stat-falloff-mask-svg21)"
                   />
                   <path
                     className="hp-stat-line"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                     fill="none"
                     pathLength={1}
-                    stroke="url(#hp-stat-spectrum)"
+                    stroke="url(#hp-stat-spectrum-svg20)"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={3}
@@ -3925,7 +3925,7 @@ export function UseCasesCreativeVelocityReplica() {
                         color: "transparent",
                       }}
                       src="/sites/tano/images/tano-123.jpg"
-                    />
+                     loading="lazy"/>
                   </span>
                   <span className="hp-camp-gift-name">Wellness Journal</span>
                 </span>
@@ -3998,7 +3998,7 @@ export function UseCasesCreativeVelocityReplica() {
                         decoding="async"
                         style={{ color: "transparent" }}
                         src="/sites/tano/images/tano-94.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <span className="wire-lockup-who">
                       <span className="wire-lockup-handle">@reginafoster.us</span>
@@ -4024,7 +4024,7 @@ export function UseCasesCreativeVelocityReplica() {
                           cy={0}
                           gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
                           gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum"
+                          id="tano-glyph-spectrum-usecasescreativevelocityreplica-2"
                           r={1}
                         >
                           <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
@@ -4034,7 +4034,7 @@ export function UseCasesCreativeVelocityReplica() {
                       </defs>
                       <path
                         d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum)"
+                        fill="url(#tano-glyph-spectrum-usecasescreativevelocityreplica-2)"
                       />
                     </svg>
                   </span>
@@ -4058,7 +4058,7 @@ export function UseCasesCreativeVelocityReplica() {
                           decoding="async"
                           style={{ color: "transparent" }}
                           src="/sites/tano/images/tano-94.jpg"
-                        />
+                         loading="lazy"/>
                       </span>
                     </span>
                   </span>
@@ -4079,7 +4079,7 @@ export function UseCasesCreativeVelocityReplica() {
                           cy={0}
                           gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
                           gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum"
+                          id="tano-glyph-spectrum-usecasescreativevelocityreplica-3"
                           r={1}
                         >
                           <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
@@ -4089,7 +4089,7 @@ export function UseCasesCreativeVelocityReplica() {
                       </defs>
                       <path
                         d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum)"
+                        fill="url(#tano-glyph-spectrum-usecasescreativevelocityreplica-3)"
                       />
                     </svg>
                   </span>

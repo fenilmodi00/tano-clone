@@ -59,7 +59,8 @@ removed or restructured, and the remaining route-migration path.
 - **No JSON rewrite of all 44 bodies yet.** Per-route JSON covers 37–91% of the captured markup
   and misses 180 replica asset references, forms, some anchors and media hydration. Converting
   all pages without a parity project would silently drop content. The five playbooks proved the
-  template path at 0% static diff; the remaining families are staged below.
+  template path at 0% static diff and the four compare pages at 0.11%; the remaining families are
+  staged below.
 
 ## 3. Remaining route migration path
 
@@ -69,14 +70,14 @@ Source: route-family audit (JSON coverage, structural duplication, bands per rou
 | ------------------------------------------- | -----: | ------------: | -------- | -------------------------------------------------------------------- |
 | Playbooks                                   |      5 |        49–79% | **done** | `PlaybookPage` from JSON.                                            |
 | Guides                                      |     14 |        79–91% | next     | `GuidePage`: hero, prose/list/table blocks, FAQ, brands, closing.    |
-| Compare details                             |      4 |        83–87% | next     | `ComparePage`: hero, prose, comparison table, verdict, FAQ, closing. |
+| Compare details                             |      4 |        83–87% | **done** | `ComparePage`: hero, prose, comparison table, verdict, FAQ, closing. |
 | Career roles                                |      3 |        56–80% | medium   | `CareerRolePage`: role hero, prose sections, apply CTA.              |
 | Guide/compare/careers/news/playbook indexes |      6 |        70–79% | medium   | `IndexPage`: hero + card groups from page-level cards.               |
 | Privacy / news article                      |      2 |        78–86% | medium   | `LegalPage` / `ArticlePage`.                                         |
 | Home, use cases, case studies, for-creators |      9 |        37–67% | bespoke  | Keep captured bodies; extract section components only.               |
 | Talk-to-us                                  |      1 |            7% | bespoke  | Keep form-specific body.                                             |
 
-Recommended order: guides → compare → indexes → careers/news/legal → bespoke leaves. For each
+Recommended order: guides → indexes → careers/news/legal → bespoke leaves. For each
 family: render from JSON, run `node scripts/verify-all.mjs --routes <family> --widths 1568,390`,
 fix static bands above 0.5%, then delete the superseded replicas.
 
@@ -106,7 +107,7 @@ Candidates, in reuse order:
    title/description blocks to `page.tsx`.
 2. Any new internal link uses `next/link`; do not reintroduce a document-level click interceptor.
 3. Any new route must be added to the JSON set; `npm run content:check` validates the manifest.
-4. Generated files are format-ignored. Hand edits to the 39 captured bodies are expected; if a
+4. Generated files are format-ignored. Hand edits to the 35 captured bodies are expected; if a
    capture is regenerated, diff it before accepting.
 5. CSS changes go through the existing classes/tokens. If a new class is only added at runtime
    (Lenis, JS-built markup, inline SVG strings), put it in `src/styles/tano/runtime.css` so a

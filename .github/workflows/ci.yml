@@ -12,6 +12,8 @@ concurrency:
 
 env:
   NEXT_TELEMETRY_DISABLED: "1"
+  NEXT_PUBLIC_SITE_URL: http://127.0.0.1:3000
+  NEXT_PUBLIC_ALLOW_INDEXING: "false"
 
 jobs:
   quality:
@@ -36,11 +38,58 @@ jobs:
       - name: Format check
         run: npm run format:check
 
+      - name: Content manifest check
+        run: npm run content:check
+
       - name: Lint
         run: npm run lint
 
       - name: Type check
         run: npm run typecheck
 
+      - name: Build and assert static output
+        run: npm run build && npm run assert:static
+
+  runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
       - name: Build
         run: npm run build
+
+      - name: Start production server
+        run: |
+          npm run start > /tmp/next.log 2>&1 &
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:3000/ > /dev/null; then exit 0; fi
+            sleep 2
+          done
+          cat /tmp/next.log
+          exit 1
+
+      - name: Route visibility
+        run: npm run verify:visibility
+
+      - name: Internal links
+        run: npm run verify:links
+
+      - name: Route smoke
+        run: npm run verify:smoke

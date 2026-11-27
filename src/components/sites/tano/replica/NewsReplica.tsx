@@ -255,7 +255,7 @@ export function NewsReplica() {
                           color: "transparent",
                         }}
                         src="/sites/tano/extras/028bdd527688ad6e54c46eb4cf586effe86e4b05-1240x827.jpg"
-                      />
+                       loading="lazy"/>
                     </span>
                     <div className="wire-case-copy">
                       <p className="wire-resource-meta tano-body-mono-xs">

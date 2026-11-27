@@ -329,7 +329,8 @@ function measurePage(args) {
           if (animation.playState !== "running") continue;
           if (animation.transitionProperty === "opacity") return true;
           const frames = animation.effect?.getKeyframes?.() || [];
-          if (frames.some((frame) => frame.opacity !== undefined && frame.opacity !== null)) return true;
+          if (frames.some((frame) => frame.opacity !== undefined && frame.opacity !== null))
+            return true;
         }
       }
       node = node.parentElement;
@@ -493,10 +494,7 @@ function measurePage(args) {
           break;
         }
         const style = getComputedStyle(hit);
-        if (
-          element.closest(".wire-case-banners") &&
-          hit.closest(".wire-case-banners")
-        ) {
+        if (element.closest(".wire-case-banners") && hit.closest(".wire-case-banners")) {
           // The case-study banner deck is a deliberate stack; the next card
           // overlaps the previous one by design, not because of theme/reveal.
           hits.push({
@@ -742,7 +740,13 @@ function measurePage(args) {
   if (firstHeading) {
     const headingOpacity = textOpacity(firstHeadingElement, firstHeading);
     firstHeading.textOpacity = round(headingOpacity, 3);
-    if (firstHeading.inViewport && headingOpacity < 0.05 && !hasRunningOpacityAnimation(firstHeadingElement)) {
+    if (
+      firstHeading.inViewport &&
+      firstHeading.rect.top < innerHeight * 0.9 &&
+      firstHeading.rect.bottom > 1 &&
+      headingOpacity < 0.05 &&
+      !hasRunningOpacityAnimation(firstHeadingElement)
+    ) {
       violations.push({
         code: "heading-hidden",
         category: "hidden",
@@ -771,7 +775,11 @@ function measurePage(args) {
     if (text.length < 2) continue;
     const rect = element.getBoundingClientRect();
     if (rect.width < 4 || rect.height < 4) continue;
-    if (rect.bottom <= 1 || rect.top >= innerHeight - 1) continue;
+    // The reveal observer uses rootMargin 0 0 -5% 0. An element whose top is
+    // below 90% of the viewport is still outside that root (or is a sliver at
+    // the bottom edge) and is expected to be unrevealed at this scroll state;
+    // it is checked at the next state instead.
+    if (rect.bottom <= 1 || rect.top >= innerHeight * 0.9) continue;
     const style = getComputedStyle(element);
     if (style.display === "none" || style.visibility === "hidden") continue;
     if (element.closest(".wire-visually-hidden")) continue;
@@ -780,7 +788,11 @@ function measurePage(args) {
     // A hidden list item is the container that matters; do not repeat every
     // paragraph inside it as a separate violation.
     let hiddenAncestor = null;
-    for (let node = element.parentElement; node && node !== document.body; node = node.parentElement) {
+    for (
+      let node = element.parentElement;
+      node && node !== document.body;
+      node = node.parentElement
+    ) {
       if (node.tagName === "LI" || node.classList.contains("wire-button-row")) {
         if (effectiveOpacity(node).value < 0.05) {
           hiddenAncestor = node;

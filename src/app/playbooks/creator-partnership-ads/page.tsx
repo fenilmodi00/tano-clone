@@ -1,9 +1,9 @@
 import pageData from "@/content/tano/pages/playbooks-creator-partnership-ads.json";
+import { PlaybookPage } from "@/components/sites/tano/pages/playbook-page";
 import { buildPageMetadata } from "@/lib/metadata";
-import { PlaybooksCreatorPartnershipAdsReplica } from "../../../components/sites/tano/replica/PlaybooksCreatorPartnershipAdsReplica";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <PlaybooksCreatorPartnershipAdsReplica />;
+  return <PlaybookPage page={pageData} />;
 }

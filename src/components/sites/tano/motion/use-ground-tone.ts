@@ -1,6 +1,6 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { clamp, lerp, onScrollRaf, prefersReducedMotion } from "@/lib/tano/motion";
+import { clamp, onScrollRaf, prefersReducedMotion } from "@/lib/tano/motion";
 
 /**
  * Source GroundShift (`0ef8lriq_goox.js:63198`).
@@ -89,8 +89,6 @@ function cubicBezier(x1: number, y1: number, x2: number, y2: number): Easing {
   };
 }
 
-const easeGround = cubicBezier(0.45, 0, 0.55, 1);
-
 function readNumber(element: HTMLElement, property: string, fallback: number): number {
   const raw = window.getComputedStyle(element).getPropertyValue(property).trim();
   if (!raw) return fallback;
@@ -144,7 +142,6 @@ export function useGroundTone(): (() => void) | void {
     const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     let bands = collectBands();
-    let groundValue = clamp(readNumber(html, "--ground-t", 1));
     let inkValue = clamp(readNumber(html, "--ink-t", 1));
     let committed: GroundTone = inkValue >= 0.5 ? "dark" : "light";
     let resolvedDark: boolean | null = null;
@@ -230,7 +227,6 @@ export function useGroundTone(): (() => void) | void {
       stopFrame();
       stopVeil();
       const target = tone === "dark" ? 1 : 0;
-      groundValue = target;
       inkValue = target;
       writeValues(target, target);
       commitTone(tone);
@@ -290,8 +286,6 @@ export function useGroundTone(): (() => void) | void {
       if (veil) veil.dataset.tone = next;
       animateVeil(from, 0.5, VEIL_IN_EASE, duration, () => {
         if (!reducedQuery.matches) startSwap();
-
-        groundValue = target;
         inkValue = target;
         writeValues(target, target);
         commitTone(next);

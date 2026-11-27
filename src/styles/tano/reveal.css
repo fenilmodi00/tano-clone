@@ -1142,3 +1142,79 @@
     animation: none;
   }
 }
+
+/* Progressive enhancement: without JavaScript the reveal observer never runs,
+   so show the authored content instead of leaving main at opacity 0. */
+@media (scripting: none) {
+  .rv-scope {
+    --rv-y: 0px;
+  }
+
+  .rv-scope
+    main
+    :is(
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      li,
+      blockquote,
+      figure,
+      img,
+      picture,
+      video,
+      table,
+      hr,
+      details,
+      form,
+      label,
+      .hp-asset,
+      .wire-media,
+      .hp-band-actions,
+      .hp-action,
+      .wire-button,
+      .tano-button,
+      .wire-case-mark,
+      .wire-case-stat,
+      .wire-case-card,
+      .gd-stage,
+      .gd-frame,
+      .gd-card,
+      .gd-verdict,
+      .gd-code,
+      .gd-spec,
+      .gd-band-actions,
+      .gd-index-link,
+      .gd-pager-link
+    ),
+  .rv-scope
+    footer
+    :is(
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      li,
+      blockquote,
+      figure,
+      img,
+      picture,
+      video,
+      table,
+      hr,
+      details,
+      form,
+      label,
+      .hp-asset,
+      .wire-media
+    ),
+  .rv-scope .rv-word {
+    opacity: 1 !important;
+  }
+}

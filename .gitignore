@@ -69,3 +69,12 @@ docs/coordination/**/*.webp
 
 # Local archive of unreferenced capture assets (not deployed).
 .archive/
+
+# Evidence JSON that is regenerable; keep the small regeneration/baseline set.
+docs/research/**/*.json
+!docs/research/tano/routes.json
+!docs/research/tano/asset-map.json
+!docs/research/**/page.json
+docs/verify/**/*.json
+!docs/verify/client-nav/baseline.json
+docs/verify/theme/

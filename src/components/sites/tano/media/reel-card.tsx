@@ -55,6 +55,7 @@ export function ReelCard({
         <img
           alt=""
           className="wire-reel-poster"
+          loading="lazy"
           decoding="async"
           draggable="false"
           src={poster}
@@ -94,6 +95,7 @@ export function ReelCard({
                   alt=""
                   decoding="async"
                   draggable="false"
+                  loading="lazy"
                   src={avatar}
                   style={{
                     position: "absolute",

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef } from "react";
 
 const COLUMNS = [
   {
@@ -69,6 +69,8 @@ const COLUMNS = [
 
 export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
   const ref = useRef<HTMLElement>(null);
+  const markId = useId().replaceAll(":", "");
+  const glyph = glyphSvg.replaceAll("tano-glyph-spectrum", `tano-glyph-spectrum-${markId}`);
 
   useEffect(() => {
     const footer = ref.current;
@@ -112,7 +114,7 @@ export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
           <span
             aria-hidden="true"
             className="wire-footer-roll"
-            dangerouslySetInnerHTML={{ __html: glyphSvg }}
+            dangerouslySetInnerHTML={{ __html: glyph }}
           />
         </Link>
         <div className="wire-footer-top">
