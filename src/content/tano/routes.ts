@@ -296,7 +296,7 @@ export const ROUTES = [
     path: "/playbooks",
     slug: "playbooks",
     family: "playbooks-index",
-    title: "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    title: "Free creator marketing playbooks and AI frameworks | Tano",
     description:
       "Free playbooks for brands running creator programmes: finding the creators who drive revenue, seeding and affiliate, and rebriefing creators for paid ads.",
   },
@@ -304,7 +304,7 @@ export const ROUTES = [
     path: "/playbooks/content-analysis-framework",
     slug: "playbooks-content-analysis-framework",
     family: "playbook",
-    title: "Free AI Content Analysis Framework | Tano | Tano",
+    title: "Free AI Content Analysis Framework | Tano",
     description:
       "Use Claude Skills and Gemini to analyse your best-performing content in under an hour. Free AI Content Analysis Framework from Tano.",
   },
@@ -312,7 +312,7 @@ export const ROUTES = [
     path: "/playbooks/creator-discovery",
     slug: "playbooks-creator-discovery",
     family: "playbook",
-    title: "Free Creator Discovery Guide | Tano | Tano",
+    title: "Free Creator Discovery Guide | Tano",
     description:
       "Find the 3–5 creators who drive 80% of revenue. A free guide from Tano with a creator tiering framework, a sourcing checklist and a Bloom & Wild case study.",
   },
@@ -320,7 +320,7 @@ export const ROUTES = [
     path: "/playbooks/creator-partnership-ads",
     slug: "playbooks-creator-partnership-ads",
     family: "playbook",
-    title: "Free Creator Partnership Ads Playbook | Tano | Tano",
+    title: "Free Creator Partnership Ads Playbook | Tano",
     description:
       "The complete guide to creator partnership ads on Meta: choosing creators, briefing, pricing, reporting and timelines, plus a Bloom & Wild case study.",
   },
@@ -328,7 +328,7 @@ export const ROUTES = [
     path: "/playbooks/rebriefing",
     slug: "playbooks-rebriefing",
     family: "playbook",
-    title: "Free Rebriefing Playbook | Tano | Tano",
+    title: "Free Rebriefing Playbook | Tano",
     description:
       "How to turn your best organic creators into a high-converting paid ads engine — without cold outreach, guesswork, or wasted spend. Free from Tano.",
   },
@@ -336,7 +336,7 @@ export const ROUTES = [
     path: "/playbooks/self-funding-seeding-affiliate",
     slug: "playbooks-self-funding-seeding-affiliate",
     family: "playbook",
-    title: "Free Seeding → Affiliate Playbook | Tano | Tano",
+    title: "Free Seeding → Affiliate Playbook | Tano",
     description:
       "How to build a creator programme that pays for itself — from gifting to affiliates to whitelisted ads. Free from Tano.",
   },
@@ -376,7 +376,7 @@ export const ROUTES = [
     path: "/webinars",
     slug: "webinars",
     family: "webinars",
-    title: "Webinars: lessons from creator programme operators | Tano | Tano",
+    title: "Webinars: lessons from creator programme operators | Tano",
     description:
       "Conversations with the marketers and founders building the most profitable creator programmes in consumer, including how Runna's ambassador team scaled.",
   },

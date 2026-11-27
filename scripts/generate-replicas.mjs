@@ -35,7 +35,8 @@ for (const [k, v] of Object.entries(MAP)) {
 function localize(url) {
   if (!url) return null;
   const u = url.trim().replace(/&amp;/g, "&");
-  if (u.startsWith("data:") || u.startsWith("/sites/tano/") || u.startsWith("/brand-mark/")) return u;
+  if (u.startsWith("data:") || u.startsWith("/sites/tano/") || u.startsWith("/brand-mark/"))
+    return u;
   if (MAP[u]) return MAP[u];
   if (u.startsWith("/") && MAP[ORIGIN + u]) return MAP[ORIGIN + u];
   if (u.includes("/_next/image")) {
@@ -71,9 +72,7 @@ function camelStyleKeys(jsx) {
   // htmltojsx rewrites CSS custom properties (`--reel-count`) into `-reelCount`.
   // Restore every leading-dash style key to a quoted custom property.
   jsx = jsx.replace(/([{,]\s*)'?(-[a-zA-Z][A-Za-z0-9]*)'?\s*:/g, (_m, pre, key) => {
-    const kebab = key
-      .slice(1)
-      .replace(/[A-Z]/g, (c) => "-" + c.toLowerCase());
+    const kebab = key.slice(1).replace(/[A-Z]/g, (c) => "-" + c.toLowerCase());
     return `${pre}'--${kebab}':`;
   });
   if (process.env.DEBUG_STYLE) console.log("AFTER", jsx.slice(jsx.indexOf("style={{")));
@@ -113,10 +112,13 @@ function cleanHtml(html) {
     if (!style.includes("url(")) return;
     $el.attr(
       "style",
-      style.replace(/(\/_next\/image\?[^"'\s)]+|https:\/\/cdn\.sanity\.io\/[^"'\s)]+)/g, (match) => {
-        const local = localize(match.replace(/&amp;/g, "&"));
-        return local || match;
-      }),
+      style.replace(
+        /(\/_next\/image\?[^"'\s)]+|https:\/\/cdn\.sanity\.io\/[^"'\s)]+)/g,
+        (match) => {
+          const local = localize(match.replace(/&amp;/g, "&"));
+          return local || match;
+        },
+      ),
     );
   });
   $("option").each((_, el) => {
@@ -232,16 +234,6 @@ ${jsx}
     made.push({ route, name, bytes: out.length });
     console.log(String(out.length).padStart(7), route, "->", name);
   }
-  fs.writeFileSync(
-    path.join(OUT, "registry.ts"),
-    `import type { ComponentType } from "react";\n\n` +
-      made
-        .map((m) => `import { ${m.name} } from "./${m.name}";`)
-        .join("\n") +
-      `\n\nexport const replicas: Record<string, ComponentType> = {\n` +
-      made.map((m) => `  ${JSON.stringify(m.route)}: ${m.name},`).join("\n") +
-      `\n};\n`,
-  );
   console.log("generated", made.length);
 }
 

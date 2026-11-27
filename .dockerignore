@@ -15,9 +15,8 @@ dist
 .gitignore
 
 # Environment files (pass via docker-compose env_file or runtime env vars)
-.env
-.env.local
-.env.*.local
+.env*
+!.env.example
 
 # Editor / OS
 .vscode
@@ -49,3 +48,6 @@ docker-compose.yml
 README.md
 CHANGELOG.md
 LICENSE
+
+# Local archive
+.archive

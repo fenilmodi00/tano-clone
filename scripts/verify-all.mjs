@@ -47,7 +47,8 @@ function cell(result) {
   if (!result.diff) return "ERR";
   const base = `${result.diff.staticPct?.toFixed(2) ?? "n/a"} / ${result.diff.overallPct?.toFixed(2) ?? "n/a"}`;
   const extras = [];
-  if (result.diff.heightDelta) extras.push(`Δh${result.diff.heightDelta > 0 ? "+" : ""}${result.diff.heightDelta}`);
+  if (result.diff.heightDelta)
+    extras.push(`Δh${result.diff.heightDelta > 0 ? "+" : ""}${result.diff.heightDelta}`);
   if (result.missingImages && result.missingImages.local > result.missingImages.source) {
     extras.push(`m${result.missingImages.local}`);
   }
@@ -131,10 +132,7 @@ function geometryRows(results) {
       sectionDelta: result.geometry?.sectionCount?.delta ?? 0,
       maxShift: result.geometry?.maxSectionShiftPx ?? 0,
     }))
-    .sort(
-      (a, b) =>
-        Math.abs(b.heightDelta) + b.maxShift - (Math.abs(a.heightDelta) + a.maxShift),
-    );
+    .sort((a, b) => Math.abs(b.heightDelta) + b.maxShift - (Math.abs(a.heightDelta) + a.maxShift));
 }
 
 async function buildReport({ results, routes, widths, outDir }) {
@@ -210,8 +208,12 @@ async function buildReport({ results, routes, widths, outDir }) {
   lines.push("");
 
   const measured = flattenResults(results);
-  const staticValues = measured.map((result) => result.diff.staticPct).filter((value) => value != null);
-  const overallValues = measured.map((result) => result.diff.overallPct).filter((value) => value != null);
+  const staticValues = measured
+    .map((result) => result.diff.staticPct)
+    .filter((value) => value != null);
+  const overallValues = measured
+    .map((result) => result.diff.overallPct)
+    .filter((value) => value != null);
   const median = (values) => {
     if (!values.length) return null;
     const sorted = [...values].sort((a, b) => a - b);
@@ -237,8 +239,14 @@ async function buildReport({ results, routes, widths, outDir }) {
   lines.push(
     `| Routes with more local missing images | ${new Set(missingImageRows(results).map((row) => row.route)).size} |`,
   );
-  const missingLocal = measured.reduce((sum, result) => sum + (result.missingImages?.local ?? 0), 0);
-  const missingSource = measured.reduce((sum, result) => sum + (result.missingImages?.source ?? 0), 0);
+  const missingLocal = measured.reduce(
+    (sum, result) => sum + (result.missingImages?.local ?? 0),
+    0,
+  );
+  const missingSource = measured.reduce(
+    (sum, result) => sum + (result.missingImages?.source ?? 0),
+    0,
+  );
   lines.push(`| Missing images (local) | ${missingLocal} |`);
   lines.push(`| Missing images (source) | ${missingSource} |`);
   lines.push("");
@@ -433,7 +441,9 @@ async function writeSummary({ results, routes, widths, outDir }) {
       missingLocal: result.missingImages?.local ?? null,
       sectionDelta: result.geometry?.sectionCount?.delta ?? null,
       maxSectionShiftPx: result.geometry?.maxSectionShiftPx ?? null,
-      error: result.diff ? null : result.source?.error ?? result.local?.error ?? result.error ?? "capture failed",
+      error: result.diff
+        ? null
+        : (result.source?.error ?? result.local?.error ?? result.error ?? "capture failed"),
       artifacts: result.artifacts ?? {},
       worstBands: result.diff?.worstBands ?? [],
     })),
@@ -469,7 +479,11 @@ function parseArgs(argv) {
       return argv[i];
     };
     if (arg === "--widths") options.widths = next().split(",").map(Number);
-    else if (arg === "--routes") options.routes = next().split(",").map((route) => route.trim()).filter(Boolean);
+    else if (arg === "--routes")
+      options.routes = next()
+        .split(",")
+        .map((route) => route.trim())
+        .filter(Boolean);
     else if (arg === "--out") options.outDir = next();
     else if (arg === "--concurrency") options.concurrency = Math.max(1, Number(next()));
     else if (arg === "--resume") options.resume = true;

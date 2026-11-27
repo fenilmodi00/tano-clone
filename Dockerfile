@@ -37,6 +37,14 @@ RUN --mount=type=cache,target=/root/.npm \
 
 FROM node:${NODE_VERSION} AS builder
 
+# NEXT_PUBLIC_* values are inlined at build time, so they must exist before
+# `npm run build`, not only in the runtime environment.
+ARG NEXT_PUBLIC_SITE_URL=http://localhost:3000
+ARG NEXT_PUBLIC_ALLOW_INDEXING=false
+ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+ENV NEXT_PUBLIC_ALLOW_INDEXING=$NEXT_PUBLIC_ALLOW_INDEXING
+ENV NEXT_TELEMETRY_DISABLED=1
+
 # Set working directory
 WORKDIR /app
 
@@ -80,6 +88,7 @@ WORKDIR /app
 
 # Set production environment variables
 ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 

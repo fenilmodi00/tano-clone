@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { preload } from "react-dom";
 import "./globals.css";
 import { SiteHeader } from "@/components/sites/tano/shell/site-header";
 import { SiteFooter } from "@/components/sites/tano/shell/site-footer";

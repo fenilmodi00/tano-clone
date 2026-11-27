@@ -44,7 +44,9 @@ import {
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const DEFAULT_OUT = "docs/verify";
 const DEFAULT_WINDOW = 400;
-const DEFAULT_OFFSETS = [0, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500];
+const DEFAULT_OFFSETS = [
+  0, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500,
+];
 const GROUND_OFFSETS = [0, 150, 350, 600, 900];
 
 const SCENES = {
@@ -111,7 +113,11 @@ async function preparePageInContext(context, { side, width, route, timeout }) {
   });
   page.on("response", (res) => {
     if (res.status() >= 400) {
-      badResponses.push({ status: res.status(), url: res.url().slice(0, 200), type: res.request().resourceType() });
+      badResponses.push({
+        status: res.status(),
+        url: res.url().slice(0, 200),
+        type: res.request().resourceType(),
+      });
     }
   });
   const url = (side === "source" ? SOURCE_ORIGIN : LOCAL_ORIGIN) + route;
@@ -170,9 +176,15 @@ function readMarkersInPage(scene) {
 
   if (scene === "hero-campaign") {
     const campaign =
-      document.querySelector('.hp-camp-track-button[aria-current="true"]')?.getAttribute("aria-label") ?? null;
+      document
+        .querySelector('.hp-camp-track-button[aria-current="true"]')
+        ?.getAttribute("aria-label") ?? null;
     const brand = campaign
-      ? campaign.replace(/^Show the\s+/, "").replace(/\s+campaign$/, "").trim().toLowerCase()
+      ? campaign
+          .replace(/^Show the\s+/, "")
+          .replace(/\s+campaign$/, "")
+          .trim()
+          .toLowerCase()
       : null;
     const scenes = [...document.querySelectorAll(".hp-camp-scene")].map((el) => ({
       opacity: opacity(el),
@@ -304,7 +316,13 @@ async function clipFor(page, anchor) {
       const y = Math.max(0, Math.floor(rect.top));
       const width = Math.min(window.innerWidth - x, Math.floor(rect.right) - x);
       const height = Math.min(window.innerHeight - y, Math.floor(rect.bottom) - y);
-      return { x, y, width, height, rect: { top: Math.round(rect.top), height: Math.round(rect.height) } };
+      return {
+        x,
+        y,
+        width,
+        height,
+        rect: { top: Math.round(rect.top), height: Math.round(rect.height) },
+      };
     },
     { selector: anchor },
   );
@@ -317,7 +335,10 @@ async function parkAndEnter(page, scene) {
     const info = await groundInfo(page);
     if (!info.boundary) throw new Error("No [data-ground] tone boundary found");
     const park = Math.max(0, Math.min(maxScroll, info.boundary.top - VIEWPORT_HEIGHT - 400));
-    const target = Math.max(0, Math.min(maxScroll, info.boundary.top - VIEWPORT_HEIGHT * 0.45 + 120));
+    const target = Math.max(
+      0,
+      Math.min(maxScroll, info.boundary.top - VIEWPORT_HEIGHT * 0.45 + 120),
+    );
     await scrollTo(page, park);
     await sleep(950);
     const before = await readMarkers(page, scene);
@@ -355,8 +376,9 @@ async function parkAndEnter(page, scene) {
       page
         .evaluate(
           () =>
-            document.querySelector('.hp-camp-track-button[aria-current="true"]')?.getAttribute("aria-label") ??
-            null,
+            document
+              .querySelector('.hp-camp-track-button[aria-current="true"]')
+              ?.getAttribute("aria-label") ?? null,
         )
         .catch(() => null);
     const startLabel = await label();
@@ -404,7 +426,10 @@ async function captureFrames(page, { scene, clip, offsets, keepFrames, frameDir,
     });
     if (keepFrames && frameDir) {
       await fs.mkdir(frameDir, { recursive: true });
-      await fs.writeFile(path.join(frameDir, `${side}-${String(targetMs).padStart(5, "0")}.png`), png);
+      await fs.writeFile(
+        path.join(frameDir, `${side}-${String(targetMs).padStart(5, "0")}.png`),
+        png,
+      );
     }
   }
   return frames;
@@ -468,7 +493,10 @@ function signalsFor(scene, frames) {
     };
   }
   if (scene === "experiments") {
-    const roundChange = firstFrame(frames, (frame) => frame.markers.activeChip !== first.activeChip);
+    const roundChange = firstFrame(
+      frames,
+      (frame) => frame.markers.activeChip !== first.activeChip,
+    );
     const cacChange = firstFrame(frames, (frame) => frame.markers.cac !== first.cac);
     return {
       roundChangeMs: roundChange?.elapsedMs ?? null,
@@ -742,7 +770,11 @@ async function runScene(browser, { scene, route, width, outDir, windowMs, keepFr
       addDivergence(signal, sourceSignals[signal], localSignals[signal]);
     }
     if (sourceSignals.speed && localSignals.speed) {
-      addDivergence("marqueeSpeedPxPerSec", sourceSignals.speed.pxPerSec, localSignals.speed.pxPerSec);
+      addDivergence(
+        "marqueeSpeedPxPerSec",
+        sourceSignals.speed.pxPerSec,
+        localSignals.speed.pxPerSec,
+      );
     }
 
     const artifacts = {};
@@ -939,7 +971,9 @@ async function main() {
         summaries.push(result);
         if (!options.quiet) {
           if (result.error) {
-            console.log(`${scene.padEnd(16)} ${String(width).padStart(4)}  ERROR ${result.error.split("\n")[0]}`);
+            console.log(
+              `${scene.padEnd(16)} ${String(width).padStart(4)}  ERROR ${result.error.split("\n")[0]}`,
+            );
           } else {
             console.log(
               [
@@ -967,7 +1001,10 @@ async function main() {
     existing = [];
   }
   const merged = new Map(
-    (Array.isArray(existing) ? existing : []).map((entry) => [`${entry.scene}:${entry.width}`, entry]),
+    (Array.isArray(existing) ? existing : []).map((entry) => [
+      `${entry.scene}:${entry.width}`,
+      entry,
+    ]),
   );
   for (const result of summaries) {
     merged.set(`${result.scene}:${result.width}`, {

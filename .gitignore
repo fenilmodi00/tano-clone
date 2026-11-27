@@ -47,3 +47,25 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# Evidence captures and generated verification artifacts are local-only.
+docs/research/**/*.png
+docs/research/**/*.jpg
+docs/research/**/*.jpeg
+docs/research/**/*.webp
+docs/verify/**/*.png
+docs/verify/**/*.jpg
+docs/verify/**/*.jpeg
+docs/verify/**/*.webp
+docs/coordination/**/*.png
+docs/coordination/**/*.jpg
+docs/coordination/**/*.jpeg
+docs/coordination/**/*.webp
+.artifacts/
+
+# Environment files (keep the documented example).
+.env*
+!.env.example
+
+# Local archive of unreferenced capture assets (not deployed).
+.archive/

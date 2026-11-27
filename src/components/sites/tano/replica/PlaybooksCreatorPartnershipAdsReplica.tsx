@@ -1,5 +1,4 @@
 import { TanoButtonLink, TanoButton } from "@/components/sites/tano/ui/tano-button";
-import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function PlaybooksCreatorPartnershipAdsReplica() {

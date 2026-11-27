@@ -6,6 +6,12 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   { rules: { "@next/next/no-img-element": "off" } },
+  {
+    // Captured marketing copy legitimately contains apostrophes and quotes;
+    // escaping them would change the rendered text.
+    files: ["src/components/sites/tano/replica/**/*.tsx"],
+    rules: { "react/no-unescaped-entities": "off" },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
@@ -13,10 +19,6 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Generated from the frozen source capture; regenerate with
-    // scripts/generate-replicas.mjs instead of editing these files.
-    "src/components/sites/tano/replica/**",
-    "src/content/tano/**",
     "docs/**",
     "public/**",
   ]),

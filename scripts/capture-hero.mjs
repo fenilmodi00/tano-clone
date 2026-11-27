@@ -45,11 +45,16 @@ for (const [key, value] of Object.entries(map)) {
   }
 }
 
-const localDirs = ["public/sites/tano/extras", "public/sites/tano/images", "public/sites/tano/video"];
+const localDirs = [
+  "public/sites/tano/extras",
+  "public/sites/tano/images",
+  "public/sites/tano/video",
+];
 function findLocalByBase(base) {
   for (const dir of localDirs) {
     const candidate = path.join(dir, base);
-    if (fs.existsSync(candidate)) return "/" + path.relative("public", candidate).replace(/\\/g, "/");
+    if (fs.existsSync(candidate))
+      return "/" + path.relative("public", candidate).replace(/\\/g, "/");
   }
   return null;
 }
@@ -132,7 +137,8 @@ const EXTRACT = () => {
     handle: text(camp.querySelector(".hp-camp-field-foot .wire-lockup-handle")),
     profileAvatar: src(camp.querySelector(".hp-camp-field-foot .wire-lockup-ring img")),
     chatAvatar: src(camp.querySelector(".hp-camp-turn-face .wire-lockup-ring img")),
-    chatterLabel: camp.querySelector(".hp-camp-turn-face .wire-lockup")?.getAttribute("aria-label") || "",
+    chatterLabel:
+      camp.querySelector(".hp-camp-turn-face .wire-lockup")?.getAttribute("aria-label") || "",
     brand: camp.querySelector(".hp-camp-logo img")?.getAttribute("alt") || "",
     logo: src(camp.querySelector(".hp-camp-logo img")),
     product: text(camp.querySelector(".hp-camp-gift-name")),
@@ -155,7 +161,9 @@ const EXTRACT = () => {
       targets: [...camp.querySelectorAll(".hp-camp-target .hp-camp-mono")].map(text),
       scores: [...camp.querySelectorAll(".hp-camp-score-row")].map((row) => ({
         label: text(row.querySelector(".hp-camp-score-label")),
-        share: Number.parseFloat(row.querySelector(".hp-camp-bar")?.style.getPropertyValue("--share") || "0"),
+        share: Number.parseFloat(
+          row.querySelector(".hp-camp-bar")?.style.getPropertyValue("--share") || "0",
+        ),
         win: row.dataset.win === "true",
       })),
       chat: [...camp.querySelectorAll(".hp-camp-turn")].map((turn) => ({
@@ -201,7 +209,9 @@ while (seen.size < 4 && Date.now() < deadline) {
     if (snapshot.live !== live) continue;
     seen.add(live);
     reels[live] = snapshot;
-    console.log(`captured reel ${live}: ${snapshot.handle} / ${snapshot.brand} / ${snapshot.product}`);
+    console.log(
+      `captured reel ${live}: ${snapshot.handle} / ${snapshot.brand} / ${snapshot.product}`,
+    );
   }
   await page.waitForTimeout(180);
 }
@@ -214,7 +224,8 @@ if (reels.length !== 4 || reels.some((reel) => !reel)) {
 
 for (const key of ["handle", "profileAvatar", "video", "poster", "brand", "product"]) {
   const values = reels.map((reel) => reel[key]);
-  if (new Set(values).size !== 4) throw new Error(`${key} is not distinct across the four reels: ${values.join(", ")}`);
+  if (new Set(values).size !== 4)
+    throw new Error(`${key} is not distinct across the four reels: ${values.join(", ")}`);
 }
 for (const reel of reels) {
   if (!reel.chatAvatar) throw new Error(`${reel.handle}: missing chat avatar`);
@@ -305,13 +316,19 @@ for (const record of records) {
   lines.push(`    trackLabel: ${q(record.trackLabel)},`);
   lines.push(`    handle: ${q(record.handle)},`);
   lines.push(`    avatar: ${q(record.avatar)},`);
-  lines.push(`    brand: { name: ${q(record.brand.name)}, logo: ${q(record.brand.logo)}, backdrop: ${q(record.brand.backdrop)} },`);
-  lines.push(`    product: { name: ${q(record.product.name)}, image: ${q(record.product.image)}, tint: ${q(record.product.tint)} },`);
+  lines.push(
+    `    brand: { name: ${q(record.brand.name)}, logo: ${q(record.brand.logo)}, backdrop: ${q(record.brand.backdrop)} },`,
+  );
+  lines.push(
+    `    product: { name: ${q(record.product.name)}, image: ${q(record.product.image)}, tint: ${q(record.product.tint)} },`,
+  );
   lines.push(`    clip: { src: ${q(record.clip.src)}, poster: ${q(record.clip.poster)} },`);
   lines.push("    cards: {");
   lines.push(`      chips: ${q(record.cards.chips)},`);
   lines.push(`      targets: ${q(record.cards.targets)},`);
-  lines.push(`      library: { match: ${record.cards.library.match}, rows: ${q(record.cards.library.rows)} },`);
+  lines.push(
+    `      library: { match: ${record.cards.library.match}, rows: ${q(record.cards.library.rows)} },`,
+  );
   lines.push(`      chat: ${q(record.cards.chat)},`);
   lines.push(`      metrics: ${q(record.cards.metrics)},`);
   lines.push("    },");
@@ -321,8 +338,10 @@ lines.push("];");
 lines.push("");
 
 const source = lines.join("\n");
-if (/https?:\/\//.test(JSON.stringify(records))) throw new Error("generated data still contains a remote URL");
-if (!fs.existsSync("src/components/sites/tano/content")) throw new Error("content directory missing");
+if (/https?:\/\//.test(JSON.stringify(records)))
+  throw new Error("generated data still contains a remote URL");
+if (!fs.existsSync("src/components/sites/tano/content"))
+  throw new Error("content directory missing");
 
 fs.writeFileSync(OUT, source);
 console.log(`wrote ${OUT} (${source.length} bytes)`);

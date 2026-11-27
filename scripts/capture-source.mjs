@@ -105,7 +105,8 @@ const measure = () => {
   const root = getComputedStyle(document.documentElement);
   const vars = {};
   for (const name of root) {
-    if (name.startsWith("--") && vars[name] === undefined) vars[name] = root.getPropertyValue(name).trim();
+    if (name.startsWith("--") && vars[name] === undefined)
+      vars[name] = root.getPropertyValue(name).trim();
   }
   for (const sheet of document.styleSheets) {
     let rules;
@@ -119,7 +120,8 @@ const measure = () => {
         if (rule.cssRules) walk(rule.cssRules);
         if (rule.style) {
           for (const name of rule.style) {
-            if (name.startsWith("--") && !vars[name]) vars[name] = rule.style.getPropertyValue(name).trim();
+            if (name.startsWith("--") && !vars[name])
+              vars[name] = rule.style.getPropertyValue(name).trim();
           }
         }
       }
@@ -167,7 +169,9 @@ async function main() {
       await page.goto(ORIGIN + route, { waitUntil: "networkidle", timeout: 90_000 });
     } catch (err) {
       console.log(`[${route}] goto:`, err.message);
-      await page.goto(ORIGIN + route, { waitUntil: "domcontentloaded", timeout: 90_000 }).catch(() => {});
+      await page
+        .goto(ORIGIN + route, { waitUntil: "domcontentloaded", timeout: 90_000 })
+        .catch(() => {});
     }
     await page.evaluate(async () => {
       await document.fonts.ready;

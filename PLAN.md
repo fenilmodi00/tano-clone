@@ -17,15 +17,15 @@ Metrics are measured by `scripts/compare-route.mjs` against the live source and 
 
 ## 2. Evidence already captured
 
-| Evidence | Path | Use |
-|---|---|---|
-| 44 routes, full HTML + desktop/mobile screenshots + section geometry + fonts + CSS vars | `docs/research/tano/<slug>/` | build + diff |
-| Route manifest | `docs/research/tano/routes.json` | scope |
-| 232 assets (images, video, posters, textures, footer art) | `public/sites/tano/` + `docs/research/tano/asset-map.json` | assets |
-| Brand fonts (ABC Whyte Book 350, Medium 500, Semi Mono 400) | `public/sites/tano/fonts/` | type |
-| Compiled source CSS (design tokens, 129 keyframes) | `~/tano/site/css/all.css` | token + motion values |
-| Deobfuscated marketing JS | `~/tano/js/` | interaction logic |
-| Live source | `https://www.tano.ai` | pixel/motion oracle |
+| Evidence                                                                                | Path                                                       | Use                   |
+| --------------------------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------- |
+| 44 routes, full HTML + desktop/mobile screenshots + section geometry + fonts + CSS vars | `docs/research/tano/<slug>/`                               | build + diff          |
+| Route manifest                                                                          | `docs/research/tano/routes.json`                           | scope                 |
+| 232 assets (images, video, posters, textures, footer art)                               | `public/sites/tano/` + `docs/research/tano/asset-map.json` | assets                |
+| Brand fonts (ABC Whyte Book 350, Medium 500, Semi Mono 400)                             | `public/sites/tano/fonts/`                                 | type                  |
+| Compiled source CSS (design tokens, 129 keyframes)                                      | `~/tano/site/css/all.css`                                  | token + motion values |
+| Deobfuscated marketing JS                                                               | `~/tano/js/`                                               | interaction logic     |
+| Live source                                                                             | `https://www.tano.ai`                                      | pixel/motion oracle   |
 
 ## 3. Architecture
 
@@ -60,28 +60,31 @@ Rules: original class names are not required; values are. Local assets only. No 
 
 ## 4. Route surface (44)
 
-| Family | Routes | Layout |
-|---|---|---|
-| Home | `/` | 15 bespoke bands |
-| Use cases | `/use-cases/{drive-revenue,creative-velocity}` | hero + prose/feature rows + proof + FAQ + CTA |
-| Case studies | `/case-studies` + 4 studies | index grid; study hero/results/films/prose/others/CTA |
-| Guides | `/guides` + 14 | index card groups; article hero/prose/FAQ/brands/CTA |
-| Playbooks | `/playbooks` + 5 | resource hero + gated resource card + CTA |
-| Compare | `/compare` + 4 | hero/prose/table/verdict/FAQ/CTA |
-| Careers | `/careers` + 3 roles | hero/roles/culture; role page |
-| News | `/news` + 1 article | index/article |
-| Company | `/webinars`, `/privacy-policy` | resource/legal |
-| Conversion | `/for-creators`, `/talk-to-us` | bespoke hero/form |
+| Family       | Routes                                         | Layout                                                |
+| ------------ | ---------------------------------------------- | ----------------------------------------------------- |
+| Home         | `/`                                            | 15 bespoke bands                                      |
+| Use cases    | `/use-cases/{drive-revenue,creative-velocity}` | hero + prose/feature rows + proof + FAQ + CTA         |
+| Case studies | `/case-studies` + 4 studies                    | index grid; study hero/results/films/prose/others/CTA |
+| Guides       | `/guides` + 14                                 | index card groups; article hero/prose/FAQ/brands/CTA  |
+| Playbooks    | `/playbooks` + 5                               | resource hero + gated resource card + CTA             |
+| Compare      | `/compare` + 4                                 | hero/prose/table/verdict/FAQ/CTA                      |
+| Careers      | `/careers` + 3 roles                           | hero/roles/culture; role page                         |
+| News         | `/news` + 1 article                            | index/article                                         |
+| Company      | `/webinars`, `/privacy-policy`                 | resource/legal                                        |
+| Conversion   | `/for-creators`, `/talk-to-us`                 | bespoke hero/form                                     |
 
 ## 5. Reverse-engineering method
 
 ### 5.1 Static extraction
+
 - Per route: DOM outline, section rectangles, typography, computed styles for every band's key elements, asset list, link graph, meta.
 - Breakpoints: 360/390/600/768/900/1024/1200/1440/1568/1680; record container width, section heights, grid columns, type scale, nav state.
 - Tokens are authoritative from source CSS: `#0e0d0c` ground, `#fbf9f5` ink, surface `#1a1815`, spectrum `#46b7d1/#cc6add/#fb751f`, radius 10/14/20/28/36/56/72/96, display 80/76 -4%, heading 44/41.8, 30/33, 22/24.2, body 20/28, 16/22.4, mono 14/16.8, page 1312@64 gutters.
 
 ### 5.2 Motion extraction
+
 Three drivers, three methods:
+
 - **CSS keyframe loops** (129 declared): parse `@keyframes` + `animation` declarations from `all.css`. Port exact name/duration/easing/delay/iteration/direction/fill and state selectors into `motion.css`. Trigger states observed in DOM (`data-inview`, `data-open`, `data-shown`, `data-stage`, `data-turned`, `data-picked`, `data-win`).
 - **JS state machines** (hero camp, flow diagrams, steps, case carousel, counters, announcement): recover thresholds and sequences from the marketing bundles (`hp-camp`, `hp-flow`, `rv-scope`) and observe timing at 60fps. Rebuild as a GSAP timeline or React state machine with the same duration/easing.
 - **Scroll-linked** (reveal, pin, marquee, parallax): measure pin start/end, scroll distance, progress mapping, reverse behavior. Implement with GSAP ScrollTrigger for multi-element pinning; native `animation-timeline` where a pure progress effect suffices.
@@ -89,17 +92,20 @@ Three drivers, three methods:
 - **Hover/focus**: capture before/after computed styles for nav links, buttons, cards, links, form controls; reproduce transitions exactly.
 
 ### 5.3 Frame sampling
+
 `capture-motion.mjs` records a named scene as:
+
 - screenshot at t = 0, 1/30…N/30 s (or scroll progress 0…1 in 1% steps),
 - a JSON of every descendant's transform/opacity/filter/background-position + `document.getAnimations()` metadata,
 - a contact sheet.
-Source and clone are captured with identical viewport, scroll offsets, device scale, fonts ready, and `?freeze=1` (clone only) to freeze counters/random order. Diff per frame with pixelmatch; report first divergence frame and element.
+  Source and clone are captured with identical viewport, scroll offsets, device scale, fonts ready, and `?freeze=1` (clone only) to freeze counters/random order. Diff per frame with pixelmatch; report first divergence frame and element.
 
 ## 6. Execution phases, owners, parallelism
 
 Phase 0 — Toolchain (done/inline): Playwright + Chromium, chrome-devtools MCP entry, GSAP, diff deps, template, fonts, assets, route manifest, baseline screenshot set.
 
 Phase 1 — Research (parallel, read-only/no code edits):
+
 - R1 motion inventory (CSS keyframes + JS orchestration) → `docs/research/tano/motion/`
 - R2 content extraction → `scripts/extract-source-content.mjs` + `src/content/tano/`
 - R3 interaction/state evidence → `docs/research/tano/interactions.md` + state screenshots
@@ -109,6 +115,7 @@ Phase 1 — Research (parallel, read-only/no code edits):
 Phase 2 — Foundation (orchestrator, blocks builders): tokens/base/shell/motion helpers, header/footer/announcement, shared UI (button, band heading, logo band, FAQ, closing CTA, cards, article prose), content loader, comparison harness.
 
 Phase 3 — Page families (parallel builders, disjoint paths):
+
 - B1 home (15 bands) + home motion
 - B2 use cases (2)
 - B3 case studies (index + 4)
@@ -119,6 +126,7 @@ Phase 3 — Page families (parallel builders, disjoint paths):
 - B8 for-creators + talk-to-us + forms
 
 Phase 4 — Motion parity (parallel specialists, files disjoint):
+
 - M1 hero camp + announcement + counters + ticker
 - M2 loop/steps/flow diagrams
 - M3 conversations + experiments
@@ -126,6 +134,7 @@ Phase 4 — Motion parity (parallel specialists, files disjoint):
 - M5 article reveals, FAQ, nav/mobile menu, hover/focus, footer
 
 Phase 5 — Verification (parallel auditors + fixers):
+
 - V1 pixel/geometry matrix all 44 routes × 4 widths
 - V2 motion frame audits per scene
 - V3 interaction/a11y audit

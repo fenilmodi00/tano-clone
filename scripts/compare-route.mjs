@@ -41,7 +41,10 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export function slugFor(route) {
   if (route === "/" || route === "") return "home";
-  return route.replace(/^\//, "").replace(/[\/?&=#]+/g, "-").replace(/-+$/, "");
+  return route
+    .replace(/^\//, "")
+    .replace(/[\/?&=#]+/g, "-")
+    .replace(/-+$/, "");
 }
 
 /** Launch one Chromium for a whole matrix run. */
@@ -141,7 +144,10 @@ export async function settleImages(page) {
 /** Remove cookie/announcement overlays that are not part of the page design. */
 async function dismissOverlays(page) {
   let removed = [];
-  const reject = page.locator(".wire-consent button").filter({ hasText: /reject/i }).first();
+  const reject = page
+    .locator(".wire-consent button")
+    .filter({ hasText: /reject/i })
+    .first();
   if ((await reject.count()) && (await reject.isVisible().catch(() => false))) {
     await reject.click({ timeout: 1500 }).catch(() => {});
     await sleep(250);
@@ -155,7 +161,9 @@ async function dismissOverlays(page) {
     removed.push("announcement");
   }
   await page.evaluate(() => {
-    document.querySelectorAll(".wire-consent, [aria-label=\"Announcement\"]").forEach((el) => el.remove());
+    document
+      .querySelectorAll('.wire-consent, [aria-label="Announcement"]')
+      .forEach((el) => el.remove());
     document.documentElement.style.setProperty("--hp-notify-push", "0px");
     document.querySelector("main[data-notify]")?.removeAttribute("data-notify");
   });
@@ -204,7 +212,9 @@ async function measureBands(page) {
     const bands = all.filter((el) => el.getBoundingClientRect().height > 0.5);
     const labelOf = (el) => {
       const cls = (el.className?.baseVal ?? el.className ?? "").toString().trim();
-      return cls ? el.tagName.toLowerCase() + "." + cls.split(/\s+/).slice(0, 3).join(".") : el.tagName.toLowerCase();
+      return cls
+        ? el.tagName.toLowerCase() + "." + cls.split(/\s+/).slice(0, 3).join(".")
+        : el.tagName.toLowerCase();
     };
     const meta = bands.map((el, index) => {
       const rect = el.getBoundingClientRect();
@@ -218,7 +228,9 @@ async function measureBands(page) {
         width: Math.round(rect.width * 100) / 100,
         ground: el.getAttribute("data-ground"),
         overflow: cs.overflow,
-        h1: (el.querySelector("h1")?.textContent || "").replace(/\s+/g, " ").trim().slice(0, 140) || null,
+        h1:
+          (el.querySelector("h1")?.textContent || "").replace(/\s+/g, " ").trim().slice(0, 140) ||
+          null,
       };
     });
 
@@ -242,7 +254,9 @@ async function measureBands(page) {
             cs.opacity !== "1"
           ) {
             parts.push(
-              [cs.transform, cs.backgroundPosition, cs.opacity, cs.animationName, cs.width].join("|"),
+              [cs.transform, cs.backgroundPosition, cs.opacity, cs.animationName, cs.width].join(
+                "|",
+              ),
             );
           }
         }
@@ -265,9 +279,10 @@ async function measureBands(page) {
         const timing = anim.effect?.getTiming?.() ?? {};
         return {
           band,
-          name: anim.animationName || anim.transitionProperty || anim.constructor?.name || "animation",
+          name:
+            anim.animationName || anim.transitionProperty || anim.constructor?.name || "animation",
           playState: anim.playState,
-          iterations: timing.iterations === Infinity ? "Infinity" : timing.iterations ?? null,
+          iterations: timing.iterations === Infinity ? "Infinity" : (timing.iterations ?? null),
           duration: typeof timing.duration === "number" ? timing.duration : null,
         };
       })
@@ -282,8 +297,7 @@ async function measureBands(page) {
         const infinite = bandAnimations.filter((anim) => anim.iterations === "Infinity").length;
         const running = bandAnimations.filter((anim) => anim.playState === "running").length;
         const changed = first[index] !== second[index];
-        const kind =
-          videos[index] > 0 ? "video" : changed || infinite > 0 ? "motion" : "static";
+        const kind = videos[index] > 0 ? "video" : changed || infinite > 0 ? "motion" : "static";
         return {
           ...band,
           kind,
@@ -320,7 +334,11 @@ async function measureBands(page) {
           return { top: Math.round(r.top + window.scrollY), height: Math.round(r.height) };
         })(),
       })),
-      h1: (document.querySelector("main h1")?.textContent || "").replace(/\s+/g, " ").trim().slice(0, 200) || null,
+      h1:
+        (document.querySelector("main h1")?.textContent || "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .slice(0, 200) || null,
       bodyBackground: getComputedStyle(document.body).backgroundColor,
     };
   });
@@ -406,16 +424,27 @@ export async function captureSide(browser, { side, route, width, scrollY = 0, ti
       if (!/WebSocket|favicon/i.test(text)) consoleErrors.push(text);
     }
   });
-  page.on("pageerror", (err) => consoleErrors.push("pageerror: " + String(err.message).slice(0, 300)));
+  page.on("pageerror", (err) =>
+    consoleErrors.push("pageerror: " + String(err.message).slice(0, 300)),
+  );
   page.on("response", (res) => {
     if (res.status() >= 400) {
-      badResponses.push({ status: res.status(), url: res.url().slice(0, 240), type: res.request().resourceType() });
+      badResponses.push({
+        status: res.status(),
+        url: res.url().slice(0, 240),
+        type: res.request().resourceType(),
+      });
     }
   });
   page.on("requestfailed", (req) => {
     const failure = req.failure()?.errorText ?? "failed";
     if (!/net::ERR_ABORTED/.test(failure)) {
-      badResponses.push({ status: 0, url: req.url().slice(0, 240), type: req.resourceType(), failure });
+      badResponses.push({
+        status: 0,
+        url: req.url().slice(0, 240),
+        type: req.resourceType(),
+        failure,
+      });
     }
   });
 
@@ -440,7 +469,16 @@ export async function captureSide(browser, { side, route, width, scrollY = 0, ti
     const overlaysRemoved = await dismissOverlays(page).catch(() => []);
     await scrollThrough(page);
     await settleImages(page);
-    await scrollTo(page, Math.max(0, Math.min(scrollY, await page.evaluate(() => document.body.scrollHeight - window.innerHeight))));
+    await scrollTo(
+      page,
+      Math.max(
+        0,
+        Math.min(
+          scrollY,
+          await page.evaluate(() => document.body.scrollHeight - window.innerHeight),
+        ),
+      ),
+    );
     await sleep(950);
     await finishFiniteAnimations(page);
     await sleep(120);
@@ -485,7 +523,10 @@ export async function captureSide(browser, { side, route, width, scrollY = 0, ti
 
 /** Decode a PNG to RGBA and crop to the common origin. */
 export async function pngRGBA(buffer) {
-  const { data, info } = await sharp(buffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { data, info } = await sharp(buffer)
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
   return { data, width: info.width, height: info.height };
 }
 
@@ -726,14 +767,23 @@ export async function compareRoute(options) {
   if (source.screenshot && local.screenshot && source.measured && local.measured) {
     const sourceBands = source.measured.bands;
     const localBands = local.measured.bands;
-    const kinds = Array.from({ length: Math.max(sourceBands.length, localBands.length) }, (_, i) => {
-      const s = sourceBands[i]?.kind;
-      const l = localBands[i]?.kind;
-      if (s === "motion" || l === "motion") return "motion";
-      if (s === "video" || l === "video") return "video";
-      return "static";
-    });
-    const diff = await diffPages(source.screenshot, local.screenshot, sourceBands, localBands, kinds);
+    const kinds = Array.from(
+      { length: Math.max(sourceBands.length, localBands.length) },
+      (_, i) => {
+        const s = sourceBands[i]?.kind;
+        const l = localBands[i]?.kind;
+        if (s === "motion" || l === "motion") return "motion";
+        if (s === "video" || l === "video") return "video";
+        return "static";
+      },
+    );
+    const diff = await diffPages(
+      source.screenshot,
+      local.screenshot,
+      sourceBands,
+      localBands,
+      kinds,
+    );
 
     const diffPath = path.join(dir, `${width}-diff.png`);
     await sharp(diff.diffBuffer, { raw: { width: diff.width, height: diff.height, channels: 4 } })
@@ -782,7 +832,8 @@ export async function compareRoute(options) {
     result.diff = null;
   }
 
-  result.source.heightDelta = result.source.height && result.local.height ? result.local.height - result.source.height : null;
+  result.source.heightDelta =
+    result.source.height && result.local.height ? result.local.height - result.source.height : null;
   result.geometry = {
     documentHeight: {
       source: result.source.height ?? null,
@@ -878,7 +929,8 @@ function parseArgs(argv) {
   if (!options.route && positional[0]) options.route = positional[0];
   if (positional[1]) options.width = Number(positional[1]);
   if (!options.route) options.route = "/";
-  if (!Number.isFinite(options.width) || options.width < 320) throw new Error("A valid --width is required");
+  if (!Number.isFinite(options.width) || options.width < 320)
+    throw new Error("A valid --width is required");
   return options;
 }
 

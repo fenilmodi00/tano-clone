@@ -11,9 +11,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 # Website Reverse-Engineer Template
 
 ## What This Is
+
 A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. The Next.js + shadcn/ui + Tailwind v4 base is pre-scaffolded — just run `/clone-website <url1> [<url2> ...]`.
 
 ## Tech Stack
+
 - **Framework:** Next.js 16 (App Router, React 19, TypeScript strict)
 - **UI:** shadcn/ui (Base UI primitives, Tailwind CSS v4, `cn()` utility)
 - **Icons:** Lucide React (default — will be replaced/supplemented by extracted SVGs)
@@ -21,6 +23,7 @@ A reusable template for reverse-engineering any website into a clean, modern Nex
 - **Deployment:** Vercel
 
 ## Commands
+
 - `npm run dev` — Start dev server
 - `npm run build` — Production build
 - `npm run lint` — ESLint check
@@ -28,6 +31,7 @@ A reusable template for reverse-engineering any website into a clean, modern Nex
 - `npm run check` — Run lint + typecheck + build
 
 ## Code Style
+
 - TypeScript strict mode, no `any`
 - Named exports, PascalCase components, camelCase utils
 - Tailwind utilities or scoped CSS; avoid inline styles unless behavior needs dynamic values
@@ -35,12 +39,14 @@ A reusable template for reverse-engineering any website into a clean, modern Nex
 - Responsive: mobile-first
 
 ## Design Principles
+
 - **Pixel-perfect emulation** — match the target's spacing, colors, typography exactly
 - **No personal aesthetic changes during emulation phase** — match 1:1 first, customize later
 - **Real content** — use actual text and assets from the target site, not placeholders
 - **Beauty-first** — every pixel matters
 
 ## Project Structure
+
 ```
 src/
   app/              # Next.js routes
@@ -66,5 +72,6 @@ scripts/            # Asset download scripts
 ```
 
 ## Agent Workflow
+
 - Edit `.agents/skills/clone-website/` for cloning-workflow changes. It is the canonical skill used by Codex, Cursor, and OpenCode.
 - Keep `.claude/commands/clone-website.md` as a thin Claude Code bridge to the canonical skill; do not duplicate the workflow there.

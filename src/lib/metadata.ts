@@ -35,7 +35,7 @@ export function buildPageMetadata(page: PageMetadataInput): Metadata {
       card: "summary_large_image",
       title,
       description,
-      images: [image.url],
+      images: [image],
     },
     robots: {
       index: site.allowIndexing,

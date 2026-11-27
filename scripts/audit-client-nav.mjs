@@ -91,7 +91,11 @@ function parseArgs(argv) {
     }
   }
   opts.base = opts.base.replace(/\/+$/, "");
-  if (opts.only) opts.only = opts.only.split(",").map((s) => s.trim()).filter(Boolean);
+  if (opts.only)
+    opts.only = opts.only
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
   return opts;
 }
 
@@ -239,11 +243,9 @@ async function loadHome(page, instrumented) {
 async function waitForPath(page, expectedPath, timeoutMs = 6000) {
   const started = Date.now();
   try {
-    await page.waitForFunction(
-      (expected) => location.pathname === expected,
-      expectedPath,
-      { timeout: timeoutMs },
-    );
+    await page.waitForFunction((expected) => location.pathname === expected, expectedPath, {
+      timeout: timeoutMs,
+    });
     return { ok: true, ms: Date.now() - started, actual: expectedPath };
   } catch {
     const actual = await page.evaluate(() => location.pathname).catch(() => "");
@@ -340,7 +342,13 @@ async function clientNavigate(page, expectedPath) {
 
   const anchor = await findAnchor(page, expectedPath);
   result.anchor = anchor.found
-    ? { text: anchor.text, href: anchor.href, visible: anchor.visible, inMain: anchor.inMain, inFooter: anchor.inFooter }
+    ? {
+        text: anchor.text,
+        href: anchor.href,
+        visible: anchor.visible,
+        inMain: anchor.inMain,
+        inFooter: anchor.inFooter,
+      }
     : null;
 
   if (anchor.found) {
@@ -356,7 +364,10 @@ async function clientNavigate(page, expectedPath) {
       }
     }
     if (!clickedWithPointer) {
-      await page.locator('[data-audit-anchor="1"]').first().evaluate((element) => element.click());
+      await page
+        .locator('[data-audit-anchor="1"]')
+        .first()
+        .evaluate((element) => element.click());
     }
     result.via = clickedWithPointer ? "anchor" : "anchor-dom";
     result.nav = await waitForPath(page, expectedPath, 4000);
@@ -442,8 +453,7 @@ function judge(record, errors, { requireScrollTop }) {
     reasons.push(`text:${metrics.textLength}≤20`);
   }
   const heading = metrics.heading;
-  const wordsVisible =
-    !heading || heading.words === 0 || (heading.maxWordOpacity ?? 0) > 0.01;
+  const wordsVisible = !heading || heading.words === 0 || (heading.maxWordOpacity ?? 0) > 0.01;
   const headingVisible = Boolean(heading) && heading.opacity > 0.01 && wordsVisible;
   const revealRan = metrics.rvIn > 0;
   record.checks.heading = headingVisible;
@@ -537,7 +547,9 @@ async function auditRoute(page, instrumented, entry, index) {
     judge(record, record.errors, { requireScrollTop: true });
   } catch (error) {
     record.nav.ok = false;
-    record.failureReasons.push(`exception:${error instanceof Error ? error.message : String(error)}`);
+    record.failureReasons.push(
+      `exception:${error instanceof Error ? error.message : String(error)}`,
+    );
     record.errors = instrumented.takeErrors();
     try {
       record.metrics = await readMetrics(page);
@@ -577,7 +589,11 @@ async function auditHistory(page, instrumented, routes) {
     steps.push({ kind: "back", route: picks[i - 1], name: `back-to-${picks[i - 1]}` });
   }
   steps.push({ kind: "forward", route: picks[1], name: `forward-to-${picks[1]}` });
-  steps.push({ kind: "direct", route: picks[picks.length - 1], name: `direct-${picks[picks.length - 1]}` });
+  steps.push({
+    kind: "direct",
+    route: picks[picks.length - 1],
+    name: `direct-${picks[picks.length - 1]}`,
+  });
 
   const results = [];
   await loadHome(page, instrumented);
@@ -640,13 +656,18 @@ async function auditHistory(page, instrumented, routes) {
       judge(record, record.errors, { requireScrollTop: step.kind === "direct" });
     } catch (error) {
       record.nav.ok = false;
-      record.failureReasons.push(`exception:${error instanceof Error ? error.message : String(error)}`);
+      record.failureReasons.push(
+        `exception:${error instanceof Error ? error.message : String(error)}`,
+      );
       record.errors = instrumented.takeErrors();
       record.ok = false;
     }
     record.ms = Date.now() - started;
     if (!record.ok) {
-      record.screenshot = await captureFailure(page, `history-${step.name.replace(/[^a-z0-9-]+/gi, "-")}`);
+      record.screenshot = await captureFailure(
+        page,
+        `history-${step.name.replace(/[^a-z0-9-]+/gi, "-")}`,
+      );
     }
     results.push(record);
   }
@@ -666,7 +687,9 @@ function printTable(records) {
   for (const record of records) {
     const metrics = record.metrics || {};
     const heading = metrics.heading;
-    const h1 = heading ? `${heading.opacity.toFixed(2)}/${metrics.rvIn ?? "?"}` : `none/${metrics.rvIn ?? "?"}`;
+    const h1 = heading
+      ? `${heading.opacity.toFixed(2)}/${metrics.rvIn ?? "?"}`
+      : `none/${metrics.rvIn ?? "?"}`;
     console.log(
       `${pad(record.index, 3)} ${pad(record.route, 56)} ${pad(record.ok ? "PASS" : "FAIL", 7)} ${pad(record.via, 17)} ${pad(record.checks?.path ? "ok" : "bad", 5)} ${pad(metrics.textLength ?? "?", 6)} ${pad(h1, 11)} ${pad(record.scroll?.y ?? "?", 7)} ${pad(metrics.overflowPx ?? "?", 5)} ${pad(record.errors?.length ?? "?", 4)}`,
     );
