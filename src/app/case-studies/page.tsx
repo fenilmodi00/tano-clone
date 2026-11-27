@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Case Studies | Tano", "description": "Consumer brands across the US, the UK and EMEA run their creator programmes with Tano, and have the numbers to show for it."};
-
+import pageData from "@/content/tano/pages/case-studies.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { CaseStudiesReplica } from "../../components/sites/tano/replica/CaseStudiesReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <CaseStudiesReplica />;

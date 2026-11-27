@@ -14,9 +14,7 @@ import {
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 
-function svgElement<K extends keyof SVGElementTagNameMap>(
-  tag: K,
-): SVGElementTagNameMap[K] {
+function svgElement<K extends keyof SVGElementTagNameMap>(tag: K): SVGElementTagNameMap[K] {
   return document.createElementNS(SVG_NS, tag) as SVGElementTagNameMap[K];
 }
 
@@ -50,13 +48,9 @@ export function useConversations(): (() => void) | void {
   useEffect(() => {
     const cleanups: Array<() => void> = [];
 
-    for (const root of Array.from(
-      document.querySelectorAll<HTMLElement>(".hp-convo"),
-    )) {
+    for (const root of Array.from(document.querySelectorAll<HTMLElement>(".hp-convo"))) {
       const svg = root.querySelector<SVGSVGElement>(".hp-convo-strings");
-      const gradient = svg?.querySelector<SVGLinearGradientElement>(
-        "#hp-convo-spectrum",
-      );
+      const gradient = svg?.querySelector<SVGLinearGradientElement>("#hp-convo-spectrum");
       const icon = root.querySelector<HTMLElement>(".hp-convo-app-icon");
       if (!svg || !icon) continue;
 
@@ -196,9 +190,7 @@ export function useConversations(): (() => void) | void {
 
       // Remove stale client-generated routes before the first pass so an HMR
       // remount cannot stack two sets into the same SVG.
-      for (const group of Array.from(
-        svg.querySelectorAll("g.hp-convo-string"),
-      )) {
+      for (const group of Array.from(svg.querySelectorAll("g.hp-convo-string"))) {
         group.remove();
       }
 
@@ -233,9 +225,7 @@ export function useConversations(): (() => void) | void {
     // Source OffscreenPause: 200 px margin, `animation-play-state:paused` is
     // applied by source.css. The hero campaign cards also use `hp-camp-*`
     // loops (7.2 s chat, 9 s metric, 6.4 s bars) owned by that CSS contract.
-    const paused = Array.from(
-      document.querySelectorAll<HTMLElement>(".hp-convo-agent, .hp-camp"),
-    );
+    const paused = Array.from(document.querySelectorAll<HTMLElement>(".hp-convo-agent, .hp-camp"));
     if (paused.length > 0) {
       const observer = new IntersectionObserver(
         (entries) => {

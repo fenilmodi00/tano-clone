@@ -82,10 +82,7 @@
         {
           "type": "list",
           "ordered": true,
-          "items": [
-            "Creative volume for Meta and TikTok",
-            "New customer acquisition and revenue"
-          ]
+          "items": ["Creative volume for Meta and TikTok", "New customer acquisition and revenue"]
         },
         {
           "type": "prose",
@@ -147,11 +144,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "GRIN",
-            "Tano"
-          ],
+          "head": ["", "GRIN", "Tano"],
           "rows": [
             [
               "Core model",

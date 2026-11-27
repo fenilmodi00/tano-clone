@@ -80,15 +80,15 @@ npm run verify:client-nav  # 44-route SPA navigation + history audit
 
 Latest 1568 baseline (`docs/verify/REPORT.md`, 2026-11-27):
 
-| Metric | Value |
-|---|---:|
-| Route/width pairs captured | 176 / 176 (44 × 4) |
-| Median static-band diff | **0.44%** |
-| Mean static-band diff | **0.86%** |
-| Median whole-page diff | **0.58%** |
-| Pairs under 1% static | 133 / 176 |
-| Missing images (both sides) | 0 |
-| Height deltas | 10 pairs, all ≤4 px (rounding) |
+| Metric                      |                          Value |
+| --------------------------- | -----------------------------: |
+| Route/width pairs captured  |             176 / 176 (44 × 4) |
+| Median static-band diff     |                      **0.44%** |
+| Mean static-band diff       |                      **0.86%** |
+| Median whole-page diff      |                      **0.58%** |
+| Pairs under 1% static       |                      133 / 176 |
+| Missing images (both sides) |                              0 |
+| Height deltas               | 10 pairs, all ≤4 px (rounding) |
 
 Per-width static mean/median: **1568** 0.63%/0.37%, **1440** 0.86%/0.48%, **1024** 0.89%/0.43%, **390** 1.07%/0.79%.
 
@@ -110,4 +110,5 @@ Motion best-frame diffs: hero **0.02%**, experiments **0.05%**, ground theme **0
 - Chrome DevTools MCP: added to `~/.omp/agent/mcp.json` as `chrome-devtools` (`--headless --isolated`); restart the client to load it.
 - Lenis: smooth scroll, matching the source options.
 - GSAP is intentionally not used — the source's motion is CSS keyframes plus small state machines, and the clone reproduces those directly; adding GSAP would duplicate the timers.
+
 # tano-clone

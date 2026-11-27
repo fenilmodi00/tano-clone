@@ -1,9 +1,1920 @@
+import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import Link from "next/link";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function CompareGrinVsTanoReplica() {
   return (
     <main id="main">
-      
-<section aria-labelledby="use-case-title" className="hp-band hp-uc-hero" data-ground="dark" data-ground-dark data-padding="xl"><div aria-hidden="true" className="hp-hero-glow"><div className="hp-hero-glow-light"><div className="wire-spectrum-drift" /><div className="hp-hero-glow-folds" data-layer="a" /><div className="hp-hero-glow-folds" data-layer="b" /></div></div><div className="hp-container hp-uc-hero-field"><div className="hp-uc-hero-copy"><h1 className="hp-title tano-display-md" id="use-case-title"><span className="hp-title-words">GRIN vs Tano:</span><span className="hp-title-words">software you run, or a programme run for you?</span></h1><p className="hp-uc-hero-sub tano-body-para-md">GRIN is creator marketing software that a brand's own team runs. Tano is a creator advertising platform: it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for a brand.</p><p className="hp-uc-hero-sub tano-body-para-md">GRIN works well for a large in-house creator team that wants one low-cost tool and to make every decision itself. Its free plan makes it an easy place to start.</p><p className="hp-uc-hero-sub tano-body-para-md">Tano is built for the stage after that: a programme that has to grow faster than the team running it, across hundreds or thousands of creators.</p><div className="hp-uc-hero-actions"><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/talk-to-us"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">See if Tano fits your programme<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a><a className="tano-button" data-variant="secondary" data-size="md" data-material="surface" href="/compare"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">All comparisons</span></a></div></div><div className="hp-uc-hero-proof"><svg aria-hidden="true" className="hp-stat-defs" focusable="false"><defs><linearGradient gradientUnits="userSpaceOnUse" id="hp-stat-spectrum" x1={0} x2={321} y1={0} y2={0}><stop offset="8.65%" stopColor="var(--spectrum-yellow)" /><stop offset="30.77%" stopColor="var(--spectrum-lime)" /><stop offset="58.65%" stopColor="var(--spectrum-cyan)" /><stop offset="79.33%" stopColor="var(--spectrum-violet)" /><stop offset="100%" stopColor="var(--spectrum-magenta)" /></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="hp-stat-spectrum-warm" x1={0} x2={321} y1={0} y2={0}><stop offset="0%" stopColor="var(--spectrum-orange)" /><stop offset="22%" stopColor="var(--spectrum-yellow)" /><stop offset="44%" stopColor="var(--spectrum-lime)" /><stop offset="70%" stopColor="var(--spectrum-cyan)" /><stop offset="100%" stopColor="var(--spectrum-violet)" /></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="hp-stat-spectrum-up" x1={0} x2={0} y1={0} y2={105}><stop offset="0%" stopColor="var(--spectrum-violet)" /><stop offset="100%" stopColor="var(--spectrum-cyan)" /></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="hp-stat-spectrum-ring" x1={0} x2={0} y1={20} y2={100}><stop offset="0%" stopColor="var(--spectrum-magenta)" /><stop offset="100%" stopColor="var(--spectrum-violet)" /></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="hp-stat-falloff" x1={0} x2={0} y1={10} y2={105}><stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" /><stop offset="100%" stopColor="#ffffff" stopOpacity={0} /></linearGradient><mask id="hp-stat-falloff-mask"><rect fill="url(#hp-stat-falloff)" height={117} width={321} x={0} y={0} /></mask></defs></svg><div className="hp-stat-group"><p className="hp-stat-group-label tano-body-mono-sm">The numbers:</p><ul className="hp-stat-row"><li className="hp-reveal hp-stat" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '0ms'}}><div className="hp-stat-head"><span aria-label="Skin + Me" className="hp-stat-mark-frame" role="img" style={{'--mark-optical': '0.742', '--mark-aspect': '5.447'}}><span className="hp-stat-mark" data-colour style={{backgroundImage: 'url("/brand-mark/669e03ced1a3526eec5e27862281f1969cfa8a5d-1400x257.png")'}} /></span></div><span className="hp-stat-value tano-heading-lg"><span aria-hidden="true">3.5×</span><span className="wire-visually-hidden">3.5×</span></span><p className="hp-stat-caption hp-sub tano-body-md">Growth in sign-ups and revenue at Skin+Me with Tano.</p></li><li className="hp-reveal hp-stat" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '90ms'}}><div className="hp-stat-head"><span aria-label="HelloFresh" className="hp-stat-mark-frame" role="img" style={{'--mark-optical': '0.987', '--mark-aspect': '3.077'}}><span className="hp-stat-mark" data-colour data-for="light" style={{backgroundImage: 'url("/brand-mark/eb38a51363759ba206612b684fc7d888953a892f-760x247.png")'}} /><span className="hp-stat-mark" data-colour data-for="dark" style={{backgroundImage: 'url("/brand-mark/f49bb20d04c6f37f32698eaecdcd1d3704688682-760x247.png")'}} /></span></div><span className="hp-stat-value tano-heading-lg"><span aria-hidden="true">+93%</span><span className="wire-visually-hidden">+93%</span></span><p className="hp-stat-caption hp-sub tano-body-md">CVR uplift at HelloFresh with a hybrid creator model run with Tano.</p></li><li className="hp-reveal hp-stat" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '180ms'}}><div className="hp-stat-head"><span aria-label="Bloom & Wild" className="hp-stat-mark" role="img" style={{maskImage: 'url("/brand-mark/2e92941ac79b8c30ad141495c8265df5930917fd-1400x647.svg")', WebkitMaskImage: 'url("/brand-mark/2e92941ac79b8c30ad141495c8265df5930917fd-1400x647.svg")', '--mark-optical': '1.107', '--mark-aspect': '2.164'}} /></div><span className="hp-stat-value tano-heading-lg"><span aria-hidden="true">+125%</span><span className="wire-visually-hidden">+125%</span></span><p className="hp-stat-caption hp-sub tano-body-md">CTR on Bloom &amp; Wild creator ads run through Tano, against non-Tano ads.</p></li></ul></div></div></div></section><section aria-labelledby="prose-gr-p1" className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container hp-prose"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="prose-gr-p1"><span className="hp-title-words">Two ways to run a creator programme</span></h2></div></div><div className="hp-prose-rows"><div className="hp-prose-row"><div className="hp-prose-columns" data-split><div className="hp-prose-column" data-card><h3 className="tano-heading-sm">GRIN: one tool for the whole workflow, operated in-house</h3><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">GRIN is creator management software that covers the whole workflow in one platform: finding creators, gifting and contracts, tracking and payouts. Creators come from GRIN's search or the <a className="wire-contact-link" href="https://grin.co/creators" rel="noreferrer noopener" target="_blank">GRIN Marketplace</a>, a network of more than 700,000 creators on a free app.</p><p className="tano-body-para-md wire-ink-soft">In May 2025 GRIN <a className="wire-contact-link" href="https://grin.co/news/grin-launches-gia-the-first-agentic-ai-solution-designed-to-supercharge-creator-marketers/" rel="noreferrer noopener" target="_blank">added an AI agent, Gia</a>, which is included in their Starter plan and above. Gia works like a copilot inside the software: it prepares work and recommends next steps, and <a className="wire-contact-link" href="https://grin.co/" rel="noreferrer noopener" target="_blank">in GRIN's words</a>, “Gia makes the recommendation, but you make the call.” Your team approves “<a className="wire-contact-link" href="https://grin.co/platform" rel="noreferrer noopener" target="_blank">consequential actions involving messages, money, contracts, or brand risk</a>”, sets terms, handles counter-offers, and keeps “strategy, relationships, and the creative work”.</p><p className="tano-body-para-md wire-ink-soft">GRIN is priced as software. <a className="wire-contact-link" href="https://grin.co/pricing" rel="noreferrer noopener" target="_blank">Plans run month to month from free to $1,000 a month</a>, which is the licence fee; Each plan includes a monthly allowance of credits for Gia's work, and paid plans can buy more, at a price GRIN does not publish. The people who run the programme come from your own team; <a className="wire-contact-link" href="https://grin.co/compare/grin-vs-impact" rel="noreferrer noopener" target="_blank">GRIN states it does not sell a services team</a>.</p></div></div><div className="hp-prose-column" data-card><h3 className="tano-heading-sm">Tano: specialist agents and a senior team running the programme</h3><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Tano is a creator advertising platform: it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for consumer brands. Tano focuses on building performance-powered creator communities around your brand and product. Its AI runs sourcing, vetting, content quality analysis and reporting; outreach, briefing, contracting and gifting run as agent workflows from day one; and an agent speaks for your brand to creators. Tano's in-house strategists oversee the programme end to end, negotiate rates, and manage usage rights and whitelisting. Every programme has a named account lead who is your point of contact and leads the programme strategy.</p><p className="tano-body-para-md wire-ink-soft">Tano builds programmes focused on two objectives:</p><ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft"><li>Creative volume for Meta and TikTok</li><li>New customer acquisition and revenue</li></ol><p className="tano-body-para-md wire-ink-soft">Sourcing matches creators to your buyer personas, brand fit and performance signals across TikTok, Instagram and YouTube, drawing on roughly 250 million creators, including independent and up-and-coming creators who are not on any marketplace. The agents vet each creator's content for brand fit and tone, at a volume no in-house team could check by hand.</p><p className="tano-body-para-md wire-ink-soft">The programme runs as a lifecycle, built to grow a performance-powered creator community around your brand. Tano uses each creator's performance and history to decide the next action: who needs a reminder, who is ready for another product, who is posting but not converting, who should move up a tier, and which content is worth using in paid social. Creators stay independent, and the relationships, data and content rights stay with your brand if you leave.</p></div></div></div></div></div></div></section><section aria-labelledby="prose-gr-p2" className="hp-band" data-ground="dark" data-ground-dark data-padding="xl"><div className="hp-container hp-prose"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="prose-gr-p2"><span className="hp-title-words">How are GRIN and Tano different?</span></h2></div></div><div className="hp-prose-rows"><div className="hp-prose-row"><div className="hp-prose-row-head"><h3 className="tano-heading-md">Who runs the programme?</h3></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">With GRIN, your team does. Gia provides support, but your team approves every invitation, contract change and payout, and negotiates terms with each creator. With Tano, a blended team of agents and creator marketing experts runs sourcing, outreach, negotiation and payments. Your team approves the strategy and keeps the final say on creative and the highest-value creator moments.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h3 className="tano-heading-md">One general agent, or specialist agents?</h3></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Gia is a single agent that works across GRIN's jobs, from recruiting and outreach to deliverable review and retention, and you buy its work in credits. Tano runs specialist agents for each separate job: sourcing and vetting, outreach, briefing and contracting, gifting, content quality analysis and reporting. An orchestrator agent coordinates them, moving each creator from one stage to the next and deciding which agent acts next, and Tano's team oversees the whole system. The result with GRIN is a capable platform with an assistant for your team; the result with Tano is a programme run for you by Tano's team and agents, which gets better over time.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h3 className="tano-heading-md">Where do the creators come from?</h3></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">GRIN gives your team creator search and a marketplace of more than 700,000 creators. Tano recruits for you from roughly 250 million, matched to your buyer personas and brand fit, including creators who have never joined a marketplace.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h3 className="tano-heading-md">What are you paying for?</h3></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">With GRIN you pay for software and activity. In GRIN's words, you “<a className="wire-contact-link" href="https://grin.co/compare/grin-vs-impact" rel="noreferrer noopener" target="_blank">pay for the work she does</a>”: credits are used each time Gia sources, messages, reports or sets up a campaign, whether or not that work turns into sales, and GRIN takes no share of the revenue your creators generate. How the programme performs is down to your team.</p><p className="tano-body-para-md wire-ink-soft">With Tano you pay for a running programme. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000.</p></div></div></div></div></div></div></section><section aria-labelledby="comparison-title" className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container hp-comparison"><div className="hp-band-heading" data-align="start" data-cue><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="comparison-title"><span className="hp-title-words">GRIN and Tano side by side.</span></h2></div><div className="hp-band-actions"><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/talk-to-us"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Get started<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div><p aria-hidden="true" className="hp-swipe-cue tano-body-sm">Swipe to see how they compare →</p></div><div className="hp-reveal hp-comparison-card" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '60ms'}}><div className="hp-comparison-scroll" role="region" aria-label="Comparison table"><table className="hp-table"><caption className="wire-visually-hidden">GRIN, Tano compared</caption><thead><tr><th scope="col"><span className="wire-visually-hidden">Attribute</span></th><th className="hp-table-head tano-body-md" data-highlight="false" scope="col">GRIN</th><th className="hp-table-head tano-body-md" data-highlight="true" scope="col"><span className="wire-visually-hidden">Tano</span><svg aria-hidden="true" className="hp-table-wordmark" fill="none" viewBox="0 0 606.001 208" overflow="visible" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="M280.001 40C282.21 40.0003 284.001 41.791 284.001 44V199.861C284.001 202.07 282.209 203.861 280 203.861H252C249.791 203.861 248.001 202.07 248.001 199.861V196C248.001 195.176 247.056 194.704 246.386 195.183C234.859 203.417 222.565 207.77 206.001 208C182.028 207.623 159.051 205.328 145.666 190.082C133.745 176.505 130.353 149.638 130.001 122C130.353 94.3625 133.828 67.5345 146.666 54.8213C161.051 40.5757 182.028 40.3767 206.001 40C222.502 40.2294 235.67 41.8333 246.385 48.8818C247.068 49.331 248.001 48.8534 248.001 48.0361V44C248.001 41.7909 249.792 40 252.001 40H280.001ZM207.001 76C176.001 76 166.001 80 166.001 124C166.001 168 176.001 172 207.001 172C238.001 172 248.001 168 248.001 124C248.001 80.0002 238.001 76 207.001 76Z" fill="currentColor" fillRule="evenodd" /><path clipRule="evenodd" d="M530.001 40C553.974 40.3767 577.95 41.5767 590.335 54.8223C602.675 68.0194 605.649 96.3628 606.001 122C605.649 147.637 602.675 177.885 590.335 191.082C577.95 204.327 553.974 207.623 530.001 208C506.028 207.623 482.052 204.327 469.667 191.082C457.327 177.885 454.353 147.638 454.001 122C454.353 96.3626 457.327 68.0193 469.667 54.8223C482.052 41.5769 506.028 40.3767 530.001 40ZM530.001 76C499.001 76 489.001 80 489.001 124C489.001 168 499.001 172 530.001 172C561.001 172 571.001 168 571.001 124C571.001 80.0002 561.001 76 530.001 76Z" fill="currentColor" fillRule="evenodd" /><path clipRule="evenodd" d="M72.001 0C74.2099 0.000263219 76.001 1.79102 76.001 4V42C76.001 43.1046 76.8964 44 78.001 44H116.001C118.21 44.0003 120.001 45.791 120.001 48V76C120.001 78.2091 118.209 80 116 80H78.001C76.8964 80 76.001 80.8954 76.001 82V152C76.001 164.25 79.0002 168 92.001 168H120.001C122.21 168 124.001 169.791 124.001 172V200C124.001 202.209 122.21 204 120.001 204H74.001C44.999 204 32.001 191.305 32.001 164V82C32.001 80.8956 31.1053 80.0003 30.001 80H4.00098C1.79184 80 1.61047e-08 78.2091 0 76V48C0 45.7909 1.79184 44 4.00098 44H30.001C31.1053 43.9997 32.001 43.1044 32.001 42V4C32.001 1.79086 33.7918 0 36.001 0H72.001Z" fill="currentColor" fillRule="evenodd" /><path clipRule="evenodd" d="M371.001 40C396.591 40.3767 415.95 42.0001 428.335 56C439.992 69.1771 444.001 95.0002 444.001 122V199.992C444.001 202.201 442.209 204 440 204H412.001C409.792 204 408.001 202.21 408.001 200.001V126C408.001 83.0002 402.59 76.0001 371.001 76C342.591 76 334.001 83 334.001 126C334.001 150.157 334 182.038 334 200.011C334 202.22 332.21 204 330.001 204H302.001C299.792 204 298.001 202.211 298.001 200.002V122C298.001 95 300.804 69 313.667 56C326.611 42.0002 346.591 40.3767 371.001 40Z" fill="currentColor" fillRule="evenodd" /></svg></th></tr></thead><tbody><tr><th className="hp-table-label tano-body-md" scope="row">Core model</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Creator management software for an in-house team</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Brand-owned creator programme run by Tano</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Best at</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Giving a hands-on team one low-cost tool</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Running an always-on programme at volume without adding headcount (100 to 1,000+ creators per programme)</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Brand's role</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Run the programme and approve invitations, contracts and payouts</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Approve key decisions while Tano runs the programme operations</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">AI</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">One copilot agent, Gia, metered in credits</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Specialist agents for sourcing, vetting, outreach, contracting, gifting, content review and reporting, coordinated by an orchestrator</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">People</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Your team; GRIN does not sell a services team</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Tano's senior in-house team, included in the fee</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Creator supply</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Search plus the GRIN Marketplace (700,000+)</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Roughly 250 million creators, including those on no marketplace</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Programme design</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Seeding, paid, affiliate and UGC, set up by your team</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Lifecycle design: gifting, first post, repeat post, tiering, affiliate, paid usage and re-engagement</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Content rights</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Captured with usage rights attached to the content</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Rights and whitelisting can be managed as part of the programme</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">How you are charged</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Subscription plus credits for AI work; no share of sales</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Monthly fee plus a share of the commission the programme generates</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Pricing</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">Free to $1,000 a month licence, with more credits available on paid plans; month to month</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">From $3,000 a month plus a share of affiliate commission</span></span></td></tr><tr><th className="hp-table-label tano-body-md" scope="row">Published results</th><td className="tano-body-md" data-highlight="false"><span className="hp-table-answer"><span className="hp-table-cell">$1.2B+ creator-driven GMV and 5,000+ brand programmes since 2017, by GRIN's count</span></span></td><td className="tano-body-md" data-highlight="true"><span className="hp-table-answer"><span className="hp-table-cell">Skin+Me: 3.5× growth in sign-ups and revenue, 4 of 5 top creators onboarded by Tano. Bloom &amp; Wild: +125% click-through and 10% lower CPA on creator ads. HelloFresh: 93% CVR uplift with a hybrid creator model</span></span></td></tr></tbody></table></div></div></div></section><section aria-labelledby="prose-gr-p4" className="hp-band" data-ground="dark" data-ground-dark data-padding="xl"><div className="hp-container hp-prose"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="prose-gr-p4"><span className="hp-title-words">Which should you choose?</span></h2></div></div><div className="hp-prose-rows"><div className="hp-prose-row"><div className="hp-prose-columns" data-split><div className="hp-prose-column" data-card><p className="tano-body-mono-xs wire-ink-soft">Why GRIN</p><h3 className="tano-heading-sm">Choose GRIN when</h3><div className="wire-article-prose"><ul className="wire-legal-list tano-body-para-md wire-ink-soft"><li>You have an experienced in-house team with the hours to run creators itself.</li><li>You want to stay close to the detail: which creator gets what, and on which terms.</li><li>You are starting out: GRIN has a free plan and paid plans from $200 a month, month to month.</li><li>You sell on Shopify and want gifting and orders handled inside one tool.</li></ul><p className="tano-body-para-md wire-ink-soft">GRIN is the lower-cost choice for a brand that has the people and wants to keep every decision in-house.</p></div></div><div className="hp-prose-column" data-card><p className="tano-body-mono-xs wire-ink-soft">Why Tano</p><h3 className="tano-heading-sm">Choose Tano when</h3><div className="wire-article-prose"><ul className="wire-legal-list tano-body-para-md wire-ink-soft"><li>Your creator programme has outgrown the one or two people running it.</li><li>You want hundreds or thousands of creators active without hiring.</li><li>You want specialist agents running the work and a senior team responsible for the results.</li><li>You want to reach creators who are not on any marketplace.</li><li>Your product needs repeat exposure or a trial before someone buys.</li></ul><p className="tano-body-para-md wire-ink-soft"><a className="wire-contact-link" href="/case-studies/bloom-and-wild">Bloom &amp; Wild</a>'s Tano creator ads produced 125% higher click-through and a 10% lower cost per acquisition than its non-Tano ads. At <a className="wire-contact-link" href="/case-studies/skin-and-me">Skin+Me</a>, Tano onboarded 4 of its 5 top creators in September 2025, and creator-driven sign-ups and revenue grew 3.5×. <a className="wire-contact-link" href="/case-studies/hellofresh">HelloFresh</a> saw a 93% conversion uplift with a hybrid creator model run with Tano.</p></div></div></div></div></div></div></section><section aria-labelledby="faq-title" className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container hp-faq"><div className="hp-faq-head"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="faq-title"><span className="hp-title-words">Common questions.</span></h2><p className="hp-sub tano-body-para-md">GRIN and Tano compared on who runs the programme, agents, cost and when to choose each.</p></div></div></div><div className="hp-reveal hp-faq-stack" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '80ms'}}><div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true" /><div className="hp-faq-card"><div className="hp-faq-tools"><div className="hp-faq-search"><label className="wire-visually-hidden" htmlFor="faq-search">Search the questions</label><span aria-hidden="true" className="hp-faq-search-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span><input autoComplete="off" className="hp-faq-search-input tano-body-md" enterKeyHint="search" id="faq-search" placeholder="Search questions" type="search" defaultValue="" /></div></div><p aria-live="polite" className="wire-visually-hidden" /><div id="faq-panel"><ul className="hp-faq-rows"><li className="hp-faq-row"><button aria-controls="faq.compare-grin-01-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-01-question" type="button"><span>Is Tano an alternative to GRIN?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-01-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-01-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">Yes. Both run a direct creator programme for a brand, so most brands use one. GRIN gives your team the software to run it; Tano runs it for you with specialist agents and a senior team.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-06-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-06-question" type="button"><span>Can GRIN's AI agent run a creator programme on its own?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-06-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-06-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">No, and GRIN does not claim it can. Gia prepares and recommends, and your team approves every action involving messages, money, contracts or brand risk. GRIN says your team keeps strategy, relationships and the creative work, and it does not sell a services team to do that for you.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-07-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-07-question" type="button"><span>How is Tano's AI different from GRIN's Gia?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-07-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-07-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">Gia is one general agent inside a tool your team operates, paid for in credits. Tano runs specialist agents for sourcing, vetting, outreach, contracting, gifting, content review and reporting, overseen by a senior team that also negotiates rates and manages rights. You get a running programme instead of a queue of recommendations to approve.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-08-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-08-question" type="button"><span>When does it make sense to move from GRIN to Tano?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-08-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-08-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">When the programme outgrows the hours or the experience of the people running it. GRIN's free and low-cost plans make it an easy place to start. Once you want hundreds or thousands of creators active and would rather hand off sourcing, negotiation and follow-up, Tano is the better fit.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-09-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-09-question" type="button"><span>How much does GRIN cost compared with Tano?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-09-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-09-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">GRIN's plans are Free, Starter at $200, Growth at $500 and Scale at $1,000 a month, month to month, with Gia's work metered in credits: each plan includes a monthly allowance, and paid plans can buy more credits at a price GRIN does not publish. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. GRIN is cheaper as software; Tano's fee covers the agents, the team running them and the sourcing.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-10-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-10-question" type="button"><span>Are GRIN's and Tano's incentives aligned with the brand's?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-10-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-10-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">They are set up differently. GRIN is paid for Gia's work through credits, whether or not that work produces sales, and takes no share of revenue. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive, so what it earns depends on your creators posting and selling.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-11-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-11-question" type="button"><span>What are the alternatives to GRIN?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-11-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-11-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">If you want different software for your own team to run, Modash, Upfluence and Aspire are examples. If you want someone else to run the programme, the options are an agency, a platform's managed service, or a done-for-you creator advertising platform such as Tano. Marketplaces such as LTK and ShopMy give access to creators already selling through them, and many brands run one alongside a direct programme.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-12-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-12-question" type="button"><span>Does GRIN offer a managed service?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-12-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-12-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">Not as of September 2026. GRIN launched Professional Services, including a fully managed option, in October 2023, but its comparison pages now state that it does not sell a services team.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-13-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-13-question" type="button"><span>Who owns the creator relationship with GRIN or Tano?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-13-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-13-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">Neither owns the creator: creators stay independent. With GRIN, the programme history sits in the brand's own GRIN account. With Tano, the programme is brand-owned, so the relationships, the data and the content rights stay with the brand if it leaves.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.compare-grin-14-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.compare-grin-14-question" type="button"><span>How soon can creators be posting?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.compare-grin-14-question" className="hp-faq-answer" data-open="false" id="faq.compare-grin-14-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">GRIN says a brand can launch a first campaign in as little as 10 minutes, and after that the pace depends on your team's time. Tano onboards the first creators in the first days of a programme, typically with first creators live less than 24 hours after onboarding, and builds from there tier by tier.</p></div></div></li></ul></div></div></div></div></section><section aria-labelledby="brands-title" className="hp-band hp-brands-band" data-ground="dark" data-ground-dark data-padding="xl" style={{'--hp-accent': '#f2c200'}}><div className="hp-container hp-brands"><div><div className="hp-band-heading" data-align="centre"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="brands-title"><span className="hp-title-words">In their words.</span></h2></div></div></div><div className="hp-reveal" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '140ms'}}><div className="hp-brand-stage" data-rv-skip><div className="hp-brand-media hp-behind wire-glass-edge" data-rim="true"><span aria-hidden="true" className="wire-glass-sheen" /><img alt="A Skin + Me prescription doser, personalised for its subscriber" data-live="true" decoding="async" className="hp-brand-shot" style={{position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, color: 'transparent'}} src="/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg" /><img alt="" aria-hidden="true" data-live="false" decoding="async" className="hp-brand-shot" style={{position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, color: 'transparent'}} src="/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg" /><span aria-hidden="true" className="hp-brand-media-dim" /><img alt="" aria-hidden="true" data-live="true" width={200} height={80} decoding="async" className="hp-brand-media-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-3.png" /><img alt="" aria-hidden="true" data-live="false" width={200} height={80} decoding="async" className="hp-brand-media-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-8.png" /></div><div aria-labelledby="_R_3mlubpcnjb_-tab-0" className="hp-brand-card" data-fading="false" id="_R_3mlubpcnjb_-panel" role="tabpanel" tabIndex={-1}><div className="hp-brand-top"><div className="hp-brand-stat-row"><span aria-hidden="true" className="hp-brand-stat-rule" /><p className="hp-brand-figure"><span className="hp-brand-stat tano-display-xs"><span className="hp-brand-stat-digits">0</span> / 5</span><span className="hp-brand-caption tano-heading-mono-xs">Top performers in a single month</span></p></div><div className="hp-brand-quote-slot"><p aria-hidden="true" className="hp-brand-quote hp-brand-quote-ghost tano-heading-md">“AI doesn’t replace the human; it unlocks the human.”</p><p aria-hidden="true" className="hp-brand-quote hp-brand-quote-ghost tano-heading-md">“Our seeded partnership ads are delivering a 22% cheaper CPA and 34% increased ROAS versus our previous partnership ads and also versus in-house ads, they're much more efficient.”</p><blockquote className="hp-brand-quote hp-brand-quote-live tano-heading-md" data-reduced="false"><span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark">“</span><span className="hp-brand-word" style={{'--d': '40ms'}}>AI </span><span className="hp-brand-word" style={{'--d': '80ms'}}>doesn’t </span><span className="hp-brand-word" style={{'--d': '120ms'}}>replace </span><span className="hp-brand-word" style={{'--d': '160ms'}}>the </span><span className="hp-brand-word" style={{'--d': '200ms'}}>human; </span><span className="hp-brand-word" style={{'--d': '240ms'}}>it </span><span className="hp-brand-word" style={{'--d': '280ms'}}>unlocks </span><span className="hp-brand-word" style={{'--d': '320ms'}}>the </span><span className="hp-brand-word" style={{'--d': '360ms'}}>human.</span><span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark" style={{'--d': '400ms'}}>”</span></blockquote></div></div><div className="hp-brand-foot"><span className="hp-brand-who"><span className="hp-brand-portrait" data-initials="false"><img alt="Katie McKane, Influencer Executive at Skin + Me" width={96} height={96} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-110.jpg" /></span><span className="hp-brand-who-name"><span className="tano-body-md">Katie McKane</span><span className="hp-sub tano-body-sm">Influencer Executive · Skin+Me</span></span></span><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/case-studies/skin-and-me"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Read the case study<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div></div></div></div><div className="hp-reveal hp-brand-bar-reveal" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '200ms'}}><div aria-label="Choose a brand" className="hp-brand-bar" role="tablist"><button aria-controls="_R_3mlubpcnjb_-panel" aria-selected="true" className="hp-brand-tab" data-active="true" id="_R_3mlubpcnjb_-tab-0" role="tab" tabIndex={0} type="button"><span aria-hidden="true" className="hp-brand-tab-rule"><span className="hp-brand-tab-fill" data-paused="true" style={{'--hp-brand-duration': '6000ms', '--hp-brand-count': 2, '--hp-brand-index': 0}} /></span><span className="hp-brand-tab-mark-box"><img alt="Skin+Me" width={160} height={40} decoding="async" className="hp-brand-tab-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-3.png" /></span></button><button aria-controls="_R_3mlubpcnjb_-panel" aria-selected="false" className="hp-brand-tab" data-active="false" id="_R_3mlubpcnjb_-tab-1" role="tab" tabIndex={-1} type="button"><span aria-hidden="true" className="hp-brand-tab-rule" /><span className="hp-brand-tab-mark-box"><img alt="Papier" width={160} height={40} decoding="async" className="hp-brand-tab-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-8.png" /></span></button></div></div></div></section><section aria-labelledby="closing-title" className="hp-band hp-closing-band" data-ground="dark" data-ground-dark="open" data-padding="xl"><div className="hp-container hp-closing"><div aria-hidden="true" className="hp-closing-cards"><div className="hp-camp-card" data-slot="send"><div className="hp-camp-brief"><span className="hp-camp-chips"><span className="hp-camp-chip" data-picked="true">Affiliate revenue</span><span className="hp-camp-chip">Share of voice</span></span><span className="hp-camp-mono" data-quiet>Product to gift</span><span className="hp-camp-gift"><span className="hp-camp-tile" style={{backgroundColor: '#d9a48f'}}><img alt="Wellness Journal" decoding="async" style={{position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, color: 'transparent'}} src="/sites/tano/images/tano-123.jpg" /></span><span className="hp-camp-gift-name">Wellness Journal</span></span><span className="hp-camp-targets"><span className="hp-camp-target"><span className="hp-camp-mono" data-quiet>Revenue target</span><span className="hp-camp-target-value"><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span><span className="hp-camp-target"><span className="hp-camp-mono" data-quiet>Target CAC</span><span className="hp-camp-target-value"><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span></span></div></div><div className="hp-camp-card" data-slot="library"><div className="hp-camp-field"><span className="hp-camp-field-head"><span className="hp-camp-mono" data-quiet>Creator score</span><span className="hp-camp-match-figure">0.00</span></span><span className="hp-camp-score"><span className="hp-camp-score-row" style={{'--row': 0}}><span className="hp-camp-score-label">Persona fit</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.9'}} /></span><span className="hp-camp-score-row" style={{'--row': 1}}><span className="hp-camp-score-label">World fit</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.82'}} /></span><span className="hp-camp-score-row" data-win="true" style={{'--row': 2}}><span className="hp-camp-score-label">Purchase intent</span><span aria-hidden="true" className="hp-camp-bar" data-win="true" style={{'--share': 1}} /></span><span className="hp-camp-score-row" style={{'--row': 3}}><span className="hp-camp-score-label">Brand safety</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.96'}} /></span></span><span className="hp-camp-field-foot"><span className="wire-lockup" data-size="sm"><span className="wire-lockup-ring"><img alt="" width={72} height={72} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-94.jpg" /></span><span className="wire-lockup-who"><span className="wire-lockup-handle">@reginafoster.us</span></span></span></span></div></div><div className="hp-camp-card" data-slot="metric"><ol className="hp-camp-chat"><li className="hp-camp-turn" data-from="agent"><span aria-hidden="true" className="hp-camp-turn-mark"><svg aria-hidden="true" fill="none" viewBox="0 0 222 208" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient cx={0} cy={0} gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)" gradientUnits="userSpaceOnUse" id="tano-glyph-spectrum" r={1}><stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" /><stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" /><stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" /></radialGradient></defs><path d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z" fill="url(#tano-glyph-spectrum)" /></svg></span><span className="hp-camp-bubble">Loved your last post. Could we send you Papier’s Wellness Journal?</span></li><li className="hp-camp-turn" data-from="creator"><span aria-hidden="true" className="hp-camp-turn-face"><span aria-label="@reginafoster.us" className="wire-lockup" data-size="xs" role="img"><span className="wire-lockup-ring"><img alt="" width={48} height={48} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-94.jpg" /></span></span></span><span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span></li><li className="hp-camp-turn" data-from="agent"><span aria-hidden="true" className="hp-camp-turn-mark"><svg aria-hidden="true" fill="none" viewBox="0 0 222 208" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient cx={0} cy={0} gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)" gradientUnits="userSpaceOnUse" id="tano-glyph-spectrum" r={1}><stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" /><stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" /><stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" /></radialGradient></defs><path d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z" fill="url(#tano-glyph-spectrum)" /></svg></span><span className="hp-camp-bubble">Wonderful. It arrives Monday, with your code to share.</span></li></ol></div><div className="hp-camp-card" data-slot="code"><div className="hp-camp-metrics"><span className="hp-camp-metric" data-turn={0}><span className="hp-camp-mono" data-quiet>New customer LTV</span><span className="hp-camp-metric-row"><svg aria-hidden="true" className="hp-camp-metric-trend" preserveAspectRatio="none" viewBox="0 0 100 40"><defs><linearGradient gradientUnits="userSpaceOnUse" id="hp-camp-metric-_R_4c6lubpcnjb_" x1={0} x2={100} y1={0} y2={0}><stop offset={0} style={{stopColor: 'var(--spectrum-yellow)'}} /><stop offset="0.3" style={{stopColor: 'var(--spectrum-lime)'}} /><stop offset="0.58" style={{stopColor: 'var(--spectrum-cyan)'}} /><stop offset="0.8" style={{stopColor: 'var(--spectrum-violet)'}} /><stop offset={1} style={{stopColor: 'var(--spectrum-magenta)'}} /></linearGradient></defs><path className="hp-camp-metric-line" d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001" stroke="url(#hp-camp-metric-_R_4c6lubpcnjb_)" /></svg><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span><span className="hp-camp-metric" data-turn={1}><span className="hp-camp-mono" data-quiet>CAC</span><span className="hp-camp-metric-row"><svg aria-hidden="true" className="hp-camp-metric-trend" preserveAspectRatio="none" viewBox="0 0 100 40"><path className="hp-camp-metric-line" d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68" stroke="url(#hp-camp-metric-_R_4c6lubpcnjb_)" /></svg><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span></div></div></div><div className="hp-closing-copy"><h2 className="hp-closing-title tano-display-sm" id="closing-title"><span>See if Tano fits</span><span>your programme.</span></h2><p className="hp-sub tano-body-para-md">Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.</p><div className="hp-band-actions"><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/talk-to-us"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Get started<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div></div></div></section>
+      <section
+        aria-labelledby="use-case-title"
+        className="hp-band hp-uc-hero"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div aria-hidden="true" className="hp-hero-glow">
+          <div className="hp-hero-glow-light">
+            <div className="wire-spectrum-drift" />
+            <div className="hp-hero-glow-folds" data-layer="a" />
+            <div className="hp-hero-glow-folds" data-layer="b" />
+          </div>
+        </div>
+        <div className="hp-container hp-uc-hero-field">
+          <div className="hp-uc-hero-copy">
+            <h1 className="hp-title tano-display-md" id="use-case-title">
+              <span className="hp-title-words">GRIN vs Tano:</span>
+              <span className="hp-title-words">software you run, or a programme run for you?</span>
+            </h1>
+            <p className="hp-uc-hero-sub tano-body-para-md">
+              GRIN is creator marketing software that a brand's own team runs. Tano is a creator
+              advertising platform: it pairs specialist AI agents with a senior in-house team to run
+              an always-on creator programme for a brand.
+            </p>
+            <p className="hp-uc-hero-sub tano-body-para-md">
+              GRIN works well for a large in-house creator team that wants one low-cost tool and to
+              make every decision itself. Its free plan makes it an easy place to start.
+            </p>
+            <p className="hp-uc-hero-sub tano-body-para-md">
+              Tano is built for the stage after that: a programme that has to grow faster than the
+              team running it, across hundreds or thousands of creators.
+            </p>
+            <div className="hp-uc-hero-actions">
+              <TanoButtonLink href={"/talk-to-us"} label={"See if Tano fits your programme"} />
+              <TanoButtonLink href={"/compare"} label={"All comparisons"} variant={"secondary"} icon={false} />
+            </div>
+          </div>
+          <div className="hp-uc-hero-proof">
+            <svg aria-hidden="true" className="hp-stat-defs" focusable="false">
+              <defs>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="hp-stat-spectrum"
+                  x1={0}
+                  x2={321}
+                  y1={0}
+                  y2={0}
+                >
+                  <stop offset="8.65%" stopColor="var(--spectrum-yellow)" />
+                  <stop offset="30.77%" stopColor="var(--spectrum-lime)" />
+                  <stop offset="58.65%" stopColor="var(--spectrum-cyan)" />
+                  <stop offset="79.33%" stopColor="var(--spectrum-violet)" />
+                  <stop offset="100%" stopColor="var(--spectrum-magenta)" />
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="hp-stat-spectrum-warm"
+                  x1={0}
+                  x2={321}
+                  y1={0}
+                  y2={0}
+                >
+                  <stop offset="0%" stopColor="var(--spectrum-orange)" />
+                  <stop offset="22%" stopColor="var(--spectrum-yellow)" />
+                  <stop offset="44%" stopColor="var(--spectrum-lime)" />
+                  <stop offset="70%" stopColor="var(--spectrum-cyan)" />
+                  <stop offset="100%" stopColor="var(--spectrum-violet)" />
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="hp-stat-spectrum-up"
+                  x1={0}
+                  x2={0}
+                  y1={0}
+                  y2={105}
+                >
+                  <stop offset="0%" stopColor="var(--spectrum-violet)" />
+                  <stop offset="100%" stopColor="var(--spectrum-cyan)" />
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="hp-stat-spectrum-ring"
+                  x1={0}
+                  x2={0}
+                  y1={20}
+                  y2={100}
+                >
+                  <stop offset="0%" stopColor="var(--spectrum-magenta)" />
+                  <stop offset="100%" stopColor="var(--spectrum-violet)" />
+                </linearGradient>
+                <linearGradient
+                  gradientUnits="userSpaceOnUse"
+                  id="hp-stat-falloff"
+                  x1={0}
+                  x2={0}
+                  y1={10}
+                  y2={105}
+                >
+                  <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
+                  <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
+                </linearGradient>
+                <mask id="hp-stat-falloff-mask">
+                  <rect fill="url(#hp-stat-falloff)" height={117} width={321} x={0} y={0} />
+                </mask>
+              </defs>
+            </svg>
+            <div className="hp-stat-group">
+              <p className="hp-stat-group-label tano-body-mono-sm">The numbers:</p>
+              <ul className="hp-stat-row">
+                <li
+                  className="hp-reveal hp-stat"
+                  data-rv-skip
+                  data-shown="false"
+                  style={{ "--hp-reveal-delay": "0ms" }}
+                >
+                  <div className="hp-stat-head">
+                    <span
+                      aria-label="Skin + Me"
+                      className="hp-stat-mark-frame"
+                      role="img"
+                      style={{ "--mark-optical": "0.742", "--mark-aspect": "5.447" }}
+                    >
+                      <span
+                        className="hp-stat-mark"
+                        data-colour
+                        style={{
+                          backgroundImage:
+                            'url("/brand-mark/669e03ced1a3526eec5e27862281f1969cfa8a5d-1400x257.png")',
+                        }}
+                      />
+                    </span>
+                  </div>
+                  <span className="hp-stat-value tano-heading-lg">
+                    <span aria-hidden="true">3.5×</span>
+                    <span className="wire-visually-hidden">3.5×</span>
+                  </span>
+                  <p className="hp-stat-caption hp-sub tano-body-md">
+                    Growth in sign-ups and revenue at Skin+Me with Tano.
+                  </p>
+                </li>
+                <li
+                  className="hp-reveal hp-stat"
+                  data-rv-skip
+                  data-shown="false"
+                  style={{ "--hp-reveal-delay": "90ms" }}
+                >
+                  <div className="hp-stat-head">
+                    <span
+                      aria-label="HelloFresh"
+                      className="hp-stat-mark-frame"
+                      role="img"
+                      style={{ "--mark-optical": "0.987", "--mark-aspect": "3.077" }}
+                    >
+                      <span
+                        className="hp-stat-mark"
+                        data-colour
+                        data-for="light"
+                        style={{
+                          backgroundImage:
+                            'url("/brand-mark/eb38a51363759ba206612b684fc7d888953a892f-760x247.png")',
+                        }}
+                      />
+                      <span
+                        className="hp-stat-mark"
+                        data-colour
+                        data-for="dark"
+                        style={{
+                          backgroundImage:
+                            'url("/brand-mark/f49bb20d04c6f37f32698eaecdcd1d3704688682-760x247.png")',
+                        }}
+                      />
+                    </span>
+                  </div>
+                  <span className="hp-stat-value tano-heading-lg">
+                    <span aria-hidden="true">+93%</span>
+                    <span className="wire-visually-hidden">+93%</span>
+                  </span>
+                  <p className="hp-stat-caption hp-sub tano-body-md">
+                    CVR uplift at HelloFresh with a hybrid creator model run with Tano.
+                  </p>
+                </li>
+                <li
+                  className="hp-reveal hp-stat"
+                  data-rv-skip
+                  data-shown="false"
+                  style={{ "--hp-reveal-delay": "180ms" }}
+                >
+                  <div className="hp-stat-head">
+                    <span
+                      aria-label="Bloom & Wild"
+                      className="hp-stat-mark"
+                      role="img"
+                      style={{
+                        maskImage:
+                          'url("/brand-mark/2e92941ac79b8c30ad141495c8265df5930917fd-1400x647.svg")',
+                        WebkitMaskImage:
+                          'url("/brand-mark/2e92941ac79b8c30ad141495c8265df5930917fd-1400x647.svg")',
+                        "--mark-optical": "1.107",
+                        "--mark-aspect": "2.164",
+                      }}
+                    />
+                  </div>
+                  <span className="hp-stat-value tano-heading-lg">
+                    <span aria-hidden="true">+125%</span>
+                    <span className="wire-visually-hidden">+125%</span>
+                  </span>
+                  <p className="hp-stat-caption hp-sub tano-body-md">
+                    CTR on Bloom &amp; Wild creator ads run through Tano, against non-Tano ads.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="prose-gr-p1"
+        className="hp-band"
+        data-ground="light"
+        data-padding="xl"
+      >
+        <div className="hp-container hp-prose">
+          <div className="hp-band-heading" data-align="start">
+            <div className="hp-band-heading-copy">
+              <h2 className="hp-title tano-display-xs" id="prose-gr-p1">
+                <span className="hp-title-words">Two ways to run a creator programme</span>
+              </h2>
+            </div>
+          </div>
+          <div className="hp-prose-rows">
+            <div className="hp-prose-row">
+              <div className="hp-prose-columns" data-split>
+                <div className="hp-prose-column" data-card>
+                  <h3 className="tano-heading-sm">
+                    GRIN: one tool for the whole workflow, operated in-house
+                  </h3>
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      GRIN is creator management software that covers the whole workflow in one
+                      platform: finding creators, gifting and contracts, tracking and payouts.
+                      Creators come from GRIN's search or the{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/creators"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        GRIN Marketplace
+                      </a>
+                      , a network of more than 700,000 creators on a free app.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      In May 2025 GRIN{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/news/grin-launches-gia-the-first-agentic-ai-solution-designed-to-supercharge-creator-marketers/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        added an AI agent, Gia
+                      </a>
+                      , which is included in their Starter plan and above. Gia works like a copilot
+                      inside the software: it prepares work and recommends next steps, and{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        in GRIN's words
+                      </a>
+                      , “Gia makes the recommendation, but you make the call.” Your team approves “
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/platform"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        consequential actions involving messages, money, contracts, or brand risk
+                      </a>
+                      ”, sets terms, handles counter-offers, and keeps “strategy, relationships, and
+                      the creative work”.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      GRIN is priced as software.{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/pricing"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Plans run month to month from free to $1,000 a month
+                      </a>
+                      , which is the licence fee; Each plan includes a monthly allowance of credits
+                      for Gia's work, and paid plans can buy more, at a price GRIN does not publish.
+                      The people who run the programme come from your own team;{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/compare/grin-vs-impact"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        GRIN states it does not sell a services team
+                      </a>
+                      .
+                    </p>
+                  </div>
+                </div>
+                <div className="hp-prose-column" data-card>
+                  <h3 className="tano-heading-sm">
+                    Tano: specialist agents and a senior team running the programme
+                  </h3>
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Tano is a creator advertising platform: it pairs specialist AI agents with a
+                      senior in-house team to run an always-on creator programme for consumer
+                      brands. Tano focuses on building performance-powered creator communities
+                      around your brand and product. Its AI runs sourcing, vetting, content quality
+                      analysis and reporting; outreach, briefing, contracting and gifting run as
+                      agent workflows from day one; and an agent speaks for your brand to creators.
+                      Tano's in-house strategists oversee the programme end to end, negotiate rates,
+                      and manage usage rights and whitelisting. Every programme has a named account
+                      lead who is your point of contact and leads the programme strategy.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Tano builds programmes focused on two objectives:
+                    </p>
+                    <ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft">
+                      <li>Creative volume for Meta and TikTok</li>
+                      <li>New customer acquisition and revenue</li>
+                    </ol>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Sourcing matches creators to your buyer personas, brand fit and performance
+                      signals across TikTok, Instagram and YouTube, drawing on roughly 250 million
+                      creators, including independent and up-and-coming creators who are not on any
+                      marketplace. The agents vet each creator's content for brand fit and tone, at
+                      a volume no in-house team could check by hand.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      The programme runs as a lifecycle, built to grow a performance-powered creator
+                      community around your brand. Tano uses each creator's performance and history
+                      to decide the next action: who needs a reminder, who is ready for another
+                      product, who is posting but not converting, who should move up a tier, and
+                      which content is worth using in paid social. Creators stay independent, and
+                      the relationships, data and content rights stay with your brand if you leave.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="prose-gr-p2"
+        className="hp-band"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div className="hp-container hp-prose">
+          <div className="hp-band-heading" data-align="start">
+            <div className="hp-band-heading-copy">
+              <h2 className="hp-title tano-display-xs" id="prose-gr-p2">
+                <span className="hp-title-words">How are GRIN and Tano different?</span>
+              </h2>
+            </div>
+          </div>
+          <div className="hp-prose-rows">
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h3 className="tano-heading-md">Who runs the programme?</h3>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      With GRIN, your team does. Gia provides support, but your team approves every
+                      invitation, contract change and payout, and negotiates terms with each
+                      creator. With Tano, a blended team of agents and creator marketing experts
+                      runs sourcing, outreach, negotiation and payments. Your team approves the
+                      strategy and keeps the final say on creative and the highest-value creator
+                      moments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h3 className="tano-heading-md">One general agent, or specialist agents?</h3>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Gia is a single agent that works across GRIN's jobs, from recruiting and
+                      outreach to deliverable review and retention, and you buy its work in credits.
+                      Tano runs specialist agents for each separate job: sourcing and vetting,
+                      outreach, briefing and contracting, gifting, content quality analysis and
+                      reporting. An orchestrator agent coordinates them, moving each creator from
+                      one stage to the next and deciding which agent acts next, and Tano's team
+                      oversees the whole system. The result with GRIN is a capable platform with an
+                      assistant for your team; the result with Tano is a programme run for you by
+                      Tano's team and agents, which gets better over time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h3 className="tano-heading-md">Where do the creators come from?</h3>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      GRIN gives your team creator search and a marketplace of more than 700,000
+                      creators. Tano recruits for you from roughly 250 million, matched to your
+                      buyer personas and brand fit, including creators who have never joined a
+                      marketplace.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h3 className="tano-heading-md">What are you paying for?</h3>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      With GRIN you pay for software and activity. In GRIN's words, you “
+                      <a
+                        className="wire-contact-link"
+                        href="https://grin.co/compare/grin-vs-impact"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        pay for the work she does
+                      </a>
+                      ”: credits are used each time Gia sources, messages, reports or sets up a
+                      campaign, whether or not that work turns into sales, and GRIN takes no share
+                      of the revenue your creators generate. How the programme performs is down to
+                      your team.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      With Tano you pay for a running programme. Tano is paid on results: a fee for
+                      each post that goes live and 20% of the sales creators drive. If a seeded
+                      creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products
+                      a month, typically about $3,000.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="comparison-title"
+        className="hp-band"
+        data-ground="light"
+        data-padding="xl"
+      >
+        <div className="hp-container hp-comparison">
+          <div className="hp-band-heading" data-align="start" data-cue>
+            <div className="hp-band-heading-copy">
+              <h2 className="hp-title tano-display-xs" id="comparison-title">
+                <span className="hp-title-words">GRIN and Tano side by side.</span>
+              </h2>
+            </div>
+            <div className="hp-band-actions">
+              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+            </div>
+            <p aria-hidden="true" className="hp-swipe-cue tano-body-sm">
+              Swipe to see how they compare →
+            </p>
+          </div>
+          <div
+            className="hp-reveal hp-comparison-card"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "60ms" }}
+          >
+            <div className="hp-comparison-scroll" role="region" aria-label="Comparison table">
+              <table className="hp-table">
+                <caption className="wire-visually-hidden">GRIN, Tano compared</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span className="wire-visually-hidden">Attribute</span>
+                    </th>
+                    <th className="hp-table-head tano-body-md" data-highlight="false" scope="col">
+                      GRIN
+                    </th>
+                    <th className="hp-table-head tano-body-md" data-highlight="true" scope="col">
+                      <span className="wire-visually-hidden">Tano</span>
+                      <svg
+                        aria-hidden="true"
+                        className="hp-table-wordmark"
+                        fill="none"
+                        viewBox="0 0 606.001 208"
+                        overflow="visible"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M280.001 40C282.21 40.0003 284.001 41.791 284.001 44V199.861C284.001 202.07 282.209 203.861 280 203.861H252C249.791 203.861 248.001 202.07 248.001 199.861V196C248.001 195.176 247.056 194.704 246.386 195.183C234.859 203.417 222.565 207.77 206.001 208C182.028 207.623 159.051 205.328 145.666 190.082C133.745 176.505 130.353 149.638 130.001 122C130.353 94.3625 133.828 67.5345 146.666 54.8213C161.051 40.5757 182.028 40.3767 206.001 40C222.502 40.2294 235.67 41.8333 246.385 48.8818C247.068 49.331 248.001 48.8534 248.001 48.0361V44C248.001 41.7909 249.792 40 252.001 40H280.001ZM207.001 76C176.001 76 166.001 80 166.001 124C166.001 168 176.001 172 207.001 172C238.001 172 248.001 168 248.001 124C248.001 80.0002 238.001 76 207.001 76Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                        <path
+                          clipRule="evenodd"
+                          d="M530.001 40C553.974 40.3767 577.95 41.5767 590.335 54.8223C602.675 68.0194 605.649 96.3628 606.001 122C605.649 147.637 602.675 177.885 590.335 191.082C577.95 204.327 553.974 207.623 530.001 208C506.028 207.623 482.052 204.327 469.667 191.082C457.327 177.885 454.353 147.638 454.001 122C454.353 96.3626 457.327 68.0193 469.667 54.8223C482.052 41.5769 506.028 40.3767 530.001 40ZM530.001 76C499.001 76 489.001 80 489.001 124C489.001 168 499.001 172 530.001 172C561.001 172 571.001 168 571.001 124C571.001 80.0002 561.001 76 530.001 76Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                        <path
+                          clipRule="evenodd"
+                          d="M72.001 0C74.2099 0.000263219 76.001 1.79102 76.001 4V42C76.001 43.1046 76.8964 44 78.001 44H116.001C118.21 44.0003 120.001 45.791 120.001 48V76C120.001 78.2091 118.209 80 116 80H78.001C76.8964 80 76.001 80.8954 76.001 82V152C76.001 164.25 79.0002 168 92.001 168H120.001C122.21 168 124.001 169.791 124.001 172V200C124.001 202.209 122.21 204 120.001 204H74.001C44.999 204 32.001 191.305 32.001 164V82C32.001 80.8956 31.1053 80.0003 30.001 80H4.00098C1.79184 80 1.61047e-08 78.2091 0 76V48C0 45.7909 1.79184 44 4.00098 44H30.001C31.1053 43.9997 32.001 43.1044 32.001 42V4C32.001 1.79086 33.7918 0 36.001 0H72.001Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                        <path
+                          clipRule="evenodd"
+                          d="M371.001 40C396.591 40.3767 415.95 42.0001 428.335 56C439.992 69.1771 444.001 95.0002 444.001 122V199.992C444.001 202.201 442.209 204 440 204H412.001C409.792 204 408.001 202.21 408.001 200.001V126C408.001 83.0002 402.59 76.0001 371.001 76C342.591 76 334.001 83 334.001 126C334.001 150.157 334 182.038 334 200.011C334 202.22 332.21 204 330.001 204H302.001C299.792 204 298.001 202.211 298.001 200.002V122C298.001 95 300.804 69 313.667 56C326.611 42.0002 346.591 40.3767 371.001 40Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Core model
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Creator management software for an in-house team
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Brand-owned creator programme run by Tano
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Best at
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Giving a hands-on team one low-cost tool
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Running an always-on programme at volume without adding headcount (100 to
+                          1,000+ creators per programme)
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Brand's role
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Run the programme and approve invitations, contracts and payouts
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Approve key decisions while Tano runs the programme operations
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      AI
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          One copilot agent, Gia, metered in credits
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Specialist agents for sourcing, vetting, outreach, contracting, gifting,
+                          content review and reporting, coordinated by an orchestrator
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      People
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Your team; GRIN does not sell a services team
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Tano's senior in-house team, included in the fee
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Creator supply
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Search plus the GRIN Marketplace (700,000+)
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Roughly 250 million creators, including those on no marketplace
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Programme design
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Seeding, paid, affiliate and UGC, set up by your team
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Lifecycle design: gifting, first post, repeat post, tiering, affiliate,
+                          paid usage and re-engagement
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Content rights
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Captured with usage rights attached to the content
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Rights and whitelisting can be managed as part of the programme
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      How you are charged
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Subscription plus credits for AI work; no share of sales
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Monthly fee plus a share of the commission the programme generates
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Pricing
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Free to $1,000 a month licence, with more credits available on paid plans;
+                          month to month
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          From $3,000 a month plus a share of affiliate commission
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th className="hp-table-label tano-body-md" scope="row">
+                      Published results
+                    </th>
+                    <td className="tano-body-md" data-highlight="false">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          $1.2B+ creator-driven GMV and 5,000+ brand programmes since 2017, by
+                          GRIN's count
+                        </span>
+                      </span>
+                    </td>
+                    <td className="tano-body-md" data-highlight="true">
+                      <span className="hp-table-answer">
+                        <span className="hp-table-cell">
+                          Skin+Me: 3.5× growth in sign-ups and revenue, 4 of 5 top creators
+                          onboarded by Tano. Bloom &amp; Wild: +125% click-through and 10% lower CPA
+                          on creator ads. HelloFresh: 93% CVR uplift with a hybrid creator model
+                        </span>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="prose-gr-p4"
+        className="hp-band"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div className="hp-container hp-prose">
+          <div className="hp-band-heading" data-align="start">
+            <div className="hp-band-heading-copy">
+              <h2 className="hp-title tano-display-xs" id="prose-gr-p4">
+                <span className="hp-title-words">Which should you choose?</span>
+              </h2>
+            </div>
+          </div>
+          <div className="hp-prose-rows">
+            <div className="hp-prose-row">
+              <div className="hp-prose-columns" data-split>
+                <div className="hp-prose-column" data-card>
+                  <p className="tano-body-mono-xs wire-ink-soft">Why GRIN</p>
+                  <h3 className="tano-heading-sm">Choose GRIN when</h3>
+                  <div className="wire-article-prose">
+                    <ul className="wire-legal-list tano-body-para-md wire-ink-soft">
+                      <li>
+                        You have an experienced in-house team with the hours to run creators itself.
+                      </li>
+                      <li>
+                        You want to stay close to the detail: which creator gets what, and on which
+                        terms.
+                      </li>
+                      <li>
+                        You are starting out: GRIN has a free plan and paid plans from $200 a month,
+                        month to month.
+                      </li>
+                      <li>
+                        You sell on Shopify and want gifting and orders handled inside one tool.
+                      </li>
+                    </ul>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      GRIN is the lower-cost choice for a brand that has the people and wants to
+                      keep every decision in-house.
+                    </p>
+                  </div>
+                </div>
+                <div className="hp-prose-column" data-card>
+                  <p className="tano-body-mono-xs wire-ink-soft">Why Tano</p>
+                  <h3 className="tano-heading-sm">Choose Tano when</h3>
+                  <div className="wire-article-prose">
+                    <ul className="wire-legal-list tano-body-para-md wire-ink-soft">
+                      <li>Your creator programme has outgrown the one or two people running it.</li>
+                      <li>You want hundreds or thousands of creators active without hiring.</li>
+                      <li>
+                        You want specialist agents running the work and a senior team responsible
+                        for the results.
+                      </li>
+                      <li>You want to reach creators who are not on any marketplace.</li>
+                      <li>Your product needs repeat exposure or a trial before someone buys.</li>
+                    </ul>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      <Link className="wire-contact-link" href="/case-studies/bloom-and-wild">
+                        Bloom &amp; Wild
+                      </Link>
+                      's Tano creator ads produced 125% higher click-through and a 10% lower cost
+                      per acquisition than its non-Tano ads. At{" "}
+                      <Link className="wire-contact-link" href="/case-studies/skin-and-me">
+                        Skin+Me
+                      </Link>
+                      , Tano onboarded 4 of its 5 top creators in September 2025, and creator-driven
+                      sign-ups and revenue grew 3.5×.{" "}
+                      <Link className="wire-contact-link" href="/case-studies/hellofresh">
+                        HelloFresh
+                      </Link>{" "}
+                      saw a 93% conversion uplift with a hybrid creator model run with Tano.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="faq-title"
+        className="hp-band"
+        data-ground="light"
+        data-padding="xl"
+      >
+        <div className="hp-container hp-faq">
+          <div className="hp-faq-head">
+            <div className="hp-band-heading" data-align="start">
+              <div className="hp-band-heading-copy">
+                <h2 className="hp-title tano-display-xs" id="faq-title">
+                  <span className="hp-title-words">Common questions.</span>
+                </h2>
+                <p className="hp-sub tano-body-para-md">
+                  GRIN and Tano compared on who runs the programme, agents, cost and when to choose
+                  each.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal hp-faq-stack"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "80ms" }}
+          >
+            <div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true" />
+            <div className="hp-faq-card">
+              <div className="hp-faq-tools">
+                <div className="hp-faq-search">
+                  <label className="wire-visually-hidden" htmlFor="faq-search">
+                    Search the questions
+                  </label>
+                  <span aria-hidden="true" className="hp-faq-search-icon">
+                    <svg
+                      viewBox="0 0 14 14"
+                      width="100%"
+                      height="100%"
+                      fill="none"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    autoComplete="off"
+                    className="hp-faq-search-input tano-body-md"
+                    enterKeyHint="search"
+                    id="faq-search"
+                    placeholder="Search questions"
+                    type="search"
+                    defaultValue=""
+                  />
+                </div>
+              </div>
+              <p aria-live="polite" className="wire-visually-hidden" />
+              <div id="faq-panel">
+                <ul className="hp-faq-rows">
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-01-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-01-question"
+                      type="button"
+                    >
+                      <span>Is Tano an alternative to GRIN?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-01-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-01-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          Yes. Both run a direct creator programme for a brand, so most brands use
+                          one. GRIN gives your team the software to run it; Tano runs it for you
+                          with specialist agents and a senior team.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-06-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-06-question"
+                      type="button"
+                    >
+                      <span>Can GRIN's AI agent run a creator programme on its own?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-06-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-06-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          No, and GRIN does not claim it can. Gia prepares and recommends, and your
+                          team approves every action involving messages, money, contracts or brand
+                          risk. GRIN says your team keeps strategy, relationships and the creative
+                          work, and it does not sell a services team to do that for you.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-07-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-07-question"
+                      type="button"
+                    >
+                      <span>How is Tano's AI different from GRIN's Gia?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-07-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-07-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          Gia is one general agent inside a tool your team operates, paid for in
+                          credits. Tano runs specialist agents for sourcing, vetting, outreach,
+                          contracting, gifting, content review and reporting, overseen by a senior
+                          team that also negotiates rates and manages rights. You get a running
+                          programme instead of a queue of recommendations to approve.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-08-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-08-question"
+                      type="button"
+                    >
+                      <span>When does it make sense to move from GRIN to Tano?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-08-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-08-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          When the programme outgrows the hours or the experience of the people
+                          running it. GRIN's free and low-cost plans make it an easy place to start.
+                          Once you want hundreds or thousands of creators active and would rather
+                          hand off sourcing, negotiation and follow-up, Tano is the better fit.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-09-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-09-question"
+                      type="button"
+                    >
+                      <span>How much does GRIN cost compared with Tano?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-09-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-09-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          GRIN's plans are Free, Starter at $200, Growth at $500 and Scale at $1,000
+                          a month, month to month, with Gia's work metered in credits: each plan
+                          includes a monthly allowance, and paid plans can buy more credits at a
+                          price GRIN does not publish. Tano is paid on results: a fee for each post
+                          that goes live and 20% of the sales creators drive. If a seeded creator
+                          doesn't post, Tano isn't paid. Programmes start at 100 seeded products a
+                          month, typically about $3,000. GRIN is cheaper as software; Tano's fee
+                          covers the agents, the team running them and the sourcing.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-10-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-10-question"
+                      type="button"
+                    >
+                      <span>Are GRIN's and Tano's incentives aligned with the brand's?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-10-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-10-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          They are set up differently. GRIN is paid for Gia's work through credits,
+                          whether or not that work produces sales, and takes no share of revenue.
+                          Tano is paid on results: a fee for each post that goes live and 20% of the
+                          sales creators drive, so what it earns depends on your creators posting
+                          and selling.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-11-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-11-question"
+                      type="button"
+                    >
+                      <span>What are the alternatives to GRIN?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-11-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-11-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          If you want different software for your own team to run, Modash, Upfluence
+                          and Aspire are examples. If you want someone else to run the programme,
+                          the options are an agency, a platform's managed service, or a done-for-you
+                          creator advertising platform such as Tano. Marketplaces such as LTK and
+                          ShopMy give access to creators already selling through them, and many
+                          brands run one alongside a direct programme.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-12-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-12-question"
+                      type="button"
+                    >
+                      <span>Does GRIN offer a managed service?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-12-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-12-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          Not as of September 2026. GRIN launched Professional Services, including a
+                          fully managed option, in October 2023, but its comparison pages now state
+                          that it does not sell a services team.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-13-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-13-question"
+                      type="button"
+                    >
+                      <span>Who owns the creator relationship with GRIN or Tano?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-13-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-13-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          Neither owns the creator: creators stay independent. With GRIN, the
+                          programme history sits in the brand's own GRIN account. With Tano, the
+                          programme is brand-owned, so the relationships, the data and the content
+                          rights stay with the brand if it leaves.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.compare-grin-14-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.compare-grin-14-question"
+                      type="button"
+                    >
+                      <span>How soon can creators be posting?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.compare-grin-14-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.compare-grin-14-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          GRIN says a brand can launch a first campaign in as little as 10 minutes,
+                          and after that the pace depends on your team's time. Tano onboards the
+                          first creators in the first days of a programme, typically with first
+                          creators live less than 24 hours after onboarding, and builds from there
+                          tier by tier.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="brands-title"
+        className="hp-band hp-brands-band"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+        style={{ "--hp-accent": "#f2c200" }}
+      >
+        <div className="hp-container hp-brands">
+          <div>
+            <div className="hp-band-heading" data-align="centre">
+              <div className="hp-band-heading-copy">
+                <h2 className="hp-title tano-display-xs" id="brands-title">
+                  <span className="hp-title-words">In their words.</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "140ms" }}
+          >
+            <div className="hp-brand-stage" data-rv-skip>
+              <div className="hp-brand-media hp-behind wire-glass-edge" data-rim="true">
+                <span aria-hidden="true" className="wire-glass-sheen" />
+                <img
+                  alt="A Skin + Me prescription doser, personalised for its subscriber"
+                  data-live="true"
+                  decoding="async"
+                  className="hp-brand-shot"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    left: 0,
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    color: "transparent",
+                  }}
+                  src="/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+                />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  data-live="false"
+                  decoding="async"
+                  className="hp-brand-shot"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    left: 0,
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    color: "transparent",
+                  }}
+                  src="/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg"
+                />
+                <span aria-hidden="true" className="hp-brand-media-dim" />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  data-live="true"
+                  width={200}
+                  height={80}
+                  decoding="async"
+                  className="hp-brand-media-mark"
+                  style={{ color: "transparent" }}
+                  src="/sites/tano/images/tano-3.png"
+                />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  data-live="false"
+                  width={200}
+                  height={80}
+                  decoding="async"
+                  className="hp-brand-media-mark"
+                  style={{ color: "transparent" }}
+                  src="/sites/tano/images/tano-8.png"
+                />
+              </div>
+              <div
+                aria-labelledby="_R_3mlubpcnjb_-tab-0"
+                className="hp-brand-card"
+                data-fading="false"
+                id="_R_3mlubpcnjb_-panel"
+                role="tabpanel"
+                tabIndex={-1}
+              >
+                <div className="hp-brand-top">
+                  <div className="hp-brand-stat-row">
+                    <span aria-hidden="true" className="hp-brand-stat-rule" />
+                    <p className="hp-brand-figure">
+                      <span className="hp-brand-stat tano-display-xs">
+                        <span className="hp-brand-stat-digits">0</span> / 5
+                      </span>
+                      <span className="hp-brand-caption tano-heading-mono-xs">
+                        Top performers in a single month
+                      </span>
+                    </p>
+                  </div>
+                  <div className="hp-brand-quote-slot">
+                    <p
+                      aria-hidden="true"
+                      className="hp-brand-quote hp-brand-quote-ghost tano-heading-md"
+                    >
+                      “AI doesn’t replace the human; it unlocks the human.”
+                    </p>
+                    <p
+                      aria-hidden="true"
+                      className="hp-brand-quote hp-brand-quote-ghost tano-heading-md"
+                    >
+                      “Our seeded partnership ads are delivering a 22% cheaper CPA and 34% increased
+                      ROAS versus our previous partnership ads and also versus in-house ads, they're
+                      much more efficient.”
+                    </p>
+                    <blockquote
+                      className="hp-brand-quote hp-brand-quote-live tano-heading-md"
+                      data-reduced="false"
+                    >
+                      <span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark">
+                        “
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "40ms" }}>
+                        AI{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "80ms" }}>
+                        doesn’t{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "120ms" }}>
+                        replace{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "160ms" }}>
+                        the{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "200ms" }}>
+                        human;{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "240ms" }}>
+                        it{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "280ms" }}>
+                        unlocks{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "320ms" }}>
+                        the{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "360ms" }}>
+                        human.
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="hp-brand-word hp-brand-quote-mark"
+                        style={{ "--d": "400ms" }}
+                      >
+                        ”
+                      </span>
+                    </blockquote>
+                  </div>
+                </div>
+                <div className="hp-brand-foot">
+                  <span className="hp-brand-who">
+                    <span className="hp-brand-portrait" data-initials="false">
+                      <img
+                        alt="Katie McKane, Influencer Executive at Skin + Me"
+                        width={96}
+                        height={96}
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                        src="/sites/tano/images/tano-110.jpg"
+                      />
+                    </span>
+                    <span className="hp-brand-who-name">
+                      <span className="tano-body-md">Katie McKane</span>
+                      <span className="hp-sub tano-body-sm">Influencer Executive · Skin+Me</span>
+                    </span>
+                  </span>
+                  <TanoButtonLink href={"/case-studies/skin-and-me"} label={"Read the case study"} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal hp-brand-bar-reveal"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "200ms" }}
+          >
+            <div aria-label="Choose a brand" className="hp-brand-bar" role="tablist">
+              <button
+                aria-controls="_R_3mlubpcnjb_-panel"
+                aria-selected="true"
+                className="hp-brand-tab"
+                data-active="true"
+                id="_R_3mlubpcnjb_-tab-0"
+                role="tab"
+                tabIndex={0}
+                type="button"
+              >
+                <span aria-hidden="true" className="hp-brand-tab-rule">
+                  <span
+                    className="hp-brand-tab-fill"
+                    data-paused="true"
+                    style={{
+                      "--hp-brand-duration": "6000ms",
+                      "--hp-brand-count": 2,
+                      "--hp-brand-index": 0,
+                    }}
+                  />
+                </span>
+                <span className="hp-brand-tab-mark-box">
+                  <img
+                    alt="Skin+Me"
+                    width={160}
+                    height={40}
+                    decoding="async"
+                    className="hp-brand-tab-mark"
+                    style={{ color: "transparent" }}
+                    src="/sites/tano/images/tano-3.png"
+                  />
+                </span>
+              </button>
+              <button
+                aria-controls="_R_3mlubpcnjb_-panel"
+                aria-selected="false"
+                className="hp-brand-tab"
+                data-active="false"
+                id="_R_3mlubpcnjb_-tab-1"
+                role="tab"
+                tabIndex={-1}
+                type="button"
+              >
+                <span aria-hidden="true" className="hp-brand-tab-rule" />
+                <span className="hp-brand-tab-mark-box">
+                  <img
+                    alt="Papier"
+                    width={160}
+                    height={40}
+                    decoding="async"
+                    className="hp-brand-tab-mark"
+                    style={{ color: "transparent" }}
+                    src="/sites/tano/images/tano-8.png"
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="closing-title"
+        className="hp-band hp-closing-band"
+        data-ground="dark"
+        data-ground-dark="open"
+        data-padding="xl"
+      >
+        <div className="hp-container hp-closing">
+          <div aria-hidden="true" className="hp-closing-cards">
+            <div className="hp-camp-card" data-slot="send">
+              <div className="hp-camp-brief">
+                <span className="hp-camp-chips">
+                  <span className="hp-camp-chip" data-picked="true">
+                    Affiliate revenue
+                  </span>
+                  <span className="hp-camp-chip">Share of voice</span>
+                </span>
+                <span className="hp-camp-mono" data-quiet>
+                  Product to gift
+                </span>
+                <span className="hp-camp-gift">
+                  <span className="hp-camp-tile" style={{ backgroundColor: "#d9a48f" }}>
+                    <img
+                      alt="Wellness Journal"
+                      decoding="async"
+                      style={{
+                        position: "absolute",
+                        height: "100%",
+                        width: "100%",
+                        left: 0,
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                        color: "transparent",
+                      }}
+                      src="/sites/tano/images/tano-123.jpg"
+                    />
+                  </span>
+                  <span className="hp-camp-gift-name">Wellness Journal</span>
+                </span>
+                <span className="hp-camp-targets">
+                  <span className="hp-camp-target">
+                    <span className="hp-camp-mono" data-quiet>
+                      Revenue target
+                    </span>
+                    <span className="hp-camp-target-value">
+                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                    </span>
+                  </span>
+                  <span className="hp-camp-target">
+                    <span className="hp-camp-mono" data-quiet>
+                      Target CAC
+                    </span>
+                    <span className="hp-camp-target-value">
+                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="hp-camp-card" data-slot="library">
+              <div className="hp-camp-field">
+                <span className="hp-camp-field-head">
+                  <span className="hp-camp-mono" data-quiet>
+                    Creator score
+                  </span>
+                  <span className="hp-camp-match-figure">0.00</span>
+                </span>
+                <span className="hp-camp-score">
+                  <span className="hp-camp-score-row" style={{ "--row": 0 }}>
+                    <span className="hp-camp-score-label">Persona fit</span>
+                    <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.9" }} />
+                  </span>
+                  <span className="hp-camp-score-row" style={{ "--row": 1 }}>
+                    <span className="hp-camp-score-label">World fit</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      style={{ "--share": "0.82" }}
+                    />
+                  </span>
+                  <span className="hp-camp-score-row" data-win="true" style={{ "--row": 2 }}>
+                    <span className="hp-camp-score-label">Purchase intent</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      data-win="true"
+                      style={{ "--share": 1 }}
+                    />
+                  </span>
+                  <span className="hp-camp-score-row" style={{ "--row": 3 }}>
+                    <span className="hp-camp-score-label">Brand safety</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      style={{ "--share": "0.96" }}
+                    />
+                  </span>
+                </span>
+                <span className="hp-camp-field-foot">
+                  <span className="wire-lockup" data-size="sm">
+                    <span className="wire-lockup-ring">
+                      <img
+                        alt=""
+                        width={72}
+                        height={72}
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                        src="/sites/tano/images/tano-94.jpg"
+                      />
+                    </span>
+                    <span className="wire-lockup-who">
+                      <span className="wire-lockup-handle">@reginafoster.us</span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="hp-camp-card" data-slot="metric">
+              <ol className="hp-camp-chat">
+                <li className="hp-camp-turn" data-from="agent">
+                  <span aria-hidden="true" className="hp-camp-turn-mark">
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 222 208"
+                      overflow="visible"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <radialGradient
+                          cx={0}
+                          cy={0}
+                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
+                          gradientUnits="userSpaceOnUse"
+                          id="tano-glyph-spectrum"
+                          r={1}
+                        >
+                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
+                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
+                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
+                        </radialGradient>
+                      </defs>
+                      <path
+                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
+                        fill="url(#tano-glyph-spectrum)"
+                      />
+                    </svg>
+                  </span>
+                  <span className="hp-camp-bubble">
+                    Loved your last post. Could we send you Papier’s Wellness Journal?
+                  </span>
+                </li>
+                <li className="hp-camp-turn" data-from="creator">
+                  <span aria-hidden="true" className="hp-camp-turn-face">
+                    <span
+                      aria-label="@reginafoster.us"
+                      className="wire-lockup"
+                      data-size="xs"
+                      role="img"
+                    >
+                      <span className="wire-lockup-ring">
+                        <img
+                          alt=""
+                          width={48}
+                          height={48}
+                          decoding="async"
+                          style={{ color: "transparent" }}
+                          src="/sites/tano/images/tano-94.jpg"
+                        />
+                      </span>
+                    </span>
+                  </span>
+                  <span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span>
+                </li>
+                <li className="hp-camp-turn" data-from="agent">
+                  <span aria-hidden="true" className="hp-camp-turn-mark">
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 222 208"
+                      overflow="visible"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <radialGradient
+                          cx={0}
+                          cy={0}
+                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
+                          gradientUnits="userSpaceOnUse"
+                          id="tano-glyph-spectrum"
+                          r={1}
+                        >
+                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
+                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
+                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
+                        </radialGradient>
+                      </defs>
+                      <path
+                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
+                        fill="url(#tano-glyph-spectrum)"
+                      />
+                    </svg>
+                  </span>
+                  <span className="hp-camp-bubble">
+                    Wonderful. It arrives Monday, with your code to share.
+                  </span>
+                </li>
+              </ol>
+            </div>
+            <div className="hp-camp-card" data-slot="code">
+              <div className="hp-camp-metrics">
+                <span className="hp-camp-metric" data-turn={0}>
+                  <span className="hp-camp-mono" data-quiet>
+                    New customer LTV
+                  </span>
+                  <span className="hp-camp-metric-row">
+                    <svg
+                      aria-hidden="true"
+                      className="hp-camp-metric-trend"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 100 40"
+                    >
+                      <defs>
+                        <linearGradient
+                          gradientUnits="userSpaceOnUse"
+                          id="hp-camp-metric-_R_4c6lubpcnjb_"
+                          x1={0}
+                          x2={100}
+                          y1={0}
+                          y2={0}
+                        >
+                          <stop offset={0} style={{ stopColor: "var(--spectrum-yellow)" }} />
+                          <stop offset="0.3" style={{ stopColor: "var(--spectrum-lime)" }} />
+                          <stop offset="0.58" style={{ stopColor: "var(--spectrum-cyan)" }} />
+                          <stop offset="0.8" style={{ stopColor: "var(--spectrum-violet)" }} />
+                          <stop offset={1} style={{ stopColor: "var(--spectrum-magenta)" }} />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        className="hp-camp-metric-line"
+                        d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001"
+                        stroke="url(#hp-camp-metric-_R_4c6lubpcnjb_)"
+                      />
+                    </svg>
+                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                  </span>
+                </span>
+                <span className="hp-camp-metric" data-turn={1}>
+                  <span className="hp-camp-mono" data-quiet>
+                    CAC
+                  </span>
+                  <span className="hp-camp-metric-row">
+                    <svg
+                      aria-hidden="true"
+                      className="hp-camp-metric-trend"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 100 40"
+                    >
+                      <path
+                        className="hp-camp-metric-line"
+                        d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68"
+                        stroke="url(#hp-camp-metric-_R_4c6lubpcnjb_)"
+                      />
+                    </svg>
+                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="hp-closing-copy">
+            <h2 className="hp-closing-title tano-display-sm" id="closing-title">
+              <span>See if Tano fits</span>
+              <span>your programme.</span>
+            </h2>
+            <p className="hp-sub tano-body-para-md">
+              Share where your creator programme is today. Our strategists will come back with what
+              it would take to run it always-on, with the relationships and content rights staying
+              with your brand.
+            </p>
+            <div className="hp-band-actions">
+              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

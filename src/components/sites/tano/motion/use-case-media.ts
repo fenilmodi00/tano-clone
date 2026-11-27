@@ -127,7 +127,8 @@ function hydrateReel(
   const track = reel.querySelector<HTMLElement>(".wire-reel-track");
   if (!track) return;
   const cards = Array.from(track.children).filter(
-    (node): node is HTMLElement => node instanceof HTMLElement && node.classList.contains("wire-reel-card"),
+    (node): node is HTMLElement =>
+      node instanceof HTMLElement && node.classList.contains("wire-reel-card"),
   );
   const count = films.length;
   if (cards.length === 0 || count === 0) return;
@@ -264,7 +265,10 @@ function hydrateReel(
       card.dataset.front = front ? "true" : "false";
       if (front) card.removeAttribute("aria-hidden");
       else card.setAttribute("aria-hidden", "true");
-      card.style.setProperty("--reel-scale", String(1 - 0.16 * Math.min(Math.abs(index - current), 1)));
+      card.style.setProperty(
+        "--reel-scale",
+        String(1 - 0.16 * Math.min(Math.abs(index - current), 1)),
+      );
 
       if (front) continue;
       const video = videos.get(card);
@@ -342,7 +346,8 @@ function hydrateReel(
   observer.observe(reel);
   cleanups.push(() => observer.disconnect());
 
-  const resizeObserver = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(remeasure);
+  const resizeObserver =
+    typeof ResizeObserver === "undefined" ? null : new ResizeObserver(remeasure);
   resizeObserver?.observe(reel);
   cleanups.push(() => resizeObserver?.disconnect());
 
@@ -376,7 +381,9 @@ function hydrateReel(
     { signal },
   );
 
-  for (const button of Array.from(controls.querySelectorAll<HTMLButtonElement>("[data-direction]"))) {
+  for (const button of Array.from(
+    controls.querySelectorAll<HTMLButtonElement>("[data-direction]"),
+  )) {
     button.addEventListener(
       "click",
       () => {
@@ -529,7 +536,9 @@ export function useCaseMedia(): (() => void) | void {
       }
 
       for (const reel of Array.from(
-        root.querySelectorAll<HTMLElement>(".wire-study-films .wire-reel, .wire-films-band .wire-reel"),
+        root.querySelectorAll<HTMLElement>(
+          ".wire-study-films .wire-reel, .wire-films-band .wire-reel",
+        ),
       )) {
         hydrateReel(reel, media.reels, signal, cleanups);
       }

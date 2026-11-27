@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "How to Scale a Creator Programme Without Adding Headcount | Tano", "description": "One person can look after about 100 creators. See where a creator programme's time goes and four ways to scale it past a few hundred without hiring."};
-
+import pageData from "@/content/tano/pages/guides-scale-creator-programme-without-headcount.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesScaleCreatorProgrammeWithoutHeadcountReplica } from "../../../components/sites/tano/replica/GuidesScaleCreatorProgrammeWithoutHeadcountReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesScaleCreatorProgrammeWithoutHeadcountReplica />;

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "For Creators | Tano", "description": "Work with brands that fit your life. Clear briefs, real products, paid on time, and support from Tano’s strategists on every post."};
-
+import pageData from "@/content/tano/pages/for-creators.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { ForCreatorsReplica } from "../../components/sites/tano/replica/ForCreatorsReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <ForCreatorsReplica />;

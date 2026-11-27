@@ -1,5 +1,7 @@
 "use client";
 
+import { loadUseCaseScenes } from "./use-case-scenes";
+
 /**
  * DOM behaviours for the non-home page families (owner: PageFamilies).
  *
@@ -266,7 +268,9 @@ function offsetRect(element: HTMLElement, root: HTMLElement): DOMRect {
 }
 
 /** Port of the source AdLoopPath geometry: orthogonals with 14px rounded corners. */
-function adLoopGeometry(loop: HTMLElement): { d: string; length: number; width: number; height: number } | null {
+function adLoopGeometry(
+  loop: HTMLElement,
+): { d: string; length: number; width: number; height: number } | null {
   const figures = Array.from(loop.querySelectorAll<HTMLElement>(".hp-adloop-figure-wrap")).map(
     (element) => offsetRect(element, loop),
   );
@@ -304,7 +308,13 @@ function adLoopGeometry(loop: HTMLElement): { d: string; length: number; width: 
     });
     const [lastX, lastY] = center(last);
     const [firstX, firstY] = center(first);
-    points = [...chain.slice(0, -1), [lastX, lastY], [right, lastY], [right, firstY], [firstX, firstY]];
+    points = [
+      ...chain.slice(0, -1),
+      [lastX, lastY],
+      [right, lastY],
+      [right, firstY],
+      [firstX, firstY],
+    ];
   }
 
   let length = 0;
@@ -346,19 +356,17 @@ function mountAdLoops(cleanups: Cleanup[]): void {
   const reduced = window.matchMedia(REDUCED_QUERY);
 
   for (const loop of Array.from(document.querySelectorAll<HTMLElement>(".hp-adloop"))) {
-    if (loop.querySelector(".hp-adloop-path")) continue;
-    let svg: SVGSVGElement | null = null;
+    const existing = loop.querySelector<SVGSVGElement>(".hp-adloop-path");
+    if (existing?.dataset.mounted === "true") continue;
+    let svg: SVGSVGElement | null = existing;
     let playObserver: IntersectionObserver | null = null;
 
     const build = () => {
       const geometry = adLoopGeometry(loop);
       if (!geometry) return;
-      if (svg) {
-        svg.remove();
-        svg = null;
-      }
       const ns = "http://www.w3.org/2000/svg";
-      const next = document.createElementNS(ns, "svg") as SVGSVGElement;
+      const next = svg ?? (document.createElementNS(ns, "svg") as SVGSVGElement);
+      next.replaceChildren();
       next.setAttribute("aria-hidden", "true");
       next.setAttribute("class", "hp-adloop-path");
       next.setAttribute("width", String(geometry.width));
@@ -388,8 +396,9 @@ function mountAdLoops(cleanups: Cleanup[]): void {
           next.append(dot);
         }
       }
-      loop.prepend(next);
+      if (!next.isConnected) loop.prepend(next);
       svg = next;
+      next.dataset.mounted = "true";
 
       playObserver?.disconnect();
       playObserver = new IntersectionObserver(
@@ -413,7 +422,10 @@ function mountAdLoops(cleanups: Cleanup[]): void {
       resize.disconnect();
       playObserver?.disconnect();
       reduced.removeEventListener("change", onReduced);
-      svg?.remove();
+      if (svg) {
+        svg.replaceChildren();
+        delete svg.dataset.mounted;
+      }
     });
   }
 }
@@ -435,10 +447,15 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     return Number.isFinite(value) && value > 0 ? value : 11600;
   });
   const playButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-control="play"]'));
-  const previousButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-direction="previous"]'));
-  const nextButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-direction="next"]'));
+  const previousButtons = Array.from(
+    root.querySelectorAll<HTMLButtonElement>('[data-direction="previous"]'),
+  );
+  const nextButtons = Array.from(
+    root.querySelectorAll<HTMLButtonElement>('[data-direction="next"]'),
+  );
   const pauseGlyphs = new Map<HTMLButtonElement, string>();
-  for (const button of playButtons) pauseGlyphs.set(button, button.querySelector("span")?.innerHTML ?? "");
+  for (const button of playButtons)
+    pauseGlyphs.set(button, button.querySelector("span")?.innerHTML ?? "");
 
   const reducedMedia = window.matchMedia(REDUCED_QUERY);
   let index = Math.max(
@@ -453,6 +470,13 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
   let reduced = reducedMedia.matches;
   let touched = false;
   let restart = false;
+  const deckKey = location.pathname.includes("creative-velocity")
+    ? ("creative-velocity" as const)
+    : ("drive-revenue" as const);
+  let frameHtmls: string[] = [];
+  let frameScenes: string[] = [];
+  let renderedIndex = -1;
+  let disposed = false;
 
   const running = () => inView && !reduced && !explicitPaused;
 
@@ -461,8 +485,43 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     for (const button of playButtons) {
       button.setAttribute("aria-label", playing ? "Pause" : "Play");
       const span = button.querySelector("span");
-      if (span) span.innerHTML = playing ? pauseGlyphs.get(button) ?? "" : PLAY_GLYPH;
+      if (span) span.innerHTML = playing ? (pauseGlyphs.get(button) ?? "") : PLAY_GLYPH;
     }
+  };
+
+  const stageSceneName = (html: string) => {
+    const match = html.match(/data-scene="([^"]+)"/);
+    return match?.[1] ?? "";
+  };
+
+  const swapStage = (direction: number) => {
+    if (!frameHtmls.length || !frameHtmls[index]) return;
+    if (renderedIndex === index) return;
+    const expected = frameScenes[index] ?? "";
+    const current = stage.querySelector<HTMLElement>(".hp-pp-frame:not([data-leaving])");
+    if (
+      current &&
+      expected &&
+      current.querySelector<HTMLElement>(".hp-pp-scene")?.dataset.scene === expected
+    ) {
+      renderedIndex = index;
+      return;
+    }
+    const next = parseElement(frameHtmls[index]);
+    if (!next) return;
+    next.setAttribute("data-direction", String(direction));
+    if (current) {
+      current.setAttribute("data-leaving", "");
+      current.setAttribute("data-direction", String(direction));
+      window.setTimeout(() => current.remove(), 420);
+    }
+    for (const stale of Array.from(
+      stage.querySelectorAll<HTMLElement>(".hp-pp-frame[data-leaving]"),
+    )) {
+      if (stale !== current) stale.remove();
+    }
+    stage.append(next);
+    renderedIndex = index;
   };
 
   /** Source remounts `ProcessScene` per step, so each scene replays from frame 0. */
@@ -526,6 +585,7 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     stage.style.setProperty("--hp-steps-active", String(index));
     const replay = restart;
     restart = false;
+    swapStage(Number(stage.getAttribute("data-direction") ?? 0));
     // The scene's CSS animations are gated on [data-running]; without it the
     // process demo looks frozen. Keep it in lockstep with the deck clock.
     syncScenes(replay);
@@ -628,7 +688,19 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
   sync();
   schedule();
 
+  loadUseCaseScenes(deckKey)
+    .then((htmls) => {
+      if (disposed) return;
+      frameHtmls = htmls;
+      frameScenes = htmls.map(stageSceneName);
+      renderedIndex = -1;
+      restart = true;
+      sync();
+    })
+    .catch(() => {});
+
   cleanups.push(() => {
+    disposed = true;
     if (timer) window.clearTimeout(timer);
     observer.disconnect();
     reducedMedia.removeEventListener("change", onReduced);

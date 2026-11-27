@@ -6,7 +6,26 @@ import { mountPageFamilies } from "../pages/behaviours";
 
 /** Owner: PageFamilies. Mounts non-home page behaviour and returns its cleanup. */
 export function usePageFamily(): void {
-  useEffect(() => mountPageFamilies(), []);
+  useEffect(() => {
+    let cleanup: (() => void) | undefined;
+    let raf = 0;
+    let tries = 0;
+    // The App Router can stream the page shell before the replica markup is in
+    // the DOM. Retry until the first page-family root exists, then bind once.
+    const start = () => {
+      const ready = document.querySelector(".hp-pp, .hp-adloop, .hp-faq, .hp-rail, .hp-ccar");
+      if (ready) {
+        cleanup = mountPageFamilies();
+        return;
+      }
+      if (tries++ < 180) raf = requestAnimationFrame(start);
+    };
+    start();
+    return () => {
+      cancelAnimationFrame(raf);
+      cleanup?.();
+    };
+  }, []);
 
   useEffect(() => {
     if (location.pathname !== "/talk-to-us") return;

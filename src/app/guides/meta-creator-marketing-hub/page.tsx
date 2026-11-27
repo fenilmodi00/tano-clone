@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Meta Creator Marketing Hub: Do You Still Need an Influencer Platform? | Tano", "description": "What Meta's free Creator Marketing Hub does, the two gaps it leaves (TikTok and YouTube, and running the programme), and when you still need a platform."};
-
+import pageData from "@/content/tano/pages/guides-meta-creator-marketing-hub.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesMetaCreatorMarketingHubReplica } from "../../../components/sites/tano/replica/GuidesMetaCreatorMarketingHubReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesMetaCreatorMarketingHubReplica />;

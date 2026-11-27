@@ -1,9 +1,91 @@
+import { TanoButtonLink, TanoButton } from "@/components/sites/tano/ui/tano-button";
+import Link from "next/link";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function PlaybooksRebriefingReplica() {
   return (
     <main id="main">
-      
-<section aria-labelledby="doc-title" className="wire-legal-hero wire-resource-hero" data-ground="dark" data-ground-dark><div aria-hidden="true" className="hp-hero-glow"><div className="hp-hero-glow-light"><div className="wire-spectrum-drift" /><div className="hp-hero-glow-folds" data-layer="a" /><div className="hp-hero-glow-folds" data-layer="b" /></div></div><div className="wire-legal-hero-copy"><p className="wire-resource-kicker tano-body-mono-sm">Free · The Rebriefing Playbook</p><h1 className="tano-display-md" id="doc-title">Turn Organic Creators Into a Paid Ads Engine</h1><div className="wire-legal-hero-measure"><p className="tano-body-para-md wire-ink-soft">Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook for 2026.</p></div></div></section><section className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container"><div className="wire-contact-card wire-lead-gate"><div className="wire-contact-head"><p className="tano-body-mono-xs wire-ink-soft">Free</p><h2 className="tano-heading-md">The Rebriefing Playbook</h2><p className="tano-body-md wire-ink-soft">Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook for 2026.</p><ul className="wire-legal-list tano-body-md wire-ink-soft"><li>The problem with creator-led ads</li><li>Cold outreach vs. warm rebriefing</li><li>The rebriefing flow, step by step</li><li>Product &amp; content format fit</li><li>Making it work at scale</li></ul></div><form className="wire-contact-form" noValidate><div className="wire-contact-fields"><div className="wire-contact-field" data-span="wide"><label htmlFor="_R_aav5ubpcnjb_-email">Work email address</label><input autoComplete="email" id="_R_aav5ubpcnjb_-email" required type="email" name="email" /></div></div><button type="submit" className="tano-button" data-variant="primary" data-size="md" data-material="surface"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Get free access<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></button><p className="tano-body-sm wire-ink-soft">No spam. Unsubscribe any time.</p></form></div></div></section><section className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs"><span className="hp-title-words">Ready to build your rebriefing programme?</span></h2><p className="hp-sub tano-body-para-md">Tano helps brands connect their seeding, affiliate, and paid creative pipelines into one system that compounds over time.</p></div><div className="hp-band-actions"><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/talk-to-us"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Talk to the Team<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div></div></div></section>
+      <section
+        aria-labelledby="doc-title"
+        className="wire-legal-hero wire-resource-hero"
+        data-ground="dark"
+        data-ground-dark
+      >
+        <div aria-hidden="true" className="hp-hero-glow">
+          <div className="hp-hero-glow-light">
+            <div className="wire-spectrum-drift" />
+            <div className="hp-hero-glow-folds" data-layer="a" />
+            <div className="hp-hero-glow-folds" data-layer="b" />
+          </div>
+        </div>
+        <div className="wire-legal-hero-copy">
+          <p className="wire-resource-kicker tano-body-mono-sm">Free · The Rebriefing Playbook</p>
+          <h1 className="tano-display-md" id="doc-title">
+            Turn Organic Creators Into a Paid Ads Engine
+          </h1>
+          <div className="wire-legal-hero-measure">
+            <p className="tano-body-para-md wire-ink-soft">
+              Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook
+              for 2026.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="hp-band" data-ground="light" data-padding="xl">
+        <div className="hp-container">
+          <div className="wire-contact-card wire-lead-gate">
+            <div className="wire-contact-head">
+              <p className="tano-body-mono-xs wire-ink-soft">Free</p>
+              <h2 className="tano-heading-md">The Rebriefing Playbook</h2>
+              <p className="tano-body-md wire-ink-soft">
+                Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook
+                for 2026.
+              </p>
+              <ul className="wire-legal-list tano-body-md wire-ink-soft">
+                <li>The problem with creator-led ads</li>
+                <li>Cold outreach vs. warm rebriefing</li>
+                <li>The rebriefing flow, step by step</li>
+                <li>Product &amp; content format fit</li>
+                <li>Making it work at scale</li>
+              </ul>
+            </div>
+            <form className="wire-contact-form" noValidate>
+              <div className="wire-contact-fields">
+                <div className="wire-contact-field" data-span="wide">
+                  <label htmlFor="_R_aav5ubpcnjb_-email">Work email address</label>
+                  <input
+                    autoComplete="email"
+                    id="_R_aav5ubpcnjb_-email"
+                    required
+                    type="email"
+                    name="email"
+                  />
+                </div>
+              </div>
+              <TanoButton type={"submit"} >Get free access</TanoButton>
+              <p className="tano-body-sm wire-ink-soft">No spam. Unsubscribe any time.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section className="hp-band" data-ground="light" data-padding="xl">
+        <div className="hp-container">
+          <div className="hp-band-heading" data-align="start">
+            <div className="hp-band-heading-copy">
+              <h2 className="hp-title tano-display-xs">
+                <span className="hp-title-words">Ready to build your rebriefing programme?</span>
+              </h2>
+              <p className="hp-sub tano-body-para-md">
+                Tano helps brands connect their seeding, affiliate, and paid creative pipelines into
+                one system that compounds over time.
+              </p>
+            </div>
+            <div className="hp-band-actions">
+              <TanoButtonLink href={"/talk-to-us"} label={"Talk to the Team"} />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

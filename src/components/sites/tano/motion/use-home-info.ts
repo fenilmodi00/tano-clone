@@ -58,7 +58,9 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
   const previousButtons = Array.from(
     root.querySelectorAll<HTMLButtonElement>('[data-direction="previous"]'),
   );
-  const nextButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-direction="next"]'));
+  const nextButtons = Array.from(
+    root.querySelectorAll<HTMLButtonElement>('[data-direction="next"]'),
+  );
   const pauseGlyphs = new Map<HTMLButtonElement, string>();
   for (const button of playButtons) {
     pauseGlyphs.set(button, button.querySelector("span")?.innerHTML ?? "");
@@ -105,7 +107,11 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
     const stops: Array<{ target: HTMLElement; at: number }> = [];
     for (const target of Array.from(frame.querySelectorAll<HTMLElement>("[data-cursor]"))) {
       let at = Number.NaN;
-      for (let node: HTMLElement | null = target; node && node !== frame; node = node.parentElement) {
+      for (
+        let node: HTMLElement | null = target;
+        node && node !== frame;
+        node = node.parentElement
+      ) {
         const raw = node.style.getPropertyValue("--win") || node.style.getPropertyValue("--at");
         if (!raw) continue;
         const value = Number.parseFloat(raw);
@@ -167,7 +173,10 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
     /* Offsets must never go backwards; the source clamps the same way. */
     let previous = 0;
     for (const keyframe of keyframes) {
-      const value = Math.max(typeof keyframe.offset === "number" ? keyframe.offset : previous, previous);
+      const value = Math.max(
+        typeof keyframe.offset === "number" ? keyframe.offset : previous,
+        previous,
+      );
       keyframe.offset = value;
       previous = value;
     }
@@ -201,7 +210,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
     for (const button of playButtons) {
       button.setAttribute("aria-label", playing ? "Pause" : "Play");
       const span = button.querySelector("span");
-      if (span) span.innerHTML = playing ? pauseGlyphs.get(button) ?? "" : PLAY_GLYPH;
+      if (span) span.innerHTML = playing ? (pauseGlyphs.get(button) ?? "") : PLAY_GLYPH;
     }
   };
 
@@ -438,7 +447,9 @@ function setupTracks(cleanups: Cleanup[]): void {
     const cards = Array.from(track.querySelectorAll<HTMLElement>(".hp-track-card"));
     if (cards.length < 2) continue;
     const stage = track.querySelector<HTMLElement>(".hp-track-stage");
-    const playButtons = Array.from(track.querySelectorAll<HTMLButtonElement>('[data-control="play"]'));
+    const playButtons = Array.from(
+      track.querySelectorAll<HTMLButtonElement>('[data-control="play"]'),
+    );
     const previousButtons = Array.from(
       track.querySelectorAll<HTMLButtonElement>('[data-direction="previous"]'),
     );
@@ -478,7 +489,7 @@ function setupTracks(cleanups: Cleanup[]): void {
       for (const button of playButtons) {
         button.setAttribute("aria-label", playing ? "Pause" : "Play");
         const span = button.querySelector("span");
-        if (span) span.innerHTML = playing ? pauseGlyphs.get(button) ?? "" : PLAY_GLYPH;
+        if (span) span.innerHTML = playing ? (pauseGlyphs.get(button) ?? "") : PLAY_GLYPH;
       }
     };
 
@@ -562,8 +573,7 @@ function setupFaqs(
   clearHtml: string,
   cleanups: Cleanup[],
 ): void {
-  const normalize = (value: string) =>
-    value.toLowerCase().replace(/[\u2018\u2019]/g, "'");
+  const normalize = (value: string) => value.toLowerCase().replace(/[\u2018\u2019]/g, "'");
 
   for (const stack of Array.from(document.querySelectorAll<HTMLElement>(".hp-faq-stack"))) {
     const card = stack.querySelector<HTMLElement>(".hp-faq-card");
@@ -592,7 +602,7 @@ function setupFaqs(
       list.innerHTML = categoryRows.join("");
       list.querySelectorAll<HTMLElement>(".hp-faq-row").forEach((row) => {
         const trigger = row.querySelector<HTMLElement>(".hp-faq-trigger");
-        categoryOf.set(row, trigger?.id ? byTriggerId.get(trigger.id) ?? 0 : 0);
+        categoryOf.set(row, trigger?.id ? (byTriggerId.get(trigger.id) ?? 0) : 0);
       });
     }
 
@@ -624,7 +634,9 @@ function setupFaqs(
     const status = card.querySelector<HTMLElement>(":scope > .wire-visually-hidden[aria-live]");
 
     const closeAll = () => {
-      for (const trigger of Array.from(stack.querySelectorAll<HTMLButtonElement>(".hp-faq-trigger"))) {
+      for (const trigger of Array.from(
+        stack.querySelectorAll<HTMLButtonElement>(".hp-faq-trigger"),
+      )) {
         trigger.setAttribute("aria-expanded", "false");
         const answer = document.getElementById(trigger.getAttribute("aria-controls") ?? "");
         answer?.setAttribute("data-open", "false");
@@ -660,12 +672,9 @@ function setupFaqs(
       let visible = 0;
       for (const row of Array.from(list.querySelectorAll<HTMLElement>(".hp-faq-row"))) {
         const category = categoryOf.get(row);
-        const inCategory =
-          categoryOf.size === 0 || category === undefined || category === active;
+        const inCategory = categoryOf.size === 0 || category === undefined || category === active;
         const text = normalize(row.textContent ?? "");
-        const match = searching
-          ? tokens.every((token) => text.includes(token))
-          : inCategory;
+        const match = searching ? tokens.every((token) => text.includes(token)) : inCategory;
         row.hidden = !match;
         if (match) visible += 1;
       }
@@ -724,7 +733,8 @@ function setupFaqs(
       if (current < 0) return;
       event.preventDefault();
       let next = current;
-      if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (current + 1) % tabs.length;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown")
+        next = (current + 1) % tabs.length;
       else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
         next = (current - 1 + tabs.length) % tabs.length;
       } else if (event.key === "Home") next = 0;
@@ -751,7 +761,8 @@ export function setupBrands(cards: Readonly<Record<string, string>>, cleanups: C
   const reducedMedia = window.matchMedia(REDUCED_QUERY);
 
   for (const bar of Array.from(document.querySelectorAll<HTMLElement>(".hp-brand-bar"))) {
-    const section = bar.closest<HTMLElement>(".hp-brands-band") ?? bar.closest<HTMLElement>("section");
+    const section =
+      bar.closest<HTMLElement>(".hp-brands-band") ?? bar.closest<HTMLElement>("section");
     const tabs = Array.from(bar.querySelectorAll<HTMLButtonElement>(".hp-brand-tab"));
     if (!section || tabs.length === 0) continue;
     const stage = section.querySelector<HTMLElement>(".hp-brand-stage");
@@ -818,7 +829,7 @@ export function setupBrands(cards: Readonly<Record<string, string>>, cleanups: C
 
     const showCard = (position: number) => {
       card.dataset.fading = "false";
-      card.innerHTML = position === 0 ? initialCard : secondCard ?? initialCard;
+      card.innerHTML = position === 0 ? initialCard : (secondCard ?? initialCard);
       syncMedia();
     };
 
@@ -896,7 +907,8 @@ export function setupBrands(cards: Readonly<Record<string, string>>, cleanups: C
       if (current < 0) return;
       event.preventDefault();
       let next = current;
-      if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (current + 1) % tabs.length;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown")
+        next = (current + 1) % tabs.length;
       else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
         next = (current - 1 + tabs.length) % tabs.length;
       } else if (event.key === "Home") next = 0;

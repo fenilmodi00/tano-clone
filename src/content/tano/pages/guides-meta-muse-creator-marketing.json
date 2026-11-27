@@ -52,12 +52,7 @@
         },
         {
           "type": "table",
-          "head": [
-            "Change",
-            "For shoppers",
-            "Early evidence",
-            "For creator marketing"
-          ],
+          "head": ["Change", "For shoppers", "Early evidence", "For creator marketing"],
           "rows": [
             [
               "1. An always-on assistant with memory",

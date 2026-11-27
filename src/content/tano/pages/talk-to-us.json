@@ -7,9 +7,7 @@
   },
   "hero": {
     "title": "Tell us about your brand, and we’ll tell you how we can help.",
-    "paragraphs": [
-      "Want to reach out by email? Find us at team@tano.ai"
-    ],
+    "paragraphs": ["Want to reach out by email? Find us at team@tano.ai"],
     "actions": [],
     "media": "/sites/tano/images/talk-to-us-glass.jpg"
   },

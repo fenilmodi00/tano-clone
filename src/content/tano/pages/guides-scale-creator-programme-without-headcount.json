@@ -33,31 +33,13 @@
         },
         {
           "type": "table",
-          "head": [
-            "Ongoing work",
-            "Time per creator per month"
-          ],
+          "head": ["Ongoing work", "Time per creator per month"],
           "rows": [
-            [
-              "Tracking their content",
-              "20 minutes"
-            ],
-            [
-              "Messages, follow-ups and questions",
-              "20 minutes"
-            ],
-            [
-              "New briefs, product and payouts",
-              "20 minutes"
-            ],
-            [
-              "Following their own content, sharing ideas and coaching",
-              "30 minutes"
-            ],
-            [
-              "Total",
-              "About 1.5 hours"
-            ]
+            ["Tracking their content", "20 minutes"],
+            ["Messages, follow-ups and questions", "20 minutes"],
+            ["New briefs, product and payouts", "20 minutes"],
+            ["Following their own content, sharing ideas and coaching", "30 minutes"],
+            ["Total", "About 1.5 hours"]
           ]
         },
         {

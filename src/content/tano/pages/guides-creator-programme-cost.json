@@ -64,11 +64,7 @@
         },
         {
           "type": "table",
-          "head": [
-            "Option",
-            "Around 100 creators",
-            "As you grow"
-          ],
+          "head": ["Option", "Around 100 creators", "As you grow"],
           "rows": [
             [
               "In-house with software",
@@ -164,10 +160,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "Outgrown your influencer agency?",
-            "Influencer agency or platform"
-          ]
+          "items": ["Outgrown your influencer agency?", "Influencer agency or platform"]
         }
       ]
     },

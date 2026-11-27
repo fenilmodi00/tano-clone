@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Get Started | Tano", "description": "Tell us about your brand and your goals, and we’ll show you what a creator programme run by Tano could do for you."};
-
+import pageData from "@/content/tano/pages/talk-to-us.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { TalkToUsReplica } from "../../components/sites/tano/replica/TalkToUsReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <TalkToUsReplica />;

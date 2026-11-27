@@ -143,10 +143,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "Influencer agency or platform",
-            "What does a creator programme cost?"
-          ]
+          "items": ["Influencer agency or platform", "What does a creator programme cost?"]
         }
       ]
     },

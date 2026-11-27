@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "How to Keep Creators for the Long Term | Tano", "description": "Why creators drift away from brand programmes, why long-running creators are worth more than new ones, and how to keep more of them posting."};
-
+import pageData from "@/content/tano/pages/guides-keep-creators-long-term.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesKeepCreatorsLongTermReplica } from "../../../components/sites/tano/replica/GuidesKeepCreatorsLongTermReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesKeepCreatorsLongTermReplica />;

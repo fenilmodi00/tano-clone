@@ -18,7 +18,9 @@ export function useCounters() {
     const seen = new Set<string>();
     const parsed: Stat[] = [];
     for (const stat of stats) {
-      const label = (stat.querySelector(".hp-loop-stat-label")?.textContent || "").trim().toLowerCase();
+      const label = (stat.querySelector(".hp-loop-stat-label")?.textContent || "")
+        .trim()
+        .toLowerCase();
       const chip = stat.querySelector<HTMLElement>(".hp-loop-stat-chip");
       if (!chip || seen.has(label)) continue;
       seen.add(label);
@@ -41,9 +43,14 @@ export function useCounters() {
     if (!parsed.length) return;
 
     const chipsFor = (label: string) =>
-      Array.from(strip.querySelectorAll<HTMLElement>(".hp-hero-stat")).filter(
-        (stat) => (stat.querySelector(".hp-loop-stat-label")?.textContent || "").trim().toLowerCase() === label,
-      ).map((stat) => stat.querySelector<HTMLElement>(".hp-loop-stat-chip")).filter(Boolean) as HTMLElement[];
+      Array.from(strip.querySelectorAll<HTMLElement>(".hp-hero-stat"))
+        .filter(
+          (stat) =>
+            (stat.querySelector(".hp-loop-stat-label")?.textContent || "").trim().toLowerCase() ===
+            label,
+        )
+        .map((stat) => stat.querySelector<HTMLElement>(".hp-loop-stat-chip"))
+        .filter(Boolean) as HTMLElement[];
 
     let raf = 0;
     let start = 0;
@@ -72,7 +79,12 @@ export function useCounters() {
       if (document.hidden) return;
       for (const stat of parsed) {
         if (!/products|creators|pieces/.test(stat.label)) continue;
-        stat.value += stat.label === "products seeded" ? 1 + Math.floor(Math.random() * 5) : Math.random() < 0.35 ? 1 : 0;
+        stat.value +=
+          stat.label === "products seeded"
+            ? 1 + Math.floor(Math.random() * 5)
+            : Math.random() < 0.35
+              ? 1
+              : 0;
         for (const chip of chipsFor(stat.label)) chip.textContent = stat.format(stat.value);
       }
     }, TICK);

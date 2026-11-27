@@ -159,11 +159,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "LTK",
-            "Tano"
-          ],
+          "head": ["", "LTK", "Tano"],
           "rows": [
             [
               "What is the primary job?",
@@ -281,11 +277,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "LTK",
-            "Tano"
-          ],
+          "head": ["", "LTK", "Tano"],
           "rows": [
             [
               "What it is",
@@ -332,11 +324,7 @@
               "Run by your team in Connect, or through Optimize",
               "Run through Tano's programme operations and workflows"
             ],
-            [
-              "Creator payments",
-              "Commission, through LTK",
-              "Automated workflows, managed by Tano"
-            ],
+            ["Creator payments", "Commission, through LTK", "Automated workflows, managed by Tano"],
             [
               "Content for paid social",
               "Rights agreed with individual creators",

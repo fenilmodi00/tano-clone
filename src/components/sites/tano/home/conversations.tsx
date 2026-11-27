@@ -9,14 +9,7 @@
  * Source component: 3wa99p2ledxp-.js (module 70445 data, module 10846 view).
  */
 
-export type ConversationKey =
-  | "voice"
-  | "brief"
-  | "verdicts"
-  | "thread"
-  | "gift"
-  | "code"
-  | "posts";
+export type ConversationKey = "voice" | "brief" | "verdicts" | "thread" | "gift" | "code" | "posts";
 
 export type ConversationSpeaker = "agent" | "creator";
 
@@ -31,9 +24,7 @@ export interface ConversationSource {
   readonly chips: readonly ConversationChip[];
 }
 
-export type ConversationRun =
-  | string
-  | { readonly text: string; readonly from: ConversationKey };
+export type ConversationRun = string | { readonly text: string; readonly from: ConversationKey };
 
 export interface ConversationMessage {
   readonly id: string;
@@ -83,11 +74,7 @@ export const CONVERSATION_FIGURE: ConversationFigure = {
       {
         id: "hello",
         from: "agent",
-        runs: [
-          "Hey Lena! ",
-          { text: "Hope the deload week went well", from: "thread" },
-          ".",
-        ],
+        runs: ["Hey Lena! ", { text: "Hope the deload week went well", from: "thread" }, "."],
       },
       {
         id: "gift",
@@ -137,9 +124,7 @@ export const CONVERSATION_FIGURE: ConversationFigure = {
 
 /** Chip order as rendered by the source: Brand 3, then Creator 4. */
 export const CONVERSATION_CHIP_KEYS: readonly ConversationKey[] =
-  CONVERSATION_FIGURE.sources.flatMap((source) =>
-    source.chips.map((chip) => chip.key),
-  );
+  CONVERSATION_FIGURE.sources.flatMap((source) => source.chips.map((chip) => chip.key));
 
 /** Fact-mark order as rendered by the source thread (thread → verdicts). */
 export const CONVERSATION_FACT_KEYS: readonly ConversationKey[] = (() => {
@@ -231,9 +216,7 @@ export function buildConversationRoutes(
 
   const xs = routes.map((route) => route.node.x);
   const spectrum =
-    xs.length === 0
-      ? { from: 0, to: 0 }
-      : { from: Math.min(...xs), to: Math.max(...xs) };
+    xs.length === 0 ? { from: 0, to: 0 } : { from: Math.min(...xs), to: Math.max(...xs) };
 
   return { routes, spectrum };
 }

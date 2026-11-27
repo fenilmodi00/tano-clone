@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "News From Tano | Tano", "description": "Announcements from the Tano team, starting with our seed round led by Cherry Ventures."};
-
+import pageData from "@/content/tano/pages/news.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { NewsReplica } from "../../components/sites/tano/replica/NewsReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <NewsReplica />;

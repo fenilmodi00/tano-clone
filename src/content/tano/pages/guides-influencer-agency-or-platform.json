@@ -24,22 +24,10 @@
         },
         {
           "type": "table",
-          "head": [
-            "",
-            "By hand",
-            "Automated"
-          ],
+          "head": ["", "By hand", "Automated"],
           "rows": [
-            [
-              "Done for you",
-              "Agency",
-              "Creator programme partner"
-            ],
-            [
-              "You do it",
-              "In-house",
-              "Platform"
-            ]
+            ["Done for you", "Agency", "Creator programme partner"],
+            ["You do it", "In-house", "Platform"]
           ]
         }
       ]
@@ -87,12 +75,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "The work",
-            "Platform",
-            "Agency",
-            "Creator programme partner"
-          ],
+          "head": ["The work", "Platform", "Agency", "Creator programme partner"],
           "rows": [
             [
               "Strategy and budget",
@@ -106,30 +89,15 @@
               "Agency",
               "Partner, with your sign-off on key moments"
             ],
-            [
-              "Outreach and negotiation",
-              "Your team",
-              "Agency",
-              "Partner"
-            ],
-            [
-              "Gifting and contracts",
-              "Your team, using the platform",
-              "Agency",
-              "Partner"
-            ],
+            ["Outreach and negotiation", "Your team", "Agency", "Partner"],
+            ["Gifting and contracts", "Your team, using the platform", "Agency", "Partner"],
             [
               "Reviewing content",
               "Your team",
               "Agency, with your approval",
               "Partner, with your sign-off on key moments"
             ],
-            [
-              "Paying creators",
-              "Your team, using the platform",
-              "Agency or your team",
-              "Partner"
-            ],
+            ["Paying creators", "Your team, using the platform", "Agency or your team", "Partner"],
             [
               "Re-engaging your best creators",
               "Your team",
@@ -237,11 +205,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "Option",
-            "Examples",
-            "What you buy"
-          ],
+          "head": ["Option", "Examples", "What you buy"],
           "rows": [
             [
               "Platform or marketplace",

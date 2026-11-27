@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Is Your DTC Brand's UGC Ready for AI Shopping Agents Like Meta Muse? | Tano", "description": "DTC UGC that only runs as ads misses what Meta Muse works from: posts shoppers save. How to add organic creator posts, then amplify the winners."};
-
+import pageData from "@/content/tano/pages/guides-ugc-ai-shopping-agents.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesUgcAiShoppingAgentsReplica } from "../../../components/sites/tano/replica/GuidesUgcAiShoppingAgentsReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesUgcAiShoppingAgentsReplica />;

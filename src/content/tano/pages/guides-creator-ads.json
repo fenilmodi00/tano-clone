@@ -101,12 +101,7 @@
         },
         {
           "type": "table",
-          "head": [
-            "",
-            "Brand-run creator ad",
-            "Partnership Ads (Meta)",
-            "Spark Ads (TikTok)"
-          ],
+          "head": ["", "Brand-run creator ad", "Partnership Ads (Meta)", "Spark Ads (TikTok)"],
           "rows": [
             [
               "Whose name is on the ad",
@@ -214,10 +209,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "Keep creators for the long term",
-            "Pricing usage rights and whitelisting"
-          ]
+          "items": ["Keep creators for the long term", "Pricing usage rights and whitelisting"]
         }
       ]
     },

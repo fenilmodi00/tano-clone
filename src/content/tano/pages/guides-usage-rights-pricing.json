@@ -69,37 +69,13 @@
         },
         {
           "type": "table",
-          "head": [
-            "Creator size",
-            "Followers",
-            "Monthly usage fee"
-          ],
+          "head": ["Creator size", "Followers", "Monthly usage fee"],
           "rows": [
-            [
-              "Nano",
-              "Under 15,000",
-              "0% to 50% of base"
-            ],
-            [
-              "Micro",
-              "15,000 to 75,000",
-              "25% to 75% of base"
-            ],
-            [
-              "Mid-tier",
-              "75,000 to 250,000",
-              "40% to 100% of base"
-            ],
-            [
-              "Macro",
-              "250,000 to 1 million",
-              "50% to 125% of base"
-            ],
-            [
-              "Over 1 million",
-              "1 million+",
-              "100% of base and up"
-            ]
+            ["Nano", "Under 15,000", "0% to 50% of base"],
+            ["Micro", "15,000 to 75,000", "25% to 75% of base"],
+            ["Mid-tier", "75,000 to 250,000", "40% to 100% of base"],
+            ["Macro", "250,000 to 1 million", "50% to 125% of base"],
+            ["Over 1 million", "1 million+", "100% of base and up"]
           ]
         },
         {
@@ -180,10 +156,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "How to run creator content as ads",
-            "What does a creator programme cost?"
-          ]
+          "items": ["How to run creator content as ads", "What does a creator programme cost?"]
         }
       ]
     },

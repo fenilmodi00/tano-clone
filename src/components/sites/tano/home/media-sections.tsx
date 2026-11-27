@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  findHomeMarkBand,
-  type HomeMark,
-  type HomeMarkBand,
-} from "../content/home-marks";
+import { findHomeMarkBand, type HomeMark, type HomeMarkBand } from "../content/home-marks";
 
 /**
  * Owner: HomeMedia. DOM behaviours for the home media sections. The SSR
@@ -37,7 +33,11 @@ export function isCaseSlotCovered(nextTickTop: number, slotTop: number): boolean
 }
 
 /** Source CaseDeck ghost blend over 0.6 viewport heights. */
-export function caseDeckGhostProgress(nextTickTop: number, slotTop: number, viewportHeight: number): number {
+export function caseDeckGhostProgress(
+  nextTickTop: number,
+  slotTop: number,
+  viewportHeight: number,
+): number {
   return clamp01(1 - (nextTickTop - slotTop) / (viewportHeight * CASE_DECK_GHOST_SPAN));
 }
 
@@ -102,7 +102,10 @@ function createMarkElement(mark: HomeMark, decorative: boolean): HTMLElement {
   const scale = mark.opticalScale / Math.sqrt(mark.aspect / 3);
   image.style.height = `calc(var(--mark-base) * ${scale.toFixed(3)})`;
   image.style.setProperty("--mark-aspect", String(mark.aspect));
-  image.style.setProperty("--mark-width", `calc(var(--mark-base) * ${(scale * mark.aspect).toFixed(3)})`);
+  image.style.setProperty(
+    "--mark-width",
+    `calc(var(--mark-base) * ${(scale * mark.aspect).toFixed(3)})`,
+  );
   const mask = `url("${mark.src}")`;
   image.style.setProperty("mask-image", mask);
   image.style.setProperty("-webkit-mask-image", mask);
@@ -304,7 +307,10 @@ function mountCaseDecks(): Cleanup {
         const banner = slot.querySelector<HTMLElement>(".wire-case-banner");
         if (!banner) return "";
         const style = window.getComputedStyle(banner);
-        return (style.getPropertyValue("--case-accent").trim() || style.getPropertyValue("--case-hue").trim()).trim();
+        return (
+          style.getPropertyValue("--case-accent").trim() ||
+          style.getPropertyValue("--case-hue").trim()
+        ).trim();
       });
       tops = current.map((slot) => Number.parseFloat(window.getComputedStyle(slot).top));
     };
@@ -365,7 +371,8 @@ function mountCaseDecks(): Cleanup {
           return;
         }
         const value = caseDeckCover(tick.getBoundingClientRect().top, slotTop).toFixed(2);
-        if (slot.style.getPropertyValue("--cover") !== value) slot.style.setProperty("--cover", value);
+        if (slot.style.getPropertyValue("--cover") !== value)
+          slot.style.setProperty("--cover", value);
       });
     };
 
@@ -478,7 +485,8 @@ function mountBrandTabs(): Cleanup {
   const cleanups: Cleanup[] = [];
 
   for (const bar of bars) {
-    const section = bar.closest<HTMLElement>(".hp-brands-band") ?? bar.closest<HTMLElement>("section");
+    const section =
+      bar.closest<HTMLElement>(".hp-brands-band") ?? bar.closest<HTMLElement>("section");
     const tabs = Array.from(bar.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
     if (!section || tabs.length === 0) continue;
 
@@ -493,7 +501,10 @@ function mountBrandTabs(): Cleanup {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
     const generatedFills = new Set<HTMLElement>();
 
-    let index = Math.max(0, tabs.findIndex((tab) => tab.getAttribute("aria-selected") === "true"));
+    let index = Math.max(
+      0,
+      tabs.findIndex((tab) => tab.getAttribute("aria-selected") === "true"),
+    );
     let timer = 0;
     let fadeTimer = 0;
     let inView = false;
@@ -520,8 +531,12 @@ function mountBrandTabs(): Cleanup {
     };
 
     const setLive = (next: number) => {
-      shots.forEach((shot, shotIndex) => shot.setAttribute("data-live", String(shotIndex === next)));
-      marks.forEach((mark, markIndex) => mark.setAttribute("data-live", String(markIndex === next)));
+      shots.forEach((shot, shotIndex) =>
+        shot.setAttribute("data-live", String(shotIndex === next)),
+      );
+      marks.forEach((mark, markIndex) =>
+        mark.setAttribute("data-live", String(markIndex === next)),
+      );
     };
 
     const renderQuote = (next: number) => {
@@ -531,7 +546,10 @@ function mountBrandTabs(): Cleanup {
       if (liveQuote.dataset.quoteIndex === String(next)) return;
 
       const raw = ghost.textContent?.trim() ?? "";
-      const quote = raw.replace(/^[\u201c"]/, "").replace(/[\u201d"]$/, "").trim();
+      const quote = raw
+        .replace(/^[\u201c"]/, "")
+        .replace(/[\u201d"]$/, "")
+        .trim();
       if (!quote) return;
 
       const words = quote.split(/\s+/).filter(Boolean);
@@ -687,8 +705,10 @@ function mountBrandTabs(): Cleanup {
       if (active < 0) return;
 
       let next = -1;
-      if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (active + 1) % tabs.length;
-      else if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (active - 1 + tabs.length) % tabs.length;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown")
+        next = (active + 1) % tabs.length;
+      else if (event.key === "ArrowLeft" || event.key === "ArrowUp")
+        next = (active - 1 + tabs.length) % tabs.length;
       else if (event.key === "Home") next = 0;
       else if (event.key === "End") next = tabs.length - 1;
       if (next < 0) return;

@@ -14,8 +14,7 @@ const SCORE_DELAY_MS = 500;
 const SCORE_MS = 1600;
 const FILL_STYLE =
   "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent";
-const PIXEL =
-  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+const PIXEL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
 
 /* The agent mark used in the source's chat turn. */
 const GLYPH_PATH =
@@ -173,7 +172,9 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
 
   const stage = camp.closest(".hp-hero-stage") ?? camp.parentElement ?? root;
   const track = stage.querySelector<HTMLElement>(".hp-camp-track");
-  const buttons = Array.from(track?.querySelectorAll<HTMLButtonElement>(".hp-camp-track-button") ?? []);
+  const buttons = Array.from(
+    track?.querySelectorAll<HTMLButtonElement>(".hp-camp-track-button") ?? [],
+  );
   const panel = camp.querySelector<HTMLElement>(".hp-camp-panel") ?? createPanel(camp);
   const fade = panel.querySelector<HTMLElement>(".hp-camp-fade") ?? createFade(panel);
 
@@ -604,8 +605,60 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     for (const video of camp.querySelectorAll<HTMLVideoElement>("video")) video.pause();
     camp.removeAttribute("data-motion");
     camp.removeAttribute("data-inview");
+    window.removeEventListener("scroll", onDockScroll);
+    window.removeEventListener("resize", onDockScroll);
+    cancelAnimationFrame(dockStart);
+    if (dockFrame) cancelAnimationFrame(dockFrame);
+    if (dock) {
+      dock.dataset.floating = "false";
+      dock.dataset.intro = "false";
+      delete dock.dataset.aside;
+      dock.style.removeProperty("--dock-left");
+      dock.style.removeProperty("--dock-width");
+    }
     if (mounted.get(root) === destroy) mounted.delete(root);
   }
+
+  /* ------------------------------------------------------------ dock ticker */
+  const dock =
+    camp
+      .closest<HTMLElement>(".hp-camp-sticky")
+      ?.querySelector<HTMLElement>(".hp-hero-strip-dock") ??
+    document.querySelector<HTMLElement>(".hp-hero-strip-dock");
+  const dockRow = dock?.closest<HTMLElement>(".hp-hero-strip-row") ?? null;
+  let dockFrame = 0;
+  const syncDock = () => {
+    dockFrame = 0;
+    if (!dock || !dockRow) return;
+    if (dockRow.getBoundingClientRect().height === 0) return;
+    const y = window.scrollY;
+    if (y <= 24) {
+      const rect = dockRow.getBoundingClientRect();
+      dock.style.setProperty("--dock-left", `${rect.left}px`);
+      dock.style.setProperty("--dock-width", `${rect.width}px`);
+      dock.dataset.floating = "true";
+      dock.dataset.intro = "false";
+      delete dock.dataset.aside;
+      return;
+    }
+    dock.dataset.aside = "";
+    if (y > 324) {
+      dock.dataset.floating = "false";
+      dock.dataset.intro = "false";
+      delete dock.dataset.aside;
+    }
+  };
+  const onDockScroll = () => {
+    if (dockFrame) return;
+    dockFrame = requestAnimationFrame(syncDock);
+  };
+  dock?.setAttribute("data-intro", "true");
+  const dockStart = requestAnimationFrame(() => {
+    syncDock();
+    dock?.setAttribute("data-intro", "true");
+  });
+  window.addEventListener("scroll", onDockScroll, { passive: true });
+  window.addEventListener("resize", onDockScroll);
 
   mounted.set(root, destroy);
   return destroy;

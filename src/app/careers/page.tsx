@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Careers at Tano: engineering and creator growth roles | Tano", "description": "Join Tano. We build AI agents that run influencer marketing end-to-end for global consumer brands. See open engineering and creator roles in London."};
-
+import pageData from "@/content/tano/pages/careers.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { CareersReplica } from "../../components/sites/tano/replica/CareersReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <CareersReplica />;

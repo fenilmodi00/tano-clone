@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Agentio vs Tano: Buy Creator Placements, or Build a Creator Programme? | Tano", "description": "Agentio automates the media buy: creator placements run as ads. Tano runs the programme: creators who stay with your brand. A placement or a relationship?"};
-
+import pageData from "@/content/tano/pages/compare-agentio-vs-tano.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { CompareAgentioVsTanoReplica } from "../../../components/sites/tano/replica/CompareAgentioVsTanoReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <CompareAgentioVsTanoReplica />;

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "How to Price Whitelisting and Usage Rights Fees for Creators | Tano", "description": "How to price usage rights and whitelisting for a winning creator post: whether to license it, what you pay for, typical rates, product-paid creators and renewals."};
-
+import pageData from "@/content/tano/pages/guides-usage-rights-pricing.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesUsageRightsPricingReplica } from "../../../components/sites/tano/replica/GuidesUsageRightsPricingReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesUsageRightsPricingReplica />;

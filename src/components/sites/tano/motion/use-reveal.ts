@@ -12,19 +12,66 @@ export function useReveal() {
     // Ported from the source RevealMotion: split headings
     // into word spans, then add .rv-in in document order with a 70ms stagger.
     const revealSelector = [
-      "h1", "h2", "h3", "h4", "h5", "h6", "p", "blockquote", "figure", "img", "picture",
-      "video", "table", "hr", "details", "form", "label", ".hp-asset", ".wire-media",
-      ".hp-band-actions", ".hp-action", ".wire-button", ".tano-button",
-      ".wire-case-mark", ".wire-case-stat", ".wire-case-card", ".wire-cg-item", ".wire-cg",
-      ".gd-stage", ".gd-frame", ".gd-card", ".gd-verdict", ".gd-code", ".gd-spec",
-      ".gd-band-actions", ".gd-index-link", ".gd-pager-link",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "p",
+      "li",
+      "blockquote",
+      "figure",
+      "img",
+      "picture",
+      "video",
+      "table",
+      "hr",
+      "details",
+      "form",
+      "label",
+      ".hp-asset",
+      ".wire-media",
+      ".hp-band-actions",
+      ".hp-action",
+      ".wire-button",
+      ".tano-button",
+      ".wire-case-mark",
+      ".wire-case-stat",
+      ".wire-case-card",
+      ".wire-cg-item",
+      ".wire-cg",
+      ".gd-stage",
+      ".gd-frame",
+      ".gd-card",
+      ".gd-verdict",
+      ".gd-code",
+      ".gd-spec",
+      ".gd-band-actions",
+      ".gd-index-link",
+      ".gd-pager-link",
     ].join(",");
     const excluded = [
-      "[data-rv-skip]", ".car", ".hp-ticker", ".hp-stage", ".hp-behind", ".hp-logo-band",
-      ".hp-testimonials", ".hp-comparison-scroll", ".hp-tabbar", ".wire-cases-marks-strip",
-      ".wire-table-scroll", ".wire-drawer", ".wire-rail", ".wire-footer-card",
-      ".wire-visually-hidden", ".wire-footer-photo", ".hp-hairline", ".hp-faq-art",
-      ".hp-creator-asset", ".hp-objective-ground",
+      "[data-rv-skip]",
+      ".car",
+      ".hp-ticker",
+      ".hp-stage",
+      ".hp-behind",
+      ".hp-logo-band",
+      ".hp-testimonials",
+      ".hp-comparison-scroll",
+      ".hp-tabbar",
+      ".wire-cases-marks-strip",
+      ".wire-table-scroll",
+      ".wire-drawer",
+      ".wire-rail",
+      ".wire-footer-card",
+      ".wire-visually-hidden",
+      ".wire-footer-photo",
+      ".hp-hairline",
+      ".hp-faq-art",
+      ".hp-creator-asset",
+      ".hp-objective-ground",
     ].join(",");
 
     const splitHeading = (el: HTMLElement, force = false) => {
@@ -71,12 +118,16 @@ export function useReveal() {
       "main .tano-display-sm",
     ].join(",");
     for (const heading of Array.from(document.querySelectorAll<HTMLElement>(headlineSelector))) {
-      if (heading.closest("[data-rv-skip]") || heading.classList.contains("wire-case-title")) continue;
+      if (heading.closest("[data-rv-skip]") || heading.classList.contains("wire-case-title"))
+        continue;
       splitHeading(heading);
     }
-    for (const el of Array.from(document.querySelectorAll<HTMLElement>("[data-rv-onload]"))) el.classList.add("rv-in");
+    for (const el of Array.from(document.querySelectorAll<HTMLElement>("[data-rv-onload]")))
+      el.classList.add("rv-in");
 
-    const candidates = Array.from(document.querySelectorAll<HTMLElement>(`main :is(${revealSelector})`)).filter(
+    const candidates = Array.from(
+      document.querySelectorAll<HTMLElement>(`main :is(${revealSelector})`),
+    ).filter(
       (el) =>
         !el.closest(`:is(${excluded})`) &&
         !el.parentElement?.closest("[data-rv-split]") &&
@@ -89,7 +140,9 @@ export function useReveal() {
         const batch = entries
           .filter((entry) => entry.isIntersecting)
           .map((entry) => entry.target as HTMLElement)
-          .sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1));
+          .sort((a, b) =>
+            a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1,
+          );
         batch.forEach((el, i) => {
           el.style.setProperty("--rv-delay", `${70 * Math.min(i, 7)}ms`);
           el.classList.add("rv-in");
@@ -107,7 +160,6 @@ export function useReveal() {
         revealShown.unobserve(el);
       });
     });
-
 
     return () => revealShown.disconnect();
   }, []);

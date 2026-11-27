@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const CONSENT_STORAGE_KEY = "tano-consent";
@@ -121,9 +123,9 @@ export function SiteConsent() {
     >
       <p className="wire-consent-copy tano-body-sm">
         We use cookies to understand how our site is used and to improve our marketing. Read our{" "}
-        <a className="wire-contact-link" href="/privacy-policy">
+        <Link className="wire-contact-link" href="/privacy-policy">
           privacy policy
-        </a>
+        </Link>
         .
       </p>
       <div className="wire-consent-actions">

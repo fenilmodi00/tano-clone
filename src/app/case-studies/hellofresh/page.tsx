@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "HelloFresh Case Study | Tano", "description": "How HelloFresh lifted conversion rate by 93% with a hybrid creator model run by Tano, without adding manual work."};
-
+import pageData from "@/content/tano/pages/case-studies-hellofresh.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { CaseStudiesHellofreshReplica } from "../../../components/sites/tano/replica/CaseStudiesHellofreshReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <CaseStudiesHellofreshReplica />;

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -90,7 +92,15 @@ function SourceChevron() {
   );
 }
 
-function SourceSelect({ id, name, options }: { id: string; name: string; options: readonly string[] }) {
+function SourceSelect({
+  id,
+  name,
+  options,
+}: {
+  id: string;
+  name: string;
+  options: readonly string[];
+}) {
   return (
     <span className="wire-contact-select" data-empty="">
       <select id={id} name={name} required>
@@ -136,7 +146,9 @@ function DrawerForm() {
   return (
     <div className="wire-contact-card" data-current-step={1}>
       <div className="wire-contact-head">
-        <h2 className="tano-heading-md">Tell us about your brand, and we’ll tell you how we can help.</h2>
+        <h2 className="tano-heading-md">
+          Tell us about your brand, and we’ll tell you how we can help.
+        </h2>
         <p className="tano-body-md wire-ink-soft">
           Want to reach out by email? Find us at{" "}
           <a className="wire-contact-link" href="mailto:team@tano.ai">
@@ -161,7 +173,13 @@ function DrawerForm() {
           <div className="wire-contact-field" data-field="email" data-span="half" data-step={1}>
             <label htmlFor="tano-drawer-email">Work email</label>
             <div className="wire-contact-control">
-              <input autoComplete="email" id="tano-drawer-email" name="email" required type="email" />
+              <input
+                autoComplete="email"
+                id="tano-drawer-email"
+                name="email"
+                required
+                type="email"
+              />
             </div>
           </div>
 
@@ -170,7 +188,12 @@ function DrawerForm() {
             About your brand
           </p>
 
-          <div className="wire-contact-field" data-field="brandWebsite" data-span="half" data-step={2}>
+          <div
+            className="wire-contact-field"
+            data-field="brandWebsite"
+            data-span="half"
+            data-step={2}
+          >
             <label htmlFor="tano-drawer-brandWebsite">Brand website</label>
             <div className="wire-contact-control">
               <input
@@ -185,14 +208,28 @@ function DrawerForm() {
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="companyType" data-span="half" data-step={2}>
+          <div
+            className="wire-contact-field"
+            data-field="companyType"
+            data-span="half"
+            data-step={2}
+          >
             <label htmlFor="tano-drawer-companyType">Company type</label>
             <div className="wire-contact-control">
-              <SourceSelect id="tano-drawer-companyType" name="companyType" options={COMPANY_TYPE_OPTIONS} />
+              <SourceSelect
+                id="tano-drawer-companyType"
+                name="companyType"
+                options={COMPANY_TYPE_OPTIONS}
+              />
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="monthlyAdSpendBand" data-span="half" data-step={2}>
+          <div
+            className="wire-contact-field"
+            data-field="monthlyAdSpendBand"
+            data-span="half"
+            data-step={2}
+          >
             <label htmlFor="tano-drawer-monthlyAdSpendBand">Monthly ad spend</label>
             <div className="wire-contact-control">
               <SourceSelect
@@ -203,8 +240,15 @@ function DrawerForm() {
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="sellsPhysicalProducts" data-span="half" data-step={2}>
-            <label htmlFor="tano-drawer-sellsPhysicalProducts">Do you sell physical products online?</label>
+          <div
+            className="wire-contact-field"
+            data-field="sellsPhysicalProducts"
+            data-span="half"
+            data-step={2}
+          >
+            <label htmlFor="tano-drawer-sellsPhysicalProducts">
+              Do you sell physical products online?
+            </label>
             <div className="wire-contact-control">
               <SourceSelect
                 id="tano-drawer-sellsPhysicalProducts"
@@ -214,8 +258,15 @@ function DrawerForm() {
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="creatorActivity" data-span="half" data-step={2}>
-            <label htmlFor="tano-drawer-creatorActivity">Current creator or affiliate activity</label>
+          <div
+            className="wire-contact-field"
+            data-field="creatorActivity"
+            data-span="half"
+            data-step={2}
+          >
+            <label htmlFor="tano-drawer-creatorActivity">
+              Current creator or affiliate activity
+            </label>
             <div className="wire-contact-control">
               <SourceSelect
                 id="tano-drawer-creatorActivity"
@@ -232,7 +283,12 @@ function DrawerForm() {
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="phoneNumber" data-span="full" data-step={1}>
+          <div
+            className="wire-contact-field"
+            data-field="phoneNumber"
+            data-span="full"
+            data-step={1}
+          >
             <label htmlFor="tano-drawer-phoneNumber">Phone number (optional)</label>
             <div className="wire-contact-control">
               <div className="wire-contact-phone">
@@ -252,10 +308,19 @@ function DrawerForm() {
             </div>
           </div>
 
-          <div className="wire-contact-field" data-field="hearAboutUs" data-span="full" data-step={2}>
+          <div
+            className="wire-contact-field"
+            data-field="hearAboutUs"
+            data-span="full"
+            data-step={2}
+          >
             <label htmlFor="tano-drawer-hearAboutUs">Where did you hear about us?</label>
             <div className="wire-contact-control">
-              <SourceSelect id="tano-drawer-hearAboutUs" name="hearAboutUs" options={HEAR_ABOUT_US_OPTIONS} />
+              <SourceSelect
+                id="tano-drawer-hearAboutUs"
+                name="hearAboutUs"
+                options={HEAR_ABOUT_US_OPTIONS}
+              />
             </div>
           </div>
 
@@ -271,11 +336,11 @@ function DrawerForm() {
           <label className="wire-contact-consent" htmlFor="tano-drawer-consent">
             <input id="tano-drawer-consent" name="consent" required type="checkbox" />
             <span>
-              I agree to Tano storing and processing these details in order to respond to this request, as described in
-              the{" "}
-              <a className="wire-contact-link" href="/privacy-policy">
+              I agree to Tano storing and processing these details in order to respond to this
+              request, as described in the{" "}
+              <Link className="wire-contact-link" href="/privacy-policy">
                 privacy policy
-              </a>
+              </Link>
               .
             </span>
           </label>
@@ -285,7 +350,13 @@ function DrawerForm() {
 
         <div className="wire-contact-actions">
           <span className="wire-spectrum-glow wire-contact-submit">
-            <button className="tano-button" data-material="surface" data-size="md" data-variant="primary" type="submit">
+            <button
+              className="tano-button"
+              data-material="surface"
+              data-size="md"
+              data-variant="primary"
+              type="submit"
+            >
               <span aria-hidden="true" className="tano-button__glow" />
               <span aria-hidden="true" className="tano-button__edge" />
               <span aria-hidden="true" className="tano-button__fill" />
@@ -477,7 +548,8 @@ export function SiteDrawer() {
     if (!dialog) return;
     const focusables = Array.from(dialog.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
       (element) =>
-        element.getClientRects().length > 0 && window.getComputedStyle(element).visibility !== "hidden",
+        element.getClientRects().length > 0 &&
+        window.getComputedStyle(element).visibility !== "hidden",
     );
     if (focusables.length === 0) {
       event.preventDefault();

@@ -250,18 +250,9 @@
           "type": "table",
           "head": [],
           "rows": [
-            [
-              "Base",
-              "£55,000–£90,000 (dependent on level and experience)"
-            ],
-            [
-              "Equity",
-              "EMI share options, a meaningful stake rather than a token one"
-            ],
-            [
-              "Location",
-              "Full-time, in person, London, 5 days per week"
-            ]
+            ["Base", "£55,000–£90,000 (dependent on level and experience)"],
+            ["Equity", "EMI share options, a meaningful stake rather than a token one"],
+            ["Location", "Full-time, in person, London, 5 days per week"]
           ]
         }
       ]

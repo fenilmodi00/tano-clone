@@ -52,11 +52,7 @@
         },
         {
           "type": "table",
-          "head": [
-            "",
-            "UK (ASA)",
-            "US (FTC)"
-          ],
+          "head": ["", "UK (ASA)", "US (FTC)"],
           "rows": [
             [
               "What counts",

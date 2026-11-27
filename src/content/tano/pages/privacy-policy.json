@@ -114,12 +114,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "Facebook",
-            "Instagram",
-            "Twitter",
-            "LinkedIn"
-          ]
+          "items": ["Facebook", "Instagram", "Twitter", "LinkedIn"]
         }
       ]
     },

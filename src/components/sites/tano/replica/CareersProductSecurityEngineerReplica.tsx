@@ -1,9 +1,586 @@
+import { TanoButton } from "@/components/sites/tano/ui/tano-button";
+import Link from "next/link";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function CareersProductSecurityEngineerReplica() {
   return (
     <main id="main">
-      
-<section aria-labelledby="role-title" className="hp-band hp-rp-hero" data-ground="dark" data-ground-dark data-padding="xl"><div aria-hidden="true" className="hp-hero-glow"><div className="hp-hero-glow-light"><div className="wire-spectrum-drift" /><div className="hp-hero-glow-folds" data-layer="a" /><div className="hp-hero-glow-folds" data-layer="b" /></div></div><div className="hp-container hp-rp-hero-copy"><a className="hp-rp-back tano-body-mono-sm" href="/careers"><span aria-hidden="true" className="hp-rp-back-mark"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span>All roles</a><ul aria-label="Role details" className="hp-role-tags"><li className="hp-role-tag tano-body-sm"><span aria-hidden="true" className="hp-role-tag-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M4.75 3.75C4.75 2.50736 5.75736 1.5 7 1.5C8.24264 1.5 9.25 2.50736 9.25 3.75C9.25 4.99264 8.24264 6 7 6C5.75736 6 4.75 4.99264 4.75 3.75ZM13.5 5.75C13.5 4.7835 12.7165 4 11.75 4C10.7835 4 10 4.7835 10 5.75C10 6.7165 10.7835 7.5 11.75 7.5C12.7165 7.5 13.5 6.7165 13.5 5.75ZM2 12C2 12.1753 2.03008 12.3436 2.08535 12.5H0.5C0.223858 12.5 0 12.2761 0 12V10.75C0 9.50736 1.00736 8.5 2.25 8.5C2.38607 8.5 2.51932 8.51208 2.64873 8.53522C2.23579 9.26264 2 10.1038 2 11V12ZM11 12C11 12.2761 10.7761 12.5 10.5 12.5H3.5C3.22386 12.5 3 12.2761 3 12V11C3 8.79086 4.79086 7 7 7C9.20914 7 11 8.79086 11 11V12ZM0.5 5.75C0.5 4.7835 1.2835 4 2.25 4C3.2165 4 4 4.7835 4 5.75C4 6.7165 3.2165 7.5 2.25 7.5C1.2835 7.5 0.5 6.7165 0.5 5.75ZM12 12C12 12.1753 11.9699 12.3436 11.9146 12.5H13.5C13.7761 12.5 14 12.2761 14 12V10.75C14 9.50736 12.9926 8.5 11.75 8.5C11.6139 8.5 11.4807 8.51208 11.3513 8.53522C11.7642 9.26264 12 10.1038 12 11V12Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Engineering</li><li className="hp-role-tag tano-body-sm"><span aria-hidden="true" className="hp-role-tag-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M1 6c0-3.31371 2.68629-6 6-6 3.3137 0 6 2.68629 6 6 0 1.94724-1.1187 3.72988-2.2844 5.0701-1.17729 1.3536-2.47393 2.3373-2.97128 2.6943C7.52045 13.9251 7.25937 14 7 14s-.52045-.0749-.74432-.2356c-.49735-.357-1.79399-1.3407-2.97127-2.6943C2.11874 9.72987 1 7.94724 1 6Zm6 1.5c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Central London · In person</li><li className="hp-role-tag tano-body-sm"><span aria-hidden="true" className="hp-role-tag-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M7 14c3.866 0 7-3.134 7-7 0-3.86599-3.134-7-7-7-3.86599 0-7 3.13401-7 7 0 3.866 3.13401 7 7 7Zm.625-10.5c0-.34518-.27982-.625-.625-.625s-.625.27982-.625.625V7c0 .34518.27982.625.625.625h2.5c.34518 0 .625-.27982.625-.625s-.27982-.625-.625-.625H7.625V3.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Full-time</li><li className="hp-role-tag tano-body-sm">1 opening</li></ul><h1 className="tano-display-md" id="role-title">Product Security Engineer</h1><div><button type="button" className="tano-button" data-variant="primary" data-size="md" data-material="surface"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Apply for this role<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></button><dialog aria-labelledby="_R_9mav5ubpcnjb_-title" className="wire-drawer" data-phase="closed" /></div></div></section><section aria-label="Product Security Engineer" className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container"><article className="hp-rp-body"><div className="hp-rp-intro"><p className="tano-body-para-lg"><span /><strong>Our agents talk to tens of thousands of real people, with no person in the loop.</strong><span> They run influencer marketing for brands like Hello Fresh, Bloom &amp; Wild and Unilever: reading every message, making decisions, calling real tools and spending live advertising budgets, around the clock.</span></p><p className="tano-body-para-lg"><span>That makes for a large attack surface, and the stakes are real. One flaw could reach thousands of conversations at once. One agent talked into the wrong action could spend money, or share data, it was never meant to touch.</span></p><p className="tano-body-para-lg"><span /><strong>We are hiring our first security engineer to own all of it</strong><span>: part CISO, part the engineer who writes the fix.</span></p></div><div className="hp-reveal hp-rp-callout" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '0ms'}}><span aria-hidden="true" className="hp-rp-callout-mark">🔐</span><p className="tano-body-para-lg"><span>One owner for security, at a scale nobody could watch by hand. You set the strategy, write the code and answer to the CTO.</span></p></div><section className="hp-rp-section" data-level="section"><h2 className="tano-heading-md">What you would own</h2><div className="hp-rp-prose"><p className="tano-body-para-md"><span>Everything security at Tano, across the infrastructure, the apps, the agents and the data, with nobody between you and the work. You decide what matters, write it down and ship it, then explain it to the board and to the security teams at the brands we work with.</span></p><p className="tano-body-para-md"><span /><strong>The hard part is the agents.</strong><span> They act on untrusted messages from tens of thousands of creators, call tools and move money, unattended for months. At that scale nobody can review each decision, so the limits have to hold on their own: what each agent can do, with which data and how much it can spend.</span></p><p className="tano-body-para-md"><span>We are a $5M-funded startup building an entirely new advertising channel, run by autonomous agents. The security problems that come with it are new too, and few teams have had to solve them yet. You would have the autonomy to make the technical calls to do it properly.</span></p></div></section><section className="hp-rp-section" data-level="sub"><h3 className="tano-heading-sm">Product security</h3><div className="hp-rp-prose" /><ul className="hp-rp-bullets"><li className="tano-body-para-md"><span>Threat-model the product end to end: the agents, the systems that pay creators and track their sales, and the apps brands and creators sign in to.</span></li><li className="tano-body-para-md"><span /><strong>Agents:</strong><span> guard against prompt injection from creator messages and tool misuse, and set the limits each one works within: the tools it can call, the data it can read, the budget it can spend, and the steps that need a person to approve.</span></li><li className="tano-body-para-md"><span /><strong>Money:</strong><span> protect the systems revenue depends on, from creator payouts and commission to discount codes and brand budgets, against fraud, abuse and costly mistakes.</span></li><li className="tano-body-para-md"><span /><strong>Data:</strong><span> keep each brand's data, and every creator's personal details, separate and private.</span></li><li className="tano-body-para-md"><span>Build the checks into the code everyone shares, so product engineers get them by default.</span></li></ul></section><section className="hp-rp-section" data-level="sub"><h3 className="tano-heading-sm">Infrastructure and secure development</h3><div className="hp-rp-prose" /><ul className="hp-rp-bullets"><li className="tano-body-para-md"><span>Least-privilege access across Supabase, Postgres, Fly.io and Vercel.</span></li><li className="tano-body-para-md"><span>Secret scanning, dependency scanning and static analysis in CI, with infrastructure defined as code.</span></li><li className="tano-body-para-md"><span>Logging, monitoring and an incident response plan that has been tested, not just written.</span></li></ul></section><section className="hp-rp-section" data-level="sub"><h3 className="tano-heading-sm">Compliance and trust</h3><div className="hp-rp-prose" /><ul className="hp-rp-bullets"><li className="tano-body-para-md"><span>Take Tano through SOC 2 Type I and into Type II, with evidence collected automatically through Oneleet.</span></li><li className="tano-body-para-md"><span>Own security reviews and questionnaires from brands, and the trust centre that answers most of them before they are asked.</span></li><li className="tano-body-para-md"><span>Run vendor reviews, access reviews, pentests and security training for the whole company.</span></li></ul></section><section className="hp-rp-section" data-level="section"><h2 className="tano-heading-md">Your first six months</h2><div className="hp-rp-prose" /><ul className="hp-rp-bullets"><li className="tano-body-para-md"><span /><strong>Ownership:</strong><span> a risk register and a security roadmap within your first month, and one clear line of escalation to the CTO.</span></li><li className="tano-body-para-md"><span /><strong>SOC 2:</strong><span> every control passing, the Type I report issued and the Type II observation window open.</span></li><li className="tano-body-para-md"><span /><strong>Time back for engineering:</strong><span> product engineers no longer collect evidence or fill in questionnaires.</span></li><li className="tano-body-para-md"><span /><strong>Posture:</strong><span> critical vulnerabilities triaged within a day and fixed within a week, a first pentest done and its findings fixed, and incident response tested.</span></li><li className="tano-body-para-md"><span /><strong>Secure by default:</strong><span> automated checks and secure infrastructure patterns in every repository, and clear limits on what each agent can do.</span></li></ul></section><section className="hp-rp-section" data-level="section"><h2 className="tano-heading-md">What we are looking for</h2><div className="hp-rp-prose" /><ul className="hp-rp-bullets"><li className="tano-body-para-md"><span>Five or more years in security engineering, ideally as the first or only security hire at a startup or scale-up.</span></li><li className="tano-body-para-md"><span /><strong>You have taken a company through SOC 2 or ISO 27001</strong><span> and know which controls matter and which are paperwork.</span></li><li className="tano-body-para-md"><span>A hands-on engineer: you write the fix, the CI check and the infrastructure code, not only the ticket.</span></li><li className="tano-body-para-md"><span>You can explain a risk to a founder, a board or a brand's security team in plain English, and make a call when the answer isn't clear.</span></li><li className="tano-body-para-md"><span>A real interest in how AI agents fail, and how to stop them failing badly.</span></li><li className="tano-body-para-md"><span /><strong>Bonus:</strong><span> cloud and infrastructure security · Postgres and Supabase depth · LLM or agent security work · TypeScript or Go.</span></li></ul></section><section className="hp-rp-section" data-level="section"><h2 className="tano-heading-md">The stack</h2><div className="hp-rp-prose"><p className="tano-body-para-md"><span>TypeScript (NestJS, Next.js) and Go, with Postgres, LangGraph, Google Gemini, Supabase, Fly.io and Vercel. Oneleet for compliance. Early enough that you will set the security patterns everyone else builds on.</span></p></div></section><section className="hp-rp-section"><h2 className="tano-heading-md">The team you would join</h2><ul className="hp-rp-team"><li className="hp-rp-person"><p className="tano-heading-xs">Will Caplan, CEO</p><p className="tano-body-sm hp-rp-soft">GTM lead at Encord (YC AI scale-up), and Sandhurst.</p></li><li className="hp-rp-person"><p className="tano-heading-xs">Sagar, CTO</p><p className="tano-body-sm hp-rp-soft">Three years building AI agents, early before it was a category.</p></li><li className="hp-rp-person"><p className="tano-heading-xs">Nathan, Founding Engineer</p><p className="tano-body-sm hp-rp-soft">Fastest-promoted engineer at a London YC scale-up.</p></li><li className="hp-rp-person"><p className="tano-heading-xs">Jake, Founding Engineer</p><p className="tano-body-sm hp-rp-soft">Previously a founding engineer. Has grown a personal YouTube channel.</p></li><li className="hp-rp-person"><p className="tano-heading-xs">Eddie, Product Engineer</p><p className="tano-body-sm hp-rp-soft">Previously did research at Stanford.</p></li></ul></section><section className="hp-rp-section"><h2 className="tano-heading-md">Process</h2><ol className="hp-rp-steps"><li><span className="hp-rp-step-number tano-body-mono-sm">01</span><span className="tano-body-para-md"><span>Intro call.</span></span></li><li><span className="hp-rp-step-number tano-body-mono-sm">02</span><span className="tano-body-para-md"><span>Two 30-minute calls with Sagar and Will: motivation and technical depth.</span></span></li><li><span className="hp-rp-step-number tano-body-mono-sm">03</span><span className="tano-body-para-md"><span>Onsite, mostly with Sagar: threat-model one of our agents together, plus time with the team and lunch.</span></span></li></ol><p className="tano-body-para-sm hp-rp-soft"><span>Roughly two weeks end to end.</span></p></section><section className="hp-rp-section"><h2 className="tano-heading-md">What is on offer</h2><dl className="hp-rp-table"><div className="hp-rp-row"><dt className="tano-body-mono-sm"><span aria-hidden="true" className="hp-rp-row-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M9.61724.5c.06634-.000029.12998.026312.17689.073223L11.5168 2.29588c.0976.09763.0976.25592 0 .35355L6.17094 7.99527c-.03865.03865-.0889.06357-.14305.07094l-1.99416.27151c-.0776.01056-.15566-.01585-.21091-.07135-.05525-.0555-.0813-.13369-.07037-.21124l.28086-1.99415c.00756-.05366.03235-.10341.07063-.14176L9.44042.573378C9.48729.526426 9.5509.500029 9.61724.5ZM3.21929 5.03611c-.22969.2301-.3784.52859-.42375.85053L2.51467 7.8808c-.06553.46529.09076.9344.42224 1.26741.33149.33302.79988.49147 1.26546.42808l1.99416-.27151c.32493-.04424.62642-.19374.8583-.42562L10.934 5H12c.8284 0 1.5.67157 1.5 1.5V12c0 .8284-.6716 1.5-1.5 1.5H2c-.82843 0-1.5-.6716-1.5-1.5V6.5C.5 5.67157 1.17157 5 2 5h1.25534l-.03605.03611.86968.86816-.86968-.86816ZM9 8.375c-.34518 0-.625.27982-.625.625s.27982.625.625.625h1.75c.3452 0 .625-.27982.625-.625s-.2798-.625-.625-.625H9ZM5.125 11.25c0-.3452.27982-.625.625-.625h5c.3452 0 .625.2798.625.625s-.2798.625-.625.625h-5c-.34518 0-.625-.2798-.625-.625Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Base</dt><dd className="tano-body-para-md">Up to £150k, depending on experience</dd></div><div className="hp-rp-row"><dt className="tano-body-mono-sm"><span aria-hidden="true" className="hp-rp-row-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M6.375.0275269C2.8018.343686 0 3.34465 0 7.00001 0 10.866 3.13401 14 7 14c1.78013 0 3.4051-.6645 4.6403-1.7589L6.57091 7.45445C6.44587 7.33638 6.375 7.172 6.375 7.00002V.0275269ZM12.4986 11.3323C13.4389 10.1406 14 8.63583 14 7.00001 14 3.34465 11.1982.343686 7.625.0275269V6.73057l4.8736 4.60173Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Equity</dt><dd className="tano-body-para-md">Share options</dd></div><div className="hp-rp-row"><dt className="tano-body-mono-sm"><span aria-hidden="true" className="hp-rp-row-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M1 6c0-3.31371 2.68629-6 6-6 3.3137 0 6 2.68629 6 6 0 1.94724-1.1187 3.72988-2.2844 5.0701-1.17729 1.3536-2.47393 2.3373-2.97128 2.6943C7.52045 13.9251 7.25937 14 7 14s-.52045-.0749-.74432-.2356c-.49735-.357-1.79399-1.3407-2.97127-2.6943C2.11874 9.72987 1 7.94724 1 6Zm6 1.5c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Location</dt><dd className="tano-body-para-md">Full-time, in person, central London</dd></div><div className="hp-rp-row"><dt className="tano-body-mono-sm"><span aria-hidden="true" className="hp-rp-row-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M3.75545 1.50869C4.66246 1.57431 5.604 2.01198 6.50387 2.89114C7.40374 2.01198 8.34527 1.57431 9.25228 1.50869C10.2861 1.43389 11.2006 1.8485 11.8619 2.50417C12.805 3.43935 13.2783 4.92691 12.8482 6.29065C12.4063 6.38106 11.9922 6.62072 11.6884 7.0005L8.89934 10.4868L8.45012 10.1499C7.56646 9.48717 6.31286 9.66626 5.65012 10.5499C5.42321 10.8525 5.29498 11.1984 5.25993 11.5491L1.07602 7.76475C1.06991 7.75922 1.06395 7.75355 1.05812 7.74774C-0.561308 6.13063 -0.153882 3.7929 1.14586 2.50417C1.80713 1.8485 2.72166 1.43389 3.75545 1.50869ZM13.8357 8.71855C14.0945 8.3951 14.042 7.92313 13.7186 7.66438C13.3951 7.40562 12.9232 7.45806 12.6644 7.78151L9.1185 12.2139L7.70004 11.15C7.36867 10.9015 6.89857 10.9687 6.65004 11.3C6.40152 11.6314 6.46867 12.1015 6.80004 12.35L8.80004 13.85C9.12412 14.0931 9.58264 14.0349 9.8357 13.7185L13.8357 8.71855Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span>Benefits</dt><dd className="tano-body-para-md">Health insurance, onsite gym, in-person culture, real startup work-life</dd></div></dl></section></article></div></section><section aria-labelledby="role-close" className="hp-band" data-ground="dark" data-ground-dark data-padding="xl"><div className="hp-container hp-rp-close"><h2 className="tano-display-xs" id="role-close">Sound like you?</h2><p className="tano-body-para-md hp-rp-soft">Tell us why you, and what you'd want to own. We read every application.</p><div><button type="button" className="tano-button" data-variant="primary" data-size="md" data-material="surface"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Apply for this role<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></button><dialog aria-labelledby="_R_1uav5ubpcnjb_-title" className="wire-drawer" data-phase="closed" /></div></div></section>
+      <section
+        aria-labelledby="role-title"
+        className="hp-band hp-rp-hero"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div aria-hidden="true" className="hp-hero-glow">
+          <div className="hp-hero-glow-light">
+            <div className="wire-spectrum-drift" />
+            <div className="hp-hero-glow-folds" data-layer="a" />
+            <div className="hp-hero-glow-folds" data-layer="b" />
+          </div>
+        </div>
+        <div className="hp-container hp-rp-hero-copy">
+          <Link className="hp-rp-back tano-body-mono-sm" href="/careers">
+            <span aria-hidden="true" className="hp-rp-back-mark">
+              <svg
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2.1"
+                viewBox="0 0 8 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1.6 1.4 6.2 6l-4.6 4.6" />
+              </svg>
+            </span>
+            All roles
+          </Link>
+          <ul aria-label="Role details" className="hp-role-tags">
+            <li className="hp-role-tag tano-body-sm">
+              <span aria-hidden="true" className="hp-role-tag-icon">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M4.75 3.75C4.75 2.50736 5.75736 1.5 7 1.5C8.24264 1.5 9.25 2.50736 9.25 3.75C9.25 4.99264 8.24264 6 7 6C5.75736 6 4.75 4.99264 4.75 3.75ZM13.5 5.75C13.5 4.7835 12.7165 4 11.75 4C10.7835 4 10 4.7835 10 5.75C10 6.7165 10.7835 7.5 11.75 7.5C12.7165 7.5 13.5 6.7165 13.5 5.75ZM2 12C2 12.1753 2.03008 12.3436 2.08535 12.5H0.5C0.223858 12.5 0 12.2761 0 12V10.75C0 9.50736 1.00736 8.5 2.25 8.5C2.38607 8.5 2.51932 8.51208 2.64873 8.53522C2.23579 9.26264 2 10.1038 2 11V12ZM11 12C11 12.2761 10.7761 12.5 10.5 12.5H3.5C3.22386 12.5 3 12.2761 3 12V11C3 8.79086 4.79086 7 7 7C9.20914 7 11 8.79086 11 11V12ZM0.5 5.75C0.5 4.7835 1.2835 4 2.25 4C3.2165 4 4 4.7835 4 5.75C4 6.7165 3.2165 7.5 2.25 7.5C1.2835 7.5 0.5 6.7165 0.5 5.75ZM12 12C12 12.1753 11.9699 12.3436 11.9146 12.5H13.5C13.7761 12.5 14 12.2761 14 12V10.75C14 9.50736 12.9926 8.5 11.75 8.5C11.6139 8.5 11.4807 8.51208 11.3513 8.53522C11.7642 9.26264 12 10.1038 12 11V12Z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+              Engineering
+            </li>
+            <li className="hp-role-tag tano-body-sm">
+              <span aria-hidden="true" className="hp-role-tag-icon">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M1 6c0-3.31371 2.68629-6 6-6 3.3137 0 6 2.68629 6 6 0 1.94724-1.1187 3.72988-2.2844 5.0701-1.17729 1.3536-2.47393 2.3373-2.97128 2.6943C7.52045 13.9251 7.25937 14 7 14s-.52045-.0749-.74432-.2356c-.49735-.357-1.79399-1.3407-2.97127-2.6943C2.11874 9.72987 1 7.94724 1 6Zm6 1.5c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2Z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+              Central London · In person
+            </li>
+            <li className="hp-role-tag tano-body-sm">
+              <span aria-hidden="true" className="hp-role-tag-icon">
+                <svg
+                  viewBox="0 0 14 14"
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M7 14c3.866 0 7-3.134 7-7 0-3.86599-3.134-7-7-7-3.86599 0-7 3.13401-7 7 0 3.866 3.13401 7 7 7Zm.625-10.5c0-.34518-.27982-.625-.625-.625s-.625.27982-.625.625V7c0 .34518.27982.625.625.625h2.5c.34518 0 .625-.27982.625-.625s-.27982-.625-.625-.625H7.625V3.5Z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+              Full-time
+            </li>
+            <li className="hp-role-tag tano-body-sm">1 opening</li>
+          </ul>
+          <h1 className="tano-display-md" id="role-title">
+            Product Security Engineer
+          </h1>
+          <div>
+            <TanoButton type={"button"} >Apply for this role</TanoButton>
+            <dialog
+              aria-labelledby="_R_9mav5ubpcnjb_-title"
+              className="wire-drawer"
+              data-phase="closed"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        aria-label="Product Security Engineer"
+        className="hp-band"
+        data-ground="light"
+        data-padding="xl"
+      >
+        <div className="hp-container">
+          <article className="hp-rp-body">
+            <div className="hp-rp-intro">
+              <p className="tano-body-para-lg">
+                <span />
+                <strong>
+                  Our agents talk to tens of thousands of real people, with no person in the loop.
+                </strong>
+                <span>
+                  {" "}
+                  They run influencer marketing for brands like Hello Fresh, Bloom &amp; Wild and
+                  Unilever: reading every message, making decisions, calling real tools and spending
+                  live advertising budgets, around the clock.
+                </span>
+              </p>
+              <p className="tano-body-para-lg">
+                <span>
+                  That makes for a large attack surface, and the stakes are real. One flaw could
+                  reach thousands of conversations at once. One agent talked into the wrong action
+                  could spend money, or share data, it was never meant to touch.
+                </span>
+              </p>
+              <p className="tano-body-para-lg">
+                <span />
+                <strong>We are hiring our first security engineer to own all of it</strong>
+                <span>: part CISO, part the engineer who writes the fix.</span>
+              </p>
+            </div>
+            <div
+              className="hp-reveal hp-rp-callout"
+              data-rv-skip
+              data-shown="false"
+              style={{ "--hp-reveal-delay": "0ms" }}
+            >
+              <span aria-hidden="true" className="hp-rp-callout-mark">
+                🔐
+              </span>
+              <p className="tano-body-para-lg">
+                <span>
+                  One owner for security, at a scale nobody could watch by hand. You set the
+                  strategy, write the code and answer to the CTO.
+                </span>
+              </p>
+            </div>
+            <section className="hp-rp-section" data-level="section">
+              <h2 className="tano-heading-md">What you would own</h2>
+              <div className="hp-rp-prose">
+                <p className="tano-body-para-md">
+                  <span>
+                    Everything security at Tano, across the infrastructure, the apps, the agents and
+                    the data, with nobody between you and the work. You decide what matters, write
+                    it down and ship it, then explain it to the board and to the security teams at
+                    the brands we work with.
+                  </span>
+                </p>
+                <p className="tano-body-para-md">
+                  <span />
+                  <strong>The hard part is the agents.</strong>
+                  <span>
+                    {" "}
+                    They act on untrusted messages from tens of thousands of creators, call tools
+                    and move money, unattended for months. At that scale nobody can review each
+                    decision, so the limits have to hold on their own: what each agent can do, with
+                    which data and how much it can spend.
+                  </span>
+                </p>
+                <p className="tano-body-para-md">
+                  <span>
+                    We are a $5M-funded startup building an entirely new advertising channel, run by
+                    autonomous agents. The security problems that come with it are new too, and few
+                    teams have had to solve them yet. You would have the autonomy to make the
+                    technical calls to do it properly.
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section className="hp-rp-section" data-level="sub">
+              <h3 className="tano-heading-sm">Product security</h3>
+              <div className="hp-rp-prose" />
+              <ul className="hp-rp-bullets">
+                <li className="tano-body-para-md">
+                  <span>
+                    Threat-model the product end to end: the agents, the systems that pay creators
+                    and track their sales, and the apps brands and creators sign in to.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Agents:</strong>
+                  <span>
+                    {" "}
+                    guard against prompt injection from creator messages and tool misuse, and set
+                    the limits each one works within: the tools it can call, the data it can read,
+                    the budget it can spend, and the steps that need a person to approve.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Money:</strong>
+                  <span>
+                    {" "}
+                    protect the systems revenue depends on, from creator payouts and commission to
+                    discount codes and brand budgets, against fraud, abuse and costly mistakes.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Data:</strong>
+                  <span>
+                    {" "}
+                    keep each brand's data, and every creator's personal details, separate and
+                    private.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    Build the checks into the code everyone shares, so product engineers get them by
+                    default.
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section" data-level="sub">
+              <h3 className="tano-heading-sm">Infrastructure and secure development</h3>
+              <div className="hp-rp-prose" />
+              <ul className="hp-rp-bullets">
+                <li className="tano-body-para-md">
+                  <span>Least-privilege access across Supabase, Postgres, Fly.io and Vercel.</span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    Secret scanning, dependency scanning and static analysis in CI, with
+                    infrastructure defined as code.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    Logging, monitoring and an incident response plan that has been tested, not just
+                    written.
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section" data-level="sub">
+              <h3 className="tano-heading-sm">Compliance and trust</h3>
+              <div className="hp-rp-prose" />
+              <ul className="hp-rp-bullets">
+                <li className="tano-body-para-md">
+                  <span>
+                    Take Tano through SOC 2 Type I and into Type II, with evidence collected
+                    automatically through Oneleet.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    Own security reviews and questionnaires from brands, and the trust centre that
+                    answers most of them before they are asked.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    Run vendor reviews, access reviews, pentests and security training for the whole
+                    company.
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section" data-level="section">
+              <h2 className="tano-heading-md">Your first six months</h2>
+              <div className="hp-rp-prose" />
+              <ul className="hp-rp-bullets">
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Ownership:</strong>
+                  <span>
+                    {" "}
+                    a risk register and a security roadmap within your first month, and one clear
+                    line of escalation to the CTO.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>SOC 2:</strong>
+                  <span>
+                    {" "}
+                    every control passing, the Type I report issued and the Type II observation
+                    window open.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Time back for engineering:</strong>
+                  <span>
+                    {" "}
+                    product engineers no longer collect evidence or fill in questionnaires.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Posture:</strong>
+                  <span>
+                    {" "}
+                    critical vulnerabilities triaged within a day and fixed within a week, a first
+                    pentest done and its findings fixed, and incident response tested.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Secure by default:</strong>
+                  <span>
+                    {" "}
+                    automated checks and secure infrastructure patterns in every repository, and
+                    clear limits on what each agent can do.
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section" data-level="section">
+              <h2 className="tano-heading-md">What we are looking for</h2>
+              <div className="hp-rp-prose" />
+              <ul className="hp-rp-bullets">
+                <li className="tano-body-para-md">
+                  <span>
+                    Five or more years in security engineering, ideally as the first or only
+                    security hire at a startup or scale-up.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>You have taken a company through SOC 2 or ISO 27001</strong>
+                  <span> and know which controls matter and which are paperwork.</span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    A hands-on engineer: you write the fix, the CI check and the infrastructure
+                    code, not only the ticket.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    You can explain a risk to a founder, a board or a brand's security team in plain
+                    English, and make a call when the answer isn't clear.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span>
+                    A real interest in how AI agents fail, and how to stop them failing badly.
+                  </span>
+                </li>
+                <li className="tano-body-para-md">
+                  <span />
+                  <strong>Bonus:</strong>
+                  <span>
+                    {" "}
+                    cloud and infrastructure security · Postgres and Supabase depth · LLM or agent
+                    security work · TypeScript or Go.
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section" data-level="section">
+              <h2 className="tano-heading-md">The stack</h2>
+              <div className="hp-rp-prose">
+                <p className="tano-body-para-md">
+                  <span>
+                    TypeScript (NestJS, Next.js) and Go, with Postgres, LangGraph, Google Gemini,
+                    Supabase, Fly.io and Vercel. Oneleet for compliance. Early enough that you will
+                    set the security patterns everyone else builds on.
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section className="hp-rp-section">
+              <h2 className="tano-heading-md">The team you would join</h2>
+              <ul className="hp-rp-team">
+                <li className="hp-rp-person">
+                  <p className="tano-heading-xs">Will Caplan, CEO</p>
+                  <p className="tano-body-sm hp-rp-soft">
+                    GTM lead at Encord (YC AI scale-up), and Sandhurst.
+                  </p>
+                </li>
+                <li className="hp-rp-person">
+                  <p className="tano-heading-xs">Sagar, CTO</p>
+                  <p className="tano-body-sm hp-rp-soft">
+                    Three years building AI agents, early before it was a category.
+                  </p>
+                </li>
+                <li className="hp-rp-person">
+                  <p className="tano-heading-xs">Nathan, Founding Engineer</p>
+                  <p className="tano-body-sm hp-rp-soft">
+                    Fastest-promoted engineer at a London YC scale-up.
+                  </p>
+                </li>
+                <li className="hp-rp-person">
+                  <p className="tano-heading-xs">Jake, Founding Engineer</p>
+                  <p className="tano-body-sm hp-rp-soft">
+                    Previously a founding engineer. Has grown a personal YouTube channel.
+                  </p>
+                </li>
+                <li className="hp-rp-person">
+                  <p className="tano-heading-xs">Eddie, Product Engineer</p>
+                  <p className="tano-body-sm hp-rp-soft">Previously did research at Stanford.</p>
+                </li>
+              </ul>
+            </section>
+            <section className="hp-rp-section">
+              <h2 className="tano-heading-md">Process</h2>
+              <ol className="hp-rp-steps">
+                <li>
+                  <span className="hp-rp-step-number tano-body-mono-sm">01</span>
+                  <span className="tano-body-para-md">
+                    <span>Intro call.</span>
+                  </span>
+                </li>
+                <li>
+                  <span className="hp-rp-step-number tano-body-mono-sm">02</span>
+                  <span className="tano-body-para-md">
+                    <span>
+                      Two 30-minute calls with Sagar and Will: motivation and technical depth.
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span className="hp-rp-step-number tano-body-mono-sm">03</span>
+                  <span className="tano-body-para-md">
+                    <span>
+                      Onsite, mostly with Sagar: threat-model one of our agents together, plus time
+                      with the team and lunch.
+                    </span>
+                  </span>
+                </li>
+              </ol>
+              <p className="tano-body-para-sm hp-rp-soft">
+                <span>Roughly two weeks end to end.</span>
+              </p>
+            </section>
+            <section className="hp-rp-section">
+              <h2 className="tano-heading-md">What is on offer</h2>
+              <dl className="hp-rp-table">
+                <div className="hp-rp-row">
+                  <dt className="tano-body-mono-sm">
+                    <span aria-hidden="true" className="hp-rp-row-icon">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M9.61724.5c.06634-.000029.12998.026312.17689.073223L11.5168 2.29588c.0976.09763.0976.25592 0 .35355L6.17094 7.99527c-.03865.03865-.0889.06357-.14305.07094l-1.99416.27151c-.0776.01056-.15566-.01585-.21091-.07135-.05525-.0555-.0813-.13369-.07037-.21124l.28086-1.99415c.00756-.05366.03235-.10341.07063-.14176L9.44042.573378C9.48729.526426 9.5509.500029 9.61724.5ZM3.21929 5.03611c-.22969.2301-.3784.52859-.42375.85053L2.51467 7.8808c-.06553.46529.09076.9344.42224 1.26741.33149.33302.79988.49147 1.26546.42808l1.99416-.27151c.32493-.04424.62642-.19374.8583-.42562L10.934 5H12c.8284 0 1.5.67157 1.5 1.5V12c0 .8284-.6716 1.5-1.5 1.5H2c-.82843 0-1.5-.6716-1.5-1.5V6.5C.5 5.67157 1.17157 5 2 5h1.25534l-.03605.03611.86968.86816-.86968-.86816ZM9 8.375c-.34518 0-.625.27982-.625.625s.27982.625.625.625h1.75c.3452 0 .625-.27982.625-.625s-.2798-.625-.625-.625H9ZM5.125 11.25c0-.3452.27982-.625.625-.625h5c.3452 0 .625.2798.625.625s-.2798.625-.625.625h-5c-.34518 0-.625-.2798-.625-.625Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Base
+                  </dt>
+                  <dd className="tano-body-para-md">Up to £150k, depending on experience</dd>
+                </div>
+                <div className="hp-rp-row">
+                  <dt className="tano-body-mono-sm">
+                    <span aria-hidden="true" className="hp-rp-row-icon">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M6.375.0275269C2.8018.343686 0 3.34465 0 7.00001 0 10.866 3.13401 14 7 14c1.78013 0 3.4051-.6645 4.6403-1.7589L6.57091 7.45445C6.44587 7.33638 6.375 7.172 6.375 7.00002V.0275269ZM12.4986 11.3323C13.4389 10.1406 14 8.63583 14 7.00001 14 3.34465 11.1982.343686 7.625.0275269V6.73057l4.8736 4.60173Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Equity
+                  </dt>
+                  <dd className="tano-body-para-md">Share options</dd>
+                </div>
+                <div className="hp-rp-row">
+                  <dt className="tano-body-mono-sm">
+                    <span aria-hidden="true" className="hp-rp-row-icon">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M1 6c0-3.31371 2.68629-6 6-6 3.3137 0 6 2.68629 6 6 0 1.94724-1.1187 3.72988-2.2844 5.0701-1.17729 1.3536-2.47393 2.3373-2.97128 2.6943C7.52045 13.9251 7.25937 14 7 14s-.52045-.0749-.74432-.2356c-.49735-.357-1.79399-1.3407-2.97127-2.6943C2.11874 9.72987 1 7.94724 1 6Zm6 1.5c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Location
+                  </dt>
+                  <dd className="tano-body-para-md">Full-time, in person, central London</dd>
+                </div>
+                <div className="hp-rp-row">
+                  <dt className="tano-body-mono-sm">
+                    <span aria-hidden="true" className="hp-rp-row-icon">
+                      <svg
+                        viewBox="0 0 14 14"
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M3.75545 1.50869C4.66246 1.57431 5.604 2.01198 6.50387 2.89114C7.40374 2.01198 8.34527 1.57431 9.25228 1.50869C10.2861 1.43389 11.2006 1.8485 11.8619 2.50417C12.805 3.43935 13.2783 4.92691 12.8482 6.29065C12.4063 6.38106 11.9922 6.62072 11.6884 7.0005L8.89934 10.4868L8.45012 10.1499C7.56646 9.48717 6.31286 9.66626 5.65012 10.5499C5.42321 10.8525 5.29498 11.1984 5.25993 11.5491L1.07602 7.76475C1.06991 7.75922 1.06395 7.75355 1.05812 7.74774C-0.561308 6.13063 -0.153882 3.7929 1.14586 2.50417C1.80713 1.8485 2.72166 1.43389 3.75545 1.50869ZM13.8357 8.71855C14.0945 8.3951 14.042 7.92313 13.7186 7.66438C13.3951 7.40562 12.9232 7.45806 12.6644 7.78151L9.1185 12.2139L7.70004 11.15C7.36867 10.9015 6.89857 10.9687 6.65004 11.3C6.40152 11.6314 6.46867 12.1015 6.80004 12.35L8.80004 13.85C9.12412 14.0931 9.58264 14.0349 9.8357 13.7185L13.8357 8.71855Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    Benefits
+                  </dt>
+                  <dd className="tano-body-para-md">
+                    Health insurance, onsite gym, in-person culture, real startup work-life
+                  </dd>
+                </div>
+              </dl>
+            </section>
+          </article>
+        </div>
+      </section>
+      <section
+        aria-labelledby="role-close"
+        className="hp-band"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div className="hp-container hp-rp-close">
+          <h2 className="tano-display-xs" id="role-close">
+            Sound like you?
+          </h2>
+          <p className="tano-body-para-md hp-rp-soft">
+            Tell us why you, and what you'd want to own. We read every application.
+          </p>
+          <div>
+            <TanoButton type={"button"} >Apply for this role</TanoButton>
+            <dialog
+              aria-labelledby="_R_1uav5ubpcnjb_-title"
+              className="wire-drawer"
+              data-phase="closed"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

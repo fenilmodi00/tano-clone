@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Free Seeding → Affiliate Playbook | Tano | Tano", "description": "How to build a creator programme that pays for itself — from gifting to affiliates to whitelisted ads. Free from Tano."};
-
+import pageData from "@/content/tano/pages/playbooks-self-funding-seeding-affiliate.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { PlaybooksSelfFundingSeedingAffiliateReplica } from "../../../components/sites/tano/replica/PlaybooksSelfFundingSeedingAffiliateReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <PlaybooksSelfFundingSeedingAffiliateReplica />;

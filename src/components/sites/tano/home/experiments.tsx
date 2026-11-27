@@ -46,54 +46,144 @@ export const EXPERIMENT_ROUNDS: readonly ExperimentRound[] = [
     persona: 0,
     cac: 32.1,
     rows: [
-      { message: "Variant A", incentive: "Commission increase", content: "A letterbox unboxing, the first look on camera", rate: 4.3 },
-      { message: "Variant B", incentive: "Bouquet and code", content: "Styling the bunch in a vase at home", rate: 3.6 },
-      { message: "Variant C", incentive: "Monthly bouquet", content: "Gifting a friend, the doorstep surprise", rate: 2.4 },
+      {
+        message: "Variant A",
+        incentive: "Commission increase",
+        content: "A letterbox unboxing, the first look on camera",
+        rate: 4.3,
+      },
+      {
+        message: "Variant B",
+        incentive: "Bouquet and code",
+        content: "Styling the bunch in a vase at home",
+        rate: 3.6,
+      },
+      {
+        message: "Variant C",
+        incentive: "Monthly bouquet",
+        content: "Gifting a friend, the doorstep surprise",
+        rate: 2.4,
+      },
     ],
   },
   {
     persona: 1,
     cac: 30.4,
     rows: [
-      { message: "Variant B", incentive: "Bouquet and code", content: "Styling the bunch in a vase at home", rate: 4.9 },
-      { message: "Variant A", incentive: "Commission increase", content: "A letterbox unboxing, the first look on camera", rate: 3.9 },
-      { message: "Variant A", incentive: "Early access", content: "Laying the table for a dinner party", rate: 3.1 },
+      {
+        message: "Variant B",
+        incentive: "Bouquet and code",
+        content: "Styling the bunch in a vase at home",
+        rate: 4.9,
+      },
+      {
+        message: "Variant A",
+        incentive: "Commission increase",
+        content: "A letterbox unboxing, the first look on camera",
+        rate: 3.9,
+      },
+      {
+        message: "Variant A",
+        incentive: "Early access",
+        content: "Laying the table for a dinner party",
+        rate: 3.1,
+      },
     ],
   },
   {
     persona: 2,
     cac: 28.9,
     rows: [
-      { message: "Variant A", incentive: "Early access", content: "Gifting a friend, the doorstep surprise", rate: 5.3 },
-      { message: "Variant B", incentive: "Bouquet and code", content: "Styling the bunch in a vase at home", rate: 4.6 },
-      { message: "Variant A", incentive: "Commission increase", content: "A letterbox unboxing, the first look on camera", rate: 3.6 },
+      {
+        message: "Variant A",
+        incentive: "Early access",
+        content: "Gifting a friend, the doorstep surprise",
+        rate: 5.3,
+      },
+      {
+        message: "Variant B",
+        incentive: "Bouquet and code",
+        content: "Styling the bunch in a vase at home",
+        rate: 4.6,
+      },
+      {
+        message: "Variant A",
+        incentive: "Commission increase",
+        content: "A letterbox unboxing, the first look on camera",
+        rate: 3.6,
+      },
     ],
   },
   {
     persona: 3,
     cac: 27.6,
     rows: [
-      { message: "Variant A", incentive: "Early access", content: "Gifting a friend, the doorstep surprise", rate: 5.1 },
-      { message: "Variant C", incentive: "Bouquet and code", content: "Laying the table for a dinner party", rate: 4.2 },
-      { message: "Variant B", incentive: "Bouquet and code", content: "Styling the bunch in a vase at home", rate: 3.8 },
+      {
+        message: "Variant A",
+        incentive: "Early access",
+        content: "Gifting a friend, the doorstep surprise",
+        rate: 5.1,
+      },
+      {
+        message: "Variant C",
+        incentive: "Bouquet and code",
+        content: "Laying the table for a dinner party",
+        rate: 4.2,
+      },
+      {
+        message: "Variant B",
+        incentive: "Bouquet and code",
+        content: "Styling the bunch in a vase at home",
+        rate: 3.8,
+      },
     ],
   },
   {
     persona: 4,
     cac: 26.2,
     rows: [
-      { message: "Variant C", incentive: "Bouquet and code", content: "Laying the table for a dinner party", rate: 5.6 },
-      { message: "Variant A", incentive: "Early access", content: "Gifting a friend, the doorstep surprise", rate: 5.2 },
-      { message: "Variant B", incentive: "Monthly bouquet", content: "A letterbox unboxing, the first look on camera", rate: 3.4 },
+      {
+        message: "Variant C",
+        incentive: "Bouquet and code",
+        content: "Laying the table for a dinner party",
+        rate: 5.6,
+      },
+      {
+        message: "Variant A",
+        incentive: "Early access",
+        content: "Gifting a friend, the doorstep surprise",
+        rate: 5.2,
+      },
+      {
+        message: "Variant B",
+        incentive: "Monthly bouquet",
+        content: "A letterbox unboxing, the first look on camera",
+        rate: 3.4,
+      },
     ],
   },
   {
     persona: 0,
     cac: 24.8,
     rows: [
-      { message: "Variant C", incentive: "Bouquet and code", content: "Laying the table for a dinner party", rate: 5.8 },
-      { message: "Variant A", incentive: "Early access", content: "Gifting a friend, the doorstep surprise", rate: 5 },
-      { message: "Variant C", incentive: "Commission increase", content: "Styling the bunch in a vase at home", rate: 4.1 },
+      {
+        message: "Variant C",
+        incentive: "Bouquet and code",
+        content: "Laying the table for a dinner party",
+        rate: 5.8,
+      },
+      {
+        message: "Variant A",
+        incentive: "Early access",
+        content: "Gifting a friend, the doorstep surprise",
+        rate: 5,
+      },
+      {
+        message: "Variant C",
+        incentive: "Commission increase",
+        content: "Styling the bunch in a vase at home",
+        rate: 4.1,
+      },
     ],
   },
 ];
@@ -118,11 +208,7 @@ export function experimentRate(
   return Math.round((base + 0.15 * experimentNoise(31 * tick + rowIndex)) * 10) / 10;
 }
 
-export function experimentCac(
-  base: number,
-  tick: number,
-  reduced: boolean,
-): number {
+export function experimentCac(base: number, tick: number, reduced: boolean): number {
   if (reduced || tick === 0) return base;
   return Math.round((base + 0.35 * experimentNoise(17 * tick + 5)) * 100) / 100;
 }
@@ -203,9 +289,7 @@ function sourceRoute(
  * boxes relative to `.hp-xl` (`offsetLeft/Top/Width/Height`, not client
  * rects), which is why the shipped paths carry integer coordinates.
  */
-export function buildExperimentWires(
-  input: ExperimentWireInput,
-): ExperimentWires {
+export function buildExperimentWires(input: ExperimentWireInput): ExperimentWires {
   const { pickedChip, provenGroup, setupCard, cac, runners } = input;
   const columnEdge = setupCard.left + setupCard.width;
   const strings: ExperimentWirePath[] = [];
@@ -219,13 +303,7 @@ export function buildExperimentWires(
     runners.forEach((runner, index) => {
       strings.push({
         id: `${source.id}-${index}`,
-        d: sourceRoute(
-          fromX,
-          fromY,
-          columnEdge,
-          runner.left,
-          runner.top + runner.height / 2,
-        ),
+        d: sourceRoute(fromX, fromY, columnEdge, runner.left, runner.top + runner.height / 2),
         lead: index === 0,
       });
     });
@@ -237,10 +315,7 @@ export function buildExperimentWires(
     const fromX = runner.left + runner.width;
     const fromY = runner.top + runner.height / 2;
     const busX = fromX + 36 - 14 * index;
-    const bend = Math.max(
-      0,
-      Math.min(18, (cacCentreY - fromY) / 2, busX - cacRight),
-    );
+    const bend = Math.max(0, Math.min(18, (cacCentreY - fromY) / 2, busX - cacRight));
     strings.push({
       id: `out-${index}`,
       d:

@@ -115,14 +115,17 @@ function collectBands(): Band[] {
       const top = rect.top + window.scrollY;
       return {
         top,
-        bottom: element.dataset.groundDark === "open" ? Number.POSITIVE_INFINITY : top + rect.height,
+        bottom:
+          element.dataset.groundDark === "open" ? Number.POSITIVE_INFINITY : top + rect.height,
       };
     });
 }
 
 function isVisible(element: Element, width: number, height: number): boolean {
   const rect = element.getBoundingClientRect();
-  return rect.bottom > 0 && rect.top < height && rect.right > 0 && rect.left < width && rect.width > 0;
+  return (
+    rect.bottom > 0 && rect.top < height && rect.right > 0 && rect.left < width && rect.width > 0
+  );
 }
 
 function hasOwnText(element: Element): boolean {
@@ -178,7 +181,10 @@ export function useGroundTone(): (() => void) | void {
         if (!isVisible(root, width, height)) continue;
         for (const element of root.querySelectorAll("*")) {
           if (nearElements.length >= NEAR_LIMIT) return;
-          if ((element instanceof SVGElement || hasOwnText(element)) && isVisible(element, width, height)) {
+          if (
+            (element instanceof SVGElement || hasOwnText(element)) &&
+            isVisible(element, width, height)
+          ) {
             element.setAttribute(NEAR_ATTR, "");
             nearElements.push(element as HTMLElement);
           }
@@ -238,7 +244,13 @@ export function useGroundTone(): (() => void) | void {
       html.removeAttribute(GROUND_MOVING_ATTR);
     };
 
-    const animateVeil = (from: number, to: number, easing: string, duration: number, done: () => void) => {
+    const animateVeil = (
+      from: number,
+      to: number,
+      easing: string,
+      duration: number,
+      done: () => void,
+    ) => {
       if (!veil) {
         done();
         return;
@@ -290,7 +302,6 @@ export function useGroundTone(): (() => void) | void {
         animateVeil(0.5, 0, VEIL_OUT_EASE, duration, finishMoving);
       });
     };
-
 
     const transitionTo = (next: GroundTone) => {
       if (prefersReducedMotion() || !veil || typeof veil.animate !== "function") {

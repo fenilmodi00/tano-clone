@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import {
   useHeroCampaign,
@@ -12,10 +12,10 @@ import {
   useHomeInfo,
   usePageFamily,
   useCaseMedia,
-  useForms,
+  mountFormsRuntime,
   useCounters,
   useReveal,
-  useClientNav,
+  useHashScroll,
 } from "./motion";
 
 /**
@@ -32,13 +32,6 @@ import {
  *   new page at opacity 0.
  */
 export function SiteRuntime() {
-  // Document lifetime. `useForms` mounts a body-wide MutationObserver and a
-  // drawer listener during render (its returned cleanup is not a registered
-  // effect cleanup), so re-rendering or remounting it per route would stack
-  // observers. The observer already binds forms inserted by a client
-  // navigation, so one instance belongs to the document, not the route.
-  useForms();
-
   useEffect(() => {
     const html = document.documentElement;
     html.setAttribute("data-nav-ready", "");
@@ -61,7 +54,6 @@ export function SiteRuntime() {
 function GlobalRuntime() {
   useLenisScroll();
   useGroundTone();
-  useClientNav();
   return null;
 }
 
@@ -73,6 +65,32 @@ function RouteRuntime() {
 
 /** Page-scoped: one instance per committed route. */
 function PageRuntime() {
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    let frame = 0;
+    const start = () => {
+      // Next streams route markup after the shell; if page effects mutate it
+      // before hydration finishes React regenerates the tree and silently
+      // discards every listener. Wait one beat past load so hydration wins.
+      window.setTimeout(() => {
+        frame = requestAnimationFrame(() => setReady(true));
+      }, 600);
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("load", start);
+    };
+  }, []);
+
+  if (!ready) return null;
+  return <PageHooks />;
+}
+
+/** Effects only mount after hydration, so they never mutate markup React is hydrating. */
+function PageHooks() {
   useHeroCampaign();
   useConversations();
   useExperiments();
@@ -82,11 +100,20 @@ function PageRuntime() {
   useCaseMedia();
   useCounters();
   useReveal();
+  useHashScroll();
+
+  // Run after the page is hydrated so form enhancement never mutates SSR markup.
+  useEffect(() => {
+    const cleanup = mountFormsRuntime();
+    return cleanup;
+  }, []);
 
   useEffect(() => {
     // Scroll reveals: source markup ships data-shown="false" and CSS reveals on true.
     const revealTargets = Array.from(
-      document.querySelectorAll<HTMLElement>('[data-shown="false"], .hp-reveal[data-shown="false"]'),
+      document.querySelectorAll<HTMLElement>(
+        '[data-shown="false"], .hp-reveal[data-shown="false"]',
+      ),
     );
     const reveal = new IntersectionObserver(
       (entries) => {
@@ -105,7 +132,10 @@ function PageRuntime() {
     const visit = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          (entry.target as HTMLElement).setAttribute("data-inview", entry.isIntersecting ? "true" : "false");
+          (entry.target as HTMLElement).setAttribute(
+            "data-inview",
+            entry.isIntersecting ? "true" : "false",
+          );
         }
       },
       { rootMargin: "15% 0px 15% 0px", threshold: 0 },

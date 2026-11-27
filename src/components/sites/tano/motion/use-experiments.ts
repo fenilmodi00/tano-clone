@@ -18,9 +18,7 @@ import {
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 
-function svgElement<K extends keyof SVGElementTagNameMap>(
-  tag: K,
-): SVGElementTagNameMap[K] {
+function svgElement<K extends keyof SVGElementTagNameMap>(tag: K): SVGElementTagNameMap[K] {
   return document.createElementNS(SVG_NS, tag) as SVGElementTagNameMap[K];
 }
 
@@ -61,30 +59,17 @@ export function useExperiments(): (() => void) | void {
   useEffect(() => {
     const cleanups: Array<() => void> = [];
 
-    for (const root of Array.from(
-      document.querySelectorAll<HTMLElement>(".hp-xl"),
-    )) {
+    for (const root of Array.from(document.querySelectorAll<HTMLElement>(".hp-xl"))) {
       const svg = root.querySelector<SVGSVGElement>(".hp-xl-wires");
-      const gradient =
-        svg?.querySelector<SVGLinearGradientElement>("linearGradient");
-      const setup = root.querySelector<HTMLElement>(
-        '.hp-xl-card[data-col="setup"]',
-      );
+      const gradient = svg?.querySelector<SVGLinearGradientElement>("linearGradient");
+      const setup = root.querySelector<HTMLElement>('.hp-xl-card[data-col="setup"]');
       const proven = root.querySelector<HTMLElement>(".hp-xl-proven");
       const cacFigure = root.querySelector<HTMLElement>(".hp-xl-cac");
       const cacValue = root.querySelector<HTMLElement>(".hp-xl-cac-value");
-      const cacPath = root.querySelector<SVGPathElement>(
-        ".hp-xl-cac-line path",
-      );
-      const cacDot = root.querySelector<SVGCircleElement>(
-        ".hp-xl-cac-line circle",
-      );
-      const runners = Array.from(
-        root.querySelectorAll<HTMLElement>(".hp-xl-runner"),
-      );
-      const chips = Array.from(
-        root.querySelectorAll<HTMLElement>(".hp-xl-chip"),
-      );
+      const cacPath = root.querySelector<SVGPathElement>(".hp-xl-cac-line path");
+      const cacDot = root.querySelector<SVGCircleElement>(".hp-xl-cac-line circle");
+      const runners = Array.from(root.querySelectorAll<HTMLElement>(".hp-xl-runner"));
+      const chips = Array.from(root.querySelectorAll<HTMLElement>(".hp-xl-chip"));
       if (
         !svg ||
         !setup ||
@@ -104,16 +89,13 @@ export function useExperiments(): (() => void) | void {
         runner,
         fields: Array.from(runner.children).filter(
           (child): child is HTMLElement =>
-            child instanceof HTMLElement &&
-            child.classList.contains("tano-body-sm"),
+            child instanceof HTMLElement && child.classList.contains("tano-body-sm"),
         ),
         rate: runner.querySelector<HTMLElement>(".hp-xl-rate"),
         bar: runner.querySelector<HTMLElement>(".hp-xl-bar"),
         fill: runner.querySelector<HTMLElement>(".hp-xl-bar > span"),
       }));
-      const reducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)",
-      );
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       let reduced = reducedMotion.matches;
       let round = 0;
       let tick = 0;
@@ -125,10 +107,7 @@ export function useExperiments(): (() => void) | void {
       let tickTimer = 0;
       let frame = 0;
       const wirePaths = new Map<string, SVGPathElement>();
-      const wireDots = new Map<
-        string,
-        { circle: SVGCircleElement; motion: SVGElement }
-      >();
+      const wireDots = new Map<string, { circle: SVGCircleElement; motion: SVGElement }>();
 
       // Remove client-generated nodes from a prior instance so HMR cannot
       // duplicate the 10 wires or 12 dots.
@@ -190,14 +169,7 @@ export function useExperiments(): (() => void) | void {
           const id = `home-${index}`;
           let dot = wireDots.get(id);
           if (!dot) {
-            createDot(
-              id,
-              3,
-              `${(6 * index) / 3 - 6}s`,
-              "6s",
-              next.loop,
-              "",
-            );
+            createDot(id, 3, `${(6 * index) / 3 - 6}s`, "6s", next.loop, "");
             dot = wireDots.get(id);
           }
           dot?.motion.setAttribute("path", next.loop);
@@ -210,9 +182,7 @@ export function useExperiments(): (() => void) | void {
       };
 
       const syncWires = () => {
-        const pickedChip = root.querySelector<HTMLElement>(
-          ".hp-xl-chip[data-picked]",
-        );
+        const pickedChip = root.querySelector<HTMLElement>(".hp-xl-chip[data-picked]");
         if (!pickedChip) return;
 
         const next = buildExperimentWires({
@@ -279,9 +249,7 @@ export function useExperiments(): (() => void) | void {
           if (picked) chip.setAttribute("data-picked", "true");
           else chip.removeAttribute("data-picked");
 
-          const label = chip.querySelector<HTMLElement>(
-            ":scope > .wire-visually-hidden",
-          );
+          const label = chip.querySelector<HTMLElement>(":scope > .wire-visually-hidden");
           if (label?.textContent?.includes("Trying this round:")) {
             label.remove();
           }
@@ -346,7 +314,6 @@ export function useExperiments(): (() => void) | void {
         renderChart();
         syncWires();
       };
-
 
       const clearTimers = () => {
         if (roundTimer) {

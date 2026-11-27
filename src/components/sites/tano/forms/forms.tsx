@@ -16,8 +16,7 @@ export const TALK_SENT_HEADING = "Thanks — your details look good.";
 export const TALK_SENT_BODY =
   "This is a local demo, so nothing was sent and no booking was created.";
 export const TALK_SENT_NOTE = "On the live site this step opens the booking calendar.";
-export const CREATOR_SENT_MESSAGE =
-  "You’re on the list. We’ll be in touch when a programme fits.";
+export const CREATOR_SENT_MESSAGE = "You’re on the list. We’ll be in touch when a programme fits.";
 export const CREATOR_SENT_NOTE = "Local demo — nothing was sent.";
 export const CREATOR_CONSENT_ERROR = TALK_CONSENT_ERROR;
 export const CREATOR_INVALID_EMAIL = "Enter a valid email address";
@@ -69,7 +68,14 @@ export const TALK_ERROR_ORDER: Array<TalkFieldName | "consent"> = [
 
 export const TALK_OPTIONS = {
   companyType: ["DTC or consumer brand", "Agency", "SaaS or tech", "Creator", "Student", "Other"],
-  monthlyAdSpendBand: ["Under $35k", "$35k to $75k", "$75k to $150k", "$150k to $300k", "$300k to $1M", "$1M+"],
+  monthlyAdSpendBand: [
+    "Under $35k",
+    "$35k to $75k",
+    "$75k to $150k",
+    "$150k to $300k",
+    "$300k to $1M",
+    "$1M+",
+  ],
   sellsPhysicalProducts: ["Yes", "No"],
   creatorActivity: ["None", "Gifting only", "Paid creators", "Affiliate programme"],
   role: ["Founder", "Growth", "Ecommerce or Performance", "Influencer or Social", "Other"],
@@ -193,22 +199,40 @@ export function validateTalk(values: TalkValues): TalkErrors {
   else if (normaliseWebsite(website) === null) errors.brandWebsite = TALK_WEBSITE_ERROR;
 
   const companyType = values.companyType.trim();
-  if (!companyType || !TALK_OPTIONS.companyType.includes(companyType as (typeof TALK_OPTIONS.companyType)[number])) {
+  if (
+    !companyType ||
+    !TALK_OPTIONS.companyType.includes(companyType as (typeof TALK_OPTIONS.companyType)[number])
+  ) {
     errors.companyType = "Choose your company type";
   }
 
   const spend = values.monthlyAdSpendBand.trim();
-  if (!spend || !TALK_OPTIONS.monthlyAdSpendBand.includes(spend as (typeof TALK_OPTIONS.monthlyAdSpendBand)[number])) {
+  if (
+    !spend ||
+    !TALK_OPTIONS.monthlyAdSpendBand.includes(
+      spend as (typeof TALK_OPTIONS.monthlyAdSpendBand)[number],
+    )
+  ) {
     errors.monthlyAdSpendBand = "Choose your monthly ad spend";
   }
 
   const sells = values.sellsPhysicalProducts.trim();
-  if (!sells || !TALK_OPTIONS.sellsPhysicalProducts.includes(sells as (typeof TALK_OPTIONS.sellsPhysicalProducts)[number])) {
+  if (
+    !sells ||
+    !TALK_OPTIONS.sellsPhysicalProducts.includes(
+      sells as (typeof TALK_OPTIONS.sellsPhysicalProducts)[number],
+    )
+  ) {
     errors.sellsPhysicalProducts = "Say whether you sell physical products online";
   }
 
   const activity = values.creatorActivity.trim();
-  if (!activity || !TALK_OPTIONS.creatorActivity.includes(activity as (typeof TALK_OPTIONS.creatorActivity)[number])) {
+  if (
+    !activity ||
+    !TALK_OPTIONS.creatorActivity.includes(
+      activity as (typeof TALK_OPTIONS.creatorActivity)[number],
+    )
+  ) {
     errors.creatorActivity = "Choose your current creator activity";
   }
 
@@ -218,7 +242,10 @@ export function validateTalk(values: TalkValues): TalkErrors {
   }
 
   const heard = values.hearAboutUs.trim();
-  if (!heard || !TALK_OPTIONS.hearAboutUs.includes(heard as (typeof TALK_OPTIONS.hearAboutUs)[number])) {
+  if (
+    !heard ||
+    !TALK_OPTIONS.hearAboutUs.includes(heard as (typeof TALK_OPTIONS.hearAboutUs)[number])
+  ) {
     errors.hearAboutUs = "Please tell us where you heard about us.";
   }
 
@@ -228,7 +255,9 @@ export function validateTalk(values: TalkValues): TalkErrors {
 
 export function errorsForStep(errors: TalkErrors, step: 1 | 2): TalkErrors {
   return Object.fromEntries(
-    Object.entries(errors).filter(([field]) => TALK_FIELD_STEP[field as TalkFieldName | "consent"] === step),
+    Object.entries(errors).filter(
+      ([field]) => TALK_FIELD_STEP[field as TalkFieldName | "consent"] === step,
+    ),
   ) as TalkErrors;
 }
 

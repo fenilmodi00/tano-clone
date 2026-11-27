@@ -19,7 +19,9 @@ export function SiteInteractions() {
         const answer = document.getElementById(trigger.getAttribute("aria-controls") || "");
         const open = trigger.getAttribute("aria-expanded") !== "true";
         const stack = trigger.closest(".hp-faq-card");
-        for (const other of Array.from(stack?.querySelectorAll<HTMLButtonElement>(".hp-faq-trigger") ?? [])) {
+        for (const other of Array.from(
+          stack?.querySelectorAll<HTMLButtonElement>(".hp-faq-trigger") ?? [],
+        )) {
           if (other === trigger) continue;
           other.setAttribute("aria-expanded", "false");
           const otherAnswer = document.getElementById(other.getAttribute("aria-controls") || "");
@@ -36,7 +38,9 @@ export function SiteInteractions() {
 
       const tab = (event.target as Element).closest<HTMLButtonElement>(".hp-faq-tab");
       if (tab) {
-        const tabs = Array.from(tab.closest(".hp-faq-tabs")?.querySelectorAll<HTMLButtonElement>(".hp-faq-tab") ?? []);
+        const tabs = Array.from(
+          tab.closest(".hp-faq-tabs")?.querySelectorAll<HTMLButtonElement>(".hp-faq-tab") ?? [],
+        );
         for (const item of tabs) {
           const active = item === tab;
           item.dataset.active = String(active);
@@ -68,7 +72,8 @@ export function SiteInteractions() {
         if (match) visible++;
       }
       const status = stack?.querySelector<HTMLElement>(".hp-faq-card > .wire-visually-hidden");
-      if (status) status.textContent = query ? `${visible} questions match "${input.value.trim()}"` : "";
+      if (status)
+        status.textContent = query ? `${visible} questions match "${input.value.trim()}"` : "";
     };
 
     document.addEventListener("click", onFaqClick);

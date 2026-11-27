@@ -241,12 +241,7 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "Traditional agencies",
-            "Creator software",
-            "Tano"
-          ],
+          "head": ["", "Traditional agencies", "Creator software", "Tano"],
           "rows": [
             [
               "Sourcing",

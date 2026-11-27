@@ -89,12 +89,7 @@
         },
         {
           "type": "table",
-          "head": [
-            "Path",
-            "Example",
-            "Best when",
-            "Trade-off"
-          ],
+          "head": ["Path", "Example", "Best when", "Trade-off"],
           "rows": [
             [
               "More complete software you run yourself",
@@ -155,10 +150,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "Outgrown your influencer agency?",
-            "How to run creator content as ads"
-          ]
+          "items": ["Outgrown your influencer agency?", "How to run creator content as ads"]
         }
       ]
     },

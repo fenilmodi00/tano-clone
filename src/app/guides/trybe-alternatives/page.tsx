@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Trybe Alternatives: When DTC Brands Outgrow It and Where They Go | Tano", "description": "What Trybe is good at, the signs a brand has outgrown it, and the three paths brands take next: Aspire or GRIN, ShopMy Spotlights, or a partner like Tano."};
-
+import pageData from "@/content/tano/pages/guides-trybe-alternatives.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesTrybeAlternativesReplica } from "../../../components/sites/tano/replica/GuidesTrybeAlternativesReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <GuidesTrybeAlternativesReplica />;

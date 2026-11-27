@@ -58,12 +58,12 @@ A stale dev/build state left the reveal stylesheet hiding all content because hy
 
 1. `/case-studies` hub, role-hero width and playbook lead gates were fixed late (hub static 30.85→0.02, senior role +64 px→0, playbook mobile 5–10%→<0.5).
 2. **HelloFresh films**: signed Mux streams cannot be fetched without a token that grants playback. Gates disclose this; posters are the 160×90 source thumbnails. If access is granted, add MP4s to `public/sites/tano/media` and map them in `media/case-films.tsx`.
-2. **Mux chrome**: native `<video controls>` replaces the custom Mux player skin. Only a visual difference on played films.
-3. **Brand-tab secondary nodes**: `/compare` cards 1+ retain study 0's stat/who/action; source data for those nodes is not in the capture. Extend `content/home-marks.ts` + `media-sections.tsx`.
-4. **Use-case pitch-deck scenes 2–5**: step state advances; missing assets `comp-giftbox` and two creator portraits mean not every scene art swaps. Capture them from a live session and extend `pages/behaviours.tsx` + asset map.
-5. **Talk-to-us success** is a local success panel; source redirects to a Superhuman booking URL. Add the redirect if product behavior matters more than a self-contained demo.
-6. **For-creators closing** media entrance is a one-shot; the static harness catches phase and reports 7.95%, settled states match. Mark that band `motion` in the harness if it should not count as static.
-7. Template residue: unused shadcn/Tailwind primitives and `src/components/ui/button.tsx` can be removed after confirming no future use.
+3. **Mux chrome**: native `<video controls>` replaces the custom Mux player skin. Only a visual difference on played films.
+4. **Brand-tab secondary nodes**: `/compare` cards 1+ retain study 0's stat/who/action; source data for those nodes is not in the capture. Extend `content/home-marks.ts` + `media-sections.tsx`.
+5. **Use-case pitch-deck scenes 2–5**: step state advances; missing assets `comp-giftbox` and two creator portraits mean not every scene art swaps. Capture them from a live session and extend `pages/behaviours.tsx` + asset map.
+6. **Talk-to-us success** is a local success panel; source redirects to a Superhuman booking URL. Add the redirect if product behavior matters more than a self-contained demo.
+7. **For-creators closing** media entrance is a one-shot; the static harness catches phase and reports 7.95%, settled states match. Mark that band `motion` in the harness if it should not count as static.
+8. Template residue: unused shadcn/Tailwind primitives and `src/components/ui/button.tsx` can be removed after confirming no future use.
 
 ## Attribution
 

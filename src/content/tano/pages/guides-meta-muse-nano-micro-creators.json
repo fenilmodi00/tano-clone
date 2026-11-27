@@ -88,22 +88,14 @@
         },
         {
           "type": "table",
-          "head": [
-            "",
-            "One big creator moment",
-            "Always-on long tail"
-          ],
+          "head": ["", "One big creator moment", "Always-on long tail"],
           "rows": [
             [
               "Reach in week one",
               "High, from one post",
               "Lower; first posts usually 7 to 10 days after outreach"
             ],
-            [
-              "Buying questions answered",
-              "Usually one",
-              "Many, one per creator's use"
-            ],
+            ["Buying questions answered", "Usually one", "Many, one per creator's use"],
             [
               "How long posts keep working",
               "Peaks around posting day",
@@ -114,11 +106,7 @@
               "Usually a fixed fee up front",
               "Product, commission and performance rewards"
             ],
-            [
-              "Risk",
-              "One creator, one post",
-              "Spread out; volume needs managing"
-            ],
+            ["Risk", "One creator, one post", "Spread out; volume needs managing"],
             [
               "Posts a shopper can save",
               "One creator's, seen mostly by their followers",

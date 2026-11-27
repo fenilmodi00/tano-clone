@@ -172,17 +172,9 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "ShopMy",
-            "Tano"
-          ],
+          "head": ["", "ShopMy", "Tano"],
           "rows": [
-            [
-              "Core model",
-              "Creator commerce marketplace",
-              "Brand-owned creator programme"
-            ],
+            ["Core model", "Creator commerce marketplace", "Brand-owned creator programme"],
             [
               "Best at",
               "Accessing established curators and shopping intent",

@@ -218,22 +218,10 @@
           "type": "table",
           "head": [],
           "rows": [
-            [
-              "Base",
-              "Up to £150k, depending on experience"
-            ],
-            [
-              "Equity",
-              "Share options"
-            ],
-            [
-              "Location",
-              "Full-time, in person, central London"
-            ],
-            [
-              "Benefits",
-              "Health insurance, onsite gym, in-person culture, real startup work-life"
-            ]
+            ["Base", "Up to £150k, depending on experience"],
+            ["Equity", "Share options"],
+            ["Location", "Full-time, in person, central London"],
+            ["Benefits", "Health insurance, onsite gym, in-person culture, real startup work-life"]
           ]
         }
       ]

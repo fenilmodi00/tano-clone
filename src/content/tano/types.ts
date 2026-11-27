@@ -1,17 +1,17 @@
 /**
  * Typed content model for the tano.ai route captures.
  *
- * Generated JSON pages live in ./pages/<slug>.json and are aggregated by
- * ./pages/index.ts. Keep this file in sync with
+ * Generated JSON pages live in ./pages/<slug>.json; the route/SEO manifest
+ * lives in ./routes.ts. Keep this file in sync with
  * docs/research/tano/content-schema.md and scripts/extract-source-content.mjs.
  */
 
 export type Block =
-  | { type: 'prose'; html: string } // sanitized inline: a, strong, em, br, sup, sub
-  | { type: 'list'; ordered: boolean; items: string[] }
-  | { type: 'table'; head: string[]; rows: string[][] }
+  | { type: "prose"; html: string } // sanitized inline: a, strong, em, br, sup, sub
+  | { type: "list"; ordered: boolean; items: string[] }
+  | { type: "table"; head: string[]; rows: string[][] }
   | {
-      type: 'cards';
+      type: "cards";
       items: {
         title: string;
         body?: string;
@@ -21,14 +21,14 @@ export type Block =
       }[];
     }
   | {
-      type: 'quote';
+      type: "quote";
       text: string;
       name?: string;
       role?: string;
       image?: string;
     }
-  | { type: 'media'; src: string; alt?: string; poster?: string; href?: string }
-  | { type: 'stats'; items: { value: string; label: string }[] };
+  | { type: "media"; src: string; alt?: string; poster?: string; href?: string }
+  | { type: "stats"; items: { value: string; label: string }[] };
 
 export type Hero = {
   eyebrow?: string;

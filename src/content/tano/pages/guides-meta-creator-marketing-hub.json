@@ -62,37 +62,12 @@
         },
         {
           "type": "table",
-          "head": [
-            "Platform",
-            "Spend",
-            "Share",
-            "In the Hub?"
-          ],
+          "head": ["Platform", "Spend", "Share", "In the Hub?"],
           "rows": [
-            [
-              "YouTube",
-              "$3.45bn",
-              "33%",
-              "No"
-            ],
-            [
-              "Instagram",
-              "$3.17bn",
-              "30%",
-              "Yes"
-            ],
-            [
-              "TikTok",
-              "$1.19bn",
-              "11%",
-              "No"
-            ],
-            [
-              "Facebook and all others",
-              "$2.71bn",
-              "26%",
-              "Facebook only"
-            ]
+            ["YouTube", "$3.45bn", "33%", "No"],
+            ["Instagram", "$3.17bn", "30%", "Yes"],
+            ["TikTok", "$1.19bn", "11%", "No"],
+            ["Facebook and all others", "$2.71bn", "26%", "Facebook only"]
           ]
         },
         {
@@ -115,47 +90,27 @@
         },
         {
           "type": "table",
-          "head": [
-            "Step",
-            "Meta Creator Marketing Hub",
-            "What you need alongside it"
-          ],
+          "head": ["Step", "Meta Creator Marketing Hub", "What you need alongside it"],
           "rows": [
             [
               "Find creators on Instagram and Facebook",
               "Yes, with filters and an AI assistant",
               "Nothing extra"
             ],
-            [
-              "Message creators",
-              "Yes",
-              "Nothing extra on Meta"
-            ],
-            [
-              "Ship product to creators",
-              "Not announced",
-              "A seeding process or platform"
-            ],
+            ["Message creators", "Yes", "Nothing extra on Meta"],
+            ["Ship product to creators", "Not announced", "A seeding process or platform"],
             [
               "Agree fees and usage rights",
               "Partly: ad permission per post on Meta only",
               "A written agreement covering every channel"
             ],
-            [
-              "Pay creators",
-              "No",
-              "Your own payouts or a platform"
-            ],
+            ["Pay creators", "No", "Your own payouts or a platform"],
             [
               "Affiliate codes and commission",
               "Partly: finds affiliate posts only",
               "An affiliate tool"
             ],
-            [
-              "Run posts as ads",
-              "Yes, on Facebook and Instagram",
-              "Spark Ads for TikTok"
-            ],
+            ["Run posts as ads", "Yes, on Facebook and Instagram", "Spark Ads for TikTok"],
             [
               "Track when a licence ends",
               "Partly: Meta permissions only",
@@ -223,10 +178,7 @@
         {
           "type": "list",
           "ordered": false,
-          "items": [
-            "How to run creator content as ads",
-            "Influencer agency or platform"
-          ]
+          "items": ["How to run creator content as ads", "Influencer agency or platform"]
         }
       ]
     },

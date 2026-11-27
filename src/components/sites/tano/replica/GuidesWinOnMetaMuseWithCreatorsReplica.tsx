@@ -1,9 +1,1116 @@
+import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import Link from "next/link";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function GuidesWinOnMetaMuseWithCreatorsReplica() {
   return (
     <main id="main">
-      
-<section aria-labelledby="use-case-title" className="hp-band hp-uc-hero" data-ground="dark" data-ground-dark data-padding="xl"><div aria-hidden="true" className="hp-hero-glow"><div className="hp-hero-glow-light"><div className="wire-spectrum-drift" /><div className="hp-hero-glow-folds" data-layer="a" /><div className="hp-hero-glow-folds" data-layer="b" /></div></div><div className="hp-container hp-uc-hero-field"><div className="hp-uc-hero-copy"><h1 className="hp-title tano-display-md" id="use-case-title"><span className="hp-title-words">How DTC brands should change their creator programme for Meta Muse</span></h1><p className="hp-uc-hero-sub tano-body-para-md">To win on Meta's Muse, a DTC brand should keep creators at the centre of its programme and change six things. Meta launched Muse in the UK in November 2026, two months after its US rollout began on 8 September.</p><p className="hp-uc-hero-sub tano-body-para-md">The six changes: run the programme always-on; brief each seeding round around one buying question; give every creator a code and link; post UGC organically as well as in ads; make sure the facts agents check are right; and measure what you can.</p></div></div></section><section className="hp-band" data-ground="light" data-padding="xl"><div className="hp-container hp-prose"><div className="hp-prose-rows"><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">What has Muse changed for creator programmes?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Muse puts an always-on shopping assistant between your creator's post and the sale. It can work from the Reels a shopper has saved, so a post can help close a sale weeks later, and its final pick leans on hard facts such as price and stock; <a className="wire-contact-link" href="/guides/meta-muse-creator-marketing">what Meta Muse means for creator marketing</a> sets out the evidence.</p><p className="tano-body-para-md wire-ink-soft">Creators make people want the product before any comparison starts, show it in a real setting a catalog cannot show, and earn the save: a post that answers a real question is one a shopper keeps. Your team gets the facts right, from value and fit to the returns policy.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">Why should your creator programme run always-on?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Always-on seeding gives shoppers a steady supply of fresh posts to save, in place of one launch burst. People save a post when it meets a need that week, and needs arrive all year. Seed new creators monthly, with time to try the product, clear disclosure guidance and freedom to share their experience.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">How should each seeding round answer one buying question?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Pick one buying question each month and send the product to creators who can answer it from experience. Find questions in reviews, comments and support tickets, such as what fits inside.</p><p className="tano-body-para-md wire-ink-soft">One round, frequent flyers show whether the bag fits under a plane seat; the next, weekend travellers show what they pack. Different experiences give different shoppers a reason to save.</p><p className="tano-body-para-md wire-ink-soft">To find creators, search tagged customer posts, affiliates and competitor Reels. A creator with 100 followers can make the review a shopper saves; <a className="wire-contact-link" href="/guides/meta-muse-nano-micro-creators">do follower counts matter on Meta Muse?</a> covers creator size.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">Why does every creator need a code and link?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Give every creator their own code and affiliate link from day one. When a shopper saves a post and buys weeks later, the code shows which post did the work, and commission keeps creators posting. If shopping agents start surfacing creator codes, which nothing confirms yet, older reviews could keep earning too. <a className="wire-contact-link" href="/guides/meta-muse-creators-brief">What to tell your creators about Meta Muse</a> covers commission and a reward ladder.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">Why should UGC run organically as well as in ads?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">UGC that only runs as ads never sits on a creator's profile, where a shopper can find and save it after the spend stops. Pick creators whose audiences already trust their buying advice, let them post first, and run the strongest posts as ads once organic results are in. <a className="wire-contact-link" href="/guides/ugc-ai-shopping-agents">Is your UGC programme ready for AI shopping agents?</a> compares the two approaches.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">Are the facts agents check about your products right?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Muse almost always starts with a search of Meta's own catalog, pulling up to 50 options, and in <a className="wire-contact-link" href="https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents" rel="noreferrer noopener" target="_blank">a16z and The Prompting Company's tests</a>, price was Muse's most-cited reason for a pick, at 57%. Work through this list with your ecommerce team:</p><ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft"><li><strong>Meta's catalog.</strong> Every product listed, with accurate titles, prices, sizes and variants.</li><li><strong>Price and stock.</strong> Matched across catalog and site.</li><li><strong>Returns.</strong> Easy to find. At equal prices, agents tend to choose the retailer with the better return policy.</li><li><strong>Reviews and press.</strong> Agents lean on review sites, press and forums as well as product pages.</li><li><strong>Checkout.</strong> In the UK, Muse can check out with Shop Pay on supported Shopify stores; if you use Shopify, check yours is supported.</li></ol></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">How many organic posts should you plan for?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Thousands a month, built up from the intake your budget allows. As an illustrative example, if 56% of seeded nano and micro creators publish and average 1.2 posts each, volume scales as below, before repeat posts. Use early publishing data to set your intake.</p><div className="wire-table-scroll hp-prose-table"><table className="wire-table" data-wide><thead><tr><th scope="col">Creators seeded a month</th><th scope="col">Publish (56%)</th><th scope="col">Posts a month (1.2 each)</th><th scope="col">Posts a year</th></tr></thead><tbody><tr><th scope="row">100</th><td>56</td><td>about 67</td><td>about 806</td></tr><tr><th scope="row">1,000</th><td>560</td><td>672</td><td>8,064</td></tr><tr><th scope="row">4,000</th><td>2,240</td><td>2,688</td><td>32,256</td></tr></tbody></table></div><p className="tano-body-para-md wire-ink-soft">To run that volume without adding people, see <a className="wire-contact-link" href="/guides/scale-creator-programme-without-headcount">how to scale a creator programme without headcount</a>.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">What does a 6 to 12 month plan look like?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Start with a four-month pilot, a fixed number of new creators a month and one number to judge it on, such as CPA, payback or cost per post.</p><div className="wire-table-scroll hp-prose-table"><table className="wire-table" data-wide><thead><tr><th scope="col">Months</th><th scope="col">What you do</th><th scope="col">What you track</th></tr></thead><tbody><tr><th scope="row">1 to 3</th><td>Set a target, issue codes and links, seed one question a month.</td><td>Live posts, saves, sales by code</td></tr><tr><th scope="row">4</th><td>Review against target. Keep useful posters. Ask to run standout posts as ads.</td><td>Your one target</td></tr><tr><th scope="row">5 to 12</th><td>Expand seeding where results justify it. Move regulars up the reward ladder.</td><td>Repeat posts, paid results, questions covered</td></tr></tbody></table></div></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">Where do we think this is heading?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">We think useful creator posts will get a second life at checkout, and that brands whose creators have answered the most buying questions will be in the strongest position. Neither is proven yet.</p><p className="tano-body-para-md wire-ink-soft">If <a className="wire-contact-link" href="/guides/meta-muse-creator-marketing">Meta's plans to credit creators</a> reach Muse, this month's reviews could help close sales months from now.</p><p className="tano-body-para-md wire-ink-soft">Agents also tend to converge on the same picks, so the brand whose creators answer one need most clearly could become the product agents keep choosing for it. A seeding plan built around buying questions is a plan to become that brand.</p></div></div></div></div><div className="hp-prose-row"><div className="hp-prose-row-head"><h2 className="tano-heading-md">How does Tano build always-on creator programmes?</h2></div><div className="hp-prose-columns"><div className="hp-prose-column"><div className="wire-article-prose"><p className="tano-body-para-md wire-ink-soft">Tano is the creator advertising platform for consumer brands. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. Month to month, we run the six changes like this:</p><ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft"><li><strong>Set one target.</strong> A four-month pilot, judged on one number such as CPA.</li><li><strong>Calibrate.</strong> You approve or reject our first two creator lists; then your ongoing time is small.</li><li><strong>Invite as your brand.</strong> We contact each creator as your brand; each agrees terms and gets their own code and link.</li><li><strong>Seed one buying question.</strong> Creators post their own way.</li><li><strong>Coach.</strong> We detect posts automatically and coach each creator one to one on posting and hooks.</li><li><strong>Send winners to paid.</strong> We surface top posts by performance and by fit with what your ad account is missing.</li></ol><p className="tano-body-para-md wire-ink-soft">We keep the creators who post. At <a className="wire-contact-link" href="/case-studies/hellofresh">HelloFresh</a>, a hybrid creator model delivered a 93% uplift in conversion rate versus running the programme internally.</p><p className="tano-body-para-md wire-ink-soft">We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000.</p></div></div></div></div></div></div></section><section aria-labelledby="faq-title" className="hp-band" data-ground="dark" data-ground-dark data-padding="xl"><div className="hp-container hp-faq"><div className="hp-faq-head"><div className="hp-band-heading" data-align="start"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="faq-title"><span className="hp-title-words">What other questions do buyers ask?</span></h2></div></div></div><div className="hp-reveal hp-faq-stack" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '80ms'}}><div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true" /><div className="hp-faq-card"><div className="hp-faq-tools"><div className="hp-faq-search"><label className="wire-visually-hidden" htmlFor="faq-search">Search the questions</label><span aria-hidden="true" className="hp-faq-search-icon"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span><input autoComplete="off" className="hp-faq-search-input tano-body-md" enterKeyHint="search" id="faq-search" placeholder="Search questions" type="search" defaultValue="" /></div></div><p aria-live="polite" className="wire-visually-hidden" /><div id="faq-panel"><ul className="hp-faq-rows"><li className="hp-faq-row"><button aria-controls="faq.guide-win-on-meta-muse-with-creators-01-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.guide-win-on-meta-muse-with-creators-01-question" type="button"><span>Can shoppers buy my products through Muse?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.guide-win-on-meta-muse-with-creators-01-question" className="hp-faq-answer" data-open="false" id="faq.guide-win-on-meta-muse-with-creators-01-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">In the UK, yes, through Shop Pay on supported Shopify stores or one of 14 connector partners such as Marks &amp; Spencer, ASOS and JD Sports. Muse asks before buying on the shopper's behalf.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.guide-win-on-meta-muse-with-creators-02-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.guide-win-on-meta-muse-with-creators-02-question" type="button"><span>How do I measure sales that come through Muse?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.guide-win-on-meta-muse-with-creators-02-question" className="hp-faq-answer" data-open="false" id="faq.guide-win-on-meta-muse-with-creators-02-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">Indirectly. Conversations with Muse aren't shared with Meta's advertising systems, so track sales by creator code and link, saves and branded search against a pre-programme baseline.</p></div></div></li><li className="hp-faq-row"><button aria-controls="faq.guide-win-on-meta-muse-with-creators-03-answer" aria-expanded="false" className="hp-faq-trigger tano-body-md" id="faq.guide-win-on-meta-muse-with-creators-03-question" type="button"><span>How long does it take to see results?</span><span aria-hidden="true" className="hp-faq-glyph" data-expanded="false"><svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" /></svg></span></button><div aria-labelledby="faq.guide-win-on-meta-muse-with-creators-03-question" className="hp-faq-answer" data-open="false" id="faq.guide-win-on-meta-muse-with-creators-03-answer" inert role="region"><div className="hp-faq-answer-clip"><p className="hp-faq-answer-text tano-body-md">First posts usually arrive 7 to 10 days after outreach, as shipping is the wait.</p></div></div></li></ul></div></div></div></div></section><section aria-labelledby="brands-title" className="hp-band hp-brands-band" data-ground="light" data-padding="xl" style={{'--hp-accent': '#8bc220'}}><div className="hp-container hp-brands"><div><div className="hp-band-heading" data-align="centre"><div className="hp-band-heading-copy"><h2 className="hp-title tano-display-xs" id="brands-title"><span className="hp-title-words">In their words.</span></h2></div></div></div><div className="hp-reveal" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '140ms'}}><div className="hp-brand-stage" data-rv-skip><div className="hp-brand-media hp-behind wire-glass-edge" data-rim="true"><span aria-hidden="true" className="wire-glass-sheen" /><img alt="A HelloFresh recipe box with the week’s ingredients" data-live="true" decoding="async" className="hp-brand-shot" style={{position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, color: 'transparent'}} src="/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg" /><span aria-hidden="true" className="hp-brand-media-dim" /><img alt="" aria-hidden="true" data-live="true" width={200} height={80} decoding="async" className="hp-brand-media-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-9.png" /></div><div aria-labelledby="_R_26lubpcnjb_-tab-0" className="hp-brand-card" data-fading="false" id="_R_26lubpcnjb_-panel" role="tabpanel" tabIndex={-1}><div className="hp-brand-top"><div className="hp-brand-stat-row"><span aria-hidden="true" className="hp-brand-stat-rule" /><p className="hp-brand-figure"><span className="hp-brand-stat tano-display-xs">+<span className="hp-brand-stat-digits">0</span>%</span><span className="hp-brand-caption tano-heading-mono-xs">uplift in CVR</span></p></div><div className="hp-brand-quote-slot"><p aria-hidden="true" className="hp-brand-quote hp-brand-quote-ghost tano-heading-md">“Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy.”</p><blockquote className="hp-brand-quote hp-brand-quote-live tano-heading-md" data-reduced="false"><span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark">“</span><span className="hp-brand-word" style={{'--d': '40ms'}}>Partnering </span><span className="hp-brand-word" style={{'--d': '80ms'}}>with </span><span className="hp-brand-word" style={{'--d': '120ms'}}>Tano </span><span className="hp-brand-word" style={{'--d': '160ms'}}>on </span><span className="hp-brand-word" style={{'--d': '200ms'}}>a </span><span className="hp-brand-word" style={{'--d': '240ms'}}>hybrid </span><span className="hp-brand-word" style={{'--d': '280ms'}}>model </span><span className="hp-brand-word" style={{'--d': '320ms'}}>completely </span><span className="hp-brand-word" style={{'--d': '360ms'}}>transformed </span><span className="hp-brand-word" style={{'--d': '400ms'}}>our </span><span className="hp-brand-word" style={{'--d': '440ms'}}>micro-influencer </span><span className="hp-brand-word" style={{'--d': '480ms'}}>strategy.</span><span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark" style={{'--d': '520ms'}}>”</span></blockquote></div></div><div className="hp-brand-foot"><span className="hp-brand-who"><span className="hp-brand-portrait" data-initials="false"><img alt="Stephanie Terziyski, Growth Influencer Marketing Manager at HelloFresh" width={96} height={96} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-50.jpg" /></span><span className="hp-brand-who-name"><span className="tano-body-md">Stephanie Terziyski</span><span className="hp-sub tano-body-sm">Growth Influencer Marketing Manager · HelloFresh</span></span></span><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/case-studies/hellofresh"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Read the case study<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div></div></div></div><div className="hp-reveal hp-brand-bar-reveal" data-rv-skip data-shown="false" style={{'--hp-reveal-delay': '200ms'}}><div aria-label="Choose a brand" className="hp-brand-bar" role="tablist"><button aria-controls="_R_26lubpcnjb_-panel" aria-selected="true" className="hp-brand-tab" data-active="true" id="_R_26lubpcnjb_-tab-0" role="tab" tabIndex={0} type="button"><span aria-hidden="true" className="hp-brand-tab-rule"><span className="hp-brand-tab-fill" data-paused="true" style={{'--hp-brand-duration': '6000ms', '--hp-brand-count': 1, '--hp-brand-index': 0}} /></span><span className="hp-brand-tab-mark-box"><img alt="HelloFresh" width={160} height={40} decoding="async" className="hp-brand-tab-mark" style={{color: 'transparent'}} src="/sites/tano/images/tano-9.png" /></span></button></div></div></div></section><section aria-labelledby="closing-title" className="hp-band hp-closing-band" data-ground="dark" data-ground-dark="open" data-padding="xl"><div className="hp-container hp-closing"><div aria-hidden="true" className="hp-closing-cards"><div className="hp-camp-card" data-slot="send"><div className="hp-camp-brief"><span className="hp-camp-chips"><span className="hp-camp-chip" data-picked="true">Affiliate revenue</span><span className="hp-camp-chip">Share of voice</span></span><span className="hp-camp-mono" data-quiet>Product to gift</span><span className="hp-camp-gift"><span className="hp-camp-tile" style={{backgroundColor: '#d9a48f'}}><img alt="Wellness Journal" decoding="async" style={{position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0, color: 'transparent'}} src="/sites/tano/images/tano-123.jpg" /></span><span className="hp-camp-gift-name">Wellness Journal</span></span><span className="hp-camp-targets"><span className="hp-camp-target"><span className="hp-camp-mono" data-quiet>Revenue target</span><span className="hp-camp-target-value"><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span><span className="hp-camp-target"><span className="hp-camp-mono" data-quiet>Target CAC</span><span className="hp-camp-target-value"><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span></span></div></div><div className="hp-camp-card" data-slot="library"><div className="hp-camp-field"><span className="hp-camp-field-head"><span className="hp-camp-mono" data-quiet>Creator score</span><span className="hp-camp-match-figure">0.00</span></span><span className="hp-camp-score"><span className="hp-camp-score-row" style={{'--row': 0}}><span className="hp-camp-score-label">Persona fit</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.9'}} /></span><span className="hp-camp-score-row" style={{'--row': 1}}><span className="hp-camp-score-label">World fit</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.82'}} /></span><span className="hp-camp-score-row" data-win="true" style={{'--row': 2}}><span className="hp-camp-score-label">Purchase intent</span><span aria-hidden="true" className="hp-camp-bar" data-win="true" style={{'--share': 1}} /></span><span className="hp-camp-score-row" style={{'--row': 3}}><span className="hp-camp-score-label">Brand safety</span><span aria-hidden="true" className="hp-camp-bar" style={{'--share': '0.96'}} /></span></span><span className="hp-camp-field-foot"><span className="wire-lockup" data-size="sm"><span className="wire-lockup-ring"><img alt="" width={72} height={72} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-94.jpg" /></span><span className="wire-lockup-who"><span className="wire-lockup-handle">@reginafoster.us</span></span></span></span></div></div><div className="hp-camp-card" data-slot="metric"><ol className="hp-camp-chat"><li className="hp-camp-turn" data-from="agent"><span aria-hidden="true" className="hp-camp-turn-mark"><svg aria-hidden="true" fill="none" viewBox="0 0 222 208" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient cx={0} cy={0} gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)" gradientUnits="userSpaceOnUse" id="tano-glyph-spectrum" r={1}><stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" /><stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" /><stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" /></radialGradient></defs><path d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z" fill="url(#tano-glyph-spectrum)" /></svg></span><span className="hp-camp-bubble">Loved your last post. Could we send you Papier’s Wellness Journal?</span></li><li className="hp-camp-turn" data-from="creator"><span aria-hidden="true" className="hp-camp-turn-face"><span aria-label="@reginafoster.us" className="wire-lockup" data-size="xs" role="img"><span className="wire-lockup-ring"><img alt="" width={48} height={48} decoding="async" style={{color: 'transparent'}} src="/sites/tano/images/tano-94.jpg" /></span></span></span><span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span></li><li className="hp-camp-turn" data-from="agent"><span aria-hidden="true" className="hp-camp-turn-mark"><svg aria-hidden="true" fill="none" viewBox="0 0 222 208" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient cx={0} cy={0} gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)" gradientUnits="userSpaceOnUse" id="tano-glyph-spectrum" r={1}><stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" /><stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" /><stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" /></radialGradient></defs><path d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z" fill="url(#tano-glyph-spectrum)" /></svg></span><span className="hp-camp-bubble">Wonderful. It arrives Monday, with your code to share.</span></li></ol></div><div className="hp-camp-card" data-slot="code"><div className="hp-camp-metrics"><span className="hp-camp-metric" data-turn={0}><span className="hp-camp-mono" data-quiet>New customer LTV</span><span className="hp-camp-metric-row"><svg aria-hidden="true" className="hp-camp-metric-trend" preserveAspectRatio="none" viewBox="0 0 100 40"><defs><linearGradient gradientUnits="userSpaceOnUse" id="hp-camp-metric-_R_26mlubpcnjb_" x1={0} x2={100} y1={0} y2={0}><stop offset={0} style={{stopColor: 'var(--spectrum-yellow)'}} /><stop offset="0.3" style={{stopColor: 'var(--spectrum-lime)'}} /><stop offset="0.58" style={{stopColor: 'var(--spectrum-cyan)'}} /><stop offset="0.8" style={{stopColor: 'var(--spectrum-violet)'}} /><stop offset={1} style={{stopColor: 'var(--spectrum-magenta)'}} /></linearGradient></defs><path className="hp-camp-metric-line" d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001" stroke="url(#hp-camp-metric-_R_26mlubpcnjb_)" /></svg><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span><span className="hp-camp-metric" data-turn={1}><span className="hp-camp-mono" data-quiet>CAC</span><span className="hp-camp-metric-row"><svg aria-hidden="true" className="hp-camp-metric-trend" preserveAspectRatio="none" viewBox="0 0 100 40"><path className="hp-camp-metric-line" d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68" stroke="url(#hp-camp-metric-_R_26mlubpcnjb_)" /></svg><span aria-hidden="true" className="hp-camp-redacted" data-size="md" /></span></span></div></div></div><div className="hp-closing-copy"><h2 className="hp-closing-title tano-display-sm" id="closing-title"><span>See if Tano fits</span><span>your programme.</span></h2><p className="hp-sub tano-body-para-md">Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.</p><div className="hp-band-actions"><a className="tano-button" data-variant="primary" data-size="md" data-material="surface" href="/talk-to-us"><span className="tano-button__glow" aria-hidden="true" /><span className="tano-button__edge" aria-hidden="true" /><span className="tano-button__fill" aria-hidden="true" /><span className="tano-button__label">Plan your always-on creator pilot<span className="tano-button__icon tano-button__icon--chevron" aria-hidden="true"><svg aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.1" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"><path d="M1.6 1.4 6.2 6l-4.6 4.6" /></svg></span></span></a></div></div></div></section>
+      <section
+        aria-labelledby="use-case-title"
+        className="hp-band hp-uc-hero"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div aria-hidden="true" className="hp-hero-glow">
+          <div className="hp-hero-glow-light">
+            <div className="wire-spectrum-drift" />
+            <div className="hp-hero-glow-folds" data-layer="a" />
+            <div className="hp-hero-glow-folds" data-layer="b" />
+          </div>
+        </div>
+        <div className="hp-container hp-uc-hero-field">
+          <div className="hp-uc-hero-copy">
+            <h1 className="hp-title tano-display-md" id="use-case-title">
+              <span className="hp-title-words">
+                How DTC brands should change their creator programme for Meta Muse
+              </span>
+            </h1>
+            <p className="hp-uc-hero-sub tano-body-para-md">
+              To win on Meta's Muse, a DTC brand should keep creators at the centre of its programme
+              and change six things. Meta launched Muse in the UK in November 2026, two months after
+              its US rollout began on 8 September.
+            </p>
+            <p className="hp-uc-hero-sub tano-body-para-md">
+              The six changes: run the programme always-on; brief each seeding round around one
+              buying question; give every creator a code and link; post UGC organically as well as
+              in ads; make sure the facts agents check are right; and measure what you can.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="hp-band" data-ground="light" data-padding="xl">
+        <div className="hp-container hp-prose">
+          <div className="hp-prose-rows">
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">What has Muse changed for creator programmes?</h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Muse puts an always-on shopping assistant between your creator's post and the
+                      sale. It can work from the Reels a shopper has saved, so a post can help close
+                      a sale weeks later, and its final pick leans on hard facts such as price and
+                      stock;{" "}
+                      <Link
+                        className="wire-contact-link"
+                        href="/guides/meta-muse-creator-marketing"
+                      >
+                        what Meta Muse means for creator marketing
+                      </Link>{" "}
+                      sets out the evidence.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Creators make people want the product before any comparison starts, show it in
+                      a real setting a catalog cannot show, and earn the save: a post that answers a
+                      real question is one a shopper keeps. Your team gets the facts right, from
+                      value and fit to the returns policy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">
+                  Why should your creator programme run always-on?
+                </h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Always-on seeding gives shoppers a steady supply of fresh posts to save, in
+                      place of one launch burst. People save a post when it meets a need that week,
+                      and needs arrive all year. Seed new creators monthly, with time to try the
+                      product, clear disclosure guidance and freedom to share their experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">
+                  How should each seeding round answer one buying question?
+                </h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Pick one buying question each month and send the product to creators who can
+                      answer it from experience. Find questions in reviews, comments and support
+                      tickets, such as what fits inside.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      One round, frequent flyers show whether the bag fits under a plane seat; the
+                      next, weekend travellers show what they pack. Different experiences give
+                      different shoppers a reason to save.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      To find creators, search tagged customer posts, affiliates and competitor
+                      Reels. A creator with 100 followers can make the review a shopper saves;{" "}
+                      <Link
+                        className="wire-contact-link"
+                        href="/guides/meta-muse-nano-micro-creators"
+                      >
+                        do follower counts matter on Meta Muse?
+                      </Link>{" "}
+                      covers creator size.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">Why does every creator need a code and link?</h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Give every creator their own code and affiliate link from day one. When a
+                      shopper saves a post and buys weeks later, the code shows which post did the
+                      work, and commission keeps creators posting. If shopping agents start
+                      surfacing creator codes, which nothing confirms yet, older reviews could keep
+                      earning too.{" "}
+                      <Link className="wire-contact-link" href="/guides/meta-muse-creators-brief">
+                        What to tell your creators about Meta Muse
+                      </Link>{" "}
+                      covers commission and a reward ladder.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">
+                  Why should UGC run organically as well as in ads?
+                </h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      UGC that only runs as ads never sits on a creator's profile, where a shopper
+                      can find and save it after the spend stops. Pick creators whose audiences
+                      already trust their buying advice, let them post first, and run the strongest
+                      posts as ads once organic results are in.{" "}
+                      <Link className="wire-contact-link" href="/guides/ugc-ai-shopping-agents">
+                        Is your UGC programme ready for AI shopping agents?
+                      </Link>{" "}
+                      compares the two approaches.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">
+                  Are the facts agents check about your products right?
+                </h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Muse almost always starts with a search of Meta's own catalog, pulling up to
+                      50 options, and in{" "}
+                      <a
+                        className="wire-contact-link"
+                        href="https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        a16z and The Prompting Company's tests
+                      </a>
+                      , price was Muse's most-cited reason for a pick, at 57%. Work through this
+                      list with your ecommerce team:
+                    </p>
+                    <ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft">
+                      <li>
+                        <strong>Meta's catalog.</strong> Every product listed, with accurate titles,
+                        prices, sizes and variants.
+                      </li>
+                      <li>
+                        <strong>Price and stock.</strong> Matched across catalog and site.
+                      </li>
+                      <li>
+                        <strong>Returns.</strong> Easy to find. At equal prices, agents tend to
+                        choose the retailer with the better return policy.
+                      </li>
+                      <li>
+                        <strong>Reviews and press.</strong> Agents lean on review sites, press and
+                        forums as well as product pages.
+                      </li>
+                      <li>
+                        <strong>Checkout.</strong> In the UK, Muse can check out with Shop Pay on
+                        supported Shopify stores; if you use Shopify, check yours is supported.
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">How many organic posts should you plan for?</h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Thousands a month, built up from the intake your budget allows. As an
+                      illustrative example, if 56% of seeded nano and micro creators publish and
+                      average 1.2 posts each, volume scales as below, before repeat posts. Use early
+                      publishing data to set your intake.
+                    </p>
+                    <div className="wire-table-scroll hp-prose-table">
+                      <table className="wire-table" data-wide>
+                        <thead>
+                          <tr>
+                            <th scope="col">Creators seeded a month</th>
+                            <th scope="col">Publish (56%)</th>
+                            <th scope="col">Posts a month (1.2 each)</th>
+                            <th scope="col">Posts a year</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">100</th>
+                            <td>56</td>
+                            <td>about 67</td>
+                            <td>about 806</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">1,000</th>
+                            <td>560</td>
+                            <td>672</td>
+                            <td>8,064</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4,000</th>
+                            <td>2,240</td>
+                            <td>2,688</td>
+                            <td>32,256</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      To run that volume without adding people, see{" "}
+                      <Link
+                        className="wire-contact-link"
+                        href="/guides/scale-creator-programme-without-headcount"
+                      >
+                        how to scale a creator programme without headcount
+                      </Link>
+                      .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">What does a 6 to 12 month plan look like?</h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Start with a four-month pilot, a fixed number of new creators a month and one
+                      number to judge it on, such as CPA, payback or cost per post.
+                    </p>
+                    <div className="wire-table-scroll hp-prose-table">
+                      <table className="wire-table" data-wide>
+                        <thead>
+                          <tr>
+                            <th scope="col">Months</th>
+                            <th scope="col">What you do</th>
+                            <th scope="col">What you track</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1 to 3</th>
+                            <td>Set a target, issue codes and links, seed one question a month.</td>
+                            <td>Live posts, saves, sales by code</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>
+                              Review against target. Keep useful posters. Ask to run standout posts
+                              as ads.
+                            </td>
+                            <td>Your one target</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5 to 12</th>
+                            <td>
+                              Expand seeding where results justify it. Move regulars up the reward
+                              ladder.
+                            </td>
+                            <td>Repeat posts, paid results, questions covered</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">Where do we think this is heading?</h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      We think useful creator posts will get a second life at checkout, and that
+                      brands whose creators have answered the most buying questions will be in the
+                      strongest position. Neither is proven yet.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      If{" "}
+                      <Link
+                        className="wire-contact-link"
+                        href="/guides/meta-muse-creator-marketing"
+                      >
+                        Meta's plans to credit creators
+                      </Link>{" "}
+                      reach Muse, this month's reviews could help close sales months from now.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Agents also tend to converge on the same picks, so the brand whose creators
+                      answer one need most clearly could become the product agents keep choosing for
+                      it. A seeding plan built around buying questions is a plan to become that
+                      brand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hp-prose-row">
+              <div className="hp-prose-row-head">
+                <h2 className="tano-heading-md">
+                  How does Tano build always-on creator programmes?
+                </h2>
+              </div>
+              <div className="hp-prose-columns">
+                <div className="hp-prose-column">
+                  <div className="wire-article-prose">
+                    <p className="tano-body-para-md wire-ink-soft">
+                      Tano is the creator advertising platform for consumer brands. Our AI agents
+                      run sourcing, outreach, onboarding, seeding, rewarding, amplification and
+                      reporting, and our in-house strategists make the calls that matter. Month to
+                      month, we run the six changes like this:
+                    </p>
+                    <ol className="wire-legal-list wire-article-numbered tano-body-para-md wire-ink-soft">
+                      <li>
+                        <strong>Set one target.</strong> A four-month pilot, judged on one number
+                        such as CPA.
+                      </li>
+                      <li>
+                        <strong>Calibrate.</strong> You approve or reject our first two creator
+                        lists; then your ongoing time is small.
+                      </li>
+                      <li>
+                        <strong>Invite as your brand.</strong> We contact each creator as your
+                        brand; each agrees terms and gets their own code and link.
+                      </li>
+                      <li>
+                        <strong>Seed one buying question.</strong> Creators post their own way.
+                      </li>
+                      <li>
+                        <strong>Coach.</strong> We detect posts automatically and coach each creator
+                        one to one on posting and hooks.
+                      </li>
+                      <li>
+                        <strong>Send winners to paid.</strong> We surface top posts by performance
+                        and by fit with what your ad account is missing.
+                      </li>
+                    </ol>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      We keep the creators who post. At{" "}
+                      <Link className="wire-contact-link" href="/case-studies/hellofresh">
+                        HelloFresh
+                      </Link>
+                      , a hybrid creator model delivered a 93% uplift in conversion rate versus
+                      running the programme internally.
+                    </p>
+                    <p className="tano-body-para-md wire-ink-soft">
+                      We're paid on results. We earn when a creator's post goes live, and most of
+                      all through a 20% share of the sales those creators drive. We carry the
+                      upfront risk alongside you: we find, onboard and send product to every
+                      creator, and if a creator doesn't post, we don't get paid. So we only do well
+                      when we pick creators who genuinely fit your brand and make content that
+                      sells. Our fee per post falls as your programme grows, so the bigger you
+                      scale, the better the value. Programmes start at 100 seeded products a month,
+                      which typically comes to about $3,000.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="faq-title"
+        className="hp-band"
+        data-ground="dark"
+        data-ground-dark
+        data-padding="xl"
+      >
+        <div className="hp-container hp-faq">
+          <div className="hp-faq-head">
+            <div className="hp-band-heading" data-align="start">
+              <div className="hp-band-heading-copy">
+                <h2 className="hp-title tano-display-xs" id="faq-title">
+                  <span className="hp-title-words">What other questions do buyers ask?</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal hp-faq-stack"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "80ms" }}
+          >
+            <div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true" />
+            <div className="hp-faq-card">
+              <div className="hp-faq-tools">
+                <div className="hp-faq-search">
+                  <label className="wire-visually-hidden" htmlFor="faq-search">
+                    Search the questions
+                  </label>
+                  <span aria-hidden="true" className="hp-faq-search-icon">
+                    <svg
+                      viewBox="0 0 14 14"
+                      width="100%"
+                      height="100%"
+                      fill="none"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z"
+                        fill="currentColor"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    autoComplete="off"
+                    className="hp-faq-search-input tano-body-md"
+                    enterKeyHint="search"
+                    id="faq-search"
+                    placeholder="Search questions"
+                    type="search"
+                    defaultValue=""
+                  />
+                </div>
+              </div>
+              <p aria-live="polite" className="wire-visually-hidden" />
+              <div id="faq-panel">
+                <ul className="hp-faq-rows">
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.guide-win-on-meta-muse-with-creators-01-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.guide-win-on-meta-muse-with-creators-01-question"
+                      type="button"
+                    >
+                      <span>Can shoppers buy my products through Muse?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.guide-win-on-meta-muse-with-creators-01-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.guide-win-on-meta-muse-with-creators-01-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          In the UK, yes, through Shop Pay on supported Shopify stores or one of 14
+                          connector partners such as Marks &amp; Spencer, ASOS and JD Sports. Muse
+                          asks before buying on the shopper's behalf.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.guide-win-on-meta-muse-with-creators-02-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.guide-win-on-meta-muse-with-creators-02-question"
+                      type="button"
+                    >
+                      <span>How do I measure sales that come through Muse?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.guide-win-on-meta-muse-with-creators-02-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.guide-win-on-meta-muse-with-creators-02-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          Indirectly. Conversations with Muse aren't shared with Meta's advertising
+                          systems, so track sales by creator code and link, saves and branded search
+                          against a pre-programme baseline.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="hp-faq-row">
+                    <button
+                      aria-controls="faq.guide-win-on-meta-muse-with-creators-03-answer"
+                      aria-expanded="false"
+                      className="hp-faq-trigger tano-body-md"
+                      id="faq.guide-win-on-meta-muse-with-creators-03-question"
+                      type="button"
+                    >
+                      <span>How long does it take to see results?</span>
+                      <span aria-hidden="true" className="hp-faq-glyph" data-expanded="false">
+                        <svg
+                          viewBox="0 0 14 14"
+                          width="100%"
+                          height="100%"
+                          fill="none"
+                          aria-hidden="true"
+                          focusable="false"
+                        >
+                          <path
+                            d="M8 1.5c0-.552285-.44772-1-1-1s-1 .447715-1 1V6H1.5c-.552285 0-1 .44772-1 1s.447715 1 1 1H6v4.5c0 .5523.44772 1 1 1s1-.4477 1-1V8h4.5c.5523 0 1-.44772 1-1s-.4477-1-1-1H8V1.5Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </button>
+                    <div
+                      aria-labelledby="faq.guide-win-on-meta-muse-with-creators-03-question"
+                      className="hp-faq-answer"
+                      data-open="false"
+                      id="faq.guide-win-on-meta-muse-with-creators-03-answer"
+                      inert
+                      role="region"
+                    >
+                      <div className="hp-faq-answer-clip">
+                        <p className="hp-faq-answer-text tano-body-md">
+                          First posts usually arrive 7 to 10 days after outreach, as shipping is the
+                          wait.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="brands-title"
+        className="hp-band hp-brands-band"
+        data-ground="light"
+        data-padding="xl"
+        style={{ "--hp-accent": "#8bc220" }}
+      >
+        <div className="hp-container hp-brands">
+          <div>
+            <div className="hp-band-heading" data-align="centre">
+              <div className="hp-band-heading-copy">
+                <h2 className="hp-title tano-display-xs" id="brands-title">
+                  <span className="hp-title-words">In their words.</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "140ms" }}
+          >
+            <div className="hp-brand-stage" data-rv-skip>
+              <div className="hp-brand-media hp-behind wire-glass-edge" data-rim="true">
+                <span aria-hidden="true" className="wire-glass-sheen" />
+                <img
+                  alt="A HelloFresh recipe box with the week’s ingredients"
+                  data-live="true"
+                  decoding="async"
+                  className="hp-brand-shot"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    left: 0,
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    color: "transparent",
+                  }}
+                  src="/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+                />
+                <span aria-hidden="true" className="hp-brand-media-dim" />
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  data-live="true"
+                  width={200}
+                  height={80}
+                  decoding="async"
+                  className="hp-brand-media-mark"
+                  style={{ color: "transparent" }}
+                  src="/sites/tano/images/tano-9.png"
+                />
+              </div>
+              <div
+                aria-labelledby="_R_26lubpcnjb_-tab-0"
+                className="hp-brand-card"
+                data-fading="false"
+                id="_R_26lubpcnjb_-panel"
+                role="tabpanel"
+                tabIndex={-1}
+              >
+                <div className="hp-brand-top">
+                  <div className="hp-brand-stat-row">
+                    <span aria-hidden="true" className="hp-brand-stat-rule" />
+                    <p className="hp-brand-figure">
+                      <span className="hp-brand-stat tano-display-xs">
+                        +<span className="hp-brand-stat-digits">0</span>%
+                      </span>
+                      <span className="hp-brand-caption tano-heading-mono-xs">uplift in CVR</span>
+                    </p>
+                  </div>
+                  <div className="hp-brand-quote-slot">
+                    <p
+                      aria-hidden="true"
+                      className="hp-brand-quote hp-brand-quote-ghost tano-heading-md"
+                    >
+                      “Partnering with Tano on a hybrid model completely transformed our
+                      micro-influencer strategy.”
+                    </p>
+                    <blockquote
+                      className="hp-brand-quote hp-brand-quote-live tano-heading-md"
+                      data-reduced="false"
+                    >
+                      <span aria-hidden="true" className="hp-brand-word hp-brand-quote-mark">
+                        “
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "40ms" }}>
+                        Partnering{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "80ms" }}>
+                        with{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "120ms" }}>
+                        Tano{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "160ms" }}>
+                        on{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "200ms" }}>
+                        a{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "240ms" }}>
+                        hybrid{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "280ms" }}>
+                        model{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "320ms" }}>
+                        completely{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "360ms" }}>
+                        transformed{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "400ms" }}>
+                        our{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "440ms" }}>
+                        micro-influencer{" "}
+                      </span>
+                      <span className="hp-brand-word" style={{ "--d": "480ms" }}>
+                        strategy.
+                      </span>
+                      <span
+                        aria-hidden="true"
+                        className="hp-brand-word hp-brand-quote-mark"
+                        style={{ "--d": "520ms" }}
+                      >
+                        ”
+                      </span>
+                    </blockquote>
+                  </div>
+                </div>
+                <div className="hp-brand-foot">
+                  <span className="hp-brand-who">
+                    <span className="hp-brand-portrait" data-initials="false">
+                      <img
+                        alt="Stephanie Terziyski, Growth Influencer Marketing Manager at HelloFresh"
+                        width={96}
+                        height={96}
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                        src="/sites/tano/images/tano-50.jpg"
+                      />
+                    </span>
+                    <span className="hp-brand-who-name">
+                      <span className="tano-body-md">Stephanie Terziyski</span>
+                      <span className="hp-sub tano-body-sm">
+                        Growth Influencer Marketing Manager · HelloFresh
+                      </span>
+                    </span>
+                  </span>
+                  <TanoButtonLink href={"/case-studies/hellofresh"} label={"Read the case study"} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="hp-reveal hp-brand-bar-reveal"
+            data-rv-skip
+            data-shown="false"
+            style={{ "--hp-reveal-delay": "200ms" }}
+          >
+            <div aria-label="Choose a brand" className="hp-brand-bar" role="tablist">
+              <button
+                aria-controls="_R_26lubpcnjb_-panel"
+                aria-selected="true"
+                className="hp-brand-tab"
+                data-active="true"
+                id="_R_26lubpcnjb_-tab-0"
+                role="tab"
+                tabIndex={0}
+                type="button"
+              >
+                <span aria-hidden="true" className="hp-brand-tab-rule">
+                  <span
+                    className="hp-brand-tab-fill"
+                    data-paused="true"
+                    style={{
+                      "--hp-brand-duration": "6000ms",
+                      "--hp-brand-count": 1,
+                      "--hp-brand-index": 0,
+                    }}
+                  />
+                </span>
+                <span className="hp-brand-tab-mark-box">
+                  <img
+                    alt="HelloFresh"
+                    width={160}
+                    height={40}
+                    decoding="async"
+                    className="hp-brand-tab-mark"
+                    style={{ color: "transparent" }}
+                    src="/sites/tano/images/tano-9.png"
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="closing-title"
+        className="hp-band hp-closing-band"
+        data-ground="dark"
+        data-ground-dark="open"
+        data-padding="xl"
+      >
+        <div className="hp-container hp-closing">
+          <div aria-hidden="true" className="hp-closing-cards">
+            <div className="hp-camp-card" data-slot="send">
+              <div className="hp-camp-brief">
+                <span className="hp-camp-chips">
+                  <span className="hp-camp-chip" data-picked="true">
+                    Affiliate revenue
+                  </span>
+                  <span className="hp-camp-chip">Share of voice</span>
+                </span>
+                <span className="hp-camp-mono" data-quiet>
+                  Product to gift
+                </span>
+                <span className="hp-camp-gift">
+                  <span className="hp-camp-tile" style={{ backgroundColor: "#d9a48f" }}>
+                    <img
+                      alt="Wellness Journal"
+                      decoding="async"
+                      style={{
+                        position: "absolute",
+                        height: "100%",
+                        width: "100%",
+                        left: 0,
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                        color: "transparent",
+                      }}
+                      src="/sites/tano/images/tano-123.jpg"
+                    />
+                  </span>
+                  <span className="hp-camp-gift-name">Wellness Journal</span>
+                </span>
+                <span className="hp-camp-targets">
+                  <span className="hp-camp-target">
+                    <span className="hp-camp-mono" data-quiet>
+                      Revenue target
+                    </span>
+                    <span className="hp-camp-target-value">
+                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                    </span>
+                  </span>
+                  <span className="hp-camp-target">
+                    <span className="hp-camp-mono" data-quiet>
+                      Target CAC
+                    </span>
+                    <span className="hp-camp-target-value">
+                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="hp-camp-card" data-slot="library">
+              <div className="hp-camp-field">
+                <span className="hp-camp-field-head">
+                  <span className="hp-camp-mono" data-quiet>
+                    Creator score
+                  </span>
+                  <span className="hp-camp-match-figure">0.00</span>
+                </span>
+                <span className="hp-camp-score">
+                  <span className="hp-camp-score-row" style={{ "--row": 0 }}>
+                    <span className="hp-camp-score-label">Persona fit</span>
+                    <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.9" }} />
+                  </span>
+                  <span className="hp-camp-score-row" style={{ "--row": 1 }}>
+                    <span className="hp-camp-score-label">World fit</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      style={{ "--share": "0.82" }}
+                    />
+                  </span>
+                  <span className="hp-camp-score-row" data-win="true" style={{ "--row": 2 }}>
+                    <span className="hp-camp-score-label">Purchase intent</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      data-win="true"
+                      style={{ "--share": 1 }}
+                    />
+                  </span>
+                  <span className="hp-camp-score-row" style={{ "--row": 3 }}>
+                    <span className="hp-camp-score-label">Brand safety</span>
+                    <span
+                      aria-hidden="true"
+                      className="hp-camp-bar"
+                      style={{ "--share": "0.96" }}
+                    />
+                  </span>
+                </span>
+                <span className="hp-camp-field-foot">
+                  <span className="wire-lockup" data-size="sm">
+                    <span className="wire-lockup-ring">
+                      <img
+                        alt=""
+                        width={72}
+                        height={72}
+                        decoding="async"
+                        style={{ color: "transparent" }}
+                        src="/sites/tano/images/tano-94.jpg"
+                      />
+                    </span>
+                    <span className="wire-lockup-who">
+                      <span className="wire-lockup-handle">@reginafoster.us</span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div className="hp-camp-card" data-slot="metric">
+              <ol className="hp-camp-chat">
+                <li className="hp-camp-turn" data-from="agent">
+                  <span aria-hidden="true" className="hp-camp-turn-mark">
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 222 208"
+                      overflow="visible"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <radialGradient
+                          cx={0}
+                          cy={0}
+                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
+                          gradientUnits="userSpaceOnUse"
+                          id="tano-glyph-spectrum"
+                          r={1}
+                        >
+                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
+                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
+                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
+                        </radialGradient>
+                      </defs>
+                      <path
+                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
+                        fill="url(#tano-glyph-spectrum)"
+                      />
+                    </svg>
+                  </span>
+                  <span className="hp-camp-bubble">
+                    Loved your last post. Could we send you Papier’s Wellness Journal?
+                  </span>
+                </li>
+                <li className="hp-camp-turn" data-from="creator">
+                  <span aria-hidden="true" className="hp-camp-turn-face">
+                    <span
+                      aria-label="@reginafoster.us"
+                      className="wire-lockup"
+                      data-size="xs"
+                      role="img"
+                    >
+                      <span className="wire-lockup-ring">
+                        <img
+                          alt=""
+                          width={48}
+                          height={48}
+                          decoding="async"
+                          style={{ color: "transparent" }}
+                          src="/sites/tano/images/tano-94.jpg"
+                        />
+                      </span>
+                    </span>
+                  </span>
+                  <span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span>
+                </li>
+                <li className="hp-camp-turn" data-from="agent">
+                  <span aria-hidden="true" className="hp-camp-turn-mark">
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 222 208"
+                      overflow="visible"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <radialGradient
+                          cx={0}
+                          cy={0}
+                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
+                          gradientUnits="userSpaceOnUse"
+                          id="tano-glyph-spectrum"
+                          r={1}
+                        >
+                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
+                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
+                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
+                        </radialGradient>
+                      </defs>
+                      <path
+                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
+                        fill="url(#tano-glyph-spectrum)"
+                      />
+                    </svg>
+                  </span>
+                  <span className="hp-camp-bubble">
+                    Wonderful. It arrives Monday, with your code to share.
+                  </span>
+                </li>
+              </ol>
+            </div>
+            <div className="hp-camp-card" data-slot="code">
+              <div className="hp-camp-metrics">
+                <span className="hp-camp-metric" data-turn={0}>
+                  <span className="hp-camp-mono" data-quiet>
+                    New customer LTV
+                  </span>
+                  <span className="hp-camp-metric-row">
+                    <svg
+                      aria-hidden="true"
+                      className="hp-camp-metric-trend"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 100 40"
+                    >
+                      <defs>
+                        <linearGradient
+                          gradientUnits="userSpaceOnUse"
+                          id="hp-camp-metric-_R_26mlubpcnjb_"
+                          x1={0}
+                          x2={100}
+                          y1={0}
+                          y2={0}
+                        >
+                          <stop offset={0} style={{ stopColor: "var(--spectrum-yellow)" }} />
+                          <stop offset="0.3" style={{ stopColor: "var(--spectrum-lime)" }} />
+                          <stop offset="0.58" style={{ stopColor: "var(--spectrum-cyan)" }} />
+                          <stop offset="0.8" style={{ stopColor: "var(--spectrum-violet)" }} />
+                          <stop offset={1} style={{ stopColor: "var(--spectrum-magenta)" }} />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        className="hp-camp-metric-line"
+                        d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001"
+                        stroke="url(#hp-camp-metric-_R_26mlubpcnjb_)"
+                      />
+                    </svg>
+                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                  </span>
+                </span>
+                <span className="hp-camp-metric" data-turn={1}>
+                  <span className="hp-camp-mono" data-quiet>
+                    CAC
+                  </span>
+                  <span className="hp-camp-metric-row">
+                    <svg
+                      aria-hidden="true"
+                      className="hp-camp-metric-trend"
+                      preserveAspectRatio="none"
+                      viewBox="0 0 100 40"
+                    >
+                      <path
+                        className="hp-camp-metric-line"
+                        d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68"
+                        stroke="url(#hp-camp-metric-_R_26mlubpcnjb_)"
+                      />
+                    </svg>
+                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="hp-closing-copy">
+            <h2 className="hp-closing-title tano-display-sm" id="closing-title">
+              <span>See if Tano fits</span>
+              <span>your programme.</span>
+            </h2>
+            <p className="hp-sub tano-body-para-md">
+              Share where your creator programme is today. Our strategists will come back with what
+              it would take to run it always-on, with the relationships and content rights staying
+              with your brand.
+            </p>
+            <div className="hp-band-actions">
+              <TanoButtonLink href={"/talk-to-us"} label={"Plan your always-on creator pilot"} />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

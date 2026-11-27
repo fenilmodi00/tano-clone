@@ -7,9 +7,7 @@
   },
   "hero": {
     "title": "News",
-    "paragraphs": [
-      "Get in touch at team@tano.ai"
-    ],
+    "paragraphs": ["Get in touch at team@tano.ai"],
     "actions": [
       {
         "label": "Email the team",

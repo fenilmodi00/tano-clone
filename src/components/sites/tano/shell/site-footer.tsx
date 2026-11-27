@@ -90,7 +90,13 @@ export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
           className="wire-footer-photo"
           loading="lazy"
           src="/sites/tano/images/footer-daylight-glass.jpg"
-          style={{ position: "absolute", height: "100%", width: "100%", inset: 0, objectFit: "cover" }}
+          style={{
+            position: "absolute",
+            height: "100%",
+            width: "100%",
+            inset: 0,
+            objectFit: "cover",
+          }}
         />
         <div className="wire-footer-veil" />
       </div>
@@ -103,33 +109,46 @@ export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
       </div>
       <div className="wire-footer-card">
         <Link aria-label="Tano, home" className="wire-footer-mark" href="/">
-          <span aria-hidden="true" className="wire-footer-roll" dangerouslySetInnerHTML={{ __html: glyphSvg }} />
+          <span
+            aria-hidden="true"
+            className="wire-footer-roll"
+            dangerouslySetInnerHTML={{ __html: glyphSvg }}
+          />
         </Link>
         <div className="wire-footer-top">
           <p className="wire-footer-tagline tano-heading-sm">The Creator Advertising Platform</p>
           {COLUMNS.map((column) => (
             <div className="wire-footer-column" key={column.title}>
               <p className="wire-footer-column-title tano-body-sm">{column.title}</p>
-              {column.links.map((link) => (
-                <a
-                  className="wire-footer-link tano-body-md"
-                  href={link.href}
-                  key={link.href + link.label}
-                  {...("external" in link && link.external
-                    ? { target: "_blank", rel: "noreferrer noopener" }
-                    : {})}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {column.links.map((link) =>
+                "external" in link && link.external ? (
+                  <a
+                    className="wire-footer-link tano-body-md"
+                    href={link.href}
+                    key={link.href + link.label}
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    className="wire-footer-link tano-body-md"
+                    href={link.href}
+                    key={link.href + link.label}
+                  >
+                    {link.label}
+                  </Link>
+                ),
+              )}
             </div>
           ))}
         </div>
         <div className="wire-footer-legal">
           <p className="wire-footer-copyright tano-body-sm">© 2026 Tano Limited</p>
-          <a className="wire-footer-link tano-body-md" href="/privacy-policy">
+          <Link className="wire-footer-link tano-body-md" href="/privacy-policy">
             Privacy Policy
-          </a>
+          </Link>
           <button className="wire-footer-link wire-footer-button" type="button">
             Cookie settings
           </button>

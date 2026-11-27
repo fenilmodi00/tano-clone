@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-export const metadata: Metadata = {"title": "Privacy Policy | Tano", "description": "How Tano collects, uses, shares and protects your personal data, and the choices you have about it."};
-
+import pageData from "@/content/tano/pages/privacy-policy.json";
+import { buildPageMetadata } from "@/lib/metadata";
 import { PrivacyPolicyReplica } from "../../components/sites/tano/replica/PrivacyPolicyReplica";
+
+export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
   return <PrivacyPolicyReplica />;

@@ -22,7 +22,6 @@ type Cleanup = () => void;
 
 const boundForms = new WeakMap<HTMLFormElement, Cleanup>();
 
-
 function collectTalkValues(form: HTMLFormElement): TalkValues {
   const data = new FormData(form);
   const text = (name: string) => String(data.get(name) ?? "").trim();
@@ -51,12 +50,18 @@ function fieldElement(form: HTMLFormElement, field: string): HTMLElement | null 
 function errorHost(form: HTMLFormElement, field: string): HTMLElement | null {
   if (field === "consent") return form.querySelector<HTMLElement>(".wire-contact-closing");
   const wrapper = form.querySelector<HTMLElement>(`.wire-contact-field[data-field="${field}"]`);
-  return wrapper?.querySelector<HTMLElement>(".wire-contact-control") ?? fieldElement(form, field)?.parentElement ?? null;
+  return (
+    wrapper?.querySelector<HTMLElement>(".wire-contact-control") ??
+    fieldElement(form, field)?.parentElement ??
+    null
+  );
 }
 
 function clearFieldError(form: HTMLFormElement, field: string) {
   const host = errorHost(form, field);
-  host?.querySelector<HTMLParagraphElement>(`p.wire-contact-error[data-error-for="${field}"]`)?.remove();
+  host
+    ?.querySelector<HTMLParagraphElement>(`p.wire-contact-error[data-error-for="${field}"]`)
+    ?.remove();
   const input = fieldElement(form, field);
   if (!input) return;
   input.removeAttribute("aria-invalid");
@@ -107,7 +112,11 @@ function makeBackButton(onBack: () => void): HTMLButtonElement {
   return button;
 }
 
-function showTalkSuccess(form: HTMLFormElement, card: HTMLElement | null, status: HTMLElement | null) {
+function showTalkSuccess(
+  form: HTMLFormElement,
+  card: HTMLElement | null,
+  status: HTMLElement | null,
+) {
   if (form.dataset.formsSent === "true") return;
   form.dataset.formsSent = "true";
   form.hidden = true;
@@ -144,7 +153,7 @@ function resetPlaceholderSelects(form: HTMLFormElement) {
     if (!placeholder) continue;
     const wrapper = select.closest<HTMLElement>(".wire-contact-select");
     if (wrapper?.hasAttribute("data-empty") && select.value !== "") select.value = "";
-    if (select.value === "") wrapper?.setAttribute("data-empty", "");
+    if (select.value === "") wrapper?.setAttribute("data-empty", "true");
     else wrapper?.removeAttribute("data-empty");
   }
 }
@@ -162,7 +171,9 @@ function enhanceTalkForm(form: HTMLFormElement): Cleanup {
   const labelTextNode = (): Text | null => {
     const label = form.querySelector<HTMLElement>(".wire-contact-submit .tano-button__label");
     if (!label) return null;
-    return [...label.childNodes].find((node): node is Text => node.nodeType === Node.TEXT_NODE) ?? null;
+    return (
+      [...label.childNodes].find((node): node is Text => node.nodeType === Node.TEXT_NODE) ?? null
+    );
   };
 
   const twoStep = Boolean(form.querySelector('[name="brandWebsite"]'));
@@ -251,7 +262,14 @@ function enhanceTalkForm(form: HTMLFormElement): Cleanup {
 
   const onChange = (event: Event) => {
     const target = event.target;
-    if (!(target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement)) return;
+    if (
+      !(
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        target instanceof HTMLSelectElement
+      )
+    )
+      return;
     if (sent) return;
     const name = target.name;
     if (!name || name === "countryCode") return;
@@ -300,7 +318,9 @@ function enhanceCreatorForm(form: HTMLFormElement): Cleanup {
   form.dataset.formsBound = "creator";
   const input = form.querySelector<HTMLInputElement>('input[name="email"]');
   const consent = form.querySelector<HTMLInputElement>('input[name="consent"]');
-  const status = form.querySelector<HTMLElement>(".hp-cl-status") ?? form.querySelector<HTMLElement>('[role="status"]');
+  const status =
+    form.querySelector<HTMLElement>(".hp-cl-status") ??
+    form.querySelector<HTMLElement>('[role="status"]');
   const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 
   if (status && !status.id) status.id = `${form.id || "creator-signup"}-status`;
@@ -468,7 +488,9 @@ function scanForms(root: ParentNode, track?: (cleanup: Cleanup) => void) {
 
 function setupMobileMenu(): Cleanup {
   const panel = document.querySelector<HTMLElement>("#tano-mobile-menu");
-  const toggle = document.querySelector<HTMLButtonElement>('button[aria-controls="tano-mobile-menu"]');
+  const toggle = document.querySelector<HTMLButtonElement>(
+    'button[aria-controls="tano-mobile-menu"]',
+  );
   if (!panel) return () => {};
 
   panel.setAttribute("role", "dialog");
@@ -482,7 +504,9 @@ function setupMobileMenu(): Cleanup {
   let inerted: Array<{ element: Element; hadInert: boolean }> = [];
   let ownedOverflow: string | null = null;
   let escapeClose = false;
-  const chrome = panel.closest<HTMLElement>(".wire-chrome") ?? document.querySelector<HTMLElement>(".wire-chrome");
+  const chrome =
+    panel.closest<HTMLElement>(".wire-chrome") ??
+    document.querySelector<HTMLElement>(".wire-chrome");
 
   const setClosedInert = (closed: boolean) => {
     if (closed) panel.setAttribute("inert", "");
@@ -540,7 +564,9 @@ function setupMobileMenu(): Cleanup {
 
   const inertOutside = () => {
     const root = document.querySelector<HTMLElement>(".tano") ?? document.body;
-    const chrome = panel.closest<HTMLElement>(".wire-chrome") ?? document.querySelector<HTMLElement>(".wire-chrome");
+    const chrome =
+      panel.closest<HTMLElement>(".wire-chrome") ??
+      document.querySelector<HTMLElement>(".wire-chrome");
     const outside: Element[] = [];
     for (const child of Array.from(root.children)) {
       if (child === chrome || child.contains(panel) || panel.contains(child)) continue;
@@ -552,7 +578,13 @@ function setupMobileMenu(): Cleanup {
         outside.push(child);
       }
     }
-    for (const selector of [".wire-nav-mark", ".wire-nav-links", ".wire-nav-end", ".hp-announce", ".wire-announce", ".hp-notify"]) {
+    for (const selector of [
+      ".wire-nav-mark",
+      ".wire-nav-links",
+      ".wire-nav-end",
+      ".hp-announce",
+      ".wire-announce",
+    ]) {
       for (const element of Array.from(document.querySelectorAll(selector))) outside.push(element);
     }
     for (const element of outside) {
@@ -598,7 +630,8 @@ function setupMobileMenu(): Cleanup {
     if (chrome) chrome.style.zIndex = "";
     delete document.documentElement.dataset.formsMenu;
     unlockScroll();
-    if ((escapeClose || focusWasInside) && toggle) window.requestAnimationFrame(() => toggle.focus());
+    if ((escapeClose || focusWasInside) && toggle)
+      window.requestAnimationFrame(() => toggle.focus());
     escapeClose = false;
   };
 
@@ -657,7 +690,10 @@ export function mountForms(): Cleanup {
         }
         for (const node of Array.from(record.addedNodes)) {
           if (!(node instanceof Element)) continue;
-          if (!node.matches(".wire-contact-form, .hp-cl-form, dialog.wire-drawer") && !node.querySelector(".wire-contact-form, .hp-cl-form")) {
+          if (
+            !node.matches(".wire-contact-form, .hp-cl-form, dialog.wire-drawer") &&
+            !node.querySelector(".wire-contact-form, .hp-cl-form")
+          ) {
             continue;
           }
           scanForms(node, (cleanup) => enhanced.add(cleanup));
@@ -681,28 +717,28 @@ export function mountForms(): Cleanup {
   // Published contract for the drawer shell owner: dispatch this after the
   // dialog (and its form) is inserted. The observer above is the fallback.
   const onDrawerOpen = (event: Event) => {
-    const detail = (event as CustomEvent<{ dialog?: ParentNode; form?: HTMLFormElement } | undefined>).detail;
+    const detail = (
+      event as CustomEvent<{ dialog?: ParentNode; form?: HTMLFormElement } | undefined>
+    ).detail;
     const scope = detail?.form ?? detail?.dialog ?? document;
     scanForms(scope, (cleanup) => enhanced.add(cleanup));
   };
   document.addEventListener(TANO_DRAWER_OPEN_EVENT, onDrawerOpen);
 
   const menuCleanup = setupMobileMenu();
-  cleanups.push(
-    () => {
-      document.removeEventListener(TANO_DRAWER_OPEN_EVENT, onDrawerOpen);
-      observer.disconnect();
-      for (const cleanup of enhanced) cleanup();
-      menuCleanup();
-    },
-  );
+  cleanups.push(() => {
+    document.removeEventListener(TANO_DRAWER_OPEN_EVENT, onDrawerOpen);
+    observer.disconnect();
+    for (const cleanup of enhanced) cleanup();
+    menuCleanup();
+  });
 
   return () => {
     for (const cleanup of cleanups) cleanup();
   };
 }
 
-export function useForms(): (() => void) | void {
+export function mountFormsRuntime(): (() => void) | void {
   if (typeof window === "undefined") return;
   return mountForms();
 }

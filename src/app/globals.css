@@ -1,4 +1,5 @@
 @import "../styles/tano/source.css";
+@import "../styles/tano/runtime.css";
 @import "../styles/tano/reveal.css";
 @import "../styles/tano/hero.css";
 @import "../styles/tano/ground.css";
@@ -32,10 +33,6 @@ nextjs-portal {
   pointer-events: none;
 }
 
-.hp-notify-close {
-  pointer-events: auto;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hp-hero-glow,
   .wire-spectrum-drift,
@@ -46,8 +43,69 @@ nextjs-portal {
   }
 }
 
-/* Contact is a full-viewport sheet: the source omits footer and announcement. */
-body:has(.wire-contact) .wire-footer,
-body:has(.wire-contact) .hp-notify {
+/* Contact is a full-viewport sheet: the source omits the footer. */
+body:has(.wire-contact) .wire-footer {
   display: none;
+}
+
+/* 404 / error / loading surfaces. */
+.wire-status-page {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding-block: 160px;
+}
+
+.wire-status-page .tano-display-md {
+  max-width: 18ch;
+}
+
+.wire-status-page .tano-body-para-md {
+  max-width: 56ch;
+}
+
+.wire-status-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.wire-loading {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 9999;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.wire-loading__bar {
+  display: block;
+  height: 100%;
+  width: 40%;
+  background: var(
+    --spectrum-linear,
+    linear-gradient(90deg, #ed5263, #fb751f, #f3c507, #89de16, #46b7d1, #8464e3, #cc6add)
+  );
+  animation: wire-loading-slide 1.2s ease-in-out infinite;
+}
+
+@keyframes wire-loading-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wire-loading__bar {
+    width: 100%;
+    animation: none;
+  }
 }

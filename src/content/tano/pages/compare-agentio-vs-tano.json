@@ -165,27 +165,15 @@
       "blocks": [
         {
           "type": "table",
-          "head": [
-            "",
-            "Agentio",
-            "Tano"
-          ],
+          "head": ["", "Agentio", "Tano"],
           "rows": [
             [
               "What it is",
               "Marketplace for creator advertising",
               "Creator advertising platform: strategy, software and agentic AI"
             ],
-            [
-              "The unit",
-              "A placement",
-              "A creator relationship your brand owns"
-            ],
-            [
-              "Who contracts the creator",
-              "The marketplace, per placement",
-              "Your brand"
-            ],
+            ["The unit", "A placement", "A creator relationship your brand owns"],
+            ["Who contracts the creator", "The marketplace, per placement", "Your brand"],
             [
               "Creator supply",
               "“Many thousands”, YouTube-led",
@@ -201,16 +189,8 @@
               "Paid placements: YouTube integrations, Meta partnership ads",
               "Lifecycle: gifting, tiers, regifting, affiliate, paid, re-engagement"
             ],
-            [
-              "Gifting and seeding",
-              "No",
-              "Run for you"
-            ],
-            [
-              "Affiliate tracking",
-              "No",
-              "Codes and links, managed end to end"
-            ],
+            ["Gifting and seeding", "No", "Run for you"],
+            ["Affiliate tracking", "No", "Codes and links, managed end to end"],
             [
               "Creator content into paid ads",
               "Bought per placement",
