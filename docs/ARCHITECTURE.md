@@ -77,9 +77,14 @@ Source: route-family audit (JSON coverage, structural duplication, bands per rou
 | Home, use cases, case studies, for-creators |      9 |        37–67% | bespoke  | Keep captured bodies; extract section components only.               |
 | Talk-to-us                                  |      1 |            7% | bespoke  | Keep form-specific body.                                             |
 
-Recommended order: guides → indexes → careers/news/legal → bespoke leaves. For each
-family: render from JSON, run `node scripts/verify-all.mjs --routes <family> --widths 1568,390`,
-fix static bands above 0.5%, then delete the superseded replicas.
+The deferred families were attempted in a second wave and reverted after parity/typing
+failures; their captured bodies remain. Any retry must start from a clean family backup and pass
+the same live-source parity gate before deleting a replica.
+
+Recommended order: guides → compare → playbooks (done); then defer-index/careers/news/legal
+until a clean template passes. For each family: render from JSON, run
+`node scripts/verify-all.mjs --routes <family> --widths 1568,390`, fix static bands above 0.5%,
+then delete the superseded replicas.
 
 ## 4. Component taxonomy
 
