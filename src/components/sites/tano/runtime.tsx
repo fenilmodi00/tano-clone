@@ -27,7 +27,7 @@ import {
  * - Global behaviours (Lenis, ground tone, route scroll reset) live in
  *   `GlobalRuntime` and stay mounted while the App Router swaps pages, so the
  *   smooth-scroll instance, the ground veil and its `__tanoGround` API are
- *   created once. `useForms` is document-scoped for the same reason.
+ *   created once. Form enhancement is document-scoped for the same reason.
  * - Page behaviours (reels, tabs, reveals, media autoplay, observers) live in
  *   `PageRuntime`, keyed by pathname. Remounting after the router commits the
  *   new route re-runs each hook against the new DOM — most importantly
