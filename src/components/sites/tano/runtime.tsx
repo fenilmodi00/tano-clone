@@ -116,7 +116,5 @@ function PageHooks() {
     return () => cleanup?.();
   }, []);
 
-  usePageObservers();
-
   return null;
 }
