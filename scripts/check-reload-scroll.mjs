@@ -13,11 +13,11 @@ const saved = await page.evaluate(() => Number(sessionStorage.getItem("tano:scro
 
 await page.reload({ waitUntil: "commit" });
 const samples = [];
-for (const delay of [0, 50, 150, 350, 800, 1800]) {
+for (const delay of [0, 50, 150, 350, 800, 1800, 3000]) {
   await page.waitForTimeout(delay === 0 ? 0 : 50);
   samples.push(
     await page.evaluate(() => {
-      const loading = document.querySelector(".wire-loading");
+      const loading = document.querySelector(".wire-boot-mask");
       const footer = document.querySelector(".wire-footer");
       return {
         y: scrollY,

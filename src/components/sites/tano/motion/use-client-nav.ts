@@ -25,9 +25,13 @@ export function useClientNav() {
       const url = new URL(anchor.href, location.href);
       if (url.pathname === location.pathname && url.hash) return;
       event.preventDefault();
+      // Hide the shared footer while the next route streams; otherwise a short
+      // loading shell can pull it into view for a frame.
+      document.documentElement.setAttribute("data-navigating", "");
+      window.setTimeout(() => document.documentElement.removeAttribute("data-navigating"), 700);
       router.push(url.pathname + url.search + url.hash);
     };
-    document.addEventListener("click", onClick);
-    return () => document.removeEventListener("click", onClick);
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
   }, [router]);
 }

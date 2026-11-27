@@ -54,12 +54,9 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
 
   useEffect(() => {
     document.documentElement.setAttribute("data-nav-ready", "");
-    const navigation = performance.getEntriesByType("navigation")[0] as
-      | PerformanceNavigationTiming
-      | undefined;
-    // A reload must not replay the arrival animation over a restored scroll
-    // position: that is the nav jump/flicker seen on refresh.
-    if (navigation?.type === "reload" || window.scrollY > 0) return;
+    // A reload restoring a scrolled page must not replay the arrival
+    // animation over it; a top-of-page reload still gets the full intro.
+    if (Number(window.__tanoRestoreY || 0) > 0) return;
     const timers: number[] = [];
     let inner = 0;
     const outer = requestAnimationFrame(() => {

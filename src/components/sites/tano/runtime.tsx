@@ -64,6 +64,15 @@ function GlobalRuntime() {
 /** Subscribes to the route and remounts the page hooks after each commit. */
 function RouteRuntime() {
   const pathname = usePathname();
+
+  useEffect(() => {
+    const timer = window.setTimeout(
+      () => document.documentElement.removeAttribute("data-navigating"),
+      500,
+    );
+    return () => window.clearTimeout(timer);
+  }, [pathname]);
+
   return <PageRuntime key={pathname} />;
 }
 
@@ -106,28 +115,12 @@ function PageHooks() {
   useReveal();
   useHashScroll();
 
-  // Run after hydration, restore a full-reload scroll offset before the
-  // loading mask is removed, then bind forms against the settled markup.
+  // Run after hydration so form enhancement never mutates SSR markup. The
+  // boot script owns scroll restoration and releases the loading mask.
   useEffect(() => {
-    const target = Number(window.__tanoRestoreY || 0);
-    let frame = 0;
-    let tries = 0;
-    const restore = () => {
-      const ready = document.documentElement.scrollHeight >= target + window.innerHeight;
-      if (target > 0 && !ready && tries++ < 120) {
-        frame = requestAnimationFrame(restore);
-        return;
-      }
-      if (target > 0) window.scrollTo(0, target);
-      delete window.__tanoRestoreY;
-      document.documentElement.setAttribute("data-page-ready", "");
-    };
-    frame = requestAnimationFrame(restore);
+    document.documentElement.removeAttribute("data-navigating");
     const cleanup = mountFormsRuntime();
-    return () => {
-      cancelAnimationFrame(frame);
-      cleanup?.();
-    };
+    return () => cleanup?.();
   }, []);
 
   useEffect(() => {

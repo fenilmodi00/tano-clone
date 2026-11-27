@@ -72,9 +72,12 @@ export default function RootLayout({
       <body>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var n=performance.getEntriesByType("navigation")[0];if(n&&n.type==="reload"){history.scrollRestoration="manual";var y=sessionStorage.getItem("tano:scroll:"+location.pathname);if(y)window.__tanoRestoreY=Number(y)}}catch(e){}})()`,
+            __html: `(function(){try{var n=performance.getEntriesByType("navigation")[0];var target=0;if(n&&n.type==="reload"){history.scrollRestoration="manual";var saved=sessionStorage.getItem("tano:scroll:"+location.pathname);if(saved)target=Number(saved)||0}window.__tanoRestoreY=target;var started=Date.now();function ready(){document.documentElement.setAttribute("data-page-ready","")}function settle(){if(target>0){if(document.documentElement.scrollHeight<target+innerHeight){if(Date.now()-started<6000)return setTimeout(settle,50)}window.scrollTo(0,target);if(Date.now()-started<1600)return setTimeout(settle,50)}ready()}if(document.readyState==="complete")settle();else addEventListener("load",settle,{once:true})}catch(e){document.documentElement.setAttribute("data-page-ready","")}})()`,
           }}
         />
+        <div className="wire-boot-mask" aria-hidden="true">
+          <span className="wire-boot-bar" />
+        </div>
         <div className="tano tano-light-ground wire brand wire-veiled rv-scope">
           <div className="wire-chrome-sentinel" aria-hidden="true" />
           <div className="wire-spectrum-rule" data-inview="true" />
