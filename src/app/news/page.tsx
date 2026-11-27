@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/news.json";
+import pageData from "@/content/pages/news.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { NewsReplica } from "../../components/sites/tano/replica/NewsReplica";
 

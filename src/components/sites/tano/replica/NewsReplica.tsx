@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -26,7 +26,7 @@ export function NewsReplica() {
             </h1>
             <p className="hp-uc-hero-sub tano-body-para-md">Get in touch at team@tano.ai</p>
             <div className="hp-uc-hero-actions">
-              <TanoButtonLink href={"mailto:team@tano.ai"} label={"Email the team"} icon={false} />
+              <ButtonLink href={"mailto:team@tano.ai"} label={"Email the team"} icon={false} />
             </div>
           </div>
         </div>

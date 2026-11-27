@@ -1,5 +1,5 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
-import { ReelCard } from "@/components/sites/tano/media/reel-card";
+import { ButtonLink } from "@/components/ui/button"
+import { ReelCard } from "@/components/media/reel-card"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -1647,7 +1647,7 @@ export function CaseStudiesSkinAndMeReplica() {
               Access thousands of creators, with our in-house strategists steering every programme.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
             </div>
           </div>
         </div>

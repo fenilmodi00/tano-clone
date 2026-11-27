@@ -1,6 +1,6 @@
 /*
  * The banner's resting layout, actions grid and opening transition are in
- * source.css. Only the exit state added by SiteConsent lives here.
+ * source.css. Only the exit state added by ConsentBanner lives here.
  */
 .wire-consent[data-phase="closing"] {
   animation: wire-consent-close 220ms cubic-bezier(0.4, 0, 1, 1) forwards;

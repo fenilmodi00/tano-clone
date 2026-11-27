@@ -11,29 +11,31 @@ import fs from "node:fs";
 import path from "node:path";
 import { format } from "prettier";
 
-const CONTENT_DIR = "src/content/tano/pages";
+const CONTENT_DIR = "src/content/pages";
 const ROUTES_FILE = "docs/research/tano/routes.json";
-const OUT = "src/content/tano/routes.ts";
+const OUT = "src/content/routes.ts";
 const check = process.argv.includes("--check");
 
-const order = JSON.parse(fs.readFileSync(ROUTES_FILE, "utf8")).map((entry) => entry.route);
+const order = JSON.parse(fs.readFileSync(ROUTES_FILE, "utf8"));
 const byRoute = new Map();
-for (const file of fs.readdirSync(CONTENT_DIR).filter((name) => name.endsWith(".json"))) {
-  const data = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, file), "utf8"));
-  byRoute.set(data.route, { slug: file.replace(/\.json$/, ""), ...data });
+for (const file of fs
+  .readdirSync(CONTENT_DIR, { recursive: true })
+  .filter((name) => String(name).endsWith(".json"))) {
+  const data = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, String(file)), "utf8"));
+  byRoute.set(data.route, data);
 }
-const missing = order.filter((route) => !byRoute.has(route));
+const missing = order.filter((entry) => !byRoute.has(entry.route));
 if (missing.length) {
-  console.error(`Missing content JSON for: ${missing.join(", ")}`);
+  console.error(`Missing content JSON for: ${missing.map((entry) => entry.route).join(", ")}`);
   process.exit(1);
 }
 
-const families = [...new Set(order.map((route) => byRoute.get(route).family))].sort();
-const rows = order.map((route) => {
-  const page = byRoute.get(route);
+const families = [...new Set(order.map((entry) => byRoute.get(entry.route).family))].sort();
+const rows = order.map((entry) => {
+  const page = byRoute.get(entry.route);
   return `  {
     path: ${JSON.stringify(page.route)},
-    slug: ${JSON.stringify(page.slug)},
+    slug: ${JSON.stringify(entry.slug)},
     family: ${JSON.stringify(page.family)},
     title: ${JSON.stringify(page.meta.title)},
     description: ${JSON.stringify(page.meta.description)},
@@ -55,18 +57,6 @@ export type RouteMeta = {
 export const ROUTES = [
 ${rows.join("\n")}
 ] as const satisfies readonly RouteMeta[];
-
-export type RoutePath = (typeof ROUTES)[number]["path"];
-
-export const ROUTE_BY_PATH: Readonly<Record<string, RouteMeta>> = Object.fromEntries(
-  ROUTES.map((route) => [route.path, route]),
-);
-
-export function getRoute(path: string): RouteMeta {
-  const route = ROUTE_BY_PATH[path];
-  if (!route) throw new Error(\`Unknown route: \${path}\`);
-  return route;
-}
 `;
 
 const formatted = await format(source, { parser: "typescript", printWidth: 100 });

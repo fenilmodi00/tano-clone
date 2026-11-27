@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -31,8 +31,8 @@ export function UseCasesDriveRevenueReplica() {
               in-house strategists steering the programme with care.
             </p>
             <div className="hp-uc-hero-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
-              <TanoButtonLink href={"/case-studies"} label={"See the case studies"} variant={"secondary"} icon={false} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/case-studies"} label={"See the case studies"} variant={"secondary"} icon={false} />
             </div>
           </div>
           <div className="hp-uc-hero-proof">
@@ -2768,7 +2768,7 @@ export function UseCasesDriveRevenueReplica() {
                     </span>
                   </span>
                   <span className="hp-uc-case-actions">
-                    <TanoButtonLink href={"/case-studies/skin-and-me"} label={"Read the case study"} />
+                    <ButtonLink href={"/case-studies/skin-and-me"} label={"Read the case study"} />
                   </span>
                 </div>
               </div>
@@ -3311,7 +3311,7 @@ export function UseCasesDriveRevenueReplica() {
                   preserveAspectRatio="xMinYMid meet"
                   viewBox="0 0 321 117"
                 >
-                  <g fill="url(#hp-stat-spectrum-svg13)">
+                  <g fill="url(#hp-stat-spectrum-svg7)">
                     <rect
                       className="hp-stat-bar"
                       height={5}
@@ -3628,15 +3628,15 @@ export function UseCasesDriveRevenueReplica() {
                   <path
                     className="hp-stat-area"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                    fill="url(#hp-stat-spectrum-svg14)"
-                    mask="url(#hp-stat-falloff-mask-svg15)"
+                    fill="url(#hp-stat-spectrum-svg7)"
+                    mask="url(#hp-stat-falloff-mask-svg12)"
                   />
                   <path
                     className="hp-stat-line"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                     fill="none"
                     pathLength={1}
-                    stroke="url(#hp-stat-spectrum-svg14)"
+                    stroke="url(#hp-stat-spectrum-svg7)"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={3}
@@ -3681,7 +3681,7 @@ export function UseCasesDriveRevenueReplica() {
                     fill="none"
                     pathLength={1}
                     r={36}
-                    stroke="url(#hp-stat-spectrum-up-svg16)"
+                    stroke="url(#hp-stat-spectrum-up-svg9)"
                     strokeDasharray="0.72 1"
                     strokeLinecap="round"
                     strokeWidth={14}
@@ -3982,7 +3982,7 @@ export function UseCasesDriveRevenueReplica() {
               hit it.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
             </div>
           </div>
         </div>

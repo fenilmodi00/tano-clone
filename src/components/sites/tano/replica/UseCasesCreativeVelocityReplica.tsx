@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -31,8 +31,8 @@ export function UseCasesCreativeVelocityReplica() {
               already know your product.
             </p>
             <div className="hp-uc-hero-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
-              <TanoButtonLink href={"/case-studies"} label={"See the case studies"} variant={"secondary"} icon={false} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/case-studies"} label={"See the case studies"} variant={"secondary"} icon={false} />
             </div>
           </div>
           <div className="hp-uc-hero-proof">
@@ -125,15 +125,15 @@ export function UseCasesCreativeVelocityReplica() {
                       <path
                         className="hp-stat-area"
                         d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                        fill="url(#hp-stat-spectrum-svg7)"
-                        mask="url(#hp-stat-falloff-mask-svg8)"
+                        fill="url(#hp-stat-spectrum-svg1)"
+                        mask="url(#hp-stat-falloff-mask-svg6)"
                       />
                       <path
                         className="hp-stat-line"
                         d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                         fill="none"
                         pathLength={1}
-                        stroke="url(#hp-stat-spectrum-svg7)"
+                        stroke="url(#hp-stat-spectrum-svg1)"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={3}
@@ -163,7 +163,7 @@ export function UseCasesCreativeVelocityReplica() {
                       preserveAspectRatio="xMinYMid meet"
                       viewBox="0 0 321 117"
                     >
-                      <g fill="url(#hp-stat-spectrum-svg9)">
+                      <g fill="url(#hp-stat-spectrum-svg1)">
                         <rect
                           className="hp-stat-bar"
                           height={89}
@@ -481,15 +481,15 @@ export function UseCasesCreativeVelocityReplica() {
                       <path
                         className="hp-stat-area"
                         d="M 8 99 L 74 77 L 158 63 L 242 56 L 266 36 L 313 5 L 313 105 L 8 105 Z"
-                        fill="url(#hp-stat-spectrum-svg10)"
-                        mask="url(#hp-stat-falloff-mask-svg11)"
+                        fill="url(#hp-stat-spectrum-svg1)"
+                        mask="url(#hp-stat-falloff-mask-svg6)"
                       />
                       <path
                         className="hp-stat-line"
                         d="M 8 99 L 74 77 L 158 63 L 242 56 L 266 36 L 313 5"
                         fill="none"
                         pathLength={1}
-                        stroke="url(#hp-stat-spectrum-svg10)"
+                        stroke="url(#hp-stat-spectrum-svg1)"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={3}
@@ -3081,7 +3081,7 @@ export function UseCasesCreativeVelocityReplica() {
                     </span>
                   </span>
                   <span className="hp-uc-case-actions">
-                    <TanoButtonLink href={"/case-studies/bloom-and-wild"} label={"Read the case study"} />
+                    <ButtonLink href={"/case-studies/bloom-and-wild"} label={"Read the case study"} />
                   </span>
                 </div>
               </div>
@@ -3438,7 +3438,7 @@ export function UseCasesCreativeVelocityReplica() {
                   preserveAspectRatio="xMinYMid meet"
                   viewBox="0 0 321 117"
                 >
-                  <g fill="url(#hp-stat-spectrum-svg18)">
+                  <g fill="url(#hp-stat-spectrum-svg12)">
                     <rect
                       className="hp-stat-bar"
                       height={5}
@@ -3766,7 +3766,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="28.87538820250189"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 1 }}
                   />
@@ -3774,7 +3774,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 2 }}
                   />
@@ -3782,7 +3782,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 3 }}
                   />
@@ -3790,7 +3790,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 4 }}
                   />
@@ -3798,7 +3798,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx={58}
                     cy={94}
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 5 }}
                   />
@@ -3806,7 +3806,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="36.83973091747097"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 6 }}
                   />
@@ -3814,7 +3814,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="23.761965413374476"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 7 }}
                   />
@@ -3822,7 +3822,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="23.76196541337447"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 8 }}
                   />
@@ -3830,7 +3830,7 @@ export function UseCasesCreativeVelocityReplica() {
                     className="hp-stat-dot"
                     cx="36.83973091747096"
                     cy="28.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg19)"
+                    fill="url(#hp-stat-spectrum-ring-svg15)"
                     r={9}
                     style={{ "--hp-stat-step": 9 }}
                   />
@@ -3861,15 +3861,15 @@ export function UseCasesCreativeVelocityReplica() {
                   <path
                     className="hp-stat-area"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                    fill="url(#hp-stat-spectrum-svg20)"
-                    mask="url(#hp-stat-falloff-mask-svg21)"
+                    fill="url(#hp-stat-spectrum-svg12)"
+                    mask="url(#hp-stat-falloff-mask-svg17)"
                   />
                   <path
                     className="hp-stat-line"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                     fill="none"
                     pathLength={1}
-                    stroke="url(#hp-stat-spectrum-svg20)"
+                    stroke="url(#hp-stat-spectrum-svg12)"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={3}
@@ -4171,7 +4171,7 @@ export function UseCasesCreativeVelocityReplica() {
               them.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
             </div>
           </div>
         </div>

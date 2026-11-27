@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/case-studies-bloom-and-wild.json";
+import pageData from "@/content/pages/case-studies/bloom-and-wild.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CaseStudiesBloomAndWildReplica } from "../../../components/sites/tano/replica/CaseStudiesBloomAndWildReplica";
 

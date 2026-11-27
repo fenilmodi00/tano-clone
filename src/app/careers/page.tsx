@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/careers.json";
+import pageData from "@/content/pages/careers.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CareersReplica } from "../../components/sites/tano/replica/CareersReplica";
 

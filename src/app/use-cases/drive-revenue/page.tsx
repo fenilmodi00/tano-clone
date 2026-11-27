@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/use-cases-drive-revenue.json";
+import pageData from "@/content/pages/use-cases/drive-revenue.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { UseCasesDriveRevenueReplica } from "../../../components/sites/tano/replica/UseCasesDriveRevenueReplica";
 

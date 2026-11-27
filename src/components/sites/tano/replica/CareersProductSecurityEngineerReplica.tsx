@@ -1,4 +1,4 @@
-import { TanoButton } from "@/components/sites/tano/ui/tano-button";
+import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -104,7 +104,7 @@ export function CareersProductSecurityEngineerReplica() {
             Product Security Engineer
           </h1>
           <div>
-            <TanoButton type={"button"} >Apply for this role</TanoButton>
+            <Button type={"button"} >Apply for this role</Button>
             <dialog
               aria-labelledby="_R_9mav5ubpcnjb_-title"
               className="wire-drawer"
@@ -572,7 +572,7 @@ export function CareersProductSecurityEngineerReplica() {
             Tell us why you, and what you'd want to own. We read every application.
           </p>
           <div>
-            <TanoButton type={"button"} >Apply for this role</TanoButton>
+            <Button type={"button"} >Apply for this role</Button>
             <dialog
               aria-labelledby="_R_1uav5ubpcnjb_-title"
               className="wire-drawer"

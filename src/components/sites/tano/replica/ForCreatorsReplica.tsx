@@ -1,5 +1,5 @@
-import { FaqRow } from "@/components/sites/tano/ui/faq-row";
-import { TanoButtonLink, TanoButton } from "@/components/sites/tano/ui/tano-button";
+import { FaqRow } from "@/components/ui/faq-row"
+import { ButtonLink, Button } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -32,8 +32,8 @@ export function ForCreatorsReplica() {
               grow as a creator through organic promotions.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"#sign-up"} label={"Sign up to Tano"} />
-              <TanoButtonLink href={"https://partners.tano.ai/partner/login"} label={"Log in"} variant={"secondary"} icon={false} />
+              <ButtonLink href={"#sign-up"} label={"Sign up to Tano"} />
+              <ButtonLink href={"https://partners.tano.ai/partner/login"} label={"Log in"} variant={"secondary"} icon={false} />
             </div>
           </div>
         </div>
@@ -2796,7 +2796,7 @@ export function ForCreatorsReplica() {
             </li>
           </ol>
           <div className="hp-band-actions hp-cj-actions">
-            <TanoButtonLink href={"#sign-up"} label={"Sign up to Tano"} />
+            <ButtonLink href={"#sign-up"} label={"Sign up to Tano"} />
           </div>
         </div>
       </section>
@@ -3064,7 +3064,7 @@ export function ForCreatorsReplica() {
                   name="email"
                   defaultValue=""
                 />
-                <TanoButton type={"submit"} >Sign up to Tano</TanoButton>
+                <Button type={"submit"} >Sign up to Tano</Button>
               </div>
               <label className="wire-contact-consent" htmlFor="_R_1slubpcnjb_-consent">
                 <input id="_R_1slubpcnjb_-consent" required type="checkbox" name="consent" />

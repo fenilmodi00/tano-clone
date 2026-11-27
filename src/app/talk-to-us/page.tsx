@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/talk-to-us.json";
+import pageData from "@/content/pages/talk-to-us.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { TalkToUsReplica } from "../../components/sites/tano/replica/TalkToUsReplica";
 

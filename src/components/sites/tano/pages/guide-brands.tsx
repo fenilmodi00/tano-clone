@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button";
 
 export type GuideBrandStat = { value: string; label: string };
 export type GuideBrandQuote = { text: string; name?: string; role?: string };
@@ -257,7 +257,7 @@ export function GuideBrands({
                     <span className="hp-sub tano-body-sm">{role}</span>
                   </span>
                 </span>
-                <TanoButtonLink href={brand.href} label="Read the case study" />
+                <ButtonLink href={brand.href} label="Read the case study" />
               </div>
             </div>
           </div>

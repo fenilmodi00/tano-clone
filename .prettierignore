@@ -8,8 +8,9 @@ package-lock.json
 next-env.d.ts
 *.tsbuildinfo
 src/components/sites/tano/replica
-src/content/tano/pages
-src/components/sites/tano/pages/use-case-scenes.ts
+src/app/_home/captured-body.tsx
+src/content/pages
+src/app/_runtime/use-case-scenes.ts
 src/styles/tano/source.css
 
 .tmp/

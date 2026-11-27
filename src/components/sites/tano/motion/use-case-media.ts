@@ -10,6 +10,11 @@ const PAUSE_GLYPH =
 const PLAY_GLYPH =
   '<svg aria-hidden="true" fill="none" focusable="false" height="100%" viewBox="0 0 14 14" width="100%"><path fill="currentColor" d="M3.8 1.7 12 7l-8.2 5.3V1.7Z" /></svg>';
 
+const REEL_SNAP_DELAY = 180;
+const REEL_SNAP_DURATION = 420;
+const REEL_WHEEL_IDLE = 140;
+const REEL_SCROLL_TRAVEL = 4;
+
 function injectFilm(frame: HTMLElement, film: CaseFilm, signal: AbortSignal): HTMLVideoElement {
   frame.querySelectorAll("mux-player").forEach((placeholder) => placeholder.remove());
   frame.querySelector<HTMLElement>('template[id="tano-player-theme"]')?.remove();
@@ -118,6 +123,96 @@ function wrapIndex(target: number, total: number, stride: number): number {
   return Math.max(0, Math.min(total - 1, next));
 }
 
+function hydrateFigures(figs: HTMLElement, signal: AbortSignal, cleanups: Array<() => void>): void {
+  const band = figs.closest<HTMLElement>(".wire-figs-band") ?? figs;
+  const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const runs = Array.from(figs.querySelectorAll<HTMLElement>(".wire-figs-run"));
+  const duplicate = runs[1];
+  let arrived = false;
+  let settled = false;
+  let held = false;
+  let hidden = document.hidden;
+  let reduced = reducedQuery.matches;
+
+  const sync = () => {
+    if (!hidden && !held && (arrived || settled)) delete figs.dataset.paused;
+    else figs.dataset.paused = "true";
+  };
+
+  const applyMotion = () => {
+    figs.dataset.motion = reduced ? "still" : "drift";
+    // The still rail is scroll-snapped; the echo run exists only for drift.
+    if (duplicate) duplicate.style.display = reduced ? "none" : "";
+    sync();
+  };
+
+  applyMotion();
+
+  const arrive = new IntersectionObserver(
+    ([entry]) => {
+      arrived = Boolean(entry?.isIntersecting);
+      sync();
+    },
+    { rootMargin: "0px 0px -40% 0px", threshold: 0 },
+  );
+  arrive.observe(band);
+  cleanups.push(() => arrive.disconnect());
+
+  const leave = new IntersectionObserver(
+    ([entry]) => {
+      settled = Boolean(entry && entry.intersectionRatio >= 0.75);
+      sync();
+    },
+    { threshold: [0, 0.75] },
+  );
+  leave.observe(band);
+  cleanups.push(() => leave.disconnect());
+
+  figs.addEventListener(
+    "focusin",
+    (event) => {
+      const target = event.target;
+      if (!(target instanceof Element) || !target.matches(":focus-visible")) return;
+      held = true;
+      sync();
+    },
+    { signal },
+  );
+  figs.addEventListener(
+    "focusout",
+    (event) => {
+      const next = event.relatedTarget;
+      if (next instanceof Node && figs.contains(next)) return;
+      held = false;
+      sync();
+    },
+    { signal },
+  );
+
+  document.addEventListener(
+    "visibilitychange",
+    () => {
+      hidden = document.hidden;
+      sync();
+    },
+    { signal },
+  );
+
+  reducedQuery.addEventListener(
+    "change",
+    () => {
+      reduced = reducedQuery.matches;
+      applyMotion();
+    },
+    { signal },
+  );
+
+  cleanups.push(() => {
+    delete figs.dataset.paused;
+    if (duplicate) duplicate.style.display = "";
+  });
+}
+
 function hydrateReel(
   reel: HTMLElement,
   films: readonly CaseReelFilm[],
@@ -203,17 +298,25 @@ function hydrateReel(
   }
 
   const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const hoverQuery = window.matchMedia("(hover: hover)");
+  const desktopQuery = window.matchMedia("(min-width: 768px)");
   let reduced = reducedQuery.matches;
   let paused = reduced;
-  let hovered = false;
-  let inView = false;
-  let current = Math.min(2 * count, total - 1);
+  let inView = true;
+
+  // The source starts the ring on the featured film (the copy the server
+  // marked as front) in the middle cycle, then scroll shifts it by ±2 cards.
+  const serverFront = cards.findIndex((card) => card.dataset.front === "true");
+  const feature = serverFront >= 0 ? ((serverFront % count) + count) % count : 0;
+  const base = Math.max(0, Math.min(2 * count + feature, total - 1));
+  let frontIndex = serverFront >= 0 ? serverFront : base;
+  let position = base;
   let step = 0;
   let cardWidth = 0;
-  let offset = 0;
   let animation = 0;
-  let wheelAt = 0;
+  let snapTimer = 0;
+  let wheelTimer = 0;
+  let pointerId: number | null = null;
+  let dragging = false;
 
   const controls = reel.parentElement?.querySelector<HTMLElement>(".wire-reel-controls") ?? reel;
   const playButton = controls.querySelector<HTMLButtonElement>('[data-control="play"]');
@@ -225,9 +328,22 @@ function hydrateReel(
     playButton.innerHTML = paused ? PLAY_GLYPH : PAUSE_GLYPH;
   };
 
-  const apply = (x: number) => {
-    offset = x;
-    track.style.transform = `translate3d(${x.toFixed(1)}px, 0, 0)`;
+  const cancelAnimation = () => {
+    if (!animation) return;
+    window.cancelAnimationFrame(animation);
+    animation = 0;
+  };
+
+  const clearSnapTimer = () => {
+    if (!snapTimer) return;
+    window.clearTimeout(snapTimer);
+    snapTimer = 0;
+  };
+
+  const clearWheelTimer = () => {
+    if (!wheelTimer) return;
+    window.clearTimeout(wheelTimer);
+    wheelTimer = 0;
   };
 
   const offsetFor = (index: number) => reel.clientWidth / 2 - cardWidth / 2 - index * step;
@@ -242,16 +358,16 @@ function hydrateReel(
   };
 
   const maybePlay = () => {
-    const card = cards[current];
+    const card = cards[frontIndex];
     const video = card ? videos.get(card) : undefined;
     if (!card || !video) return;
-    const shouldPlay = !paused && inView && !hovered && !document.hidden;
+    const shouldPlay = !paused && inView && !document.hidden;
     if (!shouldPlay) {
       video.pause();
       return;
     }
     if (!video.getAttribute("src")) {
-      const film = films[current % count];
+      const film = films[frontIndex % count];
       if (!film) return;
       video.src = film.src;
       video.load();
@@ -259,16 +375,24 @@ function hydrateReel(
     video.play().catch(() => {});
   };
 
-  const syncFront = () => {
+  const liveRegion = controls.querySelector<HTMLElement>('[aria-live="polite"]');
+
+  const announce = (card: HTMLElement) => {
+    if (!liveRegion) return;
+    const brand =
+      card.querySelector<HTMLElement>(".wire-reel-mono[data-quiet]")?.textContent?.trim() ||
+      card.querySelector<HTMLElement>(".wire-reel-logo")?.getAttribute("aria-label") ||
+      "";
+    const handle = card.dataset.filmHandle ?? films[frontIndex % count]?.handle ?? "";
+    liveRegion.textContent = brand ? `${handle}, ${brand}` : handle;
+  };
+
+  const syncFront = (announceFront: boolean) => {
     for (const [index, card] of cards.entries()) {
-      const front = index === current;
+      const front = index === frontIndex;
       card.dataset.front = front ? "true" : "false";
       if (front) card.removeAttribute("aria-hidden");
       else card.setAttribute("aria-hidden", "true");
-      card.style.setProperty(
-        "--reel-scale",
-        String(1 - 0.16 * Math.min(Math.abs(index - current), 1)),
-      );
 
       if (front) continue;
       const video = videos.get(card);
@@ -282,94 +406,133 @@ function hydrateReel(
       }
     }
 
-    const frontCard = cards[current];
+    const frontCard = cards[frontIndex];
     const frontVideo = frontCard ? videos.get(frontCard) : undefined;
     if (frontCard && frontVideo) {
-      const film = films[current % count];
+      const film = films[frontIndex % count];
       const wrap = frontCard.querySelector<HTMLElement>(".wire-reel-video");
       if (film && frontVideo.getAttribute("src") !== film.src) {
         frontVideo.src = film.src;
-        frontVideo.preload = "metadata";
         frontVideo.load();
         if (wrap) wrap.dataset.ready = "false";
       }
     }
+    if (announceFront && frontCard) announce(frontCard);
     maybePlay();
   };
 
-  const goTo = (target: number, animate = true) => {
-    const next = wrapIndex(target, total, stride);
-    if (next === current) {
-      apply(offset);
-      syncFront();
-      return;
+  const render = (next: number, announceFront = true) => {
+    position = Math.max(0, Math.min(total - 1, next));
+    track.style.transform = `translate3d(${offsetFor(position).toFixed(1)}px, 0, 0)`;
+    for (const [index, card] of cards.entries()) {
+      card.style.setProperty(
+        "--reel-scale",
+        String(1 - 0.16 * Math.min(Math.abs(index - position), 1)),
+      );
     }
-    current = next;
-    const destination = offsetFor(current);
-    window.cancelAnimationFrame(animation);
+
+    const nextFront = Math.max(0, Math.min(total - 1, Math.round(position)));
+    if (nextFront === frontIndex) return;
+    frontIndex = nextFront;
+    syncFront(announceFront);
+  };
+
+  const animateTo = (target: number, animate = true) => {
+    cancelAnimation();
     if (!animate || reduced) {
-      apply(destination);
-      syncFront();
+      render(target);
       return;
     }
-    const start = offset;
+    const from = position;
+    const distance = target - from;
+    if (Math.abs(distance) < 0.001) {
+      render(target);
+      return;
+    }
     const started = performance.now();
     const tick = (now: number) => {
-      const progress = Math.min((now - started) / 420, 1);
+      const progress = Math.min((now - started) / REEL_SNAP_DURATION, 1);
       const eased = 1 - (1 - progress) ** 3;
-      apply(start + (destination - start) * eased);
-      if (progress < 1) animation = window.requestAnimationFrame(tick);
-      else apply(destination);
+      render(from + distance * eased);
+      if (progress < 1) {
+        animation = window.requestAnimationFrame(tick);
+      } else {
+        animation = 0;
+        render(target);
+      }
     };
     animation = window.requestAnimationFrame(tick);
-    syncFront();
+  };
+
+  const goTo = (target: number, animate = true) => {
+    clearSnapTimer();
+    clearWheelTimer();
+    animateTo(wrapIndex(target, total, stride), animate);
+  };
+
+  const updateFromScroll = () => {
+    if (!desktopQuery.matches) return;
+    cancelAnimation();
+    const rect = reel.getBoundingClientRect();
+    const progress = Math.min(
+      Math.max((window.innerHeight - rect.top) / (window.innerHeight + rect.height), 0),
+      1,
+    );
+    render(base + (progress - 0.5) * REEL_SCROLL_TRAVEL);
+  };
+
+  const scheduleScrollSnap = () => {
+    clearSnapTimer();
+    snapTimer = window.setTimeout(() => {
+      snapTimer = 0;
+      if (!desktopQuery.matches || !inView) return;
+      animateTo(Math.round(position));
+    }, REEL_SNAP_DELAY);
+  };
+
+  const onScroll = () => {
+    if (dragging) return;
+    if (!desktopQuery.matches || reduced || !inView) return;
+    updateFromScroll();
+    scheduleScrollSnap();
   };
 
   const remeasure = () => {
     measure();
-    apply(offsetFor(current));
+    render(position, false);
   };
 
   measure();
-  apply(offsetFor(current));
+  if (desktopQuery.matches) {
+    updateFromScroll();
+    scheduleScrollSnap();
+  } else {
+    render(base);
+  }
   syncButton();
-  syncFront();
+  syncFront(false);
 
   const observer = new IntersectionObserver(
     ([entry]) => {
       inView = Boolean(entry?.isIntersecting);
       reel.dataset.inview = inView ? "true" : "false";
       maybePlay();
+      if (inView && desktopQuery.matches && !reduced && !dragging) {
+        updateFromScroll();
+        scheduleScrollSnap();
+      }
     },
-    { threshold: 0 },
+    { rootMargin: "200px", threshold: 0 },
   );
   observer.observe(reel);
   cleanups.push(() => observer.disconnect());
+
+  window.addEventListener("scroll", onScroll, { passive: true, signal });
 
   const resizeObserver =
     typeof ResizeObserver === "undefined" ? null : new ResizeObserver(remeasure);
   resizeObserver?.observe(reel);
   cleanups.push(() => resizeObserver?.disconnect());
-
-  reel.addEventListener(
-    "pointerenter",
-    () => {
-      if (!hoverQuery.matches) return;
-      hovered = true;
-      reel.dataset.hover = "true";
-      maybePlay();
-    },
-    { signal },
-  );
-  reel.addEventListener(
-    "pointerleave",
-    () => {
-      hovered = false;
-      delete reel.dataset.hover;
-      maybePlay();
-    },
-    { signal },
-  );
 
   playButton?.addEventListener(
     "click",
@@ -388,7 +551,7 @@ function hydrateReel(
       "click",
       () => {
         const direction = button.dataset.direction === "previous" ? -1 : 1;
-        goTo(current + direction);
+        goTo(Math.round(position) + direction);
       },
       { signal },
     );
@@ -398,15 +561,14 @@ function hydrateReel(
     card.querySelector<HTMLElement>(".wire-reel-video")?.addEventListener(
       "click",
       () => {
-        if (index !== current) goTo(index, false);
+        if (index !== frontIndex) goTo(index, false);
       },
       { signal },
     );
   }
 
-  let pointerId: number | null = null;
   let startX = 0;
-  let startOffset = 0;
+  let startPosition = 0;
   let dragged = false;
 
   reel.addEventListener(
@@ -415,9 +577,12 @@ function hydrateReel(
       if (event.button !== 0) return;
       pointerId = event.pointerId;
       startX = event.clientX;
-      startOffset = offset;
+      startPosition = position;
       dragged = false;
-      window.cancelAnimationFrame(animation);
+      dragging = true;
+      cancelAnimation();
+      clearSnapTimer();
+      clearWheelTimer();
       try {
         reel.setPointerCapture(event.pointerId);
       } catch {
@@ -435,7 +600,7 @@ function hydrateReel(
       if (!dragged && Math.abs(delta) < 6) return;
       dragged = true;
       reel.dataset.dragging = "true";
-      apply(startOffset + delta);
+      render(startPosition - delta / (step || 1));
     },
     { signal },
   );
@@ -443,6 +608,7 @@ function hydrateReel(
   const endDrag = (event: PointerEvent) => {
     if (pointerId !== event.pointerId) return;
     pointerId = null;
+    dragging = false;
     delete reel.dataset.dragging;
     if (!dragged) return;
     try {
@@ -450,7 +616,6 @@ function hydrateReel(
     } catch {
       /* already released */
     }
-    const target = Math.round((offsetFor(current) - offset) / step + current);
     reel.addEventListener(
       "click",
       (click) => {
@@ -459,7 +624,7 @@ function hydrateReel(
       },
       { capture: true, once: true, signal },
     );
-    goTo(target);
+    goTo(Math.round(position));
     dragged = false;
   };
 
@@ -469,12 +634,17 @@ function hydrateReel(
   reel.addEventListener(
     "wheel",
     (event) => {
+      if (!desktopQuery.matches) return;
       if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
       event.preventDefault();
-      const now = performance.now();
-      if (now - wheelAt < 240) return;
-      wheelAt = now;
-      goTo(current + (event.deltaX > 0 ? 1 : -1));
+      cancelAnimation();
+      clearSnapTimer();
+      render(position + event.deltaX / (step || 1));
+      clearWheelTimer();
+      wheelTimer = window.setTimeout(() => {
+        wheelTimer = 0;
+        animateTo(Math.round(position));
+      }, REEL_WHEEL_IDLE);
     },
     { passive: false, signal },
   );
@@ -484,17 +654,44 @@ function hydrateReel(
   const onReducedChange = () => {
     reduced = reducedQuery.matches;
     paused = reduced;
+    cancelAnimation();
+    clearSnapTimer();
+    clearWheelTimer();
+    if (reduced) {
+      render(Math.round(position), false);
+    } else if (desktopQuery.matches) {
+      updateFromScroll();
+      scheduleScrollSnap();
+    }
     syncButton();
     maybePlay();
   };
   reducedQuery.addEventListener("change", onReducedChange, { signal });
+  const onDesktopChange = () => {
+    cancelAnimation();
+    clearSnapTimer();
+    clearWheelTimer();
+    if (!desktopQuery.matches) return;
+    updateFromScroll();
+    scheduleScrollSnap();
+  };
+  desktopQuery.addEventListener("change", onDesktopChange, { signal });
 
   reel.dataset.reelReady = "true";
   cleanups.push(() => {
-    window.cancelAnimationFrame(animation);
+    cancelAnimation();
+    clearSnapTimer();
+    clearWheelTimer();
     for (const video of videos.values()) {
       video.pause();
       video.removeAttribute("src");
+    }
+    track.style.removeProperty("transform");
+    for (const [index, card] of cards.entries()) {
+      card.dataset.front = index === serverFront ? "true" : "false";
+      if (index === serverFront) card.removeAttribute("aria-hidden");
+      else card.setAttribute("aria-hidden", "true");
+      card.style.removeProperty("--reel-scale");
     }
     delete reel.dataset.reelReady;
     delete reel.dataset.inview;
@@ -502,7 +699,7 @@ function hydrateReel(
   });
 }
 
-export function useCaseMedia(): (() => void) | void {
+export function useCaseStudyMedia(): (() => void) | void {
   const pathname = usePathname();
   useEffect(() => {
     const media = caseMediaForPath(pathname);
@@ -541,6 +738,14 @@ export function useCaseMedia(): (() => void) | void {
         ),
       )) {
         hydrateReel(reel, media.reels, signal, cleanups);
+      }
+
+      for (const figs of Array.from(
+        root.querySelectorAll<HTMLElement>(
+          '.wire-figs[data-motion="drift"], .wire-figs[data-motion="still"]',
+        ),
+      )) {
+        hydrateFigures(figs, signal, cleanups);
       }
     });
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
-import { FaqRow } from "@/components/sites/tano/ui/faq-row";
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { FaqRow } from "@/components/ui/faq-row";
+import { ButtonLink } from "@/components/ui/button";
 
 type Ground = "light" | "dark";
 
@@ -929,7 +929,7 @@ function Hero({ page }: { page: CompareContent }) {
           ))}
           <div className="hp-uc-hero-actions">
             {hero.actions.map((action, index) => (
-              <TanoButtonLink
+              <ButtonLink
                 href={action.href}
                 icon={index === 0 ? undefined : false}
                 key={`${action.href}-${action.label}`}
@@ -1114,7 +1114,7 @@ function ComparisonSection({
             </h2>
           </div>
           <div className="hp-band-actions">
-            <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+            <ButtonLink href={"/talk-to-us"} label={"Get started"} />
           </div>
           <p aria-hidden="true" className="hp-swipe-cue tano-body-sm">
             Swipe to see how they compare →
@@ -1466,7 +1466,7 @@ function BrandStripSection({ brand, title }: { brand: BrandStrip; title: string 
                     <span className="hp-sub tano-body-sm">{brand.quote.role}</span>
                   </span>
                 </span>
-                <TanoButtonLink href={brand.quote.caseStudy} label={"Read the case study"} />
+                <ButtonLink href={brand.quote.caseStudy} label={"Read the case study"} />
               </div>
             </div>
           </div>
@@ -1796,7 +1796,7 @@ function ClosingSection({ page, slug }: { page: CompareContent; slug: string }) 
           </h2>
           <p className="hp-sub tano-body-para-md">{closing.body}</p>
           <div className="hp-band-actions">
-            <TanoButtonLink href={closing.cta.href} label={closing.cta.label} />
+            <ButtonLink href={closing.cta.href} label={closing.cta.label} />
           </div>
         </div>
       </div>
@@ -1809,7 +1809,7 @@ function ClosingSection({ page, slug }: { page: CompareContent; slug: string }) 
  * below supplies only ordering, grounds and the bands the capture did not
  * extract (band headings and the brand quote carousel).
  */
-export function ComparePage({ page }: { page: CompareContent }) {
+export function CompareTemplate({ page }: { page: CompareContent }) {
   const layout = LAYOUTS[page.route];
   if (!layout) {
     throw new Error(`No compare layout for ${page.route}`);

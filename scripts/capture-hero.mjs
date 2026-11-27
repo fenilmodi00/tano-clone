@@ -12,7 +12,7 @@ import path from "node:path";
 
 const ORIGIN = "https://www.tano.ai";
 const PAGE = `${ORIGIN}/`;
-const OUT = "src/components/sites/tano/content/hero-campaigns.ts";
+const OUT = "src/app/_home/data/hero-campaigns.ts";
 const ASSET_MAP = "docs/research/tano/asset-map.json";
 const FILL =
   "position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent";
@@ -340,8 +340,7 @@ lines.push("");
 const source = lines.join("\n");
 if (/https?:\/\//.test(JSON.stringify(records)))
   throw new Error("generated data still contains a remote URL");
-if (!fs.existsSync("src/components/sites/tano/content"))
-  throw new Error("content directory missing");
+if (!fs.existsSync("src/app/_home/data")) throw new Error("content directory missing");
 
 fs.writeFileSync(OUT, source);
 console.log(`wrote ${OUT} (${source.length} bytes)`);

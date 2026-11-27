@@ -1,5 +1,5 @@
-import { TanoButtonLink, TanoButton } from "@/components/sites/tano/ui/tano-button";
-import { ReelCard } from "@/components/sites/tano/media/reel-card";
+import { ButtonLink, Button } from "@/components/ui/button"
+import { ReelCard } from "@/components/media/reel-card"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -242,7 +242,7 @@ export function CaseStudiesHellofreshReplica() {
                         type="email"
                         defaultValue=""
                       />
-                      <TanoButton type={"submit"} icon={false}>Watch</TanoButton>
+                      <Button type={"submit"} icon={false}>Watch</Button>
                       <label
                         className="wire-study-video-gate-check tano-body-sm"
                         htmlFor="_R_4jcjav5ubpcnjb_-share"
@@ -305,7 +305,7 @@ export function CaseStudiesHellofreshReplica() {
                         type="email"
                         defaultValue=""
                       />
-                      <TanoButton type={"submit"} icon={false}>Watch</TanoButton>
+                      <Button type={"submit"} icon={false}>Watch</Button>
                       <label
                         className="wire-study-video-gate-check tano-body-sm"
                         htmlFor="_R_4ncjav5ubpcnjb_-share"
@@ -357,7 +357,7 @@ export function CaseStudiesHellofreshReplica() {
                         type="email"
                         defaultValue=""
                       />
-                      <TanoButton type={"submit"} icon={false}>Watch</TanoButton>
+                      <Button type={"submit"} icon={false}>Watch</Button>
                       <label
                         className="wire-study-video-gate-check tano-body-sm"
                         htmlFor="_R_4pcjav5ubpcnjb_-share"
@@ -1170,7 +1170,7 @@ export function CaseStudiesHellofreshReplica() {
               Access thousands of creators, with our in-house strategists steering every programme.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
             </div>
           </div>
         </div>

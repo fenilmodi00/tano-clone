@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/playbooks.json";
+import pageData from "@/content/pages/playbooks.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { PlaybooksReplica } from "../../components/sites/tano/replica/PlaybooksReplica";
 

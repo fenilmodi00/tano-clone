@@ -1,7 +1,7 @@
 /*
  * The dialog, sheet, spectrum rule, close button, scroll area and all
  * reduced-motion overrides are already ported in source.css. These are the
- * integration states SiteDrawer relies on.
+ * integration states MobileNav relies on.
  */
 .wire-drawer[open] {
   display: flex;

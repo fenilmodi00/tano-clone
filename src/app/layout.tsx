@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { preload } from "react-dom";
 import "./globals.css";
-import { SiteHeader } from "@/components/sites/tano/shell/site-header";
-import { SiteFooter } from "@/components/sites/tano/shell/site-footer";
-import { SiteConsent } from "@/components/sites/tano/shell/consent";
-import { SiteDrawer } from "@/components/sites/tano/shell/site-drawer";
-import { SiteRuntime } from "@/components/sites/tano/runtime";
-import { SiteInteractions } from "@/components/sites/tano/interactions";
-import { tanoGlyphSvg, tanoWordSvg } from "@/components/sites/tano/shell/logo-data";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { ConsentBanner } from "@/components/layout/consent-banner";
+import { MobileNav } from "@/components/layout/mobile-nav";
+import { SiteRuntime } from "./_runtime/site-runtime";
+import { GlobalInteractions } from "./_runtime/global-interactions";
+import { glyphSvg, wordSvg } from "@/components/layout/logo-svg";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -81,12 +81,12 @@ export default function RootLayout({
         <div className="tano tano-light-ground wire brand wire-veiled rv-scope">
           <div className="wire-chrome-sentinel" aria-hidden="true" />
           <div className="wire-spectrum-rule" data-inview="true" />
-          <SiteHeader glyphSvg={tanoGlyphSvg} wordSvg={tanoWordSvg} />
-          <SiteConsent />
-          <SiteDrawer />
+          <Header glyphSvg={glyphSvg} wordSvg={wordSvg} />
+          <ConsentBanner />
+          <MobileNav />
           {children}
-          <SiteFooter glyphSvg={tanoGlyphSvg} />
-          <SiteInteractions />
+          <Footer glyphSvg={glyphSvg} />
+          <GlobalInteractions />
           <SiteRuntime />
         </div>
       </body>

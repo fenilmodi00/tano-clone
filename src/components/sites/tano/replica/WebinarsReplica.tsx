@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
 export function WebinarsReplica() {
@@ -98,8 +98,8 @@ export function WebinarsReplica() {
               </p>
             </div>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Book a call"} />
-              <TanoButtonLink href={"/playbooks"} label={"Read the playbooks"} variant={"secondary"} />
+              <ButtonLink href={"/talk-to-us"} label={"Book a call"} />
+              <ButtonLink href={"/playbooks"} label={"Read the playbooks"} variant={"secondary"} />
             </div>
           </div>
         </div>

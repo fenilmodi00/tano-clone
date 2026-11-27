@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import { StatusPage } from "@/components/site/status-page";
-import { TanoButton } from "@/components/sites/tano/ui/tano-button";
+import { StatusPage } from "@/components/status-page";
+import { Button } from "@/components/ui/button";
 
 export default function ErrorPage({ error, retry }: { error: unknown; retry: () => void }) {
   useEffect(() => {
@@ -16,9 +16,9 @@ export default function ErrorPage({ error, retry }: { error: unknown; retry: () 
       title="This page hit a snag."
       body="The page could not be rendered. Try again, or head back home while we recover."
     >
-      <TanoButton onClick={() => retry()} type="button">
+      <Button onClick={() => retry()} type="button">
         Try again
-      </TanoButton>
+      </Button>
       <Link className="wire-contact-link tano-body-md" href="/">
         Back to home
       </Link>

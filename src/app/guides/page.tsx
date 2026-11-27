@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/guides.json";
+import pageData from "@/content/pages/guides.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { GuidesReplica } from "../../components/sites/tano/replica/GuidesReplica";
 

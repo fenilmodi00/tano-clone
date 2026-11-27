@@ -1,4 +1,4 @@
-import { TanoButton, TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { Button, ButtonLink } from "@/components/ui/button";
 
 type PlaybookBlock = { type: string; html?: string; items?: ReadonlyArray<{ title: string }> };
 type PlaybookSection = {
@@ -39,9 +39,9 @@ function stripMarkup(html: string): string {
 
 /**
  * One playbook detail page: hero, lead gate and closing CTA. Five routes share
- * this exact structure; their copy lives in src/content/tano/pages/*.json.
+ * this exact structure; their copy lives in src/content/pages/*.json.
  */
-export function PlaybookPage({ page }: { page: PlaybookContent }) {
+export function PlaybookTemplate({ page }: { page: PlaybookContent }) {
   const gate =
     page.sections.find((section) => section.variant === "playbook-gate") ?? page.sections[0];
   const gateBodyBlock = gate?.blocks.find((block) => block.type === "prose" && block.html);
@@ -100,7 +100,7 @@ export function PlaybookPage({ page }: { page: PlaybookContent }) {
                   <input autoComplete="email" id={emailId} name="email" required type="email" />
                 </div>
               </div>
-              <TanoButton type="submit">Get free access</TanoButton>
+              <Button type="submit">Get free access</Button>
               <p className="tano-body-sm wire-ink-soft">No spam. Unsubscribe any time.</p>
             </form>
           </div>
@@ -118,7 +118,7 @@ export function PlaybookPage({ page }: { page: PlaybookContent }) {
                 <p className="hp-sub tano-body-para-md">{page.closing.body}</p>
               </div>
               <div className="hp-band-actions">
-                <TanoButtonLink href={page.closing.cta.href} label={page.closing.cta.label} />
+                <ButtonLink href={page.closing.cta.href} label={page.closing.cta.label} />
               </div>
             </div>
           </div>

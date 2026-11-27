@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -32,7 +32,7 @@ export function CareersReplica() {
               &amp; Wild and Unilever. We're hiring across engineering and client growth.
             </p>
             <div className="hp-uc-hero-actions">
-              <TanoButtonLink href={"#roles"} label={"See open roles"} />
+              <ButtonLink href={"#roles"} label={"See open roles"} />
             </div>
           </div>
           <div className="hp-careers-film">

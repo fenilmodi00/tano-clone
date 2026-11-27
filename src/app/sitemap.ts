@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { ROUTES } from "@/content/tano/routes";
+import { ROUTES } from "@/content/routes";
 import { absoluteUrl, site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {

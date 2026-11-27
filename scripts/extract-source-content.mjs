@@ -10,8 +10,8 @@
  *   /home/boxd/tano/site/<route>.html (fallback when a capture is missing)
  *
  * Outputs:
- *   src/content/tano/pages/<slug>.json
- *   src/content/tano/routes.ts (via generate-route-manifest.mjs)
+ *   src/content/pages/<route path>.json
+ *   src/content/routes.ts (via generate-route-manifest.mjs)
  *
  * Run with: node scripts/extract-source-content.mjs
  */
@@ -26,7 +26,7 @@ const ROOT = path.resolve(HERE, "..");
 const RESEARCH = path.join(ROOT, "docs/research/tano");
 const FALLBACK_SITE = "/home/boxd/tano/site";
 const PUBLIC_DIR = path.join(ROOT, "public");
-const OUT_DIR = path.join(ROOT, "src/content/tano");
+const OUT_DIR = path.join(ROOT, "src/content");
 const PAGES_DIR = path.join(OUT_DIR, "pages");
 
 const ALLOWED_INLINE = new Set(["a", "strong", "em", "br", "sup", "sub"]);
@@ -2590,7 +2590,9 @@ function main() {
     try {
       const page = extractPage(route);
       validatePage(page, route);
-      const file = path.join(PAGES_DIR, `${route.slug}.json`);
+      const relative = route.route === "/" ? "home.json" : `${route.route.replace(/^\//, "")}.json`;
+      const file = path.join(PAGES_DIR, relative);
+      fs.mkdirSync(path.dirname(file), { recursive: true });
       fs.writeFileSync(file, `${JSON.stringify(page, null, 2)}\n`);
       written.push({ route, page });
     } catch (error) {

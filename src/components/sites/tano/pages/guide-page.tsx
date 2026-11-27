@@ -7,8 +7,8 @@ import {
   type GuideBrandQuote,
   type GuideBrandStat,
 } from "@/components/sites/tano/pages/guide-brands";
-import { FaqRow } from "@/components/sites/tano/ui/faq-row";
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { FaqRow } from "@/components/ui/faq-row";
+import { ButtonLink } from "@/components/ui/button";
 
 type GuideCardItem = { title: string; body?: string };
 type GuideStatItem = { value: string; label: string };
@@ -701,7 +701,7 @@ function GuideClosing({
           </h2>
           <p className="hp-sub tano-body-para-md">{closing.body}</p>
           <div className="hp-band-actions">
-            <TanoButtonLink href={closing.cta.href} label={closing.cta.label} />
+            <ButtonLink href={closing.cta.href} label={closing.cta.label} />
           </div>
         </div>
       </div>
@@ -713,7 +713,7 @@ function GuideClosing({
  * One guide detail page: hero, prose rows and subsections, FAQ, quote/stat band
  * and closing CTA. Fourteen routes share this structure; copy lives in JSON.
  */
-export function GuidePage({ page }: { page: GuideContent }) {
+export function GuideTemplate({ page }: { page: GuideContent }) {
   const rows = proseRows(page.sections);
   const faqSection = page.sections.find((section) => section.variant === "faq");
   const faq =

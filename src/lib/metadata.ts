@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { Page } from "@/content/tano/types";
+import type { Page } from "@/content/types";
 import { site } from "./site";
 
 type PageMetadataInput = Pick<Page, "route" | "meta">;

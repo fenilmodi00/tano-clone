@@ -1,4 +1,4 @@
-import { TanoButton } from "@/components/sites/tano/ui/tano-button";
+import { Button } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -427,7 +427,7 @@ export function TalkToUsReplica() {
               <p className="wire-visually-hidden" role="status" />
               <div className="wire-contact-actions">
                 <span className="wire-spectrum-glow wire-contact-submit">
-                  <TanoButton type={"submit"} >Continue</TanoButton>
+                  <Button type={"submit"} >Continue</Button>
                 </span>
               </div>
             </form>

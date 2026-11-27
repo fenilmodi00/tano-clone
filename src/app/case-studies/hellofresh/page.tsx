@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/case-studies-hellofresh.json";
+import pageData from "@/content/pages/case-studies/hellofresh.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CaseStudiesHellofreshReplica } from "../../../components/sites/tano/replica/CaseStudiesHellofreshReplica";
 

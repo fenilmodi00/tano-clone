@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/webinars.json";
+import pageData from "@/content/pages/webinars.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { WebinarsReplica } from "../../components/sites/tano/replica/WebinarsReplica";
 

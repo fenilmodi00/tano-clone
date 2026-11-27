@@ -65,6 +65,6 @@ for (const [route, frames] of Object.entries(data)) {
   console.log(key, out[key].length);
 }
 const ts = `/* Generated from the public Tano use-case step scenes. */\nconst PAYLOADS: Record<string, string[]> = ${JSON.stringify(out, null, 2)};\n\nexport async function loadUseCaseScenes(key: "drive-revenue" | "creative-velocity"): Promise<string[]> {\n  return Promise.all((PAYLOADS[key] ?? []).map(async (payload) => {\n    const bytes = Uint8Array.from(atob(payload), (c) => c.charCodeAt(0));\n    const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));\n    return new Response(stream).text();\n  }));\n}\n`;
-await fs.writeFile("src/components/sites/tano/pages/use-case-scenes.ts", ts);
+await fs.writeFile("src/app/_runtime/use-case-scenes.ts", ts);
 await fs.writeFile("docs/research/tano/asset-map.json", JSON.stringify(MAP, null, 2));
 console.log("module", ts.length, "downloaded", missing.size);

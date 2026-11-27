@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/privacy-policy.json";
+import pageData from "@/content/pages/privacy-policy.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { PrivacyPolicyReplica } from "../../components/sites/tano/replica/PrivacyPolicyReplica";
 

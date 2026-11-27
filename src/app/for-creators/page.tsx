@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/for-creators.json";
+import pageData from "@/content/pages/for-creators.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { ForCreatorsReplica } from "../../components/sites/tano/replica/ForCreatorsReplica";
 

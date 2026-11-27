@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/compare.json";
+import pageData from "@/content/pages/compare.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CompareReplica } from "../../components/sites/tano/replica/CompareReplica";
 

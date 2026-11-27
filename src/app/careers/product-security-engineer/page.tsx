@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/careers-product-security-engineer.json";
+import pageData from "@/content/pages/careers/product-security-engineer.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CareersProductSecurityEngineerReplica } from "../../../components/sites/tano/replica/CareersProductSecurityEngineerReplica";
 

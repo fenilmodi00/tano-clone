@@ -1,4 +1,4 @@
-import pageData from "@/content/tano/pages/case-studies-papier.json";
+import pageData from "@/content/pages/case-studies/papier.json";
 import { buildPageMetadata } from "@/lib/metadata";
 import { CaseStudiesPapierReplica } from "../../../components/sites/tano/replica/CaseStudiesPapierReplica";
 

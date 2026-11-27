@@ -1,4 +1,4 @@
-import { TanoButtonLink } from "@/components/sites/tano/ui/tano-button";
+import { ButtonLink } from "@/components/ui/button"
 import Link from "next/link";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
@@ -568,7 +568,7 @@ export function GuidesReplica() {
               with your brand.
             </p>
             <div className="hp-band-actions">
-              <TanoButtonLink href={"/talk-to-us"} label={"Get started"} />
+              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
             </div>
           </div>
         </div>
