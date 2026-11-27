@@ -21,10 +21,10 @@ import {
 /**
  * Site runtime. Two lifetimes:
  *
- * - Global behaviours (Lenis, ground tone, client-side link routing, the
- *   readiness flags) live in `SiteRuntime` and stay mounted while the App
- *   Router swaps pages, so the smooth-scroll instance, the ground veil and
- *   its `__tanoGround` API are created once.
+ * - Global behaviours (Lenis, ground tone, client-side link routing) live in
+ *   `GlobalRuntime` and stay mounted while the App Router swaps pages, so the
+ *   smooth-scroll instance, the ground veil and its `__tanoGround` API are
+ *   created once. `useForms` is document-scoped for the same reason.
  * - Page behaviours (reels, tabs, reveals, media autoplay, observers) live in
  *   `PageRuntime`, keyed by pathname. Remounting after the router commits the
  *   new route re-runs each hook against the new DOM — most importantly
@@ -32,12 +32,12 @@ import {
  *   new page at opacity 0.
  */
 export function SiteRuntime() {
-  const pathname = usePathname();
-
-  // Global: never remounted by navigation.
-  useLenisScroll();
-  useGroundTone();
-  useClientNav();
+  // Document lifetime. `useForms` mounts a body-wide MutationObserver and a
+  // drawer listener during render (its returned cleanup is not a registered
+  // effect cleanup), so re-rendering or remounting it per route would stack
+  // observers. The observer already binds forms inserted by a client
+  // navigation, so one instance belongs to the document, not the route.
+  useForms();
 
   useEffect(() => {
     const html = document.documentElement;
@@ -45,6 +45,29 @@ export function SiteRuntime() {
     html.setAttribute("data-ground-ready", "");
   }, []);
 
+  return (
+    <>
+      <GlobalRuntime />
+      <RouteRuntime />
+    </>
+  );
+}
+
+/**
+ * Singletons that survive navigation. Split from `SiteRuntime` so a pathname
+ * update re-renders only this subtree and the route subtree below, never the
+ * document-lifetime mounts above.
+ */
+function GlobalRuntime() {
+  useLenisScroll();
+  useGroundTone();
+  useClientNav();
+  return null;
+}
+
+/** Subscribes to the route and remounts the page hooks after each commit. */
+function RouteRuntime() {
+  const pathname = usePathname();
   return <PageRuntime key={pathname} />;
 }
 
@@ -57,7 +80,6 @@ function PageRuntime() {
   useHomeInfo();
   usePageFamily();
   useCaseMedia();
-  useForms();
   useCounters();
   useReveal();
 

@@ -10,10 +10,21 @@
  *
  * Usage: node scripts/check-client-nav.mjs [baseUrl]
  *        BASE_URL=http://127.0.0.1:3000 node scripts/check-client-nav.mjs
+ * Default is http://127.0.0.1:3100, falling back to 3000 when 3100 is down.
  */
 import { chromium } from "playwright";
 
-const base = (process.env.BASE_URL || process.argv[2] || "http://127.0.0.1:3000").replace(/\/+$/, "");
+const requestedBase = (process.env.BASE_URL || process.argv[2] || "").replace(/\/+$/, "");
+let base = requestedBase || "http://127.0.0.1:3100";
+if (!requestedBase) {
+  // 3100 is the documented dev port; fall back to 3000 when it is not
+  // listening so the bare command still works during a port move.
+  const reachable = await fetch(`${base}/`, { signal: AbortSignal.timeout(2_000) })
+    .then((response) => response.ok)
+    .catch(() => false);
+  if (!reachable) base = "http://127.0.0.1:3000";
+}
+console.log(`base ${base}`);
 const VIEWPORT = { width: 1568, height: 829 };
 const NAV_TIMEOUT = 30_000;
 const REVEAL_TIMEOUT = 20_000;
@@ -77,6 +88,20 @@ async function waitForRoute(path) {
   await page.waitForTimeout(350);
 }
 
+async function openUseCases() {
+  // The header animates its bar on (re)mount; hovering mid-animation can drop
+  // the menu as the bar moves under the pointer. Wait for the settled stage.
+  await page
+    .waitForFunction(() => document.querySelector(".wire-nav-bar")?.getAttribute("data-stage") === "settled", null, {
+      timeout: 10_000,
+    })
+    .catch(() => {});
+  await page.hover(".wire-nav-menu");
+  const link = page.locator('.wire-nav-menu a[href="/use-cases/drive-revenue"]');
+  await link.waitFor({ state: "visible", timeout: 10_000 });
+  await link.click();
+}
+
 async function assertPage(label, path) {
   const snapshot = await state();
   const suffix = JSON.stringify(snapshot);
@@ -111,10 +136,7 @@ try {
   const home = await assertPage("home (direct load)", "/");
 
   // 2. Real UI: hover the Use Cases menu, click Drive Revenue.
-  await page.hover(".wire-nav-menu");
-  const useCaseLink = page.locator('.wire-nav-menu a[href="/use-cases/drive-revenue"]');
-  await useCaseLink.waitFor({ state: "visible", timeout: 10_000 });
-  await useCaseLink.click();
+  await openUseCases();
   await waitForRoute("/use-cases/drive-revenue");
   await assertPage("use-cases/drive-revenue (SPA)", "/use-cases/drive-revenue");
 
@@ -139,8 +161,7 @@ try {
   await page.locator(".wire-nav-mark").first().click();
   await waitForRoute("/");
   await assertPage("home (repeat SPA)", "/");
-  await page.hover(".wire-nav-menu");
-  await page.locator('.wire-nav-menu a[href="/use-cases/drive-revenue"]').click();
+  await openUseCases();
   await waitForRoute("/use-cases/drive-revenue");
   await assertPage("drive-revenue (repeat SPA)", "/use-cases/drive-revenue");
 

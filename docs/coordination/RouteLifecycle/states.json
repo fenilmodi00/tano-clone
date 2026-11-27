@@ -79,8 +79,11 @@
       "scrollY": 0
     },
     {
-      "stage": "repeat SPA navigation home → drive-revenue → guides → drive-revenue",
-      "beforeVeil": 1,
+      "stage": "repeat SPA home → drive-revenue → guides → drive-revenue",
+      "before": {
+        "veils": 1,
+        "groundApi": true
+      },
       "veils": 1,
       "groundApi": true,
       "rvIn": 6,

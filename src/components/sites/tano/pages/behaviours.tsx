@@ -465,7 +465,27 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     }
   };
 
-  const syncFills = () => {
+  /** Source remounts `ProcessScene` per step, so each scene replays from frame 0. */
+  const syncScenes = (replay: boolean) => {
+    for (const scene of Array.from(root.querySelectorAll<HTMLElement>(".hp-pp-scene"))) {
+      const leaving = scene.closest(".hp-pp-frame[data-leaving]") !== null;
+      if (reduced) scene.setAttribute("data-reduced", "true");
+      else scene.removeAttribute("data-reduced");
+      if (replay) {
+        // `data-running` only pauses the authored CSS animations; rewind them so
+        // the new step plays its entrance instead of resuming a finished one.
+        scene.removeAttribute("data-running");
+        for (const animation of scene.getAnimations({ subtree: true })) {
+          animation.currentTime = 0;
+        }
+        void scene.offsetWidth;
+      }
+      if (!leaving && running()) scene.setAttribute("data-running", "true");
+      else scene.removeAttribute("data-running");
+    }
+  };
+
+  const syncFills = (replay: boolean) => {
     segButtons.forEach((button, position) => {
       const fill = button.querySelector<HTMLElement>(".hp-steps-seg-fill");
       if (!fill) return;
@@ -473,8 +493,7 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
       fill.style.setProperty("--hp-steps-index", String(position));
       fill.style.setProperty("--hp-steps-duration", `${durations[position] ?? 0}ms`);
     });
-    if (restart) {
-      restart = false;
+    if (replay) {
       const rule = segButtons[index]?.querySelector<HTMLElement>(".hp-steps-seg-rule");
       const fill = rule?.querySelector<HTMLElement>(".hp-steps-seg-fill");
       if (rule && fill) {
@@ -505,14 +524,13 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
       else slide.setAttribute("aria-hidden", "true");
     });
     stage.style.setProperty("--hp-steps-active", String(index));
+    const replay = restart;
+    restart = false;
     // The scene's CSS animations are gated on [data-running]; without it the
     // process demo looks frozen. Keep it in lockstep with the deck clock.
-    for (const scene of Array.from(root.querySelectorAll<HTMLElement>(".hp-pp-scene"))) {
-      if (running()) scene.setAttribute("data-running", "true");
-      else scene.removeAttribute("data-running");
-    }
+    syncScenes(replay);
     if (copy) copy.setAttribute("aria-live", touched ? "polite" : "off");
-    syncFills();
+    syncFills(replay);
     syncPlay();
   };
 
@@ -551,7 +569,9 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
 
   const onPlay = () => {
     explicitPaused = !explicitPaused;
-    syncPlay();
+    // `sync` owns data-running/data-paused; syncPlay alone would leave the
+    // scene animating behind a "Play" label.
+    sync();
     schedule();
   };
 

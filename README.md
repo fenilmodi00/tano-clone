@@ -51,6 +51,12 @@ node scripts/generate-replicas.mjs         # rebuild replica components
 
 `scripts/extract-source-content.mjs` produces the typed content model in `src/content/tano/pages` (used for metadata and future data-driven pages).
 
+## Client-side navigation and Cloudflare
+
+Page-scoped hooks are keyed by `usePathname()`: `SiteRuntime` keeps Lenis and GroundShift mounted, while `<PageRuntime key={pathname}>` remounts reveal, hero, media and page behaviours after the App Router commits a route. This is what prevents the “subpage turns black until refresh” failure. Regression: `npm run verify:client-nav` (44 routes + history; exits non-zero on a hidden page).
+
+When serving through a tunnel or custom hostname in **dev**, list that hostname in `next.config.ts` → `allowedDevOrigins`; otherwise Next blocks its dev resources and the page can arrive without hydration (no nav, no Lenis, no animations). The production server has no such restriction. Current config includes `127.0.0.1`, `localhost`, and `dev.kaplun.tech`.
+
 ## Blank/black page guard
 
 The source hides reveal content with CSS until JS adds `.rv-in`. If a stale dev cache or a failed chunk leaves hydration off, the page shows the dark ground only. The app now includes an inline fail-safe that reveals all content after ~3 s when `.rv-in` is missing, and `npm run verify:visibility` checks every route for visible above-fold content and console errors.
@@ -69,6 +75,7 @@ The harness compares the clone against the live source at matched viewport, scro
 npm run verify          # 44 routes × 1568 px, summary + report
 npm run verify:motion   # hero/counters/experiments/marquee/ground-theme
 npm run verify:visibility  # 44-route blank-page/hydration guard
+npm run verify:client-nav  # 44-route SPA navigation + history audit
 ```
 
 Latest 1568 baseline (`docs/verify/REPORT.md`, 2026-11-27):

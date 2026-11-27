@@ -48,6 +48,12 @@ All 44 captured paths are implemented, including `/`, `/use-cases/{drive-revenue
 
 A stale dev/build state left the reveal stylesheet hiding all content because hydration never ran, producing a full-page dark rectangle. Fix: clean production rebuild and restart; the hero video now plays independently of the reel timer, and an inline fail-safe reveals content after ~3 s if `.rv-in` never lands. `npm run verify:visibility` guards all 44 routes.
 
+## SPA and hostname incidents (fixed)
+
+- Subpage content stayed at opacity 0 after in-app navigation because page hooks were mounted once. `runtime.tsx` now splits global (Lenis/GroundShift/client-nav) from page-scoped hooks keyed by `usePathname()`. `scripts/audit-client-nav.mjs` covers 44 routes + history.
+- The Cloudflare hostname `dev.kaplun.tech` was missing from `allowedDevOrigins`; Next dev blocked its dev resources and hydration never ran (no nav/Lenis/animations). Added to `next.config.ts`; production is unaffected. `dev.kaplun.tech` now hydrates normally.
+- Home steps cursor and use-case process scenes were restored: cursor moves across `[data-cursor]` targets; pitch-deck scenes get `data-running` and replay on step change.
+
 ## Residual work (prioritized)
 
 1. `/case-studies` hub, role-hero width and playbook lead gates were fixed late (hub static 30.85→0.02, senior role +64 px→0, playbook mobile 5–10%→<0.5).

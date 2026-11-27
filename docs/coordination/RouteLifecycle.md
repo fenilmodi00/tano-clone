@@ -17,22 +17,32 @@ subpage DOM existed.
 
 `runtime.tsx` now has two lifetimes:
 
-- **Global** — `SiteRuntime` calls `useLenisScroll()`, `useGroundTone()` and
-  `useClientNav()` and sets `data-nav-ready` / `data-ground-ready` in a one-time
-  effect. These stay mounted across navigation, so one Lenis instance, one
-  `.wire-ground-veil` and one `window.__tanoGround` API exist for the session;
-  `GroundTheme`'s route dependency still re-measures bands without recreating
-  the veil.
-- **Page-scoped** — a child `<PageRuntime key={pathname} />` calls
-  `useHeroCampaign`, `useConversations`, `useExperiments`, `useHomeMedia`,
-  `useHomeInfo`, `usePageFamily`, `useCaseMedia`, `useForms`, `useCounters`,
-  `useReveal`, plus the reveal-target/`data-shown`, band-inview and
-  video-autoplay effect (moved out of the global mount). Keying by pathname
-  unmounts the previous page's hooks and mounts new ones after React commits
-  the new route DOM, so `useReveal` observes the new elements. Every page
-  cleanup disconnects its IntersectionObservers and pauses its videos; the
-  per-hook effects return their own cleanups, so repeat navigation cannot stack
-  observers.
+- **Global** — `GlobalRuntime` calls `useLenisScroll()`, `useGroundTone()` and
+  `useClientNav()` and stays mounted across navigation, so one Lenis instance,
+  one `.wire-ground-veil` and one `window.__tanoGround` API exist for the
+  session; `GroundTheme`'s route dependency still re-measures bands without
+  recreating the veil. `SiteRuntime` sets `data-nav-ready` /
+  `data-ground-ready` once and calls `useForms()`. `useForms` is deliberately
+  document-scoped here, not page-scoped: it mounts a body-wide
+  MutationObserver + drawer listener during render and its returned cleanup is
+  not registered by the caller, so a per-route remount would stack observers.
+  That observer already binds forms inserted by a client navigation, so a
+  single document lifetime is both leak-free and functionally correct.
+  Verified: after SPA navigation to `/for-creators`, submitting the empty
+  creator form set `aria-invalid` on a field and did not navigate.
+- **Page-scoped** — `RouteRuntime` reads `usePathname()` and renders
+  `<PageRuntime key={pathname} />`, which calls `useHeroCampaign`,
+  `useConversations`, `useExperiments`, `useHomeMedia`, `useHomeInfo`,
+  `usePageFamily`, `useCaseMedia`, `useCounters`, `useReveal`, plus the
+  reveal-target/`data-shown`, band-inview and video-autoplay effect (moved out
+  of the global mount). Keying by pathname unmounts the previous page's hooks
+  and mounts new ones after React commits the new route DOM, so `useReveal`
+  observes the new elements. Every page cleanup disconnects its
+  IntersectionObservers and pauses its videos; the per-hook effects return
+  their own cleanups, so repeat navigation cannot stack observers.
+  `GlobalRuntime` is a sibling of `RouteRuntime` (not a hook in the same
+  component) so the pathname update only re-renders the route subtree and
+  never re-renders the document-lifetime mounts.
 
 The reveal observers are created inside the keyed mount (after commit), and the
 above-fold `requestAnimationFrame` path in `useReveal` runs in the same mount.
@@ -55,8 +65,9 @@ Each stage re-asserts the same visibility/global-runtime invariants, plus
 `no pageerror/console error` for the whole flow. Prints `ok  `/`FAIL` per check,
 then `PASS` or `FAIL` with exit code 1.
 
-Base URL: `BASE_URL` env or first argument, default
-`http://127.0.0.1:3000` — override for another port:
+Base URL: `BASE_URL` env or first argument; default
+`http://127.0.0.1:3100`, falling back to `http://127.0.0.1:3000` when 3100 is
+not listening (the current dev port). Explicit override:
 `BASE_URL=http://127.0.0.1:3100 node scripts/check-client-nav.mjs`.
 
 ## Measured result
@@ -73,7 +84,8 @@ passed). After:
 | direct `/guides` | `/guides` | 1 | 1 | 9 | 1 | yes | yes | 0 |
 | repeat SPA ×3 → Drive Revenue | `/use-cases/drive-revenue` | 1 | 1 | 6 | 1 | yes | yes | 0 |
 
-Final `node scripts/check-client-nav.mjs` (port 3000): **PASS**, 9.1 s.
+Final `node scripts/check-client-nav.mjs` (port 3000): **PASS** (~9.7 s),
+repeated three times with the same result.
 
 Screenshots (1568×829) and raw states: `RouteLifecycle/states.json`,
 `RouteLifecycle/01-home.png`, `02-use-cases-drive-revenue-spa.png`,
@@ -82,14 +94,17 @@ Screenshots (1568×829) and raw states: `RouteLifecycle/states.json`,
 
 ## Contract for other workstreams
 
-- Any new page-level hook goes in `PageRuntime`, not `SiteRuntime`; it must
-  return a cleanup and must tolerate being mounted once per route.
-- Global singletons (Lenis, ground veil/API, client-nav listener) stay in
-  `SiteRuntime`; do not add another document-level listener there without
-  cleanup.
+- Any new page-level hook goes in `PageRuntime`; it must return a cleanup and
+  must tolerate being mounted once per route. Document-level mounts (the kind
+  that own a body observer or a global listener) belong in `SiteRuntime` /
+  `GlobalRuntime` instead.
+- Global singletons (Lenis, ground veil/API, client-nav listener, form
+  enhancement) stay mounted once; do not add another document-level listener
+  without cleanup.
 - Existing hooks' own dependency arrays are unchanged; keying only adds the
-  route lifecycle around them. `useForms`'s render-time mount is unchanged and
-  still keyed by its `WeakMap`, so new route DOM binds once.
+  route lifecycle around them. `useForms`'s render-time mount remains as
+  shipped (WeakMap-idempotent); if Forms converts it to an effect-based hook
+  with cleanup, it can move to `PageRuntime` without changing behaviour.
 - No CSS or shell changes were needed; reveal CSS and the inline fail-safe in
   `layout.tsx` are untouched.
 

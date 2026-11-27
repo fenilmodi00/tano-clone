@@ -35,7 +35,8 @@
     "check": "npm run lint && npm run typecheck && npm run build",
     "verify": "node scripts/verify-all.mjs --widths 1568 --concurrency 3",
     "verify:motion": "node scripts/compare-motion.mjs --scene all --width 1568",
-    "verify:visibility": "node scripts/check-visibility.mjs"
+    "verify:visibility": "node scripts/check-visibility.mjs",
+    "verify:client-nav": "node scripts/audit-client-nav.mjs --base http://127.0.0.1:3000"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

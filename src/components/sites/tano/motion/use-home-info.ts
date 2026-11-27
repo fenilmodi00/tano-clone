@@ -14,6 +14,16 @@ const REDUCED_QUERY = "(prefers-reduced-motion: reduce)";
 const MOBILE_QUERY = "(max-width: 767px)";
 const PLAY_GLYPH = `<svg viewBox="0 0 14 14" width="100%" height="100%" fill="none" aria-hidden="true" focusable="false"><path d="M3.00283.5c-.27961 0-.55454.071214-.7989.206831-.24906.127096-.45929.319089-.60841.555799-.1514.24031-.23403.51751-.23893.80149l-.00007 0v9.86318h-.00007l.00014.0086c.0049.284.08753.5612.23893.8015.14912.2367.35935.4287.60841.5558.24436.1356.51929.2068.7989.2068.2838 0 .56278-.0734.80987-.213.00575-.0032.01143-.0066.01704-.0101L11.806 8.34363c.2475-.12503.4564-.3152.604-.55027.1528-.24322.2339-.52462.2339-.81185s-.0811-.56863-.2339-.81185c-.1478-.23533-.357-.42566-.6048-.55069L3.82831.722179C3.82317.719019 3.81796.715952 3.8127.71298 3.56561.573367 3.28663.5 3.00283.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" /></svg>`;
 
+/* Source Cursor timing from the live home bundle: a 1200 ms beat grid with a
+   3200 ms scene tail outside the cursor animation. */
+const CURSOR_BEAT_MS = 1200;
+const CURSOR_TAIL_MS = 3200;
+const CURSOR_CLICK_MS = 140;
+const CURSOR_APPROACH_MS = 160;
+const CURSOR_TRAVEL_MS = 1000;
+const CURSOR_HOLD_MS = 600;
+const CURSOR_EASE = "cubic-bezier(0.45, 0, 0.25, 1)";
+
 function parseElement(html: string): HTMLElement | null {
   const template = document.createElement("template");
   template.innerHTML = html.trim();
@@ -71,8 +81,100 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
   let inView = false;
   let hasLeft = false;
   let explicitPaused = false;
+  let cursorAnimation: Animation | null = null;
 
   const running = () => inView && !reduced && !explicitPaused;
+
+  const stopCursor = () => {
+    cursorAnimation?.cancel();
+    cursorAnimation = null;
+    const cursor = currentFrame?.querySelector<HTMLElement>(".hp-pp-cursor");
+    if (cursor) cursor.style.opacity = "0";
+  };
+
+  /* Source Cursor: a linear 1200 ms beat clock, 140 ms press, 160 ms approach,
+     1000 ms travel, 600 ms tail hold, then an 8% fade while drifting 40/60 px.
+     The cursor exists only where the scene carries .hp-pp-cursor + targets
+     (inputs); no cursor is invented for other steps. */
+  const startCursor = (frame: HTMLElement, stepDuration: number) => {
+    stopCursor();
+    const cursor = frame.querySelector<HTMLElement>(".hp-pp-cursor");
+    const scene = frame.querySelector<HTMLElement>(".hp-pp-scene");
+    if (!cursor || !scene || reduced || stepDuration <= CURSOR_TAIL_MS) return;
+
+    const stops: Array<{ target: HTMLElement; at: number }> = [];
+    for (const target of Array.from(frame.querySelectorAll<HTMLElement>("[data-cursor]"))) {
+      let at = Number.NaN;
+      for (let node: HTMLElement | null = target; node && node !== frame; node = node.parentElement) {
+        const raw = node.style.getPropertyValue("--win") || node.style.getPropertyValue("--at");
+        if (!raw) continue;
+        const value = Number.parseFloat(raw);
+        if (Number.isFinite(value)) {
+          at = value;
+          break;
+        }
+      }
+      if (Number.isFinite(at)) stops.push({ target, at });
+    }
+    if (stops.length === 0) return;
+    stops.sort((a, b) => a.at - b.at);
+
+    const duration = stepDuration - CURSOR_TAIL_MS;
+    const origin = scene.getBoundingClientRect();
+    const pointFor = (target: HTMLElement) => {
+      const rect = target.getBoundingClientRect();
+      return {
+        x: rect.left - origin.left + rect.width / 2,
+        y: rect.top - origin.top + rect.height * 0.55,
+      };
+    };
+    const at = (ms: number) => Math.min(Math.max(ms / duration, 0), 1);
+    const transform = (point: { x: number; y: number }, scale = 1) =>
+      `translate(${point.x.toFixed(1)}px, ${point.y.toFixed(1)}px) scale(${scale})`;
+
+    const first = pointFor(stops[0].target);
+    let home = { x: first.x + origin.width * 0.12, y: first.y + origin.height * 0.16 };
+    const keyframes: Keyframe[] = [{ transform: transform(home), opacity: 0, offset: 0 }];
+    let reached = 0;
+    for (const stop of stops) {
+      const location = pointFor(stop.target);
+      const clickAt = CURSOR_BEAT_MS * stop.at - CURSOR_CLICK_MS;
+      const arriveAt = Math.max(reached, clickAt - CURSOR_APPROACH_MS);
+      const leaveAt = Math.max(reached, arriveAt - CURSOR_TRAVEL_MS);
+      keyframes.push({
+        transform: transform(home),
+        opacity: reached === 0 ? 0 : 1,
+        offset: at(leaveAt),
+        easing: CURSOR_EASE,
+      });
+      keyframes.push({ transform: transform(location), opacity: 1, offset: at(arriveAt) });
+      keyframes.push({ transform: transform(location, 0.86), opacity: 1, offset: at(clickAt) });
+      keyframes.push({
+        transform: transform(location),
+        opacity: 1,
+        offset: at(clickAt + CURSOR_CLICK_MS),
+      });
+      home = location;
+      reached = clickAt + CURSOR_CLICK_MS;
+    }
+
+    const holdAt = at(reached + CURSOR_HOLD_MS);
+    const exit = { x: home.x + 40, y: home.y + 60 };
+    keyframes.push({ transform: transform(home), opacity: 1, offset: holdAt });
+    keyframes.push({ transform: transform(exit), opacity: 0, offset: Math.min(holdAt + 0.08, 1) });
+    keyframes.push({ transform: transform(exit), opacity: 0, offset: 1 });
+
+    /* Offsets must never go backwards; the source clamps the same way. */
+    let previous = 0;
+    for (const keyframe of keyframes) {
+      const value = Math.max(typeof keyframe.offset === "number" ? keyframe.offset : previous, previous);
+      keyframe.offset = value;
+      previous = value;
+    }
+
+    cursorAnimation = cursor.animate(keyframes, { duration, fill: "forwards" });
+    if (!running()) cursorAnimation.pause();
+  };
 
   const setFrameRunning = (frame: HTMLElement, active: boolean) => {
     const scene = frame.querySelector<HTMLElement>(".hp-pp-scene");
@@ -192,6 +294,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
     if (leavingFrame?.parentElement === stage) leavingFrame.remove();
     if (leavingTimer) window.clearTimeout(leavingTimer);
     if (currentFrame) {
+      stopCursor();
       currentFrame.setAttribute("data-leaving", "");
       currentFrame.setAttribute("data-direction", String(direction));
       setFrameRunning(currentFrame, false);
@@ -208,6 +311,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
     stage.appendChild(frame);
     currentFrame = frame;
     setFrameRunning(frame, running());
+    startCursor(frame, left);
     sync();
     restartFill();
     if (copy) copy.setAttribute("aria-live", manual ? "polite" : "off");
@@ -227,6 +331,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
       currentFrame = frame;
       stage.appendChild(frame);
       setFrameRunning(frame, true);
+      startCursor(frame, durations[0] ?? 12200);
     }
     index = 0;
     left = durations[0] ?? 12200;
@@ -239,6 +344,10 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
 
   const updateRunning = () => {
     if (currentFrame) setFrameRunning(currentFrame, running());
+    if (cursorAnimation) {
+      if (running()) cursorAnimation.play();
+      else cursorAnimation.pause();
+    }
     syncPlayButtons();
     updateFills();
     schedule();
@@ -248,6 +357,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
   if (!initial) return;
   currentFrame = initial;
   stage.replaceChildren(initial);
+  startCursor(initial, left);
   sync();
   restartFill();
 
@@ -275,6 +385,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
       if (!inView) {
         hasLeft = true;
         if (currentFrame) setFrameRunning(currentFrame, false);
+        cursorAnimation?.pause();
         updateFills();
         schedule();
         return;
@@ -297,6 +408,7 @@ function setupSteps(scenes: readonly string[], cleanups: Cleanup[]): void {
   reducedMedia.addEventListener("change", onReducedChange);
 
   cleanups.push(() => {
+    stopCursor();
     if (timer) window.clearTimeout(timer);
     if (leavingTimer) window.clearTimeout(leavingTimer);
     io.disconnect();
