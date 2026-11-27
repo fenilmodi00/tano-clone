@@ -32,21 +32,21 @@ removed or restructured, and the remaining route-migration path.
 
 ### Added or restructured
 
-- `src/content/tano/routes.ts` generated route/SEO manifest; `sitemap.ts` uses it.
+- `src/content/routes.ts` generated route/SEO manifest; `sitemap.ts` uses it.
 - `src/lib/metadata.ts` + per-route JSON metadata; 44/44 pages now have a correct canonical,
   Open Graph, Twitter and robots block.
 - `src/app/`: `sitemap.ts`, `robots.ts`, `manifest.ts`, `opengraph-image.tsx`,
   `not-found.tsx`, `error.tsx`, `global-error.tsx`, `loading.tsx`.
 - Production shell: security headers, explicit cache policy per asset class, build-time env,
   font preloads, no-JS reveal fallback, static-output assertion, CI runtime job.
-- Shared components: `TanoButton`/`TanoButtonLink` (99 call sites), `FaqRow` (88),
+- Shared components: `Button`/`ButtonLink` (50 call sites), `FaqRow` (14),
   `ReelCard` (235).
-- `PlaybookPage` data-driven template for five routes; the five generated playbook replicas
+- `PlaybookTemplate` data-driven template for five routes; the five generated playbook replicas
   were deleted.
 - 44 replicated bodies reformatted from one-line files to readable, linted TSX; all internal
   links use `next/link` (313 anchors), and the custom client-nav interceptor was removed.
 - Page-level reveal/band/video observers were extracted from `runtime.tsx` into
-  `motion/use-page-observers.ts`; dead motion helpers were removed.
+  `src/hooks/use-page-observers.ts`; dead motion helpers were removed.
 - Duplicate DOM ids in shell logos, inline SVG charts and comparison sections are now unique.
 - Evidence retention: heavy captures are untracked (tracked `docs/` is now ~24 MB); see
   `docs/EVIDENCE.md`.
@@ -68,17 +68,17 @@ removed or restructured, and the remaining route-migration path.
 
 Source: route-family audit (JSON coverage, structural duplication, bands per route).
 
-| Family                                      | Routes | JSON coverage | Verdict  | Target                                                               |
-| ------------------------------------------- | -----: | ------------: | -------- | -------------------------------------------------------------------- |
-| Playbooks                                   |      5 |        49–79% | **done** | `PlaybookPage` from JSON.                                            |
-| Guides                                      |     14 |        79–91% | **done** | `GuidePage`: hero, prose/list/table/quotes, FAQ, brands, closing.    |
-| Compare details                             |      4 |        83–87% | **done** | `ComparePage`: hero, prose, comparison table, verdict, FAQ, closing. |
-| Career roles                                |      3 |        56–80% | deferred | Captured body kept; template attempt missed callouts/emphasis.       |
-| Guides/compare/playbooks indexes            |      3 |        70–79% | deferred | Captured bodies kept; shared template produced 8–96% diffs.          |
-| Careers/news indexes                        |      2 |        70–77% | deferred | Captured bodies kept; same index-template attempt.                   |
-| Privacy / news article / webinars           |      3 |        78–86% | deferred | Captured bodies kept; template attempt failed compile/parity.        |
-| Home, use cases, case studies, for-creators |      9 |        37–67% | bespoke  | Keep captured bodies; extract section components only.               |
-| Talk-to-us                                  |      1 |            7% | bespoke  | Keep form-specific body.                                             |
+| Family                                      | Routes | JSON coverage | Verdict  | Target                                                                   |
+| ------------------------------------------- | -----: | ------------: | -------- | ------------------------------------------------------------------------ |
+| Playbooks                                   |      5 |        49–79% | **done** | `PlaybookTemplate` from JSON.                                            |
+| Guides                                      |     14 |        79–91% | **done** | `GuideTemplate`: hero, prose/list/table/quotes, FAQ, brands, closing.    |
+| Compare details                             |      4 |        83–87% | **done** | `CompareTemplate`: hero, prose, comparison table, verdict, FAQ, closing. |
+| Career roles                                |      3 |        56–80% | deferred | Captured body kept; template attempt missed callouts/emphasis.           |
+| Guides/compare/playbooks indexes            |      3 |        70–79% | deferred | Captured bodies kept; shared template produced 8–96% diffs.              |
+| Careers/news indexes                        |      2 |        70–77% | deferred | Captured bodies kept; same index-template attempt.                       |
+| Privacy / news article / webinars           |      3 |        78–86% | deferred | Captured bodies kept; template attempt failed compile/parity.            |
+| Home, use cases, case studies, for-creators |      9 |        37–67% | bespoke  | Keep captured bodies; extract section components only.                   |
+| Talk-to-us                                  |      1 |            7% | bespoke  | Keep form-specific body.                                                 |
 
 The deferred families were attempted in a second wave and reverted after parity/typing
 failures; their captured bodies remain. Any retry must start from a clean family backup and pass
@@ -93,14 +93,14 @@ then delete the superseded replicas.
 
 Extracted (keep using):
 
-- `TanoButtonLink` / `TanoButton` — appearance via `data-variant|size|material`, optional chevron.
+- `ButtonLink` / `Button` — appearance via `data-variant|size|material`, optional chevron.
 - `FaqRow` — shared id contract `{id}-question` / `{id}-answer`; delegated interaction stays in
-  `interactions.tsx`.
-- `GuidePage` — data-driven guide detail template (hero, prose/list/table/quotes, FAQ, brands,
+  `global-interactions.tsx`.
+- `GuideTemplate` — data-driven guide detail template (hero, prose/list/table/quotes, FAQ, brands,
   closing); 14 routes at ≤0.27% static diff.
-- `ComparePage` — data-driven compare detail template (prose, comparison tables, verdict, FAQ,
+- `CompareTemplate` — data-driven compare detail template (prose, comparison tables, verdict, FAQ,
   brands, closing); four routes at ≤0.2%.
-- `PlaybookPage` — data-driven playbook detail template; five routes at 0% static diff.
+- `PlaybookTemplate` — data-driven playbook detail template; five routes at 0% static diff.
 - `ReelCard` — poster, film label, brand mark, optional CTA; runtime selects `data-front` and
   hydrates the clip.
 
@@ -123,7 +123,7 @@ Candidates, in reuse order:
 4. Generated files are format-ignored. Hand edits to the 21 captured bodies are expected; if a
    capture is regenerated, diff it before accepting.
 5. CSS changes go through the existing classes/tokens. If a new class is only added at runtime
-   (Lenis, JS-built markup, inline SVG strings), put it in `src/styles/tano/runtime.css` so a
+   (Lenis, JS-built markup, inline SVG strings), put it in `src/styles/runtime.css` so a
    future purge cannot drop it.
 6. `npm run check` is the merge gate; `npm run assert:static` must report 44 routes and zero
    dynamic routes.

@@ -7,10 +7,10 @@ docs/coordination
 package-lock.json
 next-env.d.ts
 *.tsbuildinfo
-src/components/sites/tano/replica
+src/app/**/_components/captured-body.tsx
 src/app/_home/captured-body.tsx
 src/content/pages
 src/app/_runtime/use-case-scenes.ts
-src/styles/tano/source.css
+src/styles/design-system.css
 
 .tmp/

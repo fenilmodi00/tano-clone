@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/news.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { NewsReplica } from "../../components/sites/tano/replica/NewsReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <NewsReplica />;
+  return <CapturedBody />;
 }

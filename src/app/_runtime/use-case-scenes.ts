@@ -8,7 +8,7 @@
  * captured. Each payload is gzip + base64 of that sanitized frame. Image
  * URLs were rewritten to local /sites/tano/images assets before
  * compression; all other markup (scene classes, `--at`/`--room`
- * animation inputs, SVG defs) is verbatim so src/styles/tano/source.css
+ * animation inputs, SVG defs) is verbatim so src/styles/design-system.css
  * drives the scene exactly as it does on the live site.
  *
  * Order matches the .hp-steps-seg-button order.

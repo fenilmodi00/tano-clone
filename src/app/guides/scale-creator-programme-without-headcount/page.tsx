@@ -1,5 +1,5 @@
 import pageData from "@/content/pages/guides/scale-creator-programme-without-headcount.json";
-import { GuideTemplate } from "@/components/sites/tano/pages/guide-page";
+import { GuideTemplate } from "../_components/guide-template";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata = buildPageMetadata(pageData);

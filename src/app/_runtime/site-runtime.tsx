@@ -16,7 +16,7 @@ import { useExperiments } from "@/app/_home/hooks/use-experiments";
 import { useHeroCampaign } from "@/app/_home/hooks/use-hero-campaign";
 import { useHomeInfo } from "@/app/_home/hooks/use-home-info";
 import { useHomeMedia } from "@/app/_home/hooks/use-home-media";
-import { useCaseStudyMedia } from "@/components/sites/tano/motion/use-case-media";
+import { useCaseStudyMedia } from "@/app/case-studies/_components/use-case-study-media";
 import { mountFormsRuntime } from "./forms-runtime";
 import { usePageBehaviours } from "./use-page-behaviours";
 

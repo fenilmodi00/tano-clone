@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/guides.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { GuidesReplica } from "../../components/sites/tano/replica/GuidesReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <GuidesReplica />;
+  return <CapturedBody />;
 }

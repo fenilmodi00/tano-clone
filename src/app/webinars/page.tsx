@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/webinars.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { WebinarsReplica } from "../../components/sites/tano/replica/WebinarsReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <WebinarsReplica />;
+  return <CapturedBody />;
 }

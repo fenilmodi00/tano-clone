@@ -26,7 +26,7 @@ build time. Search indexing is opt-in via `NEXT_PUBLIC_ALLOW_INDEXING=true`. See
 - **44 routes**: home, two use cases, case-study hub + four studies, guides hub + 14 data-driven
   guides, compare hub + four data-driven comparisons, playbooks hub + five data-driven playbooks,
   careers hub + three roles, news hub + article, webinars, privacy, for creators, talk to us.
-- **Design system** in `src/styles/tano/`: the captured token/keyframe/responsive system, split
+- **Design system** in `src/styles/`: the captured token/keyframe/responsive system, split
   into the purged vendor stylesheet plus a runtime-only stylesheet for Lenis and inline-SVG classes.
   Fonts are the real ABC Whyte files, preloaded with `font-display: swap`.
 - **Shell**: fixed glass nav with dropdowns, mobile menu with focus handling, footer, cookie
@@ -44,22 +44,24 @@ build time. Search indexing is opt-in via `NEXT_PUBLIC_ALLOW_INDEXING=true`. See
 ## Architecture
 
 ```
-src/app/<route>/page.tsx          route wrapper + metadata from the route's JSON
-src/components/sites/tano/
-  replica/                        captured route bodies (server components; 35 routes)
-  pages/playbook-page.tsx         data-driven template for the 5 playbook detail routes
-  pages/compare-page.tsx          data-driven template for the 4 compare detail routes
-  ui/tano-button.tsx              shared button/link primitive (99 call sites)
-  ui/faq-row.tsx                  shared FAQ accordion row (88 call sites)
-  media/reel-card.tsx             shared case-study reel card (235 call sites)
-  shell/                          nav, footer, consent, drawer, logo strings
-  motion/                         one hook per behaviour, composed by SiteRuntime
-  home/ pages/ media/ forms/      family controllers and media behaviours
-src/content/tano/
+src/app/<route>/page.tsx          route entry + metadata from the route's JSON
+src/app/<route>/_components/      route-local captured body (21 routes)
+src/app/_home/                    home body, data and controllers
+src/app/_runtime/                 client runtime composition
+src/app/guides/_components/       guide template + brands (14 details)
+src/app/compare/_components/      compare template (4 details)
+src/app/playbooks/_components/    playbook template (5 details)
+src/components/ui/                shared button/link and FAQ row
+src/components/layout/            header, footer, mobile nav, consent, logo strings
+src/components/media/             shared case-study reel card
+src/components/status-page.tsx    shared 404/error/loading surface
+src/hooks/                        shared client hooks (Lenis, reveal, scroll, observers)
+src/lib/                          metadata, site config, motion primitives, form model
+src/content/
   routes.ts                       generated route/SEO manifest (single source for sitemap)
-  pages/*.json                    typed route content (metadata + playbook/compare template input)
+  pages/                          route-mirrored JSON content
   types.ts                        content model
-src/styles/tano/                  design system, purged source CSS, runtime and route shims
+src/styles/                       design system, runtime CSS, route shims
 scripts/                          capture, generation, verification and CI assertions
 docs/ARCHITECTURE.md              current architecture + remaining migration plan
 docs/research/, docs/verify/      local evidence (not tracked; see docs/EVIDENCE.md)
@@ -67,16 +69,17 @@ docs/research/, docs/verify/      local evidence (not tracked; see docs/EVIDENCE
 
 ### Route and content model
 
-- `src/content/tano/routes.ts` is generated from the 44 JSON files by
+- `src/content/routes.ts` is generated from the 44 JSON files by
   `scripts/generate-route-manifest.mjs`. `npm run content:check` fails when it is stale.
 - Every route's `page.tsx` imports its own JSON and calls `buildPageMetadata`; there is no second
   title/description copy in the page file.
 - The 14 guide details, four compare details and five playbook details render from JSON through
-  `GuidePage`, `ComparePage` and `PlaybookPage`. The other 21 route bodies are checked-in captured
-  markup (formatted, linted, and componentized where patterns were uniform). The capture generator
-  is now a research tool, not a build step: running it overwrites hand edits.
-- `SiteRuntime` keeps global Lenis/ground-tone mounts alive across navigation and remounts
-  route-scoped behaviours after the App Router commits a route.
+  `GuideTemplate`, `CompareTemplate` and `PlaybookTemplate`. The other 21 routes colocate a
+  checked-in captured body at `src/app/<route>/_components/captured-body.tsx` (formatted, linted,
+  and componentized where patterns were uniform). The capture generator is now a research tool,
+  not a build step: running it overwrites hand edits.
+- `SiteRuntime` at `src/app/_runtime/site-runtime.tsx` keeps global Lenis/ground-tone mounts alive
+  across navigation and remounts route-scoped behaviours after the App Router commits a route.
 
 ### Regenerate captures (research only)
 
@@ -87,8 +90,9 @@ node scripts/extract-source-content.mjs    # rebuild content JSON
 node scripts/generate-route-manifest.mjs   # rebuild routes.ts
 ```
 
-`generate-replicas.mjs` still exists to recreate the 35 captured route bodies. Do not run it on a
-tree with hand edits unless you intend to replace them.
+`generate-replicas.mjs` recreates the 21 captured route bodies, skips the JSON-template families,
+and supports `--dry-run` to print targets without writing. Do not run it on a tree with hand edits
+unless you intend to replace them.
 
 ## Verification
 

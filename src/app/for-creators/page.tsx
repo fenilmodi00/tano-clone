@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/for-creators.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { ForCreatorsReplica } from "../../components/sites/tano/replica/ForCreatorsReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <ForCreatorsReplica />;
+  return <CapturedBody />;
 }

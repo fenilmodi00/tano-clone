@@ -5,7 +5,7 @@ import { useEffect } from "react";
 /**
  * Source RevealMotion: split display headings into words, then reveal blocks
  * and `.rv-in` headings in document order with a 70ms stagger (capped at 7).
- * CSS lives in src/styles/tano/reveal.css.
+ * CSS lives in src/styles/reveal.css.
  */
 export function useReveal() {
   useEffect(() => {

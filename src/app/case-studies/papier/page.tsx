@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/case-studies/papier.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { CaseStudiesPapierReplica } from "../../../components/sites/tano/replica/CaseStudiesPapierReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <CaseStudiesPapierReplica />;
+  return <CapturedBody />;
 }

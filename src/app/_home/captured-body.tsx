@@ -2,7 +2,7 @@ import { FaqRow } from "@/components/ui/faq-row"
 import { ButtonLink, Button } from "@/components/ui/button"
 import Link from "next/link";
 
-/* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
+/* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">

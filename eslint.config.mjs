@@ -9,7 +9,7 @@ const eslintConfig = defineConfig([
   {
     // Captured marketing copy legitimately contains apostrophes and quotes;
     // escaping them would change the rendered text.
-    files: ["src/components/sites/tano/replica/**/*.tsx"],
+    files: ["src/app/**/_components/captured-body.tsx", "src/app/_home/captured-body.tsx"],
     rules: { "react/no-unescaped-entities": "off" },
   },
   // Override default ignores of eslint-config-next.

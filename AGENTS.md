@@ -21,7 +21,7 @@ Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata o
 ## Tech stack
 
 - **Framework:** Next.js 16 App Router, React 19, TypeScript strict.
-- **Styling:** the ported Tano design system in `src/styles/tano/` (tokens, layers, keyframes).
+- **Styling:** the ported Tano design system in `src/styles/` (tokens, layers, keyframes).
   Tailwind utilities and the shadcn scaffold were removed; do not add a second styling convention.
 - **Motion:** CSS keyframes plus small DOM-query hooks; Lenis for smooth scroll.
 - **Content:** per-route JSON, a generated route/SEO manifest, and data-driven playbook/compare
@@ -33,7 +33,7 @@ Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata o
 - `npm run dev` — dev server on `http://localhost:3000`.
 - `npm run check` — format, content-manifest, lint, typecheck, build, static assertion.
 - `npm run format` / `npm run format:check` — Prettier.
-- `npm run content:check` — fail if `src/content/tano/routes.ts` is stale.
+- `npm run content:check` — fail if `src/content/routes.ts` is stale.
 - `npm run typecheck`, `npm run lint`.
 - `npm run verify:visibility`, `npm run verify:links`, `npm run verify:smoke`,
   `npm run verify:client-nav` — runtime gates against port 3000.
@@ -51,25 +51,26 @@ Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata o
 ## Structure
 
 ```
-src/app/<route>/page.tsx        route wrapper + JSON-derived metadata
-src/components/sites/tano/
-  replica/                     captured route bodies (35 routes; hand-editable)
-  pages/guide-page.tsx         data-driven template for the 14 guide details
-  pages/compare-page.tsx       data-driven template for the 4 compare details
-  pages/playbook-page.tsx      data-driven template for the 5 playbook details
-  pages/compare-page.tsx       data-driven template for the 4 compare details
-  ui/                          shared button and FAQ row
-  media/                       shared reel card + case-film controllers
-  shell/                       header, footer, consent, drawer, logo strings
-  motion/                      behaviour hooks composed by SiteRuntime
-  home/ pages/ forms/          family controllers
-src/content/tano/
-  routes.ts                    generated route/SEO manifest
-  pages/*.json                 route content
+src/app/<route>/page.tsx        route entry + JSON-derived metadata
+src/app/<route>/_components/    route-local captured body (21 routes)
+src/app/_home/                  home body, data and controllers
+src/app/_runtime/               client runtime composition
+src/app/guides/_components/     guide template + brands (14 details)
+src/app/compare/_components/    compare template (4 details)
+src/app/playbooks/_components/  playbook template (5 details)
+src/components/ui/              shared button and FAQ row
+src/components/layout/          header, footer, mobile nav, consent, logo strings
+src/components/media/           shared reel card
+src/components/status-page.tsx  shared 404/error/loading surface
+src/hooks/                      shared client hooks
+src/lib/                        metadata, site config, motion primitives, form model
+src/content/
+  routes.ts                     generated route/SEO manifest
+  pages/                        route-mirrored JSON content
   types.ts
-src/styles/tano/               design system, purged CSS, runtime CSS, route shims
-scripts/                       capture, generation, verification, assertions
-docs/ARCHITECTURE.md           current design + migration plan
+src/styles/                     design system, purged CSS, runtime CSS, route shims
+scripts/                        capture, generation, verification, assertions
+docs/ARCHITECTURE.md            current design + migration plan
 ```
 
 ## Rules
@@ -80,7 +81,7 @@ docs/ARCHITECTURE.md           current design + migration plan
 - Generated replicas/content/CSS are format-ignored. Running the capture generator overwrites
   hand edits; diff before accepting.
 - Runtime-only classes (Lenis, JS-built markup, inline SVG strings) belong in
-  `src/styles/tano/runtime.css`, not the purged vendor stylesheet.
+  `src/styles/runtime.css`, not the purged vendor stylesheet.
 - Keep the `@media (scripting: none)` reveal fallback when changing reveal CSS or hooks.
 - Do not add fixed `width`/`height` to absolutely positioned media without checking the CSS
   aspect ratio; this previously distorted the case-study reel cards.

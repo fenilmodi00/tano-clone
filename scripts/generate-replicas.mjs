@@ -12,7 +12,9 @@ const HTMLtoJSX = require("htmltojsx");
 import * as cheerio from "cheerio";
 
 const SRC = process.env.TANO_SRC || "/home/boxd/tano/site";
-const OUT = path.resolve("src/components/sites/tano/replica");
+const CONTENT_DIR = "src/content/pages";
+const TEMPLATE_FAMILIES = new Set(["guide", "compare", "playbook"]);
+const dryRun = process.argv.includes("--dry-run");
 const MAP = JSON.parse(fs.readFileSync("docs/research/tano/asset-map.json", "utf8"));
 const ROUTES = JSON.parse(fs.readFileSync("docs/research/tano/routes.json", "utf8"));
 const ORIGIN = "https://www.tano.ai";
@@ -164,22 +166,37 @@ function sanitizeJsx(jsx) {
   return jsx;
 }
 
-function componentName(route) {
-  const parts = route.split("/").filter(Boolean);
-  const base = parts.length ? parts.join("-") : "home";
-  return (
-    base
-      .split("-")
-      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-      .join("") + "Replica"
-  );
+function readFamilies() {
+  const families = new Map();
+  for (const file of fs.readdirSync(CONTENT_DIR, { recursive: true })) {
+    if (!String(file).endsWith(".json")) continue;
+    const data = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, String(file)), "utf8"));
+    families.set(data.route, data.family);
+  }
+  return families;
+}
+
+function outputFor(route) {
+  const dir =
+    route === "/" ? "src/app/_home" : path.join("src/app", route.replace(/^\//, ""), "_components");
+  return path.join(dir, "captured-body.tsx");
 }
 
 function main() {
-  fs.mkdirSync(OUT, { recursive: true });
   const made = [];
+  const families = readFamilies();
   for (const row of ROUTES) {
     const route = row.route;
+    if (TEMPLATE_FAMILIES.has(families.get(route))) {
+      console.log("TEMPLATE", route);
+      continue;
+    }
+    const outFile = outputFor(route);
+    if (dryRun) {
+      console.log("WOULD WRITE", route, "->", outFile);
+      made.push({ route, file: outFile });
+      continue;
+    }
     const file = path.join(SRC, savedFile(route));
     if (!fs.existsSync(file)) {
       console.log("MISSING", route, savedFile(route));
@@ -212,7 +229,6 @@ function main() {
     // unwrap the synthetic root
     jsx = jsx.replace(/^<div data-replica-root>/, "").replace(/<\/div>\s*$/, "");
     jsx = sanitizeJsx(jsx);
-    const name = componentName(route);
     const attrStr = Object.entries(mainAttrs)
       .map(([k, v]) => {
         if (k === "class") return `className=${JSON.stringify(v)}`;
@@ -220,8 +236,8 @@ function main() {
         return `${k}=${JSON.stringify(v)}`;
       })
       .join(" ");
-    const out = `/* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/tano/source.css. */
-export function ${name}() {
+    const out = `/* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
+export function CapturedBody() {
   return (
     <main ${attrStr}>
       ${pageStyles ? `<style dangerouslySetInnerHTML={{ __html: ${JSON.stringify(pageStyles)} }} />` : ""}
@@ -230,11 +246,12 @@ ${jsx}
   );
 }
 `;
-    fs.writeFileSync(path.join(OUT, name + ".tsx"), out);
-    made.push({ route, name, bytes: out.length });
-    console.log(String(out.length).padStart(7), route, "->", name);
+    fs.mkdirSync(path.dirname(outFile), { recursive: true });
+    fs.writeFileSync(outFile, out);
+    made.push({ route, file: outFile, bytes: out.length });
+    console.log(String(out.length).padStart(7), route, "->", outFile);
   }
-  console.log("generated", made.length);
+  console.log(dryRun ? "would generate" : "generated", made.length);
 }
 
 main();

@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/case-studies/bloom-and-wild.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { CaseStudiesBloomAndWildReplica } from "../../../components/sites/tano/replica/CaseStudiesBloomAndWildReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <CaseStudiesBloomAndWildReplica />;
+  return <CapturedBody />;
 }

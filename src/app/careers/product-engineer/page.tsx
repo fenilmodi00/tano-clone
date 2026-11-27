@@ -1,9 +1,9 @@
 import pageData from "@/content/pages/careers/product-engineer.json";
 import { buildPageMetadata } from "@/lib/metadata";
-import { CareersProductEngineerReplica } from "../../../components/sites/tano/replica/CareersProductEngineerReplica";
+import { CapturedBody } from "./_components/captured-body";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <CareersProductEngineerReplica />;
+  return <CapturedBody />;
 }

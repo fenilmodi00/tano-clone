@@ -1,15 +1,15 @@
-@import "../styles/tano/source.css";
-@import "../styles/tano/runtime.css";
-@import "../styles/tano/reveal.css";
-@import "../styles/tano/hero.css";
-@import "../styles/tano/ground.css";
-@import "../styles/tano/home-info.css";
-@import "../styles/tano/pages.css";
-@import "../styles/tano/media.css";
-@import "../styles/tano/forms.css";
-@import "../styles/tano/drawer.css";
-@import "../styles/tano/consent.css";
-@import "../styles/tano/pp-live.css";
+@import "../styles/design-system.css";
+@import "../styles/runtime.css";
+@import "../styles/reveal.css";
+@import "../styles/home-hero.css";
+@import "../styles/ground.css";
+@import "../styles/home-info.css";
+@import "../styles/route-overrides.css";
+@import "../styles/case-media.css";
+@import "../styles/forms.css";
+@import "../styles/drawer.css";
+@import "../styles/consent.css";
+@import "../styles/process-deck.css";
 
 /* Template-level corrections kept outside the ported source stylesheet. */
 

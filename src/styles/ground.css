@@ -1,0 +1,14 @@
+/*
+ * Ground: the veil, the html ground mix, `[data-ground-tone]` marks, the
+ * 320ms swap window and the `--state-colour-run` freeze all ship in the
+ * ported source stylesheet (`styles/design-system.css`). Only the reduced-
+ * motion guard for the veil is added here; the veil itself is mounted by
+ * `motion/use-ground-tone.ts` inside `.wire-veiled`, where the source keeps it,
+ * so it inherits the brand's `--end-ground-*` tokens.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .wire-ground-veil {
+    animation: none !important;
+    transition: none !important;
+  }
+}
