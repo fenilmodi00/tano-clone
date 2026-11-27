@@ -26,12 +26,32 @@ function injectFilm(frame: HTMLElement, film: CaseFilm, signal: AbortSignal): HT
   video.className = "wire-study-video-player";
   video.controls = true;
   video.playsInline = true;
-  video.preload = "metadata";
+  video.preload = "none";
   video.poster = film.poster;
   video.src = film.src ?? "";
   video.setAttribute("data-case-film-video", film.id);
   video.setAttribute("aria-label", film.title);
   video.setAttribute("controlslist", "nodownload");
+
+  // Native controls are the only way to start a case film. Keep the first
+  // paint download-free, then raise the hint as soon as the visitor activates
+  // playback. `pointerdown` may prime the load; `play` (which also covers
+  // keyboard activation) must only raise the hint so it never aborts a
+  // playback the browser has already started.
+  const raisePreload = () => {
+    if (video.preload === "none") video.preload = "auto";
+  };
+  video.addEventListener(
+    "pointerdown",
+    () => {
+      if (video.preload !== "none") return;
+      raisePreload();
+      // NETWORK_EMPTY (0): no resource selected yet, so an explicit load is safe.
+      if (video.networkState === 0) video.load();
+    },
+    { passive: true, signal },
+  );
+  video.addEventListener("play", raisePreload, { signal });
 
   video.addEventListener(
     "loadedmetadata",
@@ -366,6 +386,8 @@ function hydrateReel(
       video.pause();
       return;
     }
+    // The front card is active: raise the hint before the first fetch.
+    video.preload = "auto";
     if (!video.getAttribute("src")) {
       const film = films[frontIndex % count];
       if (!film) return;

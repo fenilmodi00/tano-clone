@@ -12,5 +12,7 @@ src/app/_home/captured-body.tsx
 src/content/pages
 src/app/_runtime/use-case-scenes.ts
 src/styles/design-system.css
+agent
+.agents/skills
 
 .tmp/

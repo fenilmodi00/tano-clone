@@ -86,7 +86,7 @@ export function CapturedBody() {
                         muted
                         playsInline
                         poster="/sites/tano/images/tano-25.jpg"
-                        preload="metadata"
+                        preload="none"
                         src="/sites/tano/extras/1eabace16b5517e329d4a165bf497036ebacf433.mp4"
                       />
                       <span aria-hidden="true" className="hp-camp-video-blur" />

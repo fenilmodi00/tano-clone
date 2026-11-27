@@ -225,10 +225,10 @@ function dropdownsOpen(state) {
 function destinationSettled(state) {
   return Boolean(
     state &&
-      !state.readError &&
-      state.hasMain &&
-      state.mainTextLength > 200 &&
-      !state.loadingVisible,
+    !state.readError &&
+    state.hasMain &&
+    state.mainTextLength > 200 &&
+    !state.loadingVisible,
   );
 }
 

@@ -81,3 +81,7 @@ docs/verify/theme/
 
 # Local probe scratch
 .tmp/
+
+# Locally installed skill packs (not part of the app)
+agent/
+.agents/skills/*

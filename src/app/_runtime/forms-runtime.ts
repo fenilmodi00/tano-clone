@@ -262,13 +262,11 @@ function enhanceTalkForm(form: HTMLFormElement): Cleanup {
 
   const onChange = (event: Event) => {
     const target = event.target;
-    if (
-      !(
-        target instanceof HTMLInputElement ||
-        target instanceof HTMLTextAreaElement ||
-        target instanceof HTMLSelectElement
-      )
-    )
+    if (!(
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLTextAreaElement ||
+      target instanceof HTMLSelectElement
+    ))
       return;
     if (sent) return;
     const name = target.name;

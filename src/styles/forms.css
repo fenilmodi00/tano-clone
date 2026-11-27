@@ -75,12 +75,6 @@ html[data-forms-menu="open"] .wire-chrome {
   z-index: 60;
 }
 
-html[data-forms-menu="open"] .hp-notify[data-open] {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .wire-nav-mobile-panel:focus {
   outline: none;
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { FaqRow } from "@/components/ui/faq-row";
 import { ButtonLink } from "@/components/ui/button";
+import { PageEffects } from "@/app/_runtime/page-effects";
 
 type Ground = "light" | "dark";
 
@@ -1850,6 +1851,7 @@ export function CompareTemplate({ page }: { page: CompareContent }) {
         );
       })}
       <ClosingSection page={page} slug={layout.slug} />
+      <PageEffects />
     </main>
   );
 }

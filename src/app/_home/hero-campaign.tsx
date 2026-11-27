@@ -116,7 +116,7 @@ function renderScene(campaign: HeroCampaign) {
     '<div class="hp-camp-scene">' +
     `<p class="wire-visually-hidden">${escape(campaign.handle)} for ${escape(campaign.brand.name)}</p>` +
     '<div class="hp-camp-post"><div class="hp-camp-video wire-glass-edge" data-rim="true">' +
-    `<video aria-label="${escape(campaign.handle)}’s post for ${escape(campaign.brand.name)}" loop muted playsinline preload="metadata" poster="${campaign.clip.poster}" src="${campaign.clip.src}"></video>` +
+    `<video aria-label="${escape(campaign.handle)}’s post for ${escape(campaign.brand.name)}" loop muted playsinline preload="none" poster="${campaign.clip.poster}" src="${campaign.clip.src}"></video>` +
     '<span aria-hidden="true" class="hp-camp-video-blur"></span>' +
     '<span aria-hidden="true" class="hp-camp-video-fade"></span>' +
     `<span class="hp-camp-logo"><img alt="${escape(campaign.brand.name)}" decoding="async" style="${FILL_STYLE}" src="${campaign.brand.logo}" /></span>` +
@@ -383,6 +383,11 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
   /* ---------------------------------------------------------------- videos */
 
   function playVideo(video: HTMLVideoElement) {
+    // Scenes ship with preload="none" so first paint fetches no film bytes.
+    // Only an active, visible reel raises the hint; the networkState guard
+    // keeps repeated syncs from restarting a load that is already in flight.
+    if (video.preload === "none") video.preload = "auto";
+    if (video.networkState === 0) video.load();
     const attempt = video.play();
     if (attempt) {
       // Autoplay may be denied; never surface that as a page error.
@@ -536,7 +541,9 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
   // offscreen campaign must stay frozen even when another controller plays it.
   const onPlay = (event: Event) => {
     const target = event.target;
-    if (target instanceof HTMLVideoElement && paused) target.pause();
+    if (target instanceof HTMLVideoElement && (paused || videoVisible.get(target) !== true)) {
+      target.pause();
+    }
   };
 
   /* ----------------------------------------------------------------- setup */

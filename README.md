@@ -7,7 +7,7 @@ A Next.js 16 rebuild of the Tano marketing site: 44 routes, local media, source-
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run check      # format + content manifest + lint + typecheck + build + static assertion
+npm run check      # format + content checks + lint + typecheck + tests + build + static assertion
 ```
 
 Production:
@@ -97,7 +97,9 @@ unless you intend to replace them.
 ## Verification
 
 ```bash
-npm run check                 # format, content manifest, lint, typecheck, build, static assertion
+npm run check                 # format, content, lint, typecheck, tests, build, static assertion
+npm run content:validate      # Zod-validate all 44 route JSON files
+npm test                      # Vitest content/unit/component suites
 npm run verify:visibility     # 44 routes: above-fold content, hydration, console errors
 npm run verify:client-nav     # 44 routes: client navigation + browser history
 npm run verify:links          # internal link/404 audit

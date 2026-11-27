@@ -9,6 +9,7 @@ import {
 } from "./guide-brands";
 import { FaqRow } from "@/components/ui/faq-row";
 import { ButtonLink } from "@/components/ui/button";
+import { PageEffects } from "@/app/_runtime/page-effects";
 
 type GuideCardItem = { title: string; body?: string };
 type GuideStatItem = { value: string; label: string };
@@ -905,6 +906,7 @@ export function GuideTemplate({ page }: { page: GuideContent }) {
       {page.closing ? (
         <GuideClosing closing={page.closing} glyphBase={glyphBase} metricId={metricId} />
       ) : null}
+      <PageEffects />
     </main>
   );
 }

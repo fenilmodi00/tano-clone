@@ -24,10 +24,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -41,11 +41,25 @@ jobs:
       - name: Content manifest check
         run: npm run content:check
 
+      - name: Content validation
+        run: npm run content:validate
+
       - name: Lint
         run: npm run lint
 
       - name: Type check
         run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Cache Next.js build cache
+        uses: actions/cache@v5
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-${{ github.job }}-next-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.job }}-next-
 
       - name: Build and assert static output
         run: npm run build && npm run assert:static
@@ -58,10 +72,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -69,8 +83,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Cache Playwright browsers
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
+
+      - name: Cache Next.js build cache
+        uses: actions/cache@v5
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-${{ github.job }}-next-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.job }}-next-
 
       - name: Build
         run: npm run build
@@ -93,3 +123,6 @@ jobs:
 
       - name: Route smoke
         run: npm run verify:smoke
+
+      - name: Client navigation
+        run: npm run verify:client-nav

@@ -5,9 +5,9 @@
 # ============================================
 
 # IMPORTANT: Node.js Version Maintenance
-# This Dockerfile defaults to Node.js 24.14.1-slim to match the repo's Node 24 baseline.
+# This Dockerfile defaults to Node.js 24.22.3-slim to match the repo's Node 24 baseline.
 # To ensure security and compatibility, update the NODE_VERSION ARG when the project's Node baseline changes.
-ARG NODE_VERSION=24.14.1-slim
+ARG NODE_VERSION=24.22.3-slim
 
 FROM node:${NODE_VERSION} AS dependencies
 
@@ -62,12 +62,11 @@ ENV NODE_ENV=production
 # ENV NEXT_TELEMETRY_DISABLED=1
 
 # Build Next.js application
-# If you want to speed up Docker rebuilds, you can cache the build artifacts
-# by adding: --mount=type=cache,target=/app/.next/cache
-# This caches the .next/cache directory across builds, but it also prevents
-# .next/cache/fetch-cache from being included in the final image, meaning
-# cached fetch responses from the build won't be available at runtime.
-RUN if [ -f package-lock.json ]; then \
+# The BuildKit cache mount caches .next/cache across rebuilds to speed up
+# compilation. Because the directory is a cache mount, its contents are not
+# part of the builder layer, so .next/cache/fetch-cache is not available at
+# runtime; the runner stage does not copy it.
+RUN --mount=type=cache,target=/app/.next/cache if [ -f package-lock.json ]; then \
   npm run build; \
   elif [ -f yarn.lock ]; then \
   corepack enable yarn && yarn build; \
