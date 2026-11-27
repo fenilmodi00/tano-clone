@@ -26,6 +26,7 @@
     "verify:motion": "node scripts/compare-motion.mjs --scene all --width 1568",
     "verify:visibility": "node scripts/check-visibility.mjs",
     "verify:client-nav": "node scripts/audit-client-nav.mjs --base http://127.0.0.1:3000",
+    "verify:nav": "node scripts/check-nav-regressions.mjs",
     "content:manifest": "node scripts/generate-route-manifest.mjs",
     "content:check": "node scripts/generate-route-manifest.mjs --check",
     "verify:smoke": "node scripts/smoke-routes.mjs",

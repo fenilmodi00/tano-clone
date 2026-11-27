@@ -1,9 +1,9 @@
 import pageData from "@/content/tano/pages/guides-outgrown-influencer-agency.json";
+import { GuidePage } from "@/components/sites/tano/pages/guide-page";
 import { buildPageMetadata } from "@/lib/metadata";
-import { GuidesOutgrownInfluencerAgencyReplica } from "../../../components/sites/tano/replica/GuidesOutgrownInfluencerAgencyReplica";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <GuidesOutgrownInfluencerAgencyReplica />;
+  return <GuidePage page={pageData} />;
 }

@@ -11,7 +11,7 @@ removed or restructured, and the remaining route-migration path.
 | Styling      | Ported Tano design-system CSS, cascade layers, 129 keyframes | Tailwind is not used by the clone; see the decision below.                         |
 | Motion       | Small DOM-query hooks + CSS keyframes                        | Lenis for smooth scroll; no GSAP.                                                  |
 | Components   | Server components + small client islands                     | Shell, drawer, consent, forms and behaviours are the client surface.               |
-| Content      | Typed JSON per route; generated route manifest               | Metadata and the five playbook pages render from JSON.                             |
+| Content      | Typed JSON per route; generated route manifest               | Metadata and 23 route bodies render from JSON; 21 captured bodies remain.          |
 | Verification | Playwright, pixelmatch, pngjs/sharp                          | Static build assertion + runtime visibility/link/smoke + live-source pixel matrix. |
 | Deploy       | `output: "standalone"`, Docker multi-stage                   | Build args carry `NEXT_PUBLIC_SITE_URL` and indexing policy.                       |
 
@@ -56,11 +56,11 @@ removed or restructured, and the remaining route-migration path.
   2.4k rules into utilities would be a second convention with no maintenance payoff and high
   pixel risk. Tailwind and the PostCSS scaffold were removed; new UI primitives reuse the
   existing tokens/classes.
-- **No JSON rewrite of all 44 bodies yet.** Per-route JSON covers 37–91% of the captured markup
-  and misses 180 replica asset references, forms, some anchors and media hydration. Converting
-  all pages without a parity project would silently drop content. The five playbooks proved the
-  template path at 0% static diff and the four compare pages at 0.11%; the remaining families are
-  staged below.
+- **The remaining 21 captured bodies were not rewritten blindly.** Per-route JSON covers 37–67%
+  of their markup and misses replica asset references, forms, anchors and media hydration.
+  Converting them without the same parity pass would silently drop content. Guides, compare and
+  playbooks proved the template path (≤0.27% / ≤0.2% / 0% static diff); the remaining families
+  are staged below.
 
 ## 3. Remaining route migration path
 
@@ -88,6 +88,11 @@ Extracted (keep using):
 - `TanoButtonLink` / `TanoButton` — appearance via `data-variant|size|material`, optional chevron.
 - `FaqRow` — shared id contract `{id}-question` / `{id}-answer`; delegated interaction stays in
   `interactions.tsx`.
+- `GuidePage` — data-driven guide detail template (hero, prose/list/table/quotes, FAQ, brands,
+  closing); 14 routes at ≤0.27% static diff.
+- `ComparePage` — data-driven compare detail template (prose, comparison tables, verdict, FAQ,
+  brands, closing); four routes at ≤0.2%.
+- `PlaybookPage` — data-driven playbook detail template; five routes at 0% static diff.
 - `ReelCard` — poster, film label, brand mark, optional CTA; runtime selects `data-front` and
   hydrates the clip.
 
@@ -107,7 +112,7 @@ Candidates, in reuse order:
    title/description blocks to `page.tsx`.
 2. Any new internal link uses `next/link`; do not reintroduce a document-level click interceptor.
 3. Any new route must be added to the JSON set; `npm run content:check` validates the manifest.
-4. Generated files are format-ignored. Hand edits to the 35 captured bodies are expected; if a
+4. Generated files are format-ignored. Hand edits to the 21 captured bodies are expected; if a
    capture is regenerated, diff it before accepting.
 5. CSS changes go through the existing classes/tokens. If a new class is only added at runtime
    (Lenis, JS-built markup, inline SVG strings), put it in `src/styles/tano/runtime.css` so a
@@ -115,6 +120,21 @@ Candidates, in reuse order:
 6. `npm run check` is the merge gate; `npm run assert:static` must report 44 routes and zero
    dynamic routes.
 7. Keep the no-JS reveal fallback when touching `reveal.css` or the reveal hooks.
+8. Client navigation owns the scroll position: `useRouteScrollReset` commits every pathname
+   change at the top (Lenis-aware, hash links excepted). Do not remove it or re-add a
+   document-level click handler; Next's default "maintain offset when the page is visible"
+   behavior is what landed deep-scrolled visitors in the shared footer.
+9. The root `loading.tsx` fallback must stay at least viewport height. The header hides when the
+   footer enters the top half of the viewport, so a short transition shell would pull the footer
+   in, animate the nav away and leave the visitor at the bottom of the page.
+10. Menus live in the persistent shell. Any new shell menu must close on a committed pathname
+    change and on its own item click; component state otherwise survives navigation.
+11. Do not enable Cloudflare features that rewrite HTML at the edge (Email Address Obfuscation,
+    Rocket Loader) for this zone. The dev tunnel was observed serving `__cf_email__` /
+    `data-cfemail` attributes in place of `mailto:` anchors. Wrapping addresses in
+    `<!--email_off-->` markers is not a safe workaround: Cloudflare strips the markers from
+    React-managed HTML, which itself produces a hydration attribute mismatch. Keep the zone
+    rewriters off; React hydration must receive the bytes the server rendered.
 
 ## 6. Modern web notes
 

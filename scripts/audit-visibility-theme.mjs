@@ -190,10 +190,6 @@ function pad(value, width) {
   return text.length >= width ? text : text + " ".repeat(width - text.length);
 }
 
-function round(value, digits = 2) {
-  return Number.isFinite(value) ? Number(value.toFixed(digits)) : null;
-}
-
 async function waitForServer(base, timeoutMs) {
   const start = Date.now();
   let lastError = "no response";
@@ -1274,6 +1270,7 @@ async function findAnchor(page, targetPath) {
   }, targetPath);
 }
 
+/** Click a temporary anchor for the drawer probe; nothing else intercepts it. */
 async function clickTemporaryAnchor(page, href) {
   return page.evaluate((url) => {
     const anchor = document.createElement("a");
@@ -1334,17 +1331,19 @@ async function waitForPath(page, expected, timeoutMs = 8000) {
 }
 
 /**
- * Navigate from "/" to the target using a real internal anchor when one
- * exists, otherwise dispatch a click on a temporary anchor so the delegated
- * useClientNav handler (router.push) runs.
+ * Navigate from "/" to the target using a real internal anchor. Routes with
+ * no in-page anchor are skipped — nothing intercepts synthetic anchors, so a
+ * temporary-anchor click would silently do nothing. The direct-load job still
+ * covers such a route's scroll states.
  */
 async function clientNavigate(page, expected) {
   const beforePath = await page.evaluate(() => location.pathname);
   const result = {
-    via: "temp",
+    via: "skipped",
+    skipped: false,
+    skipReason: null,
     anchor: null,
     beforePath,
-    fallback: false,
     nav: { ok: false, ms: 0, actual: beforePath },
   };
   if (
@@ -1356,33 +1355,25 @@ async function clientNavigate(page, expected) {
     return result;
   }
   const anchor = await findAnchor(page, expected);
-  result.anchor = anchor.found
-    ? {
-        text: anchor.text,
-        href: anchor.href,
-        visible: anchor.visible,
-        inMain: anchor.inMain,
-        inFooter: anchor.inFooter,
-      }
-    : null;
-  if (anchor.found) {
-    await page
-      .locator('[data-audit-anchor="1"]')
-      .first()
-      .evaluate((element) => element.click())
-      .catch(() => {});
-    result.via = "anchor-dom";
-    result.nav = await waitForPath(page, expected, 5000);
-    if (!result.nav.ok) {
-      result.fallback = true;
-      await clickTemporaryAnchor(page, expected.route).catch(() => false);
-      result.via = "temp-after-anchor";
-      result.nav = await waitForPath(page, expected, 7000);
-    }
-  } else {
-    await clickTemporaryAnchor(page, expected.route).catch(() => false);
-    result.nav = await waitForPath(page, expected, 8000);
+  if (!anchor.found) {
+    result.skipped = true;
+    result.skipReason = `no in-page anchor links to ${expected.route}; SPA navigation not attempted`;
+    return result;
   }
+  result.anchor = {
+    text: anchor.text,
+    href: anchor.href,
+    visible: anchor.visible,
+    inMain: anchor.inMain,
+    inFooter: anchor.inFooter,
+  };
+  await page
+    .locator('[data-audit-anchor="1"]')
+    .first()
+    .evaluate((element) => element.click())
+    .catch(() => {});
+  result.via = "anchor-dom";
+  result.nav = await waitForPath(page, expected, 6000);
   return result;
 }
 
@@ -1411,6 +1402,8 @@ async function auditJob(browser, job) {
     expectedPath: expected.pathname,
     expectedHash: expected.hash,
     ok: false,
+    skipped: false,
+    skipReason: null,
     nav: null,
     spaOutcome: null,
     drawer: null,
@@ -1469,6 +1462,16 @@ async function auditJob(browser, job) {
     } else {
       await loadDirect(page, "/");
       const nav = await clientNavigate(page, expected);
+      if (nav.skipped) {
+        // The destination's direct-load job (when included) still covers its
+        // scroll states; this SPA job is recorded as skipped instead of
+        // failing on a nav route it cannot reach by clicking.
+        record.skipped = true;
+        record.skipReason = nav.skipReason;
+        record.nav = { ok: false, via: "skipped", skipped: true, reason: nav.skipReason };
+        record.spaOutcome = "skipped-no-anchor";
+        return record;
+      }
       record.nav = nav;
       await page.waitForTimeout(250);
       try {
@@ -1583,6 +1586,7 @@ async function auditHistory(browser, viewport) {
     screenshots: 0,
   };
   const started = Date.now();
+  let skippedPrerequisite = null;
   try {
     await gotoWithRetry(page, `${opts.base}/`);
     await waitForPageReady(page);
@@ -1596,14 +1600,29 @@ async function auditHistory(browser, viewport) {
         expectedPath: expected.pathname,
         expectedHash: expected.hash,
         ok: false,
+        skipped: false,
+        skipReason: null,
         nav: { ok: false, via: step.kind },
         samples: [],
         failureReasons: [],
         screenshots: 0,
       };
+      if (skippedPrerequisite && step.kind !== "direct") {
+        stepRecord.skipped = true;
+        stepRecord.skipReason = skippedPrerequisite;
+        record.steps.push(stepRecord);
+        continue;
+      }
       try {
         if (step.kind === "client") {
           const nav = await clientNavigate(page, expected);
+          if (nav.skipped) {
+            stepRecord.skipped = true;
+            stepRecord.skipReason = nav.skipReason;
+            skippedPrerequisite = `client step ${step.name} was skipped: ${nav.skipReason}`;
+            record.steps.push(stepRecord);
+            continue;
+          }
           stepRecord.nav = { ...nav.nav, via: nav.via };
           await page.waitForTimeout(250);
           try {
@@ -1730,7 +1749,7 @@ async function auditHistory(browser, viewport) {
       }
       record.steps.push(stepRecord);
     }
-    record.ok = record.steps.every((step) => step.ok);
+    record.ok = record.steps.every((step) => step.ok || step.skipped);
   } catch (error) {
     record.failureReasons = [`exception:${error instanceof Error ? error.message : String(error)}`];
     record.ok = false;
@@ -1962,6 +1981,7 @@ function buildReport(payload) {
   lines.push(`| Route jobs | ${summary.jobs} |`);
   lines.push(`| Route jobs passed | ${summary.jobsPassed} |`);
   lines.push(`| Route jobs failed | ${summary.jobsFailed} |`);
+  lines.push(`| Route jobs skipped (no in-page anchor) | ${summary.jobsSkipped} |`);
   lines.push(`| Scroll samples | ${summary.samples} |`);
   lines.push(`| Samples passed | ${summary.samplesPassed} |`);
   lines.push(`| Samples failed | ${summary.samplesFailed} |`);
@@ -1974,7 +1994,10 @@ function buildReport(payload) {
   lines.push("");
   if (summary.samplesFailed === 0 && summary.jobsFailed === 0) {
     lines.push(
-      "**No hidden or low-contrast content was detected in this run.** The detector is proven red-capable by the negative control below.",
+      `**No hidden or low-contrast content was detected in this run.** The detector is proven red-capable by the negative control below.` +
+        (summary.jobsSkipped
+          ? ` ${summary.jobsSkipped} SPA job(s) were skipped because no in-page anchor links to the route; their direct-load jobs still ran when direct mode was included.`
+          : ""),
     );
   } else {
     lines.push(
@@ -2042,7 +2065,7 @@ function buildReport(payload) {
       .join("");
     const pageErrors = (record.errors || []).filter((error) => error.kind === "pageerror").length;
     lines.push(
-      `| \`${record.route}\` | ${record.viewport.name} | ${record.mode} | \`${flagString(samples)}\` | ${worst.contrastMin ?? "-"} | ${worst.opacityMin ?? "-"} | ${worst.veilMax ?? "-"} | ${tones} | ${pageErrors} | ${record.ok ? "PASS" : "FAIL"} |`,
+      `| \`${record.route}\` | ${record.viewport.name} | ${record.mode} | \`${record.skipped ? "-" : flagString(samples)}\` | ${worst.contrastMin ?? "-"} | ${worst.opacityMin ?? "-"} | ${worst.veilMax ?? "-"} | ${tones || "-"} | ${pageErrors} | ${record.skipped ? "SKIP" : record.ok ? "PASS" : "FAIL"} |`,
     );
   }
   lines.push("");
@@ -2053,7 +2076,7 @@ function buildReport(payload) {
   for (const record of history) {
     for (const step of record.steps) {
       lines.push(
-        `| ${record.viewport.name} | ${step.kind} \`${step.name}\` | \`${step.route}\` | \`${flagString(step.samples)}\` | ${step.ok ? "PASS" : "FAIL"} |`,
+        `| ${record.viewport.name} | ${step.kind} \`${step.name}\` | \`${step.route}\` | \`${step.skipped ? "-" : flagString(step.samples)}\` | ${step.skipped ? "SKIP" : step.ok ? "PASS" : "FAIL"} |`,
       );
     }
   }
@@ -2105,13 +2128,26 @@ function buildReport(payload) {
       lines.push("");
     }
   }
-  const jobFailures = records.filter((record) => !record.ok && record.samples.length === 0);
+  const jobFailures = records.filter(
+    (record) => !record.ok && !record.skipped && record.samples.length === 0,
+  );
   if (jobFailures.length) {
     lines.push("### Jobs that failed before sampling");
     lines.push("");
     for (const record of jobFailures) {
       lines.push(
         `- \`${record.route}\` · ${record.viewport.name} · ${record.mode}: ${record.failureReasons.join("; ")}`,
+      );
+    }
+    lines.push("");
+  }
+  const skippedJobs = records.filter((record) => record.skipped);
+  if (skippedJobs.length) {
+    lines.push("### SPA jobs skipped (no in-page anchor)");
+    lines.push("");
+    for (const record of skippedJobs) {
+      lines.push(
+        `- \`${record.route}\` · ${record.viewport.name} · ${record.mode}: ${record.skipReason}`,
       );
     }
     lines.push("");
@@ -2164,7 +2200,7 @@ function buildReport(payload) {
   lines.push("## Method and exact selectors");
   lines.push("");
   lines.push(
-    "- **Route set**: all 44 entries in `docs/research/tano/routes.json`, at 1568×829 and 390×844. Every route is loaded fresh and navigated to from `/` through a real internal anchor when present, otherwise through a temporary anchor whose click is handled by the delegated `useClientNav` handler.",
+    "- **Route set**: all 44 entries in `docs/research/tano/routes.json`, at 1568×829 and 390×844. Every route is loaded fresh and navigated to from `/` through a real internal anchor when present; routes with no in-page anchor are recorded as skipped for the SPA pass and remain covered by their direct-load job.",
   );
   lines.push(
     "- **Scroll states**: `scrollY = 0`, `0.25`, `0.5`, `0.75` and `1.0` of `document.documentElement.scrollHeight - innerHeight`, applied with `window.scrollTo({behavior:'instant'})`.",
@@ -2308,8 +2344,17 @@ function computeSummary(records, history, aggregateRows) {
   const countWith = (predicate) => samples.filter(predicate).length;
   return {
     jobs: records.length,
-    jobsPassed: records.filter((record) => record.ok).length,
-    jobsFailed: records.filter((record) => !record.ok).length,
+    jobsPassed: records.filter((record) => record.ok && !record.skipped).length,
+    jobsFailed: records.filter((record) => !record.ok && !record.skipped).length,
+    jobsSkipped: records.filter((record) => record.skipped).length,
+    skippedRoutes: records
+      .filter((record) => record.skipped)
+      .map((record) => ({
+        route: record.route,
+        viewport: record.viewport.name,
+        mode: record.mode,
+        reason: record.skipReason,
+      })),
     samples: samples.length,
     samplesPassed: samples.length - failed.length,
     samplesFailed: failed.length,
@@ -2323,13 +2368,13 @@ function computeSummary(records, history, aggregateRows) {
     ),
     historySteps: history.reduce((total, record) => total + record.steps.length, 0),
     historyFailed: history.reduce(
-      (total, record) => total + record.steps.filter((step) => !step.ok).length,
+      (total, record) => total + record.steps.filter((step) => !step.ok && !step.skipped).length,
       0,
     ),
     failedRoutes: [
       ...new Set([
         ...failed.map((sample) => sample.route),
-        ...records.filter((record) => !record.ok).map((record) => record.route),
+        ...records.filter((record) => !record.ok && !record.skipped).map((record) => record.route),
       ]),
     ],
     runtimeErrorRoutes,
@@ -2338,7 +2383,11 @@ function computeSummary(records, history, aggregateRows) {
       .slice(0, 10)
       .map(([message, count]) => ({ message, count })),
     causes,
-    exitCode: records.some((record) => !record.ok) || history.some((record) => !record.ok) ? 1 : 0,
+    exitCode:
+      records.some((record) => !record.ok && !record.skipped) ||
+      history.some((record) => !record.ok)
+        ? 1
+        : 0,
   };
 }
 
@@ -2531,7 +2580,7 @@ async function main() {
       const job = jobs[index];
       const record = await auditJob(browser, job);
       results[index] = record;
-      const mark = record.ok ? "PASS" : "FAIL";
+      const mark = record.skipped ? "SKIP" : record.ok ? "PASS" : "FAIL";
       console.log(
         `${pad(index + 1, 3)}/${pad(jobs.length, 3)} ${pad(job.route, 58)} ${pad(job.viewport.name, 10)} ${pad(job.mode, 6)} ${mark} ${record.ms}ms`,
       );
@@ -2569,7 +2618,7 @@ async function main() {
   };
   for (const [group, groupRoutes] of Object.entries(PRIORITY_GROUPS)) {
     const groupSet = new Set(groupRoutes);
-    const relevant = results.filter((record) => groupSet.has(record.route));
+    const relevant = results.filter((record) => groupSet.has(record.route) && !record.skipped);
     coverage.groups[group] = {
       routes: groupRoutes,
       ok: relevant.length > 0 && relevant.every((record) => record.ok),
@@ -2609,9 +2658,18 @@ async function main() {
   console.log("");
   console.log(
     `Summary: ${summary.jobsPassed}/${summary.jobs} jobs pass, ${summary.samplesPassed}/${summary.samples} samples pass` +
+      (summary.jobsSkipped ? `, ${summary.jobsSkipped} skipped` : "") +
       ` | hidden ${summary.hiddenSamples} · contrast ${summary.contrastSamples} · overlay ${summary.coveredSamples} · ground ${summary.groundSamples}` +
       ` | history ${summary.historySteps - summary.historyFailed}/${summary.historySteps}`,
   );
+  if (summary.skippedRoutes.length) {
+    console.log(
+      `Skipped SPA jobs (${summary.skippedRoutes.length}): ${summary.skippedRoutes
+        .slice(0, 30)
+        .map((entry) => `${entry.route} [${entry.viewport}]`)
+        .join(", ")}${summary.skippedRoutes.length > 30 ? " …" : ""}`,
+    );
+  }
   const failedRoutes = summary.failedRoutes;
   if (failedRoutes.length) {
     console.log(

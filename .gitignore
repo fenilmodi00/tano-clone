@@ -78,3 +78,6 @@ docs/research/**/*.json
 docs/verify/**/*.json
 !docs/verify/client-nav/baseline.json
 docs/verify/theme/
+
+# Local probe scratch
+.tmp/

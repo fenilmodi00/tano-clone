@@ -50,11 +50,13 @@ export function useLenisScroll(): (() => void) | void {
       // The drawer and mobile menu lock the body while open.
       prevent: () => document.body.style.overflow === "hidden",
     });
+    window.__tanoLenis = lenis;
 
     const root = document.documentElement;
     root.classList.add("lenis");
 
     return () => {
+      if (window.__tanoLenis === lenis) delete window.__tanoLenis;
       lenis.destroy();
       for (const name of [
         "lenis",

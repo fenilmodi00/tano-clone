@@ -4,13 +4,16 @@
  *
  * For every route in docs/research/tano/routes.json:
  *   1. load "/" (fresh document),
- *   2. navigate client-side to the target — by clicking a real internal
- *      anchor when one exists, otherwise by dispatching a click on a
- *      temporary anchor so the delegated useClientNav handler runs,
+ *   2. navigate client-side to the target by clicking a real internal
+ *      anchor on the page,
  *   3. wait for the pathname and network to settle,
  *   4. assert the destination is actually visible (main text, first heading
  *      opacity / reveal state, console + page errors, horizontal overflow,
  *      scroll at top).
+ *
+ * Routes with no in-page anchor cannot be reached by a click. They are
+ * recorded as skipped with an explicit reason instead of faking a
+ * navigation; real anchors, history and direct loads are still audited.
  *
  * It also exercises browser Back/Forward across three routes and a direct
  * load. Failures get a viewport screenshot; every run writes machine-readable
@@ -203,7 +206,8 @@ async function waitForFonts(page) {
 
 async function waitForHydration(page) {
   // React attaches its props/fiber expando to host nodes during hydration.
-  // Waiting for it keeps the first click from racing the delegated handler.
+  // Waiting for it keeps the first click from racing React's delegated
+  // handling of <Link> clicks.
   await page
     .waitForFunction(
       () => {
@@ -301,37 +305,20 @@ async function findAnchor(page, expectedPath) {
   }, expectedPath);
 }
 
-/** Dispatch a click on a temporary anchor so useClientNav handles it. */
-async function clickTemporaryAnchor(page, route) {
-  return page.evaluate((href) => {
-    const anchor = document.createElement("a");
-    anchor.href = href;
-    anchor.id = "__client_nav_audit_anchor";
-    anchor.textContent = "client nav audit";
-    anchor.style.cssText =
-      "position:fixed;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none;z-index:2147483647";
-    document.body.appendChild(anchor);
-    const dispatched = anchor.dispatchEvent(
-      new MouseEvent("click", { bubbles: true, cancelable: true, button: 0, view: window }),
-    );
-    anchor.remove();
-    return dispatched;
-  }, route);
-}
-
 /**
  * Client-side navigation: click the best real anchor (pointer click when it is
- * actionable, DOM click for anchors parked in closed menus), fall back to a
- * temporary anchor for routes with no real link on the current page.
+ * actionable, DOM click for anchors parked in closed menus). Routes without a
+ * real anchor are skipped — nothing intercepts synthetic anchors any more, so
+ * faking a click would silently do nothing.
  */
 async function clientNavigate(page, expectedPath) {
   const beforePath = await page.evaluate(() => location.pathname);
   const result = {
-    via: "temp",
+    via: "skipped",
+    skipped: false,
+    skipReason: null,
     anchor: null,
     beforePath,
-    fallback: false,
-    dispatchResult: null,
     nav: { ok: false, ms: 0, actual: beforePath },
   };
   if (beforePath === expectedPath) {
@@ -341,48 +328,55 @@ async function clientNavigate(page, expectedPath) {
   }
 
   const anchor = await findAnchor(page, expectedPath);
-  result.anchor = anchor.found
-    ? {
-        text: anchor.text,
-        href: anchor.href,
-        visible: anchor.visible,
-        inMain: anchor.inMain,
-        inFooter: anchor.inFooter,
-      }
-    : null;
+  if (!anchor.found) {
+    result.skipped = true;
+    result.skipReason = `no in-page anchor links to ${expectedPath}; client navigation not attempted`;
+    return result;
+  }
+  result.anchor = {
+    text: anchor.text,
+    href: anchor.href,
+    visible: anchor.visible,
+    inMain: anchor.inMain,
+    inFooter: anchor.inFooter,
+  };
 
-  if (anchor.found) {
-    let clickedWithPointer = false;
-    if (anchor.visible) {
-      try {
-        const locator = page.locator('[data-audit-anchor="1"]').first();
-        await locator.scrollIntoViewIfNeeded({ timeout: 2500 });
-        await locator.click({ timeout: 2500 });
-        clickedWithPointer = true;
-      } catch {
-        // Covered by a sticky overlay or not actionable — use the DOM path.
-      }
-    }
-    if (!clickedWithPointer) {
-      await page
-        .locator('[data-audit-anchor="1"]')
-        .first()
-        .evaluate((element) => element.click());
-    }
-    result.via = clickedWithPointer ? "anchor" : "anchor-dom";
-    result.nav = await waitForPath(page, expectedPath, 4000);
+  const clickLiveAnchor = () =>
+    page.evaluate((path) => {
+      const anchors = [...document.querySelectorAll("a[href]")];
+      const matching = anchors.filter((a) => a.getAttribute("href") === path);
+      const live =
+        matching.find((a) => {
+          const r = a.getBoundingClientRect();
+          return r.width > 0 && r.height > 0;
+        }) ?? matching[0];
+      live?.click();
+    }, expectedPath);
 
-    if (!result.nav.ok) {
-      // The anchor existed but did not produce a client navigation. Retry
-      // through the delegated handler so the destination page is still audited.
-      result.fallback = true;
-      result.dispatchResult = await clickTemporaryAnchor(page, expectedPath).catch(() => false);
-      result.via = "temp-after-anchor";
-      result.nav = await waitForPath(page, expectedPath, 6000);
+  let clickedWithPointer = false;
+  if (anchor.visible) {
+    try {
+      // Re-query the live node: the previous route commit can replace the
+      // footer between findAnchor() and the click.
+      const locator = page.locator(`a[href="${expectedPath}"]`).first();
+      await locator.scrollIntoViewIfNeeded({ timeout: 2500 });
+      // Let Lenis settle after the scroll before dispatching the pointer click.
+      await page.waitForTimeout(400);
+      await locator.click({ timeout: 2500 });
+      clickedWithPointer = true;
+    } catch {
+      // Covered by a sticky overlay or not actionable — use the DOM path.
     }
-  } else {
-    result.dispatchResult = await clickTemporaryAnchor(page, expectedPath);
-    result.via = "temp";
+  }
+  if (!clickedWithPointer) await clickLiveAnchor();
+  result.via = clickedWithPointer ? "anchor" : "anchor-dom";
+  result.nav = await waitForPath(page, expectedPath, 5000);
+
+  if (!result.nav.ok && clickedWithPointer) {
+    // The pointer press may have been swallowed; retry the same real anchor
+    // through the DOM before recording a failure.
+    await clickLiveAnchor();
+    result.via = "anchor-dom";
     result.nav = await waitForPath(page, expectedPath, 6000);
   }
 
@@ -501,11 +495,12 @@ async function auditRoute(page, instrumented, entry, index) {
     slug: entry.slug || String(index),
     expectedPath,
     ok: false,
+    skipped: false,
+    skipReason: null,
     via: "unknown",
     note: null,
     nav: { ok: false, ms: 0, actual: "" },
     anchor: null,
-    fallback: false,
     checks: {},
     metrics: {},
     errors: [],
@@ -536,7 +531,12 @@ async function auditRoute(page, instrumented, entry, index) {
       record.via = nav.via;
       record.nav = nav.nav;
       record.anchor = nav.anchor;
-      record.fallback = nav.fallback;
+      if (nav.skipped) {
+        record.skipped = true;
+        record.skipReason = nav.skipReason;
+        record.ms = Date.now() - started;
+        return record;
+      }
     }
 
     const settle = await settleAfterNav(page, instrumented, { requireScrollTop: true });
@@ -597,6 +597,7 @@ async function auditHistory(page, instrumented, routes) {
 
   const results = [];
   await loadHome(page, instrumented);
+  let skippedPrerequisite = null;
 
   for (const step of steps) {
     const expectedPath = new URL(step.route, opts.base).pathname;
@@ -607,6 +608,8 @@ async function auditHistory(page, instrumented, routes) {
       route: step.route,
       expectedPath,
       ok: false,
+      skipped: false,
+      skipReason: null,
       via: null,
       nav: { ok: false, ms: 0, actual: "" },
       checks: {},
@@ -619,13 +622,27 @@ async function auditHistory(page, instrumented, routes) {
       ms: 0,
     };
     instrumented.markErrors();
+    if (skippedPrerequisite && step.kind !== "direct") {
+      record.skipped = true;
+      record.skipReason = skippedPrerequisite;
+      record.ms = Date.now() - started;
+      results.push(record);
+      continue;
+    }
     try {
       if (step.kind === "client") {
         const nav = await clientNavigate(page, expectedPath);
         record.via = nav.via;
         record.nav = nav.nav;
         record.anchor = nav.anchor;
-        record.fallback = nav.fallback;
+        if (nav.skipped) {
+          record.skipped = true;
+          record.skipReason = nav.skipReason;
+          skippedPrerequisite = `client step ${step.name} was skipped: ${nav.skipReason}`;
+          record.ms = Date.now() - started;
+          results.push(record);
+          continue;
+        }
       } else if (step.kind === "back" || step.kind === "forward") {
         record.via = step.kind;
         try {
@@ -691,13 +708,13 @@ function printTable(records) {
       ? `${heading.opacity.toFixed(2)}/${metrics.rvIn ?? "?"}`
       : `none/${metrics.rvIn ?? "?"}`;
     console.log(
-      `${pad(record.index, 3)} ${pad(record.route, 56)} ${pad(record.ok ? "PASS" : "FAIL", 7)} ${pad(record.via, 17)} ${pad(record.checks?.path ? "ok" : "bad", 5)} ${pad(metrics.textLength ?? "?", 6)} ${pad(h1, 11)} ${pad(record.scroll?.y ?? "?", 7)} ${pad(metrics.overflowPx ?? "?", 5)} ${pad(record.errors?.length ?? "?", 4)}`,
+      `${pad(record.index, 3)} ${pad(record.route, 56)} ${pad(record.skipped ? "SKIP" : record.ok ? "PASS" : "FAIL", 7)} ${pad(record.via, 17)} ${pad(record.skipped ? "-" : record.checks?.path ? "ok" : "bad", 5)} ${pad(metrics.textLength ?? "?", 6)} ${pad(h1, 11)} ${pad(record.scroll?.y ?? "?", 7)} ${pad(metrics.overflowPx ?? "?", 5)} ${pad(record.errors?.length ?? "?", 4)}`,
     );
   }
 }
 
 function printFailureReasons(records) {
-  const failed = records.filter((record) => !record.ok);
+  const failed = records.filter((record) => !record.ok && !record.skipped);
   if (!failed.length) return;
   console.log("\nFailures");
   for (const record of failed) {
@@ -711,18 +728,30 @@ function printFailureReasons(records) {
   }
 }
 
+function printSkipped(records) {
+  const skipped = records.filter((record) => record.skipped);
+  if (!skipped.length) return;
+  console.log("\nSkipped (no in-page anchor)");
+  for (const record of skipped) {
+    console.log(`- ${record.route}: ${record.skipReason}`);
+  }
+}
+
 function printHistory(history) {
   if (!history.length) return;
   console.log("\nHistory / direct load");
   for (const record of history) {
     const metrics = record.metrics || {};
     console.log(
-      `${pad(record.step, 44)} ${pad(record.ok ? "PASS" : "FAIL", 7)} ${pad(record.via, 8)} path=${pad(metrics.pathname ?? "?", 34)} h1=${pad(metrics.heading?.opacity ?? "?", 5)} rv-in=${pad(metrics.rvIn ?? "?", 4)} scroll=${pad(record.scroll?.y ?? "-", 6)} errors=${record.errors?.length ?? "?"}`,
+      `${pad(record.step, 44)} ${pad(record.skipped ? "SKIP" : record.ok ? "PASS" : "FAIL", 7)} ${pad(record.via, 8)} path=${pad(metrics.pathname ?? "?", 34)} h1=${pad(metrics.heading?.opacity ?? "?", 5)} rv-in=${pad(metrics.rvIn ?? "?", 4)} scroll=${pad(record.scroll?.y ?? "-", 6)} errors=${record.errors?.length ?? "?"}`,
     );
   }
-  const failed = history.filter((record) => !record.ok);
+  const failed = history.filter((record) => !record.ok && !record.skipped);
   for (const record of failed) {
     console.log(`- ${record.step}: ${record.failureReasons.join("; ")}`);
+  }
+  for (const record of history.filter((record) => record.skipped)) {
+    console.log(`- ${record.step}: skipped — ${record.skipReason}`);
   }
 }
 
@@ -761,7 +790,7 @@ async function main() {
     for (let i = 0; i < routes.length; i += 1) {
       const record = await auditRoute(page, instrumented, routes[i], i + 1);
       results.push(record);
-      const mark = record.ok ? "PASS" : "FAIL";
+      const mark = record.skipped ? "SKIP" : record.ok ? "PASS" : "FAIL";
       console.log(`${pad(i + 1, 3)} ${pad(record.route, 56)} ${mark}`);
     }
     if (opts.history) {
@@ -771,12 +800,16 @@ async function main() {
     await browser.close().catch(() => {});
   }
 
-  const failed = results.filter((record) => !record.ok);
-  const historyFailed = history.filter((record) => !record.ok);
-  const hidden = results.filter((record) => !record.checks?.heading && !record.checks?.reveal);
+  const failed = results.filter((record) => !record.ok && !record.skipped);
+  const skipped = results.filter((record) => record.skipped);
+  const historyFailed = history.filter((record) => !record.ok && !record.skipped);
+  const hidden = results.filter(
+    (record) => !record.skipped && !record.checks?.heading && !record.checks?.reveal,
+  );
 
   printTable(results);
   printFailureReasons(results);
+  printSkipped(results);
   printHistory(history);
 
   const payload = {
@@ -788,8 +821,13 @@ async function main() {
     durationMs: Date.now() - runStarted.getTime(),
     summary: {
       total: results.length,
-      passed: results.length - failed.length,
+      passed: results.length - failed.length - skipped.length,
       failed: failed.length,
+      skipped: skipped.length,
+      skippedRoutes: skipped.map((record) => ({
+        route: record.route,
+        reason: record.skipReason,
+      })),
       hidden: hidden.map((record) => record.route),
       historyTotal: history.length,
       historyFailed: historyFailed.length,
@@ -802,6 +840,7 @@ async function main() {
 
   console.log(
     `\nSummary: ${payload.summary.passed}/${payload.summary.total} routes pass, ${payload.summary.failed} fail` +
+      (payload.summary.skipped ? `, ${payload.summary.skipped} skipped` : "") +
       (history.length
         ? ` | history ${payload.summary.historyTotal - payload.summary.historyFailed}/${payload.summary.historyTotal} pass`
         : ""),

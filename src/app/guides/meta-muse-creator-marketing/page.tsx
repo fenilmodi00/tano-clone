@@ -1,9 +1,9 @@
 import pageData from "@/content/tano/pages/guides-meta-muse-creator-marketing.json";
+import { GuidePage } from "@/components/sites/tano/pages/guide-page";
 import { buildPageMetadata } from "@/lib/metadata";
-import { GuidesMetaMuseCreatorMarketingReplica } from "../../../components/sites/tano/replica/GuidesMetaMuseCreatorMarketingReplica";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <GuidesMetaMuseCreatorMarketingReplica />;
+  return <GuidePage page={pageData} />;
 }

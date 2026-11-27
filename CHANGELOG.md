@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - All internal links use `next/link`; the custom client-navigation interceptor was removed.
+- The content extractor now preserves consecutive `wire-article-quote` blockquotes as typed `quotes` blocks.
 - Captured route bodies are formatted, linted, and hand-maintainable instead of one-line generated files.
 - CSS was purged by static usage (608 classes, 1,330 rules), split into vendor/runtime layers, and duplicate DOM ids were made unique.
 - Root metadata no longer claims canonical `/` for every page.
@@ -28,6 +29,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Unused scaffold dependencies and files (`@base-ui/react`, `cva`, `clsx`, `tailwind-merge`, `lucide-react`, `shadcn`, `tw-animate-css`, `pngjs`, `ui/button.tsx`, `lib/utils.ts`, `components.json`).
 - Template workflows, the `/devtest` route, one-off probe scripts, dead replica/content barrels, and 130 MB of unreferenced public assets (archived locally).
+
+### Fixed
+
+- Client navigation commits every route at the top (`useRouteScrollReset`) instead of inheriting Next's visible-page offset, which could drop a deep-scrolled visitor into the shared footer. The re-introduced document click interceptor and its `data-navigating` footer timers were removed again.
+- The root loading fallback covers the viewport, so the footer can no longer flash into view mid-transition and animate the fixed nav away.
+- Header dropdowns close on item click and on every committed pathname change; they previously survived navigation because the shell persists.
+- The nav arrival animation is marked per document and cannot replay after a route change.
+- Added `npm run verify:nav` for footer landing, dropdown reset, client-nav, hydration and reveal regressions; the client-nav audits record routes without an in-page anchor as skipped instead of faking a click into a removed interceptor.
+- Documented the Cloudflare edge rewriters (Email Address Obfuscation, Rocket Loader) that desync hydration; `email_off` comment markers measurably make it worse and are not used.
 
 ## [0.6.2] - 2026-11-25
 

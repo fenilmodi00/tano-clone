@@ -1,9 +1,9 @@
 import pageData from "@/content/tano/pages/guides-ugc-ai-shopping-agents.json";
+import { GuidePage } from "@/components/sites/tano/pages/guide-page";
 import { buildPageMetadata } from "@/lib/metadata";
-import { GuidesUgcAiShoppingAgentsReplica } from "../../../components/sites/tano/replica/GuidesUgcAiShoppingAgentsReplica";
 
 export const metadata = buildPageMetadata(pageData);
 
 export default function Page() {
-  return <GuidesUgcAiShoppingAgentsReplica />;
+  return <GuidePage page={pageData} />;
 }

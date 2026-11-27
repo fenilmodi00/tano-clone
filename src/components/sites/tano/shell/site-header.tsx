@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { scrollPageToTop } from "@/components/sites/tano/motion/use-route-scroll";
 
 const MENUS = [
   {
@@ -43,20 +45,38 @@ const chevron = (
 );
 
 export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: string }) {
+  const pathname = usePathname();
   const [stage, setStage] = useState<"seed" | "drop" | "travel" | "settled">("settled");
   const [open, setOpen] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
   const wrap = useRef<HTMLDivElement>(null);
   const markId = useId().replaceAll(":", "");
   const glyph = glyphSvg.replaceAll("tano-glyph-spectrum", `tano-glyph-spectrum-${markId}`);
 
+  // A committed route closes both menus. Adjusting state during render is
+  // React's reset-on-change pattern and keeps back/forward covered without
+  // the cascading render an effect would add.
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
+    setOpen(null);
+    setMobileOpen(false);
+  }
+
   useEffect(() => {
     document.documentElement.setAttribute("data-nav-ready", "");
     // A reload restoring a scrolled page must not replay the arrival
     // animation over it; a top-of-page reload still gets the full intro.
-    if (Number(window.__tanoRestoreY || 0) > 0) return;
+    if (Number(window.__tanoRestoreY || 0) > 0) {
+      document.documentElement.setAttribute("data-nav-intro", "done");
+      return;
+    }
+    // The intro belongs to the document, not the route. The marker is only
+    // written once the animation has settled, so an interrupted mount
+    // (StrictMode's first pass) still plays it on the next one.
+    if (document.documentElement.getAttribute("data-nav-intro") === "done") return;
     const timers: number[] = [];
     let inner = 0;
     const outer = requestAnimationFrame(() => {
@@ -64,7 +84,12 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
       inner = requestAnimationFrame(() => {
         setStage("drop");
         timers.push(window.setTimeout(() => setStage("travel"), 520));
-        timers.push(window.setTimeout(() => setStage("settled"), 1140));
+        timers.push(
+          window.setTimeout(() => {
+            setStage("settled");
+            document.documentElement.setAttribute("data-nav-intro", "done");
+          }, 1140),
+        );
       });
     });
     return () => {
@@ -154,7 +179,16 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
               }
             >
               <span aria-hidden="true" className="wire-nav-grain" />
-              <Link aria-label="Tano, home" className="wire-nav-mark" href="/">
+              <Link
+                aria-label="Tano, home"
+                className="wire-nav-mark"
+                href="/"
+                onClick={(event) => {
+                  if (pathname !== "/") return;
+                  event.preventDefault();
+                  scrollPageToTop("smooth");
+                }}
+              >
                 <span
                   aria-hidden="true"
                   className="wire-nav-mark-glyph"
@@ -174,7 +208,9 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
                       className="wire-nav-menu"
                       data-open={open === menu.label}
                       onMouseEnter={() => setOpen(menu.label)}
-                      onMouseLeave={() => setOpen(null)}
+                      onMouseLeave={() =>
+                        setOpen((current) => (current === menu.label ? null : current))
+                      }
                     >
                       <button
                         className="wire-nav-link"
@@ -204,6 +240,7 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
                               data-described="false"
                               href={item.href}
                               key={item.href}
+                              onClick={() => setOpen(null)}
                             >
                               <span>{item.label}</span>
                             </Link>
@@ -223,7 +260,9 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
                     className="wire-nav-menu"
                     data-open={open === "Resources"}
                     onMouseEnter={() => setOpen("Resources")}
-                    onMouseLeave={() => setOpen(null)}
+                    onMouseLeave={() =>
+                      setOpen((current) => (current === "Resources" ? null : current))
+                    }
                   >
                     <button
                       className="wire-nav-link"
@@ -253,6 +292,7 @@ export function SiteHeader({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: s
                             data-described="true"
                             href={item.href}
                             key={item.href}
+                            onClick={() => setOpen(null)}
                           >
                             <span>{item.label}</span>
                             <span className="wire-nav-link-description tano-body-sm">

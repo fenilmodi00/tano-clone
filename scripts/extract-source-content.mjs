@@ -595,12 +595,20 @@ const BLOCK_CONTAINER_CLASSES = new Set([
 function collectBlocks($, rawRoot) {
   const root = asDom($, rawRoot) || { children: [] };
   const blocks = [];
+  let pendingQuotes = [];
+
+  const flushQuotes = () => {
+    if (!pendingQuotes.length) return;
+    blocks.push({ type: "quotes", items: pendingQuotes });
+    pendingQuotes = [];
+  };
 
   const visit = (node) => {
     if (!node || node.type !== "tag") return;
     const tag = node.name.toLowerCase();
     if (DROP_TAGS.has(tag)) return;
     const classes = classList(node);
+    if (tag !== "blockquote") flushQuotes();
 
     if (tag === "p") {
       const block = paragraphBlock($, node);
@@ -649,6 +657,11 @@ function collectBlocks($, rawRoot) {
       return;
     }
     if (tag === "blockquote") {
+      if (classes.includes("wire-article-quote")) {
+        pendingQuotes.push(visibleText(node));
+        return;
+      }
+      flushQuotes();
       const quote = quoteFrom($, node);
       if (quote) blocks.push(quote);
       return;
@@ -688,6 +701,7 @@ function collectBlocks($, rawRoot) {
   };
 
   for (const child of root.children || []) visit(child);
+  flushQuotes();
   return { blocks };
 }
 
@@ -1150,7 +1164,16 @@ function flowSections($, root, options = {}) {
   };
 
   const addBlocks = (blocks) => {
-    if (blocks.length) current.blocks.push(...blocks);
+    for (const block of blocks) {
+      if (block.type === "quotes") {
+        const last = current.blocks[current.blocks.length - 1];
+        if (last?.type === "quotes") {
+          last.items.push(...block.items);
+          continue;
+        }
+      }
+      current.blocks.push(block);
+    }
   };
 
   const consume = (node) => {

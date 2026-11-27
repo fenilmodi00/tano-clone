@@ -9,6 +9,7 @@
 export type Block =
   | { type: "prose"; html: string } // sanitized inline: a, strong, em, br, sup, sub
   | { type: "list"; ordered: boolean; items: string[] }
+  | { type: "quotes"; items: string[] } // one blockquote per line
   | { type: "table"; head: string[]; rows: string[][] }
   | {
       type: "cards";

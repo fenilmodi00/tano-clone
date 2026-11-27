@@ -112,6 +112,20 @@
         {
           "type": "prose",
           "html": "A short, warm note from a named person on your team, like this one:"
+        },
+        {
+          "type": "quotes",
+          "items": [
+            "Hi [first name],",
+            "A quick note about Muse, Meta's new personal AI agent, live in the US and Canada since September and now in the UK. People can connect Instagram to it, and it can act on Reels they've saved, like turning a saved recipe into a shopping list. It also remembers what people like and makes suggestions. That's good news for honest, useful posts like yours: a post saved today could help someone choose weeks from now.",
+            "You don't need to change how you create, but a few habits help:",
+            "- Say [product] clearly and show how it fits into your life.",
+            "- Answer a question a buyer would ask, like [buying question].",
+            "- Start your caption with \"Ad\" and say it in the video too.",
+            "- Add your code [code] and link [link] to every post.",
+            "Thanks for being part of [Brand].",
+            "[Your name]"
+          ]
         }
       ]
     },

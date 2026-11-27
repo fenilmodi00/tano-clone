@@ -23,9 +23,9 @@ build time. Search indexing is opt-in via `NEXT_PUBLIC_ALLOW_INDEXING=true`. See
 
 ## What is implemented
 
-- **44 routes**: home, two use cases, case-study hub + four studies, guides hub + 14 guides,
-  playbooks hub + five data-driven playbook pages, compare hub + four comparisons, careers hub +
-  three roles, news hub + article, webinars, privacy, for creators, talk to us.
+- **44 routes**: home, two use cases, case-study hub + four studies, guides hub + 14 data-driven
+  guides, compare hub + four data-driven comparisons, playbooks hub + five data-driven playbooks,
+  careers hub + three roles, news hub + article, webinars, privacy, for creators, talk to us.
 - **Design system** in `src/styles/tano/`: the captured token/keyframe/responsive system, split
   into the purged vendor stylesheet plus a runtime-only stylesheet for Lenis and inline-SVG classes.
   Fonts are the real ABC Whyte files, preloaded with `font-display: swap`.
@@ -71,10 +71,10 @@ docs/research/, docs/verify/      local evidence (not tracked; see docs/EVIDENCE
   `scripts/generate-route-manifest.mjs`. `npm run content:check` fails when it is stale.
 - Every route's `page.tsx` imports its own JSON and calls `buildPageMetadata`; there is no second
   title/description copy in the page file.
-- The five playbook and four compare detail pages render from JSON through `PlaybookPage` and
-  `ComparePage`. The other 35 route bodies are checked-in captured markup (formatted, linted, and
-  componentized where patterns were uniform). The capture generator is now a research tool, not a build step: running it overwrites
-  hand edits.
+- The 14 guide details, four compare details and five playbook details render from JSON through
+  `GuidePage`, `ComparePage` and `PlaybookPage`. The other 21 route bodies are checked-in captured
+  markup (formatted, linted, and componentized where patterns were uniform). The capture generator
+  is now a research tool, not a build step: running it overwrites hand edits.
 - `SiteRuntime` keeps global Lenis/ground-tone mounts alive across navigation and remounts
   route-scoped behaviours after the App Router commits a route.
 
@@ -107,8 +107,8 @@ routes, and the generated sitemap/robots/manifest/OG endpoints. CI runs the stat
 production-server visibility/link/smoke job.
 
 Latest full matrix baseline: `docs/verify/REPORT.md` (44 routes × 1568/1440/1024/390; median
-static-band diff 0.44%). Recent targeted checks after the refactor: guides 0.17%, compare 0.11%,
-case studies 0.02%, all five playbook pages 0% static diff.
+static-band diff 0.44%). Recent targeted checks after the refactor: 14 guides ≤0.27%, four
+compare details ≤0.2%, case studies 0.02%, five playbooks 0% static diff.
 
 ### No-JS and reduced motion
 

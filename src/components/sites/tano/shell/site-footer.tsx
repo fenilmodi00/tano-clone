@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef } from "react";
+import { scrollPageToTop } from "@/components/sites/tano/motion/use-route-scroll";
 
 const COLUMNS = [
   {
@@ -68,6 +70,7 @@ const COLUMNS = [
 ];
 
 export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
+  const pathname = usePathname();
   const ref = useRef<HTMLElement>(null);
   const markId = useId().replaceAll(":", "");
   const glyph = glyphSvg.replaceAll("tano-glyph-spectrum", `tano-glyph-spectrum-${markId}`);
@@ -110,7 +113,16 @@ export function SiteFooter({ glyphSvg }: { glyphSvg: string }) {
         </div>
       </div>
       <div className="wire-footer-card">
-        <Link aria-label="Tano, home" className="wire-footer-mark" href="/">
+        <Link
+          aria-label="Tano, home"
+          className="wire-footer-mark"
+          href="/"
+          onClick={(event) => {
+            if (pathname !== "/") return;
+            event.preventDefault();
+            scrollPageToTop("smooth");
+          }}
+        >
           <span
             aria-hidden="true"
             className="wire-footer-roll"

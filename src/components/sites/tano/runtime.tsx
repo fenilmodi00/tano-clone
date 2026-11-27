@@ -15,15 +15,16 @@ import {
   mountFormsRuntime,
   useCounters,
   useReveal,
+  usePageObservers,
   useHashScroll,
-  useClientNav,
+  useRouteScrollReset,
   useScrollMemory,
 } from "./motion";
 
 /**
  * Site runtime. Two lifetimes:
  *
- * - Global behaviours (Lenis, ground tone, client-side link routing) live in
+ * - Global behaviours (Lenis, ground tone, route scroll reset) live in
  *   `GlobalRuntime` and stay mounted while the App Router swaps pages, so the
  *   smooth-scroll instance, the ground veil and its `__tanoGround` API are
  *   created once. `useForms` is document-scoped for the same reason.
@@ -56,7 +57,7 @@ export function SiteRuntime() {
 function GlobalRuntime() {
   useLenisScroll();
   useGroundTone();
-  useClientNav();
+  useRouteScrollReset();
   useScrollMemory();
   return null;
 }
@@ -105,6 +106,7 @@ function PageHooks() {
   useCaseMedia();
   useCounters();
   useReveal();
+  usePageObservers();
   useHashScroll();
 
   // Run after hydration so form enhancement never mutates SSR markup. The
@@ -114,54 +116,7 @@ function PageHooks() {
     return () => cleanup?.();
   }, []);
 
-  useEffect(() => {
-    // Scroll reveals: source markup ships data-shown="false" and CSS reveals on true.
-    const revealTargets = Array.from(
-      document.querySelectorAll<HTMLElement>(
-        '[data-shown="false"], .hp-reveal[data-shown="false"]',
-      ),
-    );
-    const reveal = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          (entry.target as HTMLElement).setAttribute("data-shown", "true");
-          reveal.unobserve(entry.target);
-        }
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.04 },
-    );
-    for (const el of revealTargets) reveal.observe(el);
-
-    // Mark bands inview so their keyframes run only while visible.
-    const bands = Array.from(document.querySelectorAll<HTMLElement>("main > section, main > div"));
-    const visit = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          (entry.target as HTMLElement).setAttribute(
-            "data-inview",
-            entry.isIntersecting ? "true" : "false",
-          );
-        }
-      },
-      { rootMargin: "15% 0px 15% 0px", threshold: 0 },
-    );
-    for (const band of bands) visit.observe(band);
-
-    // Autoplay the source's muted, looping media where the browser allows it.
-    const videos = Array.from(document.querySelectorAll<HTMLVideoElement>("main video"));
-    for (const video of videos) {
-      video.muted = true;
-      video.playsInline = true;
-      video.play().catch(() => {});
-    }
-
-    return () => {
-      reveal.disconnect();
-      visit.disconnect();
-      for (const video of videos) video.pause();
-    };
-  }, []);
+  usePageObservers();
 
   return null;
 }

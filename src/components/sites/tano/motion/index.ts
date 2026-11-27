@@ -10,6 +10,7 @@ export { useCaseMedia } from "./use-case-media";
 export { mountFormsRuntime } from "./use-forms";
 export { useCounters } from "./use-counters";
 export { useReveal } from "./use-reveal";
+export { usePageObservers } from "./use-page-observers";
 export { useHashScroll } from "./use-hash-scroll";
 export { useScrollMemory } from "./use-scroll-memory";
-export { useClientNav } from "./use-client-nav";
+export { useRouteScrollReset } from "./use-route-scroll";

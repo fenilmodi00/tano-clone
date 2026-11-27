@@ -76,21 +76,13 @@ body:has(.wire-contact) .wire-footer {
 }
 
 .wire-loading {
-  position: fixed;
-  inset: 0 0 auto;
-  height: 3px;
-  z-index: 9999;
-  overflow: hidden;
+  min-height: 100dvh;
   pointer-events: none;
 }
 
 /* Keep the nav above the boot mask so its arrival animation is visible. */
 .wire-chrome {
   z-index: 10000;
-}
-
-html[data-navigating] .wire-footer {
-  visibility: hidden;
 }
 
 .wire-boot-mask {
@@ -119,11 +111,12 @@ html:not([data-page-ready]) .wire-boot-mask {
 }
 
 .wire-loading__bar {
-  position: absolute;
+  position: fixed;
   inset: 0 0 auto;
   display: block;
   height: 3px;
   width: 40%;
+  z-index: 9999;
   background: var(
     --spectrum-linear,
     linear-gradient(90deg, #ed5263, #fb751f, #f3c507, #89de16, #46b7d1, #8464e3, #cc6add)

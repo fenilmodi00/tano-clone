@@ -76,6 +76,10 @@ const DARK_ROUTES: Readonly<Record<string, true>> = {
   "/guides/scale-creator-programme-without-headcount": true,
 };
 
+export function isDarkBrandRoute(route: string): boolean {
+  return Boolean(DARK_ROUTES[route]);
+}
+
 /** Split the captured counter value around its first number: `+125%` → `+` / `%`. */
 function splitStat(value: string): { prefix: string; suffix: string } {
   const match = /\d+/.exec(value);
@@ -104,7 +108,7 @@ export function GuideBrands({
   const brand = quote.name ? BRANDS[quote.name] : undefined;
   if (!brand) return null;
 
-  const dark = Boolean(DARK_ROUTES[route]);
+  const dark = isDarkBrandRoute(route);
   const idPrefix = dark ? "_R_1mlubpcnjb_" : "_R_26lubpcnjb_";
   const panelId = `${idPrefix}-panel`;
   const tabId = `${idPrefix}-tab-0`;

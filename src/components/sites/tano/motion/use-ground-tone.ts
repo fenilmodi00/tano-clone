@@ -48,47 +48,6 @@ const NEAR_LIMIT = 300;
 const VEIL_IN_EASE = "cubic-bezier(0.11, 0, 0.5, 0)";
 const VEIL_OUT_EASE = "cubic-bezier(0.5, 1, 0.89, 1)";
 
-type Easing = (progress: number) => number;
-
-/** CSS cubic-bezier(x1, y1, x2, y2) as a JS easing function. */
-function cubicBezier(x1: number, y1: number, x2: number, y2: number): Easing {
-  const cx = 3 * x1;
-  const bx = 3 * (x2 - x1) - cx;
-  const ax = 1 - cx - bx;
-  const cy = 3 * y1;
-  const by = 3 * (y2 - y1) - cy;
-  const ay = 1 - cy - by;
-  const sampleX = (t: number) => ((ax * t + bx) * t + cx) * t;
-  const sampleY = (t: number) => ((ay * t + by) * t + cy) * t;
-  const sampleSlopeX = (t: number) => (3 * ax * t + 2 * bx) * t + cx;
-
-  return (progress) => {
-    if (progress <= 0) return 0;
-    if (progress >= 1) return 1;
-
-    let t = progress;
-    for (let i = 0; i < 8; i += 1) {
-      const delta = sampleX(t) - progress;
-      if (Math.abs(delta) < 1e-5) return sampleY(t);
-      const slope = sampleSlopeX(t);
-      if (Math.abs(slope) < 1e-6) break;
-      t -= delta / slope;
-    }
-
-    let low = 0;
-    let high = 1;
-    t = progress;
-    for (let i = 0; i < 20; i += 1) {
-      const value = sampleX(t);
-      if (Math.abs(value - progress) < 1e-5) break;
-      if (value < progress) low = t;
-      else high = t;
-      t = (low + high) / 2;
-    }
-    return sampleY(t);
-  };
-}
-
 function readNumber(element: HTMLElement, property: string, fallback: number): number {
   const raw = window.getComputedStyle(element).getPropertyValue(property).trim();
   if (!raw) return fallback;

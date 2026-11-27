@@ -54,6 +54,8 @@ Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata o
 src/app/<route>/page.tsx        route wrapper + JSON-derived metadata
 src/components/sites/tano/
   replica/                     captured route bodies (35 routes; hand-editable)
+  pages/guide-page.tsx         data-driven template for the 14 guide details
+  pages/compare-page.tsx       data-driven template for the 4 compare details
   pages/playbook-page.tsx      data-driven template for the 5 playbook details
   pages/compare-page.tsx       data-driven template for the 4 compare details
   ui/                          shared button and FAQ row
@@ -82,5 +84,5 @@ docs/ARCHITECTURE.md           current design + migration plan
 - Keep the `@media (scripting: none)` reveal fallback when changing reveal CSS or hooks.
 - Do not add fixed `width`/`height` to absolutely positioned media without checking the CSS
   aspect ratio; this previously distorted the case-study reel cards.
-- The five playbooks are the model for further JSON templates; follow the family order in
+- Guides, compare and playbooks now use JSON templates; follow the remaining family order in
   `docs/ARCHITECTURE.md` and verify each family against the live source before deleting replicas.
