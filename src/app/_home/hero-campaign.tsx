@@ -7,6 +7,7 @@
  * avatar, brand, product, video, poster and backdrop all change per reel.
  */
 import { HERO_CAMPAIGNS, type HeroCampaign } from "./data/hero-campaigns";
+import { primeVideo } from "@/lib/media";
 
 const REEL_MS = 8000;
 const LEAVE_MS = 600;
@@ -386,8 +387,7 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     // Scenes ship with preload="none" so first paint fetches no film bytes.
     // Only an active, visible reel raises the hint; the networkState guard
     // keeps repeated syncs from restarting a load that is already in flight.
-    if (video.preload === "none") video.preload = "auto";
-    if (video.networkState === 0) video.load();
+    primeVideo(video, { load: true });
     const attempt = video.play();
     if (attempt) {
       // Autoplay may be denied; never surface that as a page error.

@@ -108,9 +108,3 @@ export type Hero = z.infer<typeof heroSchema>;
 export type PageSection = z.infer<typeof pageSectionSchema>;
 export type Card = z.infer<typeof cardSchema>;
 export type Page = z.infer<typeof pageSchema>;
-
-export type Link = z.infer<typeof linkSchema>;
-export type CardBlockItem = z.infer<typeof cardBlockItemSchema>;
-export type Stat = z.infer<typeof statSchema>;
-export type FaqItem = z.infer<typeof faqItemSchema>;
-export type Closing = z.infer<typeof closingSchema>;

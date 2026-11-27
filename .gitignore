@@ -85,3 +85,5 @@ docs/verify/theme/
 # Locally installed skill packs (not part of the app)
 agent/
 .agents/skills/*
+.vinext/
+.cloudflare/

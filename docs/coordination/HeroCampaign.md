@@ -71,7 +71,8 @@ Behavior:
   and a 200 px `data-inview` observer on `.hp-camp`, matching `usePlayZone` and
   `OffscreenPause`. Videos play only while the campaign is running and their own
   element is visible; every `<video>` is `muted`, `playsInline`, `loop`,
-  `preload="metadata"`, and `play()` is called after each swap. A capture-phase
+  `preload="none"`; visibility/activation raises the hint to `auto` and `play()`
+  is called after each swap. A capture-phase
   `play` guard pauses any video another runtime tries to start while the hero is
   paused/offscreen.
 - Reduced motion: `prefers-reduced-motion` sets `data-motion="paused"`, stops the

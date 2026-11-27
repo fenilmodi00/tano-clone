@@ -43,10 +43,10 @@ exists there in the capture.
 ## Behaviour
 
 - Public films: `<video class="wire-study-video-player" controls playsInline
-  preload="metadata" poster="…" src="…">`, inserted after the shared runtime's
-  one-shot autoplay pass so films never autoplay (source does not). Paused,
-  unmuted, native controls, local mp4 only. `data-video-ready` on metadata,
-  `data-video-error` on failure.
+  preload="none" poster="…" src="…">`, inserted after the shared runtime's
+  one-shot autoplay pass so films never autoplay (source does not). Activation
+  raises the preload hint to `auto` and starts the load. Paused, unmuted, native
+  controls, local mp4 only. `data-video-ready` on metadata, `data-video-error` on failure.
 - HelloFresh gates: native email validation; submit is captured and never
   fetches. Valid submit sets `data-gate-state="disclosed"`, hides the form,
   rewrites the promise line and appends a `role="status"` note explaining the

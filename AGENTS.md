@@ -24,14 +24,18 @@ Read `docs/ARCHITECTURE.md` before changing route structure, styling, metadata o
 - **Styling:** the ported Tano design system in `src/styles/` (tokens, layers, keyframes).
   Tailwind utilities and the shadcn scaffold were removed; do not add a second styling convention.
 - **Motion:** CSS keyframes plus small DOM-query hooks; Lenis for smooth scroll.
-- **Content:** per-route JSON, a generated route/SEO manifest, and data-driven playbook/compare
-  templates.
-- **Verification:** Playwright, pixelmatch, static-build assertion.
+- **Content:** per-route JSON validated by a Zod page schema, a generated route/SEO manifest, and
+  data-driven playbook/compare templates.
+- **Verification:** Vitest/Testing Library, Playwright, pixelmatch, Zod content validation,
+  static-build assertion.
 
 ## Commands
 
 - `npm run dev` — dev server on `http://localhost:3000`.
-- `npm run check` — format, content-manifest, lint, typecheck, build, static assertion.
+- `npm run check` — format, content manifest, content validation, lint, typecheck, tests, build,
+  static assertion.
+- `npm run content:validate` — parse every route JSON with the Zod page schema.
+- `npm test` — Vitest content, form, motion and component suites.
 - `npm run format` / `npm run format:check` — Prettier.
 - `npm run content:check` — fail if `src/content/routes.ts` is stale.
 - `npm run typecheck`, `npm run lint`.
@@ -66,8 +70,9 @@ src/hooks/                      shared client hooks
 src/lib/                        metadata, site config, motion primitives, form model
 src/content/
   routes.ts                     generated route/SEO manifest
+  schema.ts                     Zod page schema and inferred types
   pages/                        route-mirrored JSON content
-  types.ts
+  types.ts                      re-exports the content types route code imports
 src/styles/                     design system, purged CSS, runtime CSS, route shims
 scripts/                        capture, generation, verification, assertions
 docs/ARCHITECTURE.md            current design + migration plan
@@ -77,7 +82,8 @@ docs/ARCHITECTURE.md            current design + migration plan
 
 - Metadata lives in each route's JSON and flows through `buildPageMetadata`; never duplicate
   title/description literals in `page.tsx`.
-- Add a route by adding its JSON, then regenerate `routes.ts`; `content:check` must pass.
+- Add a route by adding its JSON, then regenerate `routes.ts`; `content:check` and
+  `content:validate` must pass.
 - Generated replicas/content/CSS are format-ignored. Running the capture generator overwrites
   hand edits; diff before accepting.
 - Runtime-only classes (Lenis, JS-built markup, inline SVG strings) belong in

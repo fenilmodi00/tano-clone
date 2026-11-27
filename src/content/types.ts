@@ -5,4 +5,4 @@
  * cannot drift; route code keeps importing the type names from this module.
  */
 
-export type { Block, Card, Hero, Page, PageSection } from "./schema";
+export type { Page } from "./schema";

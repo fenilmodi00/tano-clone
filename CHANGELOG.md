@@ -14,6 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shared `TanoButton`, `FaqRow` and `ReelCard` components, plus data-driven `PlaybookPage` (five routes) and `ComparePage` (four routes) templates.
 - Static-build assertion, content-manifest check, CI runtime visibility/link/smoke job.
 - `docs/ARCHITECTURE.md` and `docs/EVIDENCE.md`.
+- Cloudflare Workers deployment through vinext with the Static Assets response cache: every
+  route is prerendered at build time, hashed `_next/static` assets skip the Worker, and Worker
+  logs/traces are enabled.
+- `worker/index.js` returns `206` byte ranges for case-study videos; Workers Static Assets
+  otherwise answers `Range` with the full file, which breaks Safari playback.
+- `docs/CLOUDFLARE.md` plus the official Cloudflare Next.js and vinext migration skills under
+  `.agents/skills/`.
 
 ### Changed
 
@@ -24,6 +31,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Root metadata no longer claims canonical `/` for every page.
 - Docker builds receive `NEXT_PUBLIC_*` at build time; asset cache policy is split by volatility.
 - Evidence captures are untracked from git; tracked docs are ~24 MB.
+- `output: "standalone"` is now opt-in through `NEXT_OUTPUT=standalone`; Docker sets it, while
+  the Cloudflare/vinext build leaves Vite's output in place.
+- The three 1080p case-study films were re-encoded to 720p so each is under the 25 MiB Workers
+  Static Assets limit. Originals remain in the gitignored `.archive/`.
 
 ### Removed
 

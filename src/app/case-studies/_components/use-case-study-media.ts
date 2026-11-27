@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 import { caseMediaForPath, type CaseFilm, type CaseReelFilm } from "./case-media";
+import { primeVideo } from "@/lib/media";
 
 const PAUSE_GLYPH =
   '<svg aria-hidden="true" fill="none" focusable="false" height="100%" viewBox="0 0 14 14" width="100%"><rect fill="currentColor" height="13" rx="1.25" width="4" x="2" y="0.5" /><rect fill="currentColor" height="13" rx="1.25" width="4" x="8" y="0.5" /></svg>';
@@ -38,20 +39,15 @@ function injectFilm(frame: HTMLElement, film: CaseFilm, signal: AbortSignal): HT
   // playback. `pointerdown` may prime the load; `play` (which also covers
   // keyboard activation) must only raise the hint so it never aborts a
   // playback the browser has already started.
-  const raisePreload = () => {
-    if (video.preload === "none") video.preload = "auto";
-  };
   video.addEventListener(
     "pointerdown",
     () => {
       if (video.preload !== "none") return;
-      raisePreload();
-      // NETWORK_EMPTY (0): no resource selected yet, so an explicit load is safe.
-      if (video.networkState === 0) video.load();
+      primeVideo(video, { load: true });
     },
     { passive: true, signal },
   );
-  video.addEventListener("play", raisePreload, { signal });
+  video.addEventListener("play", () => primeVideo(video), { signal });
 
   video.addEventListener(
     "loadedmetadata",
@@ -321,7 +317,7 @@ function hydrateReel(
   const desktopQuery = window.matchMedia("(min-width: 768px)");
   let reduced = reducedQuery.matches;
   let paused = reduced;
-  let inView = true;
+  let inView = false;
 
   // The source starts the ring on the featured film (the copy the server
   // marked as front) in the middle cycle, then scroll shifts it by ±2 cards.
@@ -387,7 +383,7 @@ function hydrateReel(
       return;
     }
     // The front card is active: raise the hint before the first fetch.
-    video.preload = "auto";
+    primeVideo(video);
     if (!video.getAttribute("src")) {
       const film = films[frontIndex % count];
       if (!film) return;

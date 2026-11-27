@@ -8,6 +8,7 @@ import {
   validatePages,
   type PageEntry,
 } from "../../../scripts/validate-content";
+import { ROUTES } from "../routes";
 import { blockSchema, pageSchema } from "../schema";
 
 const pageBase = {
@@ -20,7 +21,7 @@ const pageBase = {
 describe("page schema", () => {
   it("parses every captured page", () => {
     const files = collectPageFiles(CONTENT_DIR);
-    expect(files).toHaveLength(44);
+    expect(files).toHaveLength(ROUTES.length);
 
     const failures: string[] = [];
     for (const file of files) {
@@ -64,7 +65,7 @@ describe("page schema", () => {
     const { pages, errors } = validateContent();
 
     expect(errors).toEqual([]);
-    expect(pages).toHaveLength(44);
+    expect(pages).toHaveLength(ROUTES.length);
     expect(pages.some((page) => page.route === "/")).toBe(true);
   });
 });

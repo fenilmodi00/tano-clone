@@ -3,8 +3,8 @@
  * Validate the captured page content under src/content/pages.
  *
  * Every JSON file is parsed with the Zod page schema. The command fails when a
- * file is malformed, a route is declared twice, the page count is not 44, or
- * the required `/` route is missing.
+ * file is malformed, a route is declared twice, the page count does not match
+ * the generated route manifest, or the required `/` route is missing.
  *
  * Run with: npx tsx scripts/validate-content.ts
  */
@@ -13,11 +13,11 @@ import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { pageSchema, type Page } from "../src/content/schema";
+import { ROUTES } from "../src/content/routes";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 export const CONTENT_DIR = path.join(ROOT, "src/content/pages");
-export const EXPECTED_PAGES = 44;
 
 export type PageEntry = {
   /** Path shown in validation errors. */
@@ -101,8 +101,8 @@ export function validateContent(dir = CONTENT_DIR): ContentValidation {
   errors.push(...pageErrors);
 
   if (errors.length === 0) {
-    if (pages.length !== EXPECTED_PAGES) {
-      errors.push(`expected ${EXPECTED_PAGES} pages, found ${pages.length}`);
+    if (pages.length !== ROUTES.length) {
+      errors.push(`expected ${ROUTES.length} pages, found ${pages.length}`);
     }
     if (!pages.some((page) => page.route === "/")) {
       errors.push('missing required route "/"');
