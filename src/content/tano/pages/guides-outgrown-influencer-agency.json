@@ -1,0 +1,184 @@
+{
+  "route": "/guides/outgrown-influencer-agency",
+  "family": "guide",
+  "meta": {
+    "title": "Outgrown Your Influencer Agency? How to Choose Your Next One | Tano",
+    "description": "Why an influencer agency that suits you at 100 creators can struggle at 1,000, what to look for in your next one, and how to switch without losing your creators."
+  },
+  "hero": {
+    "title": "Outgrown your influencer agency? How to choose your next one",
+    "paragraphs": [
+      "Your creator programme probably started small and in-house. A founder sent product to a few people they liked, or someone on the team who'd run creators somewhere else took it on with a spreadsheet. It worked, it grew, and at some point you brought in an agency to run it properly.",
+      "Now you want to go further: thousands of creators instead of dozens, more markets, more content for your ads, and new faces rather than the same names every month. The agency that got you here was the right choice at the time, but it may not be the right one for where you're going next. This guide sets out how the agency world actually looks, why an agency that suits you at 100 creators can struggle at 1,000, and how to switch without losing what you've built."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What kinds of influencer agencies are there?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "\"Influencer agency\" covers very different businesses, at very different prices. When you're choosing the main agency to run your creator programme, you're usually choosing between three kinds:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Boutique and specialist agencies. Smaller teams, often focused on a category, a platform or a market. Favikon puts typical agency retainers at $3,000 to $20,000+ a month, and this is where most of them sit.",
+            "Full-service and enterprise agencies. Strategy, creative, talent and paid media under one roof, for big budgets. Viral Nation publishes a $250,000 minimum for a single service and $1M+ a year for always-on programmes, and Digiday reports brands spending $1.5 million to $2 million on creator agency-of-record deals.",
+            "Managed services from software platforms. Some creator platforms will also run the work for you, usually priced on top of the software."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "You'll also come across talent agencies, which represent creators rather than brands, and specialists that do one job, such as seeding product at volume. You may work with them alongside your main agency, but they won't run your programme for you."
+        },
+        {
+          "type": "prose",
+          "html": "Within each kind, agencies are good at different things. Some make creators feel genuinely valued and keep them coming back. Some run tight systems and rarely drop a ball. Some have a real creative instinct and get the best content out of people. Very few are great at all three, so the right agency depends on which of those matters most to you right now."
+        }
+      ]
+    },
+    {
+      "heading": "Why does an agency that fits at 100 creators struggle at 1,000?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Because going from 100 creators to 1,000 means ten times the creators, and two things tend to break at that scale."
+        },
+        {
+          "type": "prose",
+          "html": "The first is cost. An agency's costs grow with the work, and the work grows with every creator. Kolsquare lists the number of creators activated as one of the main drivers of agency fees, and cites an Association of National Advertisers finding that agencies receive, on average, 30% of influencer spend. HireInfluence, an agency itself, puts it bluntly: coordination cost rises faster than creator count. So as you scale, the bill tends to rise at least in line with the programme, and often faster."
+        },
+        {
+          "type": "prose",
+          "html": "The second is supply, and it's the one brands notice later. Most agencies have built up a network of creators they know and trust, and that's a big part of what you're paying for. <a href=\"https://influencermarketinghub.com/how-many-influencers-do-you-need/\" target=\"_blank\" rel=\"noreferrer noopener\">Influencer Marketing Hub notes</a> that many agencies work from exclusive or contracted rosters, and that the same creators get reused because they're known quantities. A network that easily covers 100 good creators for your brand often can't cover 1,000. To fill the gap, the agency has to reach well outside the creators it knows. Fit and relevance drop, and it may end up paying more for creators who bring in less. So the cost can rise faster than the programme while the quality falls, and your results stop scaling with your spend."
+        },
+        {
+          "type": "prose",
+          "html": "None of this means your agency isn't trying. Good agencies are professionals, and they'll pull every lever and firefight to make the numbers work. The strain usually shows in smaller ways before it shows in your results:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The same creators keep coming back on shortlists, including ones you've seen working with other brands.",
+            "New shortlists include creators whose audience is a weaker fit, or in the wrong market.",
+            "More creators ask for fees up front, because the agency is reaching people who don't already like your product.",
+            "Sourcing takes longer, and briefs go out later.",
+            "Results per creator fall, even as the number of creators rises."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The shape of the work changes too. Many agencies are set up around campaigns: an ANA survey of client-side marketers found 55% say their agencies mainly work on a project basis. Running campaigns back to back is already wasteful at 100 creators: you recruit, brief and onboard people, then let them go after a few months. At 1,000 it breaks. Every new campaign means recruiting and onboarding hundreds of creators again, and the record of who posted, who sold and who is worth bringing back is lost each time. You can just about run 100 creators from a spreadsheet; at 1,000 you can't. The bigger the programme, the more it needs to be always-on, with each creator's history kept and the best ones brought back month after month."
+        },
+        {
+          "type": "prose",
+          "html": "If you sell in more than one country, you may hit a third problem: consistency. Many brands end up with a different agency in each market, each with its own tools, reports and way of working. You end up comparing each agency's own reports instead of looking at one set of numbers, and a creator brief that works in the UK is slow to reach your team in the US."
+        }
+      ]
+    },
+    {
+      "heading": "What should I look for in my next agency?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Start with what you need at the size you're heading for, not the size you are now. The questions that separate agencies at scale are:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "How do they find new creators, and how much of their supply comes from an existing roster?",
+            "How does their price change if you go from 100 creators to 1,000?",
+            "How do they keep standards consistent when many different people are managing your creators?",
+            "Do they run an always-on programme, or a series of campaigns?",
+            "If you sell in several markets, can they run them all the same way, with one set of reporting?",
+            "Who owns the creator relationships, content permissions and results if you leave?"
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "There's no single right answer. For a big launch, a new country or a one-off campaign with famous names, a specialist or full-service agency is often the better fit. For an always-on programme of hundreds or thousands of creators, how the agency recruits, how it keeps quality up and how its costs scale matter more than anything else. You also don't have to choose one or the other: many brands keep an agency for larger partnerships and bring in a different partner for the long tail of smaller creators."
+        }
+      ]
+    },
+    {
+      "heading": "How do I switch agencies without losing my creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Check your contract before you tell anyone: the notice period, what ends on termination and what carries on, who owns the creator contact list and results data, who holds the usage rights for content already made, and any clause that stops you contacting creators the agency introduced. Ask a lawyer about anything that's unclear."
+        },
+        {
+          "type": "prose",
+          "html": "Then plan it as a handover of relationships. Get the agency's records for every active creator first, decide who will look after each one, and send each creator a single message saying who their new contact is and what happens to their product, link and any content agreement. Run the old and new reporting side by side for at least one full cycle, and agree who checks disclosure on every post from the switch date; in the UK, <a href=\"https://www.asa.org.uk/advice-online/recognising-ads-social-media.html\" target=\"_blank\" rel=\"noreferrer noopener\">the ASA says brands and influencers share responsibility</a> for making ads obvious. You don't have to move everyone at once. Start with the creators who posted recently and your best performers, then bring the rest across in small groups."
+        }
+      ]
+    },
+    {
+      "heading": "Where does Tano fit?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a>, the creator advertising platform for consumer brands, is built for the always-on, large-scale end of this picture. Rather than paying creators a fixed fee per deal, Tano runs performance-based creator programmes at scale, starting at 100 seeded products a month and growing to many thousands of creators across Instagram, Facebook, TikTok and YouTube, so creators are rewarded for the value they bring the brand through commission on sales and milestone rewards. Its agents search 230 million creators, including independent and up-and-coming creators who aren't on any marketplace, so you aren't limited to a roster, and they learn which personas deliver. Tano's AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, talking to every creator one to one, and in-house strategists make the calls that matter. The aim is thousands of creator partnerships, each handled with the care you would give ten. More than 65% of creators who posted for Tano brands in 2026 have posted more than once, averaging 5.3 posts for the same brand."
+        },
+        {
+          "type": "prose",
+          "html": "Tano can also work alongside your existing agency: for example, running the smaller-creator programme while your agency keeps larger partnerships, PR and media buying. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000, with no annual contract, and the first creators are contacted in under 24 hours from onboarding. Fussy saw a 175% increase in revenue in two months with Tano. If you're weighing an agency against creator software more broadly, our guide on <a href=\"/guides/influencer-agency-or-platform\">choosing an influencer agency or platform</a> compares them."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Influencer agency or platform",
+            "What does a creator programme cost?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "uplift in CVR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy.",
+          "name": "Stephanie Terziyski",
+          "role": "Growth Influencer Marketing Manager · HelloFresh",
+          "image": "/sites/tano/extras/4b3629a7ba68267054fddc88cc3c919272b61bbe-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your next creator programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

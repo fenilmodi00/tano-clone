@@ -1,0 +1,98 @@
+{
+  "route": "/playbooks",
+  "family": "playbooks-index",
+  "meta": {
+    "title": "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    "description": "Free playbooks for brands running creator programmes: finding the creators who drive revenue, seeding and affiliate, and rebriefing creators for paid ads."
+  },
+  "hero": {
+    "eyebrow": "Free · Playbooks & frameworks",
+    "title": "Frameworks for creator-led growth.",
+    "paragraphs": [
+      "Free AI frameworks and workflows for influencer marketing teams. Drawn from running 500+ campaigns across consumer brands."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "variant": "cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Content Analysis Framework",
+              "body": "Use Claude Skills and Gemini to analyse your best-performing influencer content in under an hour. Includes skill files, prompt templates, and a full how-to guide.",
+              "href": "/playbooks/content-analysis-framework",
+              "meta": "AI Tools"
+            },
+            {
+              "title": "The Creator Discovery Guide",
+              "body": "Find the 3–5 creators who drive 80% of revenue. A data-backed guide to creator selection, tiering, and management — based on 10,000+ creator seedings.",
+              "href": "/playbooks/creator-discovery",
+              "meta": "Strategy"
+            },
+            {
+              "title": "Creator Partnership Ads Playbook",
+              "body": "The complete guide to running creator-led ads on Meta. Covering creator selection, briefing, pricing, performance reporting, and timelines — with a Bloom & Wild case study.",
+              "href": "/playbooks/creator-partnership-ads",
+              "meta": "Paid Media"
+            },
+            {
+              "title": "The Seeding → Affiliate Playbook",
+              "body": "How to build a creator programme that pays for itself — from gifting to affiliates to whitelisted ads. Includes the break-even formula, posting rate benchmarks, and the seeding → affiliate → whitelist pyramid.",
+              "href": "/playbooks/self-funding-seeding-affiliate",
+              "meta": "Seeding"
+            },
+            {
+              "title": "The Rebriefing Playbook",
+              "body": "How to turn your best organic creators into a high-converting paid ads engine — without cold outreach, guesswork, or wasted spend. Covers warm rebriefing, the seeding-to-paid flow, product type considerations, and scaling the programme.",
+              "href": "/playbooks/rebriefing",
+              "meta": "Paid Media"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Let's scale your creator programme.",
+    "body": "The playbooks are a head start. Want us to run it? 30-minute intro, no slides — we'll tell you whether Tano fits.",
+    "cta": {
+      "label": "Book a call",
+      "href": "/talk-to-us"
+    }
+  },
+  "cards": [
+    {
+      "title": "Content Analysis Framework",
+      "body": "Use Claude Skills and Gemini to analyse your best-performing influencer content in under an hour. Includes skill files, prompt templates, and a full how-to guide.",
+      "href": "/playbooks/content-analysis-framework",
+      "group": "Playbooks"
+    },
+    {
+      "title": "The Creator Discovery Guide",
+      "body": "Find the 3–5 creators who drive 80% of revenue. A data-backed guide to creator selection, tiering, and management — based on 10,000+ creator seedings.",
+      "href": "/playbooks/creator-discovery",
+      "group": "Playbooks"
+    },
+    {
+      "title": "Creator Partnership Ads Playbook",
+      "body": "The complete guide to running creator-led ads on Meta. Covering creator selection, briefing, pricing, performance reporting, and timelines — with a Bloom & Wild case study.",
+      "href": "/playbooks/creator-partnership-ads",
+      "group": "Playbooks"
+    },
+    {
+      "title": "The Seeding → Affiliate Playbook",
+      "body": "How to build a creator programme that pays for itself — from gifting to affiliates to whitelisted ads. Includes the break-even formula, posting rate benchmarks, and the seeding → affiliate → whitelist pyramid.",
+      "href": "/playbooks/self-funding-seeding-affiliate",
+      "group": "Playbooks"
+    },
+    {
+      "title": "The Rebriefing Playbook",
+      "body": "How to turn your best organic creators into a high-converting paid ads engine — without cold outreach, guesswork, or wasted spend. Covers warm rebriefing, the seeding-to-paid flow, product type considerations, and scaling the programme.",
+      "href": "/playbooks/rebriefing",
+      "group": "Playbooks"
+    }
+  ]
+}

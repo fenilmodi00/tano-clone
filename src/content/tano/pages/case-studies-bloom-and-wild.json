@@ -1,0 +1,301 @@
+{
+  "route": "/case-studies/bloom-and-wild",
+  "family": "case-study",
+  "meta": {
+    "title": "Bloom & Wild: Creator Acquisition Case Study | Tano",
+    "description": "How Bloom & Wild drives monthly revenue through creator partnerships across brands and markets with Tano."
+  },
+  "hero": {
+    "title": "How Bloom & Wild made creators a revenue channel",
+    "paragraphs": [
+      "Creator partnerships drive monthly revenue across brands and markets."
+    ],
+    "actions": [],
+    "media": "/sites/tano/extras/04c5a225549515a22c055892d4303e3d32d05276-2400x1400.jpg"
+  },
+  "sections": [
+    {
+      "variant": "case-study-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Bloom & Wild",
+              "label": "Client"
+            },
+            {
+              "value": "Flowers and gifting",
+              "label": "Sector"
+            },
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            },
+            {
+              "value": "−10%",
+              "label": "Lower CPA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Bloom &amp; Wild’s seasonal products create a constant need to reach customers with fresh, relevant creative. Its brand team worked with creators through monthly gifting, while performance marketers wanted creator partnerships that could drive orders. The opportunity was to connect those activities into one acquisition programme."
+        }
+      ]
+    },
+    {
+      "id": "the-problem",
+      "heading": "The Problem",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "The team wanted creator partnerships to drive orders, but slow onboarding, overlapping relationships and manual administration limited growth."
+        }
+      ]
+    },
+    {
+      "heading": "Growing the affiliate programme",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Traditional affiliate onboarding was slow. The team wanted to bring more creators into performance activity without adding more manual work."
+        }
+      ]
+    },
+    {
+      "heading": "Bringing brand and performance together",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Brand and performance teams approached creators from different angles. They needed to collaborate without competing for the same relationships."
+        }
+      ]
+    },
+    {
+      "heading": "Removing work that limited growth",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Outreach, fee negotiations, contracts, unique codes and commission calculations were manual. Seasonal products also required fresh creative every month."
+        }
+      ]
+    },
+    {
+      "id": "the-solution",
+      "heading": "The Solution",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano connected creator sourcing, content capture and affiliate activity around Bloom &amp; Wild’s existing teams. Automation removed repetitive work without making creator relationships feel impersonal."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Creator affiliate onboarding",
+              "body": "Tano gave the team a route to onboard creators for performance activity and grow the affiliate programme."
+            },
+            {
+              "title": "A continuing supply of creators",
+              "body": "Fresh creators supported monthly gifting and seasonal content needs, giving brand and performance teams more room to collaborate."
+            },
+            {
+              "title": "Choose content before buying rights",
+              "body": "The team could review what creators produced, identify suitable content and request advertising rights, instead of committing upfront to unseen creative."
+            },
+            {
+              "title": "Captured content for paid media",
+              "body": "Captured posts created a content library the team could return to when planning paid-media campaigns, rather than relying on screenshots and manual filing."
+            },
+            {
+              "title": "Reporting built around the business",
+              "body": "Campaign structures and reporting reflected Bloom & Wild’s brands, markets, teams and terminology."
+            },
+            {
+              "title": "Less administration, familiar workflow",
+              "body": "Less repetitive administration freed up the team’s time. Slack kept communication within its existing workflow, supported by responsive people who understood the account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-results",
+      "heading": "The Results",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Bloom &amp; Wild has established creators as a revenue-driving acquisition channel with Tano, generating revenue every month and achieving 125% higher click-through rates and 10% lower cost per acquisition."
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/818d7cd48e800a9a72fde5b4ff77692ba33fafbc-1720x1720.jpg"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            },
+            {
+              "value": "−10%",
+              "label": "Lower CPA"
+            },
+            {
+              "value": "138+",
+              "label": "Team hours saved a month"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The programme has expanded across brands and markets, bringing brand and performance teams together to drive acquisition through creator partnerships. Less time spent sourcing creators, managing communications and coordinating product sends means more capacity to grow the channel."
+        },
+        {
+          "type": "prose",
+          "html": "Tano enables the team to operate at a scale that would otherwise require at least one additional hire."
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    },
+    {
+      "id": "make-creators-part-of-your-acquisition-strategy",
+      "heading": "Make creators part of your acquisition strategy",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Build a creator programme that supports affiliate revenue and paid-media performance—not just a folder of content."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"https://www.tano.ai/talk-to-us\" target=\"_blank\" rel=\"noreferrer noopener\">Talk to Tano</a>"
+        }
+      ]
+    },
+    {
+      "variant": "films",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/2e9d02ccc7eb049d44d70f6fd750b7ef1cc3b320.mp4",
+          "alt": "@helenxkarim’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/f9b15a26367375be79b9220d8b3627c1beffb60b-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/cba2364eca42fa08ecd0a29a4d293eb92e1b92ae.mp4",
+          "alt": "@jadecrawfordtravels’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/88c84235d8d36a3aece2e8ab4aa56b8b82c9a66a-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/27c383f65e8a1b8a8f2fb05e745282c7842d1625.mp4",
+          "alt": "@katieannwilson’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/7dba21a8fdc19467ae78b09eeae1ff48d4ccb27c-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/a9b82c923368654af935bf2c0a01d5d687d523d1.mp4",
+          "alt": "@hanna__salem’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/42e18d1bbda263e6eb1fbf6c4e5d7fbe2540d083-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/62b2ce82f8c0e9368bdfe2e5210c7eb4aa87f99a.mp4",
+          "alt": "@niamhamelia1’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/87605b4c6c15995128433040443deaa4fad5c74d-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/42889107a760a0f05f49dc37da26323d18dcc782.mp4",
+          "alt": "@nicoleinlondon’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/c6d926b01528a7936e91b5ac4b1f7cf1ccc0cd4c-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/39c680f98a8d57274757ca89d2449438eec3ca31.mp4",
+          "alt": "@annabellegiselle’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/f4645274602fc756faeada4977a8e55ee889546d-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/6c2826b26d1e55bf55f5785ff25e3157909a5f4f.mp4",
+          "alt": "@tilleeez’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/03087953f61467ac4d2710b93589cce6e39d8082-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/74104196c1ef5e010755df38847b6d2ca4450565.mp4",
+          "alt": "@charhbooks’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/f605e5f01d60ff92b6d23808383b7e6db3e5a4b1-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/a92444572252c58b07009f98b9421280d9a06b45.mp4",
+          "alt": "@madelinejd’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/46003b9a90914a575e03e616beeddf9f64f2f087-432x768.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Read our other case studies",
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+              "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+              "href": "/case-studies/hellofresh",
+              "image": "/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+            },
+            {
+              "title": "How Skin+Me unlocked acquisition with overlooked creators",
+              "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+              "href": "/case-studies/skin-and-me",
+              "image": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+            },
+            {
+              "title": "How Papier cut CPA by 22%",
+              "body": "Seeded creator content outperformed Papier’s other Meta Partnership Ads.",
+              "href": "/case-studies/papier",
+              "image": "/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

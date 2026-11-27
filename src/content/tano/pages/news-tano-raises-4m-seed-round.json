@@ -1,0 +1,204 @@
+{
+  "route": "/news/tano-raises-4m-seed-round",
+  "family": "news-article",
+  "meta": {
+    "title": "Tano Has Raised $5M to Make Creators a True Advertising Channel. | Tano",
+    "description": "Tano has raised $4.8m, a $4M seed led by Cherry Ventures, to make creators a performance advertising channel brands can buy like Meta or Google ads."
+  },
+  "hero": {
+    "eyebrow": "News · 11 November 2026",
+    "title": "Tano has raised $5m to make creators a true advertising channel.",
+    "paragraphs": [
+      "We've raised a $4M seed led by Cherry Ventures, to make creators a performance advertising channel brands can buy like Meta or Google ads. Bringing our total funding to $5M thanks to earlier backing from Seedcamp and The Players Fund"
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Today we're announcing that we've raised a $4M seed led by <a href=\"https://www.cherry.vc/\" target=\"_blank\" rel=\"noreferrer noopener\">Cherry Ventures</a> to make creators a performance advertising channel brands can buy like Meta or Google ads."
+        },
+        {
+          "type": "prose",
+          "html": "This brings our total funding to $5M thanks to earlier backing from <a href=\"https://seedcamp.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Seedcamp</a> and <a href=\"https://www.playersfund.vc/\" target=\"_blank\" rel=\"noreferrer noopener\">The Players Fund</a>"
+        },
+        {
+          "type": "prose",
+          "html": "The idea is simple: a brand comes to Tano, deploys its budget and sets its objectives. Tano does the rest."
+        }
+      ]
+    },
+    {
+      "id": "marketing-money-follows-attention",
+      "heading": "Marketing money follows attention",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "If you're an advertiser deciding where to spend your next marketing dollar, the rational choice is wherever you can predict the highest return. Attention has moved to creators, and the money is following: US brands spent $29.5B on creators in 2024, and forecasts are for around $44B to be deployed in 2026, growing about four times faster than media overall."
+        },
+        {
+          "type": "prose",
+          "html": "Plenty of marketers already know creators can be a high-returning channel. What's been impossible is making that return predictable and easy to scale. Brands rarely have the data to know which creators really work, or the people to do all the manual work behind a large programme. So when a CMO weighs £10M on Meta against £10M on creators, Meta wins, because Meta is predictable."
+        },
+        {
+          "type": "prose",
+          "html": "For creator marketing to fulfil its potential, it has to become programmatic. It's the same path almost every advertising channel has taken."
+        }
+      ]
+    },
+    {
+      "id": "every-ad-channel-goes-programmatic",
+      "heading": "Every ad channel goes programmatic",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "I see ad channels moving in three key stages:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Someone finds an arbitrage: a way to reach consumers more efficiently than everyone else.",
+            "Agencies form around it and turn it into a repeatable method.",
+            "Data and software make it automatic."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "We've seen this pattern emerge in almost every large advertising channel."
+        },
+        {
+          "type": "prose",
+          "html": "Klaviyo did it for email. The Trade Desk did it for display. Meta did it for social. AppLovin is doing it for apps."
+        },
+        {
+          "type": "prose",
+          "html": "Creator marketing is the last major channel still stuck at stage two."
+        }
+      ]
+    },
+    {
+      "id": "why-it-hasn-t-been-possible-until-now",
+      "heading": "Why it hasn't been possible until now",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Every other channel bought rectangles on a screen."
+        },
+        {
+          "type": "prose",
+          "html": "Creators are not rectangles on a page. They're people, with feelings, concerns and schedules. The 'media asset' is a human!"
+        },
+        {
+          "type": "prose",
+          "html": "So this marketplace has always needed an intelligence layer to broker it, and until recently the only intelligence available was human. That's why the channel got stuck at the agency stage, with scale capped by headcount. There are literally thousands of businesses around the world offering creator marketing services."
+        },
+        {
+          "type": "prose",
+          "html": "About 18 months ago, AI agents became good enough to work with creators at enormous scale, and we've been right on the frontier of making it work. AI agents can now give timely, accurate and helpful communication, providing the creator with exactly what they need, when they need it."
+        },
+        {
+          "type": "prose",
+          "html": "In Tano's first six months, the base (LLM) models simply weren't good enough. Now we can prove they are."
+        }
+      ]
+    },
+    {
+      "id": "automation-puts-humanity-in-not-out",
+      "heading": "Automation puts humanity in, not out",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "The pushback we hear most: doesn't automation take the humanity out of a very human business?"
+        },
+        {
+          "type": "prose",
+          "html": "I'd argue the opposite: it puts humanity in."
+        },
+        {
+          "type": "prose",
+          "html": "Look at what most creator marketers actually do all day. It isn't building relationships or curating communities. It's mind-numbing manual work: vetting long lists of creators, sending mail merges, reconciling invoices, copying performance data into spreadsheets. None of that creates human connection."
+        },
+        {
+          "type": "prose",
+          "html": "Moreover, it also opens up creators nobody could afford to work with. A brand deal with a creator who has 1,000 followers has never made sense for a creator manager; the value of that one relationship is too low. When the cost of doing business falls, a brand can have thousands of those relationships, even tens of thousands. We unlock the long tail of creators."
+        },
+        {
+          "type": "prose",
+          "html": "(I like to compare this to what SpaceX is doing by lowering the cost of mass to orbit: the lower the cost, the more potential access. So if you're an aerospace enthusiast AND love creator marketing, we should chat!)"
+        },
+        {
+          "type": "prose",
+          "html": "And those relationships last. More than 65% of creators who posted for Tano brands in 2026 posted more than once, averaging 5.3 posts for the same brand."
+        }
+      ]
+    },
+    {
+      "id": "none-of-this-is-theory",
+      "heading": "None of this is theory",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "We're scaling our system aggressively. We talk to tens of thousands of creators every month, across hundreds of thousands of individual conversations, and we expect that to grow 10x in the year ahead."
+        },
+        {
+          "type": "prose",
+          "html": "And it's working. Brands are doubling down:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "HelloFresh saw a 93% increase in conversion rate.",
+            "Skin+Me grew creator-driven sign-ups and revenue 3.5x.",
+            "Bloom & Wild's creator ads delivered 125% higher click-through rates.",
+            "Papier saw ROAS rise 34% and CPAs fall 22%."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "For one of the world's largest consumer goods companies, our agents sourced 2,358 creators with just two hours of human input. The campaign took 87 expert hours against an estimated 1,751 manual ones, and delivered a statistically significant brand lift, including +17 points on its key message. 92% of creators said they'd work with the brand this way again."
+        },
+        {
+          "type": "prose",
+          "html": "And creators love it too. In our latest survey, creators gave the programme an NPS of +68, and almost all rated their communication with our agent \"excellent\"."
+        }
+      ]
+    },
+    {
+      "id": "what-the-money-is-for",
+      "heading": "What the money is for",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "We'll invest this round in compute, engineers and senior creator strategists, to solve the hard problems nobody in creator marketing has solved yet."
+        },
+        {
+          "type": "prose",
+          "html": "Our vision is to build the world's largest advertising channel for commerce, powered by people."
+        },
+        {
+          "type": "prose",
+          "html": "Thank you to Cherry Ventures, Seedcamp and The Players Fund for backing us, and to every brand and creator building this with us."
+        },
+        {
+          "type": "prose",
+          "html": "<em>Will Caplan</em>"
+        },
+        {
+          "type": "prose",
+          "html": "<em>CEO and co-founder, Tano</em>"
+        }
+      ]
+    }
+  ]
+}

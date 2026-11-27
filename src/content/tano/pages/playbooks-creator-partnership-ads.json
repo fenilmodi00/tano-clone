@@ -1,0 +1,51 @@
+{
+  "route": "/playbooks/creator-partnership-ads",
+  "family": "playbook",
+  "meta": {
+    "title": "Free Creator Partnership Ads Playbook | Tano | Tano",
+    "description": "The complete guide to creator partnership ads on Meta: choosing creators, briefing, pricing, reporting and timelines, plus a Bloom & Wild case study."
+  },
+  "hero": {
+    "eyebrow": "FREE PLAYBOOK · 2026",
+    "title": "The complete guide to creator partnership ads.",
+    "paragraphs": [
+      "From creator selection to performance reporting — the complete playbook for running whitelisted ads on Meta in 2026."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Get free access in seconds.",
+      "eyebrow": "Creator Partnership Ads Playbook",
+      "variant": "playbook-gate",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Drop your work email and we'll unlock the full playbook instantly."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "8-section guide"
+            },
+            {
+              "title": "Brief builder tool"
+            },
+            {
+              "title": "Pricing benchmarks"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Ready to scale your creator ad programme?",
+    "body": "Book a call with the Tano team to see how we run creator partnership ads for brands like Bloom & Wild, IM8, and ElevenLabs.",
+    "cta": {
+      "label": "Book a Call",
+      "href": "/talk-to-us"
+    }
+  }
+}

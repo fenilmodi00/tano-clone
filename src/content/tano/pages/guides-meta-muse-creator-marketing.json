@@ -1,0 +1,301 @@
+{
+  "route": "/guides/meta-muse-creator-marketing",
+  "family": "guide",
+  "meta": {
+    "title": "What Is Meta Muse, and What Does It Mean for DTC Creator Marketing? | Tano",
+    "description": "Meta Muse, Meta's personal AI agent, is now live in the UK. What it changes about shopping, and what it means for DTC brands and their creator programmes."
+  },
+  "hero": {
+    "title": "What does Meta Muse mean for DTC creator marketing?",
+    "paragraphs": [
+      "Meta launched Muse, its personal AI agent, in the UK in November 2026, after going live in North America in September. If you run creator marketing at a DTC brand, here is what it means for your programme.",
+      "The short answer: Muse is an always-on shopping assistant that can work from the Reels a person has saved on Instagram, so a creator's post can do its job weeks later. When Muse makes the final pick, early evidence says it leans on price and stock, and almost never on brand name. Creator content that earns the save and shows real-life fit is likely to matter more, and the facts an agent checks need to be right."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What is a personal AI agent?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A personal AI agent acts for you as well as answering: Meta says Muse <a href=\"https://about.fb.com/news/2026/09/introducing-muse\" target=\"_blank\" rel=\"noreferrer noopener\">does the work rather than only answering questions</a> and makes suggestions proactively. Profound found it keeps a profile of each user's tastes by product category and checks it on every shopping request. Connect Instagram and it can turn a saved recipe Reel into a shopping list."
+        },
+        {
+          "type": "prose",
+          "html": "Ask it for a cabin bag that fits under a plane seat and the agent starts by checking what it knows about you, searches Meta's own catalog for up to 50 options, checks live merchant sites, then recommends one and waits for your yes. In <a href=\"https://www.tryprofound.com/blog/the-era-of-personal-agents-muse-and-instinct\" target=\"_blank\" rel=\"noreferrer noopener\">Profound's tests</a>, Muse usually showed six product cards, four from live websites and two from the catalog, even though the catalog supplied far more candidates."
+        }
+      ]
+    },
+    {
+      "heading": "What does Muse do today, and how fast is it growing?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "In the UK, Muse is free for anyone 18 and over on iOS, Android, muse.ai and WhatsApp, with optional subscription plans. Meta named 14 UK connector partners, including ASOS and LOOKFANTASTIC; for other brands, Muse can check out with Shop Pay on supported Shopify stores."
+        },
+        {
+          "type": "prose",
+          "html": "On its October 2026 earnings call, Meta said <a href=\"https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Earnings-Call-Transcript.pdf\" target=\"_blank\" rel=\"noreferrer noopener\">more than 10 million people in the US and Canada set up Muse</a> in its first six weeks. More than a quarter of users shop with it, spending over $200 on average."
+        }
+      ]
+    },
+    {
+      "heading": "What changes about shopping when an agent helps you buy?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Four changes already show up in the early evidence."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Change",
+            "For shoppers",
+            "Early evidence",
+            "For creator marketing"
+          ],
+          "rows": [
+            [
+              "1. An always-on assistant with memory",
+              "Saves can come back later",
+              "Muse uses saved Reels, suggests things unprompted and keeps a shopping profile",
+              "The save matters more; a post need not sell in one scroll"
+            ],
+            [
+              "2. Agents pick on price, stock, returns and fit",
+              "Less weight on brand familiarity",
+              "Muse's reasons: price 57%, in stock 14%, reviews 10%, brand name 1%; at equal prices agents chose the better return policy in 86% of tests",
+              "Creators create desire and show fit; the pick rests on facts the brand controls"
+            ],
+            [
+              "3. Muse starts from Meta's catalog",
+              "Options come from what Meta can see",
+              "Muse almost always searches Meta's catalog first, which also powers Instagram and Facebook shopping",
+              "Products need to be in Meta's catalog"
+            ],
+            [
+              "4. Agents converge on the same picks",
+              "The same few products keep coming up",
+              "A product one agent picked had a 73% chance of being picked by another; in 275 real-store comparisons, agents picked the trusted option 72% of the time",
+              "The first brand to nail why it is the right pick could win share quickly"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Meta is tying saves to Muse: Engadget reported on 24 November that Instagram will prompt people who have connected Muse to use it when they save posts, and that Muse is coming to Instagram DMs."
+        },
+        {
+          "type": "prose",
+          "html": "Memory suits products bought after several viewings, such as skincare and subscriptions: the territory always-on creator programmes are built for."
+        },
+        {
+          "type": "prose",
+          "html": "People buy from creators partly because a creator embodies a life they want, a pull that does not show up in Muse's stated reasons. Muse can read specs from a catalog, so the creator's job is what a catalog cannot give: true, checkable insight from real use. Does the bag fit under a budget airline seat when full? How does the serum sit under make-up by the afternoon? A post that shows this carries weight with a person and an agent alike."
+        },
+        {
+          "type": "prose",
+          "html": "The evidence is early. The largest study, by a16z and The Prompting Company, ran 11,307 tests on four consumer agents including Muse in October and November 2026. A narrower Braintrust test found Muse met 94.7% of stated requirements on the open web, the highest of three agents, but made no pick for 6 of 25 requests on a fixed catalog. Demand is small: only 5.7% of respondents to eMarketer's October 2026 Retail Apps survey would prefer to shop with a personal AI agent such as Muse, which leaves time to prepare."
+        },
+        {
+          "type": "prose",
+          "html": "Agents lean on review sites, press and forums, sometimes more than product pages, yet Muse cites reviews in only 10% of picks, against 30% to 41% for other agents. It does not name the sources it visits by default, so a brand cannot yet see which posts shaped a pick."
+        }
+      ]
+    },
+    {
+      "heading": "What does Muse mean for creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Muse changes the creator's job; the question is how creators complement it."
+        }
+      ]
+    },
+    {
+      "heading": "What does Muse probably help creators with?",
+      "eyebrow": "What does Muse mean for creators?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Saves get a second life: a post saved weeks ago can resurface when the shopper is ready to buy, at the point of purchase where social shopping has always lost people."
+        }
+      ]
+    },
+    {
+      "heading": "What might Muse take over from creators?",
+      "eyebrow": "What does Muse mean for creators?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "The comparison job. Muse checks prices, stock and specs across shops, so creator posts that only list specs or prices will add less."
+        }
+      ]
+    },
+    {
+      "heading": "Where could Muse compete with creators?",
+      "eyebrow": "What does Muse mean for creators?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "As the trusted adviser in the moment of choice. The \"someone like me swears by it\" trust creators provide could matter less if shoppers ask Muse instead."
+        },
+        {
+          "type": "prose",
+          "html": "Yet in an <a href=\"https://www.iab.com/news/consumers-want-ai-shopping-recommendations-to-include-trusted-creator-perspectives\" target=\"_blank\" rel=\"noreferrer noopener\">IAB survey of 2,200 people who had used AI for shopping research</a> across five countries, 56% preferred AI recommendations that include creator or influencer perspectives, and 65% were more confident in ones informed by credible creator reviews."
+        },
+        {
+          "type": "prose",
+          "html": "Creators should double down on taste, identity, real life and their audience's trust, making saveable posts that name the product and leaving price comparison to the agent. Our view is that Muse is more likely to amplify a shopper's favourite creators than replace them."
+        }
+      ]
+    },
+    {
+      "heading": "What should DTC brands change in their creator programme?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Produce a steady supply of saveable posts, each answering a buying question, and make the product facts agent-ready."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Go always-on instead of one-off campaigns, briefing each seeding round around one buying question. See how to change your creator programme for Meta Muse.",
+            "Give every creator a code, a link and freedom to post their own way. What to tell your creators about Meta Muse has a brief to paste, with disclosure rules.",
+            "Go wide on nano and micro creators so more buying questions get answered.",
+            "Post UGC organically as well as running it as ads.",
+            "Check the facts an agent reads: price, stock, returns, catalog listing and Shop Pay checkout."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Where do we think this is heading?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Our analysis and experience running creator programmes point to three developments, none yet proven in the data."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Creator posts become part of how agents answer shopping questions.</strong> Meta says its AI will, over time, weave <a href=\"https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/\" target=\"_blank\" rel=\"noreferrer noopener\">Reels and posts into answers with credit back to the creators</a> and cite content shared across Instagram, Facebook and Threads. This is the stated direction for Muse Spark, the model behind Muse, not a live feature. If it arrives, a review posted in March could help close a sale in September."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Creator codes could work like a new link in bio.</strong> Instagram told TechCrunch that affiliate links in Reels draw about twice the clicks of links in bio. If agents surface a creator's code next to their post, older reviews could keep earning commission. Nothing confirms Muse uses creator codes yet, and a Tom's Guide coupon test got untrustworthy or empty results."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>The long tail could matter more.</strong> Agents answer specific questions, so many specific posts from smaller creators could beat one big moment, though convergence on default picks could push the other way."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano build always-on creator programmes?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is the creator advertising platform for consumer brands. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. We run the loop every month, so saveable posts keep arriving:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Source. You approve or reject the first two calibration lists of creators; after that, your time is small.",
+            "Onboard. We contact creators as your brand; each agrees terms and gets their own code and link.",
+            "Seed and post. Creators try the product and make content their own way.",
+            "Coach. We detect posts automatically and coach each creator one to one on posting and hooks.",
+            "Amplify. We surface the top posts by performance and by fit with gaps in your ad account, to run as ads. We keep the creators who post."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Our programmes are performance-based, so creators are rewarded on the value they bring your brand. We judge a four-month pilot on one number from your own target. At <a href=\"/case-studies/hellofresh\">HelloFresh</a>, new customer acquisition increased by 5x since the start of the year, with 73% of creators posting frequently."
+        },
+        {
+          "type": "prose",
+          "html": "We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "What other questions do buyers ask?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Can brands pay to get into Muse's answers?",
+              "body": "Not today. Meta says Muse carries no ads, and conversations with Muse aren't shared with Meta's advertising systems."
+            },
+            {
+              "title": "Is Muse the same as Meta AI?",
+              "body": "No. Muse is Meta's agent app for tasks such as shopping; Meta AI is the assistant across Meta's apps. Both run on the Muse Spark model, whose shopping mode surfaces ideas from creators people already follow."
+            },
+            {
+              "title": "Is Muse the same as Muse Image or Muse for Small Business?",
+              "body": "No. Muse for Small Business is the agent's version for business owners, TechCrunch reported. Muse Image was a separate image feature, withdrawn in July 2026 after a privacy backlash."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "uplift in CVR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy.",
+          "name": "Stephanie Terziyski",
+          "role": "Growth Influencer Marketing Manager · HelloFresh",
+          "image": "/sites/tano/extras/4b3629a7ba68267054fddc88cc3c919272b61bbe-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can brands pay to get into Muse's answers?",
+      "a": "Not today. Meta says Muse carries no ads, and conversations with Muse aren't shared with Meta's advertising systems."
+    },
+    {
+      "q": "Is Muse the same as Meta AI?",
+      "a": "No. Muse is Meta's agent app for tasks such as shopping; Meta AI is the assistant across Meta's apps. Both run on the Muse Spark model, whose shopping mode surfaces ideas from creators people already follow."
+    },
+    {
+      "q": "Is Muse the same as Muse Image or Muse for Small Business?",
+      "a": "No. Muse for Small Business is the agent's version for business owners, TechCrunch reported. Muse Image was a separate image feature, withdrawn in July 2026 after a privacy backlash."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Plan your always-on creator programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

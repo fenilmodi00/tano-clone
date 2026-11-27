@@ -1,0 +1,488 @@
+{
+  "route": "/compare/ltk-vs-tano",
+  "family": "compare",
+  "meta": {
+    "title": "LTK vs Tano: Marketplace Reach, or Your Own Creator Programme? | Tano",
+    "description": "LTK gives you reach into a creator shopping marketplace. Tano builds a creator programme that compounds on your own site. Plenty of brands run both."
+  },
+  "hero": {
+    "title": "LTK vs Tano: marketplace reach, or a creator programme that compounds on your site?",
+    "paragraphs": [
+      "LTK and Tano both help brands generate sales through creators. They are built for different jobs.",
+      "LTK helps brands take part in an established creator shopping ecosystem. Creators curate products across many brands, shoppers discover those recommendations inside LTK, and brands benefit from the audience trust and shopping intent already sitting in that marketplace.",
+      "Tano helps brands build an ongoing creator programme of their own. It recruits, develops and re-engages creators around the brand's products, site, content needs and revenue goals, so creator activity becomes an always-on channel rather than a run of separate campaigns.",
+      "The question is not which platform has more creators. It is whether you want reach into a creator shopping marketplace, or a direct creator programme that brings the customer and the content back to your brand."
+    ],
+    "actions": [
+      {
+        "label": "See if Tano fits your programme",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "All comparisons",
+        "href": "/compare"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The numbers:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "CVR uplift at HelloFresh with a hybrid creator model run with Tano."
+            },
+            {
+              "value": "4 of 5",
+              "label": "Of Skin+Me's top-performing creators in a single month were onboarded through Tano."
+            },
+            {
+              "value": "+125%",
+              "label": "CTR on Bloom & Wild creator ads run through Tano, against non-Tano ads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "LTK is a destination shoppers open. Tano is the layer behind a programme that points at your own site.",
+      "eyebrow": "Where the journey ends up",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "LTK"
+        },
+        {
+          "type": "prose",
+          "html": "LTK is a shopping marketplace with a consumer app. Creators build multi-brand storefronts and recommend products to people who open LTK to discover and to shop. <a href=\"https://www.businesswire.com/news/home/20260924057631/en/LTK-Reimagines-Shopping-Discovery-Bringing-AI-and-Real-Creator-Recommendations-Together-in-One-Experience\" target=\"_blank\" rel=\"noreferrer noopener\">LTK says it has</a> more than 44 million monthly users and more than 500,000 vetted creators."
+        },
+        {
+          "type": "prose",
+          "html": "That makes it more than affiliate infrastructure. It is a consumer discovery destination, where shoppers browse creator-led recommendations and follow commerce creators whose taste they trust. Your brand gets a share of demand that is already there."
+        },
+        {
+          "type": "prose",
+          "html": "Tano"
+        },
+        {
+          "type": "prose",
+          "html": "Tano is not trying to build a consumer shopping destination. It is the operating layer for a creator programme that belongs to the brand. Creators are recruited into your programme, work against your offers and incentives, and send their audience to your own site."
+        },
+        {
+          "type": "prose",
+          "html": "The goal is not only the recommendation today. It is making the next relevant creator action more likely and more valuable, using what the programme already knows about that creator."
+        }
+      ]
+    },
+    {
+      "heading": "The core difference: destination and relationship",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "LTK gives a brand distribution inside a creator shopping marketplace. Tano gives a brand an operating system for direct creator relationships."
+        }
+      ]
+    },
+    {
+      "heading": "Editorial commerce: reaching shoppers through creators who already curate",
+      "eyebrow": "Model one",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "In LTK's model the creator is a curator and the marketplace is part of the shopping journey. A creator has already earned trust through their taste, their expertise and their recommendations. They may link your product alongside many others, and their audience may find it through an LTK feed, the creator's storefront or a retailer destination. The brand benefits from a relationship the creator has already built with an audience that is ready to buy."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>This works particularly well when</strong>"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your product is easy to understand and converts on a strong recommendation.",
+            "Your customer already follows LTK creators or shops through LTK's consumer experience.",
+            "You are widely stocked at the retail destinations creators commonly link to.",
+            "Being sold at a retailer is worth as much to you commercially as selling direct.",
+            "Your objective is incremental reach, discovery and attributable commerce from established curators."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The job is to earn inclusion in a creator's editorial universe."
+        }
+      ]
+    },
+    {
+      "heading": "Creator lifecycle: building a direct channel that gets better over time",
+      "eyebrow": "Model two",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "In a lifecycle model the creator is not a storefront placement or a campaign participant. They join a brand programme that develops the relationship deliberately, from discovery and a first product experience through to a first post, repeat activity, affiliate sales, higher-value tiers, paid content rights and longer-term advocacy."
+        },
+        {
+          "type": "prose",
+          "html": "Tano is built for this model. It uses a creator's brand-specific performance and programme history to decide the next action: whether to follow up, gift again, introduce a new product, raise an offer, request rights, move the creator up a tier, or re-engage them after a quiet spell. At <a href=\"/case-studies/skin-and-me\">Skin+Me</a>, 4 of the 5 top-performing creators in September 2025 were onboarded through Tano."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>This works particularly well when</strong>"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your product needs repeat exposure, education or trial before customers convert.",
+            "You sell primarily through your own site and want creator activity to build direct customer relationships.",
+            "You need a reliable flow of organic creator content, including content that can run in paid social.",
+            "Your team wants creator relationships to continue beyond individual launches.",
+            "You want the programme learning, who posts, who sells, who converts and who creates usable content, to stay with the brand."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Editorial commerce captures shopping intent that already exists. Creator lifecycle builds a repeatable system for increasing participation, advocacy and value."
+        }
+      ]
+    },
+    {
+      "heading": "What each model optimises for.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "LTK",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "What is the primary job?",
+              "Reach shoppers through established creator curation and marketplace discovery",
+              "Develop creators into a direct, always-on brand growth channel"
+            ],
+            [
+              "Where does the customer journey begin?",
+              "In creator-led discovery inside LTK, in social content, or at a linked retail destination",
+              "In creator content that is deliberately connected to the brand's programme and site"
+            ],
+            [
+              "Where does the sale land?",
+              "In LTK or at a retailer, depending on the journey",
+              "On the brand's own site, through tracked links and codes"
+            ],
+            [
+              "What does the creator relationship centre on?",
+              "The creator's marketplace presence and multi-brand editorial identity",
+              "The creator's direct relationship with one brand programme"
+            ],
+            [
+              "Who operates the work?",
+              "Your team in LTK Connect, or LTK's team through Optimize",
+              "Tano's team, agents and workflows, with your approval on strategy and high-value decisions"
+            ],
+            [
+              "What compounds?",
+              "Creator reach and marketplace distribution",
+              "Relationship history, creator performance, content, rights and repeat activity"
+            ],
+            [
+              "What is the natural content outcome?",
+              "A creator recommendation that supports discovery and commerce",
+              "Organic content that drives direct sales and, where agreed, becomes rights-cleared paid creative"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose LTK when",
+      "eyebrow": "Why LTK",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your product can convert from one compelling creator recommendation.",
+            "Your audience already follows LTK creators or shops through LTK's consumer experience.",
+            "You are widely stocked at the retail destinations creators commonly link to, and a sale there delivers enough margin, customer value and attribution for your business.",
+            "Your team can run creator discovery, outreach, campaigns and follow-up inside LTK Connect, or you plan to use LTK Optimize.",
+            "Your immediate goal is incremental reach among high-intent shoppers rather than building a direct creator channel from scratch."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "LTK is not merely a source of affiliate links. Its advantage is marketplace distribution: creators with established shopping audiences, and consumers who are already there to buy."
+        }
+      ]
+    },
+    {
+      "heading": "Choose Tano when",
+      "eyebrow": "Why Tano",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You sell through your own site and want creator-driven customers and performance data to land there. “One person managing every channel meant outreach capped quickly and consistency suffered.” Skin+Me, before Tano",
+            "Your category needs repeat exposure, demonstration, trust-building or routine before a customer converts.",
+            "You want to recruit creators outside marketplace supply, including emerging, independent and niche creators.",
+            "You need gifting, briefing, follow-up, codes, commissions, payments, rights, tiering and re-engagement to run reliably without becoming a large manual workload.",
+            "You want your strongest creator content available for paid social with rights and permissions tracked. Bloom & Wild saw +125% CTR and −10% CPA against their non-Tano ads.",
+            "You want creator activity measured against revenue and conversion, not post volume. HelloFresh saw a 93% uplift in CVR with a hybrid creator model run with Tano.",
+            "You want the programme's creator history, content library, performance data and operating knowledge to stay with your brand."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Run LTK and Tano together",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "For a lot of brands these two are complementary rather than exclusive. Use LTK for creators whose value comes from their existing shopping audience, their marketplace presence and retail distribution. Use Tano to recruit and develop a direct creator base around your own products, site and content needs. Brands already on LTK are exactly who Tano is built for, and nothing has to be switched off on day one."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>A practical split</strong>"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "LTK carries established commerce creators and retailer-linked recommendations.",
+            "Tano recruits emerging, independent, niche or strategically valuable creators into your own programme.",
+            "LTK activity is measured against sales that happen in the LTK or retail ecosystem.",
+            "Tano activity is measured against direct-site sales, creator progression, repeat participation and content value.",
+            "You set the attribution rules and commission eligibility before a creator can take part in both."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The objective is not to force every creator into one model. It is to use each model for the job it does best."
+        }
+      ]
+    },
+    {
+      "heading": "LTK and Tano side by side.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "LTK",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "What it is",
+              "Creator shopping platform with a consumer app",
+              "Creator advertising platform: strategy, software, agents and operations"
+            ],
+            [
+              "Best for",
+              "Marketplace discovery and creator-led shopping intent",
+              "Direct creator growth, repeat activity and programme learning the brand keeps"
+            ],
+            [
+              "Creator supply",
+              "More than 500,000 creators, by LTK's count",
+              "Sourced for your programme from the open market of roughly 250 million creators, including the independent and up-and-coming creators who are not on any marketplace"
+            ],
+            [
+              "Relationship model",
+              "The creator's multi-brand relationship with LTK",
+              "A direct brand-to-creator programme relationship"
+            ],
+            [
+              "Where the sale lands",
+              "The LTK app, or a linked retailer destination",
+              "Your own site, through tracked codes and links"
+            ],
+            [
+              "Customer data",
+              "Set by the marketplace or retailer journey",
+              "Your direct-site customer journey and your commerce stack"
+            ],
+            [
+              "Programme design",
+              "Marketplace participation and commissionable product linking",
+              "Lifecycle: sourcing, gifting, first post, repeat post, tiering, affiliate, paid usage and re-engagement"
+            ],
+            [
+              "Who does the work",
+              "Your team in LTK Connect, or LTK's team through Optimize",
+              "Tano's agents run outreach, follow-up, programme communication, codes and payments; your team approves and keeps the strategy and the creative judgement"
+            ],
+            [
+              "Gifting and follow-up",
+              "Run by your team in Connect, or through Optimize",
+              "Run through Tano's programme operations and workflows"
+            ],
+            [
+              "Creator payments",
+              "Commission, through LTK",
+              "Automated workflows, managed by Tano"
+            ],
+            [
+              "Content for paid social",
+              "Rights agreed with individual creators",
+              "Rights and whitelisting managed as part of the programme, assets ad-ready"
+            ],
+            [
+              "Pricing",
+              "Not published; quoted after a demo, plus commission",
+              "From $3,000 a month plus a share of affiliate commission; paid on performance"
+            ],
+            [
+              "Data ownership",
+              "The platform",
+              "You: the relationships, the programme history and the performance data"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "LTK and Tano compared on reach, where the sale lands, running both and when to choose each."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Tano an alternative to LTK?",
+              "body": "Sometimes. Both support creator-led sales, affiliate tracking and creator earnings. But LTK is a shopping marketplace with a consumer audience, and Tano is an operating system and a managed programme for direct brand-to-creator relationships. The right choice depends on whether you need marketplace reach, programme ownership, or both."
+            },
+            {
+              "title": "Can a brand use LTK and Tano at the same time?",
+              "body": "Yes. Use LTK for creator-led marketplace and retail discovery, and use Tano to build a direct programme around your creators, your products and sales on your own site. You need clear rules for creator eligibility, attribution, commissions and reporting, especially where a creator could take part in both. Tano's team sets that up with you at the start."
+            },
+            {
+              "title": "What does Tano mean by a brand-owned programme?",
+              "body": "It does not mean the brand owns creators. Creators stay independent. It means the programme relationship, the creator performance history, the operating context, the content permissions and the commercial learning are organised around your brand rather than held inside a marketplace account. If you change tools or partners, that knowledge stays with you and stays useful."
+            },
+            {
+              "title": "Does Tano only make sense for DTC brands?",
+              "body": "It suits brands that sell through their own site and value direct customer, conversion and content data. It is also relevant to brands with retail distribution who want a direct creator programme running alongside their retailer and marketplace activity, so the content and the creator base build up on their side rather than only inside someone else's app."
+            },
+            {
+              "title": "Which is cheaper, LTK or Tano?",
+              "body": "They should not be compared as software subscriptions. LTK Connect is self-serve and LTK Optimize adds managed support. Tano includes programme operations, agents, workflows and strategic support from the start. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. At low volume a marketplace tool is the lower-cost route. As creator operations get more complex, the meaningful comparison is against the cost of internal headcount or an agency retainer."
+            },
+            {
+              "title": "How does LTK compare with ShopMy?",
+              "body": "Both are marketplaces where the creator's relationship is with the platform. LTK is larger and has a consumer shopping app, with more than 44 million monthly users by its own count and more than 500,000 creators. ShopMy is smaller, publishes its fee structure, and is built around creator storefronts and commissionable links rather than a shopping app. ShopMy is self-serve. LTK Connect is self-serve and LTK Optimize is the managed tier."
+            },
+            {
+              "title": "How soon can creators be posting?",
+              "body": "On LTK, as soon as a creator who already has a storefront chooses to link your product, which can be immediate if you are stocked where they shop and slower if you are not. On Tano the first creators are recruited and onboarded in the first days of a programme, because sourcing, briefing, contracting and gifting run as agent workflows from day one, and the creators Tano recruits are not waiting for a marketplace to surface your brand. The programme then builds tier by tier."
+            },
+            {
+              "title": "Can you scale a creator programme without hiring?",
+              "body": "On Tano that is the model. The team and agents do the sourcing, outreach, briefing, contracting, payment and re-engagement, so the same marketing team can run hundreds or thousands of creators with graduated human oversight by tier. On LTK the equivalent is LTK Optimize, the managed tier; on LTK Connect your team runs discovery and campaigns inside LTK's tools, so the work grows with the programme."
+            },
+            {
+              "title": "Does AI outreach damage creator relationships?",
+              "body": "The agents are brand-scoped and grounded in each creator's own content, performance and programme, so a creator hears from your brand about their work, not from a generic affiliate mailer. Frequency is governed centrally so a creator in several Tano programmes is never spammed. Katie McKane at Skin+Me put it plainly: “I was anti-AI at first. I've changed my mind.”"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The positioning line",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "LTK helps brands reach creator-led shopping demand that already exists. Tano helps brands build a direct creator programme that keeps the customer, the content and the learning on their own side."
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "22%",
+              "label": "Lower CPA on seeded Partnership Ads"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Our seeded partnership ads are delivering a 22% cheaper CPA and 34% increased ROAS versus our previous partnership ads and also versus in-house ads, they're much more efficient.",
+          "name": "Amirah Hussain",
+          "role": "Senior Paid Social Manager · Papier"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Tano an alternative to LTK?",
+      "a": "Sometimes. Both support creator-led sales, affiliate tracking and creator earnings. But LTK is a shopping marketplace with a consumer audience, and Tano is an operating system and a managed programme for direct brand-to-creator relationships. The right choice depends on whether you need marketplace reach, programme ownership, or both."
+    },
+    {
+      "q": "Can a brand use LTK and Tano at the same time?",
+      "a": "Yes. Use LTK for creator-led marketplace and retail discovery, and use Tano to build a direct programme around your creators, your products and sales on your own site. You need clear rules for creator eligibility, attribution, commissions and reporting, especially where a creator could take part in both. Tano's team sets that up with you at the start."
+    },
+    {
+      "q": "What does Tano mean by a brand-owned programme?",
+      "a": "It does not mean the brand owns creators. Creators stay independent. It means the programme relationship, the creator performance history, the operating context, the content permissions and the commercial learning are organised around your brand rather than held inside a marketplace account. If you change tools or partners, that knowledge stays with you and stays useful."
+    },
+    {
+      "q": "Does Tano only make sense for DTC brands?",
+      "a": "It suits brands that sell through their own site and value direct customer, conversion and content data. It is also relevant to brands with retail distribution who want a direct creator programme running alongside their retailer and marketplace activity, so the content and the creator base build up on their side rather than only inside someone else's app."
+    },
+    {
+      "q": "Which is cheaper, LTK or Tano?",
+      "a": "They should not be compared as software subscriptions. LTK Connect is self-serve and LTK Optimize adds managed support. Tano includes programme operations, agents, workflows and strategic support from the start. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. At low volume a marketplace tool is the lower-cost route. As creator operations get more complex, the meaningful comparison is against the cost of internal headcount or an agency retainer."
+    },
+    {
+      "q": "How does LTK compare with ShopMy?",
+      "a": "Both are marketplaces where the creator's relationship is with the platform. LTK is larger and has a consumer shopping app, with more than 44 million monthly users by its own count and more than 500,000 creators. ShopMy is smaller, publishes its fee structure, and is built around creator storefronts and commissionable links rather than a shopping app. ShopMy is self-serve. LTK Connect is self-serve and LTK Optimize is the managed tier."
+    },
+    {
+      "q": "How soon can creators be posting?",
+      "a": "On LTK, as soon as a creator who already has a storefront chooses to link your product, which can be immediate if you are stocked where they shop and slower if you are not. On Tano the first creators are recruited and onboarded in the first days of a programme, because sourcing, briefing, contracting and gifting run as agent workflows from day one, and the creators Tano recruits are not waiting for a marketplace to surface your brand. The programme then builds tier by tier."
+    },
+    {
+      "q": "Can you scale a creator programme without hiring?",
+      "a": "On Tano that is the model. The team and agents do the sourcing, outreach, briefing, contracting, payment and re-engagement, so the same marketing team can run hundreds or thousands of creators with graduated human oversight by tier. On LTK the equivalent is LTK Optimize, the managed tier; on LTK Connect your team runs discovery and campaigns inside LTK's tools, so the work grows with the programme."
+    },
+    {
+      "q": "Does AI outreach damage creator relationships?",
+      "a": "The agents are brand-scoped and grounded in each creator's own content, performance and programme, so a creator hears from your brand about their work, not from a generic affiliate mailer. Frequency is governed centrally so a creator in several Tano programmes is never spammed. Katie McKane at Skin+Me put it plainly: “I was anti-AI at first. I've changed my mind.”"
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

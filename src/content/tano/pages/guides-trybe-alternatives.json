@@ -1,0 +1,233 @@
+{
+  "route": "/guides/trybe-alternatives",
+  "family": "guide",
+  "meta": {
+    "title": "Trybe Alternatives: When DTC Brands Outgrow It and Where They Go | Tano",
+    "description": "What Trybe is good at, the signs a brand has outgrown it, and the three paths brands take next: Aspire or GRIN, ShopMy Spotlights, or a partner like Tano."
+  },
+  "hero": {
+    "title": "Trybe alternatives: when DTC brands outgrow it and where they go",
+    "paragraphs": [
+      "If you run paid social for a DTC brand, you've probably come across Trybe. Its founder told the Foundr podcast in October 2026 that around 280,000 creators now use it, and plenty of Shopify brands run their creator ads through it.",
+      "Most brands go through the same progression. Creator ads start in a spreadsheet, move to a tool like Trybe, and at some point the tool stops keeping up. This guide covers what Trybe is genuinely good at, why brands often stay on it longer than they should, where it starts to struggle, and the three paths brands take when they move on."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What is Trybe good at?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"https://jointrybe.com\" target=\"_blank\" rel=\"noreferrer noopener\">Trybe</a> is self-serve software for creator ads on Meta. You post a programme, creators apply through Trybe's app, you approve their videos and launch them as Partnership Ads straight from the submission. Creators are mostly paid commission on the sales their ads drive; Net Influencer reports that founder Lukas Pakter pays creators roughly 10% of those sales."
+        },
+        {
+          "type": "prose",
+          "html": "Its biggest strength is cost. Trybe is free to start and charges at most 1.5%, of attributed sales, ad spend or creator earnings depending on how you pay creators, with no seats, contracts or minimums. That makes it a quick, low-risk way to get started, and a real step up from a spreadsheet for your first 100 or so creators, especially if you sell on Shopify and most of your paid budget goes to Meta. The catch, covered below, is that the fee is low partly because much of the real work moves onto your team."
+        }
+      ]
+    },
+    {
+      "heading": "Why do brands stay on Trybe longer than they should?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Because it feels like the hardest part has been done for you. Creators come to you, so it seems as if the prospecting is taken care of, and the low fixed cost means there's rarely a moment when the bill forces a rethink."
+        },
+        {
+          "type": "prose",
+          "html": "The real cost is your team's time. Every creator who applies represents your brand, so someone still has to screen them, approve their content and manage the relationship. <a href=\"https://www.digitalposition.com/resources/blog/social/is-trybe-right-for-your-brand-what-to-know-before-you-launch/\" target=\"_blank\" rel=\"noreferrer noopener\">Digital Position</a>, an agency that runs Trybe programmes for brands, reports that one supplement brand received 312 submissions in its first month and now gets 100 to 200 a week; about 70% are approved, and only the top third or so are strong. There is no such thing as a truly low-effort creator: you need to be willing to experiment and accept some partnerships that don't work, but a programme that accepts whoever turns up is spray and pray, and that shows in the results."
+        }
+      ]
+    },
+    {
+      "heading": "Where does Trybe start to struggle?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Two limits show up as a programme grows, and both push work back onto your team. First, Trybe is open: any creator can apply or send a video. <a href=\"https://www.socialync.io/ugc-alternatives/trybe\" target=\"_blank\" rel=\"noreferrer noopener\">One breakdown of Trybe</a> reports it telling creators that followers don't matter, because the content runs as ads on your budget. Finding a possible creator is easy; finding one who is good and right for your brand is the hard part, and with Trybe that screening is yours. It grows with your programme."
+        },
+        {
+          "type": "prose",
+          "html": "Second, the creators who come to you are not a random sample. The most in-demand creators already have brands in their messages and little reason to pitch for small, commission-based deals on a low-cost platform, so inbound tilts towards creators with more time than offers. The best-fit creators for your brand, including those whose audiences trust them because they don't push every product, usually have to be approached, with a good reason why your brand suits them. An inbound-only programme also misses the many creators who already know and like your product but would never apply, and the organic reach and sales that come from a creator's own community."
+        },
+        {
+          "type": "prose",
+          "html": "The signs usually show up in a familiar order:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The same kinds of creators keep applying, and new faces get harder to find.",
+            "To hit volume, you start approving creators who are a weaker fit for your brand.",
+            "Reviewing submissions and managing creators takes more of your team's week.",
+            "Your creator ads plateau, even as the number of creators grows.",
+            "You want TikTok or YouTube as well as Meta, and Trybe's site centres on Meta."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "None of this makes Trybe a bad choice. It means the tool that got you started may not be the one that gets you to hundreds or thousands of creators. Our guide to <a href=\"/guides/outgrown-influencer-agency\">outgrowing your influencer agency</a> covers the same pattern from the agency side."
+        }
+      ]
+    },
+    {
+      "heading": "Where do brands go after Trybe?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "There are three main paths, depending on who you want running the programme."
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>Three paths after Trybe</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Path",
+            "Example",
+            "Best when",
+            "Trade-off"
+          ],
+          "rows": [
+            [
+              "More complete software you run yourself",
+              "Aspire, GRIN",
+              "You have a team to run the programme and want more tools for finding creators, seeding and affiliate",
+              "Your team still finds, vets and manages every creator, and it costs more than Trybe"
+            ],
+            [
+              "A creator network with ads built in",
+              "ShopMy Spotlights",
+              "You already work with ShopMy creators and want their best content running as ads",
+              "You're limited to the network's creators, about 200,000 on ShopMy"
+            ],
+            [
+              "A partner that goes out to creators for you",
+              "Tano",
+              "You want an always-on programme of hundreds or thousands of creators without hiring a team to run it",
+              "Costs more than Trybe, from 100 seeded products a month, but Tano is only paid when posts go live and sell"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "<strong>More complete software.</strong> <a href=\"https://www.aspire.io/\" target=\"_blank\" rel=\"noreferrer noopener\">Aspire</a>, which says it is trusted by more than 800 brands, adds AI creator search to an inbound marketplace, so you can go out to creators as well as wait for them, and its CreatorAds Suite requests ad rights and publishes to Meta. It also offers a full-service agency if you'd rather hand the work over. <a href=\"https://grin.co/pricing/\" target=\"_blank\" rel=\"noreferrer noopener\">GRIN</a> publishes month-to-month plans from $200 to $1,500 a month plus a percentage fee, with gifting, affiliate and payments built in; boosting creator content as ads is listed as coming soon rather than available."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>A creator network.</strong> <a href=\"https://www.prnewswire.com/news-releases/shopmy-launches-spotlights-turning-creators-best-performing-content-directly-into-paid-media-302893735.html\" target=\"_blank\" rel=\"noreferrer noopener\">ShopMy launched Spotlights</a> on 30 September 2026. It turns ShopMy creators' content that already drives affiliate sales into partnership ads on Meta and Spark Ads on TikTok, paid through the standard creator commission with no upfront fee. It suits brands already working with ShopMy's creators."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>A partner.</strong> A managed partner runs the programme for you, including the outreach Trybe leaves to creators."
+        }
+      ]
+    },
+    {
+      "heading": "How is Tano different from Trybe?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "With Trybe, creators come to you. <a href=\"/\">Tano</a>, the creator advertising platform for consumer brands, goes out to them. Tano's agents search 230 million creators, score them on how likely they are to post and sell for your brand, and write to each one personally, drawing on their own posts. That last mile of outbound is how Tano reaches the creators who already like your product but would never apply: 79% of Tano creators were already fans of the brand before they joined."
+        },
+        {
+          "type": "prose",
+          "html": "Tano's AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and in-house strategists make the calls that matter, while your team sets the direction and picks which content goes to paid media. Tano recruits creators who already have audiences and communities, so you get organic sales from their posts as well as ad performance when you run them as paid. Usage rights are cleared before anything runs, and through Tano's Meta integration, creator ads run in your own ad account with licence end dates enforced. With Tano, <a href=\"/case-studies/hellofresh\">HelloFresh</a> lifted its conversion rate by 93% compared with running its creator programme in-house, and has cut its acquisition cost by 62% since starting."
+        },
+        {
+          "type": "prose",
+          "html": "Trybe stays the better choice while you're small, have a media buyer with time to run it and want the lowest possible cost. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000, with no seats and no annual contract."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Outgrown your influencer agency?",
+            "How to run creator content as ads"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Trybe free?",
+              "body": "It's free to start. After that, Trybe charges at most 1.5%: of attributed sales, of ad spend (1.25%) or of creator earnings, depending on how you pay creators. There are no seats, contracts or minimums, and creator pay comes on top. Its terms also include a 12-month non-circumvention clause for creators you meet through it, and require any ad account you run Trybe content through to stay connected for 12 months after a campaign."
+            },
+            {
+              "title": "How does Trybe pay creators?",
+              "body": "Mostly through commission on the sales their ads drive, though brands can also use retainers, bonuses and one-off payments. Payouts run through Stripe."
+            },
+            {
+              "title": "When should I move off Trybe?",
+              "body": "When finding new, well-fitting creators gets harder, reviewing submissions takes more of your team's time, or your creator ads stop improving as you add creators. Those are signs you need either more powerful software or a partner who goes out to creators for you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "uplift in CVR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy.",
+          "name": "Stephanie Terziyski",
+          "role": "Growth Influencer Marketing Manager · HelloFresh",
+          "image": "/sites/tano/extras/4b3629a7ba68267054fddc88cc3c919272b61bbe-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Trybe free?",
+      "a": "It's free to start. After that, Trybe charges at most 1.5%: of attributed sales, of ad spend (1.25%) or of creator earnings, depending on how you pay creators. There are no seats, contracts or minimums, and creator pay comes on top. Its terms also include a 12-month non-circumvention clause for creators you meet through it, and require any ad account you run Trybe content through to stay connected for 12 months after a campaign."
+    },
+    {
+      "q": "How does Trybe pay creators?",
+      "a": "Mostly through commission on the sales their ads drive, though brands can also use retainers, bonuses and one-off payments. Payouts run through Stripe."
+    },
+    {
+      "q": "When should I move off Trybe?",
+      "a": "When finding new, well-fitting creators gets harder, reviewing submissions takes more of your team's time, or your creator ads stop improving as you add creators. Those are signs you need either more powerful software or a partner who goes out to creators for you."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your creator ads programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

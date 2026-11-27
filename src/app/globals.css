@@ -1,0 +1,53 @@
+@import "../styles/tano/source.css";
+@import "../styles/tano/reveal.css";
+@import "../styles/tano/hero.css";
+@import "../styles/tano/ground.css";
+@import "../styles/tano/home-info.css";
+@import "../styles/tano/pages.css";
+@import "../styles/tano/media.css";
+@import "../styles/tano/forms.css";
+@import "../styles/tano/drawer.css";
+@import "../styles/tano/consent.css";
+
+/* Template-level corrections kept outside the ported source stylesheet. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: transparent;
+  color: var(--text-primary, #fbf9f5);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The Next dev overlay must not create horizontal overflow. */
+nextjs-portal {
+  contain: layout;
+}
+
+.wire-nav-mobile-panel[data-open="false"] {
+  pointer-events: none;
+}
+
+.hp-notify-close {
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-hero-glow,
+  .wire-spectrum-drift,
+  .hp-camp-backdrop,
+  .hp-camp-video,
+  .wire-footer-photo {
+    animation: none !important;
+  }
+}
+
+/* Contact is a full-viewport sheet: the source omits footer and announcement. */
+body:has(.wire-contact) .wire-footer,
+body:has(.wire-contact) .hp-notify {
+  display: none;
+}

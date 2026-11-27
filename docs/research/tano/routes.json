@@ -1,0 +1,354 @@
+[
+  {
+    "route": "/",
+    "slug": "home",
+    "title": "Tano \u2014 The Creator Advertising Platform",
+    "h": 14433,
+    "sections": 15,
+    "imgs": 45
+  },
+  {
+    "route": "/careers",
+    "slug": "careers",
+    "title": "Careers at Tano: engineering and creator growth roles | Tano",
+    "h": 4257,
+    "sections": 3,
+    "imgs": 6
+  },
+  {
+    "route": "/careers/product-engineer",
+    "slug": "careers-product-engineer",
+    "title": "Product Engineer | Tano Careers | Tano",
+    "h": 5021,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/careers/product-security-engineer",
+    "slug": "careers-product-security-engineer",
+    "title": "Product Security Engineer | Tano Careers | Tano",
+    "h": 6123,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/careers/senior-account-manager",
+    "slug": "careers-senior-account-manager",
+    "title": "Senior Account Manager, Creator Growth | Tano Careers | Tano",
+    "h": 7904,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/case-studies",
+    "slug": "case-studies",
+    "title": "Case Studies | Tano",
+    "h": 4819,
+    "sections": 5,
+    "imgs": 88
+  },
+  {
+    "route": "/case-studies/bloom-and-wild",
+    "slug": "case-studies-bloom-and-wild",
+    "title": "Bloom & Wild: Creator Acquisition Case Study | Tano",
+    "h": 10936,
+    "sections": 5,
+    "imgs": 111
+  },
+  {
+    "route": "/case-studies/hellofresh",
+    "slug": "case-studies-hellofresh",
+    "title": "HelloFresh Case Study | Tano",
+    "h": 8002,
+    "sections": 5,
+    "imgs": 88
+  },
+  {
+    "route": "/case-studies/papier",
+    "slug": "case-studies-papier",
+    "title": "Papier: 22% Lower CPA, 34% Higher ROAS With Creators | Tano",
+    "h": 11243,
+    "sections": 5,
+    "imgs": 85
+  },
+  {
+    "route": "/case-studies/skin-and-me",
+    "slug": "case-studies-skin-and-me",
+    "title": "Skin+Me: Creator-Led Customer Acquisition | Tano",
+    "h": 10409,
+    "sections": 5,
+    "imgs": 111
+  },
+  {
+    "route": "/compare",
+    "slug": "compare",
+    "title": "Compare Tano With Creator Marketing Alternatives | Tano",
+    "h": 3063,
+    "sections": 3,
+    "imgs": 4
+  },
+  {
+    "route": "/compare/agentio-vs-tano",
+    "slug": "compare-agentio-vs-tano",
+    "title": "Agentio vs Tano: Buy Creator Placements, or Build a Creator Programme? | Tano",
+    "h": 9372,
+    "sections": 8,
+    "imgs": 11
+  },
+  {
+    "route": "/compare/grin-vs-tano",
+    "slug": "compare-grin-vs-tano",
+    "title": "GRIN vs Tano: Software You Run, or a Programme Run for You? | Tano",
+    "h": 10381,
+    "sections": 9,
+    "imgs": 11
+  },
+  {
+    "route": "/compare/ltk-vs-tano",
+    "slug": "compare-ltk-vs-tano",
+    "title": "LTK vs Tano: Marketplace Reach, or Your Own Creator Programme? | Tano",
+    "h": 12348,
+    "sections": 12,
+    "imgs": 10
+  },
+  {
+    "route": "/compare/shopmy-vs-tano",
+    "slug": "compare-shopmy-vs-tano",
+    "title": "ShopMy vs Tano: Creator Discovery or a Compounding Programme? | Tano",
+    "h": 11275,
+    "sections": 11,
+    "imgs": 11
+  },
+  {
+    "route": "/for-creators",
+    "slug": "for-creators",
+    "title": "For Creators | Tano",
+    "h": 6368,
+    "sections": 8,
+    "imgs": 95
+  },
+  {
+    "route": "/guides",
+    "slug": "guides",
+    "title": "Guides for Brands Running Creator Programmes | Tano",
+    "h": 4920,
+    "sections": 5,
+    "imgs": 4
+  },
+  {
+    "route": "/guides/creator-ads",
+    "slug": "guides-creator-ads",
+    "title": "How to Run Creator Content as Ads | Tano",
+    "h": 9813,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/creator-programme-cost",
+    "slug": "guides-creator-programme-cost",
+    "title": "What Does a Creator Programme Cost? | Tano",
+    "h": 8223,
+    "sections": 4,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/influencer-agency-or-platform",
+    "slug": "guides-influencer-agency-or-platform",
+    "title": "Influencer Agency or Platform: Which Model Fits Your Brand? | Tano",
+    "h": 9259,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/keep-creators-long-term",
+    "slug": "guides-keep-creators-long-term",
+    "title": "How to Keep Creators for the Long Term | Tano",
+    "h": 8032,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/meta-creator-marketing-hub",
+    "slug": "guides-meta-creator-marketing-hub",
+    "title": "Meta Creator Marketing Hub: Do You Still Need an Influencer Platform? | Tano",
+    "h": 9440,
+    "sections": 6,
+    "imgs": 7
+  },
+  {
+    "route": "/guides/meta-muse-creator-marketing",
+    "slug": "guides-meta-muse-creator-marketing",
+    "title": "What Is Meta Muse, and What Does It Mean for DTC Creator Marketing? | Tano",
+    "h": 9937,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/meta-muse-creators-brief",
+    "slug": "guides-meta-muse-creators-brief",
+    "title": "What DTC Brands Should Tell Their Creators About Meta Muse | Tano",
+    "h": 10606,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/meta-muse-nano-micro-creators",
+    "slug": "guides-meta-muse-nano-micro-creators",
+    "title": "Do Follower Counts Matter on Meta Muse? A Guide for DTC Brands | Tano",
+    "h": 8860,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/outgrown-influencer-agency",
+    "slug": "guides-outgrown-influencer-agency",
+    "title": "Outgrown Your Influencer Agency? How to Choose Your Next One | Tano",
+    "h": 8405,
+    "sections": 4,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/scale-creator-programme-without-headcount",
+    "slug": "guides-scale-creator-programme-without-headcount",
+    "title": "How to Scale a Creator Programme Without Adding Headcount | Tano",
+    "h": 7301,
+    "sections": 4,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/trybe-alternatives",
+    "slug": "guides-trybe-alternatives",
+    "title": "Trybe Alternatives: When DTC Brands Outgrow It and Where They Go | Tano",
+    "h": 8661,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/ugc-ai-shopping-agents",
+    "slug": "guides-ugc-ai-shopping-agents",
+    "title": "Is Your DTC Brand's UGC Ready for AI Shopping Agents Like Meta Muse? | Tano",
+    "h": 9081,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/usage-rights-pricing",
+    "slug": "guides-usage-rights-pricing",
+    "title": "How to Price Whitelisting and Usage Rights Fees for Creators | Tano",
+    "h": 8456,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/guides/win-on-meta-muse-with-creators",
+    "slug": "guides-win-on-meta-muse-with-creators",
+    "title": "How DTC Brands Should Change Their Creator Programme for Meta Muse | Tano",
+    "h": 9242,
+    "sections": 6,
+    "imgs": 8
+  },
+  {
+    "route": "/news",
+    "slug": "news",
+    "title": "News From Tano | Tano",
+    "h": 2554,
+    "sections": 3,
+    "imgs": 2
+  },
+  {
+    "route": "/news/tano-raises-4m-seed-round",
+    "slug": "news-tano-raises-4m-seed-round",
+    "title": "Tano Has Raised $5M to Make Creators a True Advertising Channel. | Tano",
+    "h": 6884,
+    "sections": 2,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks",
+    "slug": "playbooks",
+    "title": "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    "h": 2355,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks/content-analysis-framework",
+    "slug": "playbooks-content-analysis-framework",
+    "title": "Free AI Content Analysis Framework | Tano | Tano",
+    "h": 2609,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks/creator-discovery",
+    "slug": "playbooks-creator-discovery",
+    "title": "Free Creator Discovery Guide | Tano | Tano",
+    "h": 2737,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks/creator-partnership-ads",
+    "slug": "playbooks-creator-partnership-ads",
+    "title": "Free Creator Partnership Ads Playbook | Tano | Tano",
+    "h": 2707,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks/rebriefing",
+    "slug": "playbooks-rebriefing",
+    "title": "Free Rebriefing Playbook | Tano | Tano",
+    "h": 2726,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/playbooks/self-funding-seeding-affiliate",
+    "slug": "playbooks-self-funding-seeding-affiliate",
+    "title": "Free Seeding \u2192 Affiliate Playbook | Tano | Tano",
+    "h": 2707,
+    "sections": 3,
+    "imgs": 1
+  },
+  {
+    "route": "/privacy-policy",
+    "slug": "privacy-policy",
+    "title": "Privacy Policy | Tano",
+    "h": 9374,
+    "sections": 2,
+    "imgs": 1
+  },
+  {
+    "route": "/talk-to-us",
+    "slug": "talk-to-us",
+    "title": "Get Started | Tano",
+    "h": 900,
+    "sections": 2,
+    "imgs": 1
+  },
+  {
+    "route": "/use-cases/creative-velocity",
+    "slug": "use-cases-creative-velocity",
+    "title": "Creative Velocity: Creator Ads at Scale | Tano",
+    "h": 9747,
+    "sections": 12,
+    "imgs": 45
+  },
+  {
+    "route": "/use-cases/drive-revenue",
+    "slug": "use-cases-drive-revenue",
+    "title": "Drive Revenue With Creators | Tano",
+    "h": 9099,
+    "sections": 11,
+    "imgs": 44
+  },
+  {
+    "route": "/webinars",
+    "slug": "webinars",
+    "title": "Webinars: lessons from creator programme operators | Tano | Tano",
+    "h": 2716,
+    "sections": 3,
+    "imgs": 1
+  }
+]

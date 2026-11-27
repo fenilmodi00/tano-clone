@@ -1,0 +1,201 @@
+{
+  "route": "/case-studies/hellofresh",
+  "family": "case-study",
+  "meta": {
+    "title": "HelloFresh Case Study | Tano",
+    "description": "How HelloFresh lifted conversion rate by 93% with a hybrid creator model run by Tano, without adding manual work."
+  },
+  "hero": {
+    "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+    "paragraphs": [
+      "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work."
+    ],
+    "actions": [],
+    "media": "/sites/tano/extras/4de259484f00862b365ecbd6289a62ad5095cdd6-2400x1600.jpg"
+  },
+  "sections": [
+    {
+      "variant": "case-study-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "HelloFresh",
+              "label": "Client"
+            },
+            {
+              "value": "Meal kits",
+              "label": "Sector"
+            },
+            {
+              "value": "+93%",
+              "label": "Uplift in CVR vs running the programme internally"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-ran",
+      "heading": "What Ran",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/media/mux-01DdTUelFSpsNr8AETwFidGf4xvGbOcsRnu6WVftAzhs.webp"
+        },
+        {
+          "type": "prose",
+          "html": "HelloFresh on lowering CAC with creators"
+        },
+        {
+          "type": "prose",
+          "html": "Leave your work email and the film plays straight away."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Automated the manual workload behind the programme.",
+            "Scaled outreach volume beyond in-house capacity.",
+            "Fed learnings back into targeting and briefing."
+          ]
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/media/mux-Plle4M8YSPKN3SqQt1OjGcoYkiWLuNZmffuM6Dxkzhg.webp"
+        },
+        {
+          "type": "prose",
+          "html": "How Tano runs HelloFresh’s creator programme"
+        },
+        {
+          "type": "prose",
+          "html": "Leave your work email and the film plays straight away."
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/media/mux-3Na00d8aF00OqBo4eaqWkSCpSyG3O0101hYZcOIa101onvpQ.webp"
+        },
+        {
+          "type": "prose",
+          "html": "HelloFresh on working with Tano’s AI agents"
+        },
+        {
+          "type": "prose",
+          "html": "Leave your work email and the film plays straight away."
+        },
+        {
+          "type": "quote",
+          "text": "Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy. By automating the manual workload, scaling our outreach volume, and leveraging smart learnings, they helped us achieve a 93% uplift in CVR compared to running the programme internally.",
+          "name": "Stephanie Terziyski",
+          "role": "Growth Influencer Marketing Manager · HelloFresh",
+          "image": "/sites/tano/extras/4b3629a7ba68267054fddc88cc3c919272b61bbe-320x320.jpg"
+        }
+      ]
+    },
+    {
+      "variant": "films",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/7aa6100cfee5a8b60e87bd522edc40f31167ae86.mp4",
+          "alt": "@taylorfrances_’s film for HelloFresh",
+          "poster": "/sites/tano/extras/f648de543b554f293ebcb5c659496336baf94f34-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/69347bf8d47f386f5cfb62b3ad7474551b8f8a65.mp4",
+          "alt": "@artbyronel’s film for HelloFresh",
+          "poster": "/sites/tano/extras/94ab3655e9b7e42dccf4ba00089ed945a49bcb34-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/42b6363dd2ec4d4c8304af9d2399aed89e57c5e9.mp4",
+          "alt": "@_baileymoorex’s film for HelloFresh",
+          "poster": "/sites/tano/extras/d7a2bea7a1ad8ada7f918b3d9c664c48adbde0dd-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/4258842bda7da4ea29306e2840dbad4e9237dc69.mp4",
+          "alt": "@rosieryan_x’s film for HelloFresh",
+          "poster": "/sites/tano/extras/e80e16c458065123e2665ad321393ae094b4c243-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/6e0d65570e932fbaa4767e76396d3dd5203f64c1.mp4",
+          "alt": "@olivialinch’s film for HelloFresh",
+          "poster": "/sites/tano/extras/30ed0e350960312ee4cb246b6d850a43106f8e1f-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/16ee73cb9b376ef421e1230b8d553d1fce6fbd42.mp4",
+          "alt": "@mary_h761’s film for HelloFresh",
+          "poster": "/sites/tano/extras/4ded2e171a2571b32910df90b96e8509130cdcc5-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/efcc036598e0229f5c5f144d8ce0c82e67a16545.mp4",
+          "alt": "@samanthajtarkowski’s film for HelloFresh",
+          "poster": "/sites/tano/extras/a4ccf7d0087c947da8e079a0fe63356481b37479-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/b64a719a8f954b8ef8f14483df383d8ab1b902d9.mp4",
+          "alt": "@erinmcclean1’s film for HelloFresh",
+          "poster": "/sites/tano/extras/173fa74e29b3ca84565ed5176aca57771466b7cf-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/b21ff9714389709405fc8df6e72835c0e0ac10aa.mp4",
+          "alt": "@snehasunny30_’s film for HelloFresh",
+          "poster": "/sites/tano/extras/cfd722a0f9d08cfaef1e18488e58ce117f48a356-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/c63b91686a43ebfb87c7cbf88122afc1dd67b49e.mp4",
+          "alt": "@erinmcclean1’s film for HelloFresh",
+          "poster": "/sites/tano/extras/7679afe82f3203e927623f8e286c239fa46fa31d-432x768.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Read our other case studies",
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How Bloom & Wild made creators a revenue channel",
+              "body": "Creator partnerships drive monthly revenue across brands and markets.",
+              "href": "/case-studies/bloom-and-wild",
+              "image": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
+            },
+            {
+              "title": "How Skin+Me unlocked acquisition with overlooked creators",
+              "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+              "href": "/case-studies/skin-and-me",
+              "image": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+            },
+            {
+              "title": "How Papier cut CPA by 22%",
+              "body": "Seeded creator content outperformed Papier’s other Meta Partnership Ads.",
+              "href": "/case-studies/papier",
+              "image": "/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

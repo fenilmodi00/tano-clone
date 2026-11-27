@@ -1,0 +1,59 @@
+{
+  "route": "/webinars",
+  "family": "webinars",
+  "meta": {
+    "title": "Webinars: lessons from creator programme operators | Tano | Tano",
+    "description": "Conversations with the marketers and founders building the most profitable creator programmes in consumer, including how Runna's ambassador team scaled."
+  },
+  "hero": {
+    "eyebrow": "Webinars",
+    "title": "Lessons from the operators.",
+    "paragraphs": [
+      "Conversations with the marketers and founders building the most profitable creator programmes in consumer."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "id": "turning-influencer-ambassadors-into-a-revenue-machine-lessons-from-runna",
+      "heading": "Turning influencer ambassadors into a revenue machine — lessons from Runna.",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<strong>Webinar complete</strong> · Wed, Aug 13 · 3pm BST"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Caitlin Buckley, Head of Ambassadors, Runna",
+            "Will Caplan, CEO & Co-founder, Tano"
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Runna was acquired by Strava in June 2025 for a nine-figure sum. Caitlin's ambassador team played a pivotal role — scaling to hundreds of active ambassadors generating significant, directly attributable revenue."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "How to recruit top ambassadors",
+            "How to incentivise them",
+            "The best tech stack to use",
+            "How to scale a team through high-growth periods"
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Let's scale your creator programme.",
+    "body": "Get on a 30-minute intro — no slides, just a conversation.",
+    "cta": {
+      "label": "Book a call",
+      "href": "/talk-to-us"
+    }
+  }
+}

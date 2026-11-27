@@ -1,0 +1,290 @@
+{
+  "route": "/case-studies/papier",
+  "family": "case-study",
+  "meta": {
+    "title": "Papier: 22% Lower CPA, 34% Higher ROAS With Creators | Tano",
+    "description": "How Papier cut CPA by 22% and lifted ROAS by 34% with seeded creator Partnership Ads, while affiliate revenue covers platform costs."
+  },
+  "hero": {
+    "title": "How Papier cut CPA by 22%",
+    "paragraphs": [
+      "Seeded creator content outperformed Papier’s other Meta Partnership Ads."
+    ],
+    "actions": [],
+    "media": "/sites/tano/extras/ad67a79c464ea3ea983aeabfdaaeab8e866ec692-2400x1542.jpg"
+  },
+  "sections": [
+    {
+      "variant": "case-study-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Papier",
+              "label": "Client"
+            },
+            {
+              "value": "Stationery",
+              "label": "Sector"
+            },
+            {
+              "value": "22%",
+              "label": "Lower CPA – seeded creator content vs Papier’s other Meta Partnership Ads"
+            },
+            {
+              "value": "34%",
+              "label": "Higher ROAS – seeded creator content vs Papier’s other Meta Partnership Ads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Papier is a lifestyle and stationery brand known for personalised notebooks, photo books and gifts. Creator content is a core part of its paid social strategy across Meta and TikTok, supporting everything from product discovery through to conversion."
+        }
+      ]
+    },
+    {
+      "id": "the-problem",
+      "heading": "The Problem",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Creator content was central to Papier’s paid social, but commissioning it was slow, limited in volume and increasingly repetitive—holding back performance."
+        }
+      ]
+    },
+    {
+      "heading": "Limited creative supply",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Commissioned UGC meant a small number of new assets each month, each costing £400–£550 once creator fees and usage were included. Briefing and outreach took up the team’s time and could not scale without a dedicated role."
+        }
+      ]
+    },
+    {
+      "heading": "Missing campaign moments",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Going from brief to live ad could take weeks or even months of back-and-forth. Waiting that long meant missing campaign moments the team needed to jump on, and made it hard to be reactive."
+        }
+      ]
+    },
+    {
+      "heading": "Repetitive angles hurting performance",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Briefing in-house tends to return to the same angles. As Amirah puts it, “It starts to get very repetitive. The algorithms know that it gets repetitive and it does hurt your performance.”"
+        }
+      ]
+    },
+    {
+      "id": "the-solution",
+      "heading": "The Solution",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano runs a seeded creator affiliate programme for Papier, producing a constant stream of diverse creator content that the paid social team can select, license and scale through Meta Partnership Ads."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Seed creators across lifestyles and audiences",
+              "body": "Instead of briefing a handful of creators, Papier gifts products to a broad community. With around 900 creatives from roughly 290 creators to draw on, the team can test far more concepts at the same budget."
+            },
+            {
+              "title": "Let creators find angles no brief would",
+              "body": "Creator freedom revealed use cases the team would never have briefed—like a photo book documenting a creator’s puppy growing up. Content feels relatable and natural rather than like an ad, and photo-book ads have shown real longevity."
+            },
+            {
+              "title": "Select and license winners for Partnership Ads",
+              "body": "Tano captures the content creators post, so the team can choose the strongest pieces, secure whitelisting and put spend behind proven creative—rather than paying upfront for assets it hasn’t seen."
+            },
+            {
+              "title": "An affiliate model that funds itself",
+              "body": "Creators earn commission on the sales they drive. That affiliate revenue covers the cost of the Tano platform and whitelisting, leaving in-platform ad spend as Papier’s main additional cost."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-results",
+      "heading": "The Results",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Seeded creator content has become one of Papier’s most efficient paid social assets. Running as Meta Partnership Ads, it delivers a 22% lower CPA and 34% higher ROAS than Papier’s other Partnership Ads."
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/fbc3ce7296b00bd05821869996075084042bb393-1720x1720.jpg"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "22%",
+              "label": "Lower CPA: £19.66 vs £25.09 for Papier’s other Partnership Ads"
+            },
+            {
+              "value": "34%",
+              "label": "Higher ROAS: 2.46 vs 1.84 for Papier’s other Partnership Ads"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "In a measured comparison, seeded Partnership Ads achieved a £19.66 CPA and 2.46 ROAS, against £25.09 and 1.84 for Papier’s other Partnership Ads. Amirah also describes them as much more efficient than Papier’s in-house ads."
+        },
+        {
+          "type": "prose",
+          "html": "Partnership Ads have grown from around 9% to around 20% of Papier’s Meta investment—a benchmark the team had set itself, reached within the first few months of the programme."
+        },
+        {
+          "type": "prose",
+          "html": "Separately from paid media, the affiliate programme has driven more than 1,000 orders, around 60% from new customers."
+        },
+        {
+          "type": "prose",
+          "html": "Affiliate revenue covers the cost of the Tano platform and whitelisting, so the programme supports itself while supplying high-performing creative to paid social."
+        },
+        {
+          "type": "quote",
+          "text": "Our seeded partnership ads are delivering a 22% cheaper CPA and 34% increased ROAS versus our previous partnership ads and also versus in-house ads, they're much more efficient. In terms of the affiliate revenue that's brought in, it actually covers the cost of the platform. It covers the cost of our whitelisting.",
+          "name": "Amirah Hussain",
+          "role": "Senior Paid Social Manager · Papier"
+        }
+      ]
+    },
+    {
+      "id": "make-creators-your-most-efficient-paid-social-channel",
+      "heading": "Make creators your most efficient paid social channel",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Build a creator programme that lowers acquisition costs, lifts ROAS and pays for itself through affiliate revenue."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"https://www.tano.ai/talk-to-us\" target=\"_blank\" rel=\"noreferrer noopener\">Talk to Tano</a>"
+        }
+      ]
+    },
+    {
+      "variant": "films",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/894fe59c6e35030325be14e9e345334f34ff6a5e.mp4",
+          "alt": "@thejackielin’s film for Papier",
+          "poster": "/sites/tano/extras/6eed065a00e30da60c8579c11cc47b25bf795203-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/1b20b229e96d602fb47d994085e9cab53c346799.mp4",
+          "alt": "@eleanorhudson_singer’s film for Papier",
+          "poster": "/sites/tano/extras/ad9bc5786c2a9190e45c3e1bf81cb2cbea2e1e55-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/1ff7aa466da5c0e13894fba1ab26648e9638fa50.mp4",
+          "alt": "@mal_hoovs’s film for Papier",
+          "poster": "/sites/tano/extras/9912b0b031f23d9849b5011a85069cad7738e91d-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/7c5254f42122b7179b94a9e3d4264c2a1c54cd99.mp4",
+          "alt": "@chardonnayhanson’s film for Papier",
+          "poster": "/sites/tano/extras/8b401c5228ae200bc46799905f547e025e9dd273-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/99c7cca1f5756b006efa992c647c75137df4248c.mp4",
+          "alt": "@miss_csw’s film for Papier",
+          "poster": "/sites/tano/extras/5dc4a7cc5a56b0543dcf9679cce1854a35e36fcb-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/94f5a384f3f70472c7c35e387f6adc396a72b0a7.mp4",
+          "alt": "@flowerb0x’s film for Papier",
+          "poster": "/sites/tano/extras/a9cacac5bbfc8840d3c00f1858c253c77184b400-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/bcdd1f33353d1418e99f8a47d9bf36754b051d3b.mp4",
+          "alt": "@mikaellaaz’s film for Papier",
+          "poster": "/sites/tano/extras/d8a9beeac2e29596897150704a71fab60f2f8eeb-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/3fc4c50e73293b73cd5298cc9aefe5581193abb3.mp4",
+          "alt": "@bels.booktok1’s film for Papier",
+          "poster": "/sites/tano/extras/2741eaac214c0264c3c7f5691c92369da9b2a70b-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/c9dcfeb70e7134784c574a97dc869e8eccc3cf65.mp4",
+          "alt": "@ashley_dxb’s film for Papier",
+          "poster": "/sites/tano/extras/3f0f1eb8aafab3e4a38a2922e7ef80abfccd2439-432x768.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Read our other case studies",
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+              "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+              "href": "/case-studies/hellofresh",
+              "image": "/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+            },
+            {
+              "title": "How Bloom & Wild made creators a revenue channel",
+              "body": "Creator partnerships drive monthly revenue across brands and markets.",
+              "href": "/case-studies/bloom-and-wild",
+              "image": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
+            },
+            {
+              "title": "How Skin+Me unlocked acquisition with overlooked creators",
+              "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+              "href": "/case-studies/skin-and-me",
+              "image": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "route": "/careers/senior-account-manager",
+  "family": "career-role",
+  "meta": {
+    "title": "Senior Account Manager, Creator Growth | Tano Careers | Tano",
+    "description": "Own a portfolio of creator programmes as growth channels in their own right: part strategist, part operator, part account manager, with agentic AI doing the work that used to need a team."
+  },
+  "hero": {
+    "eyebrow": "Client",
+    "title": "Senior Account Manager, Creator Growth",
+    "paragraphs": [],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Role details",
+      "variant": "role-meta",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Client",
+              "label": "Department"
+            },
+            {
+              "value": "London · In person",
+              "label": "Location"
+            },
+            {
+              "value": "Full-time",
+              "label": "Contract"
+            },
+            {
+              "value": "3 openings",
+              "label": "Openings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The role",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano helps some of the fastest-growing consumer brands build creator programmes that operate as real, scalable growth channels. We combine strategy, software and agentic AI to help brands activate, engage and retain thousands of creators through personalised, lifecycle-driven programmes: driving revenue, customer acquisition and a consistent supply of high-performing creative."
+        },
+        {
+          "type": "prose",
+          "html": "We're looking for an amazing Senior Account Manager to own and grow a portfolio of these programmes."
+        },
+        {
+          "type": "prose",
+          "html": "This isn't a traditional account management role where success means keeping the client happy and delivering campaigns on time. <strong>You'll own the strategy and performance of your accounts</strong>: deeply understanding the client's business, identifying where the growth opportunities are, designing the creator programme around them and continually experimenting to improve performance."
+        },
+        {
+          "type": "prose",
+          "html": "You'll be part strategist, part operator and part account manager. You'll be comfortable moving between a client strategy session, interrogating programme data, designing a creator experiment and working with our product and AI infrastructure to execute it at scale."
+        },
+        {
+          "type": "prose",
+          "html": "Ultimately, we want you to treat each creator programme like a growth channel you own."
+        }
+      ]
+    },
+    {
+      "heading": "Own and grow your accounts",
+      "eyebrow": "What you'll do",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You'll own the day-to-day and strategic relationship with a portfolio of high-growth DTC brands."
+        },
+        {
+          "type": "prose",
+          "html": "That means understanding their business beyond the creator programme: their customer, product, growth model, commercial priorities and the role creators need to play within them."
+        },
+        {
+          "type": "prose",
+          "html": "You'll translate that into a clear programme strategy and be accountable for delivering against the client's objectives: whether that's new customer acquisition, revenue, creator-led content supply or generating creative for paid social."
+        },
+        {
+          "type": "prose",
+          "html": "You won't wait for clients to tell you what to do next. You'll identify the opportunity, build the recommendation and confidently lead them towards it."
+        }
+      ]
+    },
+    {
+      "heading": "Build brilliant creator programmes",
+      "eyebrow": "What you'll do",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You'll design programmes that systematically drive the creator behaviours our clients need. That might mean:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Identifying the creator niches and consumer communities most likely to drive incremental growth.",
+            "Building creator personas around a brand's highest-value customer segments.",
+            "Designing creator journeys from first activation through to repeat posting, sales and long-term advocacy.",
+            "Developing gifting, incentive, commission and retention strategies.",
+            "Identifying how and when creators should be re-engaged around product launches, seasonal moments and commercial priorities.",
+            "Using Tano's agentic infrastructure to deliver personalised creator experiences across thousands of relationships."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Turn data into decisions",
+      "eyebrow": "What you'll do",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You'll own the performance story for your accounts."
+        },
+        {
+          "type": "prose",
+          "html": "You'll know which metrics matter, which don't, and what the numbers are actually telling us."
+        },
+        {
+          "type": "prose",
+          "html": "Rather than reporting that creator activation increased 15%, you'll want to understand why it increased, what changed, whether we can replicate it and what we should do differently as a result."
+        },
+        {
+          "type": "prose",
+          "html": "You'll combine quantitative performance data with qualitative signals from creators and clients to identify opportunities others might miss."
+        },
+        {
+          "type": "prose",
+          "html": "And you'll communicate those insights simply and persuasively, whether that's in a weekly update or a strategic recommendation to a CMO."
+        }
+      ]
+    },
+    {
+      "heading": "Experiment constantly",
+      "eyebrow": "What you'll do",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "We're building a new category, so there often won't be an existing playbook. You'll form hypotheses, design experiments and use the results to continuously improve the programmes you own."
+        },
+        {
+          "type": "prose",
+          "html": "That could mean testing creator segments, gifting strategies, incentive structures, communication cadence, messaging, lifecycle interventions or hundreds of smaller variables that influence creator behaviour."
+        },
+        {
+          "type": "prose",
+          "html": "You understand that sometimes the biggest performance unlock is a sophisticated programme redesign, and sometimes it's changing a 200-word creator email to 50 words. <strong>You're interested in both.</strong>"
+        }
+      ]
+    },
+    {
+      "heading": "Shape what we build next",
+      "eyebrow": "What you'll do",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You'll work closely with product and engineering, a critical part of the job. You are closest to how these programmes actually run and what clients actually need, so the frameworks you build and the bottlenecks you hit feed directly into what we automate next."
+        }
+      ]
+    },
+    {
+      "heading": "Who you are",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You're commercially minded and genuinely curious about how consumer businesses grow. You understand that creator marketing doesn't exist in isolation from the rest of a brand's marketing mix.",
+            "You love performance DTC marketing, and you're excited by the idea of growing an influencer channel into something that genuinely moves the numbers.",
+            "You love account management. You enjoy getting underneath a client's business, earning their trust and becoming the person they rely on to tell them what should happen next.",
+            "You're analytical, but you're not a reporting machine. Data is useful to you because it helps you make better decisions. No data for data's sake.",
+            "You're equally comfortable with the quantitative and qualitative. You can spot a pattern in a dataset, but you also understand that creator behaviour is human: messaging, timing, incentives, relationships and experience all matter.",
+            "You're a builder. Ambiguity doesn't make you wait for instructions; it makes you start forming a hypothesis.",
+            "You have a bias towards action. You'll make sensible decisions quickly, test them, learn and course-correct rather than endlessly seeking certainty.",
+            "You're excited by what AI makes possible. You don't need to be technical, but you're interested in how agentic AI can fundamentally change the economics and scale of relationship-driven marketing."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your experience",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "We care more about how you think than having followed one specific career path."
+        },
+        {
+          "type": "prose",
+          "html": "You might have done a few years brand side (growth, ecommerce, creator marketing or CRM at a high-growth consumer brand) and be looking for a new avenue for growth. Or you might have done a stint at a performance agency managing accounts properly, and want to switch gears and join a tech company."
+        },
+        {
+          "type": "prose",
+          "html": "We'd expect you to have:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "3+ years' experience in DTC/ecommerce, growth marketing, performance marketing, creator/affiliate marketing or performance-led agency account management.",
+            "Strong commercial instincts and a good understanding of how DTC businesses acquire and retain customers.",
+            "Experience owning a channel, account, programme or commercial workstream against measurable targets.",
+            "Strong analytical skills and experience turning performance data into clear recommendations and actions.",
+            "Experience designing and running structured experiments rather than relying purely on intuition.",
+            "Excellent communication skills, including presenting recommendations and performance to senior stakeholders.",
+            "The confidence to challenge clients constructively, make a recommendation and own the next step.",
+            "Evidence that you've built or improved something, not simply operated an existing process."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Why Tano",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Creator marketing has become very good at activation. Brands can find creators, gift them products, pay them and track their sales. <strong>The harder problem is what happens next.</strong>"
+        },
+        {
+          "type": "prose",
+          "html": "How do you turn thousands of individual creator activations into long-term relationships? How do you get the right creator to take the right action at the right time? How do you increase creator lifetime value rather than continually replacing inactive creators? And how do you do all of that without building an enormous operations team?"
+        },
+        {
+          "type": "prose",
+          "html": "That's what we're building Tano to solve. We think creator programmes will increasingly operate like lifecycle and loyalty programmes: personalised, continuously optimised and designed around the behaviours that ultimately drive commercial outcomes."
+        },
+        {
+          "type": "prose",
+          "html": "Agentic AI makes it possible to do that across thousands of creator relationships. You'll be one of the people figuring out how."
+        }
+      ]
+    },
+    {
+      "heading": "What is on offer",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [],
+          "rows": [
+            [
+              "Base",
+              "£55,000–£90,000 (dependent on level and experience)"
+            ],
+            [
+              "Equity",
+              "EMI share options, a meaningful stake rather than a token one"
+            ],
+            [
+              "Location",
+              "Full-time, in person, London, 5 days per week"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How to apply",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Apply below with your CV and one paragraph on a channel, account or programme you grew: where it started, where it got to, and the single decision that made the difference. No cover letter. <strong>We care about what you've done.</strong>"
+        }
+      ]
+    },
+    {
+      "heading": "Sound like you?",
+      "variant": "closing",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tell us why you, and what you'd want to own. We read every application."
+        }
+      ]
+    }
+  ]
+}

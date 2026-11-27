@@ -1,0 +1,73 @@
+{
+  "route": "/news",
+  "family": "news-index",
+  "meta": {
+    "title": "News From Tano | Tano",
+    "description": "Announcements from the Tano team, starting with our seed round led by Cherry Ventures."
+  },
+  "hero": {
+    "title": "News",
+    "paragraphs": [
+      "Get in touch at team@tano.ai"
+    ],
+    "actions": [
+      {
+        "label": "Email the team",
+        "href": "mailto:team@tano.ai"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "As featured in",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "AdAge"
+            },
+            {
+              "title": "Campaign"
+            },
+            {
+              "title": "Net Influencer"
+            },
+            {
+              "title": "Yahoo Finance"
+            },
+            {
+              "title": "ETN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Tano has raised $5m to make creators a true advertising channel.",
+              "body": "We've raised a $4M seed led by Cherry Ventures, to make creators a performance advertising channel brands can buy like Meta or Google ads. Bringing our total funding to $5M thanks to earlier backing from Seedcamp and The Players Fund",
+              "href": "/news/tano-raises-4m-seed-round",
+              "image": "/sites/tano/extras/028bdd527688ad6e54c46eb4cf586effe86e4b05-1240x827.jpg",
+              "meta": "News · 11 November 2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "title": "Tano has raised $5m to make creators a true advertising channel.",
+      "body": "We've raised a $4M seed led by Cherry Ventures, to make creators a performance advertising channel brands can buy like Meta or Google ads. Bringing our total funding to $5M thanks to earlier backing from Seedcamp and The Players Fund",
+      "href": "/news/tano-raises-4m-seed-round",
+      "group": "News"
+    }
+  ]
+}

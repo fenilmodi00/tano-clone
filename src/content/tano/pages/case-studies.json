@@ -1,0 +1,243 @@
+{
+  "route": "/case-studies",
+  "family": "case-studies-index",
+  "meta": {
+    "title": "Case Studies | Tano",
+    "description": "Consumer brands across the US, the UK and EMEA run their creator programmes with Tano, and have the numbers to show for it."
+  },
+  "hero": {
+    "title": "Read about our case studies",
+    "paragraphs": [
+      "Hear from brands that turned creator partnerships into a growth channel. Consumer brands across the US, the UK and EMEA build their creator communities with Tano, with the numbers to show for it."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Results from our case studies",
+      "variant": "results",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "+93%",
+              "body": "CVR vs running the programme internally",
+              "href": "/case-studies/hellofresh",
+              "meta": "HelloFresh"
+            },
+            {
+              "title": "3.5×",
+              "body": "Growth in sign-ups and revenue",
+              "href": "/case-studies/skin-and-me",
+              "meta": "Skin + Me"
+            },
+            {
+              "title": "22%",
+              "body": "Lower CPA (£19.66 vs £25.09)",
+              "href": "/case-studies/papier"
+            },
+            {
+              "title": "+125%",
+              "body": "Higher CTR",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "+175%",
+              "body": "Increase in revenue in two months"
+            },
+            {
+              "title": "5×",
+              "body": "New customer acquisition since starting with Tano",
+              "href": "/case-studies/hellofresh",
+              "meta": "HelloFresh"
+            },
+            {
+              "title": "3×",
+              "body": "Lower CAC",
+              "href": "/case-studies/skin-and-me",
+              "meta": "Skin + Me"
+            },
+            {
+              "title": "34%",
+              "body": "Higher ROAS (2.46 vs 1.84)",
+              "href": "/case-studies/papier"
+            },
+            {
+              "title": "−10%",
+              "body": "CPA",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "−62%",
+              "body": "CAC since starting with Tano",
+              "href": "/case-studies/hellofresh",
+              "meta": "HelloFresh"
+            },
+            {
+              "title": "~60%",
+              "body": "New customers",
+              "href": "/case-studies/papier"
+            },
+            {
+              "title": "4 of 5",
+              "body": "Top-performing creators found and onboarded by Tano in a single month",
+              "href": "/case-studies/skin-and-me",
+              "meta": "Skin + Me"
+            },
+            {
+              "title": "138+",
+              "body": "Team hours saved a month",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "73%",
+              "body": "Of creators posting frequently",
+              "href": "/case-studies/hellofresh",
+              "meta": "HelloFresh"
+            },
+            {
+              "title": "~130",
+              "body": "Creators onboarded in a month, vs 2 on the old platform",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "~20%",
+              "body": "Of Meta spend on Partnership Ads, up from about 9%",
+              "href": "/case-studies/papier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "case-grid",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How Skin+Me unlocked acquisition with overlooked creators",
+              "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+              "href": "/case-studies/skin-and-me",
+              "image": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+            },
+            {
+              "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+              "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+              "href": "/case-studies/hellofresh",
+              "image": "/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+            },
+            {
+              "title": "How Bloom & Wild made creators a revenue channel",
+              "body": "Creator partnerships drive monthly revenue across brands and markets.",
+              "href": "/case-studies/bloom-and-wild",
+              "image": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
+            },
+            {
+              "title": "How Papier cut CPA by 22%",
+              "body": "Seeded creator content outperformed Papier’s other Meta Partnership Ads.",
+              "href": "/case-studies/papier",
+              "image": "/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "films",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/1eabace16b5517e329d4a165bf497036ebacf433.mp4",
+          "alt": "@lucindachapmanofficial’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/d5a0904e3b8a8b1c3dba9be9378b9898e11690f6-432x768.jpg",
+          "href": "/case-studies/bloom-and-wild"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/4f0e11e475354d851033682128db25076b9c26da.mp4",
+          "alt": "@reginafoster.us’s film for Papier",
+          "poster": "/sites/tano/extras/7740af5568f58a59a00d1e5f9187ca77bab6931d-432x768.jpg",
+          "href": "/case-studies/papier"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/341d6722af915dad4975ba2404e7a3eea2f698aa.mp4",
+          "alt": "@jessebuck_’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/a69bf16c0a98274128daf706ce6ce006405cd062-432x768.jpg",
+          "href": "/case-studies/bloom-and-wild"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/fe59c650981aa627640c3086c54f041e305fdfaf.mp4",
+          "alt": "@cherrrymyint’s film for Papier",
+          "poster": "/sites/tano/extras/52a8b4b5ad338c3670a0e29e73e3e85c1677d125-432x768.jpg",
+          "href": "/case-studies/papier"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/33ff801828b672f4edcedb060dfb07f79056a56e.mp4",
+          "alt": "@daria_outfit’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/f47d9a08e48cc29adbf3a124126cd4b852aef76a-432x768.jpg",
+          "href": "/case-studies/bloom-and-wild"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/68eab373c7d1ed20361d660bcc789e915d52aafc.mp4",
+          "alt": "@its.mini.made’s film for Papier",
+          "poster": "/sites/tano/extras/eb531dbe7f7a87a288fb5b4f03e55ddd7679c68b-432x768.jpg",
+          "href": "/case-studies/papier"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/f5c8934166ab7dc34ae26374b08faf1aebb3ee15.mp4",
+          "alt": "@joannas.momlife’s film for Bloom & Wild",
+          "poster": "/sites/tano/extras/f3877c8f92f6dee87302f2929c693d8d65e6ad68-432x768.jpg",
+          "href": "/case-studies/bloom-and-wild"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/35eb1acd3b60939ccccb48de2244ff4a8c95e801.mp4",
+          "alt": "@livingwithtish’s film for Papier",
+          "poster": "/sites/tano/extras/1e3d0d61d57532500804fedefeb7f08f232073c4-432x768.jpg",
+          "href": "/case-studies/papier"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  },
+  "cards": [
+    {
+      "title": "How Skin+Me unlocked acquisition with overlooked creators",
+      "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+      "href": "/case-studies/skin-and-me",
+      "group": "Case studies"
+    },
+    {
+      "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+      "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+      "href": "/case-studies/hellofresh",
+      "group": "Case studies"
+    },
+    {
+      "title": "How Bloom & Wild made creators a revenue channel",
+      "body": "Creator partnerships drive monthly revenue across brands and markets.",
+      "href": "/case-studies/bloom-and-wild",
+      "group": "Case studies"
+    },
+    {
+      "title": "How Papier cut CPA by 22%",
+      "body": "Seeded creator content outperformed Papier’s other Meta Partnership Ads.",
+      "href": "/case-studies/papier",
+      "group": "Case studies"
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "route": "/compare/agentio-vs-tano",
+  "family": "compare",
+  "meta": {
+    "title": "Agentio vs Tano: Buy Creator Placements, or Build a Creator Programme? | Tano",
+    "description": "Agentio automates the media buy: creator placements run as ads. Tano runs the programme: creators who stay with your brand. A placement or a relationship?"
+  },
+  "hero": {
+    "title": "Agentio vs Tano: buy creator placements, or build a creator programme?",
+    "paragraphs": [
+      "Both make creator marketing programmatic, but they automate different things. Agentio automates the media buy: you set a budget and it matches you with creators whose content runs as ads. Tano automates the programme: finding, briefing, paying and re-engaging creators who stay with your brand. So the real question is what you are buying: a placement or a relationship."
+    ],
+    "actions": [
+      {
+        "label": "See if Tano fits your programme",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "All comparisons",
+        "href": "/compare"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The numbers:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "CVR uplift at HelloFresh with a hybrid creator model run with Tano."
+            },
+            {
+              "value": "+125%",
+              "label": "CTR on Bloom & Wild creator ads run through Tano, against non-Tano ads."
+            },
+            {
+              "value": "−10%",
+              "label": "CPA on the same Bloom & Wild creator ads, against non-Tano ads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "On Agentio you buy a placement. On Tano you build a relationship that keeps producing.",
+      "eyebrow": "The unit you buy",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Agentio"
+        },
+        {
+          "type": "prose",
+          "html": "The creator is matched by Agentio's AI, contracted per placement through the marketplace, and paid as the ad performs. When the placement ends, so does the relationship, and the next campaign starts from the marketplace again."
+        },
+        {
+          "type": "prose",
+          "html": "For a media buyer that is the point: it makes creator behave like any other line in the media plan."
+        },
+        {
+          "type": "prose",
+          "html": "Tano"
+        },
+        {
+          "type": "prose",
+          "html": "The creator is bought in to your brand and joins your programme, with tiers, earnings, gifts and briefs of their own. A brand-scoped agent works from that creator's content, performance and programme history, so its next action reflects where they are: approaching a launch, yet to post, missing a code, or ready to move up a tier. One relationship produces organic content, affiliate sales and ad-ready assets, and the programme is designed to change what the creator does next rather than to buy the next exposure."
+        }
+      ]
+    },
+    {
+      "heading": "Agentio covers the paid layer. Tano runs gifting, affiliate and paid from the same creators.",
+      "eyebrow": "Which layers each one covers",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Agentio"
+        },
+        {
+          "type": "prose",
+          "html": "Covers the paid layer, and covers it deeply: 10,000+ YouTube integrations, Meta partnership ads from a single dashboard, with TikTok and Snap announced for 2026. It does not run gifting, seeding or affiliate programmes. The model is placements."
+        },
+        {
+          "type": "prose",
+          "html": "Tano"
+        },
+        {
+          "type": "prose",
+          "html": "Runs the full lifecycle, from gifting through affiliate to paid, with tracking managed end to end. The overlap with Agentio is creator content in Meta ads. Agentio gets there by buying the placement. Tano gets there from a programme you already own: whitelisting permissions and content rights are available in every partnership, and assets arrive ad-ready for Meta and TikTok."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a> saw +125% CTR and −10% CPA on creator ads run through Tano, against their non-Tano ads."
+        }
+      ]
+    },
+    {
+      "heading": "Agentio's roster is enterprise-led. Tano is built for consumer brands with a programme to grow.",
+      "eyebrow": "Who it is built for, and what it costs",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Agentio"
+        },
+        {
+          "type": "prose",
+          "html": "The roster is enterprise and US consumer apps: Uber, DoorDash, Cash App, Olipop. Pricing runs through bidding on creator inventory, with no published rate card."
+        },
+        {
+          "type": "prose",
+          "html": "Tano"
+        },
+        {
+          "type": "prose",
+          "html": "Built for growth-stage consumer brands across the UK, Europe and the US, whose creator programme is scaling faster than the team running it. Tano runs the programme rather than handing you a database, and your team keeps the strategy, the creative judgement and the creators driving the numbers. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. The comparison is with a hire or a retainer rather than with a media buy."
+        }
+      ]
+    },
+    {
+      "heading": "Choose Agentio if",
+      "eyebrow": "Why Agentio",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You are an enterprise advertiser with a media budget, and you want creator ads bought and measured like any other channel.",
+            "YouTube long-form is your priority. Agentio has run 10,000+ YouTube integrations.",
+            "You want placements at scale for a launch, with matching, contracting and measurement handled, and no need for a relationship with the creator afterwards.",
+            "You want pay-as-it-performs economics on Meta, with creators paid as the winning ads scale."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose Tano if",
+      "eyebrow": "Why Tano",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You want to invest in a long-term growth channel rather than buy placements campaign by campaign.",
+            "Your creator programme is outgrowing the people running it. “One person managing every channel meant outreach capped quickly and consistency suffered.” Skin+Me case study, before Tano.",
+            "You want a programme rather than a campaign: creators who post again and again, who are available for IRL events, and who stay with the brand. At Skin+Me, 4 of the 5 top-performing creators in September 2025 were onboarded through Tano.",
+            "You need the operations a media marketplace does not run: gifting, product seeding, affiliate, re-engagement.",
+            "You want the creator contracts, the data and the content rights to sit with your brand.",
+            "You want the paid assets to come from creators who already know the product, with the rights cleared. “Loving this. The ease of requesting paid ads and the clean view of exactly what we have the rights to is brilliant.” Yasmin MacDonnell, Marketing Manager, Bloom & Wild.",
+            "You want the programme tied to a revenue outcome rather than a post count. HelloFresh saw a 93% uplift in CVR with a hybrid creator model run with Tano."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Agentio and Tano side by side.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Agentio",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "What it is",
+              "Marketplace for creator advertising",
+              "Creator advertising platform: strategy, software and agentic AI"
+            ],
+            [
+              "The unit",
+              "A placement",
+              "A creator relationship your brand owns"
+            ],
+            [
+              "Who contracts the creator",
+              "The marketplace, per placement",
+              "Your brand"
+            ],
+            [
+              "Creator supply",
+              "“Many thousands”, YouTube-led",
+              "Sourced for your programme from the open market of roughly 250 million creators, including the independent and up-and-coming creators who are not on any marketplace"
+            ],
+            [
+              "Who does the work",
+              "Agentio's AI matches and contracts; you approve",
+              "Tano's agents run outreach, follow-up, programme communication, codes and payments; your team approves and keeps the strategy and creative judgement"
+            ],
+            [
+              "Programme design",
+              "Paid placements: YouTube integrations, Meta partnership ads",
+              "Lifecycle: gifting, tiers, regifting, affiliate, paid, re-engagement"
+            ],
+            [
+              "Gifting and seeding",
+              "No",
+              "Run for you"
+            ],
+            [
+              "Affiliate tracking",
+              "No",
+              "Codes and links, managed end to end"
+            ],
+            [
+              "Creator content into paid ads",
+              "Bought per placement",
+              "Whitelisting and content rights available, assets ad-ready"
+            ],
+            [
+              "Creator payments",
+              "Paid as winning ads scale, via Agentio",
+              "Automated workflows, run by Tano"
+            ],
+            [
+              "Pricing",
+              "Bidding on creator inventory; no published rate card",
+              "From $3,000 a month plus a share of affiliate commission; paid on performance"
+            ],
+            [
+              "Channels",
+              "YouTube, Meta; TikTok and Snap announced",
+              "Instagram and TikTok; whitelisted ads on Meta and TikTok"
+            ],
+            [
+              "Data ownership",
+              "Held on the platform",
+              "You: the relationships, the programme history and the performance data"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Agentio and Tano compared on cost, ownership, paid ads and when to choose each."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Agentio an alternative to Tano?",
+              "body": "Only at the paid layer. Agentio buys creator placements and measures them like media. Tano runs the whole creator programme, and paid is one of the outputs of relationships the brand already owns. Where they overlap is creator content in Meta ads, and there the difference is whether the asset comes from a placement bought this quarter or from a creator who has been in your programme for a year. Tano gets paid based on performance outcomes, not on the placement."
+            },
+            {
+              "title": "Can you run Tano alongside Agentio?",
+              "body": "Yes, and they fit together well. Tano produces the two things a paid creator layer needs: creators who know the product because they are in your programme, and a steady supply of their content with the rights already available, so it can be repurposed into ads without a second negotiation. Agentio can then be the buying and measurement layer on top, for a YouTube launch burst or Meta partnership ads at scale, while Tano keeps the programme underneath running. Keep the attribution separate: Agentio measures the placements it buys, Tano measures the programme through codes, links and your commerce stack."
+            },
+            {
+              "title": "What are the alternatives to Agentio?",
+              "body": "For buying creator ads as media, the alternatives are Meta's own partnership-ads tooling run in-house, UGC marketplaces such as Insense and Billo that supply content rather than placements, and creator agencies that buy on your behalf. For running a creator programme rather than buying ads, the comparison set changes: affiliate platforms such as AWIN and Partnerize, marketplaces such as ShopMy and LTK, and managed partners. Tano combines the three: the ownership of an affiliate platform, the creator-side experience of a marketplace, and a team and agents to run it."
+            },
+            {
+              "title": "Is Agentio an alternative to a creator agency?",
+              "body": "For paid creator ads, yes. It replaces the matching, contracting and buying an agency would do, and does it through a marketplace rather than a team. It does not replace the programme work an agency or an in-house team runs: seeding, affiliate, re-engagement, community. Tano runs that programme work with a team and agents, and the brand keeps the relationships."
+            },
+            {
+              "title": "Which option lets the brand own the creator relationship?",
+              "body": "Tano. On Agentio the creator is contracted per placement through the marketplace, with rights per placement. On Tano every creator is contracted to your brand, and the relationships, the data and the content rights stay with you if you leave."
+            },
+            {
+              "title": "How soon can creators be posting?",
+              "body": "On Agentio, as soon as the placement is matched and contracted, which is the point of a media marketplace. On Tano the first creators are sourced and onboarded in the first days of a programme rather than the first weeks, because the outreach, briefing, contracting and gifting run as agent workflows from day one. What takes longer is the part Agentio does not do: the programme that keeps them posting afterwards."
+            },
+            {
+              "title": "How much does Agentio cost compared with Tano?",
+              "body": "Agentio prices through bidding on creator inventory and does not publish a rate card. On Meta, creators are paid as winning ads scale. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. The fee covers the people and the agents running the programme, so the comparison is with a hire or an agency retainer rather than with a media platform. At low volume, buying placements is the cheaper option; as the programme grows, the direct model is."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Agentio an alternative to Tano?",
+      "a": "Only at the paid layer. Agentio buys creator placements and measures them like media. Tano runs the whole creator programme, and paid is one of the outputs of relationships the brand already owns. Where they overlap is creator content in Meta ads, and there the difference is whether the asset comes from a placement bought this quarter or from a creator who has been in your programme for a year. Tano gets paid based on performance outcomes, not on the placement."
+    },
+    {
+      "q": "Can you run Tano alongside Agentio?",
+      "a": "Yes, and they fit together well. Tano produces the two things a paid creator layer needs: creators who know the product because they are in your programme, and a steady supply of their content with the rights already available, so it can be repurposed into ads without a second negotiation. Agentio can then be the buying and measurement layer on top, for a YouTube launch burst or Meta partnership ads at scale, while Tano keeps the programme underneath running. Keep the attribution separate: Agentio measures the placements it buys, Tano measures the programme through codes, links and your commerce stack."
+    },
+    {
+      "q": "What are the alternatives to Agentio?",
+      "a": "For buying creator ads as media, the alternatives are Meta's own partnership-ads tooling run in-house, UGC marketplaces such as Insense and Billo that supply content rather than placements, and creator agencies that buy on your behalf. For running a creator programme rather than buying ads, the comparison set changes: affiliate platforms such as AWIN and Partnerize, marketplaces such as ShopMy and LTK, and managed partners. Tano combines the three: the ownership of an affiliate platform, the creator-side experience of a marketplace, and a team and agents to run it."
+    },
+    {
+      "q": "Is Agentio an alternative to a creator agency?",
+      "a": "For paid creator ads, yes. It replaces the matching, contracting and buying an agency would do, and does it through a marketplace rather than a team. It does not replace the programme work an agency or an in-house team runs: seeding, affiliate, re-engagement, community. Tano runs that programme work with a team and agents, and the brand keeps the relationships."
+    },
+    {
+      "q": "Which option lets the brand own the creator relationship?",
+      "a": "Tano. On Agentio the creator is contracted per placement through the marketplace, with rights per placement. On Tano every creator is contracted to your brand, and the relationships, the data and the content rights stay with you if you leave."
+    },
+    {
+      "q": "How soon can creators be posting?",
+      "a": "On Agentio, as soon as the placement is matched and contracted, which is the point of a media marketplace. On Tano the first creators are sourced and onboarded in the first days of a programme rather than the first weeks, because the outreach, briefing, contracting and gifting run as agent workflows from day one. What takes longer is the part Agentio does not do: the programme that keeps them posting afterwards."
+    },
+    {
+      "q": "How much does Agentio cost compared with Tano?",
+      "a": "Agentio prices through bidding on creator inventory and does not publish a rate card. On Meta, creators are paid as winning ads scale. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. The fee covers the people and the agents running the programme, so the comparison is with a hire or an agency retainer rather than with a media platform. At low volume, buying placements is the cheaper option; as the programme grows, the direct model is."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

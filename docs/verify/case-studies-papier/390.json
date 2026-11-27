@@ -1,0 +1,362 @@
+{
+  "generatedAt": "2026-11-27T09:42:52.167Z",
+  "route": "/case-studies/papier",
+  "slug": "case-studies-papier",
+  "width": 390,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/case-studies/papier",
+    "status": 200,
+    "title": "Papier: 22% Lower CPA, 34% Higher ROAS With Creators | Tano",
+    "height": 11792,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 5,
+    "animations": 105,
+    "missingImages": [],
+    "imageCount": 85,
+    "h1": "How Papier cut CPA by 22%",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 8291,
+      "navMs": 8241
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/case-studies/papier",
+    "status": 200,
+    "title": "Papier: 22% Lower CPA, 34% Higher ROAS With Creators | Tano",
+    "height": 11792,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 5,
+    "animations": 51,
+    "missingImages": [],
+    "imageCount": 85,
+    "h1": "How Papier cut CPA by 22%",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 8925,
+      "navMs": 8886
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/case-studies-papier/390-diff.png"
+  },
+  "timings": {
+    "totalMs": 9376,
+    "sourceMs": 8291,
+    "localMs": 8925
+  },
+  "diff": {
+    "overallPct": 2.52,
+    "staticPct": null,
+    "motionPct": 0.3,
+    "videoPct": 4.45,
+    "staticPixels": 0,
+    "staticDiffPixels": 0,
+    "motionPixels": 1577160,
+    "motionDiffPixels": 4782,
+    "videoPixels": 2338830,
+    "videoDiffPixels": 104043,
+    "sourceSize": {
+      "width": 390,
+      "height": 11792
+    },
+    "localSize": {
+      "width": 390,
+      "height": 11792
+    },
+    "commonSize": {
+      "width": 390,
+      "height": 11792
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.wire-study-hero",
+        "kind": "motion",
+        "source": {
+          "top": 4,
+          "height": 1078.78,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 2,
+            "runningAnimations": 2,
+            "videos": 0,
+            "images": 1
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 1078.78,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 2,
+            "runningAnimations": 2,
+            "videos": 0,
+            "images": 1
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.07,
+        "pixels": 420810,
+        "diffPixels": 289,
+        "innerPct": null
+      },
+      {
+        "index": 1,
+        "label": "div.wire-legal-body.wire-study-body",
+        "kind": "video",
+        "source": {
+          "top": 1082.78,
+          "height": 5226.78,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 1
+          }
+        },
+        "local": {
+          "top": 1082.78,
+          "height": 5226.78,
+          "kind": "video",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 2,
+            "images": 1
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 4.64,
+        "pixels": 2038530,
+        "diffPixels": 94627,
+        "innerPct": null
+      },
+      {
+        "index": 2,
+        "label": "section.wire-study-films",
+        "kind": "video",
+        "source": {
+          "top": 6309.56,
+          "height": 769.86,
+          "kind": "video",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 45,
+            "images": 76
+          }
+        },
+        "local": {
+          "top": 6309.56,
+          "height": 769.86,
+          "kind": "video",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 45,
+            "images": 76
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 3.14,
+        "pixels": 300300,
+        "diffPixels": 9416,
+        "innerPct": null
+      },
+      {
+        "index": 3,
+        "label": "section.wire-study-others",
+        "kind": "motion",
+        "source": {
+          "top": 7079.42,
+          "height": 2361.72,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 2,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "local": {
+          "top": 7079.42,
+          "height": 2361.72,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 2,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.44,
+        "pixels": 921180,
+        "diffPixels": 4087,
+        "innerPct": null
+      },
+      {
+        "index": 4,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "source": {
+          "top": 9441.14,
+          "height": 603.09,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "local": {
+          "top": 9441.14,
+          "height": 603.09,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.17,
+        "pixels": 235170,
+        "diffPixels": 406,
+        "innerPct": null
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 1,
+        "label": "div.wire-legal-body.wire-study-body",
+        "kind": "video",
+        "pct": 4.64,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 2,
+        "label": "section.wire-study-films",
+        "kind": "video",
+        "pct": 3.14,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 3,
+        "label": "section.wire-study-others",
+        "kind": "motion",
+        "pct": 0.44,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 4,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "pct": 0.17,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 0,
+        "label": "section.wire-study-hero",
+        "kind": "motion",
+        "pct": 0.07,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 11792,
+      "local": 11792,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 390,
+      "local": 390,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 5,
+      "local": 5,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

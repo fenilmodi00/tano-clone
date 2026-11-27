@@ -1,0 +1,296 @@
+{
+  "route": "/use-cases/drive-revenue",
+  "family": "use-case",
+  "meta": {
+    "title": "Drive Revenue With Creators | Tano",
+    "description": "Turn creators into a revenue channel. Tano recruits, gifts and rewards creators on performance, and tracks every first-time order to the post behind it."
+  },
+  "hero": {
+    "title": "Creators can be your best revenue channel. We make them one.",
+    "paragraphs": [
+      "Tano builds large-scale creator programmes that drive new customer acquisition. Recruitment, seeding, incentives and payouts are all handled for you, with our in-house strategists steering the programme with care."
+    ],
+    "actions": [
+      {
+        "label": "Get started",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "See the case studies",
+        "href": "/case-studies"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What brands get:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "3.5×",
+              "label": "Growth in sign-ups and revenue at Skin+Me."
+            },
+            {
+              "value": "+175%",
+              "label": "Increase in revenue in two months at Fussy."
+            },
+            {
+              "value": "+93%",
+              "label": "Uplift in conversion rate at HelloFresh."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The worlds most ambitious consumer brands build their creator programmes with Tano",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Unilever",
+              "meta": "Consumer goods"
+            },
+            {
+              "title": "HelloFresh",
+              "meta": "Food & meal kits",
+              "href": "/case-studies/hellofresh"
+            },
+            {
+              "title": "PerfectTed",
+              "meta": "Energy drinks"
+            },
+            {
+              "title": "Bloom & Wild",
+              "meta": "Flowers & gifting",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "Mother Root",
+              "meta": "Non-alcoholic drinks"
+            },
+            {
+              "title": "NEOM",
+              "meta": "Wellbeing"
+            },
+            {
+              "title": "Fussy",
+              "meta": "Personal care"
+            },
+            {
+              "title": "SULT",
+              "meta": "Hydration & electrolytes"
+            },
+            {
+              "title": "Skin + Me",
+              "meta": "Skincare",
+              "href": "/case-studies/skin-and-me"
+            },
+            {
+              "title": "Peachies",
+              "meta": "Baby care"
+            },
+            {
+              "title": "Hair+Me",
+              "meta": "Haircare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How it works.",
+      "variant": "process",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Your customers’ favourite creators, found, set up with a code and a link, and coached on what sells. Every order lands in your own reporting."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Sourcing",
+              "body": "Tano finds creators whose audiences are new to you and already buy through links, working from your creator personas and within your guardrails. Each is scored on how likely they are to bring new customers, and only those above the threshold go forward.",
+              "meta": "01Run by Tano"
+            },
+            {
+              "title": "Onboarding",
+              "body": "Every creator gets a code and a tracking link, connected to your Shopify store and placed in the commission group that suits them, such as 15% of every attributed order. Each sale they drive is attributed to them, and a customer’s first order is marked as new.",
+              "meta": "02Run by Tano"
+            },
+            {
+              "title": "Incentivisation",
+              "body": "Tano’s agents coach every creator one to one, from how to use the link sticker to what to post next, working from your incentives and the sales in your affiliate reporting. Bonuses and higher commission go to what you want more of, such as new customers, so effort follows results.",
+              "meta": "03Run by Tano"
+            },
+            {
+              "title": "Tracking and measurement",
+              "body": "Revenue, new customers, CAC and lifetime value update live from your own affiliate reporting, measured against the objective you set. You see which creators and incentives are paying back, and Tano shifts the programme towards them.",
+              "meta": "04Run by Tano"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "See where every creator and every customer drops off.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Two funnels from your affiliate reporting. One follows creators from first message to first sale. The other follows their posts from impressions to new customers."
+        }
+      ]
+    },
+    {
+      "heading": "Customers from creators are worth more. Here’s the proof.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Your new customers from creators, compared with every other new customer your store won in the same window. Like for like, from Shopify’s own lifetime spend."
+        }
+      ]
+    },
+    {
+      "heading": "Incentivise, coach, reward. Then do it again, and again.",
+      "variant": "steps",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Every programme teaches us what to improve: which creators reach the right people, what motivates them to post, and which activity leads to first-time orders. Those signals shape the next round."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "We learn what the ideal creator profile looks like",
+              "body": "We start from your customers, their interests, their routines, and then find compatible creators for your identity. From there we build your Creator Personas: matching audience fit, content quality, and brand-safety criteria that every later recruit is measured against."
+            },
+            {
+              "title": "We recruit, gift, and get creators posting",
+              "body": "Tano finds creators who fit your personas, then manages outreach, onboarding, product gifting and guidance. We track each creator from first contact through posting and sales, so your team can see what’s happening across the programme."
+            },
+            {
+              "title": "We reward what sells, and recruit more of it",
+              "body": "Creators earn commission on sales, with agreed milestones unlocking further rewards. We compare first-time orders and acquisition cost across Creator Personas: where a persona beats your CAC target, our agents recruit more of it; and where it doesn’t, the budget moves to match."
+            },
+            {
+              "title": "We keep testing what leads to purchases",
+              "body": "Our agents test outreach, products, content formats and incentives within your guidelines. Each creator’s response helps shape their follow-up, while creator sentiment shows us which rewards and support encourage people to keep posting."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Thousands of creators. No-one treated like a number.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "One is waiting on a delivery, one has posted without a sale, and one is a single post away from their next reward. Tano holds the whole history of every creator: products, posts, payouts and conversations. Tano agents act on it, one creator at a time."
+        }
+      ]
+    },
+    {
+      "heading": "How Skin+Me unlocked acquisition with overlooked creators",
+      "variant": "case-study",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg",
+          "alt": "A Skin + Me prescription doser, personalised for its subscriber",
+          "href": "/case-studies/skin-and-me"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "You’ve removed all the admin stuff. I finally have time to focus on engagement — and we’re on track for our biggest month ever.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me"
+        }
+      ]
+    },
+    {
+      "heading": "Everything tracked in one place.",
+      "variant": "track",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Connect Tano with our Shopify app or API, and every creator action is attributed automatically."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Link tracking",
+              "body": "Every click attributed to the creator who drove it.",
+              "meta": "Tracked link"
+            },
+            {
+              "title": "Code redemption",
+              "body": "Attribution on coupon use at checkout.",
+              "meta": "Discount code"
+            },
+            {
+              "title": "Post monitoring",
+              "body": "Every creator post detected and stored, with usage rights logged.",
+              "meta": "Post logged"
+            },
+            {
+              "title": "Product seeding",
+              "body": "Seeding levels monitored across SKUs.",
+              "meta": "Products sent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key metrics, reported for you monthly.",
+      "variant": "stats",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Participation",
+              "body": "Creators posting · Posts published · Creators returning"
+            },
+            {
+              "title": "Sales",
+              "body": "First-time orders · New customer rate · Tracked revenue"
+            },
+            {
+              "title": "Costs",
+              "body": "CAC · ROAS · CPA · Every cost includes the Tano fee"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "See where your brand could win.",
+    "body": "Share your CAC target and see what your potential for creator activity could be. Our strategists will come back with the recruitment, rewards, and support it would take to hit it.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

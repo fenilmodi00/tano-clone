@@ -1,0 +1,105 @@
+{
+  "route": "/careers",
+  "family": "careers-index",
+  "meta": {
+    "title": "Careers at Tano: engineering and creator growth roles | Tano",
+    "description": "Join Tano. We build AI agents that run influencer marketing end-to-end for global consumer brands. See open engineering and creator roles in London."
+  },
+  "hero": {
+    "eyebrow": "Join the team",
+    "title": "Careers at Tano",
+    "paragraphs": [
+      "Tano is an AI-native influencer marketing company. We pair human experts with AI agents to run influencer and affiliate campaigns for consumer brands end-to-end. We're a small, fast-growing team in London, working with brands like Hello Fresh, Bloom & Wild and Unilever. We're hiring across engineering and client growth."
+    ],
+    "actions": [
+      {
+        "label": "See open roles",
+        "href": "#roles"
+      }
+    ],
+    "media": "/sites/tano/extras/maxresdefault.jpg"
+  },
+  "sections": [
+    {
+      "heading": "Open roles",
+      "eyebrow": "7 positions open",
+      "variant": "roles",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Product Engineer",
+              "body": "Own the agent that runs influencer marketing end-to-end, in production, for paying brands.",
+              "href": "/careers/product-engineer",
+              "meta": "3 openings · Engineering · Central London · In person · Full-time"
+            },
+            {
+              "title": "Product Security Engineer",
+              "body": "Our agents talk to tens of thousands of people and spend live brand budgets, with no person in the loop. Own the security of all of it.",
+              "href": "/careers/product-security-engineer",
+              "meta": "Engineering · Central London · In person · Full-time"
+            },
+            {
+              "title": "Senior Account Manager, Creator Growth",
+              "body": "Own a portfolio of creator programmes as growth channels in their own right: part strategist, part operator, part account manager, with agentic AI doing the work that used to need a team.",
+              "href": "/careers/senior-account-manager",
+              "meta": "3 openings · Client · London · In person · Full-time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "We work hard, together.",
+      "eyebrow": "Life at Tano",
+      "variant": "team",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A small team in London that ships fast and gets out of the building now and then. Here we are on our last company offsite in Italy."
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/images/team-colosseum.jpg",
+          "alt": "Six of the team standing together inside the Colosseum in Rome"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/images/team-dinner.jpg",
+          "alt": "The team around a long dinner table under an olive tree"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/images/team-pizza-steps.jpg",
+          "alt": "The team sharing pizza on stone steps by a lake at sunset"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/images/pasta.jpg",
+          "alt": "Plates of pasta passed across a candlelit table"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "title": "Product Engineer",
+      "body": "Own the agent that runs influencer marketing end-to-end, in production, for paying brands.",
+      "href": "/careers/product-engineer",
+      "group": "Open roles"
+    },
+    {
+      "title": "Product Security Engineer",
+      "body": "Our agents talk to tens of thousands of people and spend live brand budgets, with no person in the loop. Own the security of all of it.",
+      "href": "/careers/product-security-engineer",
+      "group": "Open roles"
+    },
+    {
+      "title": "Senior Account Manager, Creator Growth",
+      "body": "Own a portfolio of creator programmes as growth channels in their own right: part strategist, part operator, part account manager, with agentic AI doing the work that used to need a team.",
+      "href": "/careers/senior-account-manager",
+      "group": "Open roles"
+    }
+  ]
+}

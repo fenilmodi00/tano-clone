@@ -1,0 +1,436 @@
+{
+  "route": "/",
+  "family": "home",
+  "meta": {
+    "title": "Tano — The Creator Advertising Platform",
+    "description": "Tano runs creator programmes for consumer brands like a performance channel: sourcing, outreach, gifting, payment and reporting, all handled for you."
+  },
+  "hero": {
+    "title": "The Creator Advertising Platform",
+    "paragraphs": [
+      "Tano enables consumer brands to partner with creators programmatically, running it like a performance channel. Everything from creator sourcing to outreach, payment and reporting is handled for you."
+    ],
+    "actions": [],
+    "media": "/sites/tano/extras/a3d1b3db514b259a7324888f4fd0cc771420a787-2400x1800.jpg"
+  },
+  "sections": [
+    {
+      "heading": "The worlds most ambitious consumer brands build their creator programmes with Tano",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Unilever",
+              "meta": "Consumer goods"
+            },
+            {
+              "title": "HelloFresh",
+              "meta": "Food & meal kits",
+              "href": "/case-studies/hellofresh"
+            },
+            {
+              "title": "PerfectTed",
+              "meta": "Energy drinks"
+            },
+            {
+              "title": "Bloom & Wild",
+              "meta": "Flowers & gifting",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "Mother Root",
+              "meta": "Non-alcoholic drinks"
+            },
+            {
+              "title": "NEOM",
+              "meta": "Wellbeing"
+            },
+            {
+              "title": "Fussy",
+              "meta": "Personal care"
+            },
+            {
+              "title": "SULT",
+              "meta": "Hydration & electrolytes"
+            },
+            {
+              "title": "Skin + Me",
+              "meta": "Skincare",
+              "href": "/case-studies/skin-and-me"
+            },
+            {
+              "title": "Peachies",
+              "meta": "Baby care"
+            },
+            {
+              "title": "Hair+Me",
+              "meta": "Haircare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Creator programmes that scale at the speed of AI.",
+      "variant": "process",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano runs your creator programme as an iterative loop that continuously improves and scales to your needs. Run thousands of creator partnerships with the care you’d give ten."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Your setup",
+              "body": "You choose what the programme is for, which products to gift and the guardrails every creator works within, such as no competitor partnerships and a clear #ad on every post. Everything Tano does next works from this setup, so the programme starts out pointing the way you want.",
+              "meta": "01Set by you"
+            },
+            {
+              "title": "Find your creators",
+              "body": "Tano scores thousands of creators on how likely they are to post and sell for you, working from your objective and within your guardrails. Those whose audiences buy through links and who clear every guardrail are shortlisted, so the creators you gift to are the ones most likely to sell.",
+              "meta": "02Run by Tano"
+            },
+            {
+              "title": "Get them posting",
+              "body": "Tano’s agents write to each shortlisted creator personally, drawing on their own posts, then match a gift from your product range and book the delivery. Every message stays within your guardrails, so creators reply to a conversation rather than a template.",
+              "meta": "03Run by Tano"
+            },
+            {
+              "title": "Learn what works",
+              "body": "Tano tests who to recruit, what to say and which incentive to offer, each measured against your objective and your products. The winners scale on their own while the tests keep running, so the programme keeps learning which creators, messages and rewards sell best.",
+              "meta": "04Run by Tano"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Every conversation shapes the next one.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano’s agents talk to every creator one to one, over email, giving each of them a personalised, high-touch experience they don’t receive elsewhere. Before each reply they read the brand’s rules and the creator’s whole history, so every conversation teaches Tano what that creator cares about, what works and what doesn’t."
+        }
+      ]
+    },
+    {
+      "heading": "Every result changes who we pick next.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano tests creators, messages, incentives and content side by side, then compares what each combination converts. The best sellers join your proven pool, and every round starts from what worked, so your programme gets cheaper to run."
+        }
+      ]
+    },
+    {
+      "heading": "Don’t take it from us, hear it from them.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Leading consumer brands, and the results they have seen with Tano."
+        }
+      ]
+    },
+    {
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How Skin+Me unlocked acquisition with overlooked creators",
+              "body": "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships.",
+              "href": "/case-studies/skin-and-me",
+              "image": "/sites/tano/extras/2450c8c48710183ec7dedfe886db57bb75b8c583-1240x1240.jpg"
+            },
+            {
+              "title": "How Bloom & Wild made creators a revenue channel",
+              "body": "Creator partnerships drive monthly revenue across brands and markets.",
+              "href": "/case-studies/bloom-and-wild",
+              "image": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
+            },
+            {
+              "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+              "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+              "href": "/case-studies/hellofresh",
+              "image": "/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Everything tracked in one place.",
+      "variant": "track",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Connect Tano with our Shopify app or API, and every creator action is attributed automatically."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Link tracking",
+              "body": "Every click attributed to the creator who drove it.",
+              "meta": "Tracked link"
+            },
+            {
+              "title": "Code redemption",
+              "body": "Attribution on coupon use at checkout.",
+              "meta": "Discount code"
+            },
+            {
+              "title": "Post monitoring",
+              "body": "Every creator post detected and stored, with usage rights logged.",
+              "meta": "Post logged"
+            },
+            {
+              "title": "Product seeding",
+              "body": "Seeding levels monitored across SKUs.",
+              "meta": "Products sent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Brands see the numbers. Creators feel the difference.",
+      "variant": "stats",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "One team, one place, helping you get better outcomes, faster. What the brands get running on Tano, and the creators running alongside them."
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "68%",
+              "label": "Average CTR uplift against brand-produced ads."
+            },
+            {
+              "value": "Under 24 hours",
+              "label": "From onboarding to the first creators contacted."
+            },
+            {
+              "value": "96%",
+              "label": "Rate communication as excellent."
+            },
+            {
+              "value": "91%",
+              "label": "Would recommend the programme to another creator."
+            },
+            {
+              "value": "79%",
+              "label": "Were already fans of the brand before they joined."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How Tano compares.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Traditional agencies",
+            "Creator software",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "Sourcing",
+              "Manual, relationship-based",
+              "Self-serve search, operated by your team",
+              "AI-drivenAgents search 230 million creators and learn which personas actually deliver for you."
+            ],
+            [
+              "Onboarding",
+              "2 to 4 weeks",
+              "Weeks of setup, training, and integration",
+              "Under 24 hoursNothing to install and nobody to train. The first creators are contacted within a day."
+            ],
+            [
+              "Scale",
+              "Typically under 50 creators",
+              "Limited by your team’s capacity",
+              "10 to 1,000+ creators per campaignThousands of partnerships at once, each run with the care you would give ten."
+            ],
+            [
+              "Pricing",
+              "Custom quotes",
+              "Per-seat subscriptions, often annual",
+              "Paid on performanceNo seats and no annual contract. Creators are paid against what they deliver."
+            ],
+            [
+              "Who runs it",
+              "The agency’s team",
+              "Your in-house team",
+              "Tano, with in-house strategistsAgents run it end to end; in-house strategists make the calls that matter."
+            ],
+            [
+              "Communication",
+              "Agency-led, capped at working hours",
+              "Brand-led, too many conversations to manage",
+              "Agentic, messaging 24/7Agents answer every creator at any hour, so nothing waits in an inbox until Monday."
+            ],
+            [
+              "What you get",
+              "A campaign",
+              "A sourcing list",
+              "A programme that compoundsEvery interaction feeds the next, so your programme improves the longer it runs."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How brands win with Tano",
+      "variant": "objectives",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Creator marketing pays back twice. Choose the outcome you need, or run with both."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Tano drives revenue",
+              "body": "Build a large community of creators selling your products on performance-based fees. Tano sources, onboards, seeds product, tracks revenue and pays creators out — continuously, without your team ever touching it.",
+              "href": "/use-cases/drive-revenue",
+              "image": "/sites/tano/images/revenue-glass.jpg",
+              "meta": "Attributed revenue · £248k · Last 90 days · CAC · £15 · On target"
+            },
+            {
+              "title": "Tano drives creative",
+              "body": "Put your product in the hands of thousands of creators and get their perspective, in volume and in variety. Tano surfaces the best-performing content for paid media and handles whitelisting automatically, in-platform.",
+              "href": "/use-cases/creative-velocity",
+              "image": "/sites/tano/images/creative-glass.jpg",
+              "meta": "Creators posting · 412 · Posts this week · 25% whitelisted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Are you a creator?",
+      "variant": "creator",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Work with brands that actually fit you. Clear terms, real products, paid on time, every time."
+        }
+      ]
+    },
+    {
+      "heading": "As featured in",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "AdAge"
+            },
+            {
+              "title": "Campaign"
+            },
+            {
+              "title": "Net Influencer"
+            },
+            {
+              "title": "Yahoo Finance"
+            },
+            {
+              "title": "ETN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The questions buyers actually ask.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Everything on pricing, channels, timeframes, and how we can support you."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "What does Tano do?",
+              "body": "Tano runs performance-driven creator programmes at scale, from sourcing and vetting to outreach, product gifting, ongoing relationships and performance tracking. We also help you identify creator content to use in paid ads."
+            },
+            {
+              "title": "Is Tano a self-serve platform?",
+              "body": "No. Tano manages the programme for you through its own platform. Your team sets the direction, provides brand feedback and selects content for paid media."
+            },
+            {
+              "title": "What does Tano cost?",
+              "body": "Tano is paid on results. It earns when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. Tano carries the upfront risk alongside you: it finds, onboards and sends product to every creator, and if a creator doesn't post, Tano doesn't get paid. The fee per post falls as your programme grows. Programmes start at 100 seeded products a month, which typically comes to about $3,000. Product, shipping, creator commissions, milestone rewards, content rights and media spend should also be included in your budget."
+            },
+            {
+              "title": "Can Tano work alongside our agency or existing tools?",
+              "body": "Yes. Tano can manage the smaller-creator programme while your team or agency retains responsibility for larger partnerships, PR and media buying."
+            },
+            {
+              "title": "Does Tano replace TikTok Shop?",
+              "body": "Not necessarily. The programmes can run separately, with creator lists cross-referenced to manage overlap."
+            },
+            {
+              "title": "Do we need Shopify?",
+              "body": "Tano supports automated gifting through Shopify. If you use another ordering system, compatibility and the fulfilment approach need to be confirmed before launch."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does Tano do?",
+      "a": "Tano runs performance-driven creator programmes at scale, from sourcing and vetting to outreach, product gifting, ongoing relationships and performance tracking. We also help you identify creator content to use in paid ads."
+    },
+    {
+      "q": "Is Tano a self-serve platform?",
+      "a": "No. Tano manages the programme for you through its own platform. Your team sets the direction, provides brand feedback and selects content for paid media."
+    },
+    {
+      "q": "What does Tano cost?",
+      "a": "Tano is paid on results. It earns when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. Tano carries the upfront risk alongside you: it finds, onboards and sends product to every creator, and if a creator doesn't post, Tano doesn't get paid. The fee per post falls as your programme grows. Programmes start at 100 seeded products a month, which typically comes to about $3,000. Product, shipping, creator commissions, milestone rewards, content rights and media spend should also be included in your budget."
+    },
+    {
+      "q": "Can Tano work alongside our agency or existing tools?",
+      "a": "Yes. Tano can manage the smaller-creator programme while your team or agency retains responsibility for larger partnerships, PR and media buying."
+    },
+    {
+      "q": "Does Tano replace TikTok Shop?",
+      "a": "Not necessarily. The programmes can run separately, with creator lists cross-referenced to manage overlap."
+    },
+    {
+      "q": "Do we need Shopify?",
+      "a": "Tano supports automated gifting through Shopify. If you use another ordering system, compatibility and the fulfilment approach need to be confirmed before launch."
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

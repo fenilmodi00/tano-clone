@@ -1,0 +1,228 @@
+{
+  "route": "/for-creators",
+  "family": "for-creators",
+  "meta": {
+    "title": "For Creators | Tano",
+    "description": "Work with brands that fit your life. Clear briefs, real products, paid on time, and support from Tano’s strategists on every post."
+  },
+  "hero": {
+    "title": "There’s a brand story waiting that only you can tell.",
+    "paragraphs": [
+      "The skincare step you never skip. The delivery that made someone’s day. The thing you keep recommending to friends. Tano finds brands that fit your life, then helps you grow as a creator through organic promotions."
+    ],
+    "actions": [
+      {
+        "label": "Sign up to Tano",
+        "href": "#sign-up"
+      },
+      {
+        "label": "Log in",
+        "href": "https://partners.tano.ai/partner/login"
+      }
+    ],
+    "media": "/sites/tano/extras/d5a0904e3b8a8b1c3dba9be9378b9898e11690f6-432x768.jpg"
+  },
+  "sections": [
+    {
+      "heading": "Work with the brands you already love",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Unilever",
+              "meta": "Consumer goods"
+            },
+            {
+              "title": "HelloFresh",
+              "meta": "Food & meal kits",
+              "href": "/case-studies/hellofresh"
+            },
+            {
+              "title": "PerfectTed",
+              "meta": "Energy drinks"
+            },
+            {
+              "title": "Bloom & Wild",
+              "meta": "Flowers & gifting",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "Mother Root",
+              "meta": "Non-alcoholic drinks"
+            },
+            {
+              "title": "NEOM",
+              "meta": "Wellbeing"
+            },
+            {
+              "title": "Fussy",
+              "meta": "Personal care"
+            },
+            {
+              "title": "SULT",
+              "meta": "Hydration & electrolytes"
+            },
+            {
+              "title": "Skin + Me",
+              "meta": "Skincare",
+              "href": "/case-studies/skin-and-me"
+            },
+            {
+              "title": "Peachies",
+              "meta": "Baby care"
+            },
+            {
+              "title": "Hair+Me",
+              "meta": "Haircare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your first post could unlock a new audience.",
+      "variant": "cards",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You try a product, find an angle that feels like you, and learn from the response. Work with Tano and partner with brands that work for you, posting over time to grow your following and earn product rewards."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Make money from products you already use.",
+              "body": "Earn commission, sales milestones or paid promotions, for brands you’d be talking about anyway.",
+              "meta": "01"
+            },
+            {
+              "title": "Get your favourite product, every month.",
+              "body": "Keep the products you love coming, as part of a programme that fits how you already post.",
+              "meta": "02"
+            },
+            {
+              "title": "Get coaching that actually helps.",
+              "body": "Our strategists help you find the angle, not just the brief, in a way that still sounds like you.",
+              "meta": "03"
+            },
+            {
+              "title": "Get paid on time, every time.",
+              "body": "Fees, post timing and usage rights are agreed upfront. No waiting, no chasing, no messy contracts.",
+              "meta": "04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Create one profile, and work across hundreds of brands.",
+      "variant": "profile",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Some partnerships start with a product already on your shelf, others with something new that becomes part of your everyday. Tano’s programme strategists pair you with content you like making, and an audience who wants to watch."
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "79%",
+              "label": "of creators were already customers of a Tano brand before joining."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "It starts with an introduction.",
+      "variant": "cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Sign up",
+              "body": "Your channels, your interests, the content you like making.",
+              "meta": "01"
+            },
+            {
+              "title": "Get matched",
+              "body": "We bring you programmes that fit, with the details you need to decide.",
+              "meta": "02"
+            },
+            {
+              "title": "Start making",
+              "body": "Take part, get support, and work towards the rewards in your programme.",
+              "meta": "03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "A few things you might be wondering.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Can I work with more than one brand?",
+              "body": "Yes. Once you’re onboarded, you can be considered for opportunities across Tano’s brands wherever you’re a suitable fit, subject to each programme’s terms."
+            },
+            {
+              "title": "What can I earn?",
+              "body": "It depends on the programme. Opportunities can include gifted products, commission, milestone rewards, paid briefs and content licensing. We’ll explain the requirements and what you can earn before you take part. Some of our top-performing creators are earning thousands per month!"
+            },
+            {
+              "title": "Will I definitely get a partnership?",
+              "body": "Joining Tano allows us to match you with potentially suitable programmes. Invitations depend on brand fit, programme requirements and availability."
+            },
+            {
+              "title": "What if a brand wants to use my content in an ad?",
+              "body": "That’s a separate opportunity to agree together. Tano manages the permissions, fee and usage period with you before your content is used in paid advertising."
+            },
+            {
+              "title": "I have more questions. Who should I contact?",
+              "body": "Send us an email at hello@tano.ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Where will you take your audience next?",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "It might start with a product you’ve loved for years. It might start with something you’ve never tried. All of it could start with Tano."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can I work with more than one brand?",
+      "a": "Yes. Once you’re onboarded, you can be considered for opportunities across Tano’s brands wherever you’re a suitable fit, subject to each programme’s terms."
+    },
+    {
+      "q": "What can I earn?",
+      "a": "It depends on the programme. Opportunities can include gifted products, commission, milestone rewards, paid briefs and content licensing. We’ll explain the requirements and what you can earn before you take part. Some of our top-performing creators are earning thousands per month!"
+    },
+    {
+      "q": "Will I definitely get a partnership?",
+      "a": "Joining Tano allows us to match you with potentially suitable programmes. Invitations depend on brand fit, programme requirements and availability."
+    },
+    {
+      "q": "What if a brand wants to use my content in an ad?",
+      "a": "That’s a separate opportunity to agree together. Tano manages the permissions, fee and usage period with you before your content is used in paid advertising."
+    },
+    {
+      "q": "I have more questions. Who should I contact?",
+      "a": "Send us an email at hello@tano.ai"
+    }
+  ]
+}

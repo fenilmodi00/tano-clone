@@ -1,0 +1,292 @@
+{
+  "route": "/guides/creator-ads",
+  "family": "guide",
+  "meta": {
+    "title": "How to Run Creator Content as Ads | Tano",
+    "description": "How to run creator content as paid ads on Meta and TikTok: usage rights, Partnership Ads and Spark Ads codes, briefing creators, and a steady monthly supply."
+  },
+  "hero": {
+    "title": "How to run creator content as ads",
+    "paragraphs": [
+      "A creator posts a video about your product, and it does better than anything your brand team made this month. Your paid social team wants to run it as an ad straight away.",
+      "To do that, you need three things: the creator's written permission to use the content in paid ads, the right platform authorisation (usually a Partnership Ads or Spark Ads code), and a tracked test with a target agreed before you spend. This guide walks through each step for DTC brands on Meta and TikTok, then shows how to keep a steady supply of creator ads coming every month."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What are creator ads?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Creator ads are paid ads that use content made by creators. You can license the content and run it under your own brand's name, or run it under the creator's name through a creator-authorised format such as Meta Partnership Ads or TikTok Spark Ads."
+        }
+      ]
+    },
+    {
+      "heading": "Are creator ads worth it for my brand?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "For most DTC brands they are worth testing. People scroll past anything that looks like an ad, but they stop for someone talking about a product they actually use. In December 2025, <a href=\"https://www.marketingdive.com/news/meta-streamlines-brands-creator-partnerships-with-ai-powered-updates/807629/\" target=\"_blank\" rel=\"noreferrer noopener\">Meta said that adding Partnership Ads to campaigns delivered 19% lower cost per acquisition and 13% higher click-through rates on average</a>. In Tano's <a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild programme</a>, creator-led paid ads delivered 125% higher click-through rates, 10% lower cost per acquisition and 13% higher return on ad spend. Your own results will depend on the content and the product, so treat these figures as a reason to test rather than a forecast."
+        }
+      ]
+    },
+    {
+      "heading": "How do I run creator content as ads?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Most brands follow the same five steps."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Pick posts worth testing. Look for a clear product, a clear message and a format that suits the placement. Posts that already drive sales through the creator's code or link are good candidates, although a strong organic post can still do badly as an ad.",
+            "Agree rights and get the platform code. Agree in writing which content you can use, on which channels, for how long and with what edits. Then get the authorisation the platform needs, such as a Partnership Ads or Spark Ads code.",
+            "Set up the campaign. Choose the objective, audience and budget, and make sure the landing page matches the product in the video.",
+            "Agree what success looks like before you spend. Set a target cost per acquisition (CPA) or return on ad spend (ROAS), and compare results on the same reporting basis each time.",
+            "Scale, change or stop. Feed what you learn into the next brief, and renew or stop each ad before its licence or its platform authorisation runs out."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How do I brief creators so their posts work as ads?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A post and an ad do different jobs. A creator's followers already know them and want to watch. An ad reaches people who have never heard of the creator or your brand, so it has to make the product obvious in the first few seconds."
+        },
+        {
+          "type": "prose",
+          "html": "The pattern that tends to work is simple: a short opening about the product, then the creator's normal content. A skincare creator might open by holding up the serum and saying the one thing it changed for them, then slip into their usual morning routine. The opening does the selling, and the rest feels like a post from someone the viewer could follow."
+        },
+        {
+          "type": "prose",
+          "html": "So when a post might run as an ad, tell the creator up front and ask for a few specific things:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Show the product in the first few seconds.",
+            "Give one clear reason to buy, in their own words.",
+            "Film two or three different openings, so your paid team can test which one works.",
+            "Label it clearly as an ad, using the disclosures and platform labels each market requires. See the FTC's guidance for the US and the ASA's guidance for the UK."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Then leave the rest to them. The way a creator talks is the reason their content works. Start by testing changes to the opening, and let paid results tell you what else to change."
+        }
+      ]
+    },
+    {
+      "heading": "Should I run the ad from my brand's account or under the creator's name?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "It depends on whose name you want on the ad. A brand-run creator ad uses a licensed video uploaded to your own account, so it shows your brand's name and can run on any platform your licence covers. Meta Partnership Ads and TikTok Spark Ads show the creator's name, and the creator approves a post or sends you a code, so you never need their password. \"Whitelisting\" is the older industry term for this kind of arrangement."
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>Three ways to run a creator's content as an ad</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "Brand-run creator ad",
+            "Partnership Ads (Meta)",
+            "Spark Ads (TikTok)"
+          ],
+          "rows": [
+            [
+              "Whose name is on the ad",
+              "Your brand's",
+              "The creator's, alongside yours",
+              "The creator's"
+            ],
+            [
+              "What the creator gives you",
+              "A licence to use the video, which you upload",
+              "Permission for a post, or for their account, usually through a code",
+              "An authorisation code for a post"
+            ],
+            [
+              "Where it runs",
+              "Any platform your licence covers",
+              "Facebook and Instagram",
+              "TikTok, with authorisation set to 365 days by default"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The licence and the platform authorisation are separate. A <a href=\"https://ads.tiktok.com/help/article/how-to-use-content-suite-to-create-and-launch-spark-ads\" target=\"_blank\" rel=\"noreferrer noopener\">Spark Ads authorisation</a> that lasts 365 days does not give you a year of usage rights, and a signed licence does not give you a code. Track both."
+        }
+      ]
+    },
+    {
+      "heading": "How do I agree usage rights with my creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Usage rights are your permission to use a creator's content beyond their own post: where it can run, for how long, and whether you can edit it. Agree paid usage in writing before you put money behind a post. Sending free product does not grant those rights, and permission to repost a video does not cover running it as an ad."
+        },
+        {
+          "type": "prose",
+          "html": "For each licensed post, keep a record of the signed agreement, the content covered, the channels, the edits allowed and the start and end dates. Starting the licence on the day the ad first runs, rather than the day the agreement is signed, means you don't lose weeks of it while the campaign is being set up. Our guide to <a href=\"/guides/usage-rights-pricing\">pricing usage rights and whitelisting</a> covers what to pay."
+        },
+        {
+          "type": "prose",
+          "html": "Check the audio too. Music cleared for an organic post may not be cleared for ads, so edits and music changes need to be covered by the agreement."
+        }
+      ]
+    },
+    {
+      "heading": "How do I get enough creator ads every month?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You need far more creator content than ads, because only some posts will be good enough to run. Build a regular supply of posts, screen them for paid use, and feed what you learn from each test into new briefs. Creator ads work best as part of an always-on programme, where the creators whose content performs are invited back. Our guide to <a href=\"/guides/keep-creators-long-term\">keeping creators for the long term</a> explains how."
+        },
+        {
+          "type": "prose",
+          "html": "You can run this in-house with creator software, hand it to an agency, or work with a partner that runs the whole programme for you."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano turn creator content into a repeatable ad pipeline?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a> is the creator advertising platform for consumer brands. Its programmes can drive two outcomes, together or on their own: attributed revenue and new customer acquisition, and creative volume for paid media. Tano's AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and in-house strategists make the calls that matter. On the creative side, the pipeline has five stages."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Find creators who will post and sell. Tano starts from who buys from you, not who has the biggest following. Each persona describes a creator's lifestyle, personality and the products they already talk about. Tano scores creators on how likely they are to post and sell, and shortlists those whose audiences buy through links and who clear every guardrail you set. 79% of Tano creators were already fans of the brand before they joined.",
+            "Recruit, gift and get creators posting. Tano's agents write to each shortlisted creator personally, drawing on their own posts, then match a gift and book the delivery. Each creator gets a code, a tracking link and access to Tano's creator portal. Top performers are invited to specific briefs with usage rights included from the start.",
+            "Pick the posts to test. Every post lands in your content library. Tano ranks its recommendations on content fit, such as a hook in the first two seconds and the product on screen, and on organic sales through the creator's code and link. Your team selects which posts go to paid media. Before recommending a post, Tano checks it for ad suitability, including audio licensing, link stickers, third-party footage and other brands in frame.",
+            "Clear usage rights before anything runs. Tano benchmarks the fee against its own data on what usage rights cost across its programmes, so you don't pay above market; you approve the range, and Tano negotiates within it. The fee and usage period are agreed, the creator signs the licence in Tano's creator portal and is paid, and Tano collects the partnership ad code and handles the whitelisting. The licence starts on the day the ad first runs.",
+            "Feed results into the next brief. Through Tano's Meta integration, creator ads run in your own ad account, tracked per creator, with licence end dates enforced. Hook rate, hold rate, CTR, ROAS and CPA shape the next brief, the posts Tano recommends and the licences it buys."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Before you run a creator ad",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Rights: paid usage is agreed in writing, with the content, term, channels and permitted edits set out.",
+            "Platform authorisation: you have the code or permission, linked to the right post.",
+            "Asset: audio and any third-party material are cleared for ads.",
+            "Disclosure: the ad is clearly labelled for the market and format.",
+            "Landing page: it matches the product shown.",
+            "Tracking: campaign measurement is set up, and creator codes and links are recorded separately.",
+            "Success criteria: the target CPA or ROAS and the reporting basis are agreed before spend.",
+            "Expiry: someone owns the licence and authorisation dates and decides on renewals before either runs out."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Keep creators for the long term",
+            "Pricing usage rights and whitelisting"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Do I need the creator's password?",
+              "body": "No. With Meta Partnership Ads and TikTok Spark Ads, the creator approves a post or sends you a code, so you never need their login."
+            },
+            {
+              "title": "Can I run a gifted creator post as an ad?",
+              "body": "Only with permission that covers paid use. Sending free product does not include usage rights, so agree them separately, in writing, with a set term."
+            },
+            {
+              "title": "Can a strong organic post do badly as an ad?",
+              "body": "Yes, and it helps to know why. A creator's followers already know them and share their context, so a post can land on an in-joke, an ongoing story or simply who the creator is. A stranger seeing it as an ad has none of that. If the first few seconds don't make the product and its one standout reason to buy clear to someone who has never heard of the creator, it won't hold them, however well it did organically. It also depends on what the ad is for. Products that need several touchpoints before someone buys, such as a higher-priced item or a subscription, may not convert on first view. An ad that grows the creator's or the brand's following, or brings people back later, can still be doing its job when first-click sales look weak, so agree the goal before you judge it. Use organic sales and content fit to pick posts to test, recut the opening for a cold audience where your licence allows edits, and judge each ad on the paid result that matches its goal before you scale."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need the creator's password?",
+      "a": "No. With Meta Partnership Ads and TikTok Spark Ads, the creator approves a post or sends you a code, so you never need their login."
+    },
+    {
+      "q": "Can I run a gifted creator post as an ad?",
+      "a": "Only with permission that covers paid use. Sending free product does not include usage rights, so agree them separately, in writing, with a set term."
+    },
+    {
+      "q": "Can a strong organic post do badly as an ad?",
+      "a": "Yes, and it helps to know why. A creator's followers already know them and share their context, so a post can land on an in-joke, an ongoing story or simply who the creator is. A stranger seeing it as an ad has none of that. If the first few seconds don't make the product and its one standout reason to buy clear to someone who has never heard of the creator, it won't hold them, however well it did organically. It also depends on what the ad is for. Products that need several touchpoints before someone buys, such as a higher-priced item or a subscription, may not convert on first view. An ad that grows the creator's or the brand's following, or brings people back later, can still be doing its job when first-click sales look weak, so agree the goal before you judge it. Use organic sales and content fit to pick posts to test, recut the opening for a cold audience where your licence allows edits, and judge each ad on the paid result that matches its goal before you scale."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your creator ads programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

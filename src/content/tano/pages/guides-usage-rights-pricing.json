@@ -1,0 +1,266 @@
+{
+  "route": "/guides/usage-rights-pricing",
+  "family": "guide",
+  "meta": {
+    "title": "How to Price Whitelisting and Usage Rights Fees for Creators | Tano",
+    "description": "How to price usage rights and whitelisting for a winning creator post: whether to license it, what you pay for, typical rates, product-paid creators and renewals."
+  },
+  "hero": {
+    "title": "How to price whitelisting and usage rights fees for creators",
+    "paragraphs": [
+      "One creator's post has become your best ad. It has beaten everything else in your account for three weeks, and your paid team wants to keep it running for months. Then you check the agreement and realise you only have the rights for another week. You message the creator, and they reply with a question: what's your usage budget?",
+      "This guide walks through that decision: whether a post is worth licensing at all, what you're actually paying for, what creators usually charge, what to do when the creator has no fee to work from, and how to renew a winner without starting the negotiation again."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Is the post worth licensing?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Start with what the ad is earning, not with what the creator is asking. A licence is only expensive relative to the value it protects."
+        },
+        {
+          "type": "prose",
+          "html": "Say a micro-creator charges $500 for a post, and you want to run it as a partnership ad on Meta for three more months. <a href=\"https://newsletter.modash.io/p/influencer-usage-rights\" target=\"_blank\" rel=\"noreferrer noopener\">Modash tells brands to expect 25% to 100% of the base fee per month</a> for usage, and warns that above about 40% the maths rarely works in the brand's favour. At 25%, the licence costs $125 a month, or $375 for three months. At 40%, it's $200 a month, or $600."
+        },
+        {
+          "type": "prose",
+          "html": "If the ad has been delivering new customers below your target cost per acquisition with steady spend behind it, $600 for three months is small next to the media it's carrying. If the results have started to slip, the post may be wearing out, and a shorter licence, or a new post from the same creator, is the better buy."
+        }
+      ]
+    },
+    {
+      "heading": "What exactly am I paying for?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "\"Usage\" is often quoted as one number, but it covers three separate things, and you may not need all of them:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The content licence. Your right to use the video: on which channels, for how long, and with what edits.",
+            "Platform access. The creator's permission for you to run the post under their name, through a Meta Partnership Ads code or a TikTok Spark Ads authorisation. This is what people usually mean by whitelisting.",
+            "Exclusivity. A promise that the creator won't work with your competitors for a period."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Exclusivity is the one most often paid for without need. Say you sell a cleanser and the creator also promotes a moisturiser brand. Those products sit side by side in the same routine, so the other brand isn't really competing with you, and paying to keep the creator away from it buys you nothing. Exclusivity is worth paying for when a direct rival could run near-identical content from the same face at the same time."
+        }
+      ]
+    },
+    {
+      "heading": "What do creators usually charge?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "There is no audited market data, but the published guides land in a similar range. Most price usage as a share of the creator's fee for a single post, charged per month, and suggest starting with a short term of one to three months. A creator-side guide from <a href=\"https://impact.com/influencer/how-much-to-charge-for-usage-rights-influencer/\" target=\"_blank\" rel=\"noreferrer noopener\">impact.com</a> breaks it down by audience size:"
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>Monthly usage fee as a share of the creator's base fee, by audience size (impact.com, January 2026)</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Creator size",
+            "Followers",
+            "Monthly usage fee"
+          ],
+          "rows": [
+            [
+              "Nano",
+              "Under 15,000",
+              "0% to 50% of base"
+            ],
+            [
+              "Micro",
+              "15,000 to 75,000",
+              "25% to 75% of base"
+            ],
+            [
+              "Mid-tier",
+              "75,000 to 250,000",
+              "40% to 100% of base"
+            ],
+            [
+              "Macro",
+              "250,000 to 1 million",
+              "50% to 125% of base"
+            ],
+            [
+              "Over 1 million",
+              "1 million+",
+              "100% of base and up"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The same guide puts exclusivity at 20% to 100% of the base fee, depending on how long it lasts. Some creators price whitelisting as a share of the ad spend behind their content instead, usually 5% to 20% according to impact.com. In a 2022 Lumanu survey of more than 400 creators, 51% said they charge a separate fee to whitelist or boost their content."
+        },
+        {
+          "type": "prose",
+          "html": "Four things push the price up: a longer licence, more channels (your website and email cost extra, and print, out-of-home and TV cost many times more), exclusivity, and edits such as cutting new versions of the video. Perpetual rights cost the most of all. When Net Influencer asked 33 creator economy professionals in September 2026 what they're worth, answers ranged from an extra 50% of the fee to many times it, and most brands don't need them."
+        }
+      ]
+    },
+    {
+      "heading": "What if I pay the creator in product and commission?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Then there's no base fee to take a percentage of, and the published guides don't cover you. Gifting product still doesn't give you usage rights, so you need to agree them in writing. Three approaches work in practice:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "A set fee per post for a set period. Decide a price range per post for each licence length before you start, and offer it when a post is chosen for paid use.",
+            "A higher commission while the ad runs. Raise the creator's commission rate on sales during the ad's run, so they share in the result.",
+            "A paid brief with usage included. For creators whose posts already perform, offer a paid brief where the usage terms are part of the deal from the start."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Amber Kai of the agency Sequential, speaking in Superfiliate's Field Guide, says smaller creators are often happy with longer paid terms because ads put them in front of new audiences, but that anything past 12 months reliably triggers pushback."
+        }
+      ]
+    },
+    {
+      "heading": "How do I renew a winning ad?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Plan the renewal before you need it. Two habits make it painless. Start the licence on the day the ad first runs, rather than the day the agreement is signed, so you don't lose weeks to set-up. And agree the renewal price in the original deal, so extending a winner is a yes rather than a fresh negotiation."
+        },
+        {
+          "type": "prose",
+          "html": "Keep the licence and the platform permission in step. A Meta Partnership Ads code or a TikTok Spark Ads authorisation lets you run the post technically; the licence sets out what you're allowed to do with it. <a href=\"https://help.instagram.com/ipad-app/1159476377787773\" target=\"_blank\" rel=\"noreferrer noopener\">Instagram's help centre</a> says creators can switch off ad permissions at any time, and each TikTok <a href=\"https://ads.tiktok.com/help/article/spark-ads\" target=\"_blank\" rel=\"noreferrer noopener\">Spark Ads authorisation</a> runs for a set period. Keep a record of each licence's end date next to the platform permission, and have one person responsible for renewals."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano handle usage rights?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a> is the creator advertising platform for consumer brands. Most Tano creators are nano and micro creators, paid in product, commission on sales and milestone rewards, so usage is handled post by post and cleared before anything runs:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ad suitability check. Before recommending a post for paid use, Tano checks it for audio licensing, link stickers, third-party footage and other brands in frame.",
+            "Fee benchmarked, then agreed. Tano benchmarks the fee against its own data on what usage rights cost across its programmes, by creator size and licence length, so you don't pay above market. You approve the range, and Tano negotiates within it.",
+            "Signed licence, creator paid. The creator signs the agreement in Tano's creator portal and shares the partnership ad code, and Tano handles the whitelisting.",
+            "Licence expiry visible. The licence starts on the day the ad first runs. Through Tano's Meta integration, creator ads run in your own ad account with licence end dates enforced, and Tano offers renewal before a licence expires."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Top performers are invited to specific briefs with usage rights included from the start, and each ad's results shape the licences Tano buys next. In Tano's <a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild programme</a>, creator-led paid ads delivered 125% higher click-through rates, 10% lower cost per acquisition and 13% higher return on ad spend."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "How to run creator content as ads",
+            "What does a creator programme cost?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is whitelisting the same as usage rights?",
+              "body": "No. Whitelisting is permission to run ads under the creator's name, now usually through Meta Partnership Ads or TikTok Spark Ads. Usage rights are your licence to use the content. Many deals include both, but they're priced and tracked separately."
+            },
+            {
+              "title": "Does sending free product include usage rights?",
+              "body": "No. A gift doesn't give you the right to run a creator's content as an ad. Agree paid usage in writing, with the channels, length and edits set out."
+            },
+            {
+              "title": "How long should a usage licence be?",
+              "body": "Start with one to three months for paid social, with an agreed price to renew. Terms past 12 months, and perpetual terms, cost much more and meet more resistance."
+            },
+            {
+              "title": "Do I need to label a creator ad as an ad?",
+              "body": "Yes. In the UK, the ASA treats any gift or commission as payment, so the content must be labelled as an ad, and brands share responsibility for that. In the US, the FTC treats free product as a connection that must be disclosed."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is whitelisting the same as usage rights?",
+      "a": "No. Whitelisting is permission to run ads under the creator's name, now usually through Meta Partnership Ads or TikTok Spark Ads. Usage rights are your licence to use the content. Many deals include both, but they're priced and tracked separately."
+    },
+    {
+      "q": "Does sending free product include usage rights?",
+      "a": "No. A gift doesn't give you the right to run a creator's content as an ad. Agree paid usage in writing, with the channels, length and edits set out."
+    },
+    {
+      "q": "How long should a usage licence be?",
+      "a": "Start with one to three months for paid social, with an agreed price to renew. Terms past 12 months, and perpetual terms, cost much more and meet more resistance."
+    },
+    {
+      "q": "Do I need to label a creator ad as an ad?",
+      "a": "Yes. In the UK, the ASA treats any gift or commission as payment, so the content must be labelled as an ad, and brands share responsibility for that. In the US, the FTC treats free product as a connection that must be disclosed."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your creator ads programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

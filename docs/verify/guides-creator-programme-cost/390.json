@@ -1,0 +1,314 @@
+{
+  "generatedAt": "2026-11-27T09:43:12.331Z",
+  "route": "/guides/creator-programme-cost",
+  "slug": "guides-creator-programme-cost",
+  "width": 390,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/guides/creator-programme-cost",
+    "status": 200,
+    "title": "What Does a Creator Programme Cost? | Tano",
+    "height": 9664,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 4,
+    "animations": 26,
+    "missingImages": [],
+    "imageCount": 8,
+    "h1": "What does a creator programme cost?",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5397,
+      "navMs": 5351
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/guides/creator-programme-cost",
+    "status": 200,
+    "title": "What Does a Creator Programme Cost? | Tano",
+    "height": 9664,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 4,
+    "animations": 26,
+    "missingImages": [],
+    "imageCount": 8,
+    "h1": "What does a creator programme cost?",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5399,
+      "navMs": 5353
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/guides-creator-programme-cost/390-diff.png"
+  },
+  "timings": {
+    "totalMs": 5815,
+    "sourceMs": 5397,
+    "localMs": 5399
+  },
+  "diff": {
+    "overallPct": 0.78,
+    "staticPct": 0.8,
+    "motionPct": 0.06,
+    "videoPct": null,
+    "staticPixels": 2581020,
+    "staticDiffPixels": 20773,
+    "motionPixels": 504660,
+    "motionDiffPixels": 282,
+    "videoPixels": 0,
+    "videoDiffPixels": 0,
+    "sourceSize": {
+      "width": 390,
+      "height": 9664
+    },
+    "localSize": {
+      "width": 390,
+      "height": 9664
+    },
+    "commonSize": {
+      "width": 390,
+      "height": 9664
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.hp-band.hp-uc-hero",
+        "kind": "motion",
+        "source": {
+          "top": 4,
+          "height": 660.69,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 660.69,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0,
+        "pixels": 257790,
+        "diffPixels": 0,
+        "innerPct": null
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band",
+        "kind": "static",
+        "source": {
+          "top": 664.69,
+          "height": 5767.44,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 664.69,
+          "height": 5767.44,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.9,
+        "pixels": 2249130,
+        "diffPixels": 20331,
+        "innerPct": 0.9
+      },
+      {
+        "index": 2,
+        "label": "section.hp-band.hp-brands-band",
+        "kind": "static",
+        "source": {
+          "top": 6432.13,
+          "height": 851.48,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 4
+          }
+        },
+        "local": {
+          "top": 6432.13,
+          "height": 851.48,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 4
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.13,
+        "pixels": 331890,
+        "diffPixels": 442,
+        "innerPct": 0.13
+      },
+      {
+        "index": 3,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "source": {
+          "top": 7283.61,
+          "height": 632.69,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "local": {
+          "top": 7283.61,
+          "height": 632.69,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.11,
+        "pixels": 246870,
+        "diffPixels": 282,
+        "innerPct": null
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 1,
+        "label": "section.hp-band",
+        "kind": "static",
+        "pct": 0.9,
+        "innerPct": 0.9,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 2,
+        "label": "section.hp-band.hp-brands-band",
+        "kind": "static",
+        "pct": 0.13,
+        "innerPct": 0.13,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 3,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "pct": 0.11,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 0,
+        "label": "section.hp-band.hp-uc-hero",
+        "kind": "motion",
+        "pct": 0,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 9664,
+      "local": 9664,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 390,
+      "local": 390,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 4,
+      "local": 4,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

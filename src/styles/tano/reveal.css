@@ -1,0 +1,214 @@
+
+.rv-scope {
+  /* How far below its resting place content starts. */
+  --rv-y: 1.5rem;
+  /*
+   * And how far a large block starts below its own — a picture, a table,
+   * a whole card. The same distance that reads as a line of type arriving
+   * reads as a 1200-wide panel barely moving, so the big objects take a
+   * longer throw. It is named rather than written twice because the
+   * block-arrival component in home/Reveal.tsx takes it too.
+   */
+  --rv-y-block: 2.25rem;
+  /* The quintic ease-out: leaves fast, settles long. */
+  --rv-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --rv-duration: 760ms;
+  /* The fade is shorter than the move, so type is legible before it lands. */
+  /* 280, down from 420 with the release line (2026-11-09). */
+  --rv-fade: 280ms;
+}
+
+.rv-scope main :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *), .rv-scope footer :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *) {
+  opacity: 0;
+  transform: translate3d(0, var(--rv-y), 0);
+}
+
+.rv-scope main :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *).rv-in, .rv-scope footer :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *).rv-in {
+  opacity: 1;
+  transform: none;
+  transition:
+    transform var(--rv-duration) var(--rv-ease) var(--rv-delay, 0ms),
+    opacity var(--rv-fade) linear var(--rv-delay, 0ms);
+}
+
+/*
+ * A full-width picture covering the same 1.5rem as a line of type reads as
+ * barely moving, so the large blocks take a longer throw.
+ */
+.rv-scope :is(.hp-asset, .wire-media, figure, img, picture, video, table) {
+  --rv-y: var(--rv-y-block);
+}
+
+/* A rule has no mass; it arrives on a shorter throw than a line of type. */
+.rv-scope hr {
+  --rv-y: 0.5rem;
+  --rv-duration: 560ms;
+}
+
+/* ---------------------------------------------- headlines, word by word */
+
+/*
+ * A SPLIT HEADLINE DOES NOT MOVE. ITS WORDS DO.
+ *
+ * The block keeps its reveal class — that is still the signal the words
+ * read — but it stops carrying the transform itself, or every word would
+ * be riding a line that is also moving and the stagger would be invisible
+ * underneath it.
+ */
+.rv-scope [data-rv-split] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/*
+ * ONE WORD. It clicks rather than drifts: a short throw, a fast curve and
+ * a little overshoot past its resting place, which is the difference
+ * between type arriving and type floating up. The long quintic the rest of
+ * the page uses is right for a block and far too slow for the twelfth word
+ * of a line.
+ */
+.rv-scope .rv-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 0.34em, 0);
+}
+
+.rv-scope [data-rv-split].rv-in .rv-word {
+  opacity: 1;
+  transform: none;
+  transition:
+    transform 440ms cubic-bezier(0.2, 1.3, 0.34, 1)
+      calc(var(--rv-word, 0) * 46ms),
+    opacity 240ms linear calc(var(--rv-word, 0) * 46ms);
+}
+
+/*
+ * THE MARK ARRIVES STRAIGHT, THEN LEANS.
+ *
+ * Its tilt is the one piece of personality in a line of type, and a tilt
+ * that is simply there when the line lands is a fact about the layout. A
+ * tilt that happens a beat after the word it belongs to has settled is the
+ * mark doing something — which is the whole of the joke.
+ *
+ * It is a keyframe rather than a transition because the overshoot is the
+ * point: it goes past the angle and comes back, and the resting rule stays
+ * untouched so a reader with scripting off or reduced motion gets the
+ * tilted mark with no animation at all.
+ */
+.rv-scope .rv-mark {
+  transform: rotate(0deg);
+}
+
+.rv-scope [data-rv-split].rv-in .rv-mark {
+  animation: rv-mark-tilt 620ms cubic-bezier(0.34, 1.4, 0.5, 1) both;
+  animation-delay: calc(var(--rv-word, 0) * 46ms + 260ms);
+}
+
+/*
+ * THE MARK'S ENTRANCE — a settle, not a tilt.
+ *
+ * It rocked from upright to the mark's own resting angle, overshooting by
+ * 40% on the way. That angle is gone: the inline mark is a neutral chip
+ * now (see titleMark.tsx) and a box sitting at 7 degrees in a line of
+ * type is a sticker. With nothing to rock towards, the keyframes would
+ * have animated the fallback — every chip on the site quietly ending up
+ * crooked — so the gesture is restated rather than deleted. The chip now
+ * arrives a touch small and settles to size, which is the same beat in
+ * the one property a square can carry it in.
+ */
+@keyframes rv-mark-tilt {
+  0% {
+    transform: scale(0.82);
+  }
+
+  58% {
+    transform: scale(1.06);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ------------------------------------------- the first screen, on load */
+
+/*
+ * THE SAME ARRIVAL, STARTED BY THE FIRST PAINT RATHER THAN BY SCRIPT.
+ *
+ * The curves and timings are the observer path's own, restated as
+ * keyframes: words click in on the headline's stagger, and everything
+ * else in the block rises one stagger step behind them, as the observer
+ * would have ordered it. `both` holds the hidden frame before each
+ * delay runs out.
+ */
+.rv-scope [data-rv-onload] .rv-word {
+  animation:
+    rv-load-word-rise 440ms cubic-bezier(0.2, 1.3, 0.34, 1) both,
+    rv-load-fade 240ms linear both;
+  animation-delay: calc(var(--rv-word, 0) * 46ms);
+}
+
+.rv-scope [data-rv-onload] > :not(h1, h2) {
+  animation:
+    rv-load-rise var(--rv-duration) var(--rv-ease) both,
+    rv-load-fade var(--rv-fade) linear both;
+  animation-delay: 70ms;
+}
+
+@keyframes rv-load-word-rise {
+  from {
+    transform: translate3d(0, 0.34em, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rv-load-rise {
+  from {
+    transform: translate3d(0, var(--rv-y), 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rv-load-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-scope [data-rv-onload] .rv-word,
+  .rv-scope [data-rv-onload] > :not(h1, h2) {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-scope main :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *), .rv-scope footer :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *),
+  .rv-scope main :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *).rv-in, .rv-scope footer :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figure, img, picture, video, table, hr, details, form, label, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-mark, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link):not(:is(li, blockquote, figure, table, details, form, label, button, .hp-asset, .wire-media, .hp-band-actions, .hp-action, .wire-button-row, .wire-button, .tano-button, .wire-case-stat, .wire-case-card, .gd-stage, .gd-frame, .gd-card, .gd-verdict, .gd-code, .gd-spec, .gd-band-actions, .gd-index-link, .gd-pager-link) *):not(:is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground), :is([data-rv-skip], .car, .hp-ticker, .hp-stage, .hp-behind, .hp-logo-strip, .hp-testimonials, .hp-comparison-scroll, .hp-tabbar, .wire-cases-marks-strip, .wire-table-scroll, .wire-drawer, .wire-rail, .wire-footer-card, .wire-visually-hidden, .wire-footer-photo, .hp-hairline, .hp-faq-art, .hp-creator-asset, .hp-objective-ground) *).rv-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .rv-scope .rv-word {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .rv-scope .rv-mark {
+    transform: none;
+    animation: none;
+  }
+}

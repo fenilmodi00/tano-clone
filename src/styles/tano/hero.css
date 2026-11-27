@@ -1,0 +1,19 @@
+/* Hero campaign (owned): source-parity video fit, poster fallback, 600ms exit. */
+.hp-camp-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--page-secondary, #1a1815);
+}
+
+.hp-camp-video video[poster] {
+  background-position: center;
+  background-size: cover;
+}
+
+/* The source scene exits over 600ms; keep that duration explicit for the
+   data-leaving crossfade even if the entrance duration token changes. */
+.hp-camp-scene[data-leaving] {
+  animation-duration: 600ms;
+}

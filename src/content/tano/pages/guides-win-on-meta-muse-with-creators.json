@@ -1,0 +1,294 @@
+{
+  "route": "/guides/win-on-meta-muse-with-creators",
+  "family": "guide",
+  "meta": {
+    "title": "How DTC Brands Should Change Their Creator Programme for Meta Muse | Tano",
+    "description": "Muse is live in the UK after early lessons in North America. Six changes for DTC brands, from always-on seeding to the product facts agents check."
+  },
+  "hero": {
+    "title": "How DTC brands should change their creator programme for Meta Muse",
+    "paragraphs": [
+      "To win on Meta's Muse, a DTC brand should keep creators at the centre of its programme and change six things. Meta launched Muse in the UK in November 2026, two months after its US rollout began on 8 September.",
+      "The six changes: run the programme always-on; brief each seeding round around one buying question; give every creator a code and link; post UGC organically as well as in ads; make sure the facts agents check are right; and measure what you can."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What has Muse changed for creator programmes?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Muse puts an always-on shopping assistant between your creator's post and the sale. It can work from the Reels a shopper has saved, so a post can help close a sale weeks later, and its final pick leans on hard facts such as price and stock; <a href=\"/guides/meta-muse-creator-marketing\">what Meta Muse means for creator marketing</a> sets out the evidence."
+        },
+        {
+          "type": "prose",
+          "html": "Creators make people want the product before any comparison starts, show it in a real setting a catalog cannot show, and earn the save: a post that answers a real question is one a shopper keeps. Your team gets the facts right, from value and fit to the returns policy."
+        }
+      ]
+    },
+    {
+      "heading": "Why should your creator programme run always-on?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Always-on seeding gives shoppers a steady supply of fresh posts to save, in place of one launch burst. People save a post when it meets a need that week, and needs arrive all year. Seed new creators monthly, with time to try the product, clear disclosure guidance and freedom to share their experience."
+        }
+      ]
+    },
+    {
+      "heading": "How should each seeding round answer one buying question?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Pick one buying question each month and send the product to creators who can answer it from experience. Find questions in reviews, comments and support tickets, such as what fits inside."
+        },
+        {
+          "type": "prose",
+          "html": "One round, frequent flyers show whether the bag fits under a plane seat; the next, weekend travellers show what they pack. Different experiences give different shoppers a reason to save."
+        },
+        {
+          "type": "prose",
+          "html": "To find creators, search tagged customer posts, affiliates and competitor Reels. A creator with 100 followers can make the review a shopper saves; <a href=\"/guides/meta-muse-nano-micro-creators\">do follower counts matter on Meta Muse?</a> covers creator size."
+        }
+      ]
+    },
+    {
+      "heading": "Why does every creator need a code and link?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Give every creator their own code and affiliate link from day one. When a shopper saves a post and buys weeks later, the code shows which post did the work, and commission keeps creators posting. If shopping agents start surfacing creator codes, which nothing confirms yet, older reviews could keep earning too. <a href=\"/guides/meta-muse-creators-brief\">What to tell your creators about Meta Muse</a> covers commission and a reward ladder."
+        }
+      ]
+    },
+    {
+      "heading": "Why should UGC run organically as well as in ads?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "UGC that only runs as ads never sits on a creator's profile, where a shopper can find and save it after the spend stops. Pick creators whose audiences already trust their buying advice, let them post first, and run the strongest posts as ads once organic results are in. <a href=\"/guides/ugc-ai-shopping-agents\">Is your UGC programme ready for AI shopping agents?</a> compares the two approaches."
+        }
+      ]
+    },
+    {
+      "heading": "Are the facts agents check about your products right?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Muse almost always starts with a search of Meta's own catalog, pulling up to 50 options, and in <a href=\"https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents\" target=\"_blank\" rel=\"noreferrer noopener\">a16z and The Prompting Company's tests</a>, price was Muse's most-cited reason for a pick, at 57%. Work through this list with your ecommerce team:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Meta's catalog. Every product listed, with accurate titles, prices, sizes and variants.",
+            "Price and stock. Matched across catalog and site.",
+            "Returns. Easy to find. At equal prices, agents tend to choose the retailer with the better return policy.",
+            "Reviews and press. Agents lean on review sites, press and forums as well as product pages.",
+            "Checkout. In the UK, Muse can check out with Shop Pay on supported Shopify stores; if you use Shopify, check yours is supported."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How many organic posts should you plan for?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Thousands a month, built up from the intake your budget allows. As an illustrative example, if 56% of seeded nano and micro creators publish and average 1.2 posts each, volume scales as below, before repeat posts. Use early publishing data to set your intake."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Creators seeded a month",
+            "Publish (56%)",
+            "Posts a month (1.2 each)",
+            "Posts a year"
+          ],
+          "rows": [
+            [
+              "100",
+              "56",
+              "about 67",
+              "about 806"
+            ],
+            [
+              "1,000",
+              "560",
+              "672",
+              "8,064"
+            ],
+            [
+              "4,000",
+              "2,240",
+              "2,688",
+              "32,256"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "To run that volume without adding people, see <a href=\"/guides/scale-creator-programme-without-headcount\">how to scale a creator programme without headcount</a>."
+        }
+      ]
+    },
+    {
+      "heading": "What does a 6 to 12 month plan look like?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Start with a four-month pilot, a fixed number of new creators a month and one number to judge it on, such as CPA, payback or cost per post."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Months",
+            "What you do",
+            "What you track"
+          ],
+          "rows": [
+            [
+              "1 to 3",
+              "Set a target, issue codes and links, seed one question a month.",
+              "Live posts, saves, sales by code"
+            ],
+            [
+              "4",
+              "Review against target. Keep useful posters. Ask to run standout posts as ads.",
+              "Your one target"
+            ],
+            [
+              "5 to 12",
+              "Expand seeding where results justify it. Move regulars up the reward ladder.",
+              "Repeat posts, paid results, questions covered"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Where do we think this is heading?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "We think useful creator posts will get a second life at checkout, and that brands whose creators have answered the most buying questions will be in the strongest position. Neither is proven yet."
+        },
+        {
+          "type": "prose",
+          "html": "If <a href=\"/guides/meta-muse-creator-marketing\">Meta's plans to credit creators</a> reach Muse, this month's reviews could help close sales months from now."
+        },
+        {
+          "type": "prose",
+          "html": "Agents also tend to converge on the same picks, so the brand whose creators answer one need most clearly could become the product agents keep choosing for it. A seeding plan built around buying questions is a plan to become that brand."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano build always-on creator programmes?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is the creator advertising platform for consumer brands. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. Month to month, we run the six changes like this:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Set one target. A four-month pilot, judged on one number such as CPA.",
+            "Calibrate. You approve or reject our first two creator lists; then your ongoing time is small.",
+            "Invite as your brand. We contact each creator as your brand; each agrees terms and gets their own code and link.",
+            "Seed one buying question. Creators post their own way.",
+            "Coach. We detect posts automatically and coach each creator one to one on posting and hooks.",
+            "Send winners to paid. We surface top posts by performance and by fit with what your ad account is missing."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "We keep the creators who post. At <a href=\"/case-studies/hellofresh\">HelloFresh</a>, a hybrid creator model delivered a 93% uplift in conversion rate versus running the programme internally."
+        },
+        {
+          "type": "prose",
+          "html": "We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "What other questions do buyers ask?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Can shoppers buy my products through Muse?",
+              "body": "In the UK, yes, through Shop Pay on supported Shopify stores or one of 14 connector partners such as Marks & Spencer, ASOS and JD Sports. Muse asks before buying on the shopper's behalf."
+            },
+            {
+              "title": "How do I measure sales that come through Muse?",
+              "body": "Indirectly. Conversations with Muse aren't shared with Meta's advertising systems, so track sales by creator code and link, saves and branded search against a pre-programme baseline."
+            },
+            {
+              "title": "How long does it take to see results?",
+              "body": "First posts usually arrive 7 to 10 days after outreach, as shipping is the wait."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+93%",
+              "label": "uplift in CVR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Partnering with Tano on a hybrid model completely transformed our micro-influencer strategy.",
+          "name": "Stephanie Terziyski",
+          "role": "Growth Influencer Marketing Manager · HelloFresh",
+          "image": "/sites/tano/extras/4b3629a7ba68267054fddc88cc3c919272b61bbe-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can shoppers buy my products through Muse?",
+      "a": "In the UK, yes, through Shop Pay on supported Shopify stores or one of 14 connector partners such as Marks & Spencer, ASOS and JD Sports. Muse asks before buying on the shopper's behalf."
+    },
+    {
+      "q": "How do I measure sales that come through Muse?",
+      "a": "Indirectly. Conversations with Muse aren't shared with Meta's advertising systems, so track sales by creator code and link, saves and branded search against a pre-programme baseline."
+    },
+    {
+      "q": "How long does it take to see results?",
+      "a": "First posts usually arrive 7 to 10 days after outreach, as shipping is the wait."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Plan your always-on creator pilot",
+      "href": "/talk-to-us"
+    }
+  }
+}

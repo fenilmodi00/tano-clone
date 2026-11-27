@@ -1,0 +1,218 @@
+{
+  "generatedAt": "2026-11-27T09:45:52.100Z",
+  "route": "/news/tano-raises-4m-seed-round",
+  "slug": "news-tano-raises-4m-seed-round",
+  "width": 1024,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/news/tano-raises-4m-seed-round",
+    "status": 200,
+    "title": "Tano Has Raised $5M to Make Creators a True Advertising Channel. | Tano",
+    "height": 7044,
+    "width": 1024,
+    "viewportWidth": 1024,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 2,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Tano has raised $5m to make creators a true advertising channel.",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 7694,
+      "navMs": 7645
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/news/tano-raises-4m-seed-round",
+    "status": 200,
+    "title": "Tano Has Raised $5M to Make Creators a True Advertising Channel. | Tano",
+    "height": 7044,
+    "width": 1024,
+    "viewportWidth": 1024,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 2,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Tano has raised $5m to make creators a true advertising channel.",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 7046,
+      "navMs": 6996
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/news-tano-raises-4m-seed-round/1024-diff.png"
+  },
+  "timings": {
+    "totalMs": 8184,
+    "sourceMs": 7694,
+    "localMs": 7046
+  },
+  "diff": {
+    "overallPct": 0.29,
+    "staticPct": 0.12,
+    "motionPct": 1.29,
+    "videoPct": null,
+    "staticPixels": 5447680,
+    "staticDiffPixels": 6344,
+    "motionPixels": 575488,
+    "motionDiffPixels": 7428,
+    "videoPixels": 0,
+    "videoDiffPixels": 0,
+    "sourceSize": {
+      "width": 1024,
+      "height": 7044
+    },
+    "localSize": {
+      "width": 1024,
+      "height": 7044
+    },
+    "commonSize": {
+      "width": 1024,
+      "height": 7044
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.wire-legal-hero.wire-resource-hero",
+        "kind": "motion",
+        "source": {
+          "top": 4,
+          "height": 562.14,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 562.14,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 1.29,
+        "pixels": 575488,
+        "diffPixels": 7428,
+        "innerPct": null
+      },
+      {
+        "index": 1,
+        "label": "div.wire-legal-body",
+        "kind": "static",
+        "source": {
+          "top": 566.14,
+          "height": 5320.09,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 566.14,
+          "height": 5320.09,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.12,
+        "pixels": 5447680,
+        "diffPixels": 6344,
+        "innerPct": 0.12
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 0,
+        "label": "section.wire-legal-hero.wire-resource-hero",
+        "kind": "motion",
+        "pct": 1.29,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 1,
+        "label": "div.wire-legal-body",
+        "kind": "static",
+        "pct": 0.12,
+        "innerPct": 0.12,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 7044,
+      "local": 7044,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 1024,
+      "local": 1024,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 2,
+      "local": 2,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

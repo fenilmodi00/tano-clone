@@ -1,0 +1,51 @@
+{
+  "route": "/playbooks/self-funding-seeding-affiliate",
+  "family": "playbook",
+  "meta": {
+    "title": "Free Seeding → Affiliate Playbook | Tano | Tano",
+    "description": "How to build a creator programme that pays for itself — from gifting to affiliates to whitelisted ads. Free from Tano."
+  },
+  "hero": {
+    "eyebrow": "Free · Playbook",
+    "title": "The seeding programme that pays for itself.",
+    "paragraphs": [
+      "From gifting to affiliates to whitelisted ads — the complete playbook for 2026."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Get the playbook.",
+      "eyebrow": "Free · Instant access",
+      "variant": "playbook-gate",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Drop your work email and we'll send it over."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "6 sections"
+            },
+            {
+              "title": "Break-even formula"
+            },
+            {
+              "title": "Posting rate benchmarks"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Ready to build a programme that pays for itself?",
+    "body": "Book a call with the Tano team to see how we run seeding-to-affiliate programmes for brands like Bloom & Wild, Skin+Me, and Gousto.",
+    "cta": {
+      "label": "Book a Call",
+      "href": "/talk-to-us"
+    }
+  }
+}

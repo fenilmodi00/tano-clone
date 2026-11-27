@@ -1,0 +1,195 @@
+{
+  "route": "/careers/product-engineer",
+  "family": "career-role",
+  "meta": {
+    "title": "Product Engineer | Tano Careers | Tano",
+    "description": "Product Engineer at Tano, in person in central London: own the agent that runs influencer marketing end-to-end, in production, for paying brands."
+  },
+  "hero": {
+    "eyebrow": "Engineering",
+    "title": "Product Engineer",
+    "paragraphs": [],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Role details",
+      "variant": "role-meta",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Engineering",
+              "label": "Department"
+            },
+            {
+              "value": "Central London · In person",
+              "label": "Location"
+            },
+            {
+              "value": "Full-time",
+              "label": "Contract"
+            },
+            {
+              "value": "3 openings",
+              "label": "Openings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What you would own",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You would own the influencer affiliate management agent: the system that turns a single successful post into a months-long relationship, and a one-off affiliate into a real brand ambassador. It is our hardest, highest-leverage surface, because <strong>it runs unattended over months with no human left to babysit it.</strong> You own the design, the build, the ship and the architecture, and as the team grows it becomes the foundation others build on."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>If you want to point at a system in production and say you designed it, this is the closest seat there is to being a technical founder.</strong>"
+        }
+      ]
+    },
+    {
+      "heading": "What we are looking for",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You ship across the whole stack, backend and frontend, without waiting to be told what to build.",
+            "You have built and shipped real AI agents or application-layer AI in production (not demos or prompt wrappers), and you know where these systems break.",
+            "Product taste: you make good calls on scope and UX without a PM.",
+            "At your best in ambiguity, on a team that ships continuously.",
+            "Roughly 5 to 7 years in, and ideally someone who wants to be a technical founder themselves within a few years.",
+            "Bonus: Go · LangGraph or comparable agent frameworks · Postgres and Supabase depth · zero-to-one experience · a feel for the creator economy."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The stack",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "TypeScript (NestJS, Next.js) and Go, with Postgres, LangGraph, Google Gemini, Supabase, Fly.io and Vercel. Early enough that you will shape it."
+        }
+      ]
+    },
+    {
+      "heading": "The team you would join",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Will Caplan, CEO",
+              "body": "GTM lead at Encord (YC AI scale-up), and Sandhurst."
+            },
+            {
+              "title": "Sagar, CTO",
+              "body": "Three years building AI agents, early before it was a category."
+            },
+            {
+              "title": "Nathan, Founding Engineer",
+              "body": "Fastest-promoted engineer at a London YC scale-up."
+            },
+            {
+              "title": "Jake, Founding Engineer",
+              "body": "Previously a founding engineer. Has grown a personal YouTube channel."
+            },
+            {
+              "title": "Eddie, Product Engineer",
+              "body": "Previously did research at Stanford."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Alongside a tight team across influencer and customer ops who do, by hand, the work the agents are learning to do. We own the outcomes, so we know exactly what a working agent has to be."
+        }
+      ]
+    },
+    {
+      "heading": "How we work",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Whoever has the context decides, by writing it down and shipping it, not by waiting for a meeting. We ship to live brands continuously and let real usage tell us what is true."
+        }
+      ]
+    },
+    {
+      "heading": "Process",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Intro call.",
+              "meta": "01"
+            },
+            {
+              "title": "Two 30-minute calls with Sagar and Will: motivation and technical depth.",
+              "meta": "02"
+            },
+            {
+              "title": "Onsite, mostly with Sagar: a system design task and sometimes a product build, plus time with the team and lunch.",
+              "meta": "03"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Roughly two weeks end to end."
+        }
+      ]
+    },
+    {
+      "heading": "What is on offer",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [],
+          "rows": [
+            [
+              "Base",
+              "Up to £150k, depending on experience"
+            ],
+            [
+              "Equity",
+              "Up to 0.5%"
+            ],
+            [
+              "Location",
+              "Full-time, in person, central London"
+            ],
+            [
+              "Benefits",
+              "Health insurance, onsite gym, in-person culture, real startup work-life"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Sound like you?",
+      "variant": "closing",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tell us why you, and what you'd want to own. We read every application."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "route": "/compare/grin-vs-tano",
+  "family": "compare",
+  "meta": {
+    "title": "GRIN vs Tano: Software You Run, or a Programme Run for You? | Tano",
+    "description": "GRIN is creator software your own team runs. Tano runs an always-on creator programme for you. Compare the models, pricing, AI agents and fit."
+  },
+  "hero": {
+    "title": "GRIN vs Tano: software you run, or a programme run for you?",
+    "paragraphs": [
+      "GRIN is creator marketing software that a brand's own team runs. Tano is a creator advertising platform: it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for a brand.",
+      "GRIN works well for a large in-house creator team that wants one low-cost tool and to make every decision itself. Its free plan makes it an easy place to start.",
+      "Tano is built for the stage after that: a programme that has to grow faster than the team running it, across hundreds or thousands of creators."
+    ],
+    "actions": [
+      {
+        "label": "See if Tano fits your programme",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "All comparisons",
+        "href": "/compare"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The numbers:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "3.5×",
+              "label": "Growth in sign-ups and revenue at Skin+Me with Tano."
+            },
+            {
+              "value": "+93%",
+              "label": "CVR uplift at HelloFresh with a hybrid creator model run with Tano."
+            },
+            {
+              "value": "+125%",
+              "label": "CTR on Bloom & Wild creator ads run through Tano, against non-Tano ads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "GRIN: one tool for the whole workflow, operated in-house",
+      "eyebrow": "Two ways to run a creator programme",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "GRIN is creator management software that covers the whole workflow in one platform: finding creators, gifting and contracts, tracking and payouts. Creators come from GRIN's search or the <a href=\"https://grin.co/creators\" target=\"_blank\" rel=\"noreferrer noopener\">GRIN Marketplace</a>, a network of more than 700,000 creators on a free app."
+        },
+        {
+          "type": "prose",
+          "html": "In May 2025 GRIN <a href=\"https://grin.co/news/grin-launches-gia-the-first-agentic-ai-solution-designed-to-supercharge-creator-marketers/\" target=\"_blank\" rel=\"noreferrer noopener\">added an AI agent, Gia</a>, which is included in their Starter plan and above. Gia works like a copilot inside the software: it prepares work and recommends next steps, and <a href=\"https://grin.co/\" target=\"_blank\" rel=\"noreferrer noopener\">in GRIN's words</a>, “Gia makes the recommendation, but you make the call.” Your team approves “<a href=\"https://grin.co/platform\" target=\"_blank\" rel=\"noreferrer noopener\">consequential actions involving messages, money, contracts, or brand risk</a>”, sets terms, handles counter-offers, and keeps “strategy, relationships, and the creative work”."
+        },
+        {
+          "type": "prose",
+          "html": "GRIN is priced as software. <a href=\"https://grin.co/pricing\" target=\"_blank\" rel=\"noreferrer noopener\">Plans run month to month from free to $1,000 a month</a>, which is the licence fee; Each plan includes a monthly allowance of credits for Gia's work, and paid plans can buy more, at a price GRIN does not publish. The people who run the programme come from your own team; <a href=\"https://grin.co/compare/grin-vs-impact\" target=\"_blank\" rel=\"noreferrer noopener\">GRIN states it does not sell a services team</a>."
+        }
+      ]
+    },
+    {
+      "heading": "Tano: specialist agents and a senior team running the programme",
+      "eyebrow": "Two ways to run a creator programme",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is a creator advertising platform: it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for consumer brands. Tano focuses on building performance-powered creator communities around your brand and product. Its AI runs sourcing, vetting, content quality analysis and reporting; outreach, briefing, contracting and gifting run as agent workflows from day one; and an agent speaks for your brand to creators. Tano's in-house strategists oversee the programme end to end, negotiate rates, and manage usage rights and whitelisting. Every programme has a named account lead who is your point of contact and leads the programme strategy."
+        },
+        {
+          "type": "prose",
+          "html": "Tano builds programmes focused on two objectives:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Creative volume for Meta and TikTok",
+            "New customer acquisition and revenue"
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Sourcing matches creators to your buyer personas, brand fit and performance signals across TikTok, Instagram and YouTube, drawing on roughly 250 million creators, including independent and up-and-coming creators who are not on any marketplace. The agents vet each creator's content for brand fit and tone, at a volume no in-house team could check by hand."
+        },
+        {
+          "type": "prose",
+          "html": "The programme runs as a lifecycle, built to grow a performance-powered creator community around your brand. Tano uses each creator's performance and history to decide the next action: who needs a reminder, who is ready for another product, who is posting but not converting, who should move up a tier, and which content is worth using in paid social. Creators stay independent, and the relationships, data and content rights stay with your brand if you leave."
+        }
+      ]
+    },
+    {
+      "heading": "Who runs the programme?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "With GRIN, your team does. Gia provides support, but your team approves every invitation, contract change and payout, and negotiates terms with each creator. With Tano, a blended team of agents and creator marketing experts runs sourcing, outreach, negotiation and payments. Your team approves the strategy and keeps the final say on creative and the highest-value creator moments."
+        }
+      ]
+    },
+    {
+      "heading": "One general agent, or specialist agents?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Gia is a single agent that works across GRIN's jobs, from recruiting and outreach to deliverable review and retention, and you buy its work in credits. Tano runs specialist agents for each separate job: sourcing and vetting, outreach, briefing and contracting, gifting, content quality analysis and reporting. An orchestrator agent coordinates them, moving each creator from one stage to the next and deciding which agent acts next, and Tano's team oversees the whole system. The result with GRIN is a capable platform with an assistant for your team; the result with Tano is a programme run for you by Tano's team and agents, which gets better over time."
+        }
+      ]
+    },
+    {
+      "heading": "Where do the creators come from?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "GRIN gives your team creator search and a marketplace of more than 700,000 creators. Tano recruits for you from roughly 250 million, matched to your buyer personas and brand fit, including creators who have never joined a marketplace."
+        }
+      ]
+    },
+    {
+      "heading": "What are you paying for?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "With GRIN you pay for software and activity. In GRIN's words, you “<a href=\"https://grin.co/compare/grin-vs-impact\" target=\"_blank\" rel=\"noreferrer noopener\">pay for the work she does</a>”: credits are used each time Gia sources, messages, reports or sets up a campaign, whether or not that work turns into sales, and GRIN takes no share of the revenue your creators generate. How the programme performs is down to your team."
+        },
+        {
+          "type": "prose",
+          "html": "With Tano you pay for a running programme. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "GRIN and Tano side by side.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "GRIN",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "Core model",
+              "Creator management software for an in-house team",
+              "Brand-owned creator programme run by Tano"
+            ],
+            [
+              "Best at",
+              "Giving a hands-on team one low-cost tool",
+              "Running an always-on programme at volume without adding headcount (100 to 1,000+ creators per programme)"
+            ],
+            [
+              "Brand's role",
+              "Run the programme and approve invitations, contracts and payouts",
+              "Approve key decisions while Tano runs the programme operations"
+            ],
+            [
+              "AI",
+              "One copilot agent, Gia, metered in credits",
+              "Specialist agents for sourcing, vetting, outreach, contracting, gifting, content review and reporting, coordinated by an orchestrator"
+            ],
+            [
+              "People",
+              "Your team; GRIN does not sell a services team",
+              "Tano's senior in-house team, included in the fee"
+            ],
+            [
+              "Creator supply",
+              "Search plus the GRIN Marketplace (700,000+)",
+              "Roughly 250 million creators, including those on no marketplace"
+            ],
+            [
+              "Programme design",
+              "Seeding, paid, affiliate and UGC, set up by your team",
+              "Lifecycle design: gifting, first post, repeat post, tiering, affiliate, paid usage and re-engagement"
+            ],
+            [
+              "Content rights",
+              "Captured with usage rights attached to the content",
+              "Rights and whitelisting can be managed as part of the programme"
+            ],
+            [
+              "How you are charged",
+              "Subscription plus credits for AI work; no share of sales",
+              "Monthly fee plus a share of the commission the programme generates"
+            ],
+            [
+              "Pricing",
+              "Free to $1,000 a month licence, with more credits available on paid plans; month to month",
+              "From $3,000 a month plus a share of affiliate commission"
+            ],
+            [
+              "Published results",
+              "$1.2B+ creator-driven GMV and 5,000+ brand programmes since 2017, by GRIN's count",
+              "Skin+Me: 3.5× growth in sign-ups and revenue, 4 of 5 top creators onboarded by Tano. Bloom & Wild: +125% click-through and 10% lower CPA on creator ads. HelloFresh: 93% CVR uplift with a hybrid creator model"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose GRIN when",
+      "eyebrow": "Why GRIN",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You have an experienced in-house team with the hours to run creators itself.",
+            "You want to stay close to the detail: which creator gets what, and on which terms.",
+            "You are starting out: GRIN has a free plan and paid plans from $200 a month, month to month.",
+            "You sell on Shopify and want gifting and orders handled inside one tool."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "GRIN is the lower-cost choice for a brand that has the people and wants to keep every decision in-house."
+        }
+      ]
+    },
+    {
+      "heading": "Choose Tano when",
+      "eyebrow": "Why Tano",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your creator programme has outgrown the one or two people running it.",
+            "You want hundreds or thousands of creators active without hiring.",
+            "You want specialist agents running the work and a senior team responsible for the results.",
+            "You want to reach creators who are not on any marketplace.",
+            "Your product needs repeat exposure or a trial before someone buys."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a>'s Tano creator ads produced 125% higher click-through and a 10% lower cost per acquisition than its non-Tano ads. At <a href=\"/case-studies/skin-and-me\">Skin+Me</a>, Tano onboarded 4 of its 5 top creators in September 2025, and creator-driven sign-ups and revenue grew 3.5×. <a href=\"/case-studies/hellofresh\">HelloFresh</a> saw a 93% conversion uplift with a hybrid creator model run with Tano."
+        }
+      ]
+    },
+    {
+      "heading": "Common questions.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "GRIN and Tano compared on who runs the programme, agents, cost and when to choose each."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Tano an alternative to GRIN?",
+              "body": "Yes. Both run a direct creator programme for a brand, so most brands use one. GRIN gives your team the software to run it; Tano runs it for you with specialist agents and a senior team."
+            },
+            {
+              "title": "Can GRIN's AI agent run a creator programme on its own?",
+              "body": "No, and GRIN does not claim it can. Gia prepares and recommends, and your team approves every action involving messages, money, contracts or brand risk. GRIN says your team keeps strategy, relationships and the creative work, and it does not sell a services team to do that for you."
+            },
+            {
+              "title": "How is Tano's AI different from GRIN's Gia?",
+              "body": "Gia is one general agent inside a tool your team operates, paid for in credits. Tano runs specialist agents for sourcing, vetting, outreach, contracting, gifting, content review and reporting, overseen by a senior team that also negotiates rates and manages rights. You get a running programme instead of a queue of recommendations to approve."
+            },
+            {
+              "title": "When does it make sense to move from GRIN to Tano?",
+              "body": "When the programme outgrows the hours or the experience of the people running it. GRIN's free and low-cost plans make it an easy place to start. Once you want hundreds or thousands of creators active and would rather hand off sourcing, negotiation and follow-up, Tano is the better fit."
+            },
+            {
+              "title": "How much does GRIN cost compared with Tano?",
+              "body": "GRIN's plans are Free, Starter at $200, Growth at $500 and Scale at $1,000 a month, month to month, with Gia's work metered in credits: each plan includes a monthly allowance, and paid plans can buy more credits at a price GRIN does not publish. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. GRIN is cheaper as software; Tano's fee covers the agents, the team running them and the sourcing."
+            },
+            {
+              "title": "Are GRIN's and Tano's incentives aligned with the brand's?",
+              "body": "They are set up differently. GRIN is paid for Gia's work through credits, whether or not that work produces sales, and takes no share of revenue. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive, so what it earns depends on your creators posting and selling."
+            },
+            {
+              "title": "What are the alternatives to GRIN?",
+              "body": "If you want different software for your own team to run, Modash, Upfluence and Aspire are examples. If you want someone else to run the programme, the options are an agency, a platform's managed service, or a done-for-you creator advertising platform such as Tano. Marketplaces such as LTK and ShopMy give access to creators already selling through them, and many brands run one alongside a direct programme."
+            },
+            {
+              "title": "Does GRIN offer a managed service?",
+              "body": "Not as of September 2026. GRIN launched Professional Services, including a fully managed option, in October 2023, but its comparison pages now state that it does not sell a services team."
+            },
+            {
+              "title": "Who owns the creator relationship with GRIN or Tano?",
+              "body": "Neither owns the creator: creators stay independent. With GRIN, the programme history sits in the brand's own GRIN account. With Tano, the programme is brand-owned, so the relationships, the data and the content rights stay with the brand if it leaves."
+            },
+            {
+              "title": "How soon can creators be posting?",
+              "body": "GRIN says a brand can launch a first campaign in as little as 10 minutes, and after that the pace depends on your team's time. Tano onboards the first creators in the first days of a programme, typically with first creators live less than 24 hours after onboarding, and builds from there tier by tier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Tano an alternative to GRIN?",
+      "a": "Yes. Both run a direct creator programme for a brand, so most brands use one. GRIN gives your team the software to run it; Tano runs it for you with specialist agents and a senior team."
+    },
+    {
+      "q": "Can GRIN's AI agent run a creator programme on its own?",
+      "a": "No, and GRIN does not claim it can. Gia prepares and recommends, and your team approves every action involving messages, money, contracts or brand risk. GRIN says your team keeps strategy, relationships and the creative work, and it does not sell a services team to do that for you."
+    },
+    {
+      "q": "How is Tano's AI different from GRIN's Gia?",
+      "a": "Gia is one general agent inside a tool your team operates, paid for in credits. Tano runs specialist agents for sourcing, vetting, outreach, contracting, gifting, content review and reporting, overseen by a senior team that also negotiates rates and manages rights. You get a running programme instead of a queue of recommendations to approve."
+    },
+    {
+      "q": "When does it make sense to move from GRIN to Tano?",
+      "a": "When the programme outgrows the hours or the experience of the people running it. GRIN's free and low-cost plans make it an easy place to start. Once you want hundreds or thousands of creators active and would rather hand off sourcing, negotiation and follow-up, Tano is the better fit."
+    },
+    {
+      "q": "How much does GRIN cost compared with Tano?",
+      "a": "GRIN's plans are Free, Starter at $200, Growth at $500 and Scale at $1,000 a month, month to month, with Gia's work metered in credits: each plan includes a monthly allowance, and paid plans can buy more credits at a price GRIN does not publish. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. GRIN is cheaper as software; Tano's fee covers the agents, the team running them and the sourcing."
+    },
+    {
+      "q": "Are GRIN's and Tano's incentives aligned with the brand's?",
+      "a": "They are set up differently. GRIN is paid for Gia's work through credits, whether or not that work produces sales, and takes no share of revenue. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive, so what it earns depends on your creators posting and selling."
+    },
+    {
+      "q": "What are the alternatives to GRIN?",
+      "a": "If you want different software for your own team to run, Modash, Upfluence and Aspire are examples. If you want someone else to run the programme, the options are an agency, a platform's managed service, or a done-for-you creator advertising platform such as Tano. Marketplaces such as LTK and ShopMy give access to creators already selling through them, and many brands run one alongside a direct programme."
+    },
+    {
+      "q": "Does GRIN offer a managed service?",
+      "a": "Not as of September 2026. GRIN launched Professional Services, including a fully managed option, in October 2023, but its comparison pages now state that it does not sell a services team."
+    },
+    {
+      "q": "Who owns the creator relationship with GRIN or Tano?",
+      "a": "Neither owns the creator: creators stay independent. With GRIN, the programme history sits in the brand's own GRIN account. With Tano, the programme is brand-owned, so the relationships, the data and the content rights stay with the brand if it leaves."
+    },
+    {
+      "q": "How soon can creators be posting?",
+      "a": "GRIN says a brand can launch a first campaign in as little as 10 minutes, and after that the pace depends on your team's time. Tano onboards the first creators in the first days of a programme, typically with first creators live less than 24 hours after onboarding, and builds from there tier by tier."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

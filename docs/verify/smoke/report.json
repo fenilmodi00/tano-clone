@@ -1,0 +1,1686 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Tano — The Creator Advertising Platform",
+    "h": 14433,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1392,
+        "cls": "hp-band hp-hero"
+      },
+      {
+        "y": 1396,
+        "h": 290,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 1685,
+        "h": 995,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2680,
+        "h": 1065,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3745,
+        "h": 926,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4671,
+        "h": 2256,
+        "cls": ""
+      },
+      {
+        "y": 6927,
+        "h": 595,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7521,
+        "h": 1021,
+        "cls": "hp-band"
+      },
+      {
+        "y": 8542,
+        "h": 1091,
+        "cls": "hp-band"
+      },
+      {
+        "y": 9633,
+        "h": 1179,
+        "cls": "hp-band"
+      },
+      {
+        "y": 10812,
+        "h": 772,
+        "cls": "hp-band hp-creator-band"
+      },
+      {
+        "y": 11584,
+        "h": 217,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 11801,
+        "h": 876,
+        "cls": "hp-band"
+      },
+      {
+        "y": 12676,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "The CreatorAdvertising Platform",
+    "missing": [
+      "http://127.0.0.1:3000/sites/tano/images/footer-daylight-glass.jpg"
+    ]
+  },
+  {
+    "route": "/careers",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Careers at Tano: engineering and creator growth roles | Tano",
+    "h": 4257,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 998,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 1002,
+        "h": 966,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1968,
+        "h": 1228,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "Careers at Tano",
+    "missing": []
+  },
+  {
+    "route": "/careers/product-engineer",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Product Engineer | Tano Careers | Tano",
+    "h": 5021,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 438,
+        "cls": "hp-band hp-rp-hero"
+      },
+      {
+        "y": 442,
+        "h": 3191,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3633,
+        "h": 326,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "Product Engineer",
+    "missing": []
+  },
+  {
+    "route": "/careers/product-security-engineer",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Product Security Engineer | Tano Careers | Tano",
+    "h": 6123,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 438,
+        "cls": "hp-band hp-rp-hero"
+      },
+      {
+        "y": 442,
+        "h": 4293,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4736,
+        "h": 326,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "Product Security Engineer",
+    "missing": []
+  },
+  {
+    "route": "/careers/senior-account-manager",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Senior Account Manager, Creator Growth | Tano Careers | Tano",
+    "h": 7904,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 438,
+        "cls": "hp-band hp-rp-hero"
+      },
+      {
+        "y": 442,
+        "h": 6074,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6516,
+        "h": 326,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "Senior Account Manager, Creator Growth",
+    "missing": []
+  },
+  {
+    "route": "/case-studies",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Case Studies | Tano",
+    "h": 4819,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 430,
+        "cls": "wire-cases-hero"
+      },
+      {
+        "y": 434,
+        "h": 392,
+        "cls": "hp-band wire-figs-band"
+      },
+      {
+        "y": 826,
+        "h": 1268,
+        "cls": ""
+      },
+      {
+        "y": 2094,
+        "h": 968,
+        "cls": "hp-band wire-films-band"
+      },
+      {
+        "y": 3062,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Readaboutourcasestudies",
+    "missing": []
+  },
+  {
+    "route": "/case-studies/bloom-and-wild",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Bloom & Wild: Creator Acquisition Case Study | Tano",
+    "h": 10936,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 951,
+        "cls": "wire-study-hero"
+      },
+      {
+        "y": 955,
+        "h": 5094,
+        "cls": "wire-legal-body wire-study-body"
+      },
+      {
+        "y": 6049,
+        "h": 921,
+        "cls": "wire-study-films"
+      },
+      {
+        "y": 6970,
+        "h": 2209,
+        "cls": "wire-study-others"
+      },
+      {
+        "y": 9179,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How Bloom & Wild made creators a revenue channel",
+    "missing": []
+  },
+  {
+    "route": "/case-studies/hellofresh",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "HelloFresh Case Study | Tano",
+    "h": 8002,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1016,
+        "cls": "wire-study-hero"
+      },
+      {
+        "y": 1020,
+        "h": 2095,
+        "cls": "wire-legal-body wire-study-body"
+      },
+      {
+        "y": 3115,
+        "h": 921,
+        "cls": "wire-study-films"
+      },
+      {
+        "y": 4036,
+        "h": 2209,
+        "cls": "wire-study-others"
+      },
+      {
+        "y": 6245,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+    "missing": []
+  },
+  {
+    "route": "/case-studies/papier",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Papier: 22% Lower CPA, 34% Higher ROAS With Creators | Tano",
+    "h": 11243,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 887,
+        "cls": "wire-study-hero"
+      },
+      {
+        "y": 891,
+        "h": 5465,
+        "cls": "wire-legal-body wire-study-body"
+      },
+      {
+        "y": 6356,
+        "h": 921,
+        "cls": "wire-study-films"
+      },
+      {
+        "y": 7277,
+        "h": 2209,
+        "cls": "wire-study-others"
+      },
+      {
+        "y": 9486,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How Papier cut CPA by 22%",
+    "missing": []
+  },
+  {
+    "route": "/case-studies/skin-and-me",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Skin+Me: Creator-Led Customer Acquisition | Tano",
+    "h": 10409,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1016,
+        "cls": "wire-study-hero"
+      },
+      {
+        "y": 1020,
+        "h": 4502,
+        "cls": "wire-legal-body wire-study-body"
+      },
+      {
+        "y": 5521,
+        "h": 921,
+        "cls": "wire-study-films"
+      },
+      {
+        "y": 6443,
+        "h": 2209,
+        "cls": "wire-study-others"
+      },
+      {
+        "y": 8652,
+        "h": 695,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How Skin+Me unlocked acquisition with overlooked creators",
+    "missing": []
+  },
+  {
+    "route": "/compare",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Compare Tano With Creator Marketing Alternatives | Tano",
+    "h": 3063,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 384,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 388,
+        "h": 835,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1222,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Compare Tano with the alternatives",
+    "missing": []
+  },
+  {
+    "route": "/compare/agentio-vs-tano",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Agentio vs Tano: Buy Creator Placements, or Build a Creator Programme? | Tano",
+    "h": 9372,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 995,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 999,
+        "h": 2027,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3027,
+        "h": 960,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3987,
+        "h": 1714,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5701,
+        "h": 944,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6646,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7531,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Agentio vs Tano:buy creator placements, or build a creator programme?",
+    "missing": []
+  },
+  {
+    "route": "/compare/grin-vs-tano",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "GRIN vs Tano: Software You Run, or a Programme Run for You? | Tano",
+    "h": 10381,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1095,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 1099,
+        "h": 1363,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2462,
+        "h": 1701,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4162,
+        "h": 1569,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5731,
+        "h": 823,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6554,
+        "h": 1101,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7654,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 8540,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "GRIN vs Tano:software you run, or a programme run for you?",
+    "missing": []
+  },
+  {
+    "route": "/compare/ltk-vs-tano",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "LTK vs Tano: Marketplace Reach, or Your Own Creator Programme? | Tano",
+    "h": 12348,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1242,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 1246,
+        "h": 1083,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2329,
+        "h": 1266,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3595,
+        "h": 1115,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4710,
+        "h": 915,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5626,
+        "h": 849,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6475,
+        "h": 1716,
+        "cls": "hp-band"
+      },
+      {
+        "y": 8191,
+        "h": 1033,
+        "cls": "hp-band"
+      },
+      {
+        "y": 9224,
+        "h": 398,
+        "cls": "hp-band"
+      },
+      {
+        "y": 9621,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 10507,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "LTK vs Tano:marketplace reach, or a creator programme that compounds on your site?",
+    "missing": []
+  },
+  {
+    "route": "/compare/shopmy-vs-tano",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "ShopMy vs Tano: Creator Discovery or a Compounding Programme? | Tano",
+    "h": 11275,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1281,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 1285,
+        "h": 1454,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2739,
+        "h": 914,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3653,
+        "h": 1371,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5024,
+        "h": 1079,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6103,
+        "h": 878,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6980,
+        "h": 1324,
+        "cls": "hp-band"
+      },
+      {
+        "y": 8305,
+        "h": 244,
+        "cls": "hp-band"
+      },
+      {
+        "y": 8549,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 9434,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "ShopMy vs Tano:creator discovery for today, or a programme that compounds over time?",
+    "missing": []
+  },
+  {
+    "route": "/for-creators",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "For Creators | Tano",
+    "h": 6368,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 1141,
+        "cls": "hp-band hp-hero hp-ch"
+      },
+      {
+        "y": 1145,
+        "h": 290,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 1434,
+        "h": 745,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2179,
+        "h": 752,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2932,
+        "h": 775,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3706,
+        "h": 760,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4466,
+        "h": 840,
+        "cls": "hp-band hp-closing-band hp-cl"
+      }
+    ],
+    "h1": "There’s a brand story waitingthat only you can tell.",
+    "missing": []
+  },
+  {
+    "route": "/guides",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Guides for Brands Running Creator Programmes | Tano",
+    "h": 4920,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 319,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 323,
+        "h": 1003,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1326,
+        "h": 743,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2069,
+        "h": 1010,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3079,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Guides",
+    "missing": []
+  },
+  {
+    "route": "/guides/creator-ads",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "How to Run Creator Content as Ads | Tano",
+    "h": 9813,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 512,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 516,
+        "h": 5862,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6377,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7087,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7972,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How to run creator content as ads",
+    "missing": []
+  },
+  {
+    "route": "/guides/creator-programme-cost",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "What Does a Creator Programme Cost? | Tano",
+    "h": 8223,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 534,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 538,
+        "h": 4959,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5497,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 6382,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "What does a creator programme cost?",
+    "missing": []
+  },
+  {
+    "route": "/guides/influencer-agency-or-platform",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Influencer Agency or Platform: Which Model Fits Your Brand? | Tano",
+    "h": 9259,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 576,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 580,
+        "h": 5106,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5686,
+        "h": 847,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6533,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7418,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Influencer agency or platform: which model fits your brand?",
+    "missing": []
+  },
+  {
+    "route": "/guides/keep-creators-long-term",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "How to Keep Creators for the Long Term | Tano",
+    "h": 8032,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 550,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 554,
+        "h": 4043,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4597,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5306,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 6191,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How to keep creators for the long term",
+    "missing": []
+  },
+  {
+    "route": "/guides/meta-creator-marketing-hub",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Meta Creator Marketing Hub: Do You Still Need an Influencer Platform? | Tano",
+    "h": 9440,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 643,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 647,
+        "h": 5357,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6004,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6713,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7599,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Meta Creator Marketing Hub: do you still need an influencer platform?",
+    "missing": []
+  },
+  {
+    "route": "/guides/meta-muse-creator-marketing",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "What Is Meta Muse, and What Does It Mean for DTC Creator Marketing? | Tano",
+    "h": 9937,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 556,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 560,
+        "h": 5941,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6502,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7211,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 8096,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "What does Meta Muse mean for DTC creator marketing?",
+    "missing": []
+  },
+  {
+    "route": "/guides/meta-muse-creators-brief",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "What DTC Brands Should Tell Their Creators About Meta Muse | Tano",
+    "h": 10606,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 576,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 580,
+        "h": 6591,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7171,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7880,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 8765,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "What DTC brands should tell their creators about Meta Muse",
+    "missing": []
+  },
+  {
+    "route": "/guides/meta-muse-nano-micro-creators",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Do Follower Counts Matter on Meta Muse? A Guide for DTC Brands | Tano",
+    "h": 8860,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 576,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 580,
+        "h": 4845,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5425,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6134,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7019,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Do follower counts matter on Meta Muse? A guide for DTC brands",
+    "missing": []
+  },
+  {
+    "route": "/guides/outgrown-influencer-agency",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Outgrown Your Influencer Agency? How to Choose Your Next One | Tano",
+    "h": 8405,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 621,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 625,
+        "h": 5054,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5678,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 6564,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Outgrown your influencer agency? How to choose your next one",
+    "missing": []
+  },
+  {
+    "route": "/guides/scale-creator-programme-without-headcount",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "How to Scale a Creator Programme Without Adding Headcount | Tano",
+    "h": 7301,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 615,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 619,
+        "h": 3956,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4575,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 5460,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How to scale a creator programme without adding headcount",
+    "missing": []
+  },
+  {
+    "route": "/guides/trybe-alternatives",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Trybe Alternatives: When DTC Brands Outgrow It and Where They Go | Tano",
+    "h": 8661,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 599,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 603,
+        "h": 4624,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5226,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5935,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 6820,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Trybe alternatives: when DTC brands outgrow it and where they go",
+    "missing": []
+  },
+  {
+    "route": "/guides/ugc-ai-shopping-agents",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Is Your DTC Brand's UGC Ready for AI Shopping Agents Like Meta Muse? | Tano",
+    "h": 9081,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 621,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 625,
+        "h": 5021,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5646,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6355,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7240,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Is your DTC brand's UGC ready for AI shopping agents like Meta Muse?",
+    "missing": []
+  },
+  {
+    "route": "/guides/usage-rights-pricing",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "How to Price Whitelisting and Usage Rights Fees for Creators | Tano",
+    "h": 8456,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 534,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 538,
+        "h": 4483,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5021,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5730,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 6615,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How to price whitelisting and usage rights fees for creators",
+    "missing": []
+  },
+  {
+    "route": "/guides/win-on-meta-muse-with-creators",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "How DTC Brands Should Change Their Creator Programme for Meta Muse | Tano",
+    "h": 9242,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 576,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 580,
+        "h": 5227,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5807,
+        "h": 709,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6516,
+        "h": 885,
+        "cls": "hp-band hp-brands-band"
+      },
+      {
+        "y": 7401,
+        "h": 779,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "How DTC brands should change their creator programme for Meta Muse",
+    "missing": []
+  },
+  {
+    "route": "/news",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "News From Tano | Tano",
+    "h": 2554,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 399,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 403,
+        "h": 217,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 620,
+        "h": 872,
+        "cls": ""
+      }
+    ],
+    "h1": "News",
+    "missing": []
+  },
+  {
+    "route": "/news/tano-raises-4m-seed-round",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Tano Has Raised $5M to Make Creators a True Advertising Channel. | Tano",
+    "h": 6884,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 5288,
+        "cls": "wire-legal-body"
+      }
+    ],
+    "h1": "Tano has raised $5m to make creators a true advertising channel.",
+    "missing": []
+  },
+  {
+    "route": "/playbooks",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    "h": 2355,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 423,
+        "cls": "hp-band tano"
+      },
+      {
+        "y": 957,
+        "h": 336,
+        "cls": "hp-band tano"
+      }
+    ],
+    "h1": "Frameworks for creator-led growth.",
+    "missing": []
+  },
+  {
+    "route": "/playbooks/content-analysis-framework",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free AI Content Analysis Framework | Tano | Tano",
+    "h": 2609,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 670,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1204,
+        "h": 344,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "The AI Content Analysis Framework",
+    "missing": []
+  },
+  {
+    "route": "/playbooks/creator-discovery",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free Creator Discovery Guide | Tano | Tano",
+    "h": 2737,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 770,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1304,
+        "h": 372,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "The Creator Discovery Guide.",
+    "missing": []
+  },
+  {
+    "route": "/playbooks/creator-partnership-ads",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free Creator Partnership Ads Playbook | Tano | Tano",
+    "h": 2707,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 739,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1273,
+        "h": 372,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "The complete guide to creator partnership ads.",
+    "missing": []
+  },
+  {
+    "route": "/playbooks/rebriefing",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free Rebriefing Playbook | Tano | Tano",
+    "h": 2726,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 800,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1334,
+        "h": 330,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "Turn Organic Creators Into a Paid Ads Engine",
+    "missing": []
+  },
+  {
+    "route": "/playbooks/self-funding-seeding-affiliate",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Free Seeding → Affiliate Playbook | Tano | Tano",
+    "h": 2707,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 739,
+        "cls": "hp-band"
+      },
+      {
+        "y": 1273,
+        "h": 372,
+        "cls": "hp-band"
+      }
+    ],
+    "h1": "The seeding programme that pays for itself.",
+    "missing": []
+  },
+  {
+    "route": "/privacy-policy",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Privacy Policy | Tano",
+    "h": 9374,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero"
+      },
+      {
+        "y": 534,
+        "h": 7778,
+        "cls": "wire-legal-body"
+      }
+    ],
+    "h1": "Privacy policy",
+    "missing": []
+  },
+  {
+    "route": "/talk-to-us",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Get Started | Tano",
+    "h": 900,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 0,
+        "h": 900,
+        "cls": "wire-contact-art"
+      },
+      {
+        "y": 193,
+        "h": 603,
+        "cls": "wire-contact-sheet"
+      }
+    ],
+    "h1": "Tell us about your brand, and we’ll tell you how we can help.",
+    "missing": []
+  },
+  {
+    "route": "/use-cases/creative-velocity",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Creative Velocity: Creator Ads at Scale | Tano",
+    "h": 9747,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 905,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 909,
+        "h": 290,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 1199,
+        "h": 1029,
+        "cls": "hp-band hp-uc-process"
+      },
+      {
+        "y": 2228,
+        "h": 628,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2856,
+        "h": 800,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3656,
+        "h": 883,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4539,
+        "h": 678,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5217,
+        "h": 678,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5895,
+        "h": 568,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6463,
+        "h": 612,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7075,
+        "h": 859,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7934,
+        "h": 751,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Run hundreds of new ads a month,with no two the same.",
+    "missing": []
+  },
+  {
+    "route": "/use-cases/drive-revenue",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Drive Revenue With Creators | Tano",
+    "h": 9099,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 954,
+        "cls": "hp-band hp-uc-hero"
+      },
+      {
+        "y": 958,
+        "h": 290,
+        "cls": "hp-band hp-logo-band"
+      },
+      {
+        "y": 1247,
+        "h": 973,
+        "cls": "hp-band hp-uc-process"
+      },
+      {
+        "y": 2221,
+        "h": 773,
+        "cls": "hp-band"
+      },
+      {
+        "y": 2994,
+        "h": 794,
+        "cls": "hp-band"
+      },
+      {
+        "y": 3788,
+        "h": 903,
+        "cls": "hp-band"
+      },
+      {
+        "y": 4690,
+        "h": 678,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5368,
+        "h": 568,
+        "cls": "hp-band"
+      },
+      {
+        "y": 5936,
+        "h": 595,
+        "cls": "hp-band"
+      },
+      {
+        "y": 6531,
+        "h": 755,
+        "cls": "hp-band"
+      },
+      {
+        "y": 7286,
+        "h": 751,
+        "cls": "hp-band hp-closing-band"
+      }
+    ],
+    "h1": "Creators can be your best revenue channel.We make them one.",
+    "missing": []
+  },
+  {
+    "route": "/webinars",
+    "status": 200,
+    "errors": [],
+    "bad": [],
+    "title": "Webinars: lessons from creator programme operators | Tano | Tano",
+    "h": 2716,
+    "w": 1568,
+    "sections": [
+      {
+        "y": 4,
+        "h": 530,
+        "cls": "wire-legal-hero wire-resource-hero"
+      },
+      {
+        "y": 534,
+        "h": 812,
+        "cls": "wire-legal-body"
+      },
+      {
+        "y": 1346,
+        "h": 308,
+        "cls": "hp-band tano"
+      }
+    ],
+    "h1": "Lessons from the operators.",
+    "missing": []
+  }
+]

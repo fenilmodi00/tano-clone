@@ -1,0 +1,57 @@
+{
+  "route": "/playbooks/rebriefing",
+  "family": "playbook",
+  "meta": {
+    "title": "Free Rebriefing Playbook | Tano | Tano",
+    "description": "How to turn your best organic creators into a high-converting paid ads engine — without cold outreach, guesswork, or wasted spend. Free from Tano."
+  },
+  "hero": {
+    "eyebrow": "Free · The Rebriefing Playbook",
+    "title": "Turn Organic Creators Into a Paid Ads Engine",
+    "paragraphs": [
+      "Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook for 2026."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "The Rebriefing Playbook",
+      "eyebrow": "Free",
+      "variant": "playbook-gate",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Without cold outreach, guesswork, or wasted spend — the complete rebriefing playbook for 2026."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "The problem with creator-led ads"
+            },
+            {
+              "title": "Cold outreach vs. warm rebriefing"
+            },
+            {
+              "title": "The rebriefing flow, step by step"
+            },
+            {
+              "title": "Product & content format fit"
+            },
+            {
+              "title": "Making it work at scale"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Ready to build your rebriefing programme?",
+    "body": "Tano helps brands connect their seeding, affiliate, and paid creative pipelines into one system that compounds over time.",
+    "cta": {
+      "label": "Talk to the Team",
+      "href": "/talk-to-us"
+    }
+  }
+}

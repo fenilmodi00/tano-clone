@@ -1,0 +1,319 @@
+{
+  "route": "/guides/meta-muse-creators-brief",
+  "family": "guide",
+  "meta": {
+    "title": "What DTC Brands Should Tell Their Creators About Meta Muse | Tano",
+    "description": "What Meta Muse means for creators, what DTC brands should tell them, how to label posts, and a ready-made brief and creator pack to send today."
+  },
+  "hero": {
+    "title": "What DTC brands should tell their creators about Meta Muse",
+    "paragraphs": [
+      "What should a DTC brand tell its creators about Meta's Muse? That it could be good news for honest, useful posts. Muse is Meta's personal AI agent, which Meta launched in the UK in November 2026 after a September launch in North America, and it can work from the Reels people save on Instagram, so a post saved today could help someone buy weeks later.",
+      "Ask your creators to keep their own voice, show real-life fit, and keep their code, link and ad label on every post. This guide gives the reasons, the labelling rules, a message to paste and a pack to send."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Why does Muse matter for creators and influencers?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Muse can carry a creator's recommendation to the point of purchase, and shoppers want creator voices in AI answers. In <a href=\"https://www.iab.com/news/consumers-want-ai-shopping-recommendations-to-include-trusted-creator-perspectives\" target=\"_blank\" rel=\"noreferrer noopener\">IAB's survey of people who use AI for shopping research</a>, Gen Z rated creator reviews in AI recommendations nearly as influential as brand information (27% against 29%), and half of Gen Z and Millennials have discovered creators through AI. The same study found the UK the most cautious Western market."
+        },
+        {
+          "type": "prose",
+          "html": "Muse also does the comparison work, picking mainly on price and stock, so a post that only lists specs adds little. Real-life fit, such as the size chosen or how a product holds up after a week, gives shoppers a reason to save and come back. Price, stock and returns are the brand's job: see <a href=\"/guides/win-on-meta-muse-with-creators\">how to change your creator programme for Muse</a>."
+        }
+      ]
+    },
+    {
+      "heading": "What should creators change?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Almost nothing about how they create. The small changes: name the product, show it in real life, answer one buying question, and include the code and link."
+        },
+        {
+          "type": "prose",
+          "html": "Creators should not write for AI. Muse works from posts shoppers chose to save, and a scripted or keyword-stuffed post gives people little reason to save it. Fake reviews and hidden ad labels damage the same trust; the ASA expects <a href=\"https://www.asa.org.uk/advice-online/recognising-ads-social-media.html\" target=\"_blank\" rel=\"noreferrer noopener\">a prominent \"ad\" label upfront</a>."
+        }
+      ]
+    },
+    {
+      "heading": "How should creators label posts now?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Label every post involving a gift, payment, code or affiliate link as an ad, clearly and at the start. Muse changes none of the UK or <a href=\"https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers\" target=\"_blank\" rel=\"noreferrer noopener\">FTC's US rules</a>."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "UK (ASA)",
+            "US (FTC)"
+          ],
+          "rows": [
+            [
+              "What counts",
+              "Posts with an affiliate link or code, or after any payment or incentive, even an unsolicited gift",
+              "Any financial, employment, personal or family relationship with a brand, including free or discounted products"
+            ],
+            [
+              "How to label",
+              "A prominent \"ad\" label upfront; \"Gifted\" alone is unlikely to be enough",
+              "In videos, disclose in the video itself, not only the description"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The ASA holds brands and influencers both responsible for making ads identifiable, and brands and affiliates jointly responsible for affiliate-link ads."
+        }
+      ]
+    },
+    {
+      "heading": "How could creators earn more from Muse?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "By putting their code and link on every post, posting more than once and moving up a reward ladder you set."
+        },
+        {
+          "type": "prose",
+          "html": "Instagram told TechCrunch that links on creators' Reels draw about twice the clicks of links in bio, but its shoppable Reels rollout does not yet name the UK, so UK creators should keep codes in captions and on screen."
+        },
+        {
+          "type": "prose",
+          "html": "A clear ladder keeps creators going:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "On joining: free product.",
+            "First sale: commission or a flat fee.",
+            "Regular posting: more product.",
+            "Consistent sales and posts: a higher commission tier.",
+            "Top creators: a closer role, such as an ambassador place."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "For subscriptions, the low first order motivates no one, so pay a flat fee per sale or commission on renewals. More in <a href=\"/guides/keep-creators-long-term\">how to keep creators for the long term</a>."
+        }
+      ]
+    },
+    {
+      "heading": "What can you send your creators this week?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A short, warm note from a named person on your team, like this one:"
+        }
+      ]
+    },
+    {
+      "heading": "What should go in a Muse creator pack?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Four parts: the message above, content prompts, caption and on-camera lines, and the per-post checklist. Add your product, code and link, and send it with every product."
+        }
+      ]
+    },
+    {
+      "heading": "Which content prompts can creators use with their audience?",
+      "eyebrow": "What should go in a Muse creator pack?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Answer your followers' top question about [product] in under 30 seconds, naming it out loud.",
+            "Open your first box of [product] on camera: what is inside and what surprised you.",
+            "Show how [product] fits, on you or in your space, and which size you chose and why.",
+            "Walk through your routine and show where [product] fits in your day.",
+            "Show how you did it before [product], how you do it now, and what changed.",
+            "Show [product] before and after use, describing only what you saw.",
+            "Make a \"save this for later\" list of three things you'd tell a friend before they buy [product].",
+            "Show Muse at work: save a recipe Reel and ask Muse to turn it into a shopping list.",
+            "Tell followers that saved posts stay ready for when they buy, and Muse can work from them if they connect Instagram."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Which lines can creators use in captions or on camera?",
+      "eyebrow": "What should go in a Muse creator pack?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "\"Save this for when you're ready to buy.\"",
+            "\"If you've connected Instagram to Muse, your saved posts can help it build your list.\"",
+            "\"My code [code] is in the caption.\"",
+            "\"Ad: [Brand] sent me this to try.\""
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What should brands not ask creators to say?",
+      "eyebrow": "What should go in a Muse creator pack?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Don't script product claims, and don't ask creators to say Muse will recommend them, since nothing confirms it. Never ask them to drop or soften the ad label or to stuff captions with keywords."
+        }
+      ]
+    },
+    {
+      "heading": "What should creators check before every post?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Six quick checks:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "I have used the product and give my own view.",
+            "I name the product and show it in real life.",
+            "The post answers one buyer question.",
+            "\"Ad\" starts my caption and is said or shown in the video.",
+            "My code and link are in the caption, and on screen where possible.",
+            "I have not changed my style for an algorithm or an AI."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Where do we think this is heading?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Neither of these is a confirmed Muse feature, but creators should be ready for both."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Muse will amplify the creators people already trust.</strong> Saves start with creators, so we expect Muse to lean on them rather than replace them. If <a href=\"/guides/meta-muse-creator-marketing\">Meta's plans to credit creators</a> reach Muse, trusted creators gain the most."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Creator codes could become a new link in bio.</strong> If shopping agents surface older posts and their codes, a review could earn commission for months. Nothing confirms Muse uses creator codes, and a Tom's Guide test of its coupon finding came back untrustworthy or empty. A code on every post leaves creators ready."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano help brands brief and reward creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is the creator advertising platform for consumer brands. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. Your brief reaches each creator through our monthly loop:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Invite. We contact creators as your brand; each agrees terms and gets a code and link.",
+            "Seed. Creators post their own way.",
+            "Coach. We detect posts and coach each creator one to one on posting and hooks.",
+            "Reward. Creators earn commission, product and milestone rewards. More than 65% of creators who posted for the brands we work with in 2026 have posted more than once.",
+            "Amplify. We surface top posts by performance and by fit with gaps in your ad account."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "After you approve or reject our first two calibration lists, your ongoing time is small. Programmes are performance-based and start with a four-month pilot. With us, <a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a> onboarded around 130 creators in a month, against 2 on its old affiliate platform."
+        },
+        {
+          "type": "prose",
+          "html": "We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "What other questions do buyers ask?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Do creators need to mention Muse in their posts?",
+              "body": "No. What matters most is a post worth saving, with the product in real life and an honest view."
+            },
+            {
+              "title": "Will Muse replace influencers?",
+              "body": "No sign of it: Meta says more than half of consumers say creators influence their shopping. Muse takes on comparison, and creators make the posts shoppers save."
+            },
+            {
+              "title": "Does Muse pay creators?",
+              "body": "No evidence says so: Digiday reported Meta's position that Muse carries no ads, and Meta has announced no creator payments. Commission comes through the creator's own code and link."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do creators need to mention Muse in their posts?",
+      "a": "No. What matters most is a post worth saving, with the product in real life and an honest view."
+    },
+    {
+      "q": "Will Muse replace influencers?",
+      "a": "No sign of it: Meta says more than half of consumers say creators influence their shopping. Muse takes on comparison, and creators make the posts shoppers save."
+    },
+    {
+      "q": "Does Muse pay creators?",
+      "a": "No evidence says so: Digiday reported Meta's position that Muse carries no ads, and Meta has announced no creator payments. Commission comes through the creator's own code and link."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Plan your always-on creator programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

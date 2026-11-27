@@ -1,0 +1,18 @@
+{
+ "/": {
+  "before": 401,
+  "midAfterScroll": 105
+ },
+ "/guides": {
+  "before": 149,
+  "midAfterScroll": 119
+ },
+ "/compare": {
+  "before": 297,
+  "midAfterScroll": 379
+ },
+ "/use-cases/drive-revenue": {
+  "before": 224,
+  "midAfterScroll": 583
+ }
+}

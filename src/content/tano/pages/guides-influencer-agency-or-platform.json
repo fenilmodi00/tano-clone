@@ -1,0 +1,373 @@
+{
+  "route": "/guides/influencer-agency-or-platform",
+  "family": "guide",
+  "meta": {
+    "title": "Influencer Agency or Platform: Which Model Fits Your Brand? | Tano",
+    "description": "Growing a creator programme past what your team can run by hand? Compare platforms, agencies and creator programme partners on workload and cost."
+  },
+  "hero": {
+    "title": "Influencer agency or platform: which model fits your brand?",
+    "paragraphs": [
+      "Once a creator programme grows past what your team can run by hand, you have three options: automate some of the work with a platform, hand it to an agency, or hand it to a creator programme partner that runs it on automated systems. But which is the right model for you?",
+      "This guide is for brands that have had some success with creators and want to turn that into a reliable, always-on part of their marketing. It should also help if you are starting from scratch, or checking whether your current setup is still best for the next stage of your brand's journey."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What are your options?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<strong>Who does the work, and how much of it is automated.</strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "By hand",
+            "Automated"
+          ],
+          "rows": [
+            [
+              "Done for you",
+              "Agency",
+              "Creator programme partner"
+            ],
+            [
+              "You do it",
+              "In-house",
+              "Platform"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Platform: automated tools, run by your team",
+      "eyebrow": "What are your options?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A platform gives your team software for finding creators, outreach, gifting, codes and reporting, and sometimes access to a creator network. It is the cheapest option and gives you full control. The skilled work stays with you: choosing creators, negotiating, managing relationships and judging content, plus learning to get the most out of the tools. That workload grows as the programme grows. Many brands also keep a marketplace such as ShopMy or LTK alongside a creator programme partner, because each does a different job."
+        }
+      ]
+    },
+    {
+      "heading": "Agency: done for you, mostly by people",
+      "eyebrow": "What are your options?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "An agency's team picks the creators, negotiates, runs the campaigns and reports back, while you set objectives and approve key decisions. Agencies use tools of their own, but the work is done mainly by people, which brings expertise and creative ideas. It also makes agencies the most expensive option, and the cost rises as the programme grows, because more creators means more of their people's time."
+        }
+      ]
+    },
+    {
+      "heading": "Creator programme partner: a fully managed programme",
+      "eyebrow": "What are your options?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A creator programme partner specialises in running performance-powered creator communities on its own systems, overseen by its strategists. The systems handle the high-volume work: finding and vetting creators, outreach, follow-up, gifting and payments. The partner's people handle strategy, creative judgement and the creator relationships that matter most, and you approve the key decisions."
+        },
+        {
+          "type": "prose",
+          "html": "The case for this model is quality as well as cost. With hundreds of creators, work done by hand tends to slip: messages turn generic, vetting gets thinner and proven creators drop off. A creator programme partner's systems keep each creator's history, so the next brief, gift or tier change reflects what that creator has already done. Keeping that personal touch is what keeps good creators posting. This allows you to build a community of genuine brand advocates, and most importantly customers, as an always-on content engine."
+        }
+      ]
+    },
+    {
+      "heading": "What's left for your team to do?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "The work",
+            "Platform",
+            "Agency",
+            "Creator programme partner"
+          ],
+          "rows": [
+            [
+              "Strategy and budget",
+              "Your team",
+              "Your team, with the agency",
+              "Partner, with your team's approval"
+            ],
+            [
+              "Finding and vetting creators",
+              "Your team, using the platform",
+              "Agency",
+              "Partner, with your sign-off on key moments"
+            ],
+            [
+              "Outreach and negotiation",
+              "Your team",
+              "Agency",
+              "Partner"
+            ],
+            [
+              "Gifting and contracts",
+              "Your team, using the platform",
+              "Agency",
+              "Partner"
+            ],
+            [
+              "Reviewing content",
+              "Your team",
+              "Agency, with your approval",
+              "Partner, with your sign-off on key moments"
+            ],
+            [
+              "Paying creators",
+              "Your team, using the platform",
+              "Agency or your team",
+              "Partner"
+            ],
+            [
+              "Re-engaging your best creators",
+              "Your team",
+              "Agency, campaign by campaign",
+              "Partner, based on each creator's history"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Which costs the most?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Agencies cost the most, because you are paying for a large, high-skill team's time. <a href=\"https://favikon.com/blog/how-much-influencer-marketing-agencies-charge\" target=\"_blank\" rel=\"noreferrer noopener\">Favikon</a>, a creator-data company, puts agency retainers at $3,000 to $20,000 or more a month, and commission-based fees at 10% to 30% of influencer fees or ad spend."
+        },
+        {
+          "type": "prose",
+          "html": "Platforms cost the least to buy: <a href=\"https://grin.co/pricing\" target=\"_blank\" rel=\"noreferrer noopener\">GRIN runs from free to $1,000 a month</a>, <a href=\"https://company.shopltk.com/connect-ltk\" target=\"_blank\" rel=\"noreferrer noopener\">LTK Connect from $99 to $999 a month</a>, and <a href=\"https://www.modash.io/pricing\" target=\"_blank\" rel=\"noreferrer noopener\">Modash from $199 a month billed yearly</a>. Your team's time is the larger cost, and it grows with the programme."
+        },
+        {
+          "type": "prose",
+          "html": "Creator programme partners mostly price on request, often as a monthly fee plus a share of the sales the programme drives. Tano, for example, is paid on results: a fee for each post that goes live and 20% of the sales creators drive. Its programmes start at 100 seeded products a month, typically about $3,000, the bottom of Favikon's agency range. Because its systems carry most of the volume, the cost does not rise in step with the number of creators."
+        }
+      ]
+    },
+    {
+      "heading": "Which should I choose?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Decide how much work you want taken off your plate, and how far you want the programme to grow."
+        }
+      ]
+    },
+    {
+      "heading": "Choose a platform if",
+      "eyebrow": "Which should I choose?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You are happy for your in-house team to carry a significant, ongoing workload, including as the programme grows.",
+            "You want full control and the lowest cost."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose an agency if",
+      "eyebrow": "Which should I choose?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You want the work done for you and would rather people than software handle it, and you are willing to pay for their time.",
+            "You are running a launch or an intensive campaign where creative ideas matter most."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose a creator programme partner if",
+      "eyebrow": "Which should I choose?",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "You want to build a community around your brand.",
+            "You need creative supply for Meta, and new customer acquisition through creators.",
+            "You want the work done for you, and want it to keep working as you grow to hundreds of creators.",
+            "You want an always-on channel without adding headcount."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What should I ask before signing?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Which work is automated and which is done by people, and who checks the automated work?",
+            "If the contract ends, who keeps the creator relationships, the performance data and the content rights?",
+            "Can you work with the creators directly? Later warns that if you rely on an agency's own creator relationships, you may only be able to reach those creators through the agency.",
+            "Are there caps on how many creators you can work with, or how much you can spend? LTK Connect's entry plan, for example, allows 10 creators a month."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Who offers each option?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "Option",
+            "Examples",
+            "What you buy"
+          ],
+          "rows": [
+            [
+              "Platform or marketplace",
+              "GRIN, Modash, LTK Connect, Upfluence, ShopMy",
+              "Software or network access, run by your team"
+            ],
+            [
+              "Agency",
+              "Specialist influencer agencies such as The Influencer Marketing Factory",
+              "The agency's people, by campaign or retainer"
+            ],
+            [
+              "Creator programme partner",
+              "Tano, Later (Platform + Services), Aspire (platform plus in-house team), Upfluence (managed service), impact.com Studio",
+              "The partner's systems, run by the partner's team"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "What does a creator programme cost?",
+            "Outgrown your influencer agency?",
+            "Meta Creator Marketing Hub: do you still need an influencer platform?",
+            "What does Meta Muse mean for DTC creator marketing?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "What is the difference between an influencer agency and an influencer platform?",
+              "body": "An agency is a team that runs campaigns for you, mostly by hand, usually for a retainer or project fee. A platform is software that your own team uses to find, contact and pay creators. A creator programme partner runs the programme for you on its own systems, with its strategists in charge."
+            },
+            {
+              "title": "Is an influencer platform cheaper than an agency?",
+              "body": "On the invoice, yes. Published platform plans run from free to around $1,000 a month, while Favikon puts agency retainers at $3,000 to $20,000 or more. The platform price leaves out your team's time: Aspire, which sells both, estimates at least 5 to 10 hours a week for an in-house programme, and full-time staff at scale."
+            },
+            {
+              "title": "What is a fully managed creator programme?",
+              "body": "A programme that a provider runs for you on its own technology, with its people handling strategy and judgement. The systems do the high-volume work, such as sourcing, outreach, follow-up and payments, so the programme can grow to hundreds of creators without each one getting less attention."
+            },
+            {
+              "title": "How do you scale an influencer programme without hiring?",
+              "body": "Automate the work, hand it to someone else, or both. A platform automates the tools, but your team still does the skilled work. An agency takes the work on through its own people, at a higher cost. A creator programme partner takes the work on and automates most of it."
+            },
+            {
+              "title": "Do most brands run influencer marketing in-house?",
+              "body": "In a survey reported by Influencer Marketing Hub in September 2026, 66% of respondents ran their programmes entirely in-house, 11% used a mix of in-house and agency support, and 11% worked through an agency."
+            },
+            {
+              "title": "Is Tano an agency or a platform?",
+              "body": "Tano is a creator advertising platform with its own team. Unlike software your team runs, it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for a brand, so it takes on the work an agency would, on its own systems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between an influencer agency and an influencer platform?",
+      "a": "An agency is a team that runs campaigns for you, mostly by hand, usually for a retainer or project fee. A platform is software that your own team uses to find, contact and pay creators. A creator programme partner runs the programme for you on its own systems, with its strategists in charge."
+    },
+    {
+      "q": "Is an influencer platform cheaper than an agency?",
+      "a": "On the invoice, yes. Published platform plans run from free to around $1,000 a month, while Favikon puts agency retainers at $3,000 to $20,000 or more. The platform price leaves out your team's time: Aspire, which sells both, estimates at least 5 to 10 hours a week for an in-house programme, and full-time staff at scale."
+    },
+    {
+      "q": "What is a fully managed creator programme?",
+      "a": "A programme that a provider runs for you on its own technology, with its people handling strategy and judgement. The systems do the high-volume work, such as sourcing, outreach, follow-up and payments, so the programme can grow to hundreds of creators without each one getting less attention."
+    },
+    {
+      "q": "How do you scale an influencer programme without hiring?",
+      "a": "Automate the work, hand it to someone else, or both. A platform automates the tools, but your team still does the skilled work. An agency takes the work on through its own people, at a higher cost. A creator programme partner takes the work on and automates most of it."
+    },
+    {
+      "q": "Do most brands run influencer marketing in-house?",
+      "a": "In a survey reported by Influencer Marketing Hub in September 2026, 66% of respondents ran their programmes entirely in-house, 11% used a mix of in-house and agency support, and 11% worked through an agency."
+    },
+    {
+      "q": "Is Tano an agency or a platform?",
+      "a": "Tano is a creator advertising platform with its own team. Unlike software your team runs, it pairs specialist AI agents with a senior in-house team to run an always-on creator programme for a brand, so it takes on the work an agency would, on its own systems."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "See if Tano fits your programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

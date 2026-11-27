@@ -1,0 +1,229 @@
+{
+  "route": "/guides/keep-creators-long-term",
+  "family": "guide",
+  "meta": {
+    "title": "How to Keep Creators for the Long Term | Tano",
+    "description": "Why creators drift away from brand programmes, why long-running creators are worth more than new ones, and how to keep more of them posting."
+  },
+  "hero": {
+    "title": "How to keep creators for the long term",
+    "paragraphs": [
+      "Think back to the creators who posted for you a year ago.",
+      "A few are still with you, probably your biggest names. Many of the others, who made great content and genuinely liked your product, have gone quiet.",
+      "Nobody decided to let them go. Your team was busy signing new creators and looking after the big ones, and the rest slowly drifted away. This guide explains why that happens, why those quieter creators are worth more than they look, and how to keep more of your creators posting for the long term."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Why do creators drift away from my programme?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "With a large number of creators, it can seem impossible to give everybody the attention they need and deserve. Your team has limited time, so it naturally has to focus on two main groups: new creators, often for a new market, product or audience, and your biggest creators, who bring in the most."
+        },
+        {
+          "type": "prose",
+          "html": "It's the long tail of your creators that miss out because of this. They did a few posts for a campaign, then heard less and less from you. Over time they post less, care less and give their time to brands that pay them more attention. Smaller creators feel this most, because for most of them the product, the brand and feeling valued matter more than the commission."
+        }
+      ]
+    },
+    {
+      "heading": "Why are long-running creator relationships worth keeping?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "There are <a href=\"/compare/agentio-vs-tano\">roughly 250 million creators</a> out there, so it's tempting to treat any one of them as replaceable. But you should resist this temptation. A creator you've worked with for a year gives you things a new one can't:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "They know your product, so they need less briefing and make better content.",
+            "Their audience has already seen your product. That matters most when people need to hear about it more than once before they buy, as they often do with skincare or subscriptions.",
+            "Their past results tell you what to expect, so you're not starting from zero every time.",
+            "When they genuinely like your brand, they talk about it in a way you could never write into a brief."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "So if your team keeps having to choose between new creators, big creators and everyone else, it's worth asking why it has to choose at all."
+        }
+      ]
+    },
+    {
+      "heading": "How do I stay close to my creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Pay attention to more than the posts you briefed. Look at what each creator posts on their own: what they talk about, what their audience responds to and how their focus is changing. If you only read the content you asked for, you mostly learn whether they followed your brief. Their own content tells you what they care about, where your product fits in their life and what to offer them next."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"https://www.creatoriq.com/knowledge-hub/social-leader\" target=\"_blank\" rel=\"noreferrer noopener\">CreatorIQ's guide to scaling a creator programme</a> suggests keeping a record of each creator's results, content quality, relationship status and how often you've worked together. Add a line on what they're talking about right now, and you'll have what you need for a useful next conversation."
+        }
+      ]
+    },
+    {
+      "heading": "How do I bring a creator back?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Show them you've noticed what they've been doing, and offer one specific next step: a new product, a brief that suits what they're posting about now, or a better offer if they've driven sales. For example:"
+        },
+        {
+          "type": "prose",
+          "html": "\"Hi Sam, loved your morning routine video last week, and your night cream post was one of the strongest we saw last spring. We're launching a serum next month that would fit right into that routine. Would you like a sample and a short brief? Your affiliate link stays the same.\""
+        },
+        {
+          "type": "prose",
+          "html": "Not every quiet creator is worth chasing. If their audience, focus or interest in your product has moved on, it's fine to let them go."
+        }
+      ]
+    },
+    {
+      "heading": "How should rewards grow with results?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A simple ladder works well. Everyone starts on the same base offer, and creators who get results move up to a better commission, new products first, a bigger brief or a paid fee. <a href=\"https://www.shopify.com/uk/blog/tiktok-affiliate-marketing\" target=\"_blank\" rel=\"noreferrer noopener\">Shopify's guide to TikTok Shop affiliate marketing</a> notes that sellers can raise commission rates as creators reach sales milestones. Set the milestones at the start, so your creators know what a second post or their first sales will earn them."
+        }
+      ]
+    },
+    {
+      "heading": "What should I check each month?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Before you set your next recruitment target, look at the creators you already have. Aim for a short list of named creators, each with one next step, and four numbers:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "The share of this month's posting creators who also posted in an earlier month.",
+            "How long your creators take to go from their first post to their second.",
+            "How many of the creators you got back in touch with posted again, and what brought them back.",
+            "Why each creator who lapsed stopped posting."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How can my team give every creator this much attention?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "It's hard to do alone. Even a small creator needs regular attention: someone to read their content, follow up, share what's working for others and notice when things change. Multiply that by a few hundred creators and, for most teams, <a href=\"/guides/scale-creator-programme-without-headcount\">the sums don't add up</a>. If that sounds familiar, you have a few options:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Grow your own team, if you want full control and can keep hiring as the programme grows.",
+            "Use creator software such as GRIN to make your team's time go further. It handles the admin, but your team still does the relationship work.",
+            "Use an agency for extra hands, usually paid by the brief or on a retainer.",
+            "Use a managed partner that runs the programme for you, while your team approves the key decisions."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a> is one such partner: a creator advertising platform for consumer brands, run by its own team. It builds performance-powered creator communities, a programme of your genuine customers that works as an always-on content engine, built around creative volume for Meta and TikTok, and new customer acquisition and revenue. Its in-house strategists lead the programme, your creators get coaching after a post based on what's working for similar creators, and your team approves the key decisions. At <a href=\"/case-studies/skin-and-me\">Skin+Me</a>, 4 of 5 top creators in Sept 2025 were onboarded through Tano."
+        },
+        {
+          "type": "prose",
+          "html": "If you already use <a href=\"https://shopmy.us/brands\" target=\"_blank\" rel=\"noreferrer noopener\">ShopMy</a> or <a href=\"https://company.shopltk.com/en/brands\" target=\"_blank\" rel=\"noreferrer noopener\">LTK</a>, they can run alongside a direct programme: see <a href=\"/compare/shopmy-vs-tano\">ShopMy vs Tano</a> and <a href=\"/compare/ltk-vs-tano\">LTK vs Tano</a>. Our guide on <a href=\"/guides/influencer-agency-or-platform\">choosing an influencer agency or platform</a> compares the wider options."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "How to run creator content as ads",
+            "How to price whitelisting and usage rights fees",
+            "What DTC brands should tell their creators about Meta Muse"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What other questions might I have?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is a higher commission always the best way to keep a creator?",
+              "body": "Not always. A better commission suits a creator who is already driving sales. Another creator may care more about a new product, a brief that fits what they're making or simply feeling noticed."
+            },
+            {
+              "title": "Can software run creator tiers and rewards for me?",
+              "body": "Partly. Affiliate tools can raise a creator's commission when they hit a sales milestone, which TikTok Shop supports, or move creators between programmes with different rates, as Shopify Collabs does. You still decide what a fair reward is and sign off each move."
+            },
+            {
+              "title": "How often should I check in with my creators?",
+              "body": "Keep an eye on their content all the time, and review your list once a month. Get in touch when you have something relevant for them, such as a product, a brief or an event."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is a higher commission always the best way to keep a creator?",
+      "a": "Not always. A better commission suits a creator who is already driving sales. Another creator may care more about a new product, a brief that fits what they're making or simply feeling noticed."
+    },
+    {
+      "q": "Can software run creator tiers and rewards for me?",
+      "a": "Partly. Affiliate tools can raise a creator's commission when they hit a sales milestone, which TikTok Shop supports, or move creators between programmes with different rates, as Shopify Collabs does. You still decide what a fair reward is and sign off each move."
+    },
+    {
+      "q": "How often should I check in with my creators?",
+      "a": "Keep an eye on their content all the time, and review your list once a month. Get in touch when you have something relevant for them, such as a product, a brief or an event."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Plan how to keep your best creators posting",
+      "href": "/talk-to-us"
+    }
+  }
+}

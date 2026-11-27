@@ -1,0 +1,252 @@
+{
+  "route": "/careers/product-security-engineer",
+  "family": "career-role",
+  "meta": {
+    "title": "Product Security Engineer | Tano Careers | Tano",
+    "description": "Product Security Engineer at Tano, in person in central London: own security for agents that talk to tens of thousands of people and spend live brand budgets."
+  },
+  "hero": {
+    "eyebrow": "Engineering",
+    "title": "Product Security Engineer",
+    "paragraphs": [],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Role details",
+      "variant": "role-meta",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Engineering",
+              "label": "Department"
+            },
+            {
+              "value": "Central London · In person",
+              "label": "Location"
+            },
+            {
+              "value": "Full-time",
+              "label": "Contract"
+            },
+            {
+              "value": "1 opening",
+              "label": "Openings"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What you would own",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Everything security at Tano, across the infrastructure, the apps, the agents and the data, with nobody between you and the work. You decide what matters, write it down and ship it, then explain it to the board and to the security teams at the brands we work with."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>The hard part is the agents.</strong> They act on untrusted messages from tens of thousands of creators, call tools and move money, unattended for months. At that scale nobody can review each decision, so the limits have to hold on their own: what each agent can do, with which data and how much it can spend."
+        },
+        {
+          "type": "prose",
+          "html": "We are a $5M-funded startup building an entirely new advertising channel, run by autonomous agents. The security problems that come with it are new too, and few teams have had to solve them yet. You would have the autonomy to make the technical calls to do it properly."
+        }
+      ]
+    },
+    {
+      "heading": "Product security",
+      "eyebrow": "What you would own",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Threat-model the product end to end: the agents, the systems that pay creators and track their sales, and the apps brands and creators sign in to.",
+            "Agents: guard against prompt injection from creator messages and tool misuse, and set the limits each one works within: the tools it can call, the data it can read, the budget it can spend, and the steps that need a person to approve.",
+            "Money: protect the systems revenue depends on, from creator payouts and commission to discount codes and brand budgets, against fraud, abuse and costly mistakes.",
+            "Data: keep each brand's data, and every creator's personal details, separate and private.",
+            "Build the checks into the code everyone shares, so product engineers get them by default."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Infrastructure and secure development",
+      "eyebrow": "What you would own",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Least-privilege access across Supabase, Postgres, Fly.io and Vercel.",
+            "Secret scanning, dependency scanning and static analysis in CI, with infrastructure defined as code.",
+            "Logging, monitoring and an incident response plan that has been tested, not just written."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Compliance and trust",
+      "eyebrow": "What you would own",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Take Tano through SOC 2 Type I and into Type II, with evidence collected automatically through Oneleet.",
+            "Own security reviews and questionnaires from brands, and the trust centre that answers most of them before they are asked.",
+            "Run vendor reviews, access reviews, pentests and security training for the whole company."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Your first six months",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Ownership: a risk register and a security roadmap within your first month, and one clear line of escalation to the CTO.",
+            "SOC 2: every control passing, the Type I report issued and the Type II observation window open.",
+            "Time back for engineering: product engineers no longer collect evidence or fill in questionnaires.",
+            "Posture: critical vulnerabilities triaged within a day and fixed within a week, a first pentest done and its findings fixed, and incident response tested.",
+            "Secure by default: automated checks and secure infrastructure patterns in every repository, and clear limits on what each agent can do."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "What we are looking for",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Five or more years in security engineering, ideally as the first or only security hire at a startup or scale-up.",
+            "You have taken a company through SOC 2 or ISO 27001 and know which controls matter and which are paperwork.",
+            "A hands-on engineer: you write the fix, the CI check and the infrastructure code, not only the ticket.",
+            "You can explain a risk to a founder, a board or a brand's security team in plain English, and make a call when the answer isn't clear.",
+            "A real interest in how AI agents fail, and how to stop them failing badly.",
+            "Bonus: cloud and infrastructure security · Postgres and Supabase depth · LLM or agent security work · TypeScript or Go."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The stack",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "TypeScript (NestJS, Next.js) and Go, with Postgres, LangGraph, Google Gemini, Supabase, Fly.io and Vercel. Oneleet for compliance. Early enough that you will set the security patterns everyone else builds on."
+        }
+      ]
+    },
+    {
+      "heading": "The team you would join",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Will Caplan, CEO",
+              "body": "GTM lead at Encord (YC AI scale-up), and Sandhurst."
+            },
+            {
+              "title": "Sagar, CTO",
+              "body": "Three years building AI agents, early before it was a category."
+            },
+            {
+              "title": "Nathan, Founding Engineer",
+              "body": "Fastest-promoted engineer at a London YC scale-up."
+            },
+            {
+              "title": "Jake, Founding Engineer",
+              "body": "Previously a founding engineer. Has grown a personal YouTube channel."
+            },
+            {
+              "title": "Eddie, Product Engineer",
+              "body": "Previously did research at Stanford."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Process",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Intro call.",
+              "meta": "01"
+            },
+            {
+              "title": "Two 30-minute calls with Sagar and Will: motivation and technical depth.",
+              "meta": "02"
+            },
+            {
+              "title": "Onsite, mostly with Sagar: threat-model one of our agents together, plus time with the team and lunch.",
+              "meta": "03"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Roughly two weeks end to end."
+        }
+      ]
+    },
+    {
+      "heading": "What is on offer",
+      "variant": "role",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [],
+          "rows": [
+            [
+              "Base",
+              "Up to £150k, depending on experience"
+            ],
+            [
+              "Equity",
+              "Share options"
+            ],
+            [
+              "Location",
+              "Full-time, in person, central London"
+            ],
+            [
+              "Benefits",
+              "Health insurance, onsite gym, in-person culture, real startup work-life"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Sound like you?",
+      "variant": "closing",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tell us why you, and what you'd want to own. We read every application."
+        }
+      ]
+    }
+  ]
+}

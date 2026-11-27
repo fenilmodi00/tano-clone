@@ -1,0 +1,94 @@
+{
+  "base": "http://127.0.0.1:3000",
+  "viewport": "1568x829",
+  "errors": [],
+  "stages": [
+    {
+      "stage": "home (direct load)",
+      "screenshot": "01-home.png",
+      "path": "/",
+      "heading": "The CreatorAdvertising Platform",
+      "h1Opacity": 1,
+      "wordOpacity": null,
+      "rvIn": 5,
+      "mainTextLength": 11056,
+      "veils": 1,
+      "groundApi": true,
+      "groundTone": "dark",
+      "lenis": true,
+      "scrollY": 0
+    },
+    {
+      "stage": "home → Use Cases → Drive Revenue (SPA)",
+      "screenshot": "02-use-cases-drive-revenue-spa.png",
+      "path": "/use-cases/drive-revenue",
+      "heading": "Creators can be your best revenue channel.We make them one.",
+      "h1Opacity": 1,
+      "wordOpacity": 1,
+      "rvIn": 6,
+      "mainTextLength": 6200,
+      "veils": 1,
+      "groundApi": true,
+      "groundTone": "dark",
+      "lenis": true,
+      "scrollY": 0
+    },
+    {
+      "stage": "Drive Revenue → footer Guides (SPA)",
+      "screenshot": "03-guides-spa.png",
+      "path": "/guides",
+      "heading": "Guides",
+      "h1Opacity": 1,
+      "wordOpacity": 1,
+      "rvIn": 9,
+      "mainTextLength": 3984,
+      "veils": 1,
+      "groundApi": true,
+      "groundTone": "light",
+      "lenis": true,
+      "scrollY": 0
+    },
+    {
+      "stage": "browser Back → Drive Revenue",
+      "screenshot": "04-drive-revenue-back.png",
+      "path": "/use-cases/drive-revenue",
+      "heading": "Creators can be your best revenue channel.We make them one.",
+      "h1Opacity": 1,
+      "wordOpacity": 1,
+      "rvIn": 43,
+      "mainTextLength": 6200,
+      "veils": 1,
+      "groundApi": true,
+      "groundTone": "dark",
+      "lenis": true,
+      "scrollY": 8180
+    },
+    {
+      "stage": "direct load /guides",
+      "screenshot": "05-guides-direct.png",
+      "path": "/guides",
+      "heading": "Guides",
+      "h1Opacity": 1,
+      "wordOpacity": 1,
+      "rvIn": 9,
+      "mainTextLength": 3984,
+      "veils": 1,
+      "groundApi": true,
+      "groundTone": "light",
+      "lenis": true,
+      "scrollY": 0
+    },
+    {
+      "stage": "repeat SPA navigation home → drive-revenue → guides → drive-revenue",
+      "beforeVeil": 1,
+      "veils": 1,
+      "groundApi": true,
+      "rvIn": 6,
+      "h1Opacity": 1
+    },
+    {
+      "stage": "repeat nav screenshot",
+      "screenshot": "06-repeat-nav.png"
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "route": "/compare/shopmy-vs-tano",
+  "family": "compare",
+  "meta": {
+    "title": "ShopMy vs Tano: Creator Discovery or a Compounding Programme? | Tano",
+    "description": "ShopMy and Tano both help brands work with creators and drive affiliate sales, but they are built for different creator operating models. Compare the fit."
+  },
+  "hero": {
+    "title": "ShopMy vs Tano: creator discovery for today, or a programme that compounds over time?",
+    "paragraphs": [
+      "ShopMy and Tano can both help a brand work with creators, drive affiliate sales and get product into the hands of people with influence. But they are built for different creator operating models.",
+      "ShopMy is strongest when a creator is already a trusted curator: they have an audience, a point of view and a storefront or link ecosystem that helps followers act on their recommendations. The creators on ShopMy are what are typically referred to as tastemakers, and they tend to sit above 100K followers.",
+      "Tano is built for finding creators early in their journey: discovering high performing creators from 5K to 100K followers through a programme that manages gifting, repeat posting, affiliate and paid usage. In short, it builds you an owned, performance driven creator community.",
+      "The question is not simply, “Which platform has more creators?” It is this.",
+      "Do you need access to creators who are already selling, or a programme that helps more creators become valuable to your brand over time?"
+    ],
+    "actions": [
+      {
+        "label": "See if Tano fits your programme",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "All comparisons",
+        "href": "/compare"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "The numbers:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 of 5",
+              "label": "Of Skin+Me's top-performing creators in a single month were onboarded through Tano."
+            },
+            {
+              "value": "+93%",
+              "label": "CVR uplift at HelloFresh with a hybrid creator model run with Tano."
+            },
+            {
+              "value": "+125%",
+              "label": "CTR on Bloom & Wild creator ads run through Tano, against non-Tano ads."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Accessing trust a creator has already earned",
+      "eyebrow": "1 · Editorial discovery",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "In an editorial creator model, the creator is a curator."
+        },
+        {
+          "type": "prose",
+          "html": "They have already built an audience relationship around their taste, expertise or recommendations. Their followers come to them asking, implicitly or explicitly: What should I buy? What do you use? What is worth it?"
+        },
+        {
+          "type": "prose",
+          "html": "The brand’s role is to earn a place in that existing editorial world."
+        },
+        {
+          "type": "prose",
+          "html": "ShopMy is particularly effective for this model. It gives creators a storefront spanning the brands they like, and gives brands access to creators whose audiences are already in a shopping mindset. If your product converts on a strong recommendation and you have a team ready to run discovery, outreach, gifting and relationships, it can be a highly efficient route to affiliate sales."
+        },
+        {
+          "type": "prose",
+          "html": "Editorial discovery is primarily about access:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Access to established creator taste and audience trust",
+            "Access to commerce-ready storefronts and commissionable links",
+            "Access to creators who already know how to convert recommendation into purchase",
+            "Access to demand that exists today"
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "For the right product and the right creator, that may be all that is required."
+        }
+      ]
+    },
+    {
+      "heading": "Building a creator relationship that becomes more valuable",
+      "eyebrow": "2 · Creator lifecycle",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "In a creator lifecycle model, a creator is not just a placement, a link or a one-off post."
+        },
+        {
+          "type": "prose",
+          "html": "They are part of an ongoing programme designed to make the next action more likely and more valuable than the last. A product gift can lead to a first organic post. That post can lead to a follow-up brief. Proven creators can receive more relevant products, stronger incentives, higher tiers, paid usage opportunities and a longer-term role in the brand’s growth."
+        },
+        {
+          "type": "prose",
+          "html": "Tano is designed for this model."
+        },
+        {
+          "type": "prose",
+          "html": "Rather than treating affiliate as a final measurement layer after a creator posts, the programme uses performance and relationship history to decide what should happen next: who needs a reminder, who is ready for another product, who is posting but not converting, who should move up a tier and which content is worth using in paid social."
+        },
+        {
+          "type": "prose",
+          "html": "Creator lifecycle is primarily about progression:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Discovering creators who are a genuine fit for the brand",
+            "Turning a product experience into a first post",
+            "Turning a first post into repeat participation",
+            "Using tiers, gifts, affiliate incentives and briefings to deepen advocacy",
+            "Re-engaging creators based on their actual performance and programme history",
+            "Turning strong organic content into rights-cleared paid creative",
+            "Building a creator base and content library that improve with each interaction"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Two ways affiliate creator programmes work",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<strong>Editorial discovery monetises trust a creator has already built. Creator lifecycle creates a system for that trust to compound.</strong>"
+        }
+      ]
+    },
+    {
+      "heading": "The practical difference",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A marketplace helps you find creators and participate in their existing commerce ecosystem."
+        },
+        {
+          "type": "prose",
+          "html": "A lifecycle programme helps you build an operating system around creator relationships: sourcing, onboarding, product seeding, follow-up, commissions, content rights, payments, reporting and re-engagement."
+        },
+        {
+          "type": "prose",
+          "html": "The distinction matters most when your product does not reliably convert from one recommendation."
+        },
+        {
+          "type": "prose",
+          "html": "Many categories need repetition. A skincare product may need education and evidence. A subscription may need familiarity before commitment. A higher-consideration product may need multiple creator touchpoints before a buyer acts. In those cases, the value is not only in the first post. It is in the programme’s ability to create the second, third and fourth relevant interaction."
+        },
+        {
+          "type": "prose",
+          "html": "None of that should depend on a marketer manually remembering who was gifted, who posted, who sold, who has rights available and who should be contacted next. Tano’s agents and workflows run the operational work, while your team retains control over strategy, creative judgement and the highest-value creator moments."
+        }
+      ]
+    },
+    {
+      "heading": "ShopMy and Tano side by side.",
+      "variant": "comparison",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "",
+            "ShopMy",
+            "Tano"
+          ],
+          "rows": [
+            [
+              "Core model",
+              "Creator commerce marketplace",
+              "Brand-owned creator programme"
+            ],
+            [
+              "Best at",
+              "Accessing established curators and shopping intent",
+              "Building repeat creator participation and advocacy"
+            ],
+            [
+              "Central question",
+              "Which creators are already selling?",
+              "Which creators can become increasingly valuable to the brand?"
+            ],
+            [
+              "Creator experience",
+              "One creator storefront across multiple brands",
+              "A dedicated brand programme with that brand’s offer, tiers, earnings, gifts and briefs"
+            ],
+            [
+              "Brand’s role",
+              "Run discovery, outreach, gifting and creator management using the platform",
+              "Set strategy and approve key decisions while Tano runs the programme operations"
+            ],
+            [
+              "Programme design",
+              "Affiliate links and commission on resulting sales",
+              "Lifecycle design: gifting, first post, repeat post, tiering, affiliate, paid usage and re-engagement"
+            ],
+            [
+              "Relationship history",
+              "Built around the creator’s marketplace account and storefront",
+              "Built around the creator’s ongoing relationship with the individual brand"
+            ],
+            [
+              "Content rights",
+              "Agreed with creators as needed",
+              "Rights and whitelisting can be managed as part of the programme"
+            ],
+            [
+              "Operational model",
+              "Software and marketplace access for an in-house team",
+              "Strategy, software, agents and operational support"
+            ],
+            [
+              "Pricing framing",
+              "A lower-cost tool for a team with bandwidth",
+              "A done-for-you platform, priced more like operating capacity plus performance alignment"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Choose ShopMy when",
+      "eyebrow": "Why ShopMy",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Choose ShopMy if you want to participate in a creator’s established editorial commerce model. It is likely a good fit when:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your product performs well after a single strong recommendation.",
+            "You want access to curator-style creators whose audiences already shop through storefronts and links.",
+            "Your team has capacity to manage creator discovery, outreach, gifting and follow-up.",
+            "You need a relatively low-cost way to get affiliate infrastructure live quickly.",
+            "Your near-term objective is to find high-intent recommendations and measure the sales they produce."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "This is not a lesser model. It is a different one: highly effective when existing audience trust, editorial fit and purchase intent are the primary drivers of value."
+        }
+      ]
+    },
+    {
+      "heading": "Choose Tano when",
+      "eyebrow": "Why Tano",
+      "variant": "prose-column",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Choose Tano when the creator opportunity is bigger than one-off placements, but your team does not want creator operations to become a manual, headcount-heavy job. Tano is likely a good fit when:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Your product benefits from repeat exposure, education, trial or reinforcement before purchase.",
+            "You want creators to post again, not simply accept a gift or generate one affiliate link.",
+            "Creator onboarding, gifting, chasing posts, payments, tiers and re-engagement are consuming too much of your team’s time.",
+            "You want creator relationships, programme history, content performance and usage permissions to remain available to the brand over the long term.",
+            "You want to use the strongest organic creator content in paid social.",
+            "You want programme decisions to be informed by what each creator has already done, sold, received and agreed to."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a> reported that Tano creator ads produced a 125% higher click-through rate and a 10% lower cost per acquisition than its non-Tano ads, and <a href=\"/case-studies/skin-and-me\">Skin+Me</a>'s creator-driven sign-ups and revenue grew 3.5×. Those examples are most relevant where a brand wants creator activity to operate as a continuous system rather than a sequence of campaigns."
+        }
+      ]
+    },
+    {
+      "heading": "You may not need to choose",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "The best answer for some brands is to use both models deliberately."
+        },
+        {
+          "type": "prose",
+          "html": "Use ShopMy for established curators who already have commerce-ready audiences, broad editorial influence and a preferred storefront workflow."
+        },
+        {
+          "type": "prose",
+          "html": "Use Tano to recruit and develop the creators who are earlier in their journey, more niche, independent or not yet active in a marketplace, and to run the repeated interactions that make those creators more effective over time."
+        },
+        {
+          "type": "prose",
+          "html": "In that model:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "ShopMy captures existing editorial demand.",
+            "Tano develops a brand-specific creator base.",
+            "ShopMy supports creators who want a multi-brand storefront.",
+            "Tano supports the relationship, learning, rights and operational cadence required for an always-on programme."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "The brand can use both, provided attribution, commission rates and reporting responsibilities are agreed in advance."
+        }
+      ]
+    },
+    {
+      "heading": "Common questions.",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "ShopMy and Tano compared on creators, affiliate, using both and when to choose each."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Tano an alternative to ShopMy?",
+              "body": "Sometimes, but not always. They overlap in affiliate links, creator earnings and creator commerce. Their strategic centres of gravity are different. ShopMy is a creator marketplace built around multi-brand curation. Tano is a brand programme built around creator lifecycle and repeat participation. For many brands, they can be complementary."
+            },
+            {
+              "title": "What does “creator lifecycle” actually mean?",
+              "body": "It means designing the programme around what happens after the first interaction. A creator may move from discovery to a first gift, then to a first post, repeat gifting, a higher commission tier, an affiliate relationship, paid usage rights, a campaign brief, or re-engagement after a period of inactivity. The programme uses creator history and performance to decide the next best action, rather than treating each activation as a disconnected campaign."
+            },
+            {
+              "title": "Does a brand “own” the creator?",
+              "body": "No. Creators remain independent. The relevant distinction is whether the brand retains the programme relationship, performance history, content permissions and operational knowledge associated with working with that creator. With Tano the programme is brand-owned, so the relationships, the data and the content rights remain with your brand if you leave."
+            },
+            {
+              "title": "Which model is better?",
+              "body": "Neither is universally better. ShopMy is often the better choice when the job is to access trusted curator influence and immediate shopping intent. Tano is often the better choice when the job is to create an always-on creator growth channel that becomes more efficient, informed and valuable through repeat relationships."
+            },
+            {
+              "title": "How is Tano different from ShopMy, if creators get a platform on both?",
+              "body": "On ShopMy the creator has one account and one storefront, and every brand they work with is a shelf in it. The platform is the creator's relationship. On Tano the creator's platform is your programme: your offer, your tiers, their earnings from you, the gifts and briefs you open to them, and an agent that speaks for your brand. Tano hosts it and runs it with you, and the relationship it builds is between the creator and your brand. That is the distinction, and it is the reason the data and the rights stay with you."
+            },
+            {
+              "title": "What are the alternatives to ShopMy for brands?",
+              "body": "It depends on what you want to own. LTK is the closest like-for-like: a larger creator shopping platform with a consumer app, where the relationship also sits with the platform. Affiliate platforms such as AWIN and Partnerize put the contract with the brand, but they are systems of record and your team still runs the outreach, the tiers and the payments. Agencies run the programme for you and scale by adding people. Tano combines the three: the ownership of an affiliate platform, the creator-side experience of a marketplace, and a team and agents to run it."
+            },
+            {
+              "title": "Can you run Tano alongside ShopMy?",
+              "body": "Yes, and the two are complementary rather than competing for the same creators. ShopMy is strongest with curator creators who are already on the platform and already selling. Tano is strongest at finding the creators who are not there yet: the micro, up-and-coming and independent creators who post about products they use and have never joined a marketplace. Tano recruits them into a programme your brand owns, runs the tiers and regifting that keep them posting, and makes the content rights available so their posts can run as your paid ads. ShopMy carries on giving your curator creators a storefront. Nothing has to be switched off on day one, and brands already on ShopMy are exactly who Tano is built for."
+            },
+            {
+              "title": "How do you run Tano alongside ShopMy in practice?",
+              "body": "Three things to set up on purpose. Attribution: a creator can hold a ShopMy link and a Tano code at the same time, so decide which system is the source of truth for each creator, or keep the two creator sets separate. Rates: creators will push whichever link pays more, so set the commission across the two deliberately rather than letting them drift apart. Reporting: ShopMy reports in its dashboard and Tano in its platform, so agree up front which numbers roll up to the channel view. Tano's team sets this up with you at the start of the programme."
+            },
+            {
+              "title": "How much does ShopMy cost compared with Tano?",
+              "body": "ShopMy's Launch Package is a monthly subscription, at a price ShopMy does not publish, plus a 3.9% fee on affiliate sales. ShopMy's own example is $100 of sales at 15% commission, so $15 to the creator and $3.90 to ShopMy. Higher tiers are priced on request, with a 2.9% fee on the Network Access package and a 15% fee on sponsored campaign budgets. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. The difference is what the money buys: on ShopMy you still need someone in-house to run the programme, and on Tano the fee covers the people and the agents doing that work. At low volume the marketplace is the cheaper option; as the programme grows, the direct model is."
+            },
+            {
+              "title": "How soon can creators be posting?",
+              "body": "Quickly. Tano sources and onboards the first creators in the first days of a programme, not the first weeks, because outreach, briefing, contracting and gifting run as agent workflows from day one. The programme then builds tier by tier. On ShopMy the timeline depends on how much time your team has for discovery, outreach and gifting."
+            },
+            {
+              "title": "Can you scale a creator programme without hiring?",
+              "body": "On Tano that is the model. The team and agents do the sourcing, outreach, briefing, contracting, payment and re-engagement, so the same marketing team can run hundreds or thousands of creators with graduated human oversight by tier. On ShopMy the creator pool, links and tracking are provided, and your team does the discovery, outreach, gifting and management, so the work grows with the programme."
+            },
+            {
+              "title": "Why does owning the creator relationship matter more now?",
+              "body": "Because shopping is moving into content, and demand for creator content is becoming continuous while most programmes still produce it campaign by campaign. Retail Economics forecasts UK social commerce rising from £9.1bn in 2025 to £20bn by 2030, and Momentum Works and Tabcut estimate TikTok Shop generated $50.3bn of GMV in the first half of 2026, up 92% year on year. In The Influencer Marketing Factory's US dataset, 63% of brand-creator relationships were one-off. A marketplace gives you access to that content. A programme you own gives you a creator base and a content library that compound, and the history to know which creators are worth the next brief."
+            },
+            {
+              "title": "Can you run creator content as paid ads?",
+              "body": "On Tano, by default. Whitelisting permissions and content rights are available in every partnership, and assets arrive ad-ready. Bloom & Wild's Yasmin MacDonnell, Marketing Manager: “Loving this. The ease of requesting paid ads and the clean view of exactly what we have the rights to is brilliant.” On ShopMy, rights for paid use are agreed with each creator."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "ShopMy helps brands access creator influence that already exists. Tano helps brands build a programme that makes creator influence more valuable over time."
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Tano an alternative to ShopMy?",
+      "a": "Sometimes, but not always. They overlap in affiliate links, creator earnings and creator commerce. Their strategic centres of gravity are different. ShopMy is a creator marketplace built around multi-brand curation. Tano is a brand programme built around creator lifecycle and repeat participation. For many brands, they can be complementary."
+    },
+    {
+      "q": "What does “creator lifecycle” actually mean?",
+      "a": "It means designing the programme around what happens after the first interaction. A creator may move from discovery to a first gift, then to a first post, repeat gifting, a higher commission tier, an affiliate relationship, paid usage rights, a campaign brief, or re-engagement after a period of inactivity. The programme uses creator history and performance to decide the next best action, rather than treating each activation as a disconnected campaign."
+    },
+    {
+      "q": "Does a brand “own” the creator?",
+      "a": "No. Creators remain independent. The relevant distinction is whether the brand retains the programme relationship, performance history, content permissions and operational knowledge associated with working with that creator. With Tano the programme is brand-owned, so the relationships, the data and the content rights remain with your brand if you leave."
+    },
+    {
+      "q": "Which model is better?",
+      "a": "Neither is universally better. ShopMy is often the better choice when the job is to access trusted curator influence and immediate shopping intent. Tano is often the better choice when the job is to create an always-on creator growth channel that becomes more efficient, informed and valuable through repeat relationships."
+    },
+    {
+      "q": "How is Tano different from ShopMy, if creators get a platform on both?",
+      "a": "On ShopMy the creator has one account and one storefront, and every brand they work with is a shelf in it. The platform is the creator's relationship. On Tano the creator's platform is your programme: your offer, your tiers, their earnings from you, the gifts and briefs you open to them, and an agent that speaks for your brand. Tano hosts it and runs it with you, and the relationship it builds is between the creator and your brand. That is the distinction, and it is the reason the data and the rights stay with you."
+    },
+    {
+      "q": "What are the alternatives to ShopMy for brands?",
+      "a": "It depends on what you want to own. LTK is the closest like-for-like: a larger creator shopping platform with a consumer app, where the relationship also sits with the platform. Affiliate platforms such as AWIN and Partnerize put the contract with the brand, but they are systems of record and your team still runs the outreach, the tiers and the payments. Agencies run the programme for you and scale by adding people. Tano combines the three: the ownership of an affiliate platform, the creator-side experience of a marketplace, and a team and agents to run it."
+    },
+    {
+      "q": "Can you run Tano alongside ShopMy?",
+      "a": "Yes, and the two are complementary rather than competing for the same creators. ShopMy is strongest with curator creators who are already on the platform and already selling. Tano is strongest at finding the creators who are not there yet: the micro, up-and-coming and independent creators who post about products they use and have never joined a marketplace. Tano recruits them into a programme your brand owns, runs the tiers and regifting that keep them posting, and makes the content rights available so their posts can run as your paid ads. ShopMy carries on giving your curator creators a storefront. Nothing has to be switched off on day one, and brands already on ShopMy are exactly who Tano is built for."
+    },
+    {
+      "q": "How do you run Tano alongside ShopMy in practice?",
+      "a": "Three things to set up on purpose. Attribution: a creator can hold a ShopMy link and a Tano code at the same time, so decide which system is the source of truth for each creator, or keep the two creator sets separate. Rates: creators will push whichever link pays more, so set the commission across the two deliberately rather than letting them drift apart. Reporting: ShopMy reports in its dashboard and Tano in its platform, so agree up front which numbers roll up to the channel view. Tano's team sets this up with you at the start of the programme."
+    },
+    {
+      "q": "How much does ShopMy cost compared with Tano?",
+      "a": "ShopMy's Launch Package is a monthly subscription, at a price ShopMy does not publish, plus a 3.9% fee on affiliate sales. ShopMy's own example is $100 of sales at 15% commission, so $15 to the creator and $3.90 to ShopMy. Higher tiers are priced on request, with a 2.9% fee on the Network Access package and a 15% fee on sponsored campaign budgets. Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. The difference is what the money buys: on ShopMy you still need someone in-house to run the programme, and on Tano the fee covers the people and the agents doing that work. At low volume the marketplace is the cheaper option; as the programme grows, the direct model is."
+    },
+    {
+      "q": "How soon can creators be posting?",
+      "a": "Quickly. Tano sources and onboards the first creators in the first days of a programme, not the first weeks, because outreach, briefing, contracting and gifting run as agent workflows from day one. The programme then builds tier by tier. On ShopMy the timeline depends on how much time your team has for discovery, outreach and gifting."
+    },
+    {
+      "q": "Can you scale a creator programme without hiring?",
+      "a": "On Tano that is the model. The team and agents do the sourcing, outreach, briefing, contracting, payment and re-engagement, so the same marketing team can run hundreds or thousands of creators with graduated human oversight by tier. On ShopMy the creator pool, links and tracking are provided, and your team does the discovery, outreach, gifting and management, so the work grows with the programme."
+    },
+    {
+      "q": "Why does owning the creator relationship matter more now?",
+      "a": "Because shopping is moving into content, and demand for creator content is becoming continuous while most programmes still produce it campaign by campaign. Retail Economics forecasts UK social commerce rising from £9.1bn in 2025 to £20bn by 2030, and Momentum Works and Tabcut estimate TikTok Shop generated $50.3bn of GMV in the first half of 2026, up 92% year on year. In The Influencer Marketing Factory's US dataset, 63% of brand-creator relationships were one-off. A marketplace gives you access to that content. A programme you own gives you a creator base and a content library that compound, and the history to know which creators are worth the next brief."
+    },
+    {
+      "q": "Can you run creator content as paid ads?",
+      "a": "On Tano, by default. Whitelisting permissions and content rights are available in every partnership, and assets arrive ad-ready. Bloom & Wild's Yasmin MacDonnell, Marketing Manager: “Loving this. The ease of requesting paid ads and the clean view of exactly what we have the rights to is brilliant.” On ShopMy, rights for paid use are agreed with each creator."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

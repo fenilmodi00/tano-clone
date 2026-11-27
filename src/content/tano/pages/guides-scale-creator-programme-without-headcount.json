@@ -1,0 +1,192 @@
+{
+  "route": "/guides/scale-creator-programme-without-headcount",
+  "family": "guide",
+  "meta": {
+    "title": "How to Scale a Creator Programme Without Adding Headcount | Tano",
+    "description": "One person can look after about 100 creators. See where a creator programme's time goes and four ways to scale it past a few hundred without hiring."
+  },
+  "hero": {
+    "title": "How to scale a creator programme without adding headcount",
+    "paragraphs": [
+      "Your creator programme started small: a few hand-picked creators, and looking after them was an easy Friday afternoon job.",
+      "Then, before you knew it, you had dozens of creators, some of them complaining about slow payouts or confusing briefs, and a mess of spreadsheets trying to keep track of it all.",
+      "You could hire someone to manage the work, but how long will that last as a solution? This guide will help you decide how best to handle the scaling challenge that every successful creator programme eventually faces."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "How much work does one creator take?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Getting a creator started takes real time. <a href=\"https://www.influencer-hero.com/blog-detail/the-time-equation-unveiling-the-hours-behind-an-influencer-programs-success\" target=\"_blank\" rel=\"noreferrer noopener\">Influencer Hero estimates that activating 50 creators by hand could take up to 175 hours</a>, about three and a half hours per creator, mostly in back-and-forth emails. At that rate, activating 100 creators would take one person more than two months of full-time work."
+        },
+        {
+          "type": "prose",
+          "html": "The bigger cost is what comes after. <a href=\"https://www.modash.io/blog/scale-influencer-marketing\" target=\"_blank\" rel=\"noreferrer noopener\">Modash's worked example</a> puts content tracking alone at about 20 minutes per creator per month. Add the rest of the ongoing work, and a rough monthly estimate looks like this. Only the first line comes from Modash, so swap in your own timings for the rest."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Rough ongoing time per creator, per month</strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Ongoing work",
+            "Time per creator per month"
+          ],
+          "rows": [
+            [
+              "Tracking their content",
+              "20 minutes"
+            ],
+            [
+              "Messages, follow-ups and questions",
+              "20 minutes"
+            ],
+            [
+              "New briefs, product and payouts",
+              "20 minutes"
+            ],
+            [
+              "Following their own content, sharing ideas and coaching",
+              "30 minutes"
+            ],
+            [
+              "Total",
+              "About 1.5 hours"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "A full-time person has roughly 160 working hours a month. At 1.5 hours per creator, that's about 100 creators, before meetings, reporting or anything else on their plate."
+        }
+      ]
+    },
+    {
+      "heading": "What does that mean if I want to grow?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "If you're at 60 or 80 creators and already feel stretched, the sums explain why. And if you want to reach 1,000 creators, the same sums say you'd need around ten people working full-time on the programme. You can hire them, hand the work to an agency or partner, or find a big efficiency gain somewhere."
+        }
+      ]
+    },
+    {
+      "heading": "Is there any way to save time?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Some of the work can't be cut. Creators still need briefs, product and payouts, and somebody has to answer their questions. What you can cut is the rest: following their content, sharing ideas, coaching and the small touches that make a creator feel part of something. Drop those, and one person might handle 50% more creators, around 150."
+        },
+        {
+          "type": "prose",
+          "html": "But that's the part that makes a creator programme work. Without it, the programme becomes transactional. Creators post for the commission and little else, the content stops representing your brand well, and you lose <a href=\"/guides/keep-creators-long-term\">the long-term value that made creators worth investing in</a>. Cutting it can make sense in a pinch, but it won't help you grow."
+        }
+      ]
+    },
+    {
+      "heading": "Why does it get harder over time?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Because the creators you've already signed don't go away. In month one, signing 50 creators is fun: everything is new, and you get to try out lots of people. By month six, you still have those 50 to look after while you sign the next group. By month 12 or 18, most of your week goes on the creators you already have, and there's little time left to grow."
+        }
+      ]
+    },
+    {
+      "heading": "What are my options past a few hundred creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "You need more capacity for the individual work. There are four ways to get it:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Build a large in-house team. On the rule of thumb above, that's about one person for every 100 creators. You get full control, but you're hiring, training and managing a team that has to grow with the programme.",
+            "Use an agency. This is like adding headcount, just off your books. It's flexible, but you pay for the hours, so the cost grows with the programme.",
+            "Find big efficiency gains. Creator software can take much of the admin off your team, and Influencer Marketing Hub says spreadsheets and direct messages stop working once programmes reach hundreds of partners. But software can't follow a creator's content, coach them or notice that their fit has changed.",
+            "Use a managed partner. A partner pairs its own people with systems built for creator programmes, so your creators keep getting individual attention without you building the team."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Our <a href=\"/guides/influencer-agency-or-platform\">guide to choosing an influencer agency or platform</a> compares the options in more detail."
+        }
+      ]
+    },
+    {
+      "heading": "How could Tano help me scale without hiring?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a> is a creator advertising platform for consumer brands. It builds performance-powered creator communities: a programme of your genuine customers that works as an always-on content engine, built around creative volume for Meta and TikTok, and new customer acquisition and revenue. Tano's in-house strategists lead the programme, automated systems handle outreach, onboarding and follow-up under their oversight, and your team approves the key decisions."
+        },
+        {
+          "type": "prose",
+          "html": "Before working with Tano, <a href=\"/case-studies/skin-and-me\">Skin+Me</a> had one person managing every channel, which capped how far outreach could go. Tano took on sourcing, outreach, onboarding and creator questions, and Skin+Me saw 3.5x growth in creator-driven sign-ups and revenue. Katie McKane, Influencer Executive at Skin+Me, said: \"You've removed all the admin stuff,\" and \"I finally have time to focus on engagement.\" <a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a>'s Tano creator ads saw a 125% higher click-through rate and a 10% lower cost per acquisition than its non-Tano ads."
+        },
+        {
+          "type": "prose",
+          "html": "Tano is paid on results: a fee for each post that goes live and 20% of the sales creators drive. If a seeded creator doesn't post, Tano isn't paid. Programmes start at 100 seeded products a month, typically about $3,000. Compare that with the cost of the people you would otherwise hire."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "What does a creator programme cost?",
+            "Outgrown your influencer agency?",
+            "Trybe alternatives: when DTC brands outgrow it",
+            "Do follower counts matter on Meta Muse?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "See where your programme's time goes",
+      "href": "/talk-to-us"
+    }
+  }
+}

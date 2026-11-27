@@ -1,0 +1,1234 @@
+{
+  "generatedAt": "2026-11-27T08:37:06.753Z",
+  "scene": "hero-campaign",
+  "route": "/",
+  "width": 390,
+  "viewportHeight": 900,
+  "alignmentWindowMs": 400,
+  "offsets": [
+    0,
+    250,
+    500,
+    750,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    5500
+  ],
+  "source": {
+    "url": "https://www.tano.ai/",
+    "status": 200,
+    "consoleErrors": [],
+    "badResponses": [],
+    "entry": {
+      "target": 499.95000000000005,
+      "park": null,
+      "clip": {
+        "x": 16,
+        "y": 149,
+        "width": 358,
+        "height": 528,
+        "rect": {
+          "top": 150,
+          "height": 528
+        }
+      },
+      "anchor": {
+        "top": 649.95,
+        "left": 16,
+        "height": 528,
+        "width": 358,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "anchorMode": "campaign-change",
+      "campaign": "Show the NEOM campaign",
+      "boundary": null
+    },
+    "signals": {
+      "scoreChangeMs": null,
+      "turn2Ms": null,
+      "turn3Ms": null,
+      "metricSwitchMs": null,
+      "campaignChangeMs": null,
+      "initialScore": "0.00",
+      "initialCampaign": "Show the NEOM campaign"
+    },
+    "frames": [
+      {
+        "targetMs": 0,
+        "elapsedMs": 15,
+        "visualMs": 118,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            0.985,
+            0.015
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "0.171875px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 250,
+        "elapsedMs": 288,
+        "visualMs": 360,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            0.334,
+            0.666
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "2.54688px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 500,
+        "elapsedMs": 505,
+        "visualMs": 571,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            0.023,
+            0.977
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "5.28125px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 750,
+        "elapsedMs": 755,
+        "visualMs": 804,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "8.375px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 1000,
+        "elapsedMs": 1014,
+        "visualMs": 1060,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "11.1094px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 1500,
+        "elapsedMs": 1511,
+        "visualMs": 1559,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "16.5781px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 2000,
+        "elapsedMs": 2004,
+        "visualMs": 2046,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "22.0469px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 2500,
+        "elapsedMs": 2508,
+        "visualMs": 2558,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "27.5156px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 3000,
+        "elapsedMs": 3002,
+        "visualMs": 3047,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "32.9844px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 3500,
+        "elapsedMs": 3504,
+        "visualMs": 3545,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "38.4531px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 4000,
+        "elapsedMs": 4004,
+        "visualMs": 4036,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "43.9219px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 4500,
+        "elapsedMs": 4504,
+        "visualMs": 4537,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "49.3906px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 5000,
+        "elapsedMs": 5003,
+        "visualMs": 5037,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "54.8594px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 5500,
+        "elapsedMs": 5504,
+        "visualMs": 5553,
+        "markers": {
+          "scrollY": 500,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "60.3281px",
+            "0px",
+            "0px"
+          ]
+        }
+      }
+    ]
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/",
+    "status": 200,
+    "consoleErrors": [],
+    "badResponses": [],
+    "entry": {
+      "target": 482.95000000000005,
+      "park": null,
+      "clip": {
+        "x": 16,
+        "y": 149,
+        "width": 358,
+        "height": 528,
+        "rect": {
+          "top": 150,
+          "height": 528
+        }
+      },
+      "anchor": {
+        "top": 632.95,
+        "left": 16,
+        "height": 528,
+        "width": 358,
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "anchorMode": "campaign-change",
+      "campaign": "Show the NEOM campaign",
+      "boundary": null
+    },
+    "signals": {
+      "scoreChangeMs": null,
+      "turn2Ms": null,
+      "turn3Ms": null,
+      "metricSwitchMs": null,
+      "campaignChangeMs": null,
+      "initialScore": "0.00",
+      "initialCampaign": "Show the NEOM campaign"
+    },
+    "frames": [
+      {
+        "targetMs": 0,
+        "elapsedMs": 17,
+        "visualMs": 136,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1,
+            0.163
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "0.90625px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 250,
+        "elapsedMs": 280,
+        "visualMs": 357,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1,
+            0.874
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "3.82812px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 500,
+        "elapsedMs": 512,
+        "visualMs": 591,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            0.998
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "6.1875px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 750,
+        "elapsedMs": 797,
+        "visualMs": 870,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "9.46875px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 1000,
+        "elapsedMs": 1047,
+        "visualMs": 1092,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "12.2031px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 1500,
+        "elapsedMs": 1544,
+        "visualMs": 1580,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "17.8594px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 2000,
+        "elapsedMs": 2027,
+        "visualMs": 2061,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "22.9531px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 2500,
+        "elapsedMs": 2546,
+        "visualMs": 2600,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "28.7969px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 3000,
+        "elapsedMs": 3031,
+        "visualMs": 3063,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "34.0781px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 3500,
+        "elapsedMs": 3527,
+        "visualMs": 3562,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "39.5469px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 4000,
+        "elapsedMs": 4007,
+        "visualMs": 4041,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "44.8281px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 4500,
+        "elapsedMs": 4517,
+        "visualMs": 4555,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "50.2969px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 5000,
+        "elapsedMs": 5017,
+        "visualMs": 5054,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "55.7656px",
+            "0px",
+            "0px"
+          ]
+        }
+      },
+      {
+        "targetMs": 5500,
+        "elapsedMs": 5505,
+        "visualMs": 5550,
+        "markers": {
+          "scrollY": 483,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "campaign": "Show the NEOM campaign",
+          "activeScene": null,
+          "sceneOpacities": [
+            1
+          ],
+          "turns": [
+            0,
+            0,
+            0
+          ],
+          "metrics": [
+            1,
+            0
+          ],
+          "score": "0.00",
+          "fills": [
+            "0px",
+            "61.2344px",
+            "0px",
+            "0px"
+          ]
+        }
+      }
+    ]
+  },
+  "alignment": {
+    "basis": "midpoint of pre/post screenshot timestamps",
+    "windowMs": 400,
+    "pairs": [
+      {
+        "localTargetMs": 0,
+        "localElapsedMs": 17,
+        "localVisualMs": 136,
+        "candidates": 2,
+        "bestSourceTargetMs": 250,
+        "bestSourceElapsedMs": 288,
+        "deltaMs": 224,
+        "diffPct": 51.92
+      },
+      {
+        "localTargetMs": 250,
+        "localElapsedMs": 280,
+        "localVisualMs": 357,
+        "candidates": 3,
+        "bestSourceTargetMs": 500,
+        "bestSourceElapsedMs": 505,
+        "deltaMs": 214,
+        "diffPct": 49.78
+      },
+      {
+        "localTargetMs": 500,
+        "localElapsedMs": 512,
+        "localVisualMs": 591,
+        "candidates": 3,
+        "bestSourceTargetMs": 500,
+        "bestSourceElapsedMs": 505,
+        "deltaMs": -20,
+        "diffPct": 5.99
+      },
+      {
+        "localTargetMs": 750,
+        "localElapsedMs": 797,
+        "localVisualMs": 870,
+        "candidates": 3,
+        "bestSourceTargetMs": 750,
+        "bestSourceElapsedMs": 755,
+        "deltaMs": -66,
+        "diffPct": 6.6
+      },
+      {
+        "localTargetMs": 1000,
+        "localElapsedMs": 1047,
+        "localVisualMs": 1092,
+        "candidates": 2,
+        "bestSourceTargetMs": 1000,
+        "bestSourceElapsedMs": 1014,
+        "deltaMs": -32,
+        "diffPct": 7.57
+      },
+      {
+        "localTargetMs": 1500,
+        "localElapsedMs": 1544,
+        "localVisualMs": 1580,
+        "candidates": 1,
+        "bestSourceTargetMs": 1500,
+        "bestSourceElapsedMs": 1511,
+        "deltaMs": -21,
+        "diffPct": 7.56
+      },
+      {
+        "localTargetMs": 2000,
+        "localElapsedMs": 2027,
+        "localVisualMs": 2061,
+        "candidates": 1,
+        "bestSourceTargetMs": 2000,
+        "bestSourceElapsedMs": 2004,
+        "deltaMs": -15,
+        "diffPct": 6.12
+      },
+      {
+        "localTargetMs": 2500,
+        "localElapsedMs": 2546,
+        "localVisualMs": 2600,
+        "candidates": 1,
+        "bestSourceTargetMs": 2500,
+        "bestSourceElapsedMs": 2508,
+        "deltaMs": -42,
+        "diffPct": 6.91
+      },
+      {
+        "localTargetMs": 3000,
+        "localElapsedMs": 3031,
+        "localVisualMs": 3063,
+        "candidates": 1,
+        "bestSourceTargetMs": 3000,
+        "bestSourceElapsedMs": 3002,
+        "deltaMs": -16,
+        "diffPct": 6.13
+      },
+      {
+        "localTargetMs": 3500,
+        "localElapsedMs": 3527,
+        "localVisualMs": 3562,
+        "candidates": 1,
+        "bestSourceTargetMs": 3500,
+        "bestSourceElapsedMs": 3504,
+        "deltaMs": -17,
+        "diffPct": 6.03
+      },
+      {
+        "localTargetMs": 4000,
+        "localElapsedMs": 4007,
+        "localVisualMs": 4041,
+        "candidates": 1,
+        "bestSourceTargetMs": 4000,
+        "bestSourceElapsedMs": 4004,
+        "deltaMs": -5,
+        "diffPct": 6.01
+      },
+      {
+        "localTargetMs": 4500,
+        "localElapsedMs": 4517,
+        "localVisualMs": 4555,
+        "candidates": 1,
+        "bestSourceTargetMs": 4500,
+        "bestSourceElapsedMs": 4504,
+        "deltaMs": -18,
+        "diffPct": 6.02
+      },
+      {
+        "localTargetMs": 5000,
+        "localElapsedMs": 5017,
+        "localVisualMs": 5054,
+        "candidates": 1,
+        "bestSourceTargetMs": 5000,
+        "bestSourceElapsedMs": 5003,
+        "deltaMs": -17,
+        "diffPct": 6.82
+      },
+      {
+        "localTargetMs": 5500,
+        "localElapsedMs": 5505,
+        "localVisualMs": 5550,
+        "candidates": 1,
+        "bestSourceTargetMs": 5500,
+        "bestSourceElapsedMs": 5504,
+        "deltaMs": 3,
+        "diffPct": 6.23
+      }
+    ],
+    "best": {
+      "diffPct": 5.99,
+      "deltaMs": -20,
+      "sourceTargetMs": 500,
+      "sourceElapsedMs": 505,
+      "localTargetMs": 500,
+      "localElapsedMs": 512,
+      "width": 358,
+      "height": 528
+    },
+    "medianBestDiffPct": 6.6,
+    "meanBestDiffPct": 12.83
+  },
+  "timingDivergence": [],
+  "artifacts": {
+    "bestDiff": "docs/verify/motion/hero-campaign-390-best.png",
+    "bestSource": "docs/verify/motion/hero-campaign-390-best-source.png",
+    "bestLocal": "docs/verify/motion/hero-campaign-390-best-local.png"
+  },
+  "timings": {
+    "totalMs": 19747
+  }
+}

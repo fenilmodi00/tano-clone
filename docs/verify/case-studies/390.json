@@ -1,0 +1,362 @@
+{
+  "generatedAt": "2026-11-27T09:42:42.904Z",
+  "route": "/case-studies",
+  "slug": "case-studies",
+  "width": 390,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/case-studies",
+    "status": 200,
+    "title": "Case Studies | Tano",
+    "height": 5692,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 5,
+    "animations": 12,
+    "missingImages": [],
+    "imageCount": 88,
+    "h1": "Readaboutourcasestudies",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5014,
+      "navMs": 4971
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/case-studies",
+    "status": 200,
+    "title": "Case Studies | Tano",
+    "height": 5692,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 5,
+    "animations": 12,
+    "missingImages": [],
+    "imageCount": 88,
+    "h1": "Readaboutourcasestudies",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5601,
+      "navMs": 5563
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/case-studies/390-diff.png"
+  },
+  "timings": {
+    "totalMs": 5909,
+    "sourceMs": 5014,
+    "localMs": 5601
+  },
+  "diff": {
+    "overallPct": 5.78,
+    "staticPct": 0.13,
+    "motionPct": 1.26,
+    "videoPct": 39.22,
+    "staticPixels": 883740,
+    "staticDiffPixels": 1133,
+    "motionPixels": 363090,
+    "motionDiffPixels": 4587,
+    "videoPixels": 290160,
+    "videoDiffPixels": 113809,
+    "sourceSize": {
+      "width": 390,
+      "height": 5692
+    },
+    "localSize": {
+      "width": 390,
+      "height": 5692
+    },
+    "commonSize": {
+      "width": 390,
+      "height": 5692
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.wire-cases-hero",
+        "kind": "static",
+        "source": {
+          "top": 4,
+          "height": 408.95,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 408.95,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0,
+        "pixels": 159510,
+        "diffPixels": 0,
+        "innerPct": 0
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band.wire-figs-band",
+        "kind": "motion",
+        "source": {
+          "top": 412.95,
+          "height": 328,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 1,
+            "runningAnimations": 1,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 412.95,
+          "height": 328,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 1,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 3.13,
+        "pixels": 127920,
+        "diffPixels": 4000,
+        "innerPct": null
+      },
+      {
+        "index": 2,
+        "label": "div",
+        "kind": "static",
+        "source": {
+          "top": 740.95,
+          "height": 1856.89,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 4
+          }
+        },
+        "local": {
+          "top": 740.95,
+          "height": 1856.89,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 4
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.16,
+        "pixels": 724230,
+        "diffPixels": 1133,
+        "innerPct": 0.16
+      },
+      {
+        "index": 3,
+        "label": "section.hp-band.wire-films-band",
+        "kind": "video",
+        "source": {
+          "top": 2597.84,
+          "height": 743.72,
+          "kind": "video",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 40,
+            "images": 80
+          }
+        },
+        "local": {
+          "top": 2597.84,
+          "height": 743.72,
+          "kind": "video",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 40,
+            "images": 80
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 39.22,
+        "pixels": 290160,
+        "diffPixels": 113809,
+        "innerPct": null
+      },
+      {
+        "index": 4,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "source": {
+          "top": 3341.56,
+          "height": 603.09,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "local": {
+          "top": 3341.56,
+          "height": 603.09,
+          "kind": "motion",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 6,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 3
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.25,
+        "pixels": 235170,
+        "diffPixels": 587,
+        "innerPct": null
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 3,
+        "label": "section.hp-band.wire-films-band",
+        "kind": "video",
+        "pct": 39.22,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band.wire-figs-band",
+        "kind": "motion",
+        "pct": 3.13,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 4,
+        "label": "section.hp-band.hp-closing-band",
+        "kind": "motion",
+        "pct": 0.25,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 2,
+        "label": "div",
+        "kind": "static",
+        "pct": 0.16,
+        "innerPct": 0.16,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 0,
+        "label": "section.wire-cases-hero",
+        "kind": "static",
+        "pct": 0,
+        "innerPct": 0,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 5692,
+      "local": 5692,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 390,
+      "local": 390,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 5,
+      "local": 5,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

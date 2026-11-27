@@ -1,0 +1,25 @@
+/* Home info behaviour support (owner: HomeInfo). */
+
+/* FAQ category rows are all present after hydration; only the active
+   category (or the ANDed search matches) may paint. */
+.hp-faq-row[hidden],
+.hp-faq-empty[hidden] {
+  display: none;
+}
+
+/* The clear control is a display:grid button, so the hidden attribute needs
+   an explicit rule rather than the user-agent default. */
+.hp-faq-search-clear[hidden] {
+  display: none;
+}
+
+/* A card mid-crossfade is still the outgoing brand's content. */
+.hp-brand-card[data-fading="true"] {
+  pointer-events: none;
+}
+
+/* The injected scene frames already own the stage; keep the first frame from
+   being clickable while the outgoing frame fades over it. */
+.hp-pp-frame[data-leaving] {
+  pointer-events: none;
+}

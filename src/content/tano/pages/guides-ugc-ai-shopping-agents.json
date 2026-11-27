@@ -1,0 +1,275 @@
+{
+  "route": "/guides/ugc-ai-shopping-agents",
+  "family": "guide",
+  "meta": {
+    "title": "Is Your DTC Brand's UGC Ready for AI Shopping Agents Like Meta Muse? | Tano",
+    "description": "DTC UGC that only runs as ads misses what Meta Muse works from: posts shoppers save. How to add organic creator posts, then amplify the winners."
+  },
+  "hero": {
+    "title": "Is your DTC brand's UGC ready for AI shopping agents like Meta Muse?",
+    "paragraphs": [
+      "If your DTC brand's UGC only ever runs as ads, it is probably not ready for AI shopping agents like Muse, which Meta launched in the UK in November 2026. An ad file reaches only the people your budget pays for, stops when the spend stops, and sits on no creator's profile where a shopper could save it. Keep buying UGC for creative volume, and add an always-on programme where creators post to their own audiences, then run the top-performing posts as ads.",
+      "At most DTC brands, the paid social team buys UGC by the batch for the ad account; none of it becomes the saved Reels Muse works from. What Meta Muse means for creator marketing explains why saves now matter more."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What is the difference between UGC and influencer content?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "UGC originally meant content customers post themselves; in paid social it now usually means a video your brand buys from a creator and runs from its own ad account, without the creator posting it. Influencer content, or organic creator content, is posted by the creator to their own audience with a code and link, and your brand can then amplify it as an ad."
+        },
+        {
+          "type": "prose",
+          "html": "One buys assets; the other adds an audience that already trusts the creator."
+        },
+        {
+          "type": "prose",
+          "html": "Our view is that creators with existing audiences and communities, and real influence over them, deliver organic performance as well as ad performance. Many creators on self-serve UGC tools have no existing audience, so their videos mostly reach people your brand pays to reach."
+        }
+      ]
+    },
+    {
+      "heading": "Why does organic creator content matter for AI shopping agents like Muse?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Because Muse's confirmed link to Instagram is the posts a shopper has saved, and an organic post stays on a creator's profile, saveable, for as long as it is live."
+        },
+        {
+          "type": "prose",
+          "html": "Saves already matter: in 2023 Instagram said that likes, saves and shares are among the most important actions it predicts in Explore. Meta AI's shopping mode also surfaces ideas from the creators and communities people already follow, and organic programmes build those follows; ad files do not."
+        },
+        {
+          "type": "prose",
+          "html": "Creator posts create desire and show fit; the agent then checks price, stock and returns, starting with Meta's catalog. <a href=\"/guides/win-on-meta-muse-with-creators\">How to change your creator programme for Meta Muse</a> has the checklist."
+        }
+      ]
+    },
+    {
+      "heading": "Should paid social teams still buy UGC?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Yes. Creator-led paid is growing fast: <a href=\"https://s21.q4cdn.com/399680738/files/content_files/META-Q3-2026-Earnings-Call-Transcript.pdf\" target=\"_blank\" rel=\"noreferrer noopener\">Meta said in October 2026</a> that its partnership ads grew over 97% year on year to an annual run rate of more than $15bn. Keep it for creative volume; just stop it being your only creator activity."
+        }
+      ]
+    },
+    {
+      "heading": "How do UGC for paid and organic creator programmes compare?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Paid UGC gives volume; organic gives audiences, saves and posts that stay live. Run both, organic first, so paid budget goes behind proven posts."
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "UGC for paid only",
+            "Always-on organic creator programme",
+            "Both, organic first"
+          ],
+          "rows": [
+            [
+              "Who sees it",
+              "People your ad budget reaches",
+              "The creator's followers, plus organic reach",
+              "Followers, then wider paid reach for winners"
+            ],
+            [
+              "Saves and follows it builds",
+              "Only while the ad runs; no creator profile",
+              "Saves, comments and follows on the creator's profile",
+              "The organic trail, plus paid reach"
+            ],
+            [
+              "What Muse can work from",
+              "Unclear: Meta has not said whether ads feed Muse",
+              "Posts shoppers save, and creators they follow",
+              "As organic, with more people seeing each post"
+            ],
+            [
+              "Creative volume for ads",
+              "High and predictable, briefed per asset",
+              "Grows with the number of creators posting",
+              "High: UGC for testing plus proven organic posts"
+            ],
+            [
+              "Cost model",
+              "A fee per video",
+              "Product, codes and commission, often performance-based",
+              "UGC fees plus performance-based rewards"
+            ],
+            [
+              "How long a post keeps working",
+              "As long as you pay to run it",
+              "Stays live and saveable on the creator's profile",
+              "Organic life, plus paid bursts"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How does an organic creator post become an ad?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "There are three routes: an ad code to boost the creator's own post, content licensing, and partnership ads from the creator's handle. Each puts paid budget behind a post that has already found an organic audience."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/case-studies/papier\">Papier</a> raised partnership ads to about 20% of its Meta spend, up from about 9%, and its CPA was 22% lower."
+        }
+      ]
+    },
+    {
+      "heading": "How do you add an organic layer to a UGC programme this quarter?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Start with your current creators, then widen the pool, without pausing your paid social team's ad testing."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Audit your current UGC creators for audience fit. Find those whose followers trust their buying advice and look like your customers.",
+            "Offer the strongest a code and link to post organically. Let them share their own experience; the code tracks sales and lets them earn.",
+            "Seed new creators who already have engaged audiences. Search tagged customer posts, affiliates and competitor Reels for creators who show products in use.",
+            "Agree usage rights up front. Settle which of the three routes you can use, and for how long, before posts go live.",
+            "Amplify the winners. Put budget behind posts that drew saves, comments and sales organically.",
+            "Track saves and sales alongside CTR and CPA. Saves show which posts shoppers want to return to, the posts Muse works from."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Organic posts still need an ad label whenever a gift, payment, code or link is involved; <a href=\"/guides/meta-muse-creators-brief\">what to tell your creators about Meta Muse</a> has the UK and US rules and a brief to paste."
+        }
+      ]
+    },
+    {
+      "heading": "Where do we think this is heading?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Two developments are worth watching, though neither is proven in the data yet."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Organic creator posts are what Meta's AI will credit.</strong> If <a href=\"/guides/meta-muse-creator-marketing\">Meta's plans to credit creators</a> reach Muse, it could credit organic posts on creator profiles; an ad file has no creator to credit."
+        },
+        {
+          "type": "prose",
+          "html": "<strong>Saves will become a planning metric.</strong> As more shoppers save posts for later, the posts that earn saves will be the ones worth amplifying, and hundreds of organic posts give an agent more to work with than hundreds of ad files."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano add organic creator posts to a UGC programme?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is the creator advertising platform for consumer brands. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. Our monthly loop turns organic posts into ads:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Choose creators with audiences. You approve or reject our first two calibration lists; after that, your ongoing time is small.",
+            "Onboard as your brand. We contact each creator as your brand; each agrees terms and gets a code and link.",
+            "Post organically first. Creators post to their own followers; we detect posts automatically and coach each creator one to one on posting and hooks.",
+            "Pick the winners. We surface the top posts by performance and by fit with what your ad account is missing.",
+            "Run them as ads. You launch the ads, through an ad code, licensing or partnership ads."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Our programmes are performance-based and start with a four-month pilot judged on one number. Across our programmes, creator ads average 68% higher click-through than brand-produced ads. At <a href=\"/case-studies/bloom-and-wild\">Bloom &amp; Wild</a>, creator-led paid ads delivered 10% lower CPA and 13% higher ROAS."
+        },
+        {
+          "type": "prose",
+          "html": "We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "What other questions do buyers ask?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Do UGC ads show up in Meta Muse?",
+              "body": "Meta has not said. Muse's confirmed link to Instagram is a shopper's own saved posts, and Digiday reports Meta says Muse itself carries no ads."
+            },
+            {
+              "title": "Should we use AI-generated UGC?",
+              "body": "For ad testing, it can add variants. It cannot do the organic job: there is no creator, audience or profile where saves build up."
+            },
+            {
+              "title": "Should I stop buying UGC?",
+              "body": "No. Keep buying it for creative volume and ad testing, and add an organic programme alongside it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "We were trying to use a traditional affiliate platform to onboard influencers, and I think we got two in a month. […] I think we got like 130 something like that in a month, which is amazing.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild",
+          "image": "/sites/tano/extras/0c56de97c2759387e789ea815cf0f3cda4809e2f-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do UGC ads show up in Meta Muse?",
+      "a": "Meta has not said. Muse's confirmed link to Instagram is a shopper's own saved posts, and Digiday reports Meta says Muse itself carries no ads."
+    },
+    {
+      "q": "Should we use AI-generated UGC?",
+      "a": "For ad testing, it can add variants. It cannot do the organic job: there is no creator, audience or profile where saves build up."
+    },
+    {
+      "q": "Should I stop buying UGC?",
+      "a": "No. Keep buying it for creative volume and ad testing, and add an organic programme alongside it."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Add organic creators to your UGC programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

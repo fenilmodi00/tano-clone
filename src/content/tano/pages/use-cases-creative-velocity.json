@@ -1,0 +1,301 @@
+{
+  "route": "/use-cases/creative-velocity",
+  "family": "use-case",
+  "meta": {
+    "title": "Creative Velocity: Creator Ads at Scale | Tano",
+    "description": "Ship hundreds of new creator ads a month. Tano sources creators, clears usage rights and surfaces the best-performing posts for your paid media."
+  },
+  "hero": {
+    "title": "Run hundreds of new ads a month, with no two the same.",
+    "paragraphs": [
+      "Scale to thousands of organic posts a month, from creators chosen for audience fit and content quality. Your paid team picks the best-performing creative from creators who already know your product."
+    ],
+    "actions": [
+      {
+        "label": "Get started",
+        "href": "/talk-to-us"
+      },
+      {
+        "label": "See the case studies",
+        "href": "/case-studies"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What brands get:",
+      "variant": "hero-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR than non-Tano ads at Bloom & Wild."
+            },
+            {
+              "value": "−18%",
+              "label": "Lower CPA than non-Tano ads at Bloom & Wild."
+            },
+            {
+              "value": "138+",
+              "label": "Team hours saved each month at Bloom & Wild."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The worlds most ambitious consumer brands build their creator programmes with Tano",
+      "variant": "logos",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Unilever",
+              "meta": "Consumer goods"
+            },
+            {
+              "title": "HelloFresh",
+              "meta": "Food & meal kits",
+              "href": "/case-studies/hellofresh"
+            },
+            {
+              "title": "PerfectTed",
+              "meta": "Energy drinks"
+            },
+            {
+              "title": "Bloom & Wild",
+              "meta": "Flowers & gifting",
+              "href": "/case-studies/bloom-and-wild"
+            },
+            {
+              "title": "Mother Root",
+              "meta": "Non-alcoholic drinks"
+            },
+            {
+              "title": "NEOM",
+              "meta": "Wellbeing"
+            },
+            {
+              "title": "Fussy",
+              "meta": "Personal care"
+            },
+            {
+              "title": "SULT",
+              "meta": "Hydration & electrolytes"
+            },
+            {
+              "title": "Skin + Me",
+              "meta": "Skincare",
+              "href": "/case-studies/skin-and-me"
+            },
+            {
+              "title": "Peachies",
+              "meta": "Baby care"
+            },
+            {
+              "title": "Hair+Me",
+              "meta": "Haircare"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How it works.",
+      "variant": "process",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Your next ads, from creators whose posts already sell. Each is a post a creator chose to make for their own audience, so it reads as theirs, not as an ad. You license the best of them, with every fee and term agreed inside the rules you set."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Sourcing",
+              "body": "Tano finds creators whose audiences buy from you and whose posts already work as ads, working from your creator personas and within your guardrails. Each is scored on how likely they are to post and sell, so the creators you gift to are the ones whose content is most likely to work in your ads.",
+              "meta": "01Run by Tano"
+            },
+            {
+              "title": "Onboarding",
+              "body": "Tano’s agents write to each creator personally, choose a gift from your products and set them up with a code and link connected to your Shopify store. A portal invite follows for sales and payouts, so the first post can follow within days of delivery.",
+              "meta": "02Run by Tano"
+            },
+            {
+              "title": "Post recommendation",
+              "body": "Tano reviews every post against your ad account and content library: the sales it drove, how it ranks across the programme, how quickly the product appears and whether it is clear of music, stickers and other brands. The posts that already sell and pass are put forward for you to license.",
+              "meta": "03Run by Tano"
+            },
+            {
+              "title": "Invitations",
+              "body": "Your best performers from the last 30 days are invited to make something specific for your content library, each invitation with the reward, the deadline and the usage rights, such as two months as a partnership ad, agreed before they say yes. Creators know what they are making and what it is for.",
+              "meta": "04Run by Tano"
+            },
+            {
+              "title": "Whitelisting and licence",
+              "body": "You set a rate card and Tano negotiates inside it, agreeing the fee, the contract and the usage period with each creator from your contract templates. Once it is signed, the ad code is delivered and the post goes live as a partnership ad, with the licence period starting that day.",
+              "meta": "05Run by Tano"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "License the posts that already sell.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Every post your creators publish lands in your content library. Tano puts forward the ones worth licensing on two signals, performance and content fit, and checks each one is ready to run on Meta."
+        }
+      ]
+    },
+    {
+      "heading": "Every winning ad finds the next one.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Run creator ads from your own Meta account and compare them creator by creator in the Tano Meta app. Tano reads every result and feeds it back, so winning hooks, formats and creators shape your next invitations, recommendations and licences."
+        }
+      ]
+    },
+    {
+      "heading": "Recruit, post, amplify. Then do it again, and again.",
+      "variant": "steps",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Every round of creator content shapes the next. Tano’s agents manage thousands of creator relationships, with your team setting the creative direction and choosing what goes behind paid spend."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "We set the standard for content",
+              "body": "Tell us what your team needs: demonstrations, tutorials, and everyday product stories. You review the first creators and their work, and your feedback becomes Creator Personas: the quality standard every later recruit is measured against."
+            },
+            {
+              "title": "We keep creators posting with rewards",
+              "body": "Creators choose from an agreed product range and share their experience in their own words. Tano manages outreach, onboarding, gifting and follow-up, whilst rewards give creators a reason to return. Monthly output targets are set against what your product costs to seed, so your volume never outruns your margin."
+            },
+            {
+              "title": "We turn the strongest content into ads",
+              "body": "Shop organic posts to test, or invite a proven creator to make something specific. Tano manages the invitation, delivery, payment, and usage rights. Fees and licence terms are agreed before content runs."
+            },
+            {
+              "title": "We iterate on your programme over time",
+              "body": "Your team’s selections and paid results help refine future recruitment, coaching and invitations. Tano also tests outreach, gifting, and rewards to learn what keeps the right creators contributing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Thousands of creators. Personal support at every stage.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "One is waiting on a delivery, one has posted and heard nothing back, and one is a single post away from their next reward. Tano holds the whole history of every creator: products, posts, payouts and conversations, so our agents can follow up with support that fits, and every interaction is measured in your reporting."
+        }
+      ]
+    },
+    {
+      "heading": "Usage rights, cleared before anything runs.",
+      "variant": "content",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Pick a post, or take one of Tano’s recommendations. We check ad suitability, agree the fee and usage period, collect the signed licence, and pay the creator. You can see when every licence expires, and renew before it does."
+        }
+      ]
+    },
+    {
+      "heading": "How Bloom & Wild made creators a revenue channel",
+      "variant": "case-study",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg",
+          "alt": "Bloom & Wild letterbox flowers arranged at home",
+          "href": "/case-studies/bloom-and-wild"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "+125%",
+              "label": "Higher CTR"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Loving this — the ease of requesting paid ads and the clean view of exactly what we have the rights to is brilliant.",
+          "name": "Yasmin MacDonnell",
+          "role": "Marketing Manager · Bloom & Wild"
+        }
+      ]
+    },
+    {
+      "heading": "Everything tracked in one place.",
+      "variant": "track",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Inform every decision with real-time data, all in Tano."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Get recommendations",
+              "body": "The strongest posts are surfaced for you, ranked on content fit and organic performance. Your team still chooses what goes behind spend.",
+              "meta": "Post recommended"
+            },
+            {
+              "title": "Meta integration",
+              "body": "Creator ads run and report inside your own ad account, with performance tracked creator by creator and licence end dates enforced automatically.",
+              "meta": "Meta Ads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Key metrics, reported for you monthly.",
+      "variant": "stats",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Organic supply",
+              "body": "Posts published · Active creators · Returning posters · Views and engagement"
+            },
+            {
+              "title": "Content for paid",
+              "body": "Posts selected · Rights secured · Assets delivered as agreed"
+            },
+            {
+              "title": "Paid results",
+              "body": "Spend · Hook rate · Hold rate · CTR · ROAS · CPA"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Give your next campaign a community.",
+    "body": "Share your monthly content needs and the campaign dates that matter. Our strategists will come back with the recruitment, repeat posting and briefs it would take to cover them.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

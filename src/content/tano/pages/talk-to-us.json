@@ -1,0 +1,28 @@
+{
+  "route": "/talk-to-us",
+  "family": "contact",
+  "meta": {
+    "title": "Get Started | Tano",
+    "description": "Tell us about your brand and your goals, and we’ll show you what a creator programme run by Tano could do for you."
+  },
+  "hero": {
+    "title": "Tell us about your brand, and we’ll tell you how we can help.",
+    "paragraphs": [
+      "Want to reach out by email? Find us at team@tano.ai"
+    ],
+    "actions": [],
+    "media": "/sites/tano/images/talk-to-us-glass.jpg"
+  },
+  "sections": [
+    {
+      "heading": "Tell us about your brand, and we’ll tell you how we can help.",
+      "variant": "contact",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Want to reach out by email? Find us at <a href=\"mailto:team@tano.ai\">team@tano.ai</a>"
+        }
+      ]
+    }
+  ]
+}

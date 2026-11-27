@@ -1,0 +1,29 @@
+/*
+ * Page-family overrides (owner: PageFamilies).
+ *
+ * The 1568×900 live-vs-local audit (docs/coordination/PageFamilies.md) found
+ * every page-family transition, keyframe and state rule already present in
+ * src/styles/tano/source.css:
+ *   - FAQ grid-row/opacity/glyph/empty/clear rules,
+ *   - comparison table horizontal pan + swipe cue,
+ *   - careers role/film hover,
+ *   - news resource/case cards,
+ *   - rail link colour transition,
+ *   - for-creators carousel/tracker/closing films,
+ *   - ad-loop path/dots and pitch-deck frame/segment states.
+ *
+ * No rule was added here because adding duplicates would override the source
+ * declarations with identical values and make future evidence ambiguous.
+ */
+
+/* The merged source chunks put the role-page 880px cap after the base container
+   rule; the live page resolves the container width (1312px) instead. */
+.hp-rp-hero-copy {
+  max-width: var(--page-width);
+}
+
+@media (max-width: 767px) {
+  .wire-contact {
+    padding-top: 102px !important;
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "route": "/case-studies/skin-and-me",
+  "family": "case-study",
+  "meta": {
+    "title": "Skin+Me: Creator-Led Customer Acquisition | Tano",
+    "description": "How Skin+Me finds overlooked creators and turns partnerships into customer acquisition with Tano, giving its team more time for personal relationships."
+  },
+  "hero": {
+    "title": "How Skin+Me unlocked acquisition with overlooked creators",
+    "paragraphs": [
+      "Tano finds creators beyond Skin+Me’s usual profile, giving Katie more time to build ambassador relationships."
+    ],
+    "actions": [],
+    "media": "/sites/tano/extras/6cf37868d2534de40a0dd86a8700678e540ede63-2400x1543.jpg"
+  },
+  "sections": [
+    {
+      "variant": "case-study-stats",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "Skin+Me",
+              "label": "Client"
+            },
+            {
+              "value": "Skincare",
+              "label": "Sector"
+            },
+            {
+              "value": "4 / 5",
+              "label": "Top performers discovered and onboarded by Tano in a single month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Skin+Me provides personalised skincare on subscription. Its ambassador programme connects the business with creators who introduce customers to its products. Growing that channel means finding more suitable partners while maintaining the personal relationships that help ambassadors succeed."
+        }
+      ]
+    },
+    {
+      "id": "the-problem",
+      "heading": "The Problem",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Skin+Me wanted creator partnerships to drive customer acquisition, but manual work limited both discovery and the time available to develop promising relationships."
+        }
+      ]
+    },
+    {
+      "heading": "Looking beyond the usual creator profile",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Potential performers were easy to pass over when the team had limited time to assess creators outside its usual profile of partners."
+        }
+      ]
+    },
+    {
+      "heading": "Manual work competing with growth",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Sourcing profiles was only the start. Outreach, follow-ups, programme questions, tracking links and codes all needed attention before a creator could become an active ambassador."
+        }
+      ]
+    },
+    {
+      "heading": "Too little time for relationships",
+      "eyebrow": "The Problem",
+      "variant": "subsection",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Katie was balancing discovery and onboarding with managing the programme. Repetitive administration left less time to engage ambassadors, recognise strong performers and develop new ideas."
+        }
+      ]
+    },
+    {
+      "id": "the-solution",
+      "heading": "The Solution",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano combines broader creator discovery with managed sourcing, outreach and onboarding. Katie keeps the judgement and personal relationships that turn promising creators into productive ambassadors."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Discover overlooked creators",
+              "body": "Tano brings creators beyond the usual profile into consideration. Katie can assess promising candidates without first investing her time in every sourcing and outreach conversation."
+            },
+            {
+              "title": "Turn interest into active partnerships",
+              "body": "Tano handles sourcing, outreach, follow-ups and routine programme questions, with support for links, codes and onboarding. The focus is getting suitable creators into the acquisition programme."
+            },
+            {
+              "title": "Give relationships dedicated attention",
+              "body": "Katie can focus on VIP relationships, personalised gifts, handwritten notes and direct engagement—making ambassadors feel valued and giving them reasons to stay involved."
+            },
+            {
+              "title": "Combine AI scale with human judgement",
+              "body": "Katie was initially sceptical about AI in a relationship-led channel. Working with Tano changed her mind: automation supports her judgement and personal touch rather than replacing them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-results",
+      "heading": "The Results",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Skin+Me has unlocked a source of customer acquisition through creators the team might otherwise have overlooked. In a single month, four of Skin+Me’s five top-performing creators were discovered and onboarded by Tano."
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/1d4a291f069d01e6a24ee406d9519401d998dea3-1720x1720.jpg"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top-performing creators discovered and onboarded by Tano in a single month"
+            },
+            {
+              "value": "3.5×",
+              "label": "Growth in sign-ups and revenue"
+            },
+            {
+              "value": "3×",
+              "label": "Lower CAC"
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Broader discovery brought productive ambassadors into the programme, including creators Katie might not have prioritised if she had needed to source and manage every conversation herself."
+        },
+        {
+          "type": "prose",
+          "html": "With Tano handling sourcing, outreach and onboarding, Katie has more time to develop relationships and engage the ambassadors already in the programme."
+        },
+        {
+          "type": "prose",
+          "html": "Personalised gifting, handwritten notes and a dedicated VIP group give the programme a human touch. AI supports that relationship work by taking repetitive tasks off Katie’s plate."
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    },
+    {
+      "id": "grow-your-ambassador-programme-without-losing-the-personal-touch",
+      "heading": "Grow your ambassador programme without losing the personal touch",
+      "variant": "legal",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Find more suitable creators and give your team more time to build the relationships that turn partnerships into customer acquisition."
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"https://www.tano.ai/talk-to-us\" target=\"_blank\" rel=\"noreferrer noopener\">Talk to Tano</a>"
+        }
+      ]
+    },
+    {
+      "variant": "films",
+      "blocks": [
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/6167f632fcda34779b929736b0839c7854d50c80.mp4",
+          "alt": "@noturbasicmama’s film for Skin+Me",
+          "poster": "/sites/tano/extras/71a9ec746156a8521744c0d1a062b003062e1e7d-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/bcce8c01f3843d664ce4fb42b0314b363d3e2c93.mp4",
+          "alt": "@getgorgeouswithme_ugc’s film for Skin+Me",
+          "poster": "/sites/tano/extras/b8d2d359ee2409aabbcadc6ceb9ee37f196cc7e3-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/fd00fae0c6e2af0c06d43935b5b8fc60eb443487.mp4",
+          "alt": "@elliegeorginateague’s film for Skin+Me",
+          "poster": "/sites/tano/extras/18fca7be61c25d5f5c0759a3d4b174ad14e4562f-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/e26259ab73dae8e23f6c18ebdf29ab6e34ab24ee.mp4",
+          "alt": "@pietra.pilao’s film for Skin+Me",
+          "poster": "/sites/tano/extras/4946b71b42727695017bc1d6a538f847d5a4dcec-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/5794aec50dc1d0503384a794bbb2aa2ac69a3ce2.mp4",
+          "alt": "@amycatriona’s film for Skin+Me",
+          "poster": "/sites/tano/extras/d8c2ced3ab390f131e2ced1ab20abd75c9dd0f62-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/55cdf5f37a795b69ac4ae86741c2e3bf5e1e08d0.mp4",
+          "alt": "@demileebuchanan’s film for Skin+Me",
+          "poster": "/sites/tano/extras/49efd0abf1db42c42d00a078934422ba96467727-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/88aaa805dec2c4649a44768a61870e26de5bd65a.mp4",
+          "alt": "@the.tradie.wife’s film for Skin+Me",
+          "poster": "/sites/tano/extras/cd81d1d5b0b7696ca76a21d8b5560f745db45a5b-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/ead8f6a3370c4c6cca85e9a156089b6175447969.mp4",
+          "alt": "@imjustimmy’s film for Skin+Me",
+          "poster": "/sites/tano/extras/f6bee8f8f59df35fd6049bd696d227fad3253d2b-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/ef1f8096e897cdf0f603e28157498106b4b7848b.mp4",
+          "alt": "@thecraftedstudio_soma’s film for Skin+Me",
+          "poster": "/sites/tano/extras/1c7c424a5b8f65a718b3550acfbc8ee4a3e0fcfd-432x768.jpg"
+        },
+        {
+          "type": "media",
+          "src": "/sites/tano/extras/e38863b03d3af6e770da004be12b1d3b8a6055c2.mp4",
+          "alt": "@chaneljamesx’s film for Skin+Me",
+          "poster": "/sites/tano/extras/06ac15258097670a7c7aea0cf0e85be0421b914e-432x768.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Read our other case studies",
+      "variant": "case-cards",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "How HelloFresh lifted CVR 93% with a hybrid creator model",
+              "body": "Recipe boxes at national scale. HelloFresh needed more creator outreach without more manual work.",
+              "href": "/case-studies/hellofresh",
+              "image": "/sites/tano/extras/9599a6222987cf7e9a8ab1a02cf7c1b5a7b97314-1240x1240.jpg"
+            },
+            {
+              "title": "How Bloom & Wild made creators a revenue channel",
+              "body": "Creator partnerships drive monthly revenue across brands and markets.",
+              "href": "/case-studies/bloom-and-wild",
+              "image": "/sites/tano/extras/c1cd2ee5d91ca6b52ed6360a47d27429ac6a3cdf-1240x1240.jpg"
+            },
+            {
+              "title": "How Papier cut CPA by 22%",
+              "body": "Seeded creator content outperformed Papier’s other Meta Partnership Ads.",
+              "href": "/case-studies/papier",
+              "image": "/sites/tano/extras/4775a71fa05fd8ff0180b0d9e256e7723ef0d8d7-1240x1240.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Why not see where your brand could win?",
+    "body": "Access thousands of creators, with our in-house strategists steering every programme.",
+    "cta": {
+      "label": "Get started",
+      "href": "/talk-to-us"
+    }
+  }
+}

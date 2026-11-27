@@ -1,0 +1,985 @@
+{
+  "generatedAt": "2026-11-27T10:17:25.769Z",
+  "scene": "experiments",
+  "route": "/",
+  "width": 1568,
+  "viewportHeight": 900,
+  "alignmentWindowMs": 400,
+  "offsets": [
+    0,
+    250,
+    500,
+    750,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000,
+    5500
+  ],
+  "source": {
+    "url": "https://www.tano.ai/",
+    "status": 200,
+    "consoleErrors": [],
+    "badResponses": [],
+    "entry": {
+      "target": 3820.51,
+      "park": null,
+      "clip": {
+        "x": 128,
+        "y": 200,
+        "width": 1312,
+        "height": 498,
+        "rect": {
+          "top": 201,
+          "height": 497
+        }
+      },
+      "anchor": {
+        "top": 4021.97,
+        "left": 128,
+        "height": 497.08,
+        "width": 1312,
+        "display": "grid",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "anchorMode": "entry",
+      "campaign": null,
+      "boundary": null
+    },
+    "signals": {
+      "roundChangeMs": 4503,
+      "cacChangeMs": 1002,
+      "initialChip": "Trying this round: Home and lifestyle",
+      "initialCac": "£32.10"
+    },
+    "frames": [
+      {
+        "targetMs": 0,
+        "elapsedMs": 3,
+        "visualMs": 39,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "light",
+          "groundT": "0",
+          "inkT": "0",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 250,
+        "elapsedMs": 253,
+        "visualMs": 378,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "light",
+          "groundT": "0",
+          "inkT": "0",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 500,
+        "elapsedMs": 508,
+        "visualMs": 587,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 750,
+        "elapsedMs": 752,
+        "visualMs": 784,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 1000,
+        "elapsedMs": 1002,
+        "visualMs": 1034,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.21",
+          "rows": [
+            "£32.21"
+          ]
+        }
+      },
+      {
+        "targetMs": 1500,
+        "elapsedMs": 1503,
+        "visualMs": 1536,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.21",
+          "rows": [
+            "£32.21"
+          ]
+        }
+      },
+      {
+        "targetMs": 2000,
+        "elapsedMs": 2003,
+        "visualMs": 2039,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.29",
+          "rows": [
+            "£32.29"
+          ]
+        }
+      },
+      {
+        "targetMs": 2500,
+        "elapsedMs": 2504,
+        "visualMs": 2536,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.29",
+          "rows": [
+            "£32.29"
+          ]
+        }
+      },
+      {
+        "targetMs": 3000,
+        "elapsedMs": 3002,
+        "visualMs": 3059,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.08",
+          "rows": [
+            "£32.08"
+          ]
+        }
+      },
+      {
+        "targetMs": 3500,
+        "elapsedMs": 3503,
+        "visualMs": 3544,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.08",
+          "rows": [
+            "£32.08"
+          ]
+        }
+      },
+      {
+        "targetMs": 4000,
+        "elapsedMs": 4005,
+        "visualMs": 4044,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£31.77",
+          "rows": [
+            "£31.77"
+          ]
+        }
+      },
+      {
+        "targetMs": 4500,
+        "elapsedMs": 4503,
+        "visualMs": 4542,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.40",
+          "rows": [
+            "£30.40"
+          ]
+        }
+      },
+      {
+        "targetMs": 5000,
+        "elapsedMs": 5004,
+        "visualMs": 5050,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.40",
+          "rows": [
+            "£30.40"
+          ]
+        }
+      },
+      {
+        "targetMs": 5500,
+        "elapsedMs": 5503,
+        "visualMs": 5553,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.51",
+          "rows": [
+            "£30.51"
+          ]
+        }
+      }
+    ]
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/",
+    "status": 200,
+    "consoleErrors": [],
+    "badResponses": [],
+    "entry": {
+      "target": 3820.51,
+      "park": null,
+      "clip": {
+        "x": 128,
+        "y": 200,
+        "width": 1312,
+        "height": 498,
+        "rect": {
+          "top": 201,
+          "height": 497
+        }
+      },
+      "anchor": {
+        "top": 4021.97,
+        "left": 128,
+        "height": 497.08,
+        "width": 1312,
+        "display": "grid",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "anchorMode": "entry",
+      "campaign": null,
+      "boundary": null
+    },
+    "signals": {
+      "roundChangeMs": 4504,
+      "cacChangeMs": 1003,
+      "initialChip": "Trying this round: Home and lifestyle",
+      "initialCac": "£32.10"
+    },
+    "frames": [
+      {
+        "targetMs": 0,
+        "elapsedMs": 2,
+        "visualMs": 48,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "light",
+          "groundT": "0",
+          "inkT": "0",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 250,
+        "elapsedMs": 253,
+        "visualMs": 344,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "light",
+          "groundT": "0",
+          "inkT": "0",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 500,
+        "elapsedMs": 526,
+        "visualMs": 581,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": true,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 750,
+        "elapsedMs": 753,
+        "visualMs": 782,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.10",
+          "rows": [
+            "£32.10"
+          ]
+        }
+      },
+      {
+        "targetMs": 1000,
+        "elapsedMs": 1003,
+        "visualMs": 1041,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.21",
+          "rows": [
+            "£32.21"
+          ]
+        }
+      },
+      {
+        "targetMs": 1500,
+        "elapsedMs": 1503,
+        "visualMs": 1534,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.21",
+          "rows": [
+            "£32.21"
+          ]
+        }
+      },
+      {
+        "targetMs": 2000,
+        "elapsedMs": 2003,
+        "visualMs": 2047,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.29",
+          "rows": [
+            "£32.29"
+          ]
+        }
+      },
+      {
+        "targetMs": 2500,
+        "elapsedMs": 2502,
+        "visualMs": 2529,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.29",
+          "rows": [
+            "£32.29"
+          ]
+        }
+      },
+      {
+        "targetMs": 3000,
+        "elapsedMs": 3003,
+        "visualMs": 3043,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.08",
+          "rows": [
+            "£32.08"
+          ]
+        }
+      },
+      {
+        "targetMs": 3500,
+        "elapsedMs": 3503,
+        "visualMs": 3530,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£32.08",
+          "rows": [
+            "£32.08"
+          ]
+        }
+      },
+      {
+        "targetMs": 4000,
+        "elapsedMs": 4002,
+        "visualMs": 4028,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: Home and lifestyle",
+          "chips": [
+            "Trying this round: Home and lifestyle",
+            "New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£31.77",
+          "rows": [
+            "£31.77"
+          ]
+        }
+      },
+      {
+        "targetMs": 4500,
+        "elapsedMs": 4504,
+        "visualMs": 4559,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.40",
+          "rows": [
+            "£30.40"
+          ]
+        }
+      },
+      {
+        "targetMs": 5000,
+        "elapsedMs": 5003,
+        "visualMs": 5054,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.40",
+          "rows": [
+            "£30.40"
+          ]
+        }
+      },
+      {
+        "targetMs": 5500,
+        "elapsedMs": 5503,
+        "visualMs": 5538,
+        "markers": {
+          "scrollY": 3821,
+          "tone": "dark",
+          "groundT": "1",
+          "inkT": "1",
+          "moving": false,
+          "bodyBg": "rgba(0, 0, 0, 0)",
+          "activeChip": "Trying this round: New parents",
+          "chips": [
+            "Home and lifestyle",
+            "Trying this round: New parents",
+            "Gift givers",
+            "Plant lovers",
+            "Dinner hosts"
+          ],
+          "cac": "£30.51",
+          "rows": [
+            "£30.51"
+          ]
+        }
+      }
+    ]
+  },
+  "alignment": {
+    "basis": "midpoint of pre/post screenshot timestamps",
+    "windowMs": 400,
+    "pairs": [
+      {
+        "localTargetMs": 0,
+        "localElapsedMs": 2,
+        "localVisualMs": 48,
+        "candidates": 2,
+        "bestSourceTargetMs": 0,
+        "bestSourceElapsedMs": 3,
+        "deltaMs": -9,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 250,
+        "localElapsedMs": 253,
+        "localVisualMs": 344,
+        "candidates": 3,
+        "bestSourceTargetMs": 250,
+        "bestSourceElapsedMs": 253,
+        "deltaMs": 34,
+        "diffPct": 5.23
+      },
+      {
+        "localTargetMs": 500,
+        "localElapsedMs": 526,
+        "localVisualMs": 581,
+        "candidates": 3,
+        "bestSourceTargetMs": 500,
+        "bestSourceElapsedMs": 508,
+        "deltaMs": 6,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 750,
+        "localElapsedMs": 753,
+        "localVisualMs": 782,
+        "candidates": 3,
+        "bestSourceTargetMs": 500,
+        "bestSourceElapsedMs": 508,
+        "deltaMs": -195,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 1000,
+        "localElapsedMs": 1003,
+        "localVisualMs": 1041,
+        "candidates": 2,
+        "bestSourceTargetMs": 1000,
+        "bestSourceElapsedMs": 1002,
+        "deltaMs": -7,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 1500,
+        "localElapsedMs": 1503,
+        "localVisualMs": 1534,
+        "candidates": 1,
+        "bestSourceTargetMs": 1500,
+        "bestSourceElapsedMs": 1503,
+        "deltaMs": 2,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 2000,
+        "localElapsedMs": 2003,
+        "localVisualMs": 2047,
+        "candidates": 1,
+        "bestSourceTargetMs": 2000,
+        "bestSourceElapsedMs": 2003,
+        "deltaMs": -8,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 2500,
+        "localElapsedMs": 2502,
+        "localVisualMs": 2529,
+        "candidates": 1,
+        "bestSourceTargetMs": 2500,
+        "bestSourceElapsedMs": 2504,
+        "deltaMs": 7,
+        "diffPct": 0.05
+      },
+      {
+        "localTargetMs": 3000,
+        "localElapsedMs": 3003,
+        "localVisualMs": 3043,
+        "candidates": 1,
+        "bestSourceTargetMs": 3000,
+        "bestSourceElapsedMs": 3002,
+        "deltaMs": 16,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 3500,
+        "localElapsedMs": 3503,
+        "localVisualMs": 3530,
+        "candidates": 1,
+        "bestSourceTargetMs": 3500,
+        "bestSourceElapsedMs": 3503,
+        "deltaMs": 14,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 4000,
+        "localElapsedMs": 4002,
+        "localVisualMs": 4028,
+        "candidates": 1,
+        "bestSourceTargetMs": 4000,
+        "bestSourceElapsedMs": 4005,
+        "deltaMs": 16,
+        "diffPct": 0.07
+      },
+      {
+        "localTargetMs": 4500,
+        "localElapsedMs": 4504,
+        "localVisualMs": 4559,
+        "candidates": 1,
+        "bestSourceTargetMs": 4500,
+        "bestSourceElapsedMs": 4503,
+        "deltaMs": -17,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 5000,
+        "localElapsedMs": 5003,
+        "localVisualMs": 5054,
+        "candidates": 1,
+        "bestSourceTargetMs": 5000,
+        "bestSourceElapsedMs": 5004,
+        "deltaMs": -4,
+        "diffPct": 0.06
+      },
+      {
+        "localTargetMs": 5500,
+        "localElapsedMs": 5503,
+        "localVisualMs": 5538,
+        "candidates": 1,
+        "bestSourceTargetMs": 5500,
+        "bestSourceElapsedMs": 5503,
+        "deltaMs": 15,
+        "diffPct": 0.06
+      }
+    ],
+    "best": {
+      "diffPct": 0.05,
+      "deltaMs": 7,
+      "sourceTargetMs": 2500,
+      "sourceElapsedMs": 2504,
+      "localTargetMs": 2500,
+      "localElapsedMs": 2502,
+      "width": 1312,
+      "height": 498
+    },
+    "medianBestDiffPct": 0.06,
+    "meanBestDiffPct": 0.43
+  },
+  "timingDivergence": [
+    {
+      "signal": "roundChangeMs",
+      "sourceMs": 4503,
+      "localMs": 4504,
+      "deltaMs": 1
+    },
+    {
+      "signal": "cacChangeMs",
+      "sourceMs": 1002,
+      "localMs": 1003,
+      "deltaMs": 1
+    }
+  ],
+  "artifacts": {
+    "bestDiff": "docs/verify/motion/experiments-1568-best.png",
+    "bestSource": "docs/verify/motion/experiments-1568-best-source.png",
+    "bestLocal": "docs/verify/motion/experiments-1568-best-local.png",
+    "json": "docs/verify/motion/experiments-1568.json"
+  },
+  "timings": {
+    "totalMs": 12902
+  }
+}

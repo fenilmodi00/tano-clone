@@ -1,0 +1,205 @@
+{
+  "route": "/guides/creator-programme-cost",
+  "family": "guide",
+  "meta": {
+    "title": "What Does a Creator Programme Cost? | Tano",
+    "description": "What a creator programme costs in-house, through an agency or with a managed partner, and why the gap widens as you grow from 100 to 1,000 creators."
+  },
+  "hero": {
+    "title": "What does a creator programme cost?",
+    "paragraphs": [
+      "Your head of marketing has asked you what next year's creator programme will cost. You've got an agency quote, a software price and a vague sense that you could just hire someone instead, and none of them line up.",
+      "The honest answer is that it depends on how big you want the programme to get. At 100 creators, the main options cost broadly the same kind of money. At 1,000 creators or more, they really don't. This guide shows why, with real numbers, so you can choose the option that fits where you're heading rather than where you are today."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What am I actually paying for?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Every creator programme has two kinds of cost. The first is <strong>running the programme</strong>: the people and systems it takes to find creators, brief them, ship product, follow up, pay them and report on results. You pay for it as salaries plus software, an agency retainer, or a partner's fee. The second is <strong>paying your creators</strong>, in commission, fees and the product you send them."
+        },
+        {
+          "type": "prose",
+          "html": "Creator pay looks broadly similar whichever option you choose. The cost of running the programme is what changes most, and it's usually the bigger of the two."
+        }
+      ]
+    },
+    {
+      "heading": "What do creators usually get paid?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Most creator programmes are set up so that both sides win when sales come in. Creators earn a share of the sales they bring in through their link or code, so the ones who sell the most earn the most, and you pay most when the programme is working. Tapfiliate, an affiliate software company, suggests 10 to 15% on first-time orders as a starting point for DTC brands."
+        },
+        {
+          "type": "prose",
+          "html": "On top of commission, there are two other costs:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Product. Free product is how most smaller creators are paid in kind, and not every gift turns into a post. Influencer Marketing Hub, citing Statusphere, puts typical post rates for product seeding at 20% to 40%, so as a rule of thumb, plan on sending product to three to five creators for every post you want.",
+            "Fixed fees. Bigger creators, with more audience and more leverage, usually want a fee per post as well as, or instead of, commission. Most programmes keep fees for a small number of creators and run everyone else on product and commission."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "How do costs change as my programme grows?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "As a rough rule of thumb, one person working full-time can look after about 100 creators properly. Our guide to <a href=\"/guides/scale-creator-programme-without-headcount\">scaling a creator programme without adding headcount</a> shows where that number comes from. Put that next to published salaries and prices, and the monthly cost of running the programme looks like the table below. For in-house teams and agencies, this is the cost you pay whatever the programme brings in. What you pay creators in commission comes on top, and rises and falls with the sales they drive."
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>Rough monthly cost of running the programme in the US, before creator pay</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Option",
+            "Around 100 creators",
+            "As you grow"
+          ],
+          "rows": [
+            [
+              "In-house with software",
+              "About $10,000: one person full-time, plus software from a few hundred dollars",
+              "Rises in step with creators: roughly one more person for every extra 100 creators, plus someone to manage the team"
+            ],
+            [
+              "Agency",
+              "$3,000 to $20,000+: from entry-level to premium, hands-on agencies",
+              "Rises with the work, often faster: the agency has to staff every extra creator"
+            ],
+            [
+              "Managed partner",
+              "From 100 seeded products a month with Tano, typically about $3,000. Paid on results: a fee per live post and 20% of the sales creators drive",
+              "Rises much more slowly: systems do the repeat work, so extra creators don't need extra people, and the fee per post falls as volume grows"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "At 100 creators, all three options sit in a similar range, and the choice is mostly about control and how much you want to do yourself. The difference shows as you grow. In-house and agency costs both rise roughly in step with the number of creators, because someone has to do the extra work by hand. A managed partner's costs rise more slowly, so the bigger your programme gets, the more that difference matters."
+        },
+        {
+          "type": "prose",
+          "html": "The in-house figure uses Glassdoor's US average salary for an influencer marketing manager ($121,405 a year), and the agency figures come from <a href=\"https://favikon.com/blog/how-much-influencer-marketing-agencies-charge\" target=\"_blank\" rel=\"noreferrer noopener\">Favikon's guide to agency pricing</a> and agencies' own published pricing."
+        }
+      ]
+    },
+    {
+      "heading": "Which option makes sense at my size?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Up to around 100 creators, doing it in-house works well. One capable person with good software can handle the workload, you keep full control, and you learn what works for your brand first-hand. An entry-level agency can do the same job if you'd rather not hire, though agencies that coach creators and give more hands-on input charge well above the entry price."
+        },
+        {
+          "type": "prose",
+          "html": "Once you start ramping up, the hard part is people. Hiring several experienced creator managers is slow and expensive, keeping standards consistent across a growing team is harder still, and every new hire needs training and cover. At that point most brands are better off bringing in an agency or a managed partner rather than building the team themselves."
+        },
+        {
+          "type": "prose",
+          "html": "Whichever way you go, ask three questions before you sign: what the price covers (how many creators, who does outreach and follow-up, whether shipping and creator payments are included), how the price changes if you double the number of creators, and how long the contract runs. Terms vary a lot: some software runs month to month, while some providers ask for a 12-month minimum."
+        }
+      ]
+    },
+    {
+      "heading": "Why does a managed partner get more efficient as I grow?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Because most of the work in a creator programme repeats for every creator, and a managed partner does that repeat work with systems rather than people. In-house or at a traditional agency, every creator adds manual work: an outreach thread, a shipment to chase, a payment to check, a usage licence to track. With one person looking after about 100 creators, 1,000 creators needs a team of ten or more, so the cost rises in step with the programme."
+        },
+        {
+          "type": "prose",
+          "html": "A managed partner runs those steps in one system, the same way for every creator, so the 900th creator costs a fraction of what the 9th did, and its people spend their time on decisions rather than admin. That matters for quality as well as cost:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "People spend their time where judgement matters. Instead of chasing admin, strategists spend it on choosing the right creators, coaching them and deciding what to do next.",
+            "Standards stay the same at scale. Every creator goes through the same process, so quality doesn't depend on which of ten new hires happens to be looking after them.",
+            "What works spreads. When one creator's post performs, the lesson can be passed to similar creators straight away, rather than staying in one person's head.",
+            "Nothing falls through the cracks. Follow-ups, payments and usage expiry dates are tracked for every creator, not just the ones someone remembers."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "That's how a managed partner can give each creator the kind of attention you'd expect from a good agency, without the cost rising in line with the number of creators."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano's pricing work?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a>, the creator advertising platform for consumer brands, is paid on results. Tano earns when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. It carries the upfront risk alongside you: Tano finds, onboards and sends product to every creator, and if a creator doesn't post, Tano doesn't get paid. So it only does well when it picks creators who genuinely fit your brand and make content that sells. The fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000. There are no seats and no annual contract. Product, shipping, creator commissions, milestone rewards, content rights and media spend sit in your budget alongside it. Tano handles the payouts for you, so creators are paid correctly and on time for what they deliver. Every month, Tano reports CAC, ROAS and CPA with the Tano fee included, so you can see what each new customer actually cost."
+        },
+        {
+          "type": "prose",
+          "html": "The saving comes from the repeat work. Tano's AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and in-house strategists make the calls that matter. In one programme, Tano's agents sourced and validated 2,358 creators using two hours of the brand's influencer team's time, against an estimated 754 hours to do it by hand. With Tano, <a href=\"/case-studies/skin-and-me\">Skin+Me</a> grew creator-driven sign-ups and revenue 3.5x, with acquisition costs one-third of those in its other channels."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Outgrown your influencer agency?",
+            "Influencer agency or platform"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your creator programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

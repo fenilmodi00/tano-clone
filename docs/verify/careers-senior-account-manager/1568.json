@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-11-27T09:41:36.876Z",
+  "route": "/careers/senior-account-manager",
+  "slug": "careers-senior-account-manager",
+  "width": 1568,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/careers/senior-account-manager",
+    "status": 200,
+    "title": "Senior Account Manager, Creator Growth | Tano Careers | Tano",
+    "height": 7904,
+    "width": 1568,
+    "viewportWidth": 1568,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 3,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Senior Account Manager, Creator Growth",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5611,
+      "navMs": 5562
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/careers/senior-account-manager",
+    "status": 200,
+    "title": "Senior Account Manager, Creator Growth | Tano Careers | Tano",
+    "height": 7904,
+    "width": 1568,
+    "viewportWidth": 1568,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 3,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Senior Account Manager, Creator Growth",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 5613,
+      "navMs": 5569
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/careers-senior-account-manager/1568-diff.png"
+  },
+  "timings": {
+    "totalMs": 6701,
+    "sourceMs": 5611,
+    "localMs": 5613
+  },
+  "diff": {
+    "overallPct": 0.69,
+    "staticPct": 0.77,
+    "motionPct": 0.26,
+    "videoPct": null,
+    "staticPixels": 10035200,
+    "staticDiffPixels": 77258,
+    "motionPixels": 686784,
+    "motionDiffPixels": 1783,
+    "videoPixels": 0,
+    "videoDiffPixels": 0,
+    "sourceSize": {
+      "width": 1568,
+      "height": 7904
+    },
+    "localSize": {
+      "width": 1568,
+      "height": 7904
+    },
+    "commonSize": {
+      "width": 1568,
+      "height": 7904
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.hp-band.hp-rp-hero",
+        "kind": "motion",
+        "source": {
+          "top": 4,
+          "height": 438.19,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 438.19,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.26,
+        "pixels": 686784,
+        "diffPixels": 1783,
+        "innerPct": null
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band",
+        "kind": "static",
+        "source": {
+          "top": 442.19,
+          "height": 6073.94,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 442.19,
+          "height": 6073.94,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0.57,
+        "pixels": 9524032,
+        "diffPixels": 53990,
+        "innerPct": 0.57
+      },
+      {
+        "index": 2,
+        "label": "section.hp-band",
+        "kind": "static",
+        "source": {
+          "top": 6516.13,
+          "height": 325.8,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 6516.13,
+          "height": 325.8,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 4.55,
+        "pixels": 511168,
+        "diffPixels": 23268,
+        "innerPct": 4.55
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 2,
+        "label": "section.hp-band",
+        "kind": "static",
+        "pct": 4.55,
+        "innerPct": 4.55,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band",
+        "kind": "static",
+        "pct": 0.57,
+        "innerPct": 0.57,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 0,
+        "label": "section.hp-band.hp-rp-hero",
+        "kind": "motion",
+        "pct": 0.26,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 7904,
+      "local": 7904,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 1568,
+      "local": 1568,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 3,
+      "local": 3,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

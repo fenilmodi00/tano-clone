@@ -1,0 +1,269 @@
+{
+  "route": "/guides/meta-muse-nano-micro-creators",
+  "family": "guide",
+  "meta": {
+    "title": "Do Follower Counts Matter on Meta Muse? A Guide for DTC Brands | Tano",
+    "description": "What early evidence says about creator size on Meta Muse, and why DTC brands still gain from a broad base of nano and micro creators."
+  },
+  "hero": {
+    "title": "Do follower counts matter on Meta Muse? A guide for DTC brands",
+    "paragraphs": [
+      "At many DTC brands, the head of growth wants one big name for the spring launch; the creator lead wants hundreds of customers posting every month. Now that Meta has launched Muse in the UK, the case leans towards the creator lead: Muse is not known to look at follower count, and a useful review from a creator with 100 followers can earn the save a shopper comes back to. Build breadth: many real creators answering many buying questions.",
+      "Evidence is still limited, and this page shows where it is thin."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Does Muse look at follower count?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Not on anything Meta or independent testers have published. Muse starts from the shopper: its confirmed link to Instagram is the posts they have saved, and it builds picks from what it knows about them and Meta's catalog, as <a href=\"/guides/meta-muse-creator-marketing\">what Meta Muse means for creator marketing</a> explains. Meta AI's shopping mode, on the same Muse Spark model, surfaces ideas from creators each person already follows; the creator's follower count does not come into it."
+        }
+      ]
+    },
+    {
+      "heading": "What does early real-world evidence say about creator size?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "It does not yet show that smaller creators win. In <a href=\"https://www.a16z.news/p/welcome-to-the-b2a-economy-how-agents\" target=\"_blank\" rel=\"noreferrer noopener\">the a16z and The Prompting Company study</a> of four agents, including Muse, the agents converged on the same default picks and Muse rarely cited reviews. That rewards being the obvious fit for a need more than having many voices."
+        },
+        {
+          "type": "prose",
+          "html": "So a long tail winning on Muse is a hypothesis, but the practical case for breadth stands without it: many creators answer more buying questions, earn more saves and reach more follow lists, which Muse and Meta AI's shopping mode can draw on."
+        }
+      ]
+    },
+    {
+      "heading": "Why can a small creator's post count as much as a big one?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A saved post is a shopper's own record of what helped them, and Muse works from saves. A creator with 100 followers can earn that save by answering the exact question a shopper had."
+        },
+        {
+          "type": "prose",
+          "html": "Instagram says \"people want to hear from trusted voices before they buy\", and Meta said in March 2026 that more than half of consumers report creators influence their shopping decisions."
+        },
+        {
+          "type": "prose",
+          "html": "Follow lists matter too: 100 small creators reach 100 different sets of followers. Choose on product fit, specific opinions and real questions in the comments; audience size comes second."
+        }
+      ]
+    },
+    {
+      "heading": "Why does a long tail of creators reach more shoppers?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A long tail answers more buying questions for more audiences, every month. One big creator moment usually answers one question once."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "More buying questions answered. One creator with oily skin shows how a serum sits under make-up. Another uses it after the gym. A third shows how long a bottle lasts. Each gives a different shopper a reason to save.",
+            "Posts build up. Repeat posters add to the archive every round."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "<a href=\"/guides/win-on-meta-muse-with-creators\">How to change your creator programme for Meta Muse</a> shows what monthly seeding adds up to over a year."
+        }
+      ]
+    },
+    {
+      "heading": "How does one big creator moment compare with an always-on long tail?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "A big moment buys fast reach around one date; a long tail builds an archive that keeps answering new questions. Typical patterns:"
+        },
+        {
+          "type": "table",
+          "head": [
+            "",
+            "One big creator moment",
+            "Always-on long tail"
+          ],
+          "rows": [
+            [
+              "Reach in week one",
+              "High, from one post",
+              "Lower; first posts usually 7 to 10 days after outreach"
+            ],
+            [
+              "Buying questions answered",
+              "Usually one",
+              "Many, one per creator's use"
+            ],
+            [
+              "How long posts keep working",
+              "Peaks around posting day",
+              "New posts monthly, plus repeat posts"
+            ],
+            [
+              "Cost model",
+              "Usually a fixed fee up front",
+              "Product, commission and performance rewards"
+            ],
+            [
+              "Risk",
+              "One creator, one post",
+              "Spread out; volume needs managing"
+            ],
+            [
+              "Posts a shopper can save",
+              "One creator's, seen mostly by their followers",
+              "Many, across audiences and questions"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "When are big creators still worth paying for?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "For a launch, a product drop or a cultural conversation, big creators give reach within days. Their posts can be saved too, so the question is weighting: money for moments goes to a handful of names, money for coverage to the long tail."
+        }
+      ]
+    },
+    {
+      "heading": "Are brands that already seed creators at scale ahead on Muse?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "They are better placed. Brands seeding hundreds of creators a month, each with a code, already have an archive of saveable posts. A post saved weeks ago can still be there when the shopper is ready to buy, if they have connected Instagram to Muse. Brands starting now can catch up, but an archive takes months to build."
+        },
+        {
+          "type": "prose",
+          "html": "Codes earn their place on today's sales. If your UGC only runs as paid ads, start with <a href=\"/guides/ugc-ai-shopping-agents\">whether your UGC programme is ready for AI shopping agents</a>. Track gifts sent, live posts, saves and sales, and keep the creators who post useful content."
+        },
+        {
+          "type": "prose",
+          "html": "At volume, disclosure is a real risk: the ASA treats gifted content as advertising; <a href=\"/guides/meta-muse-creators-brief\">what to tell your creators about Meta Muse</a> has the rules and a brief to paste."
+        }
+      ]
+    },
+    {
+      "heading": "Where do we think this is heading?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "One development is worth watching, though not yet proven in the data: fit to a question will count for more than account size."
+        },
+        {
+          "type": "prose",
+          "html": "If <a href=\"/guides/meta-muse-creator-marketing\">Meta's plans to credit creators</a> reach Muse, a post could reach shoppers who never saw it in their feed, and the closest answer to a shopper's question could matter more than the account behind it. A deep bench of small creators would then pay off most."
+        }
+      ]
+    },
+    {
+      "heading": "How does Tano build always-on programmes with small creators?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Tano is the creator advertising platform for consumer brands. We work with small creators, roughly 5k to 100k followers, at a volume no brand team could manage by hand. Our AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and our in-house strategists make the calls that matter. Our monthly loop builds the long tail:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Find fit. You approve or reject our first two calibration lists; after that, your ongoing time is small.",
+            "Onboard as your brand. We contact every creator as your brand; each agrees terms and gets a code and link.",
+            "Seed and coach. Creators post their own way; we detect posts automatically and coach each creator one to one on posting and hooks.",
+            "Keep and amplify. We keep the creators who post and surface the top posts by performance and fit for you to run as ads."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Our programmes have no ceiling on scale, are performance-based and begin with a four-month pilot. In a single month, we discovered and onboarded four of <a href=\"/case-studies/skin-and-me\">Skin+Me's</a> five top-performing creators."
+        },
+        {
+          "type": "prose",
+          "html": "We're paid on results. We earn when a creator's post goes live, and most of all through a 20% share of the sales those creators drive. We carry the upfront risk alongside you: we find, onboard and send product to every creator, and if a creator doesn't post, we don't get paid. So we only do well when we pick creators who genuinely fit your brand and make content that sells. Our fee per post falls as your programme grows, so the bigger you scale, the better the value. Programmes start at 100 seeded products a month, which typically comes to about $3,000."
+        }
+      ]
+    },
+    {
+      "heading": "What other questions do buyers ask?",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Do nano influencers work for AI shopping?",
+              "body": "They can: a nano creator's honest review can earn the save Muse works from. Judge them on the saves, posts and sales you can measure today."
+            },
+            {
+              "title": "How many creators do I need?",
+              "body": "Enough to cover your main buying questions every month. Start with a fixed number of new creators a month and expand where posts and sales hold up."
+            },
+            {
+              "title": "What counts as a nano or micro creator?",
+              "body": "Definitions vary by agency and platform; we work with small creators of roughly 5k to 100k followers. Whatever the band, choose on fit before follower count."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "4 / 5",
+              "label": "Top performers in a single month"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "AI doesn’t replace the human; it unlocks the human.",
+          "name": "Katie McKane",
+          "role": "Influencer Executive · Skin+Me",
+          "image": "/sites/tano/extras/d1fa4792f7de69a819a20a52a0503ce2b20b26d2-320x320.jpg"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do nano influencers work for AI shopping?",
+      "a": "They can: a nano creator's honest review can earn the save Muse works from. Judge them on the saves, posts and sales you can measure today."
+    },
+    {
+      "q": "How many creators do I need?",
+      "a": "Enough to cover your main buying questions every month. Start with a fixed number of new creators a month and expand where posts and sales hold up."
+    },
+    {
+      "q": "What counts as a nano or micro creator?",
+      "a": "Definitions vary by agency and platform; we work with small creators of roughly 5k to 100k followers. Whatever the band, choose on fit before follower count."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Plan a programme of nano and micro creators",
+      "href": "/talk-to-us"
+    }
+  }
+}

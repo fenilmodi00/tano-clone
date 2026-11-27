@@ -1,0 +1,49 @@
+{
+  "route": "/playbooks/content-analysis-framework",
+  "family": "playbook",
+  "meta": {
+    "title": "Free AI Content Analysis Framework | Tano | Tano",
+    "description": "Use Claude Skills and Gemini to analyse your best-performing content in under an hour. Free AI Content Analysis Framework from Tano."
+  },
+  "hero": {
+    "eyebrow": "FREE · AI Content Analysis Framework",
+    "title": "The AI Content Analysis Framework",
+    "paragraphs": [
+      "Use Claude Skills and Gemini to analyse your best-performing content in under an hour."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "AI Content Analysis Framework",
+      "variant": "playbook-gate",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "4 Claude Skill files"
+            },
+            {
+              "title": "Full how-to guide"
+            },
+            {
+              "title": "Gemini prompt template"
+            },
+            {
+              "title": "Signal matrix overview"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "We run this analysis on every Tano campaign.",
+    "body": "30-minute intro, no slides — we'll tell you whether Tano fits.",
+    "cta": {
+      "label": "Book a call",
+      "href": "/talk-to-us"
+    }
+  }
+}

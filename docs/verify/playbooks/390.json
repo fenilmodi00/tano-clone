@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-11-27T09:43:42.062Z",
+  "route": "/playbooks",
+  "slug": "playbooks",
+  "width": 390,
+  "viewportHeight": 900,
+  "scrollY": 0,
+  "source": {
+    "url": "https://www.tano.ai/playbooks",
+    "status": 200,
+    "title": "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    "height": 3594,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 3,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Frameworks for creator-led growth.",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 4474,
+      "navMs": 4363
+    },
+    "heightDelta": 0
+  },
+  "local": {
+    "url": "http://127.0.0.1:3000/playbooks",
+    "status": 200,
+    "title": "Free creator marketing playbooks and AI frameworks | Tano | Tano",
+    "height": 3594,
+    "width": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 900,
+    "scrollY": 0,
+    "groundTone": "dark",
+    "sectionCount": 3,
+    "animations": 8,
+    "missingImages": [],
+    "imageCount": 1,
+    "h1": "Frameworks for creator-led growth.",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "consoleErrors": [
+      "pageerror: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random"
+    ],
+    "badResponses": [],
+    "pausedAnimations": 0,
+    "overlaysRemoved": [],
+    "timings": {
+      "totalMs": 3762,
+      "navMs": 3651
+    }
+  },
+  "artifacts": {
+    "diff": "docs/verify/playbooks/390-diff.png"
+  },
+  "timings": {
+    "totalMs": 4658,
+    "sourceMs": 4474,
+    "localMs": 3762
+  },
+  "diff": {
+    "overallPct": 1.47,
+    "staticPct": 3.02,
+    "motionPct": 0,
+    "videoPct": null,
+    "staticPixels": 511680,
+    "staticDiffPixels": 15445,
+    "motionPixels": 206700,
+    "motionDiffPixels": 0,
+    "videoPixels": 0,
+    "videoDiffPixels": 0,
+    "sourceSize": {
+      "width": 390,
+      "height": 3594
+    },
+    "localSize": {
+      "width": 390,
+      "height": 3594
+    },
+    "commonSize": {
+      "width": 390,
+      "height": 3594
+    },
+    "heightDelta": 0,
+    "widthDelta": 0,
+    "bands": [
+      {
+        "index": 0,
+        "label": "section.wire-legal-hero.wire-resource-hero",
+        "kind": "motion",
+        "source": {
+          "top": 4,
+          "height": 530,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 4,
+          "height": 530,
+          "kind": "motion",
+          "signals": {
+            "domChanged": true,
+            "infiniteAnimations": 3,
+            "runningAnimations": 3,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0,
+        "pixels": 206700,
+        "diffPixels": 0,
+        "innerPct": null
+      },
+      {
+        "index": 1,
+        "label": "section.hp-band.tano",
+        "kind": "static",
+        "source": {
+          "top": 534,
+          "height": 820.23,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 534,
+          "height": 820.23,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 4.83,
+        "pixels": 319800,
+        "diffPixels": 15445,
+        "innerPct": 4.83
+      },
+      {
+        "index": 2,
+        "label": "section.hp-band.tano",
+        "kind": "static",
+        "source": {
+          "top": 1354.23,
+          "height": 492,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "local": {
+          "top": 1354.23,
+          "height": 492,
+          "kind": "static",
+          "signals": {
+            "domChanged": false,
+            "infiniteAnimations": 0,
+            "runningAnimations": 0,
+            "videos": 0,
+            "images": 0
+          }
+        },
+        "delta": {
+          "top": 0,
+          "height": 0
+        },
+        "pct": 0,
+        "pixels": 191880,
+        "diffPixels": 0,
+        "innerPct": 0
+      }
+    ],
+    "worstBands": [
+      {
+        "index": 1,
+        "label": "section.hp-band.tano",
+        "kind": "static",
+        "pct": 4.83,
+        "innerPct": 4.83,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 0,
+        "label": "section.wire-legal-hero.wire-resource-hero",
+        "kind": "motion",
+        "pct": 0,
+        "innerPct": null,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      },
+      {
+        "index": 2,
+        "label": "section.hp-band.tano",
+        "kind": "static",
+        "pct": 0,
+        "innerPct": 0,
+        "delta": {
+          "top": 0,
+          "height": 0
+        }
+      }
+    ]
+  },
+  "geometry": {
+    "documentHeight": {
+      "source": 3594,
+      "local": 3594,
+      "delta": 0
+    },
+    "documentWidth": {
+      "source": 390,
+      "local": 390,
+      "delta": 0
+    },
+    "sectionCount": {
+      "source": 3,
+      "local": 3,
+      "delta": 0
+    },
+    "maxSectionShiftPx": 0
+  },
+  "missingImages": {
+    "source": 0,
+    "local": 0,
+    "delta": 0
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "route": "/guides/meta-creator-marketing-hub",
+  "family": "guide",
+  "meta": {
+    "title": "Meta Creator Marketing Hub: Do You Still Need an Influencer Platform? | Tano",
+    "description": "What Meta's free Creator Marketing Hub does, the two gaps it leaves (TikTok and YouTube, and running the programme), and when you still need a platform."
+  },
+  "hero": {
+    "title": "Meta Creator Marketing Hub: do you still need an influencer platform?",
+    "paragraphs": [
+      "Two months ago, Meta merged Creator Marketplace and the Partnership Ads Hub into one free tool, the Creator Marketing Hub. You can now find creators, message them and run their posts as ads in one place. Your finance team has noticed, and someone asks the obvious question: why are we still paying for an influencer platform?",
+      "The short answer is that the Hub leaves two big gaps. It only covers Meta's own apps, Instagram and Facebook, while much of creator spend goes to YouTube and TikTok. And it handles only part of running a creator programme: finding creators and running their posts as ads, but not paying them, agreeing usage rights, shipping product or tracking affiliate sales. If your programme is small and runs only on Instagram, the Hub may be all you need. Beyond that, you still need something to run the rest."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "What is Meta's Creator Marketing Hub?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "The Creator Marketing Hub is Meta's single tool for working with creators. Meta announced the plan at Cannes Lions in June 2026, as Net Influencer reported, and <a href=\"https://www.marketingdive.com/news/meta-streamlines-creator-brand-tie-ups-with-new-marketing-hub/830593/\" target=\"_blank\" rel=\"noreferrer noopener\">launched it globally in mid-September 2026</a>, at the IAB's first Global Creator Week, with features rolling out through the rest of the year. At Cannes, Meta said more than 5 million Instagram creators can be found there, and Facebook creators are being added for the first time."
+        }
+      ]
+    },
+    {
+      "heading": "What does the Hub do well?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "It covers the Meta side of a creator collaboration well, and there is no fee for the Hub itself. Based on launch coverage in Marketing Dive, Social Media Today and TechWyse, it lets you:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Search for creators with discovery filters, get recommendations based on your campaign objective, and ask a Meta AI assistant to find creators in chat.",
+            "Message creators from inside the Hub, or through Meta's Messaging API if you manage creators in another tool.",
+            "Ask for permission to run a specific post as an ad, with an expiry date on that permission.",
+            "Create a partnership ad from an approved post in one click, with editing tools that remove copyrighted music and stickers."
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Meta reports strong results for the format. It said in December 2025 that adding partnership ads to campaigns delivered 19% lower cost per acquisition and 13% higher click-through rates on average."
+        }
+      ]
+    },
+    {
+      "heading": "Does the Hub cover everywhere my creators post?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "No. The Hub covers Instagram and Facebook. YouTube and TikTok, which it doesn't cover, take a large share of creator budgets. <a href=\"https://www.tubefilter.com/2025/03/19/emarketer-youtube-influencer-marketing-report/amp/\" target=\"_blank\" rel=\"noreferrer noopener\">eMarketer's forecast for 2025</a> put US influencer marketing spend at $10.52 billion, split like this:"
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>US influencer marketing spend by platform, 2025 (eMarketer forecast)</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Platform",
+            "Spend",
+            "Share",
+            "In the Hub?"
+          ],
+          "rows": [
+            [
+              "YouTube",
+              "$3.45bn",
+              "33%",
+              "No"
+            ],
+            [
+              "Instagram",
+              "$3.17bn",
+              "30%",
+              "Yes"
+            ],
+            [
+              "TikTok",
+              "$1.19bn",
+              "11%",
+              "No"
+            ],
+            [
+              "Facebook and all others",
+              "$2.71bn",
+              "26%",
+              "Facebook only"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "YouTube and TikTok alone account for 44% of that spend. If your creators post on either, the Hub can't find them, message them or run their content as ads there. TikTok has its own tools, <a href=\"https://ads.tiktok.com/business/en-US/blog/tiktok-one-creative-platform\" target=\"_blank\" rel=\"noreferrer noopener\">TikTok One</a> and Spark Ads, and YouTube has its own programme, BrandConnect, each with its own permissions and settings."
+        }
+      ]
+    },
+    {
+      "heading": "Which parts of a creator programme does the Hub handle?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Only some of them. The Hub is built around finding creators and turning their posts into ads. Most of the work in between sits outside it:"
+        },
+        {
+          "type": "prose",
+          "html": "<strong><em>What the Hub covers across a creator programme, as reported at launch</em></strong>"
+        },
+        {
+          "type": "table",
+          "head": [
+            "Step",
+            "Meta Creator Marketing Hub",
+            "What you need alongside it"
+          ],
+          "rows": [
+            [
+              "Find creators on Instagram and Facebook",
+              "Yes, with filters and an AI assistant",
+              "Nothing extra"
+            ],
+            [
+              "Message creators",
+              "Yes",
+              "Nothing extra on Meta"
+            ],
+            [
+              "Ship product to creators",
+              "Not announced",
+              "A seeding process or platform"
+            ],
+            [
+              "Agree fees and usage rights",
+              "Partly: ad permission per post on Meta only",
+              "A written agreement covering every channel"
+            ],
+            [
+              "Pay creators",
+              "No",
+              "Your own payouts or a platform"
+            ],
+            [
+              "Affiliate codes and commission",
+              "Partly: finds affiliate posts only",
+              "An affiliate tool"
+            ],
+            [
+              "Run posts as ads",
+              "Yes, on Facebook and Instagram",
+              "Spark Ads for TikTok"
+            ],
+            [
+              "Track when a licence ends",
+              "Partly: Meta permissions only",
+              "A licence record covering every channel"
+            ],
+            [
+              "Find creators on TikTok and YouTube",
+              "No",
+              "TikTok One, YouTube tools or a platform that covers all of them"
+            ]
+          ]
+        },
+        {
+          "type": "prose",
+          "html": "Paying creators is the biggest gap. Meta does not pay creators through the Hub, so fees, commission and payouts are yours to run. Usage rights are the next. TechWyse notes that the Hub does not replace contracts, disclosure rules or your own content review, and a Meta permission covers partnership ads on Meta only. If you want to use a video on your website, in email or on TikTok, you need usage rights agreed with the creator."
+        },
+        {
+          "type": "prose",
+          "html": "One thing to know about Meta permissions: <a href=\"https://help.instagram.com/ipad-app/1159476377787773\" target=\"_blank\" rel=\"noreferrer noopener\">Instagram's help centre</a> says creators can switch off ad permissions at any time. That is a technical setting, not a right to break your deal. If you have agreed a paid licence and kept to it, a creator who switches the permission off early may be breaking that agreement. The ad still stops, though, so your written agreement is your protection, not the platform setting."
+        }
+      ]
+    },
+    {
+      "heading": "What does an influencer platform add now that Meta has the Creator Marketing Hub?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Less on finding creators, and just as much on running the programme. The Hub gives every brand free search across Meta's creators, so access on Instagram and Facebook is no longer much of an edge. But it only covers Meta's apps, so it can't find, message or run ads with creators on TikTok or YouTube, and it leaves out much of the work in between: shipping product, paying creators, agreeing rights across channels, tracking affiliate sales and keeping the good creators coming back. The Hub takes some of the work off your plate and changes where the rest sits. It doesn't replace a platform or partner once your programme runs beyond Instagram or beyond a few dozen creators."
+        },
+        {
+          "type": "prose",
+          "html": "The platforms are adjusting by building on top of Meta's tools. <a href=\"https://www.prnewswire.com/news-releases/shopmy-launches-spotlights-turning-creators-best-performing-content-directly-into-paid-media-302893735.html\" target=\"_blank\" rel=\"noreferrer noopener\">ShopMy launched Spotlights</a> on 30 September 2026, which turns creator content that already drives affiliate sales into partnership ads on Meta and Spark Ads on TikTok, paid through the standard creator commission. Roster launched creator discovery for Instagram in October 2026, built on Meta's own APIs, and hands brands over to Meta to run the ads."
+        }
+      ]
+    },
+    {
+      "heading": "Which do I need?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "If you work with a few dozen creators, mostly on Instagram, and your team has time to handle contracts, payments and product by hand, start with the Hub. It costs nothing to try, and it may be all the tooling you need."
+        },
+        {
+          "type": "prose",
+          "html": "Once your programme runs on TikTok or YouTube as well, or reaches hundreds of creators paid in product and commission, the work the Hub leaves out becomes the bigger job. At that point you need a platform or a partner alongside it, using the Hub for what it does best and running everything else around it."
+        }
+      ]
+    },
+    {
+      "heading": "Where does Tano fit?",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "<a href=\"/\">Tano</a>, the creator advertising platform for consumer brands, runs the parts of a creator programme the Hub leaves out, and uses Meta's own tools for the rest. It works across Instagram, Facebook, TikTok and YouTube. Tano's AI agents run sourcing, outreach, onboarding, seeding, rewarding, amplification and reporting, and in-house strategists make the calls that matter. Tano searches 230 million creators and scores them on how likely they are to post and sell, and clears usage rights before anything runs. It also handles creator payouts for you, paying commission and milestone rewards correctly and on time from your programme budget. Through Tano's Meta integration, creator ads run in your own ad account, tracked per creator, with licence end dates enforced. In Tano's <a href=\"/case-studies/papier\">Papier programme</a>, Partnership Ads grew from about 9% to about 20% of Meta spend, with 22% lower cost per acquisition (£19.66 vs £25.09) and 34% higher return on ad spend."
+        }
+      ]
+    },
+    {
+      "heading": "Related guides",
+      "variant": "prose",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "How to run creator content as ads",
+            "Influencer agency or platform"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Common questions",
+      "variant": "faq",
+      "blocks": [
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Is Meta's Creator Marketing Hub free?",
+              "body": "There's no fee for the Hub itself. You pay for media whenever you run a creator's post as an ad, and you pay creators whatever you agree with them."
+            },
+            {
+              "title": "Does the Creator Marketing Hub pay creators?",
+              "body": "No. You agree fees with creators and pay them yourself, outside Meta."
+            },
+            {
+              "title": "Can a creator switch off a partnership ad?",
+              "body": "Yes. Creators can switch off ad permissions in Instagram at any time. If you have agreed a licence, switching it off early may break that agreement, but the ad stops either way."
+            },
+            {
+              "title": "Does the Hub work for TikTok or YouTube?",
+              "body": "No. It only covers Facebook and Instagram. TikTok has its own tools, TikTok One and Spark Ads, and YouTube has BrandConnect."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "In their words.",
+      "variant": "quote",
+      "blocks": [
+        {
+          "type": "stats",
+          "items": [
+            {
+              "value": "22%",
+              "label": "Lower CPA on seeded Partnership Ads"
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Our seeded partnership ads are delivering a 22% cheaper CPA and 34% increased ROAS versus our previous partnership ads and also versus in-house ads, they're much more efficient.",
+          "name": "Amirah Hussain",
+          "role": "Senior Paid Social Manager · Papier"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Meta's Creator Marketing Hub free?",
+      "a": "There's no fee for the Hub itself. You pay for media whenever you run a creator's post as an ad, and you pay creators whatever you agree with them."
+    },
+    {
+      "q": "Does the Creator Marketing Hub pay creators?",
+      "a": "No. You agree fees with creators and pay them yourself, outside Meta."
+    },
+    {
+      "q": "Can a creator switch off a partnership ad?",
+      "a": "Yes. Creators can switch off ad permissions in Instagram at any time. If you have agreed a licence, switching it off early may break that agreement, but the ad stops either way."
+    },
+    {
+      "q": "Does the Hub work for TikTok or YouTube?",
+      "a": "No. It only covers Facebook and Instagram. TikTok has its own tools, TikTok One and Spark Ads, and YouTube has BrandConnect."
+    }
+  ],
+  "closing": {
+    "title": "See if Tano fits your programme.",
+    "body": "Share where your creator programme is today. Our strategists will come back with what it would take to run it always-on, with the relationships and content rights staying with your brand.",
+    "cta": {
+      "label": "Talk to us about your creator programme",
+      "href": "/talk-to-us"
+    }
+  }
+}

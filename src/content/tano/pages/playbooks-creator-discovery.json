@@ -1,0 +1,54 @@
+{
+  "route": "/playbooks/creator-discovery",
+  "family": "playbook",
+  "meta": {
+    "title": "Free Creator Discovery Guide | Tano | Tano",
+    "description": "Find the 3–5 creators who drive 80% of revenue. A free guide from Tano with a creator tiering framework, a sourcing checklist and a Bloom & Wild case study."
+  },
+  "hero": {
+    "eyebrow": "Free guide",
+    "title": "The Creator Discovery Guide.",
+    "paragraphs": [
+      "Find the 3–5 creators who drive 80% of revenue — based on 10,000+ creator seedings."
+    ],
+    "actions": []
+  },
+  "sections": [
+    {
+      "heading": "Get free access in seconds.",
+      "eyebrow": "Creator Discovery Guide",
+      "variant": "playbook-gate",
+      "blocks": [
+        {
+          "type": "prose",
+          "html": "Drop your work email and we'll unlock the full guide instantly."
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "6-section guide"
+            },
+            {
+              "title": "Creator tiering framework"
+            },
+            {
+              "title": "Sourcing checklist"
+            },
+            {
+              "title": "Bloom & Wild case study"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "Scale the Number of Creators with AI Agents",
+    "body": "We built Tano's AI agents to run this playbook at 10x the scale - automating the discovery, outreach, and management that used to take weeks.",
+    "cta": {
+      "label": "Book a Call with Tano",
+      "href": "/talk-to-us"
+    }
+  }
+}
