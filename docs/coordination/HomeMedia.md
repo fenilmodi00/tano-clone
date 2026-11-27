@@ -48,6 +48,13 @@ modulo wrap at the copy width, IntersectionObserver start/stop on the strip, and
 focus-hold pause. Measured 130.4 px of travel in 5.0 s (26.1 px/s) and no
 movement while the strip is offscreen.
 
+Pointer drag/throw follows the source `MarkMarquee`: offset tracks the pointer
+after any left-button press, capture is taken past 6 px, release velocity uses
+the 90 ms sample window, and the resulting speed eases back into autoplay. A
+drag past 6 px swallows the next click for 300 ms so a mark's case-study link
+does not fire. The controller is shared, so every capture band on the home and
+use-case routes gets the same behaviour.
+
 ## 2. Case deck
 
 Exact source math implemented in `media-sections.tsx`:

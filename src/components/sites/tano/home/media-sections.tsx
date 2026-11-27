@@ -12,6 +12,9 @@ export const CASE_DECK_WIPE_PX = 240;
 export const CASE_DECK_GHOST_SPAN = 0.6;
 export const MARK_MARQUEE_SPEED = 26;
 export const MARK_MARQUEE_EASE_SECONDS = 0.9;
+const MARK_DRAG_THRESHOLD_PX = 6;
+const MARK_DRAG_SAMPLE_MS = 90;
+const MARK_DRAG_CLICK_GUARD_MS = 300;
 export const BRAND_TAB_INTERVAL_MS = 6000;
 export const BRAND_TAB_FADE_MS = 260;
 export const COPY_FLASH_MS = 1400;
@@ -167,6 +170,11 @@ function mountMarkBands(): Cleanup {
     let speed = MARK_MARQUEE_SPEED;
     let visible = false;
     let held = false;
+    let dragging = false;
+    let pointerId: number | null = null;
+    let dragDistance = 0;
+    let samples: Array<{ x: number; t: number }> = [];
+    let clickGuard: { timer: number; swallow: (event: MouseEvent) => void } | null = null;
 
     const writeTransform = () => {
       if (!(copyWidth > 0)) return;
@@ -199,10 +207,12 @@ function mountMarkBands(): Cleanup {
       const dt = Math.min(Math.max((now - lastFrame) / 1000, 0), 0.05);
       lastFrame = now;
 
-      if (reduced.matches) speed = 0;
-      const targetSpeed = !visible || held || reduced.matches ? 0 : MARK_MARQUEE_SPEED;
-      speed += (targetSpeed - speed) * (1 - Math.exp(-dt / MARK_MARQUEE_EASE_SECONDS));
-      offset += speed * dt;
+      if (!dragging) {
+        if (reduced.matches) speed = 0;
+        const targetSpeed = !visible || held || reduced.matches ? 0 : MARK_MARQUEE_SPEED;
+        speed += (targetSpeed - speed) * (1 - Math.exp(-dt / MARK_MARQUEE_EASE_SECONDS));
+        offset += speed * dt;
+      }
       writeTransform();
       raf = window.requestAnimationFrame(tick);
     };
@@ -233,6 +243,62 @@ function mountMarkBands(): Cleanup {
       else if (visible) start();
     };
 
+    const onPointerDown = (event: PointerEvent) => {
+      if (event.button !== 0) return;
+      dragging = true;
+      pointerId = event.pointerId;
+      dragDistance = 0;
+      samples = [{ x: event.clientX, t: event.timeStamp }];
+      speed = 0;
+    };
+
+    const onPointerMove = (event: PointerEvent) => {
+      if (!dragging || event.pointerId !== pointerId) return;
+      const previous = samples[samples.length - 1];
+      if (!previous) return;
+      const dx = event.clientX - previous.x;
+      offset -= dx;
+      dragDistance += Math.abs(dx);
+      if (dragDistance > MARK_DRAG_THRESHOLD_PX && !strip.hasPointerCapture(event.pointerId)) {
+        strip.setPointerCapture(event.pointerId);
+      }
+      samples.push({ x: event.clientX, t: event.timeStamp });
+      samples = samples.filter((sample) => event.timeStamp - sample.t <= MARK_DRAG_SAMPLE_MS);
+      if (samples.length === 0) samples = [{ x: event.clientX, t: event.timeStamp }];
+      writeTransform();
+    };
+
+    /** Source MarkMarquee: release velocity from the last 90ms of pointer samples. */
+    const finishDrag = (event: PointerEvent) => {
+      if (!dragging || event.pointerId !== pointerId) return;
+      dragging = false;
+      const first = samples[0];
+      const seconds = first ? (event.timeStamp - first.t) / 1000 : 0;
+      if (first && seconds > 0) speed = -(event.clientX - first.x) / seconds;
+      if (pointerId !== null && strip.hasPointerCapture(pointerId)) {
+        strip.releasePointerCapture(pointerId);
+      }
+      pointerId = null;
+      if (dragDistance <= MARK_DRAG_THRESHOLD_PX) return;
+      // A drag must not activate the mark's case-study link.
+      if (clickGuard) {
+        window.clearTimeout(clickGuard.timer);
+        window.removeEventListener("click", clickGuard.swallow, { capture: true });
+      }
+      const swallow = (click: MouseEvent) => {
+        click.preventDefault();
+        click.stopPropagation();
+      };
+      const timer = window.setTimeout(() => {
+        window.removeEventListener("click", swallow, { capture: true });
+        if (clickGuard?.swallow === swallow) clickGuard = null;
+      }, MARK_DRAG_CLICK_GUARD_MS);
+      window.addEventListener("click", swallow, { capture: true, once: true });
+      clickGuard = { timer, swallow };
+    };
+
+    const onDragStart = (event: DragEvent) => event.preventDefault();
+
     const io = new IntersectionObserver(([entry]) => {
       visible = entry?.isIntersecting === true;
       if (visible) {
@@ -255,6 +321,11 @@ function mountMarkBands(): Cleanup {
 
     strip.addEventListener("focusin", onFocusIn);
     strip.addEventListener("focusout", onFocusOut);
+    strip.addEventListener("pointerdown", onPointerDown);
+    strip.addEventListener("pointermove", onPointerMove);
+    strip.addEventListener("dragstart", onDragStart);
+    window.addEventListener("pointerup", finishDrag);
+    window.addEventListener("pointercancel", finishDrag);
     reduced.addEventListener("change", onReducedChange);
 
     syncCopies();
@@ -271,6 +342,16 @@ function mountMarkBands(): Cleanup {
       ro.disconnect();
       strip.removeEventListener("focusin", onFocusIn);
       strip.removeEventListener("focusout", onFocusOut);
+      strip.removeEventListener("pointerdown", onPointerDown);
+      strip.removeEventListener("pointermove", onPointerMove);
+      strip.removeEventListener("dragstart", onDragStart);
+      window.removeEventListener("pointerup", finishDrag);
+      window.removeEventListener("pointercancel", finishDrag);
+      if (clickGuard) {
+        window.clearTimeout(clickGuard.timer);
+        window.removeEventListener("click", clickGuard.swallow, { capture: true });
+        clickGuard = null;
+      }
       reduced.removeEventListener("change", onReducedChange);
       for (const copy of generated) copy.remove();
       generated.clear();

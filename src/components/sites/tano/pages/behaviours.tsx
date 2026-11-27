@@ -434,6 +434,15 @@ function mountAdLoops(cleanups: Cleanup[]): void {
 /* Use-case pitch deck                                                       */
 /* ------------------------------------------------------------------------- */
 
+/**
+ * Source `licence.live.count` (creative-velocity deck): the whitelisted-ads
+ * figure counts 0 → 25 between beats 4.5 and 5.6 at 1200ms per beat.
+ */
+const LICENCE_COUNT = { value: 25, from: 4.5, to: 5.6 } as const;
+const LICENCE_SCENE = "velocity-licence";
+
+type CountState = { elapsed: number; frame: number; last: number };
+
 function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
   const segButtons = Array.from(root.querySelectorAll<HTMLButtonElement>(".hp-steps-seg-button"));
   const slides = Array.from(root.querySelectorAll<HTMLElement>(".hp-pp-slide"));
@@ -494,6 +503,62 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
     return match?.[1] ?? "";
   };
 
+  const countStates = new WeakMap<HTMLElement, CountState>();
+
+  const stopCount = (state: CountState) => {
+    if (state.frame) window.cancelAnimationFrame(state.frame);
+    state.frame = 0;
+  };
+
+  const resetCount = (scene: HTMLElement) => {
+    if (scene.dataset.scene !== LICENCE_SCENE) return;
+    const figure = scene.querySelector<HTMLElement>(".hp-pp-figure");
+    if (!figure) return;
+    const state = countStates.get(figure);
+    if (state) {
+      stopCount(state);
+      state.elapsed = 0;
+    }
+    figure.textContent = "0";
+  };
+
+  const syncCount = (scene: HTMLElement, playing: boolean) => {
+    if (scene.dataset.scene !== LICENCE_SCENE) return;
+    const figure = scene.querySelector<HTMLElement>(".hp-pp-figure");
+    if (!figure) return;
+    let state = countStates.get(figure);
+    if (!state) {
+      state = { elapsed: 0, frame: 0, last: 0 };
+      countStates.set(figure, state);
+    }
+    const current = state;
+    if (reduced) {
+      stopCount(current);
+      figure.textContent = Math.round(LICENCE_COUNT.value).toLocaleString("en-GB");
+      return;
+    }
+    if (!playing) {
+      stopCount(current);
+      return;
+    }
+    if (current.frame) return;
+    const beat = Number.parseFloat(getComputedStyle(scene).getPropertyValue("--beat")) || 1200;
+    const delay = LICENCE_COUNT.from * beat;
+    const duration = (LICENCE_COUNT.to - LICENCE_COUNT.from) * beat;
+    if (current.elapsed >= delay + duration) return;
+    current.last = performance.now();
+    const step = (now: number) => {
+      current.elapsed += now - current.last;
+      current.last = now;
+      const progress = Math.min(Math.max((current.elapsed - delay) / duration, 0), 1);
+      figure.textContent = Math.round(
+        LICENCE_COUNT.value * (1 - (1 - progress) ** 3),
+      ).toLocaleString("en-GB");
+      current.frame = progress < 1 ? window.requestAnimationFrame(step) : 0;
+    };
+    current.frame = window.requestAnimationFrame(step);
+  };
+
   const swapStage = (direction: number) => {
     if (!frameHtmls.length || !frameHtmls[index]) return;
     if (renderedIndex === index) return;
@@ -544,9 +609,12 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
           animation.currentTime = 0;
         }
         void scene.offsetWidth;
+        resetCount(scene);
       }
-      if (!leaving && running()) scene.setAttribute("data-running", "true");
+      const playing = !leaving && running();
+      if (playing) scene.setAttribute("data-running", "true");
       else scene.removeAttribute("data-running");
+      syncCount(scene, playing);
     }
   };
 
@@ -708,6 +776,11 @@ function setupPitchDeck(root: HTMLElement, cleanups: Cleanup[]): void {
   cleanups.push(() => {
     disposed = true;
     if (timer) window.clearTimeout(timer);
+    for (const scene of Array.from(root.querySelectorAll<HTMLElement>(".hp-pp-scene"))) {
+      const figure = scene.querySelector<HTMLElement>(".hp-pp-figure");
+      const state = figure ? countStates.get(figure) : undefined;
+      if (state) stopCount(state);
+    }
     observer.disconnect();
     reducedMedia.removeEventListener("change", onReduced);
     for (const remove of listeners) remove();

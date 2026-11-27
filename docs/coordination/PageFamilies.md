@@ -93,36 +93,29 @@ Per-section heights also matched on all routes (no diff rows in the audit;
   time survives pause; auto-advance, prev/next, segment selection, play/pause,
   `data-state`, `data-live`, `--hp-steps-active`, polite live region, fill
   restart and reduced-motion behaviour match source. Home deck is skipped
-  (`#loop-title`) and remains HomeInfo's.
+  (`#loop-title`) and remains HomeInfo's. The creative-velocity licence scene's
+  `.hp-pp-figure` mirrors source `Count`: 0 → 25 between beats 4.5 and 5.6 at
+  the scene's 1200 ms beat with cubic ease-out; pause keeps elapsed time, scene
+  replay resets to 0, and reduced motion shows 25.
 
 ## Remaining diffs (explicit)
 
-1. **Use-case pitch-deck stage scenes (2–5).** The live stage swaps
-   `velocity-onboard`, `velocity-recommend`, `velocity-invite`,
-   `velocity-licence` (and `revenue-attribute`, `revenue-coach`,
-   `revenue-measure`). The SSR replica only contains scene 1 for each route;
-   the other scene payloads reference images absent from `public/`
-   (`/brand/ochre/comp-giftbox.glass.jpg`, `/brand/creators/bloom.jpg`,
-   `/brand/creators/neom.jpg`). Porting them would add runtime assets outside
-   this workstream's file ownership, so the stage frame remains scene 1 while
-   copy/segments advance. Selector: `.hp-pp-stage > .hp-pp-frame >
-   .hp-pp-scene[data-scene]`.
-2. **Brand stat count-up.** `.hp-brand-stat-digits` starts at `0` in SSR and
+1. **Brand stat count-up.** `.hp-brand-stat-digits` starts at `0` in SSR and
    the target is only in the CMS payload; DOM has no target attribute. On
    multi-brand compare pages the second card's stat is injected by HomeInfo's
    `BRAND_CARDS_GZ`; the initial card remains `0%` until that owner wires the
    1500 ms/260 ms counter. Selector: `.hp-brand-stat-digits` /
    `.hp-brand-figure`.
-3. **Compare “notes”.** There is no `.hp-table-note`/`.hp-table-info` node in
+2. **Compare “notes”.** There is no `.hp-table-note`/`.hp-table-info` node in
    any compare capture (only the home comparison has notes, owned by
    HomeInfo). Nothing implemented.
-4. **Webinar media.** `/webinars` source renders no `<video>`, `<img>` or
+3. **Webinar media.** `/webinars` source renders no `<video>`, `<img>` or
    player; the page is copy + rail. No media behaviour exists to port.
-5. **Brand tab duplication risk (peer).** Both `use-home-info.ts` (setupBrands)
+4. **Brand tab duplication risk (peer).** Both `use-home-info.ts` (setupBrands)
    and `home/media-sections.tsx` (mountBrandTabs) attach brand-tab timers and
    click handlers to every `.hp-brand-bar`. They agree on fills/quote swaps but
    both run; this workstream deliberately did not add a third handler.
-6. **`rv-word` count.** Local runtime splits h3/h4 too (e.g. `/guides` 153 vs
+5. **`rv-word` count.** Local runtime splits h3/h4 too (e.g. `/guides` 153 vs
    17 words), and `data-rv-split` is `""` vs live `"true"`. This belongs to
    `runtime.tsx`/`use-reveal.ts`, outside PageFamilies.
 
