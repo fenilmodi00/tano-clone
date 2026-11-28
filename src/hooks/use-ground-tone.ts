@@ -1,15 +1,16 @@
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { clamp, onScrollRaf, prefersReducedMotion } from "@/lib/motion";
 
 /**
  * Source GroundShift (`0ef8lriq_goox.js:63198`).
  *
- * Dark bands are the visible `[data-ground-dark]` elements. The tone is sampled
- * at 45% of the viewport; it is dark while that line sits inside any band. The
- * change is covered by the fixed `.wire-ground-veil`: its opacity rises to .5,
- * the ground variables snap to the new tone behind it, and it fades out again.
- * Without an animatable veil the variables themselves tween instead.
+ * Dark bands are the visible `[data-ground-dark]` elements. The route's first
+ * declared band owns the first paint; after that the tone is sampled at 45% of
+ * the viewport while the visitor scrolls. The change is covered by the fixed
+ * `.wire-ground-veil`: its opacity rises to .5, the ground variables snap to
+ * the new tone behind it, and it fades out again. Without an animatable veil
+ * the variables themselves tween instead.
  */
 
 export type GroundTone = "dark" | "light";
@@ -78,6 +79,24 @@ function collectBands(): Band[] {
     });
 }
 
+/**
+ * The tone for the first paint. The route's first declared band wins, so a
+ * short dark hero can never be overridden by the 45% line falling below it.
+ * A route with no declared band (the full-screen contact sheet) keeps the
+ * source's sampled tone.
+ */
+function resolveTopTone(): GroundTone {
+  const main = document.querySelector<HTMLElement>("main");
+  if (!main || !main.firstElementChild) return "dark";
+  const first = main.querySelector<HTMLElement>("[data-ground], [data-ground-dark]");
+  if (first) {
+    if (first.hasAttribute("data-ground-dark") || first.dataset.ground === "dark") return "dark";
+    if (first.dataset.ground === "light") return "light";
+  }
+  const line = TONE_LINE * window.innerHeight;
+  return collectBands().some((band) => line >= band.top && line < band.bottom) ? "dark" : "light";
+}
+
 function isVisible(element: Element, width: number, height: number): boolean {
   const rect = element.getBoundingClientRect();
   return (
@@ -93,6 +112,21 @@ function hasOwnText(element: Element): boolean {
 
 export function useGroundTone(): (() => void) | void {
   const pathname = usePathname();
+
+  // The route's first declared band owns the first paint. Layout effects run
+  // before the browser paints the committed page, so a navigation from a light
+  // band never flashes the new page light before the passive effect measures it.
+  useLayoutEffect(() => {
+    if (typeof window === "undefined") return;
+    const html = document.documentElement;
+    const tone = resolveTopTone();
+    const value = tone === "dark" ? 1 : 0;
+    html.style.setProperty("--ground-t", value.toFixed(3));
+    html.style.setProperty("--ink-t", value.toFixed(3));
+    html.dataset.groundTone = tone;
+    html.removeAttribute(GROUND_MOVING_ATTR);
+    html.removeAttribute(GROUND_SWAP_ATTR);
+  }, [pathname]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -111,6 +145,7 @@ export function useGroundTone(): (() => void) | void {
     let veilAnimation: Animation | null = null;
     let nearElements: HTMLElement[] = [];
     let createdVeil = false;
+    let userScrolled = false;
 
     const writeValues = (ground: number, ink: number) => {
       html.style.setProperty("--ground-t", ground.toFixed(3));
@@ -266,11 +301,15 @@ export function useGroundTone(): (() => void) | void {
 
     const resolveTone = (): GroundTone => {
       if (override) return override;
+      if (window.scrollY <= 0) return resolveTopTone();
       const line = window.scrollY + TONE_LINE * window.innerHeight;
       return bands.some((band) => line >= band.top && line < band.bottom) ? "dark" : "light";
     };
 
     const evaluate = (force = false) => {
+      // The route's first paint is owned by resolveTopTone until the visitor
+      // actually scrolls; layout shifts below the fold must not flip it.
+      if (!force && !userScrolled) return;
       const dark = resolveTone() === "dark";
       if (!force && dark === resolvedDark) return;
       resolvedDark = dark;
@@ -280,7 +319,7 @@ export function useGroundTone(): (() => void) | void {
     // First application is always a snap: the page must never fade in from
     // an arbitrary previous tone (or from the SSR default).
     bands = collectBands();
-    const initial = resolveTone();
+    const initial = resolveTopTone();
     resolvedDark = initial === "dark";
     snap(initial);
     readyFrame = window.requestAnimationFrame(() => {
@@ -288,7 +327,10 @@ export function useGroundTone(): (() => void) | void {
       html.setAttribute(GROUND_READY_ATTR, "");
     });
 
-    const stopScroll = onScrollRaf(() => evaluate());
+    const stopScroll = onScrollRaf(() => {
+      if (window.scrollY > 0) userScrolled = true;
+      evaluate();
+    });
 
     const remeasure = () => {
       bands = collectBands();
@@ -300,8 +342,9 @@ export function useGroundTone(): (() => void) | void {
 
     const onReducedChange = () => {
       if (!reducedQuery.matches) return;
-      resolvedDark = resolveTone() === "dark";
-      snap(resolvedDark ? "dark" : "light");
+      const next = userScrolled ? resolveTone() : resolveTopTone();
+      resolvedDark = next === "dark";
+      snap(next);
     };
     reducedQuery.addEventListener("change", onReducedChange);
 
@@ -321,7 +364,7 @@ export function useGroundTone(): (() => void) | void {
       clearGroundTone() {
         override = null;
         bands = collectBands();
-        evaluate();
+        evaluate(true);
       },
       refresh() {
         remeasure();

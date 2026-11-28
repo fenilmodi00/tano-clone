@@ -177,6 +177,10 @@ would break the delegated runtime rather than remove duplication.
     while the Cloudflare plugin writes `.cloudflare/output/`. See `docs/CLOUDFLARE.md`.
 13. Page effects stay inside the page subtree (`PageEffects`). Do not move them back to the root
     layout: they must run after the page's server markup hydrates, not against DOM React owns.
+14. A route's first paint uses its first declared ground band (`resolveTopTone` in
+    `use-ground-tone.ts`), not the 45% scroll line. The layout effect must run before paint and the
+    scroll-derived tone must stay gated until the visitor scrolls; otherwise a short hero flashes
+    light on every client navigation. `npm run verify:nav-tone` guards this.
 
 ## 6. Modern web notes
 

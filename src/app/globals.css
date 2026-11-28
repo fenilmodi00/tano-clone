@@ -19,6 +19,18 @@ body {
   padding: 0;
 }
 
+/* The ported stylesheet falls back to the light page colour; keep first paint dark. */
+html {
+  color-scheme: dark;
+  background-color: #0e0d0c;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  html {
+    background-color: color-mix(in oklab, #fbf9f5, #0e0d0c calc(var(--ground-t) * 100%));
+  }
+}
+
 body {
   background-color: transparent;
   color: var(--text-primary, #fbf9f5);
@@ -90,11 +102,18 @@ body:has(.wire-contact) .wire-footer {
   position: fixed;
   inset: 0;
   z-index: 9998;
-  background: var(--page-primary, #fbf9f5);
+  background: #0e0d0c;
 }
 
 html:not([data-page-ready]) .wire-boot-mask {
   display: block;
+}
+
+@media (scripting: none) {
+  .wire-boot-mask,
+  html:not([data-page-ready]) .wire-boot-mask {
+    display: none;
+  }
 }
 
 .wire-boot-bar {
