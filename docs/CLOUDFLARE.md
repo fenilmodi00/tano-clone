@@ -73,6 +73,28 @@ intercepts video paths, slices the requested bytes, and returns `206` with
 `Accept-Ranges`, `Content-Length` and `Content-Range`. Every other request is
 handed to `vinext/server/fetch-handler`.
 
+## Performance
+
+Measured on the production deployment: TTFB 228 ms, FCP 508 ms, LCP 712 ms,
+zstd-compressed HTML, and `x-vinext-cache: HIT` on all 44 prerendered routes.
+The client build is 280 KB of JavaScript and 61 KB of CSS, both
+brotli-compressed.
+
+- `/_next/static/*`, `/sites/tano/fonts/*`, `/sites/tano/images/*`,
+  `/brand-mark/*` and the immutable captured images under
+  `/sites/tano/extras/*` (`jpg`, `jpeg`, `png`, `webp`, `avif`) skip the Worker
+  and are served directly by Workers Static Assets. `public/_headers` carries
+  their cache policies.
+- HTML, RSC payloads and the remaining route output stay worker-first so the
+  `next.config.ts` security headers and the `staticAssetsAdapter()` snapshot
+  still apply.
+- Video under `/sites/tano/extras/*` (`mp4`, `webm`, `mov`) stays worker-first
+  so `worker/index.js` can answer `Range` requests with `206`.
+
+The `runWorkerFirst` negative rules cover only files with a fixed cache policy
+in `public/_headers`, so an extras image request is answered by Workers Static
+Assets and never reaches the Worker.
+
 ## Environment
 
 - `NEXT_PUBLIC_SITE_URL` is inlined at build time and feeds canonical links,

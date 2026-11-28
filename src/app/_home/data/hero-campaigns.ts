@@ -23,6 +23,7 @@ export type HeroCampaign = {
   };
 };
 
+/* Backdrops are 1800px-wide WebP derivatives; filenames keep the capture hash and source size. */
 export const HERO_CAMPAIGNS: readonly HeroCampaign[] = [
   {
     key: "bloom-and-wild",
@@ -32,7 +33,7 @@ export const HERO_CAMPAIGNS: readonly HeroCampaign[] = [
     brand: {
       name: "Bloom & Wild",
       logo: "/sites/tano/images/tano-2.png",
-      backdrop: "/sites/tano/extras/a3d1b3db514b259a7324888f4fd0cc771420a787-2400x1800.jpg",
+      backdrop: "/sites/tano/extras/a3d1b3db514b259a7324888f4fd0cc771420a787-2400x1800.webp",
     },
     product: {
       name: "The Sunshine Bouquet",
@@ -86,7 +87,7 @@ export const HERO_CAMPAIGNS: readonly HeroCampaign[] = [
     brand: {
       name: "NEOM",
       logo: "/sites/tano/images/tano.png",
-      backdrop: "/sites/tano/extras/8ccb7003ec4dd5506b0fd00e99fae9993a4fe5df-2400x1129.jpg",
+      backdrop: "/sites/tano/extras/8ccb7003ec4dd5506b0fd00e99fae9993a4fe5df-2400x1129.webp",
     },
     product: {
       name: "Real Luxury Candle",
@@ -140,7 +141,7 @@ export const HERO_CAMPAIGNS: readonly HeroCampaign[] = [
     brand: {
       name: "Peachies",
       logo: "/sites/tano/images/tano-6.png",
-      backdrop: "/sites/tano/extras/309deb1245e498dedec108a396ca4782335ed9a7-2400x1255.jpg",
+      backdrop: "/sites/tano/extras/309deb1245e498dedec108a396ca4782335ed9a7-2400x1255.webp",
     },
     product: {
       name: "Bamboo Nappies",
@@ -194,7 +195,7 @@ export const HERO_CAMPAIGNS: readonly HeroCampaign[] = [
     brand: {
       name: "Papier",
       logo: "/sites/tano/images/tano-8.png",
-      backdrop: "/sites/tano/extras/bcc31f72cb9d46d8e854c157938892b3511a8897-2400x1350.jpg",
+      backdrop: "/sites/tano/extras/bcc31f72cb9d46d8e854c157938892b3511a8897-2400x1350.webp",
     },
     product: {
       name: "Wellness Journal",

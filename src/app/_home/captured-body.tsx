@@ -62,7 +62,8 @@ export function CapturedBody() {
                         bottom: 0,
                         color: "transparent",
                       }}
-                      src="/sites/tano/extras/a3d1b3db514b259a7324888f4fd0cc771420a787-2400x1800.jpg"
+                      src="/sites/tano/extras/a3d1b3db514b259a7324888f4fd0cc771420a787-2400x1800.webp"
+                      fetchPriority="high"
                       className="hp-camp-backdrop"
                       data-live="true"
                     />
@@ -82,7 +83,9 @@ export function CapturedBody() {
                         bottom: 0,
                         color: "transparent",
                       }}
-                      src="/sites/tano/extras/8ccb7003ec4dd5506b0fd00e99fae9993a4fe5df-2400x1129.jpg"
+                      src="/sites/tano/extras/8ccb7003ec4dd5506b0fd00e99fae9993a4fe5df-2400x1129.webp"
+                      loading="lazy"
+                      fetchPriority="low"
                       className="hp-camp-backdrop"
                       data-live="false"
                     />

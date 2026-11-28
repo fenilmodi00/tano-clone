@@ -232,6 +232,7 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     const image = document.createElement("img");
     image.alt = "";
     image.decoding = "async";
+    image.fetchPriority = "low";
     image.className = "hp-camp-backdrop";
     image.style.cssText = FILL_STYLE;
     image.src = campaign.brand.backdrop;
@@ -255,7 +256,11 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     ensureBackdrop(next);
     for (const [key, picture] of backdrops) {
       const image = picture.querySelector<HTMLImageElement>(".hp-camp-backdrop");
-      if (image) image.dataset.live = key === current.key ? "true" : "false";
+      const live = key === current.key;
+      if (image && image.dataset.live !== String(live)) {
+        image.dataset.live = String(live);
+        image.fetchPriority = live ? "high" : "low";
+      }
     }
     // Keep the fade as the last child so it stays above every backdrop.
     panel.append(fade);
@@ -383,7 +388,13 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
 
   /* ---------------------------------------------------------------- videos */
 
+  /* Film bytes stay off the critical path: no load or play until idle. */
+  let filmsReady = false;
+  let filmTimer: number | null = null;
+  let filmIdle: number | null = null;
+
   function playVideo(video: HTMLVideoElement) {
+    if (!filmsReady) return;
     // Scenes ship with preload="none" so first paint fetches no film bytes.
     // Only an active, visible reel raises the hint; the networkState guard
     // keeps repeated syncs from restarting a load that is already in flight.
@@ -395,7 +406,26 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     }
   }
 
+  function unlockFilms() {
+    if (filmsReady) return;
+    filmsReady = true;
+    if (filmTimer !== null) {
+      window.clearTimeout(filmTimer);
+      filmTimer = null;
+    }
+    if (filmIdle !== null) {
+      window.cancelIdleCallback(filmIdle);
+      filmIdle = null;
+    }
+    syncVideos();
+  }
+
+  const onFilmLoad = () => {
+    filmTimer = window.setTimeout(unlockFilms, 500);
+  };
+
   function syncVideos() {
+    if (!filmsReady) return;
     for (const video of camp.querySelectorAll<HTMLVideoElement>("video")) {
       if (videoVisible.get(video) === true && !paused) playVideo(video);
       else video.pause();
@@ -534,14 +564,18 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
     const index = buttons.indexOf(button);
     if (index < 0) return;
     event.preventDefault();
+    unlockFilms();
     activate(index);
   };
 
-  // The shared runtime autoplays every page video once on mount; a paused or
-  // offscreen campaign must stay frozen even when another controller plays it.
+  // The shared runtime autoplays every page video once on mount; keep the film
+  // frozen until its idle unlock and while the reel is paused or offscreen.
   const onPlay = (event: Event) => {
     const target = event.target;
-    if (target instanceof HTMLVideoElement && (paused || videoVisible.get(target) !== true)) {
+    if (
+      target instanceof HTMLVideoElement &&
+      (!filmsReady || paused || videoVisible.get(target) !== true)
+    ) {
       target.pause();
     }
   };
@@ -594,10 +628,24 @@ export function mountHeroCampaign(root: HTMLElement): () => void {
   track?.addEventListener("click", onClick);
   camp.addEventListener("play", onPlay, true);
 
+  /* Defer film bytes: first idle slot (bounded) or half a second after load. */
+  if (typeof window.requestIdleCallback === "function") {
+    filmIdle = window.requestIdleCallback(unlockFilms, { timeout: 1200 });
+  } else if (document.readyState === "complete") {
+    filmTimer = window.setTimeout(unlockFilms, 500);
+  } else {
+    window.addEventListener("load", onFilmLoad, { once: true });
+  }
+
   function destroy() {
     if (destroyed) return;
     destroyed = true;
     stopTimer(false);
+    if (filmTimer !== null) window.clearTimeout(filmTimer);
+    filmTimer = null;
+    if (filmIdle !== null) window.cancelIdleCallback(filmIdle);
+    filmIdle = null;
+    window.removeEventListener("load", onFilmLoad);
     if (leavingTimer !== null) window.clearTimeout(leavingTimer);
     leavingTimer = null;
     visibilityObserver.disconnect();
