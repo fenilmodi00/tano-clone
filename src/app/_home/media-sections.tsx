@@ -233,41 +233,6 @@ function mountCaseDecks(): Cleanup {
 }
 
 /* ------------------------------------------------------------------------- */
-/* Closing cards                                                             */
-/* ------------------------------------------------------------------------- */
-
-function mountClosingCards(): Cleanup {
-  const cards = Array.from(document.querySelectorAll<HTMLElement>(".hp-closing-cards"));
-  const cleanups: Cleanup[] = [];
-
-  for (const container of cards) {
-    const seenObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) container.setAttribute("data-seen", "true");
-      },
-      { rootMargin: "0px 0px -40% 0px", threshold: 0 },
-    );
-    const inviewObserver = new IntersectionObserver(
-      ([entry]) => {
-        container.setAttribute("data-inview", entry?.isIntersecting ? "true" : "false");
-      },
-      { rootMargin: "200px 0px" },
-    );
-    seenObserver.observe(container);
-    inviewObserver.observe(container);
-
-    cleanups.push(() => {
-      seenObserver.disconnect();
-      inviewObserver.disconnect();
-    });
-  }
-
-  return () => {
-    for (const cleanup of cleanups.reverse()) cleanup();
-  };
-}
-
-/* ------------------------------------------------------------------------- */
 /* Tracking copy buttons                                                     */
 /* ------------------------------------------------------------------------- */
 
@@ -321,7 +286,7 @@ function mountCopyButtons(): Cleanup {
 }
 
 export function mountHomeMediaSections(): Cleanup {
-  const cleanups: Cleanup[] = [mountCaseDecks(), mountClosingCards(), mountCopyButtons()];
+  const cleanups: Cleanup[] = [mountCaseDecks(), mountCopyButtons()];
 
   return () => {
     for (const cleanup of cleanups.reverse()) cleanup();

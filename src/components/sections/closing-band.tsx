@@ -2,6 +2,7 @@ import { useId } from "react";
 import type { CSSProperties } from "react";
 
 import { ButtonLink } from "@/components/ui/button";
+import { ClosingCardDeck } from "./closing-card-deck";
 
 export type ClosingBandProps = {
   lines: readonly string[];
@@ -37,7 +38,7 @@ export function ClosingBand({ lines, body, cta }: ClosingBandProps) {
       data-padding="xl"
     >
       <div className="hp-container hp-closing">
-        <div aria-hidden="true" className="hp-closing-cards">
+        <ClosingCardDeck>
           <div className="hp-camp-card" data-slot="send">
             <div className="hp-camp-brief">
               <span className="hp-camp-chips">
@@ -304,7 +305,7 @@ export function ClosingBand({ lines, body, cta }: ClosingBandProps) {
               </span>
             </div>
           </div>
-        </div>
+        </ClosingCardDeck>
         <div className="hp-closing-copy">
           <h2 className="hp-closing-title tano-display-sm" id="closing-title">
             {lines.map((line) => (
