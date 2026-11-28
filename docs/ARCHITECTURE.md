@@ -40,7 +40,7 @@ removed or restructured, and the remaining route-migration path.
 - Production shell: security headers, explicit cache policy per asset class, build-time env,
   font preloads, no-JS reveal fallback, static-output assertion, CI runtime job.
 - Shared components: `Button`/`ButtonLink` (50 call sites), `FaqRow` (14),
-  `ReelCard` (235).
+  `ReelCard` (235), `LogoBand` (5).
 - `PlaybookTemplate` data-driven template for five routes; the five generated playbook replicas
   were deleted.
 - 44 replicated bodies reformatted from one-line files to readable, linted TSX; all internal
@@ -111,6 +111,10 @@ Extracted (keep using):
 - `PlaybookTemplate` — data-driven playbook detail template; five routes at 0% static diff.
 - `ReelCard` — poster, film label, brand mark, optional CTA; runtime selects `data-front` and
   hydrates the clip.
+- `LogoBand` — caption + typed `LogoMark[]` + ground; renders two SSR copies and mounts a small
+  client island for drag, offscreen pause, reduced motion and the `max(2, ceil(strip/copy) + 1)`
+  copy math. Used by home (brands + featured), for-creators, news, creative-velocity and
+  drive-revenue.
 
 Candidates, in reuse order:
 
@@ -118,7 +122,6 @@ Candidates, in reuse order:
 | ----------------- | ---: | ------------------------------------------------------------------------------------- |
 | `hp-band-heading` |   92 | 4 variants (actions, swipe cue); prop API is straightforward.                         |
 | `hp-prose-row`    |  131 | 2 variants; blocks can be ReactNode for now.                                          |
-| `wire-cases-mark` |  108 | 3 variants (category/read link/hue); outer element alternates link/span.              |
 | `hp-stat-bar`     |  162 | self-closing chart SVG with many per-instance data values; needs a typed stats model. |
 | `wire-brand-word` |  444 | too small to be worth a component boundary.                                           |
 

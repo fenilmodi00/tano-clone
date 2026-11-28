@@ -7,8 +7,8 @@ local page, the live page, or the reduced-motion runs.
 
 | File | Role |
 |---|---|
-| `src/components/sites/tano/content/home-marks.ts` | Typed capture of the live `.wire-cases-mark` set: name, local mask, aspect, optical scale, hue, category, case-study link, band caption. |
-| `src/components/sites/tano/home/media-sections.tsx` | DOM controllers: mark marquee, case deck geometry, brand tabs, closing-card reveal, tracking copy. |
+| `src/components/media/brand-marks.ts` | Shared logo-band capture: name, local mask, aspect, optical scale, hue, category, case-study link, band captions. |
+| `src/components/media/logo-band.tsx` | Server-rendered `.hp-logo-band` shell plus its per-band marquee island. |
 | `src/components/sites/tano/motion/use-home-media.ts` | `useEffect` entry point called by `SiteRuntime`; returns the cleanup. |
 | `src/styles/home-media.css` | `data-copied` feedback and reduced-motion copy transition. |
 | `docs/coordination/HomeMedia.md` | This report. |
@@ -158,8 +158,9 @@ all four cards at opacity 1.
 
 ## Contracts
 
-- `HOME_MARK_BANDS`, `HOME_FEATURED_MARKS`, `findHomeMarkBand(caption)` from
-  `content/home-marks.ts`.
+- `BRAND_MARKS`, `FEATURED_MARKS`, their band captions and `LogoMark` from
+  `src/components/media/brand-marks.ts`; `LogoBand` from
+  `src/components/media/logo-band.tsx`.
 - `mountHomeMediaSections(): () => void` from `home/media-sections.tsx`.
 - `useHomeMedia()` from `motion/use-home-media.ts`; already invoked once by
   `SiteRuntime`.

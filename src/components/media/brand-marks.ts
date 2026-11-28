@@ -1,20 +1,18 @@
 /**
- * Owner: HomeMedia. Captured from the live home page at 1568x900.
+ * Shared logo-band data captured from the live site at 1568x900.
  *
- * The live DOM ships two marquee bands. The "As featured in" band contains the
- * five press marks below; at 1568px the source MarkMarquee appends a third copy
- * of that five-mark set (3 x 5 = 15 `.wire-cases-mark` nodes). The replica SSR
- * ships two copies (10); `home/media-sections.tsx` recreates the source copy
- * math from this set, so the same viewport reaches 15 without duplicating data.
+ * Every page that renders a `.hp-logo-band` marquee reads its marks from this
+ * module: `BRAND_MARKS` backs the brand-programme band, `FEATURED_MARKS` backs
+ * the press band. SSR ships two copies of each set; the client island
+ * recreates the source copy math from these arrays, so wider viewports gain
+ * extra copies without duplicating data.
  *
  * All masks resolve to local `/brand-mark/...` files. `aspect` and
  * `opticalScale` are the values the source writes inline as `--mark-aspect`,
  * `--mark-width` and `height: calc(var(--mark-base) * ...)`.
  */
 
-export type HomeMarkBandId = "brands" | "featured";
-
-export interface HomeMark {
+export interface LogoMark {
   id: string;
   name: string;
   /** Local mask asset path. */
@@ -31,13 +29,7 @@ export interface HomeMark {
   href?: string;
 }
 
-export interface HomeMarkBand {
-  id: HomeMarkBandId;
-  caption: string;
-  marks: readonly HomeMark[];
-}
-
-const BRAND_MARKS: readonly HomeMark[] = [
+export const BRAND_MARKS: readonly LogoMark[] = [
   {
     id: "unilever",
     name: "Unilever",
@@ -142,7 +134,7 @@ const BRAND_MARKS: readonly HomeMark[] = [
   },
 ];
 
-const FEATURED_MARKS: readonly HomeMark[] = [
+export const FEATURED_MARKS: readonly LogoMark[] = [
   {
     id: "adage",
     name: "AdAge",
@@ -190,21 +182,9 @@ const FEATURED_MARKS: readonly HomeMark[] = [
   },
 ];
 
-export const HOME_MARK_BANDS: readonly HomeMarkBand[] = [
-  {
-    id: "brands",
-    caption: "The worlds most ambitious consumer brands build their creator programmes with Tano",
-    marks: BRAND_MARKS,
-  },
-  {
-    id: "featured",
-    caption: "As featured in",
-    marks: FEATURED_MARKS,
-  },
-];
+export const BRAND_BAND_CAPTION =
+  "The worlds most ambitious consumer brands build their creator programmes with Tano";
 
-export function findHomeMarkBand(caption: string | null | undefined): HomeMarkBand | undefined {
-  const normalized = (caption ?? "").trim().toLowerCase();
-  if (!normalized) return undefined;
-  return HOME_MARK_BANDS.find((band) => band.caption.trim().toLowerCase() === normalized);
-}
+export const FOR_CREATORS_BAND_CAPTION = "Work with the brands you already love";
+
+export const FEATURED_BAND_CAPTION = "As featured in";
