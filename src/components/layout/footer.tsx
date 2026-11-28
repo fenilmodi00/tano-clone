@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef } from "react";
 import { scrollPageToTop } from "@/hooks/use-route-scroll";
+import { HeroGlow } from "@/components/sections/hero-glow";
 
 const COLUMNS = [
   {
@@ -105,13 +106,7 @@ export function Footer({ glyphSvg }: { glyphSvg: string }) {
         />
         <div className="wire-footer-veil" />
       </div>
-      <div aria-hidden="true" className="hp-hero-glow" data-from="bottom">
-        <div className="hp-hero-glow-light">
-          <div className="wire-spectrum-drift" />
-          <div className="hp-hero-glow-folds" data-layer="a" />
-          <div className="hp-hero-glow-folds" data-layer="b" />
-        </div>
-      </div>
+      <HeroGlow from="bottom" />
       <div className="wire-footer-card">
         <Link
           aria-label="Tano, home"

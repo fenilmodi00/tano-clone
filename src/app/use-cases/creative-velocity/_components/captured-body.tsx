@@ -1,128 +1,37 @@
 import { ButtonLink } from "@/components/ui/button"
 import { LogoBand } from "@/components/media/logo-band";
 import { BRAND_BAND_CAPTION, BRAND_MARKS } from "@/components/media/brand-marks";
+import { BandHeading } from "@/components/sections/band-heading";
+import { ClosingBand } from "@/components/sections/closing-band";
+import { StatDefs, StatGroup, StatItem } from "@/components/sections/stat";
+import { UseCaseHero } from "@/components/sections/use-case-hero";
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">
-      <section
-        aria-labelledby="use-case-title"
-        className="hp-band hp-uc-hero"
-        data-ground="dark"
-        data-ground-dark
-        data-padding="xl"
-      >
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
-        <div className="hp-container hp-uc-hero-field">
-          <div className="hp-uc-hero-copy">
-            <h1 className="hp-title tano-display-md" id="use-case-title">
-              <span className="hp-title-words">Run hundreds of new ads a month,</span>
-              <span className="hp-title-words">with no two the same.</span>
-            </h1>
-            <p className="hp-uc-hero-sub tano-body-para-md">
-              Scale to thousands of organic posts a month, from creators chosen for audience fit and
-              content quality. Your paid team picks the best-performing creative from creators who
-              already know your product.
-            </p>
-            <div className="hp-uc-hero-actions">
-              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
-              <ButtonLink href={"/case-studies"} label={"See the case studies"} variant={"secondary"} icon={false} />
-            </div>
-          </div>
-          <div className="hp-uc-hero-proof">
-            <svg aria-hidden="true" className="hp-stat-defs" focusable="false">
-              <defs>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-svg1"
-                  x1={0}
-                  x2={321}
-                  y1={0}
-                  y2={0}
-                >
-                  <stop offset="8.65%" stopColor="var(--spectrum-yellow)" />
-                  <stop offset="30.77%" stopColor="var(--spectrum-lime)" />
-                  <stop offset="58.65%" stopColor="var(--spectrum-cyan)" />
-                  <stop offset="79.33%" stopColor="var(--spectrum-violet)" />
-                  <stop offset="100%" stopColor="var(--spectrum-magenta)" />
-                </linearGradient>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-warm-svg2"
-                  x1={0}
-                  x2={321}
-                  y1={0}
-                  y2={0}
-                >
-                  <stop offset="0%" stopColor="var(--spectrum-orange)" />
-                  <stop offset="22%" stopColor="var(--spectrum-yellow)" />
-                  <stop offset="44%" stopColor="var(--spectrum-lime)" />
-                  <stop offset="70%" stopColor="var(--spectrum-cyan)" />
-                  <stop offset="100%" stopColor="var(--spectrum-violet)" />
-                </linearGradient>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-up-svg3"
-                  x1={0}
-                  x2={0}
-                  y1={0}
-                  y2={105}
-                >
-                  <stop offset="0%" stopColor="var(--spectrum-violet)" />
-                  <stop offset="100%" stopColor="var(--spectrum-cyan)" />
-                </linearGradient>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="hp-stat-spectrum-ring-svg4"
-                  x1={0}
-                  x2={0}
-                  y1={20}
-                  y2={100}
-                >
-                  <stop offset="0%" stopColor="var(--spectrum-magenta)" />
-                  <stop offset="100%" stopColor="var(--spectrum-violet)" />
-                </linearGradient>
-                <linearGradient
-                  gradientUnits="userSpaceOnUse"
-                  id="hp-stat-falloff-svg5"
-                  x1={0}
-                  x2={0}
-                  y1={10}
-                  y2={105}
-                >
-                  <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
-                  <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
-                </linearGradient>
-                <mask id="hp-stat-falloff-mask-svg6">
-                  <rect fill="url(#hp-stat-falloff-svg5)" height={117} width={321} x={0} y={0} />
-                </mask>
-              </defs>
-            </svg>
-            <div className="hp-stat-group">
-              <p className="hp-stat-group-label tano-body-mono-sm">What brands get:</p>
-              <ul className="hp-stat-row">
-                <li
-                  className="hp-reveal hp-stat"
-                  data-rv-skip
-                  data-shown="false"
-                  style={{ "--hp-reveal-delay": "0ms" }}
-                >
-                  <div className="hp-stat-head">
-                    <svg
-                      aria-hidden="true"
-                      className="hp-stat-graphic"
-                      data-graphic="incliningGraph"
-                      focusable="false"
-                      preserveAspectRatio="xMinYMid meet"
-                      viewBox="0 0 321 117"
-                    >
+      <UseCaseHero
+        titleLines={["Run hundreds of new ads a month,", "with no two the same."]}
+        actions={[
+          { href: "/talk-to-us", label: "Get started" },
+          { href: "/case-studies", label: "See the case studies", variant: "secondary" },
+        ]}
+        paragraphs={[
+          "Scale to thousands of organic posts a month, from creators chosen for audience fit and content quality. Your paid team picks the best-performing creative from creators who already know your product.",
+        ]}
+        proof={
+          <>
+            <StatDefs />
+            <StatGroup label="What brands get:">
+                <StatItem caption="Higher CTR than non-Tano ads at Bloom & Wild." delayMs={0} value="+125%">
+                  <svg
+                    aria-hidden="true"
+                    className="hp-stat-graphic"
+                    data-graphic="incliningGraph"
+                    focusable="false"
+                    preserveAspectRatio="xMinYMid meet"
+                    viewBox="0 0 321 117"
+                  >
                       <path
                         className="hp-stat-area"
                         d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
@@ -140,26 +49,12 @@ export function CapturedBody() {
                         strokeWidth={3}
                       />
                     </svg>
-                  </div>
-                  <span className="hp-stat-value tano-heading-lg">
-                    <span aria-hidden="true">+125%</span>
-                    <span className="wire-visually-hidden">+125%</span>
-                  </span>
-                  <p className="hp-stat-caption hp-sub tano-body-md">
-                    Higher CTR than non-Tano ads at Bloom &amp; Wild.
-                  </p>
-                </li>
-                <li
-                  className="hp-reveal hp-stat"
-                  data-rv-skip
-                  data-shown="false"
-                  style={{ "--hp-reveal-delay": "90ms" }}
-                >
-                  <div className="hp-stat-head">
-                    <svg
-                      aria-hidden="true"
-                      className="hp-stat-graphic"
-                      data-graphic="barGraphDecline"
+                </StatItem>
+                <StatItem caption="Lower CPA than non-Tano ads at Bloom & Wild." delayMs={90} value="−18%">
+                  <svg
+                    aria-hidden="true"
+                    className="hp-stat-graphic"
+                    data-graphic="barGraphDecline"
                       focusable="false"
                       preserveAspectRatio="xMinYMid meet"
                       viewBox="0 0 321 117"
@@ -455,26 +350,12 @@ export function CapturedBody() {
                         />
                       </g>
                     </svg>
-                  </div>
-                  <span className="hp-stat-value tano-heading-lg">
-                    <span aria-hidden="true">−18%</span>
-                    <span className="wire-visually-hidden">−18%</span>
-                  </span>
-                  <p className="hp-stat-caption hp-sub tano-body-md">
-                    Lower CPA than non-Tano ads at Bloom &amp; Wild.
-                  </p>
-                </li>
-                <li
-                  className="hp-reveal hp-stat"
-                  data-rv-skip
-                  data-shown="false"
-                  style={{ "--hp-reveal-delay": "180ms" }}
-                >
-                  <div className="hp-stat-head">
-                    <svg
-                      aria-hidden="true"
-                      className="hp-stat-graphic"
-                      data-graphic="incliningGraph2"
+                </StatItem>
+                <StatItem caption="Team hours saved each month at Bloom & Wild." delayMs={180} value="138+">
+                  <svg
+                    aria-hidden="true"
+                    className="hp-stat-graphic"
+                    data-graphic="incliningGraph2"
                       focusable="false"
                       preserveAspectRatio="xMinYMid meet"
                       viewBox="0 0 321 117"
@@ -496,20 +377,11 @@ export function CapturedBody() {
                         strokeWidth={3}
                       />
                     </svg>
-                  </div>
-                  <span className="hp-stat-value tano-heading-lg">
-                    <span aria-hidden="true">138+</span>
-                    <span className="wire-visually-hidden">138+</span>
-                  </span>
-                  <p className="hp-stat-caption hp-sub tano-body-md">
-                    Team hours saved each month at Bloom &amp; Wild.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+                </StatItem>
+            </StatGroup>
+          </>
+        }
+      />
       <LogoBand caption={BRAND_BAND_CAPTION} marks={BRAND_MARKS} />
       <section
         aria-labelledby="use-case-process-title"
@@ -519,18 +391,13 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-uc-process-field">
-          <div className="hp-band-heading" data-align="centre">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="use-case-process-title">
+          <BandHeading
+            align="centre"
+            subtitle="Your next ads, from creators whose posts already sell. Each is a post a creator chose to make for their own audience, so it reads as theirs, not as an ad. You license the best of them, with every fee and term agreed inside the rules you set."
+            titleId="use-case-process-title"
+          >
                 <span className="hp-title-words">How it works.</span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Your next ads, from creators whose posts already sell. Each is a post a creator
-                chose to make for their own audience, so it reads as theirs, not as an ad. You
-                license the best of them, with every fee and term agreed inside the rules you set.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
           <div className="hp-uc-process-player">
             <div
               className="hp-reveal hp-pp"
@@ -1471,9 +1338,11 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-signals">
-          <div className="hp-band-heading" data-align="centre">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="signals-title">
+          <BandHeading
+            align="centre"
+            subtitle="Every post your creators publish lands in your content library. Tano puts forward the ones worth licensing on two signals, performance and content fit, and checks each one is ready to run on Meta."
+            titleId="signals-title"
+          >
                 <span className="hp-title-words">License the posts</span>
                 <span className="hp-title-group">
                   <span className="hp-title-bind">
@@ -1500,14 +1369,7 @@ export function CapturedBody() {
                   </span>
                   <span className="hp-title-words"> already sell.</span>
                 </span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Every post your creators publish lands in your content library. Tano puts forward
-                the ones worth licensing on two signals, performance and content fit, and checks
-                each one is ready to run on Meta.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
           <ul className="hp-signals-row" style={{ "--signals": 3 }}>
             <li
               className="hp-reveal hp-signal"
@@ -1613,9 +1475,13 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-adloop-band">
-          <div className="hp-band-heading" data-align="centre" data-cue>
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="adloop-title">
+          <BandHeading
+            align="centre"
+            cue
+            cueText="Swipe to follow the ad →"
+            subtitle="Run creator ads from your own Meta account and compare them creator by creator in the Tano Meta app. Tano reads every result and feeds it back, so winning hooks, formats and creators shape your next invitations, recommendations and licences."
+            titleId="adloop-title"
+          >
                 <span className="hp-title-words">Every winning ad</span>
                 <span className="hp-title-group">
                   <span className="hp-title-bind">
@@ -1642,17 +1508,7 @@ export function CapturedBody() {
                   </span>
                   <span className="hp-title-words"> the next one.</span>
                 </span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Run creator ads from your own Meta account and compare them creator by creator in
-                the Tano Meta app. Tano reads every result and feeds it back, so winning hooks,
-                formats and creators shape your next invitations, recommendations and licences.
-              </p>
-            </div>
-            <p aria-hidden="true" className="hp-swipe-cue tano-body-sm">
-              Swipe to follow the ad →
-            </p>
-          </div>
+          </BandHeading>
           <div className="hp-adloop-scroll">
             <div className="hp-adloop">
               <svg aria-hidden="true" className="hp-adloop-path" />
@@ -1804,9 +1660,11 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-uc-steps">
-          <div className="hp-band-heading" data-align="centre">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="programme-title">
+          <BandHeading
+            align="centre"
+            subtitle="Every round of creator content shapes the next. Tano’s agents manage thousands of creator relationships, with your team setting the creative direction and choosing what goes behind paid spend."
+            titleId="programme-title"
+          >
                 <span className="hp-title-words">Recruit, post, amplify. Then do it</span>
                 <span className="hp-title-group">
                   <span className="hp-title-bind">
@@ -1833,14 +1691,7 @@ export function CapturedBody() {
                   </span>
                   <span className="hp-title-words"> and again.</span>
                 </span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Every round of creator content shapes the next. Tano’s agents manage thousands of
-                creator relationships, with your team setting the creative direction and choosing
-                what goes behind paid spend.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
           <div className="hp-uc-steps-track" style={{ "--uc-steps": 4 }}>
             <span aria-hidden="true" className="hp-uc-steps-line" />
             <ol className="hp-uc-steps-row">
@@ -2153,21 +2004,15 @@ export function CapturedBody() {
               </ul>
             </div>
           </div>
-          <div className="hp-band-heading" data-align="start">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="creator-grid-title">
+          <BandHeading
+            align="start"
+            subtitle="One is waiting on a delivery, one has posted and heard nothing back, and one is a single post away from their next reward. Tano holds the whole history of every creator: products, posts, payouts and conversations, so our agents can follow up with support that fits, and every interaction is measured in your reporting."
+            titleId="creator-grid-title"
+          >
                 <span className="hp-title-words">
                   Thousands of creators. Personal support at every stage.
                 </span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                One is waiting on a delivery, one has posted and heard nothing back, and one is a
-                single post away from their next reward. Tano holds the whole history of every
-                creator: products, posts, payouts and conversations, so our agents can follow up
-                with support that fits, and every interaction is measured in your reporting.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
         </div>
       </section>
       <section
@@ -2177,18 +2022,13 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-uc-split">
-          <div className="hp-band-heading" data-align="start">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="licences-title">
+          <BandHeading
+            align="start"
+            subtitle="Pick a post, or take one of Tano’s recommendations. We check ad suitability, agree the fee and usage period, collect the signed licence, and pay the creator. You can see when every licence expires, and renew before it does."
+            titleId="licences-title"
+          >
                 <span className="hp-title-words">Usage rights, cleared before anything runs.</span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Pick a post, or take one of Tano’s recommendations. We check ad suitability, agree
-                the fee and usage period, collect the signed licence, and pay the creator. You can
-                see when every licence expires, and renew before it does.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
           <div
             className="hp-reveal hp-uc-licence-card-wrap"
             data-rv-skip
@@ -2454,9 +2294,11 @@ export function CapturedBody() {
         <div className="hp-container">
           <div className="hp-track">
             <div className="hp-track-copy">
-              <div className="hp-band-heading" data-align="start">
-                <div className="hp-band-heading-copy">
-                  <h2 className="hp-title tano-display-xs" id="tracking-title">
+              <BandHeading
+                align="start"
+                subtitle="Inform every decision with real-time data, all in Tano."
+                titleId="tracking-title"
+              >
                     <span className="hp-title-words">Everything</span>
                     <span className="hp-title-group">
                       <span className="hp-title-bind">
@@ -2483,12 +2325,7 @@ export function CapturedBody() {
                       </span>
                     </span>
                     <span className="hp-title-words">in one place.</span>
-                  </h2>
-                  <p className="hp-sub tano-body-para-md">
-                    Inform every decision with real-time data, all in Tano.
-                  </p>
-                </div>
-              </div>
+              </BandHeading>
               <div className="hp-track-arrows">
                 <button
                   aria-label="Previous"
@@ -2675,9 +2512,12 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-stats hp-uc-metrics">
-          <div className="hp-band-heading" data-align="centre" data-cue>
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="metrics-title">
+          <BandHeading
+            align="centre"
+            cue
+            cueText="Swipe to see every metric →"
+            titleId="metrics-title"
+          >
                 <span className="hp-title-words">Key</span>
                 <span className="hp-title-group">
                   <span className="hp-title-bind">
@@ -2704,80 +2544,7 @@ export function CapturedBody() {
                   </span>
                 </span>
                 <span className="hp-title-words">reported for you monthly.</span>
-              </h2>
-            </div>
-            <p aria-hidden="true" className="hp-swipe-cue tano-body-sm">
-              Swipe to see every metric →
-            </p>
-          </div>
-          <svg aria-hidden="true" className="hp-stat-defs" focusable="false">
-            <defs>
-              <linearGradient
-                gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-svg12"
-                x1={0}
-                x2={321}
-                y1={0}
-                y2={0}
-              >
-                <stop offset="8.65%" stopColor="var(--spectrum-yellow)" />
-                <stop offset="30.77%" stopColor="var(--spectrum-lime)" />
-                <stop offset="58.65%" stopColor="var(--spectrum-cyan)" />
-                <stop offset="79.33%" stopColor="var(--spectrum-violet)" />
-                <stop offset="100%" stopColor="var(--spectrum-magenta)" />
-              </linearGradient>
-              <linearGradient
-                gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-warm-svg13"
-                x1={0}
-                x2={321}
-                y1={0}
-                y2={0}
-              >
-                <stop offset="0%" stopColor="var(--spectrum-orange)" />
-                <stop offset="22%" stopColor="var(--spectrum-yellow)" />
-                <stop offset="44%" stopColor="var(--spectrum-lime)" />
-                <stop offset="70%" stopColor="var(--spectrum-cyan)" />
-                <stop offset="100%" stopColor="var(--spectrum-violet)" />
-              </linearGradient>
-              <linearGradient
-                gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-up-svg14"
-                x1={0}
-                x2={0}
-                y1={0}
-                y2={105}
-              >
-                <stop offset="0%" stopColor="var(--spectrum-violet)" />
-                <stop offset="100%" stopColor="var(--spectrum-cyan)" />
-              </linearGradient>
-              <linearGradient
-                gradientUnits="userSpaceOnUse"
-                id="hp-stat-spectrum-ring-svg15"
-                x1={0}
-                x2={0}
-                y1={20}
-                y2={100}
-              >
-                <stop offset="0%" stopColor="var(--spectrum-magenta)" />
-                <stop offset="100%" stopColor="var(--spectrum-violet)" />
-              </linearGradient>
-              <linearGradient
-                gradientUnits="userSpaceOnUse"
-                id="hp-stat-falloff-svg16"
-                x1={0}
-                x2={0}
-                y1={10}
-                y2={105}
-              >
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
-                <stop offset="100%" stopColor="#ffffff" stopOpacity={0} />
-              </linearGradient>
-              <mask id="hp-stat-falloff-mask-svg17">
-                <rect fill="url(#hp-stat-falloff-svg16)" height={117} width={321} x={0} y={0} />
-              </mask>
-            </defs>
-          </svg>
+          </BandHeading>
           <ul className="hp-stat-row hp-uc-metrics-row">
             <li
               className="hp-reveal hp-stat"
@@ -2794,7 +2561,7 @@ export function CapturedBody() {
                   preserveAspectRatio="xMinYMid meet"
                   viewBox="0 0 321 117"
                 >
-                  <g fill="url(#hp-stat-spectrum-svg12)">
+                  <g fill="url(#hp-stat-spectrum-svg1)">
                     <rect
                       className="hp-stat-bar"
                       height={5}
@@ -3122,7 +2889,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="28.87538820250189"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 1 }}
                   />
@@ -3130,7 +2897,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 2 }}
                   />
@@ -3138,7 +2905,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="92.23803458662553"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 3 }}
                   />
@@ -3146,7 +2913,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="79.16026908252903"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 4 }}
                   />
@@ -3154,7 +2921,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx={58}
                     cy={94}
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 5 }}
                   />
@@ -3162,7 +2929,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="36.83973091747097"
                     cy="87.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 6 }}
                   />
@@ -3170,7 +2937,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="23.761965413374476"
                     cy="69.1246117974981"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 7 }}
                   />
@@ -3178,7 +2945,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="23.76196541337447"
                     cy="46.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 8 }}
                   />
@@ -3186,7 +2953,7 @@ export function CapturedBody() {
                     className="hp-stat-dot"
                     cx="36.83973091747096"
                     cy="28.875388202501895"
-                    fill="url(#hp-stat-spectrum-ring-svg15)"
+                    fill="url(#hp-stat-spectrum-ring-svg4)"
                     r={9}
                     style={{ "--hp-stat-step": 9 }}
                   />
@@ -3217,15 +2984,15 @@ export function CapturedBody() {
                   <path
                     className="hp-stat-area"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6 L 313 105 L 8 105 Z"
-                    fill="url(#hp-stat-spectrum-svg12)"
-                    mask="url(#hp-stat-falloff-mask-svg17)"
+                    fill="url(#hp-stat-spectrum-svg1)"
+                    mask="url(#hp-stat-falloff-mask-svg6)"
                   />
                   <path
                     className="hp-stat-line"
                     d="M 8 93 L 96 85 L 152 70 L 208 44 L 313 6"
                     fill="none"
                     pathLength={1}
-                    stroke="url(#hp-stat-spectrum-svg12)"
+                    stroke="url(#hp-stat-spectrum-svg1)"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={3}
@@ -3245,293 +3012,11 @@ export function CapturedBody() {
           </ul>
         </div>
       </section>
-      <section
-        aria-labelledby="closing-title"
-        className="hp-band hp-closing-band"
-        data-ground="dark"
-        data-ground-dark="open"
-        data-padding="xl"
-      >
-        <div className="hp-container hp-closing">
-          <div aria-hidden="true" className="hp-closing-cards">
-            <div className="hp-camp-card" data-slot="send">
-              <div className="hp-camp-brief">
-                <span className="hp-camp-chips">
-                  <span className="hp-camp-chip" data-picked="true">
-                    Affiliate revenue
-                  </span>
-                  <span className="hp-camp-chip">Share of voice</span>
-                </span>
-                <span className="hp-camp-mono" data-quiet>
-                  Product to gift
-                </span>
-                <span className="hp-camp-gift">
-                  <span className="hp-camp-tile" style={{ backgroundColor: "#d9a48f" }}>
-                    <img
-                      alt="Wellness Journal"
-                      decoding="async"
-                      style={{
-                        position: "absolute",
-                        height: "100%",
-                        width: "100%",
-                        left: 0,
-                        top: 0,
-                        right: 0,
-                        bottom: 0,
-                        color: "transparent",
-                      }}
-                      src="/sites/tano/images/tano-123.jpg"
-                     loading="lazy"/>
-                  </span>
-                  <span className="hp-camp-gift-name">Wellness Journal</span>
-                </span>
-                <span className="hp-camp-targets">
-                  <span className="hp-camp-target">
-                    <span className="hp-camp-mono" data-quiet>
-                      Revenue target
-                    </span>
-                    <span className="hp-camp-target-value">
-                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                    </span>
-                  </span>
-                  <span className="hp-camp-target">
-                    <span className="hp-camp-mono" data-quiet>
-                      Target CAC
-                    </span>
-                    <span className="hp-camp-target-value">
-                      <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                    </span>
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div className="hp-camp-card" data-slot="library">
-              <div className="hp-camp-field">
-                <span className="hp-camp-field-head">
-                  <span className="hp-camp-mono" data-quiet>
-                    Creator score
-                  </span>
-                  <span className="hp-camp-match-figure">0.00</span>
-                </span>
-                <span className="hp-camp-score">
-                  <span className="hp-camp-score-row" style={{ "--row": 0 }}>
-                    <span className="hp-camp-score-label">Persona fit</span>
-                    <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.9" }} />
-                  </span>
-                  <span className="hp-camp-score-row" style={{ "--row": 1 }}>
-                    <span className="hp-camp-score-label">World fit</span>
-                    <span
-                      aria-hidden="true"
-                      className="hp-camp-bar"
-                      style={{ "--share": "0.82" }}
-                    />
-                  </span>
-                  <span className="hp-camp-score-row" data-win="true" style={{ "--row": 2 }}>
-                    <span className="hp-camp-score-label">Purchase intent</span>
-                    <span
-                      aria-hidden="true"
-                      className="hp-camp-bar"
-                      data-win="true"
-                      style={{ "--share": 1 }}
-                    />
-                  </span>
-                  <span className="hp-camp-score-row" style={{ "--row": 3 }}>
-                    <span className="hp-camp-score-label">Brand safety</span>
-                    <span
-                      aria-hidden="true"
-                      className="hp-camp-bar"
-                      style={{ "--share": "0.96" }}
-                    />
-                  </span>
-                </span>
-                <span className="hp-camp-field-foot">
-                  <span className="wire-lockup" data-size="sm">
-                    <span className="wire-lockup-ring">
-                      <img
-                        alt=""
-                        width={72}
-                        height={72}
-                        decoding="async"
-                        style={{ color: "transparent" }}
-                        src="/sites/tano/images/tano-94.jpg"
-                       loading="lazy"/>
-                    </span>
-                    <span className="wire-lockup-who">
-                      <span className="wire-lockup-handle">@reginafoster.us</span>
-                    </span>
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div className="hp-camp-card" data-slot="metric">
-              <ol className="hp-camp-chat">
-                <li className="hp-camp-turn" data-from="agent">
-                  <span aria-hidden="true" className="hp-camp-turn-mark">
-                    <svg
-                      aria-hidden="true"
-                      fill="none"
-                      viewBox="0 0 222 208"
-                      overflow="visible"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <defs>
-                        <radialGradient
-                          cx={0}
-                          cy={0}
-                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
-                          gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum-usecasescreativevelocityreplica-2"
-                          r={1}
-                        >
-                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
-                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
-                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
-                        </radialGradient>
-                      </defs>
-                      <path
-                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum-usecasescreativevelocityreplica-2)"
-                      />
-                    </svg>
-                  </span>
-                  <span className="hp-camp-bubble">
-                    Loved your last post. Could we send you Papier’s Wellness Journal?
-                  </span>
-                </li>
-                <li className="hp-camp-turn" data-from="creator">
-                  <span aria-hidden="true" className="hp-camp-turn-face">
-                    <span
-                      aria-label="@reginafoster.us"
-                      className="wire-lockup"
-                      data-size="xs"
-                      role="img"
-                    >
-                      <span className="wire-lockup-ring">
-                        <img
-                          alt=""
-                          width={48}
-                          height={48}
-                          decoding="async"
-                          style={{ color: "transparent" }}
-                          src="/sites/tano/images/tano-94.jpg"
-                         loading="lazy"/>
-                      </span>
-                    </span>
-                  </span>
-                  <span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span>
-                </li>
-                <li className="hp-camp-turn" data-from="agent">
-                  <span aria-hidden="true" className="hp-camp-turn-mark">
-                    <svg
-                      aria-hidden="true"
-                      fill="none"
-                      viewBox="0 0 222 208"
-                      overflow="visible"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <defs>
-                        <radialGradient
-                          cx={0}
-                          cy={0}
-                          gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
-                          gradientUnits="userSpaceOnUse"
-                          id="tano-glyph-spectrum-usecasescreativevelocityreplica-3"
-                          r={1}
-                        >
-                          <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
-                          <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
-                          <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
-                        </radialGradient>
-                      </defs>
-                      <path
-                        d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                        fill="url(#tano-glyph-spectrum-usecasescreativevelocityreplica-3)"
-                      />
-                    </svg>
-                  </span>
-                  <span className="hp-camp-bubble">
-                    Wonderful. It arrives Monday, with your code to share.
-                  </span>
-                </li>
-              </ol>
-            </div>
-            <div className="hp-camp-card" data-slot="code">
-              <div className="hp-camp-metrics">
-                <span className="hp-camp-metric" data-turn={0}>
-                  <span className="hp-camp-mono" data-quiet>
-                    New customer LTV
-                  </span>
-                  <span className="hp-camp-metric-row">
-                    <svg
-                      aria-hidden="true"
-                      className="hp-camp-metric-trend"
-                      preserveAspectRatio="none"
-                      viewBox="0 0 100 40"
-                    >
-                      <defs>
-                        <linearGradient
-                          gradientUnits="userSpaceOnUse"
-                          id="hp-camp-metric-_R_13iav5ubpcnjb_"
-                          x1={0}
-                          x2={100}
-                          y1={0}
-                          y2={0}
-                        >
-                          <stop offset={0} style={{ stopColor: "var(--spectrum-yellow)" }} />
-                          <stop offset="0.3" style={{ stopColor: "var(--spectrum-lime)" }} />
-                          <stop offset="0.58" style={{ stopColor: "var(--spectrum-cyan)" }} />
-                          <stop offset="0.8" style={{ stopColor: "var(--spectrum-violet)" }} />
-                          <stop offset={1} style={{ stopColor: "var(--spectrum-magenta)" }} />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        className="hp-camp-metric-line"
-                        d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001"
-                        stroke="url(#hp-camp-metric-_R_13iav5ubpcnjb_)"
-                      />
-                    </svg>
-                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                  </span>
-                </span>
-                <span className="hp-camp-metric" data-turn={1}>
-                  <span className="hp-camp-mono" data-quiet>
-                    CAC
-                  </span>
-                  <span className="hp-camp-metric-row">
-                    <svg
-                      aria-hidden="true"
-                      className="hp-camp-metric-trend"
-                      preserveAspectRatio="none"
-                      viewBox="0 0 100 40"
-                    >
-                      <path
-                        className="hp-camp-metric-line"
-                        d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68"
-                        stroke="url(#hp-camp-metric-_R_13iav5ubpcnjb_)"
-                      />
-                    </svg>
-                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="hp-closing-copy">
-            <h2 className="hp-closing-title tano-display-sm" id="closing-title">
-              <span>Give your next campaign</span>
-              <span>a community.</span>
-            </h2>
-            <p className="hp-sub tano-body-para-md">
-              Share your monthly content needs and the campaign dates that matter. Our strategists
-              will come back with the recruitment, repeat posting and briefs it would take to cover
-              them.
-            </p>
-            <div className="hp-band-actions">
-              <ButtonLink href={"/talk-to-us"} label={"Get started"} />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ClosingBand
+        body="Share your monthly content needs and the campaign dates that matter. Our strategists will come back with the recruitment, repeat posting and briefs it would take to cover them."
+        cta={{ href: "/talk-to-us", label: "Get started" }}
+        lines={["Give your next campaign", "a community."]}
+      />
     </main>
   );
 }

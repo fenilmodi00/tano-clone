@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { mountBrandTabs } from "@/hooks/use-brand-tabs";
 import { useHashScroll } from "@/hooks/use-hash-scroll";
 import { usePageObservers } from "@/hooks/use-page-observers";
 import { useReveal } from "@/hooks/use-reveal";
@@ -34,6 +35,13 @@ function PageEffectsForRoute() {
   useEffect(() => {
     const cleanup = mountFormsRuntime();
     return () => cleanup?.();
+  }, []);
+
+  // Guide and compare detail templates render brand tabs from server markup;
+  // the home media module is not part of those bundles.
+  useEffect(() => {
+    if (!document.querySelector(".hp-brand-bar")) return;
+    return mountBrandTabs();
   }, []);
 
   return null;

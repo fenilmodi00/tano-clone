@@ -1,38 +1,22 @@
-import { ButtonLink } from "@/components/ui/button"
+import { ButtonLink } from "@/components/ui/button";
+import { BandHeading } from "@/components/sections/band-heading";
+import { ResourceHero } from "@/components/sections/resource-hero";
 import Link from "next/link";
+
+const HERO_PARAGRAPHS = [
+  "Free AI frameworks and workflows for influencer marketing teams. Drawn from running 500+ campaigns across consumer brands.",
+];
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">
-      <section
-        aria-labelledby="doc-title"
-        className="wire-legal-hero wire-resource-hero"
-        data-ground="dark"
-        data-ground-dark="open"
-      >
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
-        <div className="wire-legal-hero-copy">
-          <p className="wire-resource-kicker tano-body-mono-sm">
-            Free · Playbooks &amp; frameworks
-          </p>
-          <h1 className="tano-display-md" id="doc-title">
-            Frameworks for creator-led growth.
-          </h1>
-          <div className="wire-legal-hero-measure">
-            <p className="tano-body-para-md wire-ink-soft">
-              Free AI frameworks and workflows for influencer marketing teams. Drawn from running
-              500+ campaigns across consumer brands.
-            </p>
-          </div>
-        </div>
-      </section>
+      <ResourceHero
+        eyebrow="Free · Playbooks & frameworks"
+        groundDark="open"
+        paragraphs={HERO_PARAGRAPHS}
+        title="Frameworks for creator-led growth."
+      />
       <section className="hp-band tano" data-ground="dark" data-padding="xl">
         <div className="hp-container">
           <ul className="wire-grid">
@@ -124,21 +108,17 @@ export function CapturedBody() {
       </section>
       <section className="hp-band tano" data-ground="dark" data-padding="xl">
         <div className="hp-container">
-          <div className="hp-band-heading" data-align="start">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs">
-                <span className="hp-title-words">Let's scale your creator programme.</span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                The playbooks are a head start. Want us to run it? 30-minute intro, no slides —
-                we'll tell you whether Tano fits.
-              </p>
-            </div>
-            <div className="hp-band-actions">
-              <ButtonLink href={"/talk-to-us"} label={"Book a call"} />
-              <ButtonLink href={"/case-studies"} label={"See our work"} variant={"secondary"} />
-            </div>
-          </div>
+          <BandHeading
+            subtitle="The playbooks are a head start. Want us to run it? 30-minute intro, no slides — we'll tell you whether Tano fits."
+            actions={
+              <>
+                <ButtonLink href="/talk-to-us" label="Book a call" />
+                <ButtonLink href="/case-studies" label="See our work" variant="secondary" />
+              </>
+            }
+          >
+            <span className="hp-title-words">Let's scale your creator programme.</span>
+          </BandHeading>
         </div>
       </section>
     </main>

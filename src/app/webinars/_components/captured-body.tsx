@@ -1,51 +1,33 @@
+import { BandHeading } from "@/components/sections/band-heading"
+import { LegalHero, LegalLayout, LegalRail } from "@/components/sections/legal-shell"
 import { ButtonLink } from "@/components/ui/button"
 
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">
-      <section
-        aria-labelledby="doc-title"
-        className="wire-legal-hero wire-resource-hero"
-        data-ground="dark"
-        data-ground-dark="open"
+      <LegalHero
+        groundDark="open"
+        kicker="Webinars"
+        paragraphs={[
+          "Conversations with the marketers and founders building the most profitable creator programmes in consumer.",
+        ]}
+        resource
+        title="Lessons from the operators."
+        titleId="doc-title"
+      />
+      <LegalLayout
+        rail={
+          <LegalRail
+            items={[
+              {
+                id: "turning-influencer-ambassadors-into-a-revenue-machine-lessons-from-runna",
+                label: "Turning influencer ambassadors into a revenue machine — lessons from Runna.",
+              },
+            ]}
+          />
+        }
       >
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
-        <div className="wire-legal-hero-copy">
-          <p className="wire-resource-kicker tano-body-mono-sm">Webinars</p>
-          <h1 className="tano-display-md" id="doc-title">
-            Lessons from the operators.
-          </h1>
-          <div className="wire-legal-hero-measure">
-            <p className="tano-body-para-md wire-ink-soft">
-              Conversations with the marketers and founders building the most profitable creator
-              programmes in consumer.
-            </p>
-          </div>
-        </div>
-      </section>
-      <div className="wire-legal-body">
-        <div className="wire-legal-layout">
-          <nav aria-label="On this page" className="wire-rail">
-            <ul className="wire-rail-list">
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#turning-influencer-ambassadors-into-a-revenue-machine-lessons-from-runna"
-                  aria-current="true"
-                >
-                  Turning influencer ambassadors into a revenue machine — lessons from Runna.
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <article className="wire-legal-measure">
             <section
               className="wire-legal-section"
               id="turning-influencer-ambassadors-into-a-revenue-machine-lessons-from-runna"
@@ -82,26 +64,20 @@ export function CapturedBody() {
                 </ul>
               </div>
             </section>
-          </article>
-          <div aria-hidden="true" />
-        </div>
-      </div>
+      </LegalLayout>
       <section className="hp-band tano" data-ground="dark" data-padding="xl">
         <div className="hp-container">
-          <div className="hp-band-heading" data-align="start">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs">
-                <span className="hp-title-words">Let's scale your creator programme.</span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                Get on a 30-minute intro — no slides, just a conversation.
-              </p>
-            </div>
-            <div className="hp-band-actions">
-              <ButtonLink href={"/talk-to-us"} label={"Book a call"} />
-              <ButtonLink href={"/playbooks"} label={"Read the playbooks"} variant={"secondary"} />
-            </div>
-          </div>
+          <BandHeading
+            actions={
+              <>
+                <ButtonLink href={"/talk-to-us"} label={"Book a call"} />
+                <ButtonLink href={"/playbooks"} label={"Read the playbooks"} variant={"secondary"} />
+              </>
+            }
+            subtitle="Get on a 30-minute intro — no slides, just a conversation."
+          >
+            <span className="hp-title-words">Let's scale your creator programme.</span>
+          </BandHeading>
         </div>
       </section>
     </main>

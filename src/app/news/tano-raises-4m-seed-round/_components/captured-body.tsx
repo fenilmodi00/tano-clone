@@ -1,89 +1,34 @@
 
 
+import { LegalHero, LegalLayout, LegalRail } from "@/components/sections/legal-shell";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">
-      <section
-        aria-labelledby="resource-title"
-        className="wire-legal-hero wire-resource-hero"
-        data-ground="dark"
-        data-ground-dark
+      <LegalHero
+        kicker="News · 11 November 2026"
+        paragraphs={[
+          "We've raised a $4M seed led by Cherry Ventures, to make creators a performance advertising channel brands can buy like Meta or Google ads. Bringing our total funding to $5M thanks to earlier backing from Seedcamp and The Players Fund",
+        ]}
+        resource
+        title="Tano has raised $5m to make creators a true advertising channel."
+        titleId="resource-title"
+      />
+      <LegalLayout
+        rail={
+          <LegalRail
+            items={[
+              { id: "marketing-money-follows-attention", label: "Marketing money follows attention" },
+              { id: "every-ad-channel-goes-programmatic", label: "Every ad channel goes programmatic" },
+              { id: "why-it-hasn-t-been-possible-until-now", label: "Why it hasn't been possible until now" },
+              { id: "automation-puts-humanity-in-not-out", label: "Automation puts humanity in, not out" },
+              { id: "none-of-this-is-theory", label: "None of this is theory" },
+              { id: "what-the-money-is-for", label: "What the money is for" },
+            ]}
+          />
+        }
       >
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
-        <div className="wire-legal-hero-copy">
-          <p className="wire-resource-kicker tano-body-mono-sm">News · 11 November 2026</p>
-          <h1 className="tano-display-md" id="resource-title">
-            Tano has raised $5m to make creators a true advertising channel.
-          </h1>
-          <div className="wire-legal-hero-measure">
-            <p className="tano-body-para-md wire-ink-soft">
-              We've raised a $4M seed led by Cherry Ventures, to make creators a performance
-              advertising channel brands can buy like Meta or Google ads. Bringing our total funding
-              to $5M thanks to earlier backing from Seedcamp and The Players Fund
-            </p>
-          </div>
-        </div>
-      </section>
-      <div className="wire-legal-body">
-        <div className="wire-legal-layout">
-          <nav aria-label="On this page" className="wire-rail">
-            <ul className="wire-rail-list">
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#marketing-money-follows-attention"
-                  aria-current="true"
-                >
-                  Marketing money follows attention
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#every-ad-channel-goes-programmatic"
-                  aria-current="false"
-                >
-                  Every ad channel goes programmatic
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#why-it-hasn-t-been-possible-until-now"
-                  aria-current="false"
-                >
-                  Why it hasn't been possible until now
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#automation-puts-humanity-in-not-out"
-                  aria-current="false"
-                >
-                  Automation puts humanity in, not out
-                </a>
-              </li>
-              <li>
-                <a className="wire-rail-link" href="#none-of-this-is-theory" aria-current="false">
-                  None of this is theory
-                </a>
-              </li>
-              <li>
-                <a className="wire-rail-link" href="#what-the-money-is-for" aria-current="false">
-                  What the money is for
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <article className="wire-legal-measure">
             <div className="wire-article-prose">
               <p className="tano-body-para-md wire-ink-soft">
                 Today we're announcing that we've raised a $4M seed led by{" "}
@@ -300,10 +245,7 @@ export function CapturedBody() {
                 </p>
               </div>
             </section>
-          </article>
-          <div aria-hidden="true" />
-        </div>
-      </div>
+      </LegalLayout>
     </main>
   );
 }

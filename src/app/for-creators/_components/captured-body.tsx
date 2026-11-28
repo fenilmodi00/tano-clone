@@ -1,4 +1,6 @@
-import { FaqRow } from "@/components/ui/faq-row"
+import { FaqSection } from "@/components/sections/faq-section"
+import { BandHeading } from "@/components/sections/band-heading"
+import { HeroGlow } from "@/components/sections/hero-glow"
 import { ButtonLink, Button } from "@/components/ui/button"
 import { LogoBand } from "@/components/media/logo-band";
 import { BRAND_MARKS, FOR_CREATORS_BAND_CAPTION } from "@/components/media/brand-marks";
@@ -15,13 +17,7 @@ export function CapturedBody() {
         data-ground-dark
         data-padding="xl"
       >
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
+        <HeroGlow />
         <div className="hp-container hp-hero-field">
           <div className="hp-hero-copy">
             <h1 className="hp-title tano-display-md" id="creator-hero-title">
@@ -1576,9 +1572,11 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-ct">
-          <div className="hp-band-heading" data-align="centre">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="creator-timeline-title">
+          <BandHeading
+            align="centre"
+            titleId="creator-timeline-title"
+            subtitle="You try a product, find an angle that feels like you, and learn from the response. Work with Tano and partner with brands that work for you, posting over time to grow your following and earn product rewards."
+          >
                 <span className="hp-title-words">Your first post could unlock a</span>
                 <span className="hp-title-group">
                   <span className="hp-title-bind">
@@ -1605,14 +1603,7 @@ export function CapturedBody() {
                   </span>
                   <span className="hp-title-words"> audience.</span>
                 </span>
-              </h2>
-              <p className="hp-sub tano-body-para-md">
-                You try a product, find an angle that feels like you, and learn from the response.
-                Work with Tano and partner with brands that work for you, posting over time to grow
-                your following and earn product rewards.
-              </p>
-            </div>
-          </div>
+          </BandHeading>
           <ol className="hp-ct-row" style={{ "--count": 4 }}>
             <li
               className="hp-reveal hp-ct-step"
@@ -1964,13 +1955,9 @@ export function CapturedBody() {
         data-padding="xl"
       >
         <div className="hp-container hp-cj">
-          <div className="hp-band-heading" data-align="centre">
-            <div className="hp-band-heading-copy">
-              <h2 className="hp-title tano-display-xs" id="creator-join-title">
-                <span className="hp-title-words">It starts with an introduction.</span>
-              </h2>
-            </div>
-          </div>
+          <BandHeading align="centre" titleId="creator-join-title">
+            <span className="hp-title-words">It starts with an introduction.</span>
+          </BandHeading>
           <ol className="hp-cj-row">
             <li
               className="hp-reveal hp-cj-step"
@@ -2162,80 +2149,14 @@ export function CapturedBody() {
           </div>
         </div>
       </section>
-      <section
-        aria-labelledby="faq-title"
-        className="hp-band"
-        data-ground="dark"
-        data-ground-dark
-        data-padding="xl"
-      >
-        <div className="hp-container hp-faq">
-          <div className="hp-faq-head">
-            <div className="hp-band-heading" data-align="start">
-              <div className="hp-band-heading-copy">
-                <h2 className="hp-title tano-display-xs" id="faq-title">
-                  <span className="hp-title-words">A few things you</span>
-                  <span className="hp-title-group">
-                    <span className="hp-title-bind">
-                      <span aria-hidden="true" className="hp-inline-icon" data-size="sm">
-                        <span className="tano-title-mark" data-tone="fill">
-                          <svg
-                            viewBox="0 0 14 14"
-                            width="100%"
-                            height="100%"
-                            fill="none"
-                            aria-hidden="true"
-                            focusable="false"
-                          >
-                            <path
-                              d="M7 14c-1.04305 0-2.03401-.2285-2.92449-.6384l-3.486542.6304c-.177085.032-.357717-.0336-.472969-.1718-.115253107-.1382-.1473451-.3277-.0840308-.4961L1.03279 10.6613C.377766 9.59586 0 8.34138 0 7c0-3.86599 3.13401-7 7-7 3.866 0 7 3.13401 7 7 0 3.866-3.134 7-7 7Z"
-                              fill="currentColor"
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </span>
-                      </span>
-                      <span className="hp-title-words">might</span>
-                    </span>
-                    <span className="hp-title-words"> be wondering.</span>
-                  </span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div
-            className="hp-reveal hp-faq-stack"
-            data-rv-skip
-            data-shown="false"
-            style={{ "--hp-reveal-delay": "80ms" }}
-          >
-            <div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true">
-              <img
-                alt=""
-                aria-hidden="true"
-                decoding="async"
-                className="hp-faq-shot"
-                style={{
-                  position: "absolute",
-                  height: "100%",
-                  width: "100%",
-                  left: 0,
-                  top: 0,
-                  right: 0,
-                  bottom: 0,
-                  color: "transparent",
-                }}
-                src="/sites/tano/extras/3e4f8b0078c8fd030b423aabdaadc6cd9f27dc9c-1224x1224.jpg"
-               loading="lazy"/>
-            </div>
-            <div className="hp-faq-card">
-              <div className="hp-faq-tools">
-                <div className="hp-faq-search">
-                  <label className="wire-visually-hidden" htmlFor="faq-search">
-                    Search the questions
-                  </label>
-                  <span aria-hidden="true" className="hp-faq-search-icon">
+      <FaqSection
+        heading={
+          <>
+            <span className="hp-title-words">A few things you</span>
+            <span className="hp-title-group">
+              <span className="hp-title-bind">
+                <span aria-hidden="true" className="hp-inline-icon" data-size="sm">
+                  <span className="tano-title-mark" data-tone="fill">
                     <svg
                       viewBox="0 0 14 14"
                       width="100%"
@@ -2245,38 +2166,49 @@ export function CapturedBody() {
                       focusable="false"
                     >
                       <path
-                        d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z"
+                        d="M7 14c-1.04305 0-2.03401-.2285-2.92449-.6384l-3.486542.6304c-.177085.032-.357717-.0336-.472969-.1718-.115253107-.1382-.1473451-.3277-.0840308-.4961L1.03279 10.6613C.377766 9.59586 0 8.34138 0 7c0-3.86599 3.13401-7 7-7 3.866 0 7 3.13401 7 7 0 3.866-3.134 7-7 7Z"
                         fill="currentColor"
                         fillRule="evenodd"
                         clipRule="evenodd"
                       />
                     </svg>
                   </span>
-                  <input
-                    autoComplete="off"
-                    className="hp-faq-search-input tano-body-md"
-                    enterKeyHint="search"
-                    id="faq-search"
-                    placeholder="Search questions"
-                    type="search"
-                    defaultValue=""
-                  />
-                </div>
-              </div>
-              <p aria-live="polite" className="wire-visually-hidden" />
-              <div id="faq-panel">
-                <ul className="hp-faq-rows">
-                  <FaqRow id={"faq.creators-more-than-one-brand"} question={"Can I work with more than one brand?"} answer={"Yes. Once you’re onboarded, you can be considered for opportunities across Tano’s brands wherever you’re a suitable fit, subject to each programme’s terms."} />
-                  <FaqRow id={"faq.creators-what-can-i-earn"} question={"What can I earn?"} answer={"It depends on the programme. Opportunities can include gifted products, commission, milestone rewards, paid briefs and content licensing. We’ll explain the requirements and what you can earn before you take part. Some of our top-performing creators are earning thousands per month!"} />
-                  <FaqRow id={"faq.creators-definitely-partnership"} question={"Will I definitely get a partnership?"} answer={"Joining Tano allows us to match you with potentially suitable programmes. Invitations depend on brand fit, programme requirements and availability."} />
-                  <FaqRow id={"faq.creators-content-in-an-ad"} question={"What if a brand wants to use my content in an ad?"} answer={"That’s a separate opportunity to agree together. Tano manages the permissions, fee and usage period with you before your content is used in paid advertising."} />
-                  <FaqRow id={"faq.creators-more-questions"} question={"I have more questions. Who should I contact?"} answer={"Send us an email at hello@tano.ai"} />
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                </span>
+                <span className="hp-title-words">might</span>
+              </span>
+              <span className="hp-title-words"> be wondering.</span>
+            </span>
+          </>
+        }
+        art={{ src: "/sites/tano/extras/3e4f8b0078c8fd030b423aabdaadc6cd9f27dc9c-1224x1224.jpg" }}
+        rows={[
+          {
+            id: "faq.creators-more-than-one-brand",
+            question: "Can I work with more than one brand?",
+            answer: "Yes. Once you’re onboarded, you can be considered for opportunities across Tano’s brands wherever you’re a suitable fit, subject to each programme’s terms.",
+          },
+          {
+            id: "faq.creators-what-can-i-earn",
+            question: "What can I earn?",
+            answer: "It depends on the programme. Opportunities can include gifted products, commission, milestone rewards, paid briefs and content licensing. We’ll explain the requirements and what you can earn before you take part. Some of our top-performing creators are earning thousands per month!",
+          },
+          {
+            id: "faq.creators-definitely-partnership",
+            question: "Will I definitely get a partnership?",
+            answer: "Joining Tano allows us to match you with potentially suitable programmes. Invitations depend on brand fit, programme requirements and availability.",
+          },
+          {
+            id: "faq.creators-content-in-an-ad",
+            question: "What if a brand wants to use my content in an ad?",
+            answer: "That’s a separate opportunity to agree together. Tano manages the permissions, fee and usage period with you before your content is used in paid advertising.",
+          },
+          {
+            id: "faq.creators-more-questions",
+            question: "I have more questions. Who should I contact?",
+            answer: "Send us an email at hello@tano.ai",
+          },
+        ]}
+      />
       <section
         aria-labelledby="creator-closing-title"
         className="hp-band hp-closing-band hp-cl"

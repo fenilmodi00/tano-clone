@@ -1,93 +1,36 @@
 
 
+import { LegalHero, LegalLayout, LegalRail } from "@/components/sections/legal-shell";
+
 /* Generated from the captured Tano SSR markup. Edit with care: styles live in src/styles/design-system.css. */
 export function CapturedBody() {
   return (
     <main id="main">
-      <section className="wire-legal-hero" data-ground="dark" data-ground-dark>
-        <div aria-hidden="true" className="hp-hero-glow">
-          <div className="hp-hero-glow-light">
-            <div className="wire-spectrum-drift" />
-            <div className="hp-hero-glow-folds" data-layer="a" />
-            <div className="hp-hero-glow-folds" data-layer="b" />
-          </div>
-        </div>
-        <div className="wire-legal-hero-copy">
-          <h1 className="tano-display-md">Privacy policy</h1>
-          <div className="wire-legal-hero-measure">
-            <p className="tano-body-para-md wire-ink-soft">
-              How Tano collects, uses, shares and protects your data.
-            </p>
-            <p className="tano-body-para-md wire-ink-soft">Last updated · November 9, 2026</p>
-          </div>
-        </div>
-      </section>
-      <div className="wire-legal-body">
-        <div className="wire-legal-layout">
-          <nav aria-label="On this page" className="wire-rail">
-            <ul className="wire-rail-list">
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#interpretation-definitions"
-                  aria-current="true"
-                >
-                  Interpretation &amp; definitions
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#collecting-using-your-personal-data"
-                  aria-current="false"
-                >
-                  Collecting &amp; using your personal data
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#sharing-of-your-personal-data"
-                  aria-current="false"
-                >
-                  Sharing of your personal data
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#legal-basis-for-processing"
-                  aria-current="false"
-                >
-                  Legal basis for processing
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#google-user-data-gmail-integration"
-                  aria-current="false"
-                >
-                  Google user data &amp; Gmail integration
-                </a>
-              </li>
-              <li>
-                <a
-                  className="wire-rail-link"
-                  href="#retention-transfers-your-rights"
-                  aria-current="false"
-                >
-                  Retention, transfers &amp; your rights
-                </a>
-              </li>
-              <li>
-                <a className="wire-rail-link" href="#contact-us" aria-current="false">
-                  Contact us
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <article className="wire-legal-measure">
+      <LegalHero
+        paragraphs={[
+          "How Tano collects, uses, shares and protects your data.",
+          "Last updated · November 9, 2026",
+        ]}
+        title="Privacy policy"
+      />
+      <LegalLayout
+        rail={
+          <LegalRail
+            items={[
+              { id: "interpretation-definitions", label: "Interpretation & definitions" },
+              {
+                id: "collecting-using-your-personal-data",
+                label: "Collecting & using your personal data",
+              },
+              { id: "sharing-of-your-personal-data", label: "Sharing of your personal data" },
+              { id: "legal-basis-for-processing", label: "Legal basis for processing" },
+              { id: "google-user-data-gmail-integration", label: "Google user data & Gmail integration" },
+              { id: "retention-transfers-your-rights", label: "Retention, transfers & your rights" },
+              { id: "contact-us", label: "Contact us" },
+            ]}
+          />
+        }
+      >
             <div className="wire-legal-intro">
               <p className="tano-body-para-lg wire-ink-soft">
                 This Privacy Policy describes Our policies and procedures on the collection, use and
@@ -497,10 +440,7 @@ export function CapturedBody() {
                 </div>
               </div>
             </section>
-          </article>
-          <div aria-hidden="true" />
-        </div>
-      </div>
+      </LegalLayout>
     </main>
   );
 }

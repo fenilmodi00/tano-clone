@@ -1,15 +1,12 @@
 import Link from "next/link";
 import { Fragment, type ReactNode } from "react";
 
-import {
-  GuideBrands,
-  isDarkBrandRoute,
-  type GuideBrandQuote,
-  type GuideBrandStat,
-} from "./guide-brands";
-import { FaqRow } from "@/components/ui/faq-row";
-import { ButtonLink } from "@/components/ui/button";
-import { PageEffects } from "@/app/_runtime/page-effects";
+import { CASE_STUDIES } from "@/components/media/case-studies";
+import { BrandQuoteBand } from "@/components/sections/brand-quote-band";
+import { ClosingBand } from "@/components/sections/closing-band";
+import { FaqSection } from "@/components/sections/faq-section";
+import { UseCaseHero } from "@/components/sections/use-case-hero";
+import { PageShell } from "@/components/page-shell";
 
 type GuideCardItem = { title: string; body?: string };
 type GuideStatItem = { value: string; label: string };
@@ -41,15 +38,64 @@ export type GuideContent = {
   closing?: { title: string; body: string; cta: { label: string; href: string } };
 };
 
-const GLOW = (
-  <div aria-hidden="true" className="hp-hero-glow">
-    <div className="hp-hero-glow-light">
-      <div className="wire-spectrum-drift" />
-      <div className="hp-hero-glow-folds" data-layer="a" />
-      <div className="hp-hero-glow-folds" data-layer="b" />
-    </div>
-  </div>
-);
+type GuideBrandStat = { value: string; label: string };
+type GuideBrandQuote = { text: string; name?: string; role?: string };
+
+type GuideBrandPortrait = { src: string; alt: string } | { initials: string };
+
+/**
+ * Per-author quote data for the guide band: the case-study key that supplies
+ * the brand name/accent/mark/photo/link, plus the author portrait. The brand
+ * name is `CaseStudyMark.label` without its `" logo"` suffix.
+ */
+type GuideBrandProfile = {
+  key: string;
+  portrait: GuideBrandPortrait;
+};
+
+const GUIDE_BRANDS: Readonly<Record<string, GuideBrandProfile>> = {
+  "Yasmin MacDonnell": {
+    key: "bloom-and-wild",
+    portrait: {
+      src: "/sites/tano/images/tano-30.jpg",
+      alt: "Yasmin MacDonnell, Marketing Manager at Bloom & Wild",
+    },
+  },
+  "Katie McKane": {
+    key: "skin-and-me",
+    portrait: {
+      src: "/sites/tano/images/tano-110.jpg",
+      alt: "Katie McKane, Influencer Executive at Skin + Me",
+    },
+  },
+  "Amirah Hussain": {
+    key: "papier",
+    portrait: { initials: "AH" },
+  },
+  "Stephanie Terziyski": {
+    key: "hellofresh",
+    portrait: {
+      src: "/sites/tano/images/tano-50.jpg",
+      alt: "Stephanie Terziyski, Growth Influencer Marketing Manager at HelloFresh",
+    },
+  },
+};
+
+const DARK_BRAND_ROUTES: Readonly<Record<string, true>> = {
+  "/guides/creator-programme-cost": true,
+  "/guides/outgrown-influencer-agency": true,
+  "/guides/scale-creator-programme-without-headcount": true,
+};
+
+/** Split the captured counter value around its first number: `+125%` → `+` / `%`. */
+function splitStat(value: string): { prefix: string; suffix: string } {
+  const match = /\d+/.exec(value);
+  if (!match || match.index === undefined) return { prefix: value, suffix: "" };
+  return {
+    prefix: value.slice(0, match.index),
+    suffix: value.slice(match.index + match[0].length),
+  };
+}
 
 /* Captured list lead-ins are not in JSON; each list either emphasises its lead sentence or not. */
 const LIST_EMPHASIS: Readonly<Record<string, ReadonlyArray<boolean>>> = {
@@ -406,308 +452,10 @@ function faqPrefix(route: string): string {
   return `faq.guide-${slug}`;
 }
 
-function replicaName(route: string): string {
-  const slug = route.split("/").filter(Boolean).pop() ?? "guide";
-  return `guides${slug
-    .split("-")
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join("")
-    .toLowerCase()}replica`;
-}
-
-function GuideClosing({
-  closing,
-  glyphBase,
-  metricId,
-}: {
-  closing: NonNullable<GuideContent["closing"]>;
-  glyphBase: string;
-  metricId: string;
-}) {
-  const splitAt = closing.title.lastIndexOf(" your ");
-  const firstLine = splitAt === -1 ? closing.title : closing.title.slice(0, splitAt);
-  const secondLine = splitAt === -1 ? "" : closing.title.slice(splitAt + 1);
-
-  return (
-    <section
-      aria-labelledby="closing-title"
-      className="hp-band hp-closing-band"
-      data-ground="dark"
-      data-ground-dark="open"
-      data-padding="xl"
-    >
-      <div className="hp-container hp-closing">
-        <div aria-hidden="true" className="hp-closing-cards">
-          <div className="hp-camp-card" data-slot="send">
-            <div className="hp-camp-brief">
-              <span className="hp-camp-chips">
-                <span className="hp-camp-chip" data-picked="true">
-                  Affiliate revenue
-                </span>
-                <span className="hp-camp-chip">Share of voice</span>
-              </span>
-              <span className="hp-camp-mono" data-quiet>
-                Product to gift
-              </span>
-              <span className="hp-camp-gift">
-                <span className="hp-camp-tile" style={{ backgroundColor: "#d9a48f" }}>
-                  <img
-                    alt="Wellness Journal"
-                    decoding="async"
-                    style={{
-                      position: "absolute",
-                      height: "100%",
-                      width: "100%",
-                      left: 0,
-                      top: 0,
-                      right: 0,
-                      bottom: 0,
-                      color: "transparent",
-                    }}
-                    src="/sites/tano/images/tano-123.jpg"
-                    loading="lazy"
-                  />
-                </span>
-                <span className="hp-camp-gift-name">Wellness Journal</span>
-              </span>
-              <span className="hp-camp-targets">
-                <span className="hp-camp-target">
-                  <span className="hp-camp-mono" data-quiet>
-                    Revenue target
-                  </span>
-                  <span className="hp-camp-target-value">
-                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                  </span>
-                </span>
-                <span className="hp-camp-target">
-                  <span className="hp-camp-mono" data-quiet>
-                    Target CAC
-                  </span>
-                  <span className="hp-camp-target-value">
-                    <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div className="hp-camp-card" data-slot="library">
-            <div className="hp-camp-field">
-              <span className="hp-camp-field-head">
-                <span className="hp-camp-mono" data-quiet>
-                  Creator score
-                </span>
-                <span className="hp-camp-match-figure">0.00</span>
-              </span>
-              <span className="hp-camp-score">
-                <span className="hp-camp-score-row" style={{ "--row": 0 }}>
-                  <span className="hp-camp-score-label">Persona fit</span>
-                  <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.9" }} />
-                </span>
-                <span className="hp-camp-score-row" style={{ "--row": 1 }}>
-                  <span className="hp-camp-score-label">World fit</span>
-                  <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.82" }} />
-                </span>
-                <span className="hp-camp-score-row" data-win="true" style={{ "--row": 2 }}>
-                  <span className="hp-camp-score-label">Purchase intent</span>
-                  <span
-                    aria-hidden="true"
-                    className="hp-camp-bar"
-                    data-win="true"
-                    style={{ "--share": 1 }}
-                  />
-                </span>
-                <span className="hp-camp-score-row" style={{ "--row": 3 }}>
-                  <span className="hp-camp-score-label">Brand safety</span>
-                  <span aria-hidden="true" className="hp-camp-bar" style={{ "--share": "0.96" }} />
-                </span>
-              </span>
-              <span className="hp-camp-field-foot">
-                <span className="wire-lockup" data-size="sm">
-                  <span className="wire-lockup-ring">
-                    <img
-                      alt=""
-                      width={72}
-                      height={72}
-                      decoding="async"
-                      style={{ color: "transparent" }}
-                      src="/sites/tano/images/tano-94.jpg"
-                      loading="lazy"
-                    />
-                  </span>
-                  <span className="wire-lockup-who">
-                    <span className="wire-lockup-handle">@reginafoster.us</span>
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div className="hp-camp-card" data-slot="metric">
-            <ol className="hp-camp-chat">
-              <li className="hp-camp-turn" data-from="agent">
-                <span aria-hidden="true" className="hp-camp-turn-mark">
-                  <svg
-                    aria-hidden="true"
-                    fill="none"
-                    viewBox="0 0 222 208"
-                    overflow="visible"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <radialGradient
-                        cx={0}
-                        cy={0}
-                        gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
-                        gradientUnits="userSpaceOnUse"
-                        id={`${glyphBase}-1`}
-                        r={1}
-                      >
-                        <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
-                        <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
-                        <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
-                      </radialGradient>
-                    </defs>
-                    <path
-                      d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                      fill={`url(#${glyphBase}-1)`}
-                    />
-                  </svg>
-                </span>
-                <span className="hp-camp-bubble">
-                  Loved your last post. Could we send you Papier’s Wellness Journal?
-                </span>
-              </li>
-              <li className="hp-camp-turn" data-from="creator">
-                <span aria-hidden="true" className="hp-camp-turn-face">
-                  <span
-                    aria-label="@reginafoster.us"
-                    className="wire-lockup"
-                    data-size="xs"
-                    role="img"
-                  >
-                    <span className="wire-lockup-ring">
-                      <img
-                        alt=""
-                        width={48}
-                        height={48}
-                        decoding="async"
-                        style={{ color: "transparent" }}
-                        src="/sites/tano/images/tano-94.jpg"
-                        loading="lazy"
-                      />
-                    </span>
-                  </span>
-                </span>
-                <span className="hp-camp-bubble">I’d love that. Perfect for my next post.</span>
-              </li>
-              <li className="hp-camp-turn" data-from="agent">
-                <span aria-hidden="true" className="hp-camp-turn-mark">
-                  <svg
-                    aria-hidden="true"
-                    fill="none"
-                    viewBox="0 0 222 208"
-                    overflow="visible"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <radialGradient
-                        cx={0}
-                        cy={0}
-                        gradientTransform="matrix(-73.3295 -212.012 181.351 -72.7727 153.8000 189.9900)"
-                        gradientUnits="userSpaceOnUse"
-                        id={`${glyphBase}-2`}
-                        r={1}
-                      >
-                        <stop offset={0} stopColor="var(--spectrum-cyan, #46b7d1)" />
-                        <stop offset="0.5" stopColor="var(--spectrum-magenta, #cc6add)" />
-                        <stop offset={1} stopColor="var(--spectrum-orange, #fb751f)" />
-                      </radialGradient>
-                    </defs>
-                    <path
-                      d="M88.0338 4.00741C94.2708 -1.07111 103.169 -0.35695 113.68 0.954679C124.143 2.59856 132.893 4.37172 137.492 10.9771C142.074 17.5585 141.747 29.3607 140.316 40.69C140.299 40.7994 139.455 46.8137 138.263 55.3068C138.066 56.7112 139.348 57.871 140.72 57.5277C158.642 53.0441 177.219 48.3977 177.41 48.3473C188.497 45.7363 200.169 44.1752 207.176 48.0563C214.209 51.9519 216.882 60.4922 219.606 70.7545C222.006 81.0979 223.645 89.8961 219.26 96.6461C214.89 103.371 203.853 107.488 192.84 110.402C192.649 110.447 174.818 114.9 157.244 119.29C155.723 119.67 155.214 121.579 156.341 122.67C167.99 133.945 178.721 144.331 178.849 144.452C186.933 152.496 194.438 161.595 194.868 169.61C195.3 177.654 189.494 184.452 182.258 192.207C174.781 199.728 168.207 205.784 160.174 205.632C152.17 205.48 142.84 198.277 134.54 190.458C134.357 190.276 110.985 167.638 95.749 152.879C94.8364 151.995 93.3481 152.183 92.6759 153.262C82.6871 169.296 72.0716 186.34 71.965 186.516C65.798 196.117 58.4822 205.369 50.7527 207.458C42.9946 209.554 35.1552 205.272 26.0855 199.788C17.1935 194.019 9.91902 188.831 8.39701 180.922C6.88068 173.04 11.9679 162.392 17.8709 152.626C18.0005 152.424 32.9447 128.454 44.0686 110.613C44.5958 109.767 44.4196 108.663 43.6575 108.022C30.5698 97.0155 17.998 86.4428 17.8505 86.3219C9.2263 78.8625 1.10598 70.3116 0.119118 62.3463C-0.871353 54.3518 4.44807 47.1643 11.1271 38.9225C18.0624 30.8963 24.1984 24.3953 32.2226 23.985C40.2175 23.5762 50.0271 30.1093 58.8513 37.3297C58.9474 37.4127 64.3671 41.9737 71.7693 48.2037C72.9695 49.2138 74.8114 48.5053 75.0292 46.9494C76.2575 38.1756 77.1354 31.9084 77.1505 31.7897C78.8896 20.5037 81.8197 9.06748 88.0338 4.00741Z"
-                      fill={`url(#${glyphBase}-2)`}
-                    />
-                  </svg>
-                </span>
-                <span className="hp-camp-bubble">
-                  Wonderful. It arrives Monday, with your code to share.
-                </span>
-              </li>
-            </ol>
-          </div>
-          <div className="hp-camp-card" data-slot="code">
-            <div className="hp-camp-metrics">
-              <span className="hp-camp-metric" data-turn={0}>
-                <span className="hp-camp-mono" data-quiet>
-                  New customer LTV
-                </span>
-                <span className="hp-camp-metric-row">
-                  <svg
-                    aria-hidden="true"
-                    className="hp-camp-metric-trend"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 100 40"
-                  >
-                    <defs>
-                      <linearGradient
-                        gradientUnits="userSpaceOnUse"
-                        id={metricId}
-                        x1={0}
-                        x2={100}
-                        y1={0}
-                        y2={0}
-                      >
-                        <stop offset={0} style={{ stopColor: "var(--spectrum-yellow)" }} />
-                        <stop offset="0.3" style={{ stopColor: "var(--spectrum-lime)" }} />
-                        <stop offset="0.58" style={{ stopColor: "var(--spectrum-cyan)" }} />
-                        <stop offset="0.8" style={{ stopColor: "var(--spectrum-violet)" }} />
-                        <stop offset={1} style={{ stopColor: "var(--spectrum-magenta)" }} />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      className="hp-camp-metric-line"
-                      d="M 0 28.96 Q 0 28.96 5.555555555555555 27.68 Q 11.11111111111111 26.4 16.666666666666664 26.72 Q 22.22222222222222 27.04 27.777777777777775 25.119999999999997 Q 33.33333333333333 23.2 38.888888888888886 22.240000000000002 Q 44.44444444444444 21.28 50 21.6 Q 55.55555555555556 21.92 61.11111111111111 19.68 Q 66.66666666666666 17.44 72.22222222222221 16.16 Q 77.77777777777777 14.879999999999999 83.33333333333333 13.92 Q 88.88888888888889 12.96 100 9.120000000000001"
-                      stroke={`url(#${metricId})`}
-                    />
-                  </svg>
-                  <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                </span>
-              </span>
-              <span className="hp-camp-metric" data-turn={1}>
-                <span className="hp-camp-mono" data-quiet>
-                  CAC
-                </span>
-                <span className="hp-camp-metric-row">
-                  <svg
-                    aria-hidden="true"
-                    className="hp-camp-metric-trend"
-                    preserveAspectRatio="none"
-                    viewBox="0 0 100 40"
-                  >
-                    <path
-                      className="hp-camp-metric-line"
-                      d="M 0 8.48 Q 0 8.48 5.555555555555555 9.44 Q 11.11111111111111 10.399999999999999 16.666666666666664 10.08 Q 22.22222222222222 9.760000000000002 27.777777777777775 11.680000000000001 Q 33.33333333333333 13.600000000000001 38.888888888888886 14.56 Q 44.44444444444444 15.52 50 16.16 Q 55.55555555555556 16.8 61.11111111111111 18.4 Q 66.66666666666666 20 72.22222222222221 20.96 Q 77.77777777777777 21.92 83.33333333333333 23.200000000000003 Q 88.88888888888889 24.48 100 27.68"
-                      stroke={`url(#${metricId})`}
-                    />
-                  </svg>
-                  <span aria-hidden="true" className="hp-camp-redacted" data-size="md" />
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="hp-closing-copy">
-          <h2 className="hp-closing-title tano-display-sm" id="closing-title">
-            <span>{firstLine}</span>
-            {secondLine ? <span>{secondLine}</span> : null}
-          </h2>
-          <p className="hp-sub tano-body-para-md">{closing.body}</p>
-          <div className="hp-band-actions">
-            <ButtonLink href={closing.cta.href} label={closing.cta.label} />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+function closingLines(title: string): string[] {
+  const splitAt = title.lastIndexOf(" your ");
+  if (splitAt === -1) return [title];
+  return [title.slice(0, splitAt), title.slice(splitAt + 1)];
 }
 
 /**
@@ -741,9 +489,21 @@ export function GuideTemplate({ page }: { page: GuideContent }) {
     ? { text: quoteBlock.text ?? "", name: quoteBlock.name, role: quoteBlock.role }
     : undefined;
   const brandStat: GuideBrandStat | undefined = stat;
-  const dark = isDarkBrandRoute(page.route);
-  const glyphBase = `tano-glyph-spectrum-${replicaName(page.route)}`;
-  const metricId = dark ? "hp-camp-metric-_R_266lubpcnjb_" : "hp-camp-metric-_R_26mlubpcnjb_";
+  const brandProfile = quote?.name ? GUIDE_BRANDS[quote.name] : undefined;
+  const study = brandProfile
+    ? CASE_STUDIES.find((candidate) => candidate.key === brandProfile.key)
+    : undefined;
+  const brand =
+    brandProfile && study
+      ? {
+          name: study.mark.label.replace(/ logo$/, ""),
+          accent: study.accent,
+          mark: study.mark.src,
+          image: { src: study.photoSrc, alt: study.photoAlt ?? "" },
+          portrait: brandProfile.portrait,
+          href: study.href,
+        }
+      : undefined;
   const emphasis = LIST_EMPHASIS[page.route] ?? [];
   const listIndexByPosition = new Map(
     rows
@@ -757,156 +517,86 @@ export function GuideTemplate({ page }: { page: GuideContent }) {
   );
 
   return (
-    <main id="main">
-      <section
-        aria-labelledby="use-case-title"
-        className="hp-band hp-uc-hero"
-        data-ground="dark"
-        data-ground-dark
-        data-padding="xl"
-      >
-        {GLOW}
-        <div className="hp-container hp-uc-hero-field">
-          <div className="hp-uc-hero-copy">
-            <h1 className="hp-title tano-display-md" id="use-case-title">
-              <span className="hp-title-words">{page.hero.title}</span>
-            </h1>
-            {page.hero.paragraphs.map((paragraph) => (
-              <p className="hp-uc-hero-sub tano-body-para-md" key={paragraph}>
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
+    <PageShell>
+      <main id="main">
+        <UseCaseHero paragraphs={page.hero.paragraphs} titleLines={[page.hero.title]} />
 
-      {rows.length ? (
-        <section className="hp-band" data-ground="light" data-padding="xl">
-          <div className="hp-container hp-prose">
-            <div className="hp-prose-rows">
-              {rows.map((row, rowIndex) => {
-                const related = row.heading === "Related guides";
-                return (
-                  <div className="hp-prose-row" key={`${rowIndex}-${row.heading ?? ""}`}>
-                    <div className="hp-prose-row-head">
-                      <h2 className="tano-heading-md">{row.heading}</h2>
-                    </div>
-                    <div className="hp-prose-columns">
-                      <div className="hp-prose-column">
-                        <div className="wire-article-prose">
-                          {row.blocks.map((block, blockIndex) => {
-                            const list = block.type === "list";
-                            const activeList = list
-                              ? (listIndexByPosition.get(`${rowIndex}-${blockIndex}`) ?? -1)
-                              : -1;
-                            return (
-                              <Fragment key={`${rowIndex}-${blockIndex}`}>
-                                {renderBlock(block, emphasis[activeList] ?? false, related)}
-                              </Fragment>
-                            );
-                          })}
+        {rows.length ? (
+          <section className="hp-band" data-ground="light" data-padding="xl">
+            <div className="hp-container hp-prose">
+              <div className="hp-prose-rows">
+                {rows.map((row, rowIndex) => {
+                  const related = row.heading === "Related guides";
+                  return (
+                    <div className="hp-prose-row" key={`${rowIndex}-${row.heading ?? ""}`}>
+                      <div className="hp-prose-row-head">
+                        <h2 className="tano-heading-md">{row.heading}</h2>
+                      </div>
+                      <div className="hp-prose-columns">
+                        <div className="hp-prose-column">
+                          <div className="wire-article-prose">
+                            {row.blocks.map((block, blockIndex) => {
+                              const list = block.type === "list";
+                              const activeList = list
+                                ? (listIndexByPosition.get(`${rowIndex}-${blockIndex}`) ?? -1)
+                                : -1;
+                              return (
+                                <Fragment key={`${rowIndex}-${blockIndex}`}>
+                                  {renderBlock(block, emphasis[activeList] ?? false, related)}
+                                </Fragment>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      ) : null}
-
-      {faqSection && faq.length ? (
-        <section
-          aria-labelledby="faq-title"
-          className="hp-band"
-          data-ground="dark"
-          data-ground-dark
-          data-padding="xl"
-        >
-          <div className="hp-container hp-faq">
-            <div className="hp-faq-head">
-              <div className="hp-band-heading" data-align="start">
-                <div className="hp-band-heading-copy">
-                  <h2 className="hp-title tano-display-xs" id="faq-title">
-                    <span className="hp-title-words">{faqSection.heading}</span>
-                  </h2>
-                </div>
+                  );
+                })}
               </div>
             </div>
-            <div
-              className="hp-reveal hp-faq-stack"
-              data-rv-skip
-              data-shown="false"
-              style={{ "--hp-reveal-delay": "80ms" }}
-            >
-              <div className="hp-faq-art hp-behind wire-glass-edge" data-rim="true" />
-              <div className="hp-faq-card">
-                <div className="hp-faq-tools">
-                  <div className="hp-faq-search">
-                    <label className="wire-visually-hidden" htmlFor="faq-search">
-                      Search the questions
-                    </label>
-                    <span aria-hidden="true" className="hp-faq-search-icon">
-                      <svg
-                        viewBox="0 0 14 14"
-                        width="100%"
-                        height="100%"
-                        fill="none"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6ZM6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12C7.29578 12 8.49562 11.5892 9.47642 10.8908L12.2929 13.7073C12.6834 14.0978 13.3166 14.0978 13.7071 13.7073C14.0976 13.3168 14.0976 12.6836 13.7071 12.2931L10.8907 9.47665C11.5892 8.49581 12 7.29588 12 6C12 2.68629 9.31371 0 6 0Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                    <input
-                      autoComplete="off"
-                      className="hp-faq-search-input tano-body-md"
-                      enterKeyHint="search"
-                      id="faq-search"
-                      placeholder="Search questions"
-                      type="search"
-                      defaultValue=""
-                    />
-                  </div>
-                </div>
-                <p aria-live="polite" className="wire-visually-hidden" />
-                <div id="faq-panel">
-                  <ul className="hp-faq-rows">
-                    {faq.map((item, index) => (
-                      <FaqRow
-                        id={`${faqPrefix(page.route)}-${String(index + 1).padStart(2, "0")}`}
-                        key={item.q}
-                        question={item.q}
-                        answer={item.a}
-                      />
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      ) : null}
+          </section>
+        ) : null}
 
-      {quoteSection && quote && brandStat ? (
-        <GuideBrands
-          heading={quoteSection.heading ?? "In their words."}
-          quote={quote}
-          route={page.route}
-          stat={brandStat}
-        />
-      ) : null}
+        {faqSection && faq.length ? (
+          <FaqSection
+            heading={<span className="hp-title-words">{faqSection.heading}</span>}
+            rows={faq.map((item, index) => ({
+              id: `${faqPrefix(page.route)}-${String(index + 1).padStart(2, "0")}`,
+              question: item.q,
+              answer: item.a,
+            }))}
+          />
+        ) : null}
 
-      {page.closing ? (
-        <GuideClosing closing={page.closing} glyphBase={glyphBase} metricId={metricId} />
-      ) : null}
-      <PageEffects />
-    </main>
+        {quoteSection && quote && brandStat && brand ? (
+          <BrandQuoteBand
+            accent={brand.accent}
+            ghosts={[quote.text]}
+            ground={DARK_BRAND_ROUTES[page.route] ? "dark" : "light"}
+            heading={quoteSection.heading ?? "In their words."}
+            media={{ live: brand.image, liveMark: brand.mark }}
+            quote={{
+              caseStudy: brand.href,
+              name: quote.name,
+              role: quote.role,
+              text: quote.text,
+              ...("initials" in brand.portrait
+                ? { initials: brand.portrait.initials }
+                : { portrait: brand.portrait }),
+            }}
+            stat={{ caption: brandStat.label, ...splitStat(brandStat.value) }}
+            tabs={[{ label: brand.name, mark: brand.mark }]}
+          />
+        ) : null}
+
+        {page.closing ? (
+          <ClosingBand
+            body={page.closing.body}
+            cta={page.closing.cta}
+            lines={closingLines(page.closing.title)}
+          />
+        ) : null}
+      </main>
+    </PageShell>
   );
 }

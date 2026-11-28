@@ -116,14 +116,31 @@ Extracted (keep using):
   copy math. Used by home (brands + featured), for-creators, news, creative-velocity and
   drive-revenue.
 
-Candidates, in reuse order:
+Shared page bands live in `src/components/sections/`. They own markup and props only; every
+behaviour still comes from the delegated runtimes (`_runtime/*`, `_home/media-sections`).
 
-| Pattern           | Uses | Blocker                                                                               |
-| ----------------- | ---: | ------------------------------------------------------------------------------------- |
-| `hp-band-heading` |   92 | 4 variants (actions, swipe cue); prop API is straightforward.                         |
-| `hp-prose-row`    |  131 | 2 variants; blocks can be ReactNode for now.                                          |
-| `hp-stat-bar`     |  162 | self-closing chart SVG with many per-instance data values; needs a typed stats model. |
-| `wire-brand-word` |  444 | too small to be worth a component boundary.                                           |
+| Component                                                          | Routes served                                 | Notes                                                                                                                                   |
+| ------------------------------------------------------------------ | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `HeroGlow`                                                         | 22 heroes + footer                            | `spectrum` default, `study` wash; external offscreen pause targets `.hp-hero-glow`.                                                     |
+| `BandHeading`                                                      | 46 headings                                   | `align`, `cue`, `titleId`, rich children, subtitle class, actions.                                                                      |
+| `StatDefs`, `StatItem`, `StatGroup`                                | home, use-cases, compare, case studies        | fixed gradient ids; chart body stays a child so per-instance path data is untouched.                                                    |
+| `FaqSection`                                                       | home, for-creators, guides, compare           | one shell with optional art/tabs/intro; rows remain `FaqRow`.                                                                           |
+| `ClosingBand`                                                      | 12 route endings                              | `lines`/`body`/`cta`; cards are fixed, per-instance SVG ids use `useId`.                                                                |
+| `UseCaseHero`                                                      | use-cases, compare/guides details and indexes | title lines, paragraphs, actions, proof slot.                                                                                           |
+| `ResourceHero`                                                     | playbooks template + index                    | optional kicker, `doc-title`, ground variant.                                                                                           |
+| `LinkCardGrid`                                                     | guides/compare indexes                        | typed card list + heading/ground/CTA.                                                                                                   |
+| `BrandQuoteBand`                                                   | guides/compare details                        | one prop-driven band for the former `GuideBrands` and `BrandStripSection`; tabs now mount the shared controller on every route.         |
+| `CaseBannerDeck` + `CASE_STUDIES`                                  | home, four case-study details, news           | supports brand cards (mark/strip/accent, h2/h3) and the news meta card; `.wire-case-slot` stays a direct child for the deck controller. |
+| `StudyHero`, `StudyFilms`, `StudyQuote`                            | four case-study details                       | hero/figures, five-copy film marquee with one `front` card, quote card.                                                                 |
+| `LegalHero`, `LegalRail`, `LegalLayout`                            | privacy, news article, webinars, case studies | rail items drive `aria-current`; `LegalLayout` emits the trailing spacer. Playbooks use `ResourceHero`.                                 |
+| `RoleHero`, `RoleTags`, `RoleApplyButton`, `RoleCard`, `TeamPrint` | careers index + roles                         | one tag row for heroes and cards; apply drawer is a client island.                                                                      |
+| `ApplyDrawer`                                                      | three role pages                              | native `<dialog>` application form, demo submit, no network.                                                                            |
+| `PageShell`                                                        | every detail template                         | children + `PageEffects`; templates no longer inline `PageEffects`.                                                                     |
+
+Still page-local by design: the steps player, tracking carousel, home campaign cards, creator
+reel (`hp-ccar`), comparison table and conversation/experiment sections. Their DOM is coupled to
+route-specific controllers and content payloads, so extracting them without a behaviour pass
+would break the delegated runtime rather than remove duplication.
 
 ## 5. Maintenance rules
 

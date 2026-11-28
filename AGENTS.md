@@ -63,8 +63,9 @@ src/app/guides/_components/     guide template + brands (14 details)
 src/app/compare/_components/    compare template (4 details)
 src/app/playbooks/_components/  playbook template (5 details)
 src/components/ui/              shared button and FAQ row
+src/components/sections/        shared page bands (hero, stats, FAQ, closing, study, legal, careers)
 src/components/layout/          header, footer, mobile nav, consent, logo strings
-src/components/media/           shared reel card
+src/components/media/           shared reel card, logo band, case-banner data
 src/components/status-page.tsx  shared 404/error/loading surface
 src/hooks/                      shared client hooks
 src/lib/                        metadata, site config, motion primitives, form model

@@ -1,5 +1,7 @@
 import { Button, ButtonLink } from "@/components/ui/button";
-import { PageEffects } from "@/app/_runtime/page-effects";
+import { BandHeading } from "@/components/sections/band-heading";
+import { ResourceHero } from "@/components/sections/resource-hero";
+import { PageShell } from "@/components/page-shell";
 
 type PlaybookBlock = { type: string; html?: string; items?: ReadonlyArray<{ title: string }> };
 type PlaybookSection = {
@@ -14,16 +16,6 @@ type PlaybookContent = {
   sections: ReadonlyArray<PlaybookSection>;
   closing?: { title: string; body: string; cta: { label: string; href: string } };
 };
-
-const GLOW = (
-  <div aria-hidden="true" className="hp-hero-glow">
-    <div className="hp-hero-glow-light">
-      <div className="wire-spectrum-drift" />
-      <div className="hp-hero-glow-folds" data-layer="a" />
-      <div className="hp-hero-glow-folds" data-layer="b" />
-    </div>
-  </div>
-);
 
 function stripMarkup(html: string): string {
   return html
@@ -52,80 +44,59 @@ export function PlaybookTemplate({ page }: { page: PlaybookContent }) {
   const emailId = `${page.route.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "")}-email`;
 
   return (
-    <main id="main">
-      <section
-        aria-labelledby="doc-title"
-        className="wire-legal-hero wire-resource-hero"
-        data-ground="dark"
-        data-ground-dark
-      >
-        {GLOW}
-        <div className="wire-legal-hero-copy">
-          {page.hero.eyebrow ? (
-            <p className="wire-resource-kicker tano-body-mono-sm">{page.hero.eyebrow}</p>
-          ) : null}
-          <h1 className="tano-display-md" id="doc-title">
-            {page.hero.title}
-          </h1>
-          <div className="wire-legal-hero-measure">
-            {page.hero.paragraphs.map((paragraph) => (
-              <p className="tano-body-para-md wire-ink-soft" key={paragraph}>
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
+    <PageShell>
+      <main id="main">
+        <ResourceHero
+          eyebrow={page.hero.eyebrow}
+          id="doc-title"
+          paragraphs={page.hero.paragraphs}
+          title={page.hero.title}
+        />
 
-      <section className="hp-band" data-ground="light" data-padding="xl">
-        <div className="hp-container">
-          <div className="wire-contact-card wire-lead-gate">
-            <div className="wire-contact-head">
-              {gate?.eyebrow ? (
-                <p className="tano-body-mono-xs wire-ink-soft">{gate.eyebrow}</p>
-              ) : null}
-              {gate?.heading ? <h2 className="tano-heading-md">{gate.heading}</h2> : null}
-              {gateBody ? <p className="tano-body-md wire-ink-soft">{gateBody}</p> : null}
-              {gateItems.length ? (
-                <ul className="wire-legal-list tano-body-md wire-ink-soft">
-                  {gateItems.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              ) : null}
-            </div>
-            <form action={page.route} className="wire-contact-form" method="post" noValidate>
-              <div className="wire-contact-fields">
-                <div className="wire-contact-field" data-span="wide">
-                  <label htmlFor={emailId}>Work email address</label>
-                  <input autoComplete="email" id={emailId} name="email" required type="email" />
-                </div>
-              </div>
-              <Button type="submit">Get free access</Button>
-              <p className="tano-body-sm wire-ink-soft">No spam. Unsubscribe any time.</p>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      {page.closing ? (
         <section className="hp-band" data-ground="light" data-padding="xl">
           <div className="hp-container">
-            <div className="hp-band-heading" data-align="start">
-              <div className="hp-band-heading-copy">
-                <h2 className="hp-title tano-display-xs">
-                  <span className="hp-title-words">{page.closing.title}</span>
-                </h2>
-                <p className="hp-sub tano-body-para-md">{page.closing.body}</p>
+            <div className="wire-contact-card wire-lead-gate">
+              <div className="wire-contact-head">
+                {gate?.eyebrow ? (
+                  <p className="tano-body-mono-xs wire-ink-soft">{gate.eyebrow}</p>
+                ) : null}
+                {gate?.heading ? <h2 className="tano-heading-md">{gate.heading}</h2> : null}
+                {gateBody ? <p className="tano-body-md wire-ink-soft">{gateBody}</p> : null}
+                {gateItems.length ? (
+                  <ul className="wire-legal-list tano-body-md wire-ink-soft">
+                    {gateItems.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
-              <div className="hp-band-actions">
-                <ButtonLink href={page.closing.cta.href} label={page.closing.cta.label} />
-              </div>
+              <form action={page.route} className="wire-contact-form" method="post" noValidate>
+                <div className="wire-contact-fields">
+                  <div className="wire-contact-field" data-span="wide">
+                    <label htmlFor={emailId}>Work email address</label>
+                    <input autoComplete="email" id={emailId} name="email" required type="email" />
+                  </div>
+                </div>
+                <Button type="submit">Get free access</Button>
+                <p className="tano-body-sm wire-ink-soft">No spam. Unsubscribe any time.</p>
+              </form>
             </div>
           </div>
         </section>
-      ) : null}
-      <PageEffects />
-    </main>
+
+        {page.closing ? (
+          <section className="hp-band" data-ground="light" data-padding="xl">
+            <div className="hp-container">
+              <BandHeading
+                subtitle={page.closing.body}
+                actions={<ButtonLink href={page.closing.cta.href} label={page.closing.cta.label} />}
+              >
+                <span className="hp-title-words">{page.closing.title}</span>
+              </BandHeading>
+            </div>
+          </section>
+        ) : null}
+      </main>
+    </PageShell>
   );
 }
