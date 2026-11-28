@@ -6,6 +6,7 @@ import { useHashScroll } from "@/hooks/use-hash-scroll";
 import { usePageObservers } from "@/hooks/use-page-observers";
 import { useReveal } from "@/hooks/use-reveal";
 import { useStatReplay } from "@/hooks/use-stat-replay";
+import { useTrackCarousel } from "@/hooks/use-track-carousel";
 import { mountFormsRuntime } from "./forms-runtime";
 import { usePageBehaviours } from "./use-page-behaviours";
 
@@ -24,6 +25,7 @@ function PageEffectsForRoute() {
   usePageBehaviours();
   useReveal();
   useStatReplay();
+  useTrackCarousel();
   usePageObservers();
   useHashScroll();
 

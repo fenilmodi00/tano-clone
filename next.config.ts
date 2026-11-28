@@ -48,6 +48,20 @@ const nextConfig: NextConfig = {
             : []),
         ],
       },
+      // Dev chunk URLs are stable across recompiles, so a cached copy leaves an
+      // open tab running a module from an older compile (e.g. an intermediate
+      // edit missing an import). Cloudflare rewrites the dev server's
+      // `no-cache` to a four-hour `max-age`; `no-store` keeps both the edge and
+      // the browser out of the way. Production chunks are content-hashed and
+      // keep the immutable policy below.
+      ...(process.env.NODE_ENV === "development"
+        ? [
+            {
+              source: "/_next/static/:path*",
+              headers: [{ key: "Cache-Control", value: "no-store, max-age=0" }],
+            },
+          ]
+        : []),
       {
         source: "/sites/tano/fonts/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],

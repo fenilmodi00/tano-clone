@@ -21,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   otherwise answers `Range` with the full file, which breaks Safari playback.
 - `docs/CLOUDFLARE.md` plus the official Cloudflare Next.js and vinext migration skills under
   `.agents/skills/`.
+- Shared `useTrackCarousel` hook plus `nav-cartwheel.ts`, which ports the live site's rolling Tano
+  mark into the seeded nav square.
 
 ### Changed
 
@@ -47,8 +49,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The root loading fallback covers the viewport, so the footer can no longer flash into view mid-transition and animate the fixed nav away.
 - Header dropdowns close on item click and on every committed pathname change; they previously survived navigation because the shell persists.
 - The nav arrival animation is marked per document and cannot replay after a route change.
+- The use-case pages (`creative-velocity`, `drive-revenue`) now mount the tracking carousel, so
+  slides advance on the 5 s beat like the home page.
+- The nav intro now measures the expanded bar, expands for the full 1 s travel and settles 1.14 s
+  after travel; it previously settled 1.14 s after the drop, cutting the expansion and the
+  cartwheel roll short. The seed square shows Tano's cartwheel mark rolling to rest.
 - Added `npm run verify:nav` for footer landing, dropdown reset, client-nav, hydration and reveal regressions; the client-nav audits record routes without an in-page anchor as skipped instead of faking a click into a removed interceptor.
 - Documented the Cloudflare edge rewriters (Email Address Obfuscation, Rocket Loader) that desync hydration; `email_off` comment markers measurably make it worse and are not used.
+- Dev `/_next` responses are now `no-store`. Cloudflare had rewritten the dev server's `no-cache` to a four-hour `max-age`, so an open tab could keep executing a module from an older compile (a missing React import surfaced as `useEffect is not defined` until a hard reload).
 
 ## [0.6.2] - 2026-11-25
 

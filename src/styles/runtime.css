@@ -37,3 +37,22 @@ html.lenis body {
   height: 100%;
   display: block;
 }
+
+/* Nav cartwheel shell, built by nav-cartwheel.ts after hydration. */
+.wire-nav-mark-roll {
+  --roll-unit: calc(var(--mark-height) / 208);
+  left: calc(-34.679 * var(--roll-unit));
+  top: calc(-34.878 * var(--roll-unit));
+  width: calc(280.391 * var(--roll-unit));
+  height: calc(280.391 * var(--roll-unit));
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.wire-nav-mark-roll-art {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}

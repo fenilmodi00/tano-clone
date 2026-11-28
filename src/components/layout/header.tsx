@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useId, useRef, useState } from "react";
 import { scrollPageToTop } from "@/hooks/use-route-scroll";
+import { mountNavCartwheel } from "./nav-cartwheel";
 
 const MENUS = [
   {
@@ -65,30 +66,47 @@ export function Header({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: strin
     setMobileOpen(false);
   }
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-nav-ready", "");
-    // A reload restoring a scrolled page must not replay the arrival
-    // animation over it; a top-of-page reload still gets the full intro.
-    if (Number(window.__tanoRestoreY || 0) > 0) {
-      document.documentElement.setAttribute("data-nav-intro", "done");
+  useLayoutEffect(() => {
+    const bar = wrap.current?.querySelector<HTMLElement>(".wire-nav-bar");
+    if (!bar) return;
+    return mountNavCartwheel(bar, `tano-nav-cartwheel-${markId}`);
+  }, [markId]);
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const bar = wrap.current?.querySelector<HTMLElement>(".wire-nav-bar");
+    const restored = Number(window.__tanoRestoreY || 0) > 0;
+    const played = root.getAttribute("data-nav-intro") === "done";
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!bar || restored || played || reduced) {
+      setStage("settled");
+      root.setAttribute("data-nav-ready", "");
       return;
     }
+    // Measure the expanded bar before seeding, so the square travels to the
+    // nav's own width rather than a duplicated CSS calc.
+    const fullWidth = bar.getBoundingClientRect().width;
+    if (fullWidth > 0) bar.style.setProperty("--nav-full-width", `${fullWidth}px`);
+    setStage("seed");
+    root.setAttribute("data-nav-ready", "");
     // The intro belongs to the document, not the route. The marker is only
     // written once the animation has settled, so an interrupted mount
     // (StrictMode's first pass) still plays it on the next one.
-    if (document.documentElement.getAttribute("data-nav-intro") === "done") return;
     const timers: number[] = [];
     let inner = 0;
     const outer = requestAnimationFrame(() => {
-      setStage("seed");
       inner = requestAnimationFrame(() => {
         setStage("drop");
-        timers.push(window.setTimeout(() => setStage("travel"), 520));
         timers.push(
           window.setTimeout(() => {
-            setStage("settled");
-            document.documentElement.setAttribute("data-nav-intro", "done");
-          }, 1140),
+            setStage("travel");
+            timers.push(
+              window.setTimeout(() => {
+                setStage("settled");
+                root.setAttribute("data-nav-intro", "done");
+              }, 1140),
+            );
+          }, 520),
         );
       });
     });
@@ -172,11 +190,6 @@ export function Header({ glyphSvg, wordSvg }: { glyphSvg: string; wordSvg: strin
               data-glass-tilt="false"
               data-size="sm"
               data-stage={stage}
-              style={
-                {
-                  "--nav-full-width": "min(1312px, calc(100vw - 2 * var(--page-margin)))",
-                } as React.CSSProperties
-              }
             >
               <span aria-hidden="true" className="wire-nav-grain" />
               <Link
